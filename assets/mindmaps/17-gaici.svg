@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 770" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="盖茨比思维导图">
+  <path d="M 200 385 C 250 385, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="337" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="363" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">盖茨比</text>
+  <text x="115" y="383" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">The Great Gatsby</text>
+  <text x="115" y="405" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">绿灯与美国梦</text>
+  <text x="115" y="421" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">The Green Light &amp; the Dream</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">海湾两岸</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Two Eggs</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">尼克的站位</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Nick's Vantage</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">旧钱的客厅</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The Old-Money Parlor</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">父亲的家训</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The Father's Advice</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">绿灯与重逢</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Light &amp; Reunion</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">派对作鱼饵</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Parties as Bait</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">衬衫如虹</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Shirts Like Rainbows</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">过去可以重来吗</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">Repeat the Past?</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">灰烬账单</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Ashes &amp; the Bill</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">灰谷与广告牌</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Valley of Ashes</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">黄色轿车</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">The Yellow Car</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">泳池与葬礼</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Pool &amp; Funeral</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">梦的账本</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Ledger of the Dream</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">绿灯三次亮起</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Green Light, Three Times</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">新钱与旧钱</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">New Money vs Old</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">逆水之舟</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Boats Against the Current</text>
+</svg>

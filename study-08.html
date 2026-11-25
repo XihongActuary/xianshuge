@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 黑暗的心 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/08-heian.html">本书书页</a></p>
+<h1>深度研读 · 黑暗的心</h1>
+<p class="sub">约瑟夫·康拉德 著 · 蜂鸟文丛·黄雨石译 · 人民文学出版社 2016 · 英文原文＋中文译文对照研读</p>
+<p class="lead">研读说明：一条河向上游走，文明一层层剥落。本研读共十节，先录英文原文（通行英文定本中的名句），再配蜂鸟文丛中文译文（据 epub 原文校录），然后作要义解析（核心要义／逻辑脉络／现实意义）。读法提示：把黑暗当作一份「解剖报告」——被解剖的不是非洲，是开船来的人。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>赖利号：一条等退潮的船与一个没有结尾的故事</a></li>
+<li><a href="#s2"><b>贰</b>一千九百年前的伦敦：文明的边缘原来如此</a></li>
+<li><a href="#s3"><b>叁</b>征服大地：不是漂亮事</a></li>
+<li><a href="#s4"><b>肆</b>观念：为抢夺镀金的东西</a></li>
+<li><a href="#s5"><b>伍</b>灯塔与蠢材：库尔茨的抱负</a></li>
+<li><a href="#s6"><b>陆</b>谎言：带有死亡的气息</a></li>
+<li><a href="#s7"><b>柒</b>报告的补写：消灭所有这些畜生！</a></li>
+<li><a href="#s8"><b>捌</b>荒野占有他：黑暗如何接管一个人</a></li>
+<li><a href="#s9"><b>玖</b>我的未婚妻，我的象牙：一切属他所有</a></li>
+<li><a href="#s10"><b>拾</b>遗言：太可怕了！太可怕了！</a></li>
+<li><a href="#s11"><b>拾壹</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>赖利号：一条等退潮的船与一个没有结尾的故事</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest.</p>
+<p>巡航帆艇「赖利号」，连帆都没有抖动一下，就吃住锚链，稳稳停住。</p>
+<p class="src">——约瑟夫·康拉德《黑暗的心》第一章开头 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本（人民文学出版社 2016）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：小说从静止写起：帆不抖、船不动、只等潮水。这个开篇确立了叙事框架——故事将在退潮开始前、由马洛在甲板上讲出，讲完时潮水将带走一切，连结论也不留下。</p>
+<p><b>逻辑脉络</b>：框架叙事是康拉德的现代性标志：读者听到的不是真相本身，是一个讲述者在昏暗光线里的转述。故事套着故事，判断就永远隔着一层——黑暗的心没有作者判决，只有马洛的欲言又止。</p>
+<p><b>现实意义</b>：读一切二手叙事都该保留框架意识：谁在讲、对谁讲、什么光线下讲。叙事者的位置决定他看见什么、讳言什么——听故事之前，先看讲故事的人坐在哪条船上。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>一千九百年前的伦敦：文明的边缘原来如此</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>We live in the flicker—may it last as long as the old earth keeps rolling!</p>
+<p>我们就生活在那闪光之中——但愿只要地球还会滚动，它也就不会熄灭吧！</p>
+<p class="src">——《黑暗的心》第一章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：马洛先讲罗马人入侵时的伦敦：那时这里也是「世界尽头」，军团士兵在蛮荒中生病、死去。文明只是一个火光的闪动——今天的中心，昨天还是边缘。</p>
+<p><b>逻辑脉络</b>：这段对照是全书的倒置装置：把伦敦与刚果的位置对调了一下，读者被迫承认殖民者也曾是蛮荒里的迷路人。「闪光」一词把文明的历史感压成了一瞬——它随时可能熄灭，并不因为自称文明就长明。</p>
+<p><b>现实意义</b>：把自己放进这个坐标系：任何「中心感」都是暂时的坐标投影。对异域他者的想象（落后、蛮荒）往往先于了解出现——而地图对调一下，被想象的可能是自己。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>征服大地：不是漂亮事</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The conquest of the earth, which mostly means the taking it away from those who have a different complexion or slightly flatter noses than ourselves, is not a pretty thing when you look into it too much.</p>
+<p>所谓对土地的征服，其意义在大多数情况下不过是把一片土地从一些肤色和我们不同或者鼻子比我们稍平一些的人们手中抢夺过来，这决不是什么漂亮事，你只要深入调查一下就会知道。</p>
+<p class="src">——《黑暗的心》第一章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：康拉德用近乎冷笑话的方式给殖民正名术卸妆：所谓征服，大部分时候就是从肤色不同、鼻子稍平的人手里抢东西。「只要深入调查一下」是关键——距离产生崇高，接近只产生抢劫。</p>
+<p><b>逻辑脉络</b>：句子的构造是先给庄严标题（征服大地），再立刻给出同位语的粗鄙翻译（抢夺过来），落差即讽刺。作者并不否认征服历史的存在，他否认的是它的道德封面——这个区分在1899年是超前的。</p>
+<p><b>现实意义</b>：给宏大词汇做「同位语翻译」是好习惯：把「开拓」「进军」「优化」翻译成具体的人在具体地做什么——翻译之后，很多庄严自动退潮。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>观念：为抢夺镀金的东西</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>an unselfish belief in the idea—something you can set up, and bow down before, and offer a sacrifice to</p>
+<p>惟一能使你安心的是一种观念。是这种征服背后的那个观念；不是感情上的托辞，而是一种观念；对这种观念的一种无私的信仰——这东西你可以随意建立起来，对着它磕头，并向它提供牺牲……</p>
+<p class="src">——《黑暗的心》第一章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：马洛承认抢夺无法被正名，但指出使抢夺者「安心」的东西：一个观念。观念可以造出来、拜下去、供牺牲——它是暴行的信仰外衣，让抢劫者自觉是传教士。</p>
+<p><b>逻辑脉络</b>：本节与上一节构成递进：先撕掉封面（不是漂亮事），再分析封面的成分（观念）。注意「随意建立起来」——观念不是被发现的真理，是被搭建的道具；搭得越庄严，供品越可以无度。</p>
+<p><b>现实意义</b>：识别任何组织的「观念供品」逻辑：当崇高理念总是要求特定人群付出代价（牺牲）时，先问这观念是谁搭的、谁受益。真正的信念不需要别人一直上供。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>灯塔与蠢材：库尔茨的抱负</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Each station should be like a beacon on the road towards better things, a centre for trade of course, but also for humanizing, improving, instructing.</p>
+<p>这里的每一个站都应该像是设在大路边指向美好前景的灯塔，它们当然是贸易中心，但同时还应该负起增进人道主义、改善生活和施行教化的责任来。</p>
+<p class="src">——《黑暗的心》第二章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：库尔茨的这段报告是理想的标本：贸易与教化并举，灯塔指向美好前景。经理听到只剩一个反应——「这个蠢材」。理想的真诚恰恰暴露了组织的真实目标，也预示了理想在丛林中的下场。</p>
+<p><b>逻辑脉络</b>：报告先以「贸易中心」托底，再挂上「人道主义、改善、教化」——这正是马洛说的「感情上的托辞」的标准配置。同船经理们的嗤笑构成对照：在河边这群人看来，理想主义是无用的诚实，也挡了财路。</p>
+<p><b>现实意义</b>：判别真理想与托辞的一个硬指标：理想是否附带账目。凡是只描绘灯塔、从不说明成本由谁承担的蓝图，多半是报告文学——去查它实际派送的是象牙还是教科书。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>谎言：带有死亡的气息</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>I hate, detest, and can't bear a lie.</p>
+<p>我对撒谎深恶痛绝，简直不能忍受</p>
+<p>谎言带有死的意味，带有死亡的气息——这正是这个世界上我最深恶痛绝的东西</p>
+<p class="src">——《黑暗的心》第二章、第三章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：马洛的道德敏感点很特别：他不怕暴力、不怕荒野，只怕谎言——因为谎言带有死亡的气息。一个如此痛恨谎言的人，最后对库尔茨的未婚妻撒了此生唯一一个谎，这个对照是全书的道德悬念。</p>
+<p><b>逻辑脉络</b>：「死的意味」揭示了谎言的本质恐惧：它抹去真实发生过的一切，如同死亡抹去存在。而结尾的谎言恰恰是向死亡献祭的慈悲——真实太黑暗，马洛选择用谎言保护一个局外人留在她的世界里。</p>
+<p><b>现实意义</b>：多数人对谎言的厌恶是利益性的（怕被骗），马洛的厌恶是存在性的（怕被夺走真实）。反观自己：忍受谎言的阈值在哪里？为慈悲撒谎与为得利撒谎的边界又在哪里——这个问题没有标准答案，但必须有自己的答案。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>报告的补写：消灭所有这些畜生！</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Exterminate all the brutes!</p>
+<p>消灭所有这些畜生！</p>
+<p class="src">——《黑暗的心》第二章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：库尔茨报告的正文呼吁改善蛮荒，结尾却用潦草的笔迹补了一句灭绝令——同一张纸上，灯塔与屠刀并排。这句话是全书最浓缩的证据：理想与暴行可以是同一支笔写出来的。</p>
+<p><b>逻辑脉络</b>：细节的力量在于「笔画非常零乱」「很久以后草草补上」：暴行不是计划的起点，是深入黑暗之后的即兴发挥——观念松动的顺序是先有信仰、再有放纵、最后有灭绝令。黄雨石在译序里的追问（这畜生指谁）更狠：库尔茨指的恐怕是他自己所属的白人社会。</p>
+<p><b>现实意义</b>：审视任何纲领文件，别只读正文，要找页边的笔迹：草稿、附注、口头补充。组织的真实意图往往写在不会被校对的地方。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>荒野占有他：黑暗如何接管一个人</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The wilderness had found him out early, and had taken on him a terrible vengeance for the fantastic invasion.</p>
+<p>荒野曾经占有他，钟爱他，拥抱他，钻进他的血液里去，消融了他的肌肉</p>
+<p class="src">——《黑暗的心》第三章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：康拉德没有把库尔茨写成一个天生恶棍，而是写成一个被荒野「占有」的人：远离法律、掌声与监督之后，孤寂本身就把他掏空——黑暗不在丛林，在没有他人在场的内心。</p>
+<p><b>逻辑脉络</b>：动词链是本节的密钥：发现、报复、占有、钟爱、拥抱、钻进、消融——荒野像恋人一样完成了一次吞噬。翻译成心理学语言：无监督的绝对权力配合无约束的自我叙事，人格会被自我崇拜溶解。</p>
+<p><b>现实意义</b>：评估一个人会变成什么样，最有效的指标是「无人监督时他的时间表与朋友圈」。同理约束自己：真正的护栏不是品德宣言，是身边始终存在敢说真话的人。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>我的未婚妻，我的象牙：一切属他所有</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>My Intended, my ivory, my station, my river, my—everything belonged to him.</p>
+<p>「我的未婚妻，我的象牙，我的贸易站，我的河流——我的——」，一切都属他所有。</p>
+<p class="src">——《黑暗的心》第三章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：库尔茨的自我膨胀最终在语法层面完成：所有名词都冠以「我的」。马洛的评论一针见血——一切都属他所有并不可怕，可怕的是问一句：他自己属于谁？有多少黑暗的势力在争夺对他的所有权。</p>
+<p><b>逻辑脉络</b>：「我的——我的——」句子在破折号处断开，是康拉德式的留白：连他自己也说不完他宣称占有的一切。而「他自己是属于谁的」完成了主宾反转——自以为占有一切的人，早已被欲望占有。</p>
+<p><b>现实意义</b>：清点自己口中的「我的」清单，再倒过来问：我属于什么——哪些爱好、哪些人、哪些瘾在占有我？占有与被占有常常是同一张资产负债表的两栏。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>遗言：太可怕了！太可怕了！</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The horror! The horror!</p>
+<p>那声音只不过像喘息一样微弱：「『太可怕了！太可怕了！』」</p>
+<p class="src">——《黑暗的心》第三章 ｜ 英文据通行英文定本，中文据蜂鸟文丛·黄雨石译本</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文学史上最著名的遗言只有四个词，却没有定论：库尔茨审判的是什么——荒野、象牙、他自己，还是整个白人事业？康拉德拒绝给出答案，遗言是收据，不是解释。</p>
+<p><b>逻辑脉络</b>：技术细节同样重要：叫喊「像喘息一样微弱」——不是雷鸣，是气若游丝的自我清算。马洛视之为库尔茨一生的总结「他曾细致地重温过自己的一生」：一个人临终时对自己一生的诚实评级，也许才是唯一的审判。</p>
+<p><b>现实意义</b>：把「太可怕了」当作自问的句式：如果此刻复盘我的一生，哪一段我会低声叫出这句话？临终清算无法重来，能在日常做的，是别让某一页积攒到无法直视的程度。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这份黑暗解剖报告的最终目的，是认出文明外衣下的结构，以及自己心里的上游。</p>
+<p><b>我们就生活在那闪光之中——但愿只要地球还会滚动，它也就不会熄灭吧！</b>应用口诀：文明是火光的闪动，中心的优越感都是坐标投影。</p>
+<p><b>这决不是什么漂亮事，你只要深入调查一下就会知道。</b>应用口诀：给宏大词汇做同位语翻译——具体是谁在具体做什么。</p>
+<p><b>对这种观念的一种无私的信仰——这东西你可以随意建立起来，对着它磕头，并向它提供牺牲……</b>应用口诀：崇高理念总要求特定人群上供时，先查这观念是谁搭的。</p>
+<p><b>这里的每一个站都应该像是设在大路边指向美好前景的灯塔</b>应用口诀：理想要附账目——查它实际派送的是象牙还是教科书。</p>
+<p><b>我对撒谎深恶痛绝，简直不能忍受</b>应用口诀：谎言抹去真实，如死亡抹去存在——容忍阈值要有自己的答案。</p>
+<p><b>消灭所有这些畜生！</b>应用口诀：读文件找页边笔迹——真实意图常写在不会被校对的地方。</p>
+<p><b>荒野曾经占有他，钟爱他，拥抱他，钻进他的血液里去</b>应用口诀：无监督的权力溶解人格——护栏是真话人在场。</p>
+<p><b>「我的未婚妻，我的象牙，我的贸易站，我的河流——我的——」</b>应用口诀：清点「我的」清单，再倒问我属于什么。</p>
+<p><b>太可怕了！太可怕了！</b>应用口诀：日常复盘哪一页不敢直视，别等临终清算。</p>
+<p><b>他自己是属于谁的，有多少种黑暗的势力在争夺对他的所有权。</b>应用口诀：守住干净光亮的地方——秩序与灯光，是人对抗虚无的最小配置。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%C2%B7%E5%BA%B7%E6%8B%89%E5%BE%B7" target="_blank" rel="noopener">约瑟夫·康拉德 · 维基百科</a><span>延伸：作者刚果之行的真实经历与小说的对应。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%AE%96%E6%B0%91%E4%B8%BB%E4%B9%89" target="_blank" rel="noopener">殖民主义 · 维基百科</a><span>佐证：刚果自由邦的历史背景与利奥波德二世暴政。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%8E%B0%E4%BB%A3%E4%B8%BB%E4%B9%89%E6%96%87%E5%AD%A6" target="_blank" rel="noopener">现代主义文学 · 维基百科</a><span>佐证：框架叙事、不可靠叙述与本书的现代主义地位。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%B1%A1%E7%89%99%E8%B4%B8%E6%98%93" target="_blank" rel="noopener">象牙贸易 · 维基百科</a><span>延伸：驱动内河航程的经济链条的真实历史。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%8E%B0%E4%BB%A3%E5%90%AF%E7%A4%BA%E5%BD%95" target="_blank" rel="noopener">现代启示录 · 维基百科</a><span>佐证：科波拉对本作的越战移植改编。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《黑暗的心》 ｜ 英文据通行英文定本，中文据蜂鸟文丛译本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

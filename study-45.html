@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 崩溃和救援 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/45-bengkui.html">本书书页</a></p>
+<h1>深度研读 · 崩溃和救援</h1>
+<p class="sub">斯科特·内申斯 著 · 赵立光 译 · 中信出版集团</p>
+<p class="lead">研读说明：本册是美国股市百年崩盘史的完整复盘。作者以五次标志性崩盘为经、以每一次崩盘背后的「金融工具影子」为纬：1907 年的信托公司、1929 年的杠杆投资信托、1987 年的投资组合保险、2008 年的抵押贷款支持证券、2010 年的程序化交易。从摩根在图书馆里力挽狂澜的深夜，到埃森哲以每股 1 美分成交的 14:47:43，本书把「市场为什么崩、怎么救、代价是什么」写成了可核对的编年史。本研读共十二节（据中信出版集团版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>自序的算术：一只 1899 年的 1 美元</a></li>
+<li><a href="#s2"><b>贰</b>1907 之一：催化剂、利率与信托公司</a></li>
+<li><a href="#s3"><b>叁</b>1907 之二：海因兹、莫尔斯与联合铜业轧空</a></li>
+<li><a href="#s4"><b>肆</b>1907 之三：摩根力挽狂澜</a></li>
+<li><a href="#s5"><b>伍</b>1929 之一：斯特朗的遗产与美联储的错误</a></li>
+<li><a href="#s6"><b>陆</b>1929 之二：资金池、顶峰与巴布森崩盘</a></li>
+<li><a href="#s7"><b>柒</b>1929 之三：黑色星期四到黑色星期二</a></li>
+<li><a href="#s8"><b>捌</b>1987 之一：投资组合保险的诞生</a></li>
+<li><a href="#s9"><b>玖</b>1987 之二：掠夺者时代与十月信号</a></li>
+<li><a href="#s10"><b>拾</b>1987 之三：黑色星期一与周二的反击</a></li>
+<li><a href="#s11"><b>拾壹</b>2008：创新链的代价</a></li>
+<li><a href="#s12"><b>拾贰</b>2010 闪电崩盘与后记的答案</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>自序的算术：一只 1899 年的 1 美元</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>假如一个投资者于1899年12月31日投资1美元给道琼斯工业指数，那么在1929年华尔街股市风暴到来之前，他的投资收益已经增加到156.88美元。</p>
+<p>股市崩溃的代价不仅是财产损失，它会给人们带来更多的恐惧感，使人们从此不敢再投资股市，这对创造就业机会和经济发展产生了不利影响。</p>
+<p>美股的历次崩盘都无一例外地存在金融工具的影子——1907年的信托公司，1929年的杠杆投资信托基金，1987年的投资组合保险，2008年的抵押贷款支持证券。</p>
+<p class="src">——《崩溃和救援》序言·自序 ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：自序用一道复利算术题立起全书的问题意识：1899 年 12 月 31 日投入 1 美元买道琼斯指数，到 1929 年风暴前已变成 156.88 美元；若能避开 1987 年 10 月 19 日那一天，会变成 202.71 美元；若再躲过 2008 年那 5 个「股市倒霉日」，则是 319.24 美元。作者由此点出：崩盘的最大代价不是账面损失，而是崩盘后的恐惧让人从此不敢再投资股市。</p>
+<p><b>逻辑脉络</b>：宋雪涛的序言给出全书纲领：崩盘研究的方法论是找「金融工具的影子」——1907 年的信托公司、1929 年的杠杆投资信托、1987 年的投资组合保险、2008 年的抵押贷款支持证券，每一种新工具都在繁荣期积累风险、在坏消息来临时放大跌幅。作者另设一条暗线：速度。1906 年旧金山地震的黄金装船用了数周，而 2010 年一笔交易从下单到砸穿市场只要 20 毫秒。</p>
+<p><b>现实意义</b>：读崩盘史的正确姿势：不是记日期和跌幅，而是每次都问三个问题——这次的新金融工具是什么？杠杆藏在谁的资产负债表上？催化剂何时到来？这三个问题构成本研读十二节的分析框架。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>1907 之一：催化剂、利率与信托公司</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>其实，每一次股市崩盘都有外部催化剂。</p>
+<p>信托公司不是为现实服务的功能而设计的，这些机构的惊人崛起是在一系列巨大的繁荣时期发生的。</p>
+<p>在金融危机中，没有一个机构或者体系可以宣称自己是绝对安全的，信托公司还没有在危机中经历过血与火的考验。</p>
+<p class="src">——《崩溃和救援》第1章 大恐慌（1907年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1907 年大恐慌的催化剂链条：1906 年 4 月 18 日旧金山大地震（8.3 级、55 秒、22.5 万人无家可归）抽走保险赔付的黄金，英格兰银行把利率从 3.5% 一路提到 6%；标准石油案（1463 项违规、总计 2924 万美元罚金）叠加 1907 年 3 月 14 日股灾跌 8.3%。作者下判断：每一次股市崩盘都有外部催化剂，1907 年离地震催化剂足有 18 个月。</p>
+<p><b>逻辑脉络</b>：崩盘的结构性主角是信托公司：它们只留 25% 准备金（国民银行要求更严）、放贷于股市、还不用交准备金检查——作者引诺伊斯的判断，信托公司的惊人崛起发生在繁荣时期，且「还没有在危机中经历过血与火的考验」。三周后尼克伯格信托公司就要经受考验并且失败：监管真空里的影子机构，正是 2008 年 MBS 的百年前身。</p>
+<p><b>现实意义</b>：识别系统性风险的第一信号：繁荣期增长最快、监管最松的那类机构。1907 年的信托公司、2008 年的投行-SIV 结构，都是同一剧本。判断标准不是它有没有牌照，而是它的负债靠什么支撑。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>1907 之二：海因兹、莫尔斯与联合铜业轧空</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>银行意味着信贷，信贷意味着权力。</p>
+<p>这是一次极其复杂的转让，海因兹和罗杰斯都认为自己取得了胜利。</p>
+<p>周六股价的下跌引发了更多的追加保证金通知。</p>
+<p class="src">——《崩溃和救援》第1章 大恐慌（1907年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：恐慌的扳机握在两个人手里：铜矿大王海因兹与「冰王」莫尔斯。海因兹在比尤特靠《矿脉顶法》打遍矿区法院，1200 万美元卖掉联合铜业后仍想翻身；莫尔斯靠连环控制银行与信托公司扩张——他直白地说「银行意味着信贷，信贷意味着权力」。1907 年 10 月 14 日奥图把联合铜业从 37.5 美元推到 60 美元，15 日空头洪流涌回，16 日跌到 10 美元，轧空惨败。</p>
+<p><b>逻辑脉络</b>：轧空失败的连锁反应精确展示了信贷权力的反面：股价下跌引发追加保证金通知，保证金通知打垮三兄弟的自有资金，进而暴露莫尔斯—巴尼—海因兹控制链上的银行头寸，尼克伯格信托公司总裁巴尼辞职后储户排队三小时提走 800 万美元。一家投机铜矿股的失败，通过担保链传导成对整个信托体系的挤兑。</p>
+<p><b>现实意义</b>：现代市场同样如此：单个产品的爆仓（如 2021 年 Archegos）沿主经纪商与衍生品担保链扩散。看一个交易失败会不会变成系统事件，关键在担保品链条上有几家机构、谁替谁的保证金背书。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>1907 之三：摩根力挽狂澜</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我不欠民众任何东西。</p>
+<p>我相信一位强有力的执行官，我相信权力。</p>
+<p>今天早一分钟关门都不行！</p>
+<p class="src">——《崩溃和救援》第1章 大恐慌（1907年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：没有央行的美国，最后贷款人是 70 岁的摩根。他在自己图书馆里召集银行家，连夜审计美国信托公司的账目（斯特朗报告其偿付能力后，825 万美元承诺到位）；当证交所总裁兰塞姆·托马斯提出提前关门时，摩根掐着时间说出「今天早一分钟关门都不行！」，随后交易所拿到 2700 万美元、10% 利率的应急贷款。</p>
+<p><b>逻辑脉络</b>：摩根的两副面孔值得对照：面对股市里被轧空的散户，他说「我不欠民众任何东西」；面对系统性挤兑，他掏出自己的钱并胁迫同行出钱。救援的逻辑不是慈善，而是止损——先救支付链条（信托公司、证交所），让恐慌停在能停的地方。1907 年 11 月 15 日道指触底 53.00 点、全年 -37.7%；恐慌的遗产是 1913 年美联储成立。</p>
+<p><b>现实意义</b>：危机管理的三原则在摩根身上已成模板：速度（当晚审计、当晚出钱）、选择性（救有偿付能力的机构）、威慑（逼同行共担）。这正是后来各国央行与存款保险制度的功能化版本——区别只在于，现代版不必再等一位富豪发善心。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>1929 之一：斯特朗的遗产与美联储的错误</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在过去的75年里，美联储或其他银行系统所犯下的最昂贵的错误。</p>
+<p>结果（美国股市在接下来的5个月里不断回落，在此期间，已下跌16.4%）使我确信，我们必须采取行动。当然，我们不能闭着眼睛看这种情况对欧洲有何影响。</p>
+<p>格拉斯知道钱是可替代的。</p>
+<p class="src">——《崩溃和救援》第2章 大崩溃（1929年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1929 年的前史是一部货币政策传记：斯特朗为帮英国回归金本位，1924 年把贴现率降到 3%，并在道歉信里写下「我们不能闭着眼睛看这种情况对欧洲有何影响」。他 1928 年 10 月去世后，美联储在 1927 年四巨头会议上选择了宽松——委员米勒事后称这是「在过去的 75 年里，美联储或其他银行系统所犯下的最昂贵的错误」。</p>
+<p><b>逻辑脉络</b>：1928 年起美联储转向加息（2 月 4%、7 月 5%），但非银行渠道的资金（占比 24%→41%）对冲了紧缩；1929 年改用「直接施压」劝阻银行放贷，又被格拉斯一句「钱是可替代的」点破：堵住银行的口，资金就从公司和个人绕道流向经纪人贷款。哈里森九次提请加息被否，货币政策的最后一个工具失灵——牛市在流动性迷宫里继续爬高，直至 9 月 3 日 381.17 点见顶。</p>
+<p><b>现实意义</b>：这段历史是「结构性流动性」研究的经典案例：紧缩只盯住受监管的银行体系时，杠杆会向监管外迁移。今天的影子银行、私募信贷是同一问题的当代版本——数总量容易，数杠杆难。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>1929 之二：资金池、顶峰与巴布森崩盘</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在交易所大厅观看美国无线电公司的股价变动，就像「一场巷战」。</p>
+<p>我要重申我在去年和前年这个时候说的话——迟早会发生崩盘，这将导致主要股票的下跌，道琼斯指数会下降60点到80点。</p>
+<p>股票的投机价格更高，这个部门就觉得更尴尬，假如将每股股价定在215美元以上，其价格将远超实际股票的内在价值。</p>
+<p class="src">——《崩溃和救援》第2章 大崩溃（1929年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：顶部的市场由三种力量构成。其一，操纵：米汉替杜兰特运营 RCA 资金池，1928 年 3 月 12 日单日涨 14.9% 收于 138.50 美元，交易大厅如同「一场巷战」，池子净赚 1000 万美元。其二，杠杆：投资信托以「每 1 美元客户资本配 8 美元债务」的金字塔结构进场。其三，预警：统计学家巴布森 9 月 5 日公开重申「迟早会发生崩盘……道琼斯指数会下降 60 点到 80 点」，市场当日应声而落——史称「巴布森崩盘」。</p>
+<p><b>逻辑脉络</b>：真正的信号来自定价权的失守：10 月 11 日马萨诸塞州公用事业委员会否决波士顿爱迪生拆股，直指其「股票的投机价格更高」、每股 375 美元的市价远超 215 美元的评估价值——公用事业股是投资信托杠杆的底座，这一否决等于告诉市场杠杆金字塔的地基是虚的。9 月 20 日哈特利伪造抵押证书的伦敦丑闻收紧了国际信贷，10 月 23 日市场再跌 6.3%，RCA 单日 -14.6%。</p>
+<p><b>现实意义</b>：顶部识别的现代清单：操纵性放量（对照资金池）、杠杆结构依赖的板块率先定价失真（对照公用事业）、独立估值机构的否决意见（对照州委员会）。三者同时出现时，「唱反调的人不一定错，只是早」这句话就该被认真对待。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>1929 之三：黑色星期四到黑色星期二</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>惠特尼以每股205美元的价格购买了25000股「美国钢铁」。</p>
+<p>在专业人士的攻击以及清算的双重作用下，几个在公共事业板块领先的股票在价格结构上出现了严重失衡。</p>
+<p>道琼斯指数下跌了38.33点，收于260.64点，跌幅为12.8%，这一次股市没有反弹，因为惠特尼兄弟无法筹集到股市所需的支持。</p>
+<p class="src">——《崩溃和救援》第2章 大崩溃（1929年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：崩盘三日的完整时序：10 月 24 日黑色星期四，五巨头（拉蒙特、威金、米切尔、普罗塞尔、波特）聚于摩根总部，惠特尼走出大厅以每股 205 美元买入 25000 股美国钢铁——一次当众表演的「信心喊话」稳住了当天市场；10 月 28 日黑色星期一跌 12.8%，这次没有反弹，因为「惠特尼兄弟无法筹集到股市所需的支持」；10 月 29 日黑色星期二再跌 11.7%，两日 -23%。</p>
+<p><b>逻辑脉络</b>：救市失灵的原因是杠杆的反噬：投资信托在下跌中被迫清仓（「专业人士的攻击以及清算的双重作用」），保证金链条逐级引爆；1930-1932 年道指再跌 33.8%、52.7%、23.1%，1932 年 7 月 8 日低点 41.22 点，直到 1954 年 11 月 23 日才收复 1929 年高点。教训沉淀为制度：1933 年《证券法》、1934 年《证券交易法案》与 SEC 的诞生。</p>
+<p><b>现实意义</b>：公开买入自家股票的「信心喊话」只对当日有效，甚至只是掩盖了出货；可持续的稳定需要真金白银加上制度性买方。判断救市成色的现代指标：买方是谁（央行/财政/产业资本）、是否有后续弹药、是否立法堵漏——1929 年三者皆缺。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>1987 之一：投资组合保险的诞生</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>那天，利兰和鲁宾斯坦决定，他们将成为他们所谓的「动态对冲」的创建和营销合作伙伴，而世界其他地方则称之为「投资组合保险」。</p>
+<p>利兰的哥哥需要的是股票市场上的「看跌期权」。</p>
+<p>他几乎立刻就找到了他们的第一个客户，为1.35亿美元资产做保护。</p>
+<p class="src">——《崩溃和救援》第3章 黑色星期一（1987年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1987 年崩盘的「金融工具影子」诞生于 1976 年 9 月利兰的一个不眠之夜：哥哥抱怨在熊市里既卖不掉股票又赶不上反弹，利兰用布莱克-斯科尔斯框架想出合成看跌期权——用期货动态复制保险，两小时完成方案。他与鲁宾斯坦组成 LOR 公司，「动态对冲」从此被世界称为「投资组合保险」，第一个客户是 1.35 亿美元资产的组合，1982 年底管理规模已超 2.5 亿美元。</p>
+<p><b>逻辑脉络</b>：致命的递归在于：保险有效的前提是流动性充足。到 1987 年 10 月，LOR 直接管理 50 亿、持牌机构管理 450 亿、同类策略合计约 400 亿——当所有人同时按同一模型卖出期货，模型假设的流动性瞬间蒸发。作者点破：由于每个人都使用投资组合保险，所以每个人都不可能喜欢这个结果；同样的流动性幻觉也导致了 2010 年的闪电崩盘。</p>
+<p><b>现实意义</b>：量化风控的同质化本身就是风险源。VaR、动量止盈、波动率目标等策略在逻辑上与 1987 年的组合保险同构：平静时无人卖出，恐慌时全体同时卖出。评估一个策略的尾部风险，要看它的交易指令与市场 others 的相关度，而不是它自己的历史回撤。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>1987 之二：掠夺者时代与十月信号</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>投资者和交易员现在都应该卖出。</p>
+<p>有时你为了拯救一个村庄，必须先摧毁它。</p>
+<p>出价确实是一件子虚乌有的事情。</p>
+<p class="src">——《崩溃和救援》第3章 黑色星期一（1987年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1980 年代中期的市场生态由 LBO 与垃圾债券驱动：吉普森贺卡 79∶1 杠杆让西蒙各赚 7000 万，皮肯斯狙击海湾石油赚 7.6 亿，米尔肯的德崇证券用「高度自信函」把收购推向癫狂。6 月 23 日海林格假投标事件把狂热推到顶峰——一个被解雇的职员谎称收购，事后在草坪上承认「出价确实是一件子虚乌有的事情」。</p>
+<p><b>逻辑脉络</b>：十月的信号密集出现：利率自 3 月起上行、9 月 4 日贴现率升至 6.0%；格林斯潘 10 月 4 日警告紧缩将挤出泡沫——用他的话说是「有时你为了拯救一个村庄，必须先摧毁它」；普利切特在热门简报上写下「投资者和交易员现在都应该卖出」；SEC 主席鲁德演讲提及「整个系统范围内的交易暂停」被媒体误读；众议院收购税案（120 亿新税）直击 LBO 逻辑。10 月 16 日周五跌 108.35 点，组合保险还有 80 亿美元的卖单没有执行完。</p>
+<p><b>现实意义</b>：把 1987 年 10 月当成风险监测的样本周：货币政策转向＋杠杆工具到达临界规模＋知名人物公开喊卖＋税收政策冲击收购逻辑——四类信号在两周内齐聚。当「名嘴齐声喊卖」与模型卖压叠加时，下跌不再是概率问题而是时序问题。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>1987 之三：黑色星期一与周二的反击</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>它随时准备成为流动性的源泉，以支持经济和金融体系。</p>
+<p>主要市场指数期货经历了《华尔街日报》所称的「历史上最强劲的反弹」。</p>
+<p>周二收盘时，道琼斯指数共上涨了102.27点，是迄今为止最大的点数涨幅。</p>
+<p class="src">——《崩溃和救援》第3章 黑色星期一（1987年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：10 月 19 日：DOT 系统开盘吞下 5 亿美元卖单，187 只股票延迟开盘，鲁德的误导性报道在午间加剧恐慌；收盘 -508 点（-22.6%），成交 6.04 亿股、210 亿美元。当晚真正的危机在芝加哥：CME 面临 25 亿美元欠款，某巨头独欠 10 亿；梅拉梅德凌晨与银行家周旋，美联储发表声明「它随时准备成为流动性的源泉」，清算危机才在黎明前化解。</p>
+<p><b>逻辑脉络</b>：10 月 20 日的反击组合拳：NYSE 对套利者关闭 DOT、专家以虚高开盘价清库存、11:31 十只成分股停牌争取时间；CME 的 MMI 期货在流动性真空里被激进买家推起——《华尔街日报》称之为「历史上最强劲的反弹」；上市公司宣布约 62 亿美元回购。当日道指 +102.27 点，史上最大点数涨幅。1987 全年 -8.3%，1989 年 8 月创新高——崩盘没有演变成萧条，因为支付体系被保住了。</p>
+<p><b>现实意义</b>：1987 与 1929 的分岔点就是清算系统：前者央行当晚介入充当最后贷款人，后者等了三年。现代版本规则可总结为：先保清算与保证金链条（期货、回购），再谈股价；「今天早一分钟关门都不行」的摩根式速度，如今由美联储声明与常备工具承接。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>2008：创新链的代价</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我想知道那些该死的东西值多少钱。</p>
+<p>我们对每笔交易都进行评级……即使它是由奶牛构成的，我们也能对它进行评级。</p>
+<p>哨兵并不在他们的岗位上，很大程度上是因为市场所具有的自我修正特性以及金融机构有效监督自身的能力。</p>
+<p class="src">——《崩溃和救援》第4章 金融风暴（2008年） ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：创新链的每一环都名花有主：桑德勒夫妇的 Option ARM 本是审慎产品（15%-30% 首付），被零首付政策与 Countrywide 的 620 信用分放贷稀释；马斯特斯发明 CDS、BISTRO 把 97 亿贷款切成分级；李祥林的高斯联结用 CDS 价格替代历史数据；评级机构把产业链利润证券化——标普员工的邮件自嘲「即使它是由奶牛构成的，我们也能对它进行评级」。AIGFP 以 0.15% 概率的「尾部风险」定价，成了「餐桌上的傻瓜」。</p>
+<p><b>逻辑脉络</b>：链条断裂从估值开始：美林减记 55 亿→79 亿，伯南克问「我想知道那些该死的东西值多少钱」；高盛与 AIGFP 的保证金之争暴露抵押品机制；贝尔斯登 2 美元/股易主；「火箭筒」接管两房；雷曼周末谈崩，9 月 15 日凌晨 1:45 递交 260 页债权人名单的破产申请，道指当日 -504.48 点；AIG 获 850 亿救助；TARP 三页方案被众议院否决当日暴跌 777.68 点，改为向九大行注资 1250 亿后单日 +936.42 点。FCIC 报告的结论是「哨兵并不在他们的岗位上」。</p>
+<p><b>现实意义</b>：2008 年的核心教训是估值与抵押的死亡螺旋：价格跌→追加抵押→折价抛售→价格更跌。承接 1987 年的经验，救援顺序依旧是先冻结清算机制（注资、担保、国有化），而 TARP 首次投票失败证明：救市方案必须有细节，规模与分配规则本身就是信心。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>2010 闪电崩盘与后记的答案</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这是因为他们忽略了价格和其他任何标准，只基于成交量进行操作。</p>
+<p>一家公司将合约卖给另一家公司，另一家公司立即出售给第三家公司，第三家公司再立即将合约卖出，所有这些交易都在几分之一秒内完成。</p>
+<p>当速度和复杂性发生碰撞时，速度通常会赢，而且因为我们对速度的痴迷的第一个受害者是安全性，我们的股市将发生崩溃。</p>
+<p class="src">——《崩溃和救援》第5章 闪电崩盘（2010年）·后记 ｜ 据《崩溃和救援》（斯科特·内申斯 著，赵立光 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：2010 年 5 月 6 日：希腊债务危机背景下，沃德尔和里德公司的 41 亿美元对冲组合用巴克莱的算法执行——算法「忽略了价格和其他任何标准，只基于成交量进行操作」，75000 份 E-mini 合约砸进市场；自营公司间的「烫手山芋」效应让合约在几分之一秒内倒手转卖。NYSE 报价积压、宝洁 4 分钟 -36.7%（股东损失 630 亿）、埃森哲 14:47:43 以每股 0.01 美元成交，道指一度 -998.50 点。</p>
+<p><b>逻辑脉络</b>：自救机制同样在毫秒内运转：CME 14:45:28 触发「停止逻辑」暂停期货 5 秒，抄底买家涌入，12 分钟后市场开始复苏。后记给出全书答案：崩盘的共性是「强劲反弹＋新工具＋催化剂」，而催化剂起作用的时间从 1907 年的 18 个月压缩到 2010 年的几个小时；作者以弗兰肯斯坦自比人造怪物——金融复杂性由人创造，却反过来吞噬创造者，因为「当速度和复杂性发生碰撞时，速度通常会赢」。</p>
+<p><b>现实意义</b>：后记的判断在 2018 年序言里被再次应验：低波动率与基于 VaR 的风控依旧是新的「影子」。对今天的市场参与者的底线：任何以流动性为前提的策略都要回答——如果所有人同时执行，我的对手方是谁？熔断、停止逻辑这类人工减速带之所以有效，正因为它们强制速度输给安全。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《崩溃和救援》的目的，是把五次崩盘的剧本内化成风险检查表：先找新工具，再找催化剂，最后问谁在接杠杆。</p>
+<p><b>其实，每一次股市崩盘都有外部催化剂。</b>应用口诀：先找影子工具，再找催化剂。</p>
+<p><b>美股的历次崩盘都无一例外地存在金融工具的影子——1907年的信托公司，1929年的杠杆投资信托基金，1987年的投资组合保险，2008年的抵押贷款支持证券。</b>应用口诀：问一句「这次的新工具是什么」。</p>
+<p><b>银行意味着信贷，信贷意味着权力。</b>应用口诀：信贷链在哪里断裂，恐慌就从哪里开始。</p>
+<p><b>今天早一分钟关门都不行！</b>应用口诀：最后贷款人不能迟到一分钟。</p>
+<p><b>在过去的75年里，美联储或其他银行系统所犯下的最昂贵的错误。</b>应用口诀：为别人救火，小心烧了自己家。</p>
+<p><b>我要重申我在去年和前年这个时候说的话——迟早会发生崩盘，这将导致主要股票的下跌，道琼斯指数会下降60点到80点。</b>应用口诀：唱反调的人不一定错，只是早。</p>
+<p><b>投资者和交易员现在都应该卖出。</b>应用口诀：名嘴齐声喊卖时，检查模型卖压。</p>
+<p><b>我想知道那些该死的东西值多少钱。</b>应用口诀：看不懂的资产，先问值多少钱。</p>
+<p><b>市场是脆弱的，如果它在近期强劲反弹，并且已经超出了合理回报的水平，那么这就是将市场推向混乱的催化剂。</b>应用口诀：涨得越欢，越怕坏消息。</p>
+<p><b>当速度和复杂性发生碰撞时，速度通常会赢，而且因为我们对速度的痴迷的第一个受害者是安全性，我们的股市将发生崩溃。</b>应用口诀：快到看不懂时，强制减速。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/1907%E5%B9%B4%E5%A4%A7%E6%81%90%E6%85%8C" target="_blank" rel="noopener">1907 年大恐慌 · 维基百科</a><span>背景：第 1 章主角事件，摩根救市与美联储成立的前史。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/1929%E5%B9%B4%E5%8D%8E%E5%B0%94%E8%A1%97%E8%82%A1%E7%81%BE" target="_blank" rel="noopener">1929 年华尔街股灾 · 维基百科</a><span>背景：第 2 章大崩溃，大萧条与 SEC 制度的起点。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E8%89%B2%E6%98%9F%E6%9C%9F%E4%B8%80_(1987%E5%B9%B4)" target="_blank" rel="noopener">黑色星期一（1987） · 维基百科</a><span>佐证：第 3 章投资组合保险与组合保险踩踏的机制。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%97%AA%E5%B4%A9_(%E7%BB%8F%E6%B5%8E%E5%AD%A6)" target="_blank" rel="noopener">闪崩（经济学） · 维基百科</a><span>佐证：第 5 章 2010 年闪电崩盘，程序化交易与熔断机制。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《崩溃和救援》 ～ 原文据中信出版集团版（赵立光 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

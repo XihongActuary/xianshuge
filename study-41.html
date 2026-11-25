@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 周文王的易经 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/41-yijing.html">本书书页</a></p>
+<h1>深度研读 · 周文王的易经</h1>
+<p class="sub">由由 著 · 中国人民大学出版社</p>
+<p class="lead">研读说明：本册把《易经》从占筮神秘之书还原为「一部狱中写就的建周规划书」——作者由由以风险管理职业眼光提出「卦象逻辑解易法」，用四条证据链锁定作者为周文王，把旅卦困卦读成狱中密码情报，把西南得朋读成最高战略规划。全书按「基础知识→研究成果→阅读方法→六十四卦正文解析→名言名句」五部分推进，本研读共十二节（据中国人民大学出版社版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>开场：一部风险管理的教科书</a></li>
+<li><a href="#s2"><b>贰</b>作者考证：四条证据链锁定周文王</a></li>
+<li><a href="#s3"><b>叁</b>旅与困：狱中密码情报通报</a></li>
+<li><a href="#s4"><b>肆</b>见群龙无首：最高政治理念</a></li>
+<li><a href="#s5"><b>伍</b>西南得朋：最高战略规划</a></li>
+<li><a href="#s6"><b>陆</b>箕子之明夷：内应与成书年代</a></li>
+<li><a href="#s7"><b>柒</b>上经风险课：坤·泰·否</a></li>
+<li><a href="#s8"><b>捌</b>上经修身课：谦·豫·复</a></li>
+<li><a href="#s9"><b>玖</b>下经人情课：中孚·恒·睽</a></li>
+<li><a href="#s10"><b>拾</b>损与益：三千年前的经济学</a></li>
+<li><a href="#s11"><b>拾壹</b>革鼎既济未济：变革与完成之道</a></li>
+<li><a href="#s12"><b>拾贰</b>名言名句集萃：君子人格</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>开场：一部风险管理的教科书</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>《易经》简直就是一部风险管理的教科书</p>
+<p>阴阳和谐谓之中，不偏不倚谓之中</p>
+<p>一阴一阳之谓道</p>
+<p class="src">——《周文王的易经》正文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者的身份决定了全书的读法：一位风险管理从业者学易之后发现，《易经》简直就是一部风险管理的教科书——风险管理的格言警句遍布全书。解易的方法随之立起：不问神灵问逻辑，先排卦象，再用卦象的上下关系逐句对读卦爻辞，一切解释都要经得起卦象逻辑的检验。而全书的第一把钥匙是「中」：阴阳和谐谓之中，不偏不倚谓之中——中国之所以称为中国，除地理概念外，更有这个文化的内核。</p>
+<p><b>逻辑脉络</b>：第一部分从八卦讲起：阴阳是两个基本符号，八卦是天地水火风雷山泽八种自然象，乾坤交感生出六十四卦，一阴一阳之谓道。先天八卦与后天八卦图形为何不同，这个千古悬案留到第二部分给答案——答案就藏在周文王的战略里。阅读方法部分交代了本书自成一派的读法：每一卦都按卦象、卦辞、爻辞、译文、分析五步走，把判词序列（元亨利贞、无咎、悔、吝、厉、凶）当作古人的风险评级表来用。</p>
+<p><b>现实意义</b>：把《易经》当风险管理教科书读，判词序列就是现成的风险分级工具：吉＝收益可见，无咎＝可控，悔＝可挽回，吝＝小损失，厉＝高警示，凶＝重大损失。做任何决策前先问一句：这件事落在哪一档？——三千年前的话，就是今天的风险评级表。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>作者考证：四条证据链锁定周文王</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>帝乙是商纣王的父亲，是商朝的贤君</p>
+<p>东面的邻居，影射的是商纣王，财多势大，用牛来祭祀祖宗</p>
+<p>西面的邻居，指的是周国，国小贫穷，但是诚恳实在，祭祀祖宗不用牛</p>
+<p class="src">——《周文王的易经》第二部分 本书的主要研究成果与发现 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《易经》的作者是谁、成书于何时，本书给出四条可复核的证据链：其一，乾卦言龙、坤卦言马，这种口气只有王侯才有——普通人不敢以龙自居；其二，泰卦六五与归妹卦六五都写帝乙归妹，帝乙是商纣王的父亲，是商朝的贤君，他嫁女给谁？作者必与商王有姻亲关系；其三，既济卦九五的东邻西邻：东面的邻居，影射的是商纣王，财多势大，用牛来祭祀祖宗；西面的邻居，指的是周国，国小贫穷，但是诚恳实在，祭祀祖宗不用牛——证明作者是周国的王侯；其四，困卦初六的幽谷自述，证明这位王侯坐过牢。四链合一，指向周文王。</p>
+<p><b>逻辑脉络</b>：论证顺序刻意从口气到人事再到自述：先用称龙的胆量锁定王侯身份，再用帝乙归妹锁定时代与姻亲，再用东邻西邻锁定国籍与立场，最后用困卦幽谷锁定狱中经历——每一环都可回到卦爻辞原文复核。附录所收《系辞下》的追问「其当殷之末世，周之盛德耶？当文王与纣之事耶」，与四铁证遥相呼应。</p>
+<p><b>现实意义</b>：这是现成的证据链思维训练：给一个结论找证据，要像本书一样让每条证据都独立可验证、互相不依赖——身份、时代、立场、经历各占一条，缺一条就只剩孤证。读史如此，做审计、做尽调、做内控，同法。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>旅与困：狱中密码情报通报</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>臀困于株木，入于幽谷，三岁不觌</p>
+<p>每天坐在光秃秃的树下，被关押在幽谷之中，很多年没有人来探视</p>
+<p>鸟焚其巢，旅人先笑后号啕。丧牛于易，凶</p>
+<p class="src">——《周文王的易经》第四部分 《易经》正文解析 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：旅卦与困卦是全书的自述双章。困卦初六——臀困于株木，入于幽谷，三岁不觌——译出来就是：每天坐在光秃秃的树下，被关押在幽谷之中，很多年没有人来探视；这是文王被囚羑里的实况记录。旅卦则回忆此前的苦旅：朝歌负荆请罪、遭遇两场火灾——鸟焚其巢，旅人先笑后号啕。丧牛于易，凶，写的是第二场火灾后财产尽失又被关押。狱中秘密写作，很多话只能用隐语，这就是《易经》读来晦涩的真正原因。</p>
+<p><b>逻辑脉络</b>：两卦合读才见全貌：旅卦按时间线给出「受封西伯→赴朝歌请罪→第一场火→得资斧心不快→第二场火→被囚」的情报序列；困卦给出狱中生活的六种状态——坐幽谷、困酒食、据蒺藜、困金车、困赤绂、困葛藟，末爻「动悔有悔，吉行也」给出突围口诀：行动虽然有悔，但有悔的行动就是吉。情报以密码写成，收信人是岐山。</p>
+<p><b>现实意义</b>：危机中的记录方法值得学：文王在最不自由的处境里，把敌方形势、自身处境、突围路径都编码进卦象留存后世——越是受限，越要把信息组织成可传递的结构。逆境写作法：不写情绪，写事实与对策。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>见群龙无首：最高政治理念</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>见群龙无首，吉</p>
+<p>周文王的最高政治理念</p>
+<p>乾元用九，天下治也</p>
+<p class="src">——《周文王的易经》正文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：乾卦用九「见群龙无首，吉」被本书列为周文王的最高政治理念：一群龙都不称首，谁也不凌驾于谁之上，这是吉——不搞个人崇拜、不设终身权威的治理观。用六「利永贞」与之对读：坤道永远守正。乾坤两卦是全书纲领，本书提醒我们对这两卦的每一句话都应当细心揣摩——而「乾元用九，天下治也」正是《文言》给出的注脚：群龙无首不是无序，是更高层次的有序。</p>
+<p><b>逻辑脉络</b>：乾卦六爻是一条成长曲线：潜龙勿用（蓄势）、见龙在田（初现）、终日乾乾（勤勉）、或跃在渊（试探）、飞龙在天（登顶）、亢龙有悔（过盈则亏）——六爻讲的是进退的时机学，用九则是时机学之上的价值观：到位之后不恋栈、不称首。作者强调，这句判词为「吉」，说明它不是无奈的退让，而是主动设计的理想结构。</p>
+<p><b>现实意义</b>：翻译成组织语言：一支队伍里人人都能独当一面，而没有一个不可替代的「首」，才是结构性的吉——接班人计划、梯队建设、权力制衡，讲的都是这件事。飞龙在天时就要想亢龙有悔：登顶日，就是规划退场日的开始。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>西南得朋：最高战略规划</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>西南得朋，东北丧朋</p>
+<p>这句话的含义贯穿整部《易经》，在多个卦中都有体现</p>
+<p>王用亨于岐山</p>
+<p class="src">——《周文王的易经》正文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：坤卦卦辞「西南得朋，东北丧朋」被本书破译为周文王的最高战略规划：西南是联盟方向——友邦在西南，往西南去就得到朋友；东北是商纣王所在的朝歌方向——往东北去就失去朋友。这句话的含义贯穿整部《易经》，在多个卦中都有体现：蹇卦「利西南，不利东北」同旨，解卦「利西南」同旨，连先天八卦改为后天八卦，也是为了在方位图上突出这条战略轴线。</p>
+<p><b>逻辑脉络</b>：战略在卦中的落点步步可查：升卦六四「王用亨于岐山」——要想升职，就要忠诚于位于岐山的周国，把周国的祖宗当成自己的祖宗来祭祀，这是聚拢盟友的信仰工程；萃卦「王假有庙」用宗庙信仰聚才；谦卦、比卦教的是联盟姿态。全书下经的政治叙事，几乎都是这条西南轴线的展开。</p>
+<p><b>现实意义</b>：弱者的战略课：小体量对抗大体量，第一原则不是正面硬拼，而是先划定「哪里得朋、哪里丧朋」的方向感——把有限的资源投到能结盟的方向上。方位感即战略：先分清自己的西南与东北，再谈竞争。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>箕子之明夷：内应与成书年代</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>箕子之明夷，利贞</p>
+<p>《易》之兴也，其当殷之末世，周之盛德耶？当文王与纣之事耶？是故其辞危</p>
+<p>惧以终始，其要无咎</p>
+<p class="src">——《周文王的易经》附录 《易传》原文·《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：明夷卦是政治极端黑暗的象征——地在上、火在下，光明被遮个严严实实。六五爻「箕子之明夷，利贞」非常耐人寻味：一般解释是箕子装疯避祸，本书则读出更深的情报学含义——箕子是商朝内部的最大内应，佯狂为奴是伪装，其后来东渡朝鲜开国。《系辞下》的追问「《易》之兴也，其当殷之末世，周之盛德耶？当文王与纣之事耶？是故其辞危」，从《易传》内部佐证了成书年代：殷末周初，文王与纣之事。</p>
+<p><b>逻辑脉络</b>：明夷六爻给出黑暗期的六种生存法：垂其翼而行（低调撤离）、用拯马壮（借力救援）、南狩得其大首（战略反攻）、入于左腹获心意（深入敌营）、箕子之明夷（内应之晦）、初登于天后入于地（暴政必亡）。「惧以终始，其要无咎」是全书的危机哲学总纲：从始至终保持敬畏，就不会有大错。</p>
+<p><b>现实意义</b>：「其辞危」三个字点透了全书的语气：危言不是恐惧情绪，而是危机意识的制度化表达。组织最好的状态，是把「惧以终始」写进流程——越是顺风顺水，越要有人专门负责说危言。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>上经风险课：坤·泰·否</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>履霜坚冰至</p>
+<p>无平不陂，无往不复</p>
+<p>其亡其亡，系于苞桑</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：上经三十卦里藏着三部风险教材。坤卦初六「履霜坚冰至」：脚踩到霜，就知道坚冰要来了——做业务也好，选拔干部也好，风险意识是基本条件，而一眼看得见的不叫风险，风险总是藏在看似正常的表面之下。泰卦九三「无平不陂，无往不复」：没有只有平而没有坡的地，没有只往而不返的路——这是周期律。否卦九五「其亡其亡，系于苞桑」：时时念着要亡要亡，反而像系在丛生的桑树上一样稳固——危机感即安全带。</p>
+<p><b>逻辑脉络</b>：三卦连读是风险管理的完整闭环：坤教识别（早期信号——霜），泰否教周期（无平不陂的对称律：泰极否来，否极泰来），否九五教应对（用危机感换安全感）。泰卦「内君子而外小人」与否卦「内小人而外君子」的内外之辨，正是上下交流是否通畅的结构性诊断。</p>
+<p><b>现实意义</b>：三个动作可以直接搬走：给每类业务找「霜位指标」（最早预警信号）；给顺境预埋「无往不复」的反转预案；把「其亡其亡」设为例会固定议题。风险管理的三千年心法，不过九个字：见霜、知返、常念亡。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>上经修身课：谦·豫·复</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>谦尊而光，卑而不可逾</p>
+<p>介于石，不终日，贞吉</p>
+<p>反复其道，七日来复</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：谦卦是《易经》唯一六爻皆吉的卦，《彖传》给出原理：天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦——谦尊而光，卑而不可逾：谦虚让尊者更光大，让卑者不可逾越，它是零成本的护城河。豫卦六二「介于石，不终日，贞吉」：判断力如磐石，不在不利的局面里耗到终日，见机即断。复卦「反复其道，七日来复」：复兴有周期律，低谷不是终点，而是下一轮的起点。</p>
+<p><b>逻辑脉络</b>：三卦构成修身三部曲：谦管姿态（先并于人），豫管判断（介于石，不终日——识机而不迟疑），复管恢复（不远复、休复、频复、独复、敦复五种复盘层次，迷复则凶）。《系辞》特意引「介于石」点赞「君子见几而作，不俟终日」——三千年前的决断论。</p>
+<p><b>现实意义</b>：对高难度沟通尤其有效：姿态上先给足谦（人恶盈而好谦），判断上给自己限定「不终日」（不在坏局面里恋战），行动上信「七日来复」（跌倒后按周期安排复盘与再出发）。三卦就是一套逆境操作系统。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>下经人情课：中孚·恒·睽</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>鸣鹤在阴，其子和之；我有好爵，吾与尔靡之</p>
+<p>不恒其德，或承之羞，贞吝</p>
+<p>遇主于巷，无咎</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：中孚的「孚」源自「孵」：鸟孵卵，如期而至，不失其信——诚信的最高意象。本书读出中孚四德：仁爱心、责任心、诚信心、包容心，并为「中孚之道就是中庸之道」立论。「鸣鹤在阴，其子和之；我有好爵，吾与尔靡之」是完全的《诗经》体——鹤在隐蔽处鸣叫，小鹤应声相和；我有好酒，与你共举，这是朋友之道最美的写照。恒卦九三「不恒其德，或承之羞」提醒德要恒守；睽卦九二「遇主于巷」教的是提意见要挑场合。</p>
+<p><b>逻辑脉络</b>：下经起于咸恒（性爱与婚姻），而以中孚立人心之信：人际的所有技术，都以孚为底座——睽卦讲人和（丧马勿逐自复、遇主于巷、载鬼一车化敌为友），归妹讲纳妾，革讲变革时机，全都要靠「有孚」来托底。卦序本身在说：家庭与组织的本质，是把陌生人变成「鸣鹤相和」的同类。</p>
+<p><b>现实意义</b>：中孚四德可作个人信用清单：仁爱心（替人着想）、责任心（说到做到）、诚信心（不欺不诈）、包容心（容得下不同）——四项都齐，你在别人心里就是「孚」；缺一项，其余三项都要打折。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>损与益：三千年前的经济学</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>三人行则损一人，一人行则得其友</p>
+<p>凡益之道，与时偕行</p>
+<p>君子以见善则迁，有过则改</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：损卦是征税之道（损下益上），益卦是分配之道（损上益下）——两卦对读就是一部财政学。损卦六三「三人行则损一人，一人行则得其友」讲的是致一之道：三人同行会生猜疑，一人独行反而得友——专一才有信任。《彖传》「凡益之道，与时偕行」：分配没有永恒的公式，要看时机；损卦彖传的「损益盈虚，与时偕行」同旨。《象传》「君子以见善则迁，有过则改」，则是组织纠错机制的最早表述。</p>
+<p><b>逻辑脉络</b>：损益互为表里：损卦教减法（惩忿窒欲——象传把减法用在情绪与欲望上），益卦教加法（见善则迁），而加减都要「有时」——二簋可用享，祭品不在多而在诚；或益之十朋之龟，受益不在大而在信。下九「莫益之，或击之，立心勿恒，凶」警告：立心不恒，加法会变减法。</p>
+<p><b>现实意义</b>：给团队规模一个三千年前的小切口判据：超过「三人」的协作单元要主动做减法（损一人），拆成能「一人行则得其友」的小单元；给政策一个「与时偕行」的到期检查机制——所有加减法都要带失效日期。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>革鼎既济未济：变革与完成之道</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>汤武革命，顺乎天而应乎人</p>
+<p>东邻杀牛，不如西邻之禴祭，实受其福</p>
+<p>小狐汔济，濡其尾</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：革卦「己日乃孚」：变革要等时机成熟才能取信于人，《彖传》给出千古名句「天地革而四时成，汤武革命，顺乎天而应乎人」——变革的合法性来自顺应时势与人望。鼎卦是纳贤之道（鼎颠趾，利出否——先倒出旧渣，再装新贤）。既济卦九五「东邻杀牛，不如西邻之禴祭，实受其福」：殷商杀牛大祭不如周国薄祭来得实诚——真诚比排场重要。未济「小狐汔济，濡其尾」：小狐狸快渡完河打湿了尾巴——行百里者半九十。</p>
+<p><b>逻辑脉络</b>：六十三、六十四卦是全书的完成论：既济卦辞「初吉终乱」——完成之日就是松懈之始，所以爻辞全是「终日戒」的提醒；未济排在最后，是作者刻意的收笔——事业永远未完成，小过之后还有未济，奋斗没有终点。两卦互为镜像：水在火上是既济（成），火在水上是未济（将成）。</p>
+<p><b>现实意义</b>：变革管理的三个抓手：等「己日」（共识窗口）再动；像鼎颠趾一样先出否（先清理旧存量再谈新增长）；把「初吉终乱」写进项目后评估——上线那天成立的专门小组，盯的就是濡其尾的那段河滩。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>名言名句集萃：君子人格</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天行健，君子以自强不息</p>
+<p>地势坤，君子以厚德载物</p>
+<p>君子以自昭明德</p>
+<p class="src">——《周文王的易经》附录 《周易》原文 ｜ 据《周文王的易经》（由由 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本书第五部分收录一百二十条《易经》名言名句并附白话译文，是全书最实用的随身手册。其中最重的是乾坤两句座右铭：「天行健，君子以自强不息」——天道刚健运转，君子效法它，自强而不停息；「地势坤，君子以厚德载物」——地势柔顺承载万物，君子效法它，以厚德容纳他人。晋卦《象传》「君子以自昭明德」补上第三块拼图：光明德性要靠自己一天天擦亮，不靠外力授予。</p>
+<p><b>逻辑脉络</b>：三句连读是完整的人格结构：自强不息管进取（乾的刚健），厚德载物管包容（坤的柔顺），自昭明德管自省（晋的向上）——进取而不伤人，包容而不失格，成就而归于自修。《文言》补足方法论：遁世无闷、不见是而无闷——不被看见也不苦闷，正是自强不息的心理底座。</p>
+<p><b>现实意义</b>：把两句座右铭拆成可执行动作：每季度问自己一次「我最近六个月新长了什么本事」（自强不息的账），每季度问一次「我最近容下了哪些与我不同的人」（厚德载物的账）——两本账都丰盈，就是君子人格的复利。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《周文王的易经》的目的，是把三千年前那部狱中规划书，变成今天每个人案头的风险评级表与人生时机学：潜与飞、霜与冰、谦与亢、损与益，全在一线之间。</p>
+<p><b>天行健，君子以自强不息</b>应用口诀：低谷时读乾卦——先蓄力，再起飞。</p>
+<p><b>地势坤，君子以厚德载物</b>应用口诀：位子越高，越要能装事、容人。</p>
+<p><b>潜龙勿用</b>应用口诀：时机未到，修炼内功不丢人。</p>
+<p><b>亢龙有悔</b>应用口诀：登顶之后，最先安排的就是退路。</p>
+<p><b>履霜坚冰至</b>应用口诀：风险藏在第一片霜里，别等冰来。</p>
+<p><b>无平不陂，无往不复</b>应用口诀：顺境里预埋一份反转预案。</p>
+<p><b>其亡其亡，系于苞桑</b>应用口诀：把危机感变成固定议程，而不是情绪。</p>
+<p><b>谦尊而光，卑而不可逾</b>应用口诀：谦虚是最省钱的护城河。</p>
+<p><b>三人行则损一人，一人行则得其友</b>应用口诀：协作单元别超载，专一才有信任。</p>
+<p><b>君子藏器于身，待时而动</b>应用口诀：本事常备着，机会来了再亮出来。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E6%98%93" target="_blank" rel="noopener">周易 · 维基百科</a><span>背景：六十四卦体系与经传结构的通识框架，本书研究对象的全景图。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E6%96%87%E7%8E%8B" target="_blank" rel="noopener">周文王 · 维基百科</a><span>背景：本书作者考证的四铁证所指向的主角——演易与羑里之囚的史实框架。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%A6" target="_blank" rel="noopener">八卦 · 维基百科</a><span>佐证：第一部分的基础符号系统，以及先天八卦改后天八卦的战略解读。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E7%BF%BC" target="_blank" rel="noopener">十翼 · 维基百科</a><span>延伸：附录《易传》原文（系辞·序卦·说卦·杂卦）的思想史定位与作者争议。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《周文王的易经》 ～ 原文据中国人民大学出版社版校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

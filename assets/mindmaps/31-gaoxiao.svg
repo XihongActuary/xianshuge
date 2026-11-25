@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1194" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="如何高效读懂一本书思维导图">
+  <path d="M 200 597 C 250 597, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 692, 316 692" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 692 C 556 692, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 692 C 556 692, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 692 C 556 692, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 692 C 556 692, 566 770, 596 770" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 904, 316 904" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 904 C 556 904, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 956, 596 956" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 1090, 316 1090" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1090 C 556 1090, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1090 C 556 1090, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1090 C 556 1090, 566 1142, 596 1142" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="549" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="575" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">如何高效读懂一本书</text>
+  <text x="115" y="595" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Read Books Efficiently</text>
+  <text x="115" y="617" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">十种读法 · 一个框架</text>
+  <text x="115" y="633" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Ten Methods · One Framework</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">序篇十问</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Ten Questions</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">一年百本怎么做</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">100 books/year</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">速读vs精读</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Speed vs depth</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">经典读不进去</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">Classic barriers</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">地基读法</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Foundation</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">通读法：反复读透经典</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Repeat classics</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">硬盘分区比喻</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Partition the brain</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">功不唐捐</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">No effort wasted</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">进阶读法</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Advanced</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">树读法：写书大纲</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Outline first</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">图读法：导图啃硬书</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Mind-map hard books</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">框读法：框架拆经管</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Frame business books</text>
+  <rect x="316" y="668" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="690" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">轻量读法</text>
+  <text x="422" y="708" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Light Methods</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">炼读法</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Distill bestsellers</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">抄读法</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Copy great minds</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">仿读法：动手</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Learn by doing</text>
+  <circle cx="602" cy="770" r="4" fill="#c98a8a"/>
+  <text x="618" y="769" font-size="15" fill="#cfc6b2">诵读/闲读</text>
+  <text x="618" y="786" font-size="11" font-style="italic" fill="#8fa3b8">Recite &amp; leisure</text>
+  <rect x="316" y="880" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="902" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">批判性思维</text>
+  <text x="422" y="920" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Critical Thinking</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">逆读法</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Read against</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">识别隐含假设</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">Spot assumptions</text>
+  <circle cx="602" cy="956" r="4" fill="#b39ac9"/>
+  <text x="618" y="955" font-size="15" fill="#cfc6b2">别为抬杠而抬杠</text>
+  <text x="618" y="972" font-size="11" font-style="italic" fill="#8fa3b8">Not for quibbling</text>
+  <rect x="316" y="1066" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1088" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">输出闭环</text>
+  <text x="422" y="1106" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">Output</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">笔记=摘要+评注</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Notes + comments</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">拆书三段式</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">3-step digest</text>
+  <circle cx="602" cy="1142" r="4" fill="#d9c98a"/>
+  <text x="618" y="1141" font-size="15" fill="#cfc6b2">复原测试</text>
+  <text x="618" y="1158" font-size="11" font-style="italic" fill="#8fa3b8">Recovery test</text>
+</svg>

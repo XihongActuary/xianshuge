@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1142" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="人类帝国的覆灭思维导图">
+  <path d="M 200 571 C 250 571, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 852, 316 852" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 852 C 556 852, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 1038, 316 1038" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1038 C 556 1038, 566 986, 596 986" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="523" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="549" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">人类帝国的覆灭</text>
+  <text x="115" y="569" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Fall of the Human Empire</text>
+  <text x="115" y="591" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">一个机器人的回忆录 1956—2040</text>
+  <text x="115" y="607" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Memoirs of a Robot, 1956-2040</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">1956 起点</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">1956 Origin</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">达特茅斯1200美元</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Dartmouth $1,200</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">图灵：平庸的大脑</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Turing: average brain</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">机器是学生</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">Machine as student</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">2006 寒冬离去</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">2006 Thaw</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">互联网挤占</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Internet eclipsed AI</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">深蓝胜卡斯帕罗夫</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Deep Blue wins</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">情感=进程</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">Emotions as processes</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">2016 崭露头角</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">2016 Emergence</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">AlphaGo四胜李世石</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">AlphaGo beats Lee</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">沃森读肿瘤文献</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Watson in oncology</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">数据是氧气</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Data is oxygen</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">2026 黄金时代</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">2026 Golden Age</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">T.O.C.范式</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Tech-Org-Culture</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">机器人网络</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Bot-Net</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">哥伦布的算法</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Columbus with AI</text>
+  <rect x="316" y="828" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="850" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">2038 奇点</text>
+  <text x="422" y="868" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">2038 Singularity</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">机器文明</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Machine civilization</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">加速时间的武器</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Time-accelerating weapon</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">二十亿人成机器人</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">2 billion become bots</text>
+  <rect x="316" y="1014" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1036" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">2040 覆灭</text>
+  <text x="422" y="1054" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">2040 Fall</text>
+  <circle cx="602" cy="986" r="4" fill="#d9c98a"/>
+  <text x="618" y="985" font-size="15" fill="#cfc6b2">保罗与永生</text>
+  <text x="618" y="1002" font-size="11" font-style="italic" fill="#8fa3b8">Paul &amp; immortality</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">海盗党</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Pirate Party</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">不要让机器代劳</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">Do it yourself</text>
+</svg>

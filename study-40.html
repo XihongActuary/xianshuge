@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 哲学·科学·常识 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/40-zhexue.html">本书书页</a></p>
+<h1>深度研读 · 哲学·科学·常识</h1>
+<p class="sub">陈嘉映 著 · 中信出版社（2018年2月）</p>
+<p class="lead">研读说明：本册是哲学家陈嘉映的代表作（中信新版，2018），以老子「既得其母，以知其子」题词开卷，追问一个根本问题：哲学与科学从同根（哲学—科学）到分道，究竟发生了什么？上篇三章梳理从感应思维、希腊天学到伽利略—牛顿的历史转变，下篇四章专论科学概念、数学化、实证与实在，终章回答「哲学何为」。本研读共十二节，先录原文（据中信出版社版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>两套真理？：科学把心灵留在了画面之外</a></li>
+<li><a href="#s2"><b>贰</b>天道远，人道迩：从感应思维到理知时代</a></li>
+<li><a href="#s3"><b>叁</b>一切是水：理论的诞生与「不要动我的圆」</a></li>
+<li><a href="#s4"><b>肆</b>两球理论与哥白尼革命：日心说的六十年长跑</a></li>
+<li><a href="#s5"><b>伍</b>自然这部书是用数学文字写成的：伽利略的转折</a></li>
+<li><a href="#s6"><b>陆</b>宇宙的坍塌：牛顿的绝对空间与人的失位</a></li>
+<li><a href="#s7"><b>柒</b>经验与实验：事实世界大于经验世界</a></li>
+<li><a href="#s8"><b>捌</b>科学概念：冰有热量，鲸不是鱼</a></li>
+<li><a href="#s9"><b>玖</b>数学化：给我运动和广延，我就能构造出世界</a></li>
+<li><a href="#s10"><b>拾</b>数学理解力：世上没有人懂得量子力学</a></li>
+<li><a href="#s11"><b>拾壹</b>我不杜撰假说：实证、预测与实在</a></li>
+<li><a href="#s12"><b>拾贰</b>哲学何为？：科学是真理，但不是全部真理</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>两套真理？：科学把心灵留在了画面之外</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>柯瓦雷质疑说：两套真理，那就是没有真理</p>
+<p>建构这个物质世界的代价就是把自我即心灵排除在其外</p>
+<p class="src">——《哲学·科学·常识》导论 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：导论亮出全书的 tension：科学世界观里没有为喜怒哀乐美丑善恶留下席位，科学主义质疑「两套真理」，而科学史家柯瓦雷的回应同样锋利——「两套真理，那就是没有真理」。薛定谔则说出了困境的技术根源：「建构这个物质世界的代价就是把自我即心灵排除在其外」。</p>
+<p><b>逻辑脉络</b>：这两条引文构成全书的动力学装置：科学越来越真，却越来越不关乎我们如何生活；哲学保留着意义的完整，却交出了对世界结构的解释权。陈嘉映此后八章的工作，就是把这对矛盾的历史成因（上篇）与概念结构（下篇）一寸寸摊开。</p>
+<p><b>现实意义</b>：在科学与意义之间摇摆是现代人的日常处境。本书给出的态度不是「信科学还是信哲学」，而是分清两类问题的归属：世界如何运转去问科学，生活如何安顿去问理解——混淆两类问题，才是两套真理焦虑的真正来源。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>天道远，人道迩：从感应思维到理知时代</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天道远，人道迩，非所及也，何以知之？灶焉知天道</p>
+<p>天地之间，只有一个感与应而已，更有甚事</p>
+<p class="src">——《哲学·科学·常识》第一章 理性与哲学 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：理知时代的东方版本浓缩在子产拒绝禳灾的名言里：「天道远，人道迩，非所及也，何以知之？灶焉知天道」——天上的道理太远，人间的道理才切近。而前理知时代的思维方式，则被二程之一伊川一语道尽：「天地之间，只有一个感与应而已，更有甚事？」万物以感应相联系，而非以因果相推演。</p>
+<p><b>逻辑脉络</b>：本章沿「感应思维→神话→觉醒的心智→理知时代」推进：感应式理解（列维-布留尔的互渗律、义和团刀枪不入）不是愚昧，而是一种完整的、自洽的世界解释；理知时代的突破在于把「感应」替换为「原理」——追问事物背后的所以然。子产正处在这个转折点上。</p>
+<p><b>现实意义</b>：「天道远，人道迩」是极实用的判断尺：面对任何宏大叙事（天命、周期、大势），先问它对眼前的行动有什么可检验的指引。切近的、可验证的道理优先于遥远的天意——两千多年前子产已经示范了这种理性态度。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>一切是水：理论的诞生与「不要动我的圆」</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>从亚里士多德开始，没有哪位哲学史家不把泰勒斯所说的“一切是水”视作哲学的源头思想</p>
+<p>不要动我的圆！</p>
+<p class="src">——《哲学·科学·常识》第一章 理性与哲学 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：泰勒斯「一切是水」被公认为哲学的源头思想——它的伟大不在答案，而在第一次用一种自然原理（水）而非神话谱系解释万物。阿基米德在罗马士兵的刀光戈影下张开双臂护住沙盘，喊出「不要动我的圆！」——这句流传千古的话，是求真者面对实在结构时的全部尊严。</p>
+<p><b>逻辑脉络</b>：本章由此进入「理性与理论」的核心论述：理论是整体解释，从概括与类推中生长；阴阳五行与古希腊自然哲学是理论的两个孩子。作者同时埋下伏笔——理论未必导向科学，阴阳五行也是理论，但只有希腊—欧洲传统里长出了以数学为原理的科学，这正是「李约瑟问题」的倒转式追问。</p>
+<p><b>现实意义</b>：「不要动我的圆」是职业尊严的原型：守住自己那块靠专业判断立身的领域，不为权势或喧嚣让步。同时警惕「一切是水」式的诱惑——一个漂亮的统一解释可能只是理论的开始，而不是世界的真相。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>两球理论与哥白尼革命：日心说的六十年长跑</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天文学家逐渐不再增添更多的中间天球，而是发展出了均轮和本轮的学说</p>
+<p>但它所开辟的道路却是近代科学的道路—用数学证明实在的道路</p>
+<p class="src">——《哲学·科学·常识》第二章 从希腊天学到哥白尼革命 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：希腊天学的骨架是两球理论（多天球理论）：地球居宇宙中央，天球每昼夜环绕运转；为解释行星的不规则运动，天文学家发展出均轮与本轮的学说，托勒密体系遂成为操作性的巅峰。哥白尼的数学论证远不够充分，但它开辟了近代科学的道路——「用数学证明实在的道路」。</p>
+<p><b>逻辑脉络</b>：本章的深意在于区分两种理论：托勒密体系是操作性理论（能算准即可），亚里士多德体系是实在性理论（回答天体由什么构成、为何运动）。哥白尼革命的真正内容，是用一套数学实在论取代自然哲学的实在论——因此它不是一次「换参考系」的技术升级，而是理论性质的更替。波普尔式的「证伪」叙事在此被作者精细地拆解：整体理论不可能被驳倒，只能被另一个整体理论取代。</p>
+<p><b>现实意义</b>：任何范式之争（科学、商业、方法论）都可以套用本章的分辨：对手真的被「证伪」了吗，还是只是被一个更整全、更简明的体系取代了？理解这一点，能让人在争论中少些胜负心，多些历史感。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>自然这部书是用数学文字写成的：伽利略的转折</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>大自然这部书是用数学文字写成的</p>
+<p>他进行了斜面实验，摆实验，流水碰撞实验</p>
+<p class="src">——《哲学·科学·常识》第三章 近代科学的兴起 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：伽利略是近代科学的创始人：他重新表述了运动观念，把数学在天上的有效性扩展到地上，亲手进行了斜面实验、摆实验、流水碰撞实验。「大自然这部书是用数学文字写成的」这句名言指出了此后三百年科学的方向——第一物性（可度量）取代第二物性（可感），科学世界与常识世界自此两分。</p>
+<p><b>逻辑脉络</b>：本章的关键洞见是「数学与实验的关系」：伽利略本人说他很少做实验，做实验主要是为了反驳不相信数学的人——实验是数学的跳板，而非科学的核心；核心是把已知与未知一并在数学体系内推演。这纠正了「科学＝实验」的通俗成见，也解释了为何实验方法在十七世纪长期受理论家质疑。</p>
+<p><b>现实意义</b>：数据工作者的伽利略教训：数据（实验）是跳板，模型（数学）才是推演未知的引擎。只堆数据不建模型，永远只能解释已知；敢于从理想化前提出发的推演，才能预言没人观察过的事情。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>宇宙的坍塌：牛顿的绝对空间与人的失位</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>每一个事物都有自己的位置，唯独人失去了位置</p>
+<p>人是机器</p>
+<p>只有一个普遍空间，一个广袤的无限</p>
+<p class="src">——《哲学·科学·常识》第三章 近代科学的兴起 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：牛顿完成「大综合」：布鲁诺「只有一个普遍空间，一个广袤的无限」的宇宙观在牛顿那里定型——空间均匀、无中心、无天然处所。柯瓦雷的感叹成为科学哲学最著名的段落之一：质的可感世界被替换成量的几何世界，「每一个事物都有自己的位置，唯独人失去了位置」。拉梅特里则把机械论推到底：人是机器。</p>
+<p><b>逻辑脉络</b>：本章解释「宇宙的坍塌」的双重含义：天上与地下的物理区分被取消（天文学变成天体物理学），同时宇宙中各部分的本体论差别被取消——位置不再内禀于事物。人失去位置不是修辞，而是结构性的：心灵的居所被机械论挤成了一个「勉强的、贫乏的角落」，二元论成为近代科学的默认代价。</p>
+<p><b>现实意义</b>：「唯独人失去了位置」是技术时代的永恒提醒：每当一套量化体系（KPI、评分、算法画像）接管某个领域，最先被牺牲的往往是不可量化却最要紧的东西。为「人的位置」保留不受量化审判的空间，是制度设计与个人生活的共同底线。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>经验与实验：事实世界大于经验世界</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>大大扩展了的是事实世界而不是经验世界</p>
+<p>没有逻辑—数学的框架，就不可能达到实验的事实</p>
+<p class="src">——《哲学·科学·常识》第四章 经验与实验 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本章推翻「经验科学」这个通行名称：近代科学离开经验越来越远——「大大扩展了的是事实世界而不是经验世界」。望远镜、显微镜、真空实验生产的无数事实，恰恰是我们经验不到的东西；而实验要成立，则依赖概念骨架——皮亚杰说得干脆：「没有逻辑—数学的框架，就不可能达到实验的事实」。</p>
+<p><b>逻辑脉络</b>：本章的概念梳理层层递进：经验（含经受、体验）→观察（去除主体因素）→实验（条件化、可重复、理论指导）。「经验事实」由此获得严格含义——与实验室生产的事实相区别。作者建议以「实证科学」取代「经验科学」之名，因为科学的判据早已不是经验，而是实验与数学的合谋。</p>
+<p><b>现实意义</b>：区分「经验事实」与「实验事实」是信息时代的基本素养：热搜上的个案（经验）与受控研究的结果（实验）不在同一个证据层级。被一条经验事实说服之前，先问：它经过条件化的实验检验了吗？</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>科学概念：冰有热量，鲸不是鱼</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在我们的自然理解中，太阳仍然东升西落，冰是冷的而火是热的，鲸鱼还是鱼</p>
+<p>长宽厚是本质的东西，爱与恨是些副现象</p>
+<p class="src">——《哲学·科学·常识》第五章 科学概念 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：科学概念不取代自然概念，而是另建一套亚语言：科学话语里冰包含热量、鲸鱼是哺乳动物，「但在我们的自然理解中，太阳仍然东升西落，冰是冷的而火是热的，鲸鱼还是鱼」——两者各有其位，互不裁决。数学化的代价则由伯特一语点破：长宽厚是本质的东西，爱与恨是些副现象。</p>
+<p><b>逻辑脉络</b>：本章的概念工程从「概念与语词」的分辨起步：概念是经验事实的结晶，自然概念以经验为基准、互相渗透；科学概念以理论为基准、互相定义。「运动」「力」「加速度」「质量」逐一展示自然用法与科学用法的断裂——质量甚至是牛顿为理论需要凭空创制的「纯理论概念」。</p>
+<p><b>现实意义</b>：日常争论的许多僵局源于概念层级的混淆：用自然概念（直觉、常情）去反驳科学结论，或用科学概念去否定生活理解，都是范畴错误。先问对方用的是哪套语言，再谈对错——这是本书给出的争论礼仪。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>数学化：给我运动和广延，我就能构造出世界</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>给我运动和广延，我就能构造出世界</p>
+<p>大概也是他最早认识到西方科学的精髓或基础在于“度数之学”</p>
+<p class="src">——《哲学·科学·常识》第六章 数学化 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：笛卡儿的宣言「给我运动和广延，我就能构造出世界」是机械论数学化的极点：万物还原为长宽高与位移，一切性质皆可换算。而中国人对这一枢机的领悟同样早熟——陈嘉映引述史籍指出，徐光启「大概也是他最早认识到西方科学的精髓或基础在于『度数之学』」。</p>
+<p><b>逻辑脉络</b>：本章回答「为什么是数学」：数学的真正独特力量不是精确，而是「量的外在性」带来的长程推理能力——数字没有概念内容，纯形式符号可以一环扣一环推到自然认识无法企及的远处而不失真。数学是一种语言、一种通用语言；数学化使科学获得了「远程推理」的能力，这是哲学—科学永远做不到的。</p>
+<p><b>现实意义</b>：「度数之学」四百年后仍是分水岭：一门学问的可积累程度，取决于它有多少硬核能被形式化。做任何研究或业务，值得自问——我的领域里，哪些判断已经可以「变成算式」，哪些还停留在「望文生义」？</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>数学理解力：世上没有人懂得量子力学</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>世上没有人懂得量子力学</p>
+<p>纯数学并不是普通的科学……纯数学家是语法和句法的专家</p>
+<p class="src">——《哲学·科学·常识》第六章 数学化 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：费曼直截了当：「世上没有人懂得量子力学。」超弦物理学家格林三十年后追加断言：现在仍然没有人懂得。这不是谦虚，而是本书的核心区分——技术性理解（会算、会推、能预测）不等于常识理解（直观、会意）。齐曼则点破数学的本性：「纯数学并不是普通的科学……纯数学家是语法和句法的专家。」</p>
+<p><b>逻辑脉络</b>：本章把「数学理解力」确立为一种特殊理解力：每一小步都容易理解，合在一起则远离直观。数学语言的长处与短处是一枚硬币的两面——正因为摆脱了感性的约束，它才能长程推理；正因为摆脱了感性的约束，它才无法「释解」我们对世界的会意式困惑。海森堡「任何理解最终必须根据自然语言」与此互为注脚。</p>
+<p><b>现实意义</b>：在 AI 时代，这个区分愈发锋利：模型可以对世界的预测近乎完美，但那是技术性理解的胜利，不等于人对世界的会意。警惕把「可预测」当「可理解」——费曼的断言今天依然生效。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>我不杜撰假说：实证、预测与实在</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我不杜撰假说</p>
+<p>Savoir pour prévoir（知的目的是预知）</p>
+<p class="src">——《哲学·科学·常识》第七章 自然哲学与实证科学 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：牛顿的「我不杜撰假说」是近代科学的宣言——它反对的不是假说本身，而是原则上无法被数学与实验检验的形而上学思辨。实证主义的信条被孔德概括为 Savoir pour prévoir——「知的目的是预知」；但作者随后辨明：科学的预测能力来自对机制的把握，而机制之所以可把握，全赖数学化的长程推理。</p>
+<p><b>逻辑脉络</b>：本章的概念辨析极密：操作主义（不问真假只求有效）与实证主义（同样追求实在，只是转变了实在的观念）之别；假说—预测—检验的模式为何专属实证科学；哲学理论为何「完全是解释性的，和预言毫无关系」。收尾落在实在问题：科学的实在性无法被终极证明，怀疑总是特定的怀疑——这是维特根斯坦《论确实性》的洞见。</p>
+<p><b>现实意义</b>：「知的目的是预知」是对一切分析工作的最高要求：一份研究若不能在结果出来之前承担风险（做出可证伪的预测），它就只是事后的叙事。给自己立一条规矩——结论必须先于数据完整交付。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>哲学何为？：科学是真理，但不是全部真理</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>科学是真理，但它不是全部真理，也不是首要的真理</p>
+<p>为学日益，为道日损</p>
+<p>精神的伟大和力量是不可低估和小视的</p>
+<p class="src">——《哲学·科学·常识》第八章 通过反思求取理解 ｜ 据《哲学·科学·常识》（陈嘉映 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：终章回答书名之问：科学把心灵留在了世界画面之外，它建立的是物理世界的普适理论，「科学是真理，但它不是全部真理，也不是首要的真理」。哲学是道理之学——通过对经验与概念的反思求取理解；庄老早已道明此意：「天下皆知求其所不知而莫知求其所已知者」「为学日益，为道日损」。黑格尔「精神的伟大和力量」的自信，则成为思辨理论最后的背影。</p>
+<p><b>逻辑脉络</b>：本章给出全书结论：哲学—科学的遗产一分为二——经验反思与概念考察归哲学，整体解释归科学；哲学不再也不能是「哲学—科学」。哲学的任务不是总结规律、发掘机制（那是科学的活），而是让我们更明白自己是怎样理解世界的——它不提供新知识，却提供最重要的知。</p>
+<p><b>现实意义</b>：在万物皆可量化的时代，「为学日益，为道日损」是一剂解药：知识做加法，理解做减法。定期从信息洪流里退出来，追问自己正在用的那些基本概念（成功、幸福、风险、价值）到底意味着什么——这种看似「无用」的功课，恰恰是别人替不了的部分。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这部哲学—科学之辨的目的，是学会分清两类问题：世界如何运转去问科学，生活如何安顿去问理解；并且永远记得，科学是真理，但不是全部真理。</p>
+<p><b>柯瓦雷质疑说：两套真理，那就是没有真理</b>应用口诀：别在两套真理之间站队，先分清问题的归属。</p>
+<p><b>建构这个物质世界的代价就是把自我即心灵排除在其外</b>应用口诀：模型不涵盖的，正是你的位置。</p>
+<p><b>天道远，人道迩，非所及也，何以知之？灶焉知天道</b>应用口诀：远的道理让位给近的检验。</p>
+<p><b>不要动我的圆！</b>应用口诀：守住专业判断的那块沙盘。</p>
+<p><b>大自然这部书是用数学文字写成的</b>应用口诀：能写成算式的，才可积累。</p>
+<p><b>每一个事物都有自己的位置，唯独人失去了位置</b>应用口诀：给不可量化的东西留一块自留地。</p>
+<p><b>大大扩展了的是事实世界而不是经验世界</b>应用口诀：个案是经验，结论要实验。</p>
+<p><b>世上没有人懂得量子力学</b>应用口诀：可预测不等于可理解。</p>
+<p><b>我不杜撰假说</b>应用口诀：结论先于数据，预测承担风险。</p>
+<p><b>科学是真理，但它不是全部真理，也不是首要的真理</b>应用口诀：为学日益，为道日损。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/%E5%93%B2%E5%AD%A6%C2%B7%E7%A7%91%E5%AD%A6%C2%B7%E5%B8%B8%E8%AF%86" target="_blank" rel="noopener">哲学·科学·常识 · 百度百科</a><span>背景：本书版本沿革、章节结构与学界评价。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%99%B3%E5%98%89%E6%98%A0" target="_blank" rel="noopener">陈嘉映 · 维基百科</a><span>背景：作者陈嘉映——首都师范大学哲学系教授，《存在与时间》中译者。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Alexandre_Koyr%C3%A9" target="_blank" rel="noopener">Alexandre Koyré · Wikipedia</a><span>佐证：柯瓦雷——《从封闭世界到无限宇宙》《牛顿研究》与「宇宙的坍塌」。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Thomas_Kuhn" target="_blank" rel="noopener">Thomas Kuhn · Wikipedia</a><span>背景：库恩与《哥白尼革命》《科学革命的结构》——本书多处对话的对象。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《哲学·科学·常识》 ～ 中文据《哲学·科学·常识》（陈嘉映 著）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

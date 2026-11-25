@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 少年维特之烦恼 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/24-weite.html">本书书页</a></p>
+<h1>深度研读 · 少年维特之烦恼</h1>
+<p class="sub">约翰•沃尔夫冈•冯•歌德 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·外研社编译组译）对照精读</p>
+<p class="lead">研读说明：歌德 1774 年书信体小说，书信的日期即章节，编者按语中途接管叙事。三个正派的人构成完整悲剧；「维特效应」后来成为学术术语。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析＋三个英语学习模块（词汇积累／句式分析／写作借鉴）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>第一封信：我终于走了 · How Happy I Am That I Am Gone</a></li>
+<li><a href="#s2"><b>贰</b>人间天堂：孤寂是良药 · Solitude in This Terrestrial Paradise</a></li>
+<li><a href="#s3"><b>叁</b>绿蒂初见：分面包的人 · Cutting Bread</a></li>
+<li><a href="#s4"><b>肆</b>人生如梦：牢笼里画墙 · Painting Our Prison-walls</a></li>
+<li><a href="#s5"><b>伍</b>误解比恶意更伤人 · Misunderstanding and Coolness</a></li>
+<li><a href="#s6"><b>陆</b>狂热辩护：杰出人物都被骂作疯子 · Drunken or Insane</a></li>
+<li><a href="#s7"><b>柒</b>限度辩论：不该叫自杀者懦夫 · A Malignant Fever</a></li>
+<li><a href="#s8"><b>捌</b>莪相：秋天的哀歌 · Ossian Has Superseded Homer</a></li>
+<li><a href="#s9"><b>玖</b>排练与借枪：致命的日常 · Lend Me Those Pistols</a></li>
+<li><a href="#s10"><b>拾</b>绝笔：钟敲十二下 · The Clock Strikes Twelve</a></li>
+<li><a href="#s11"><b>拾壹</b>终局：没有牧师出席 · No Priest Attended</a></li>
+<li><a href="#s12"><b>拾贰</b>尾声：编者的沉默 · I Shall Say Nothing</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>第一封信：我终于走了 · How Happy I Am That I Am Gone</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">How happy I am that I am gone! My dear friend, what a thing is the heart of man!</p>
+<p class="cn">我终于走了，心里真高兴！亲爱的朋友，人心真是太奇怪了！</p>
+<p class="en">Poor Leonora! and yet I was not to blame. Was it my fault, that, whilst the peculiar charms of her sister afforded me an agreeable entertainment, a passion for me was engendered in her feeble heart? And yet am I wholly blameless?</p>
+<p class="cn">可怜的莱奥诺蕾！可是这也不能怪我啊。她妹妹非凡的魅力使我赏心悦目，而她那脆弱的心却对我萌生爱意，这难道是我的错吗？可是，我就一点儿错也没有吗？</p>
+<p class="src">——五月四日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一封信的日期是五月四日，第一句是「How happy I am that I am gone!」——我终于走了，心里真高兴！书信体的日期即章节：每一封信都写在情绪发生的当时，没有剪辑。歌德用一个文体完成了一次诊断：没有剪辑的人活不下去。</p>
+<p><b>逻辑脉络</b>：「高兴地离开」是全书的第一块多米诺：维特因别人的感情纠葛而逃离，借口是「不怪我」——可怜的莱奥诺蕾！可紧接着他就自问「可是我就一点儿错也没有吗」。全书的病理从第一天就写明：他习惯把责任过给别人，再把悔意过给自己，中间没有停顿层。书信体不允许缓冲，他连「昨天」都不给自己留。</p>
+<p><b>现实意义</b>：自查你的「缓冲层」：写日记、隔夜再发消息、给决定留一晚——这些都是人为的「昨天」。一个没有任何缓冲的人，把每封信都写成绝笔的草稿。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>be gone</b>　phr. 走了、离开了（How happy I am that I am gone：be gone 的状态义——走了以后的状态）</p>
+<p><b>what a thing is the heart of man</b>　phr. 人心真是奇妙的东西（感叹句+倒装：what a thing is X——X 后置）</p>
+<p><b>to blame</b>　phr. 该受责备（I was not to blame：blame 的固定语态——to be to blame）</p>
+<p><b>blameless</b>　adj. 无可指责的（am I wholly blameless：blame+less——否定后缀的镜像词）</p>
+<p><b>ruminate</b>　v. 反刍、反复思量（continue to ruminate on every petty...——心理学的牛胃动词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>How happy I am that I am gone! ——How+形容词+主谓的感叹式： happy 的程度先于原因（that I am gone）抵达——喜悦倒装的 pyschology：先喊出感受再补解释。仿写：How calm I am now that it is over!（结束了，我竟这么平静！）</p>
+<p>Was it my fault...And yet am I wholly blameless? ——两个问句的自我对质：Was it my fault（推责）与 am I wholly blameless（自省）相隔数行——wholly 一词是良心的起搏器。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：书信体开篇写「情绪先行」——第一句全是感受（How happy!），原因藏在从句里（that I am gone）。英文 epistolary style 的第一课：信是心的实时播报，不是回忆录——时态与顺序都别整理。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>人间天堂：孤寂是良药 · Solitude in This Terrestrial Paradise</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Solitude in this terrestrial paradise is a genial balm to my mind, and the young spring cheers with its bounteous promises my oftentimes misgiving heart.</p>
+<p class="cn">在这人间天堂般的地方，孤寂是医治我心灵的一剂良药，而这韶华时节正以它明媚的春光温暖着我时刻不安的心。</p>
+<p class="en">Every tree, every bush, is full of flowers; and one might wish himself transformed into a butterfly, to float about in this ocean of perfume, and find his whole existence in it.</p>
+<p class="cn">每一棵树，每一丛灌木都花团锦簇，我多想化身为一只蝴蝶，遨游在这芬芳馥郁的花海中，与这花海融为一体。</p>
+<p class="src">——五月四日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：瓦尔海姆的开篇药方：孤寂是医治心灵的一剂良药。而「化身为蝴蝶」的愿望是全书的自由隐喻——遨游花海、与花海融为一体，一个不想成为任何人的社会角色的年轻人，只想当一只没有身份的虫。</p>
+<p><b>逻辑脉络</b>：蝴蝶的隐喻在结构上向下滑行：春天的蝴蝶（自由）→ 荷马（英雄的旷野）→ 莪相（秋天的哀歌）——三次文体更替对应三段心理年龄，歌德用「读什么书」给维特标定病情进展。良药的另一面同时生效：孤寂治愈他，也把他和唯一能救他的社会隔开。</p>
+<p><b>现实意义</b>：区分「休息」与「隔离」：能回来的孤寂是疗养，回不来的孤寂是病情。给自己开孤寂处方的人，请同时留下一条回来的路——一个人、一次聚餐、一个没注销的群。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>terrestrial paradise</b>　phr. 人间天堂（terrestrial 地上的——与伊甸园对举）</p>
+<p><b>genial balm</b>　phr. 温和的良药（balm 香膏——止痛药的古典词）</p>
+<p><b>bounteous</b>　adj. 丰饶的（bounteous promises：bounty 慷慨——春天的期权）</p>
+<p><b>misgiving</b>　n. 不安、疑虑（my oftentimes misgiving heart：mis+give——先给出坏预感的心）</p>
+<p><b>transformed into</b>　phr. 化身为（wish himself transformed into a butterfly：transform 的被动——变形记词根）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Solitude...is a genial balm to my mind ——X is a balm to Y 的处方句式：孤寂被写成药剂——注意句中 in this terrestrial paradise 的地点状语把药方限制在特定剂量内。</p>
+<p>the young spring cheers with its bounteous promises my oftentimes misgiving heart. ——状语插入分隔动宾（cheers...my heart）：with 短语挤在中间，把「不安的心」推到句末——英文诗歌式的宾语延宕。oftentimes（古体=often）与 misgiving 组成书卷气的病名。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「疗愈环境」，配一味具体的药（a genial balm）和一个具体的病（my misgiving heart）——英文 nature writing 的药方结构：环境是药，自己是病人，两味都要实名。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>绿蒂初见：分面包的人 · Cutting Bread</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I inquired if she were the mother of those pretty children. “Yes,” she said; and, giving the eldest a piece of bread, she took the little one in her arms and kissed it with a mother's tenderness.</p>
+<p class="cn">“是的，”她答道，一边拿给大孩子一块面包，一边抱起小的那个，轻柔地亲了亲他。</p>
+<p class="en">I left my child in Philip's care,” she said, “whilst I went into the town with my eldest boy to buy some wheaten bread, some sugar, and an earthen pot.</p>
+<p class="cn">我问她是不是这俩孩子的母亲。</p>
+<p class="src">——六月十六日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文学史上最著名的初见没有美貌描写：绿蒂站在一群孩子中间，切面包分给他们，动作里有一种天生的持家秩序。维特爱上的不是她的脸，是她的「位置」——她站在生活的正中央，而他一直在生活的门外。</p>
+<p><b>逻辑脉络</b>：这一幕把维特的病根写透：他渴望的不是爱情，是「被分配一个位置」。绿蒂分面包、管弟妹、掌管全家——她是秩序本身；而维特画园、抄莪相、向孩子俯身——他是流沙。两个坐标系相遇时的火花，一半是爱，一半是他想被收编。悲剧在于：绿蒂的位置早已有主（未婚夫阿尔贝特）。</p>
+<p><b>现实意义</b>：看懂「一见钟情」的成分表：你爱上的往往不是那个人，是那个人身上的某种秩序——是你缺的那块。缺什么被什么吸引不是问题，问题是不肯承认自己是来抢位置的。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>hand</b>　v. 递（handing a slice to the eldest：hand 作动词——递送的手）</p>
+<p><b>slice</b>　n. 一片（a slice of bread——面包的计量词）</p>
+<p><b>tenderly</b>　adv. 温柔地（tenderly embraced：tender 柔软的副词位）</p>
+<p><b>embrace</b>　v. 拥抱（embraced the youngest——搂抱的小儿语）</p>
+<p><b>the eldest / the youngest</b>　phr. 老大／最小的（the+est：排行专用冠词——家庭序位的语法）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>handing a slice to the eldest, while she tenderly embraced the youngest, and kissed him ——两个分词短语+while 从句的三连动作：递、抱、亲——初见被写成一次家务直播。动作的次序（先给大的、后抱小的）就是性格本身。</p>
+<p>I left my child in Philip's care,” she said, “whilst I went into the town with my eldest boy to buy some wheaten bread, some sugar, and an earthen pot. ——whether 间接问句的朴素开场：全段唯一的疑问，问的却是身份而不是名字——他先确认她的「位置」。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「初见」不写长相，写动作——handing a slice、embracing、kissed him：三个动词顶一整页 portrait。英文 love-at-first-sight 的反描写法：让读者从动作里自己认出吸引力。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>人生如梦：牢笼里画墙 · Painting Our Prison-walls</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">whilst we amuse ourselves painting our prison-walls with bright figures and brilliant landscapes,—when I consider all this, Wilhelm, I am silent.</p>
+<p class="cn">我们身陷牢笼之中，靠在墙上画些绚烂多姿的景物自娱自乐</p>
+<p class="en">when I consider all this, Wilhelm, I am silent.</p>
+<p class="cn">每当我想到这一切，威廉啊，我就会沉默无语。</p>
+<p class="src">——八月十八日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：八月十八日的哲学高潮：人生如梦，行动力被束缚，求知欲被围栏——我们身陷牢笼，靠在墙上画些绚烂多姿的景物自娱自乐。维特说想到这一切就「沉默无语」：全书最清醒的一页，也是最危险的一页——清醒到找不到出口的人，开始考虑拆墙。</p>
+<p><b>逻辑脉络</b>：这段哲思精确对应歌德的时代：等级森严的社会里，有才华的市民青年（维特原型：耶路撒冷）没有上升通道。「牢笼里画墙」是十八世纪版的精神内耗——幻想越绚烂，现实越囚室。歌德自己选择了另一条路（去魏玛做官），把没走通的那条路写成维特。</p>
+<p><b>现实意义</b>：识别「牢笼里画墙」的状态：计划越宏伟、行动越为零，就越是在给囚室画壁画。出路从来不是更绚烂的画，是拆一面墙——哪怕先拆一小块：一次真的申请、一次真的面谈、一次真的搬家。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>shut in</b>　phr. 被关在（shut in like a prisoner：shut-in 的形容词源）</p>
+<p><b>prisoner</b>　n. 囚徒（like a prisoner——人生如牢的喻体）</p>
+<p><b>bright figures</b>　phr. 绚烂的形象（figures＝图案——壁画的内容清单）</p>
+<p><b>brilliant landscapes</b>　phr. 明丽的风景（landscapes——画框里的世界）</p>
+<p><b>I am silent</b>　phr. 我沉默无语（be silent——清醒到失语的动词短语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>man, shut in like a prisoner within walls, amuses himself by painting his prison with bright figures ——过去分词插入（shut in）+by +动名词的方式状语：囚禁是状态，画墙是娱乐——自我娱乐的语法结构（amuse oneself by doing）把「精神内耗」写得极准。</p>
+<p>when I consider all this, Wilhelm, I am silent. ——when 从句+呼语（Wilhelm）+三词主句：书信体的最高音是降调——考虑（consider）的全部产出是沉默。呼语 Wilhelm 是唯一没有被囚禁的听众。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「精神内耗」，用 amuse oneself by painting his prison 的结构——囚禁（shut in）+娱乐（amuses himself by）两个动词同框。英文 philosophical writing 的自画像法：把最抽象的处境写成最具体的动作，一句顶一页论证。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>误解比恶意更伤人 · Misunderstanding and Coolness</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">misunderstandings and neglect occasion more mischief in the world than even malice and wickedness. At all events, the two latter are of less frequent occurrence.</p>
+<p class="cn">在这件小事上，我又发现，人世间的误解和怠慢所造成的伤害甚至要比奸诈和恶意带来的伤害更大。不管怎样，奸诈和恶意要更少见一些。</p>
+<p class="en">In short, I cannot write further upon this subject at present; only assure my mother that all will go on well.</p>
+<p class="cn">简言之，我现在不能详细地说这件事，只是想告诉母亲，一切都会好起来的。</p>
+<p class="src">——五月四日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最冷静的社会学判断：误解和怠慢造成的伤害比奸诈和恶意更大——因为恶意少见，误解无处不在。维特在第一封信就写出了他的死因清单：他不是死于仇人，是死于无数个「没把这个当回事」。</p>
+<p><b>逻辑脉络</b>：这条判词在全书反复验证：贵族舞会上被请离（那不是恶意，是等级的怠慢）、朋友们的「理智劝导」（不是恶意，是不理解）、乃至绿蒂的「别来太勤」（不是恶意，是边界）。维特死于慢性钝器——每一次都不致命，每一次都在累积。恶意有名字可以恨，怠慢连恨的对象都没有。</p>
+<p><b>现实意义</b>：复盘你受过的伤时分开记账：明确恶意去对抗，模糊怠慢去沟通。别把「他们不懂」归档成「他们坏」——恨错对象的代价，是真正该谈的那个人永远没被谈。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>coolness</b>　n. 怠慢、冷淡（misunderstanding and coolness：cool 的名词化——社交降温）</p>
+<p><b>mischief</b>　n. 伤害（cause greater mischief：mischief 的古雅义——损害）</p>
+<p><b>downright</b>　adj. 十足的（downright malice：彻底的恶意——强调副词作定语）</p>
+<p><b>malice</b>　n. 恶意（malice 的词根 mal——坏的拉丁血统）</p>
+<p><b>treachery</b>　n. 奸诈（ betray 的名词——背叛的正式罪名）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>misunderstanding and coolness cause greater mischief than downright malice and treachery ——A cause greater mischief than B 的比较级判词：两组双词并列（普通伤害 vs 恶意伤害）对仗工整——罕见性（comparatively rare）是论据的全部。</p>
+<p>The latter are, after all, comparatively rare ——the latter 回指+after all/comparatively 两层缓冲：判词的量刑从宽——英文 argumentation 的缓冲词链（after all, comparatively）让绝对判断变得可接受。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写社会学判断，用比较级+频率作论据——X causes greater harm than Y; Y is rare（所以 X 无处不在）。英文 essay 的 injury taxonomy：先把伤害分类，再给每类配发生率，读者自己会排序。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>狂热辩护：杰出人物都被骂作疯子 · Drunken or Insane</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I have learned, by my own experience, that all extraordinary men, who have accomplished great and astonishing actions, have ever been decried by the world as drunken or insane.</p>
+<p class="cn">我曾经不止一次喝醉酒，我激情澎湃，近乎疯狂，对此我并不羞于坦白。凡是取得丰功伟绩，成就惊天伟业的杰出人物，都曾被世人骂作醉鬼或者疯子。</p>
+<p class="en">You abhor the drunken man, and detest the extravagant; you pass by, like the Levite, and thank God, like the Pharisee, that you are not like one of them.</p>
+<p class="cn">你们嘲笑醉鬼，憎恶疯子，像祭司那样从旁边走过，像法利赛人般感谢上帝，却没有把自己造成像他们一样的人。</p>
+<p class="src">——八月十二日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：面对「品行端庄的人」对热情的惊呼（热情、疯狂、迷醉！），维特给出全书最漂亮的自我辩护：伟大人物都曾被骂作醉鬼或疯子；你们像法利赛人一样感谢上帝自己不是这样——「却没有把自己造成像他们一样的人」。</p>
+<p><b>逻辑脉络</b>：这段辩护的可怕之处在于它是「对的，但用错了地方」：历史上确实全是醉鬼和疯子——可维特引用它时，正在为一段没有对象的激情寻找豁免权。歌德在此埋下全书的道德陷阱：真话可以为任何立场服务，包括走向深渊的那个。书信体让读者亲耳听见一个人用正确的道理论证错误的下一步。</p>
+<p><b>现实意义</b>：听到「伟大的人都疯了」这类论证时多问一句：说这话的人在申请什么豁免权？真话是最好的伪装色——检验一个道理是否适用于眼前，不看它对不对，看它此刻在谁手里、想免除什么。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>decry</b>　v. 责难、诋毁（have ever been decried by the world：cry down 的合成词——骂作）</p>
+<p><b>accomplish</b>　v. 完成、成就（accomplished great and astonishing actions——伟业的动词）</p>
+<p><b>abhor</b>　v. 憎恶（abhor the drunken man：四字母强动词——憎的正式级）</p>
+<p><b>Levite</b>　n. 祭司（利未人——《圣经》绕行者的典故）</p>
+<p><b>Pharisee</b>　n. 法利赛人（伪善感恩的典故——自义者的代名词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>all extraordinary men, who have accomplished great and astonishing actions, have ever been decried by the world as drunken or insane. ——定语从句插入+现在完成时被动+as 复合宾语（decried...as）：判词从历史整体取材——ever（=always，古体）把归纳推向绝对。</p>
+<p>you pass by, like the Levite, and thank God, like the Pharisee ——双 like 典故平行：绕行与感恩各配一个圣经人物——英文 invective（檄文）的最高技巧：让经典替你骂人。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写檄文式反驳，用「你们……我们……」的阵营句+双典故对仗——like the Levite, like the Pharisee。英文 rhetorical writing 的用典法：典故不是装饰，是预装的评价体系——用对了，一个词完成一段论证。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>限度辩论：不该叫自杀者懦夫 · A Malignant Fever</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Human nature,” I continued, “has its limits. It is able to endure a certain degree of joy, sorrow, and pain, but becomes annihilated as soon as this measure is exceeded.</p>
+<p class="cn">它可以容忍一定限度的悲欢苦痛，然而当事情超过一定限度时，它就完蛋了。</p>
+<p class="en">it is just as absurd to call a man a coward who destroys himself, as to call a man a coward who dies of a malignant fever.</p>
+<p class="cn">正如我们不该称一位死于致命热病的人懦夫一样，也不该把一位自杀者叫做胆小鬼。</p>
+<p class="src">——八月十二日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：与阿尔贝特的经典辩论：人性有它的限度，超过限度就完蛋——所以不该把自杀者叫懦夫，正如不该把死于热病的人叫懦夫。阿尔贝特脱口而出：「全是诡辩！」——歌德故意不给裁判：读者被留在两个都对的人中间。</p>
+<p><b>逻辑脉络</b>：这场辩论是全书的思维实验：阿尔贝特代表「规则派」（人应该能控制激情），维特代表「疾病派」（超过限度的痛苦就是病）。而小说的残忍在于结局证明了双方——维特确实病了（热病式），但那种病在那个时代没有诊室，只有枪。三个正派的人：一个讲规则、一个讲限度、一个守承诺，构成完整悲剧。</p>
+<p><b>现实意义</b>：与「想不开」的人谈话时，先别忙着当阿尔贝特：先确认他是在讲道理（可以辩），还是在报病况（要接住）。限度的辩论该在健康的年月里进行——到了病中，辩论本身就是压力。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>perish</b>　v. 毁灭、完蛋（it perishes：超过限度的结局——正式的死亡动词）</p>
+<p><b>endure</b>　v. 容忍、经受（endure a certain degree of：限度动词）</p>
+<p><b>absurd</b>　adj. 荒唐的（just as absurd to... as to...：absurd 的对等比较）</p>
+<p><b>coward</b>　n. 懦夫（call a man a coward：call+宾+宾补——骂人的语法）</p>
+<p><b>malignant</b>　adj. 恶性的（a malignant fever：医学形容词——今日肿瘤学仍在用）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Human nature,” I continued, “has its limits. It is able to endure a certain degree of joy, sorrow, and pain, but becomes annihilated as soon as this measure is exceeded. ——its limits/a certain degree/these are exceeded 的三步计量：人性被写成承压材料——被动语态（are exceeded）让「超过」没有主语：不是谁压垮谁，是量到了。</p>
+<p>it is just as absurd to call a man a coward who destroys himself, as to call a man a coward who dies of a malignant fever. ——just as...as... 的等值比较+两个 call a man a coward 的复沓：同构从句把自杀与病亡焊成一类——复沓（重复同一短语）是修辞学的病理切片。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「辩护」用等值比较——just as absurd to call X..., as to call Y...：把要辩护的对象与公认无辜的对象锁进同一句式。英文 persuasive structure：不等读者接受结论，先让句式的对称替你完成推理。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>莪相：秋天的哀歌 · Ossian Has Superseded Homer</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Ossian has superseded Homer in my heart. To what a world does the illustrious bard carry me!</p>
+<p class="cn">奥西恩把我心中的荷马挤走了。这位杰出的诗人把我带入了一个怎样的世界啊！</p>
+<p class="en">To wander over pathless wilds, surrounded by impetuous whirlwinds, where, by the feeble light of the moon, we see the spirits of our ancestors</p>
+<p class="cn">漫游在荒无人烟的旷野中，周围狂风怒吼，透过那朦胧的月色，我们看到祖先的灵魂</p>
+<p class="src">——十月十二日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：维特的阅读史从荷马换到莪相——从英雄的阳光旷野，换到狂风、月色、祖先的灵魂与哭坟的少女。歌德用一份书单写病历：读什么，人就长成什么。莪相的世界里没有活人，全是幽灵。</p>
+<p><b>逻辑脉络</b>：莪相段的日期紧邻崩溃：维特让绿蒂弹琴、亲手指定「唱莪相」——他在亲手给自己布置葬礼的背景音乐。文体即病理的最后一课：当一个人开始在艺术里寻找自己的死亡场景，他已经在预演。歌德自己也承认写莪相翻译时几度濒临疯狂——他把这段危险清清楚楚写进了小说。</p>
+<p><b>现实意义</b>：检视自己的「内容食谱」：深夜循环的歌单、反复重读的段落——它们不是消遣，是喂养情绪的饲料。感觉下沉的时候，先换食谱再谈人生：从莪相换回荷马，不是逃避，是止血。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>supersede</b>　v. 取代（Ossian has superseded Homer：词根 super+sedere——坐到上面去）</p>
+<p><b>illustrious</b>　adj. 杰出的（the illustrious bard：bard 吟游诗人——文体的分水岭词）</p>
+<p><b>pathless</b>　adj. 无路的（wander over pathless wilds：path+less——迷路的形容词）</p>
+<p><b>impetuous</b>　adj. 猛烈的（impetuous whirlwinds：冲动词根——风的性格）</p>
+<p><b>the spirits of our ancestors</b>　phr. 祖先的灵魂（spirits——灵与魂的双关）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Ossian has superseded Homer in my heart. ——现在完成时+in my heart 的地点状语：一次阅读更换被写成心脏里的政权更替——supersede 的「坐上位」词源让句子自带画面。仿写：Netflix has superseded cinema in my evenings.（我的夜晚，流影已取代影院。）</p>
+<p>To what a world does the illustrious bard carry me! ——To what...does...carry me 的前置感叹倒装：目的地提前，动宾倒装——被携带者的被动狂喜（carry me：我是行李）。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「书单」给人物标病程——从荷马（白昼）到莪相（长夜），换书的日期就是换心情的日期。英文 reading-as-portrait 技法：写人物不必写心情，写他此刻在读什么。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>排练与借枪：致命的日常 · Lend Me Those Pistols</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">As I was walking up and down his room, my eye fell upon his pistols. “Lend me those pistols,” said I, “for my journey.”</p>
+<p class="cn">当我在他的房里踱来踱去时，我看到了几支手枪。”把那几支手枪借我吧，”我说，”我路上用。”</p>
+<p class="en">With a sudden motion, I pointed the mouth of the pistol to my forehead, over the right eye. “What do you mean?” cried Albert, turning back the pistol. “It is not loaded,” said I.</p>
+<p class="cn">然后,我突然动了一下，将枪口对准自己右眼上方的前额。”你这是什么意思啊？”阿尔贝特夺回手枪喊道。”没有子弹，”我说道。</p>
+<p class="src">——八月十二日 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最冷的一个场景：借枪如此日常——「借我那几支手枪吧，我路上用」「当然可以」。文学史上最著名的伏笔如此顺利，死亡用借的，而且没有一次追问。更冷的是排练：维特突然把枪口对准自己右眼上方的前额——开枪的坐标在这场玩笑里已经定好。</p>
+<p><b>逻辑脉络</b>：「借枪」前有完整的预演：把枪口对准前额（排练）→ 阿尔贝特夺枪（唯一一次干预）→「没有子弹」（玩笑的注销手续）。歌德写出了自杀的全部恐怖结构：它先排练，再借道具，最后准时上演——而所有目击者事后都说「那几天他看起来挺好的」。</p>
+<p><b>现实意义</b>：识别身边的「排练信号」：突然的平静、谈论身后事、具体到坐标的计划、索要工具性物品——每一个都值得认真对待。问一句「你说的是真的吗」不丢人；阿尔贝特唯一输掉的地方，是把排练当成了玩笑。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>pistol</b>　n. 手枪（those pistols——本节悲剧的道具名词）</p>
+<p><b>fall upon</b>　phr. 落在、瞥见（my eye fell upon his pistols：eye fall 的视线动词）</p>
+<p><b>load</b>　v. 装弹（It is not loaded：loaded/unloaded——弹药的状态词）</p>
+<p><b>forehead</b>　n. 前额（over the right eye——坐标精确到器官）</p>
+<p><b>reverie</b>　n. 遐想（became lost in reverie：走神的正式词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>my eye fell upon his pistols. ——eye 做主语+fall upon：看见被写成「视线的坠落」——物的引力先于人的意志。仿写：my finger hovered over the send button.（我的手指悬停在发送键上。）</p>
+<p>“What do you mean?” cried Albert, turning back the pistol. ——cried/turning back 的对话标签组：动词+分词把惊叫与夺枪压进一行——英文 action beat 的紧凑法：对话标签里藏动作。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「致命伏笔」，保持语言的彻底日常——借枪的对话短得像借伞。英文 foreshadowing 的冰山法：越致命的事，句子的温度越低；追问（What do you mean?）出现一次就够了，它没出现的地方才是真正的深渊。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>绝笔：钟敲十二下 · The Clock Strikes Twelve</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">This ribbon must be buried with me: it was a present from you on my birthday.</p>
+<p class="cn">这个蝴蝶结务必要随葬，这是我过生日时你给我的礼物。</p>
+<p class="en">They are loaded—the clock strikes twelve. I say amen. Charlotte, Charlotte! farewell, farewell!</p>
+<p class="cn">子弹已经上膛——钟表敲了十二下。我说阿门。夏洛特，夏洛特！永别了，永别了！</p>
+<p class="src">——十二月二十日绝笔 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：绝笔信的落款是一口钟：子弹已经上膛——钟表敲了十二下。我说阿门。夏洛特，夏洛特！永别了，永别了！他把死亡办成了最后一次准时落款——绝望最后的礼貌是仪式感。信里连遗物都开列清楚：粉红蝴蝶结务必随葬，那是她穿过的裙子上的。</p>
+<p><b>逻辑脉络</b>：绝笔的全文是账目式的：托付孩子（代我上千次地吻他们）、交代信件、点名遗物、校准时刻（十二下）。一个被说成「疯狂」的人，死前完成了全书条理最清晰的文书——这正对应他白天的「心平气和地宣布这个决定，不带有一点浪漫的感情」。歌德的诊断在此完成：他不是疯了，他是把理性全部投进了死亡这一个项目。</p>
+<p><b>现实意义</b>：分辨「疯狂」与「单向度的清醒」：真正危险的人往往不糊涂，他们只是把全部理性押给了一个决定。对话的窗口在于那最后一格理性——它是文书，就还能谈判；十二点钟声之前，每一声都是挽留的机会。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>ribbon</b>　n. 丝带、蝴蝶结（the knot of pink ribbon——遗物清单第一项）</p>
+<p><b>be buried with</b>　phr. 随葬（must be buried with me：bury 的遗嘱语气）</p>
+<p><b>amen</b>　int. 阿门（希伯来借词——祷告的落款）</p>
+<p><b>farewell</b>　int. 永别了（fare+well：一路走好——告别词的正式级）</p>
+<p><b>strike</b>　v. 敲响（the clock strikes twelve：钟的击打——时间的动作动词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>This ribbon must be buried with me: it was a present from you on my birthday. ——must be（遗嘱情态）+冒号后追授来历（it was a present）：遗物的指令与往事各占一半——was（过去时）是全句唯一柔软的地方。</p>
+<p>They are loaded—the clock strikes twelve. I say amen. ——现在时三连（are loaded / strikes / say）：绝笔不用将来时——一切都已发生或正在发生：英文 final line 的时态冻结术。破折号把枪与钟焊进同一秒。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写绝笔/告别文书，用现在时+精确时刻（the clock strikes twelve）——英文 suicide-note narrative 的冷法则：条理本身就是报警信号；笔误级的整洁，恰是最深的呼救。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>终局：没有牧师出席 · No Priest Attended</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">At twelve o'clock Werther breathed his last.</p>
+<p class="cn">十二点整，维特咽下了最后一口气。</p>
+<p class="en">The steward and his sons followed the corpse to the grave. Albert was unable to accompany them. Charlotte's life was despaired of. The body was carried by labourers. No priest attended.</p>
+<p class="cn">法官和他的儿子们一直跟随遗体来到墓地。阿尔贝特不能陪他们一起来了。夏洛特的生命危在旦夕。维特的尸体由工人们抬着。没有牧师出席。</p>
+<p class="src">——编者按语 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：编者用五句话办完了葬礼：遗体、父亲们、危在旦夕的夏洛特、工人们抬棺、没有牧师出席。全书最长的一段叙事由编者按语接管，语气冷静得像验尸报告——歌德拒绝给维特任何修辞的葬礼。</p>
+<p><b>逻辑脉络</b>：「没有牧师出席」是全书最后一记：自杀者不得教会葬礼——社会连死后的位置都不给他。绿蒂生命垂危（她一生都要与这场死亡算账）、阿尔贝特缺席（他的枪成了凶器之一，虽然他只是借过）。三个正派的人，一个死了，一个病了，一个从此背负借枪之名——没有人赢，这就是「完整悲剧」的定义。</p>
+<p><b>现实意义</b>：读悲剧的正确姿势不是找责任人，是数损失清单：每一段里谁付出了什么、什么再也要不回来。三个好人凑不出好结局的系统，问题不在人，在系统给每个人的选项太少——改善系统，比谴责任何一个人都有效。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>breathe one's last</b>　phr. 咽气（breathed his last：last 名词化——最后一口气）</p>
+<p><b>steward</b>　n. 管家、法官（the steward——本版的译法）</p>
+<p><b>corpse</b>　n. 遗体（followed the corpse：body 的正式尸义）</p>
+<p><b>despair of</b>　phr. 对……绝望（life was despaired of：被动+介词的罕见结构）</p>
+<p><b>priest</b>　n. 牧师、神父（No priest attended——缺席的宗教角色）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Charlotte's life was despaired of. ——被动+介词悬挂（despaired of 的介词无法省略）：语法上的「无法收尾」恰好是语义（救不回来）——英文最著名的介词悬空句式之一。</p>
+<p>No priest attended. ——三词句收尾：主语（缺席的角色）+不及物动词—— attended 无宾语：牧师什么都不主持，只是不在。否定句当句号用——全书最后一击没有形容词。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写终局，连用被动句+极短句——Albert was unable...。Charlotte's life was despaired of...。No priest attended.：英文 tragedy coda 的句法降温：让语态替人难过，句子一个形容词都不给。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>尾声：编者的沉默 · I Shall Say Nothing</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I shall say nothing of Albert's distress, or of Charlotte's grief.</p>
+<p class="cn">关于阿尔贝特的苦恼和夏洛特的悲痛，我不想多说什么。</p>
+<p class="en">that night, at the hour of eleven, he caused the body to be interred in the place which Werther had selected for himself.</p>
+<p class="cn">当晚十一时，他把尸体埋葬在了维特自己选定的地方。</p>
+<p class="src">——编者按语 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1774 年首版引起「维特热」与多地模仿，歌德十二年后的回答不是删改情节，而是在新版的封面上盖一枚「人性」的图章。而小说文本内部的最后一课，是编者的沉默：关于阿尔贝特的苦恼与夏洛特的悲痛——我不想多说什么。悲剧的余波不描写，只登记。</p>
+<p><b>逻辑脉络</b>：编者的沉默是第三重框架的最后一笔：全书由编者按语开场（整理遗稿），也由编者的拒绝描写收尾——他掌握全部素材，却选择把最大痛苦留白。「葬在维特自己选定的地方」与借枪段「埋葬在自己选定的墓地」呼应：他连死后的事都提前签了字——全书关于「签约」的隐喻链至此闭合。</p>
+<p><b>现实意义</b>：面对他人的重大丧失，有时最有力的表达是登记式的沉默：出席、陪伴、办完该办的事（followed the corpse to the grave），不渲染、不代言。沉默不是冷漠——它是把叙事权还给当事者的最后礼仪。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>distress</b>　n. 苦恼（Albert's distress：痛苦的三词分工——distress/grief/pain）</p>
+<p><b>grief</b>　n. 悲痛（Charlotte's grief：丧失之痛的专用词）</p>
+<p><b>inter</b>　v. 埋葬（cause the body to be interred：inter 的正式葬礼义——与 bury 的语域差）</p>
+<p><b>select</b>　v. 选定（the place which Werther had selected——生前意志的延续）</p>
+<p><b>cause...to be...</b>　phr. 使……被……（he caused the body to be interred：使役+被动的委托结构）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>I shall say nothing of Albert's distress, or of Charlotte's grief. ——say nothing of 的拒绝描写+or 并列两位未亡人： shall（将来）承诺一种持续的沉默——英文 reticence（留白）的宣言句。</p>
+<p>he caused the body to be interred in the place which Werther had selected for himself ——cause+宾+to be done 的委托结构+定语从句：连下葬都是「办成的」（caused）——维特的生前意志（had selected 过去完成时）在死后被执行。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给全书写结尾时留一段「登记式白描」——只记录谁做了什么（followed the corpse），不写任何人心情（say nothing of）。英文 editorial voice 的克制技法：叙事者退到公证人的位置，悲剧自己完成余震。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：感叹倒装、处方句式、等值比较、被动降温，都在里面。研读这本「把死亡办成准时落款的书」的最终目的，是学会分辨休息与隔离、排练与玩笑，并在十二点钟声敲响之前，做那个认真问一句的人。</p>
+<p><b>How happy I am that I am gone! ——我终于走了，心里真高兴！</b>应用口诀：给自己留缓冲层——日记、隔夜、一晚，都是人为的昨天。</p>
+<p><b>Solitude in this terrestrial paradise is a genial balm to my mind. ——人间天堂里，孤寂是良药。</b>应用口诀：能回来的孤寂是疗养，回不来的孤寂是病情。</p>
+<p><b>one might wish himself transformed into a butterfly ——多想化身为一只蝴蝶。</b>应用口诀：你爱上的可能是那个人身上的秩序——先认领自己的缺口。</p>
+<p><b>shut in like a prisoner within walls, amuses himself by painting his prison ——身陷牢笼，靠画墙自娱。</b>应用口诀：计划越宏伟行动越为零，就是在给囚室画壁画——先拆一小块墙。</p>
+<p><b>misunderstanding and coolness cause greater mischief than downright malice ——误解与怠慢伤人甚于恶意。</b>应用口诀：明确恶意去对抗，模糊怠慢去沟通——别恨错对象。</p>
+<p><b>all extraordinary men...have ever been decried by the world as drunken or insane. ——伟人都曾被骂作醉鬼或疯子。</b>应用口诀：听到真话先问——说这话的人在申请什么豁免权。</p>
+<p><b>it is just as absurd to call a man a coward who destroys himself, as to call a man a coward who dies of a malignant fever. ——称自杀者为懦夫，与称病亡者为懦夫一样荒唐。</b>应用口诀：跟想不开的人先确认他在讲道理还是报病况——病中别辩论。</p>
+<p><b>“Lend me those pistols,” said I, “for my journey.” ——把手枪借我吧，我路上用。</b>应用口诀：排练信号认真对待——把排练当玩笑，是借枪者唯一的输点。</p>
+<p><b>They are loaded—the clock strikes twelve. I say amen. ——子弹已上膛，钟敲十二下。我说阿门。</b>应用口诀：绝笔是文书不是呓语——文书就还能谈判，钟声前每一声都是挽留。</p>
+<p><b>No priest attended. ——没有牧师出席。</b>应用口诀：三个好人凑不出好结局，问题在系统——改善选项，别只谴责人。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://www.gutenberg.org/ebooks/2527" target="_blank" rel="noopener">The Sorrows of Young Werther · Project Gutenberg</a><span>佐证：公版英译全文，与双语对照精读。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Sorrows_of_Young_Werther" target="_blank" rel="noopener">The Sorrows of Young Werther · Wikipedia</a><span>佐证：出版史、「维特热」与模仿风波。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Werther_effect" target="_blank" rel="noopener">Werther effect · Wikipedia</a><span>延伸：模仿性自杀传播机制——以本书命名的学术术语。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Ossian" target="_blank" rel="noopener">Ossian · Wikipedia</a><span>延伸：莪相诗歌真伪之争与「北方的荷马」。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《少年维特之烦恼》 ｜ 英文与中文均逐字录自外研社双语读库（外研社编译组译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

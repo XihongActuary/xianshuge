@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 770" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="孩子，你别哭思维导图">
+  <path d="M 200 385 C 250 385, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="337" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="363" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">孩子，你别哭</text>
+  <text x="115" y="383" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Weep Not, Child</text>
+  <text x="115" y="405" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">土地 · 教育 · 明天</text>
+  <text x="115" y="421" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Land, School, Tomorrow</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">圣树与创世</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">The Sacred Tree</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">穆库尤与穆鲁恩故</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Mukuyu &amp; Murungu</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">土地是神的合同</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Land as Covenant</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">预言家穆戈</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The Prophet Mugo</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">学堂</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">School Days</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">我要上学</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">I Will Go to School</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">恩朱卡外号</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">The Nickname</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">姆韦哈吉解围</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">Mwihaki Steps In</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">风暴</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">The Storm</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">罢工与宣誓</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Strike &amp; Oath</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">贾科波之死</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Jacobo's Death</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">波罗进丛林</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Boro to the Forest</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">明天</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Tomorrow</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">安慰的旅行</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">The Consolation Circles</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">明天是一场梦幻</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Tomorrow, an Illusion</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">希望的重量</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">The Weight of Hope</text>
+</svg>

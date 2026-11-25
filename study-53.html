@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 道德经 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/53-daodejing.html">本书书页</a></p>
+<h1>深度研读 · 道德经</h1>
+<p class="sub">老子 著 · 河上公 注 · 中华书局通行本八十一章</p>
+<p class="lead">研读说明：本册是老子五千言《道德经》，八十一章，传统分《道经》（一至三十七章）与《德经》（三十八至八十一章）；1973 年马王堆帛书本《德经》在前，本研读仍依通行本次序。全书以「道」与「德」两个关键词展开——道是万物所以然的那个总原理，德是道落到人与物身上的那份禀性。河上公注逐章随行，解析与名家注解并存。本研读共十二节，采录原文精句（据中华书局通行本校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>道可道，非常道：开篇的总纲</a></li>
+<li><a href="#s2"><b>贰</b>天地不仁与上善若水：道无情而善利</a></li>
+<li><a href="#s3"><b>叁</b>功成、名遂、身退：持盈保泰的分寸</a></li>
+<li><a href="#s4"><b>肆</b>至虚极，守静笃：观复的功夫</a></li>
+<li><a href="#s5"><b>伍</b>曲则全与知雄守雌：以退为进的辩证</a></li>
+<li><a href="#s6"><b>陆</b>知人者智，自知者明：向内的胜场</a></li>
+<li><a href="#s7"><b>柒</b>柔弱胜刚强与反者道之动</a></li>
+<li><a href="#s8"><b>捌</b>道生万物与大音希声</a></li>
+<li><a href="#s9"><b>玖</b>知足知止与不出户知天下</a></li>
+<li><a href="#s10"><b>拾</b>祸福相倚与治大国若烹小鲜</a></li>
+<li><a href="#s11"><b>拾壹</b>千里之行，始于足下：作于易与慎终如始</a></li>
+<li><a href="#s12"><b>拾贰</b>我有三宝：慈、俭与为而不争</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>道可道，非常道：开篇的总纲</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>道可道，非常道；名可名，非常名</p>
+<p class="src">——《道德经》一章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一节先划清语言的边界：凡是能被说出来的道，就不是那个恒常的道；凡是能被命名的名，就不是恒常的名。这不是故弄玄虚，而是老子的方法论宣言——「道」是使万物成为万物的那个总原理，它本身不可被任何具体描述穷尽，能被穷尽的只是道的表现。</p>
+<p><b>逻辑脉络</b>：一章从「可道」与「常道」的区分入手，随即落到「无」与「有」这对概念：「无，名天地之始；有，名万物之母」。二者同出而异名，同谓之玄——玄不是神秘，而是指有与无互相生成的这种深层结构，是理解全书的锁钥。</p>
+<p><b>现实意义</b>：任何重要概念（价值、幸福、风险）一旦被定义清楚，就降格为一个具体之名；真正的关键常常在定义之外。面对复杂问题时先问一句：我现在抓到的是「常道」，还是只是「可道」的那个影子？</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>天地不仁与上善若水：道无情而善利</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天地不仁，以万物为刍狗</p>
+<p>上善若水。水善利万物而不争</p>
+<p class="src">——《道德经》五章、八章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「天地不仁，以万物为刍狗」常被误读为冷酷，其实恰是老子的大公平：天地不偏爱谁，万物按其自然生生灭灭，没有特殊照顾也没有额外惩罚。与之相对，人间最好的品格是水德——「上善若水。水善利万物而不争」，滋养一切却甘居众人之所恶的低处。</p>
+<p><b>逻辑脉络</b>：五章用刍狗（祭祀用的草扎狗，用完即弃）破除「天道有情」的想象；八章随即给出正面的替代方案：既然天不会偏爱，人的最优策略便是像水一样——居善地、心善渊、与善仁、言善信，把「不争」从退让升级为一种更高级的竞争位置。</p>
+<p><b>现实意义</b>：「不争」不是躺平，而是选择别人不愿去的位置与时机。团队里抢功者众、补位者寡，补位恰恰是稀缺生态位；长期看，利他而不争者的复利，往往高于每一次都争的人。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>功成、名遂、身退：持盈保泰的分寸</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>功成、名遂、身退，天之道也</p>
+<p>五色令人目盲，五音令人耳聋</p>
+<p class="src">——《道德经》九章、十二章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：九章给出一条完整的进退曲线：「功成、名遂、身退，天之道也」——事情做成、名声到了，就应当收敛退位，这与天道的运行节律一致；持而盈之不如其已，揣而锐之不可长保。十二章则从反面解释为什么要退：「五色令人目盲，五音令人耳聋」，过度的感官与名利刺激恰恰会钝化判断。</p>
+<p><b>逻辑脉络</b>：九章讲外部成就的顶点即风险点——金玉满堂莫之能守；十二章讲内部欲望的膨胀机制——驰骋畋猎令人心发狂。一外一内，共同构成老子对「成功之后」的完整警示：外部要身退，内部要检欲。</p>
+<p><b>现实意义</b>：给自己定一条「功遂身退」的纪律：项目交付后不恋战，收益兑现后不追加，掌声最响时安排退出通道。几乎所有的崩塌都发生在「再赢一次」的第四十九章。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>至虚极，守静笃：观复的功夫</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>至虚极，守静笃</p>
+<p>万物并作，吾以观其复</p>
+<p class="src">——《道德经》十六章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十六章是全书的静功总纲：「至虚极，守静笃」——把自己掏空到极点，守住安静到笃实，然后在万物纷纭并起之中「吾以观其复」，观察它们各自回到根本的循环。虚是清空既有成见，静是止住妄动之念，观复则是看清事物回归常态的节律。</p>
+<p><b>逻辑脉络</b>：本章的推进是三步：虚极静笃（准备状态）→ 万物并作（现象纷纭）→ 观复（看清归根）。归根曰静，静曰复命，复命曰常，知常曰明——由功夫而得见识，由见识而得容与：知常容，容乃公，公乃王。</p>
+<p><b>现实意义</b>：信息越嘈杂，越要留一段「至虚守静」的时间窗：每周留出不被打扰的整块时间复盘，观察哪些事在「复」（周期回归），哪些只是「并作」的一次性噪音。判断力的一半来自看见回归。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>曲则全与知雄守雌：以退为进的辩证</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>曲则全，枉则直，洼则盈，敝则新</p>
+<p>知其雄，守其雌，为天下谿</p>
+<p class="src">——《道德经》二十二章、二十八章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：二十二章给出六对反向转化：曲则全，枉则直，洼则盈，敝则新——弯曲反得保全，低洼反得充盈，破旧反得翻新。二十八章进一步给出操作姿态：「知其雄，守其雌，为天下谿」——明知什么是刚强进取，却安守柔顺低处，做天下所汇聚的溪谷。</p>
+<p><b>逻辑脉络</b>：两章共享同一个结构：正面价值（全、直、盈、新、雄）不能靠正面强取获得，而要经由它的反面（曲、枉、洼、敝、雌）来达成。老子把这称作「圣人抱一为天下式」——抱住这个相反相成的一，不自见故明，不自伐故有功。</p>
+<p><b>现实意义</b>：谈判与协作中的实用公式：想要结果完整，先接受过程迂回；想被人看见，先不自夸。把「知其雄，守其雌」当作姿态设计——能力上保持雄（能打），姿态上守住雌（低姿态），两者同时在线才是完整的策略。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>知人者智，自知者明：向内的胜场</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>知人者智，自知者明。胜人者有力，自胜者强</p>
+<p class="src">——《道德经》三十三章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：三十三章做了一组两两对照：知人者智，自知者明——识人算聪明，认识自己才算通透；胜人者有力，自胜者强——胜过别人靠力量，胜过自己才是真正的强。强制胜力，明高过智，老子把胜负的定义域从外部挪到了内部。</p>
+<p><b>逻辑脉络</b>：本章四句构成递进：智（知人）＜明（自知），力（胜人）＜强（自胜）。随后补上归宿——知足者富，强行者有志，不失其所者久，死而不亡者寿。向外的一切成就都有限期，向内的自知自胜才是可以带走的东西。</p>
+<p><b>现实意义</b>：把「自胜」拆成可执行项：管理自己的注意力、情绪与欲望三件套，各设一条可检验的纪律。考核自己时用双轨——对外赢了什么（有力），对内戒掉了什么（自胜）；后者才计入真正的强者评分。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>柔弱胜刚强与反者道之动</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>将欲歙之，必固张之；将欲弱之，必固强之</p>
+<p>反者，道之动；弱者，道之用</p>
+<p class="src">——《道德经》三十六章、四十章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：三十六章揭示事物走向反面的机制：将欲歙之，必固张之——要收敛它，必先让它扩张到极点。四十章用十二字总结全书的世界观：「反者，道之动；弱者，道之用」——向反面转化是道的运动方式，柔弱是道发挥作用的方法。</p>
+<p><b>逻辑脉络</b>：三十六、四十章与七十六章互为表里：人之生也柔弱，其死也坚强——草木生时柔脆，死时枯槁，故「坚强者死之徒，柔弱者生之徒」。物壮则老，任何东西扩张到顶点都自动开始衰变，所以微明（见微知著）之明，就是识别「张到几成」的能力。</p>
+<p><b>现实意义</b>：两用：一是防己——当自己或组织处于全线扩张、处处强硬时，正是风险最高的相位；二是观人——对手高调冒进时不必正面硬顶，等它的「张」走向「歙」。柔弱不是目标，是让时间与周期替你出力的杠杆。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>道生万物与大音希声</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>大音希声，大象无形</p>
+<p>道生一，一生二，二生三，三生万物</p>
+<p class="src">——《道德经》四十一章、四十二章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：四十一章记录了三种闻道反应：上士闻道，勤而行之；中士闻道，若存若亡；下士闻道，大笑之——并断言「不笑不足以为道」。随后连用一组悖论式修辞：大方无隅，大器晚成，大音希声，大象无形——最完满的形态反而以最不显眼的方式存在。四十二章给出宇宙论骨架：道生一，一生二，二生三，三生万物。</p>
+<p><b>逻辑脉络</b>：四十一章是「道的存在方式论」：道隐无名，它不占用感官通道，故惟有道才能善始善成。四十二章是「道的生成序列」：由一到二到三而万物，万物负阴而抱阳，冲气以为和——生成之后靠「冲和」维持动态平衡。</p>
+<p><b>现实意义</b>：识别真正重要的东西用「希声无形」滤镜：喧嚣处多为现象，安静处才藏结构。同时用它校准自我展示——最大的作品往往不需要最大的音量；以及用「三生万物」理解复杂系统：关键变量往往只有两三个，别被万物级的表象淹没。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>知足知止与不出户知天下</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>知足不辱，知止不殆</p>
+<p>不出户，知天下</p>
+<p>为学日益，为道日损</p>
+<p class="src">——《道德经》四十四章、四十七章、四十八章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：四十四章连发三问：名与身孰亲？身与货孰多？得与亡孰病？答案是「知足不辱，知止不殆，可以长久」。四十七章给出认知论：「不出户，知天下；不窥牖，见天道」——行得越远，知得越少，圣人不行而知，因为掌握了原理与模式。四十八章分清两种学习：「为学日益，为道日损」——求知识做加法，求道做减法，损之又损，以至于无为。</p>
+<p><b>逻辑脉络</b>：三章构成一条收敛链：欲望上知足知止（风险控制）→ 认识上以模式胜奔波（方法升级）→ 功夫上日益日损并行（知识加法与判断减法）。四十六章收尾定音：祸莫大于不知足，咎莫大于欲得。</p>
+<p><b>现实意义</b>：给欲望设上限、给行动设边界，是普通人最便宜的风险管理。同时警惕「行万里路」式勤奋的幻觉——重要判断靠框架与模式，不靠打卡里程；每年做一次知识减法，删掉不再产生判断增量的信息源。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>祸福相倚与治大国若烹小鲜</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>祸兮，福之所倚；福兮，祸之所伏</p>
+<p>治大国，若烹小鲜</p>
+<p class="src">——《道德经》五十八章、六十章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：五十八章是最早的辩证法名句：「祸兮，福之所倚；福兮，祸之所伏」——灾祸倚着福气，福气伏着灾祸，孰知其极？其无正。六十章给出治理的分寸感：「治大国，若烹小鲜」——烹小鱼不可频繁翻动，治理大事同样忌讳折腾。</p>
+<p><b>逻辑脉络</b>：五十八章讲转化的普遍性与不可预判性（正复为奇，善复为妖），引出「方而不割，廉而不刿，直而不肆，光而不耀」的处世四不。六十章讲转化的应对策略：既然祸福相生，最好的治理就是少扰动——非其神不伤人，圣人亦不伤人，两不相伤，故德交归焉。</p>
+<p><b>现实意义</b>：顺境时默认「祸之所伏」，给收益做压力测试；逆境时默认「福之所倚」，保留翻身的筹码。管理上的对应纪律是降低翻动频率：方向与规则的改变要少而慎重，执行要稳而持续。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>千里之行，始于足下：作于易与慎终如始</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天下难事，必作于易；天下大事，必作于细</p>
+<p>合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下</p>
+<p>慎终如始，则无败事</p>
+<p class="src">——《道德经》六十三章、六十四章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：六十三章给方法论：「天下难事，必作于易；天下大事，必作于细」——图难于其易，为大于其细。六十四章给过程论：合抱之木生于毫末，九层之台起于累土，千里之行始于足下；并提醒「民之从事，常于几成而败之」，解药是「慎终如始，则无败事」。</p>
+<p><b>逻辑脉络</b>：两章合起来是一条完整的项目哲学：分解（难事作于易）→ 起步（始于足下）→ 维持（为者败之，执者失之，圣人无为故无败）→ 收官（慎终如始）。其中最有洞察的是对「几成而败」的诊断——人败在快成的时候，因为松懈。</p>
+<p><b>现实意义</b>：落到执行层三件事：任何难任务先找它最容易的那一刀切进去；进度过八成时把收尾标准提到与启动时同等严格；过程上不硬拗——强为者败，顺势推进比强行推进更能到达终点。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>我有三宝：慈、俭与为而不争</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我有三宝，持而保之：一曰慈，二曰俭，三曰不敢为天下先</p>
+<p>天之道，损有余而补不足</p>
+<p>信言不美，美言不信</p>
+<p>圣人之道，为而不争</p>
+<p class="src">——《道德经》六十七章、七十七章、八十一章 ｜ 据《道德经》（老子 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：六十七章老子自陈三件法宝：「我有三宝，持而保之：一曰慈，二曰俭，三曰不敢为天下先」——慈故能勇，俭故能广，不敢为天下先故能成器长。七十七章给出天道的分配律：「天之道，损有余而补不足」——人之道相反，损不足以奉有余。末章八十一章收束全书：「信言不美，美言不信」，最终落定「圣人之道，为而不争」。</p>
+<p><b>逻辑脉络</b>：六十七章讲立身三宝，七十七章讲天道对人之道的纠偏——「天网恢恢，疏而不失」，过剩终被回收；八十一章讲表达与归宿：信实的话不动听，动听的话多不信，善者不辩，辩者不善。三宝为体，天道为律，不争为行。</p>
+<p><b>现实意义</b>：把三宝转译成三条人生纪律：慈——对关键的人与事留有余地与善意，这是勇气的正确来源；俭——成本结构与欲望双瘦身，广是由俭换来的；不敢为天下先——不做第一个抢跑者，做最后一个退场者。表达上记住信言不美：真正有用的反馈往往不好听。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《道德经》的目的，不是背诵玄理，而是带走一套相反相成的操作系统：柔可以胜刚，退可以保全，减可以胜加，不争反而无人与之争。</p>
+<p><b>上善若水。水善利万物而不争</b>应用口诀：选低处，做滋养，让利者长赢。</p>
+<p><b>知人者智，自知者明。胜人者有力，自胜者强</b>应用口诀：对外识人，对内胜己，后者才算强。</p>
+<p><b>道常无为，而无不为</b>应用口诀：管住乱翻的手，系统自己会生长。</p>
+<p><b>祸兮，福之所倚；福兮，祸之所伏</b>应用口诀：顺境测风险，逆境留筹码。</p>
+<p><b>天下难事，必作于易；天下大事，必作于细</b>应用口诀：难事找易刀，大事切细做。</p>
+<p><b>合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下</b>应用口诀：别等条件齐，第一步就是条件。</p>
+<p><b>慎终如始，则无败事</b>应用口诀：八成进度时，拿出十分警惕。</p>
+<p><b>我有三宝，持而保之：一曰慈，二曰俭，三曰不敢为天下先</b>应用口诀：慈而勇，俭而广，后发而先至。</p>
+<p><b>知足不辱，知止不殆</b>应用口诀：给欲望设上限，给行动设边界。</p>
+<p><b>圣人之道，为而不争</b>应用口诀：认真做事，放下争抢，功德自归。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/%E9%81%93%E5%BE%B7%E7%BB%8F" target="_blank" rel="noopener">道德经 · 百度百科</a><span>背景：版本源流、历代注家与章次结构。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%80%81%E5%AD%90" target="_blank" rel="noopener">老子 · 维基百科</a><span>背景：老子其人——《史记·老子韩非列传》所载生平与传说。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%A9%AC%E7%8E%8B%E5%A0%86%E6%B1%89%E5%A2%93" target="_blank" rel="noopener">马王堆汉墓 · 维基百科</a><span>佐证：1973 年马王堆帛书《道德经》——《德经》在前的另一版本系统。</span></li>
+<li><a href="https://baike.baidu.com/item/%E6%B2%B3%E4%B8%8A%E5%85%AC" target="_blank" rel="noopener">河上公 · 百度百科</a><span>背景：本书采用的河上公注——最早的《道德经》全注本之一。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《道德经》 ～ 原文据中华书局通行本八十一章校录，注解采河上公注，解析为研读者心得</footer>
+</div>
+</body>
+</html>

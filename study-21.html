@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 劝导 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/21-quandao.html">本书书页</a></p>
+<h1>深度研读 · 劝导</h1>
+<p class="sub">简·奥斯丁 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·烟台大学编译组译）对照精读</p>
+<p class="lead">研读说明：简·奥斯丁的绝笔之作（1818 年遗作出版），十九岁的安妮在拉塞尔夫人劝导下退了婚，八年后与温特沃思上校在旧地重逢。全书只有一封信，却抵得上所有小说的情话总量。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析（核心要义／逻辑脉络／现实意义）＋三个英语学习模块（词汇积累 · Vocabulary／句式分析 · Sentence Study／写作借鉴 · Writing Craft）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>开篇：只看《准男爵录》的爵士 · The Baronetage</a></li>
+<li><a href="#s2"><b>贰</b>只不过是安妮罢了 · She Was Only Anne</a></li>
+<li><a href="#s3"><b>叁</b>颜值审判官：四十岁的海军上将 · Sailors Grow Old Betimes</a></li>
+<li><a href="#s4"><b>肆</b>安妮的海军辩护 · Anne Speaks for the Navy</a></li>
+<li><a href="#s5"><b>伍</b>一场被说服的退婚 · A Persuaded Broken Engagement</a></li>
+<li><a href="#s6"><b>陆</b>谨小慎微与自学浪漫 · Forced into Prudence</a></li>
+<li><a href="#s7"><b>柒</b>八年重逢：说不准七年还是八年 · Seven or Eight Years Ago</a></li>
+<li><a href="#s8"><b>捌</b>柯布一跳：固执的代价 · The Jump at the Cobb</a></li>
+<li><a href="#s9"><b>玖</b>克罗夫特夫妇的马车 · The Crofts' Carriage</a></li>
+<li><a href="#s10"><b>拾</b>女人爱得更久：哈维尔辩论 · Our Fate Rather Than Our Merit</a></li>
+<li><a href="#s11"><b>拾壹</b>信：一半痛苦，一半希望 · Half Agony, Half Hope</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：水兵的妻子 · A Sailor's Wife</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>开篇：只看《准男爵录》的爵士 · The Baronetage</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who, for his own amusement, never took up any book but the Baronetage; there he found occupation for an idle hour, and consolation in a distressed one</p>
+<p class="cn">萨默塞特郡凯林奇府的沃尔特•埃利奥特爵士，为了自我娱乐，只看那本《准男爵录》而从不看其他的书；因为这本书，他在闲暇中找到了消遣，烦恼时找到了安慰</p>
+<p class="en">This was the page at which the favourite volume always opened</p>
+<p class="cn">他总是把他最心爱的书翻到这一页：</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一页就是一个男人的自恋档案：《准男爵录》是他唯一肯读的书，因为书里印着他自己——姓名、封号、娶过谁。凯林奇府的家产故事从一个只读「自己那一页」的人开始，这个意象把「活在过去的 pedigree 里」具象成一本书。</p>
+<p><b>逻辑脉络</b>：开篇的功能是反衬：沃尔特爵士的家谱时间 vs 安妮的生存时间。接下来凯林奇府出租给海军克罗夫特夫妇——实干的时间挤走了血统的时间，全书的社会变革藏在租房合同里：1818 年的英国，钱和军功正在取代爵位。</p>
+<p><b>现实意义</b>：自查你的「书房里那本书」：你的自我介绍第一页印的是什么？如果答案只有出身、头衔、过往业绩，那你正在读自己的《准男爵录》——它最大的副作用，是让人误以为记在书里的东西不会贬值。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>Baronetage</b>　n. 《准男爵录》（从男爵名录：baronet 准男爵＋-age 总称——沃尔特唯一的读物）</p>
+<p><b>for his own amusement</b>　phr. 为了自我娱乐（目的状语前置——讽刺从第一个短语就开始）</p>
+<p><b>occupation</b>　n. 消遣、占据（an occupation for an idle hour：一词双关——既是打发时间，也是自我占据）</p>
+<p><b>consolation</b>　n. 安慰（consolation in a distressed one： distress 的正式词——自恋者的情绪急救箱）</p>
+<p><b>distressed</b>　adj. 烦恼的（distress 名词/动词/形容词三态——情绪词汇高频词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>never took up any book but the Baronetage ——否定+but 的排他结构：never...but...＝「除了……之外从不」，比 only 优雅、比 except 文学。仿写：She never wore any colour but grey.（她只穿灰色。）</p>
+<p>there he found occupation for an idle hour, and consolation in a distressed one ——there 引导的地点状语前置+平行宾语：occupation/consolation、idle hour/distressed one 两组对仗，把一本书记成了一座教堂。破折号可省——奥斯丁用分号与对仗完成节奏。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「唯一的一件物品」给人物定罪——不写他虚荣，写他只读印着自己的那本书（never took up any book but...）。英文人物写作的 showing not telling：一本《准男爵录》顶一整段心理描写。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>只不过是安妮罢了 · She Was Only Anne</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">her word had no weight, her convenience was always to give way— she was only Anne.</p>
+<p class="cn">她的意见无足轻重，她的安逸总是可以牺牲——她只不过是安妮罢了。</p>
+<p class="en">Anne, with an elegance of mind and sweetness of character, which must have placed her high with any people of real understanding, was nobody with either father or sister</p>
+<p class="cn">而安妮，尽管人品高雅，性格温柔，任何真正明白事理的人本应该都很尊重她，然而父亲与姐姐却没有把她放在眼里</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：一句把被牺牲者写进书里的名句：她的意见无足轻重，她的安逸总是可以牺牲——她只不过是安妮罢了。全书最大的结构性不公不是恶人作恶，而是「把一个人当常数」：她好说话，所以她的利益永远排在最后。</p>
+<p><b>逻辑脉络</b>：奥斯丁的经济学精确得可怕：家计节约方案里被砍掉的第一项，正是安妮的节日礼物。而全书后段的翻盘逻辑就在这句话里——那个「无足轻重」的人，每次都在关键时刻出主意、稳场面、做判断。血统夸耀者破产，温和者接管叙事。</p>
+<p><b>现实意义</b>：家庭与团队里最危险的信号是「只不过是某人罢了」——当一个成员的利益总是被默认牺牲，讨价还价就停止了。检查你所在的系统：谁的话无足轻重？谁的安逸总在让路？答案决定了这个系统还能撑多久。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>weight</b>　n. 分量（her word had no weight：weight 的比喻义——意见的重量）</p>
+<p><b>give way</b>　phr. 让路、让步（her convenience was always to give way：give way to 的省略——永远在让位的一方）</p>
+<p><b>elegance of mind</b>　phr. 心智的高雅（elegance 不只形容衣着——奥斯丁用它称量头脑）</p>
+<p><b>nobody</b>　n. 无足轻重的人（was nobody with either father or sister：名词用法——把人写成物）</p>
+<p><b>sweetness of character</b>　phr. 性格温柔（sweetness——安妮的标签词，全书反复出现）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>her word had no weight, her convenience was always to give way —she was only Anne. ——三个并列短句的「压迫式递进」：前两句是制度性描述（无分量、总让位），第三句突然甩出人称结论（she was only Anne）——奥斯丁的判决句式。仿写：his time had no value, his leave was always denied—he was only the intern.</p>
+<p>was nobody with either father or sister ——either...or 收束的否定等式：把两个最亲的人写成一个否定性的「市场」。nobody 作表语名词——英文里最冷的一类名词用法。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给不公下一个「会计式」定义——不控诉、不抒情，只列账目（word 无 weight、convenience 总 give way），最后用 only + 人名盖章。你的英文 essay 批评任何系统性忽视，都可以套用这三步：账目、账目、盖章。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>颜值审判官：四十岁的海军上将 · Sailors Grow Old Betimes</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">a certain Admiral Baldwin, the most deplorable-looking personage you can imagine; his face the colour of mahogany, rough and rugged to the last degree</p>
+<p class="cn">另一个是鲍德温将军，你可以想象这位显赫之人有多难看；他的脸是红褐色的，皮肤粗糙而凹凸不平，满脸皱纹</p>
+<p class="en">a sailor grows old sooner than any other man. I have observed it all my life.</p>
+<p class="cn">海军要比其他任何人老得都要快。这种情形我一生中见得多了。</p>
+<p class="src">——第三章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：沃尔特爵士的著名桥段：把六十岁的鲍德温上将猜成六十岁，对方纠正「仅仅四十岁」。他把海风、盐雾、颠簸当成天灾——却从不检查自己的价值观。全书最大的反派不是任何坏人，是「颜值即正义」本身。</p>
+<p><b>逻辑脉络</b>：这场审美表演有两个镜像：谢泼德先生附和他的「海军是好房客」，克莱太太附和他的「水兵老得快，是职业的错」。奥斯丁用三个谄媚者的合唱写出一件事：虚荣不只自欺，它还组织起一个收租的 chorus。而恰恰是这些老得快的海军，用真金白银租下了他保不住的府邸。</p>
+<p><b>现实意义</b>：识别组织里的「颜值审计」：如果你主持的项目里，汇报的顺序由好看程度决定、预算的流向由口才决定，那就是凯林奇府。判断人别问「他显不显老」，问「他扛过什么海况」。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>deplorable-looking</b>　adj. 惨不忍睹的（deplorable+looking 复合——look 的分词构词法：good-looking 之反）</p>
+<p><b>mahogany</b>　n. 红木、红褐色（the colour of mahogany：用家具色写人脸——物化的妙笔）</p>
+<p><b>rugged</b>　adj. 粗糙的（rough and rugged 双声头韵 r——皱纹的音效）</p>
+<p><b>betimes</b>　adv. 早、过早（sailors do grow old betimes：古雅副词——奥斯丁时代的书面语）</p>
+<p><b>personage</b>　n. 显赫人物（person 的抬升版——讽刺的敬语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>his face the colour of mahogany ——无动词的名词短语插入（absolute construction 独立主格的省略形态）：face 后直接跟同位语——英语肖像描写的速写笔法。仿写：her voice the sound of a cracked bell.（她的嗓音像裂了的钟。）</p>
+<p>a sailor grows old sooner than any other man ——比较级+than any other man 的绝对化断言：any other 让偏见听起来像统计。注意 do grow old 的 do 强调——克莱太太附和时用同一个动词强调位。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「以貌取人者」的台词，让他自己说出荒唐的精确（『Forty, and no more.』）——作者一个评语都不加，荒唐自己生效。英文讽刺写作的核心技法：irony by quotation，让被讽刺者引述自己。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>安妮的海军辩护 · Anne Speaks for the Navy</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The navy, I think, who have done so much for us, have at least an equal claim with any other set of men, for all the comforts and all the privileges which any home can give.</p>
+<p class="cn">我觉得，海军为我们做出过很大贡献，他们至少应该像其他人一样，有权享受任何房东可以提供的一切舒适条件和优待。</p>
+<p class="en">Sailors work hard enough for their comforts, we must all allow.</p>
+<p class="cn">我们大家都应该承认，海军工作很艰苦，他们完全有权享受舒适的生活。</p>
+<p class="src">——第三章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全家对海军职业的鄙视链里，第一次有人出声反驳——而且正是「无足轻重」的安妮。她只说了两句平实的话：他们贡献大、工作苦、有权享受。没有雄辩，没有控诉，就是一次安静的纠正。全场唯一清醒的发言，来自地位最低的人。</p>
+<p><b>逻辑脉络</b>：这句话是全书的职业宣言：奥斯丁把道德排名从血统转移到职业——海军的尊严不在头衔，在于「为国家做出贡献的工作」。安妮之后嫁给海军上校，等于用自己的婚姻在职业宣言上签字。她辩护的不是温特沃思本人，是「用双手挣来的东西值得尊敬」。</p>
+<p><b>现实意义</b>：会议里的「安妮时刻」：当全场都在附和一种刻板偏见时，插一句平实的纠正就够了——不站队、不控诉、只把事实摆回桌面。看一个团队的水平，就看它的「安妮」敢不敢说话，以及说完后有没有人听见。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>claim</b>　n. 应得的权益（an equal claim with any other set of men：claim 的权利义——分配正义的词根）</p>
+<p><b>set of men</b>　phr. 一类人（set 量词的冷静用法——把职业当作集合）</p>
+<p><b>comforts</b>　n. 舒适条件（复数——可数的舒适，房东能给的物件清单）</p>
+<p><b>allow</b>　v. 承认（we must all allow：allow 的「承认」义，正式议论文高频）</p>
+<p><b>privileges</b>　n. 特权、优待（privilege 词源 priv+lex——私法给个别人的权利）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>have at least an equal claim with any other set of men ——at least 限定+equal claim 主张：先让一步（at least）再主张平等——淑女式谈判的措辞结构。仿写：We have at least an equal claim to the budget.（预算至少该有我们的一份。）</p>
+<p>Sailors work hard enough for their comforts, we must all allow. ——硬够程度副词（hard enough）+插入的弱断言（we must all allow）：句子先给事实，再用从句式补丁找齐共识——奥斯丁对话里的「礼貌刃口」。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：为弱势方辩护，用「平实主张」而不是「道德轰鸣」——贡献（done so much）、辛苦（work hard enough）、权益（equal claim）三点一线，每点都能被反驳者核实。安妮的两句话是英文 argumentation 的极简范本：可核实的三个短主张，胜过一页形容词。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>一场被说服的退婚 · A Persuaded Broken Engagement</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">She was persuaded to believe the engagement a wrong thing: indiscreet, improper, hardly capable of success, and not deserving it.</p>
+<p class="cn">安妮被说服了，相信这次订婚是一件错误的事情：轻率，不恰当，不会成功，也不值得成功。</p>
+<p class="en">The belief of being prudent, and self-denying, principally for his advantage, was her chief consolation, under the misery of a parting, a final parting</p>
+<p class="cn">她相信自己这样慎重，自我克制，主要是为了他好，这是她忍痛与他分手，也是最终分手的主要慰藉。</p>
+<p class="src">——第四章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的悲剧原点是一份「尽职的劝说清单」：拉塞尔夫人不无恶意——她判断温特沃思没财产、职位不稳、前程难料，条条属实。安妮被说服了：订婚轻率、不恰当、不会成功，也不值得成功。她给自己的慰藉是「主要是为了他好」。</p>
+<p><b>逻辑脉络</b>：奥斯丁在这里写出了「劝导」这个词的全部重量：拉塞尔夫人说的每一条都是当时的事实，但每个事实都会过期——温特沃思后来发了财、升了官、声名赫赫。劝导的失效不在逻辑，在时间轴：她用族谱的时区替朋友计时。而安妮真正的错误不是退婚，是把「为对方好」外包给了别人的计算。</p>
+<p><b>现实意义</b>：评估任何「为你好」的建议：劝的人是不是在用他自己的数据算你的账？——他赌的人生变量（财产、门第、确定性）和你赌的是不是同一种？听劝不失为美德，但签字权必须留在自己手里：劝导者的沉默之日，才是新人真正的成人礼。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>indiscreet</b>　adj. 轻率的（in+discreet：不谨慎——四宗罪的第一个，正式判词腔）</p>
+<p><b>improper</b>　adj. 不恰当的（proper 的否定——奥斯丁社会的关键词）</p>
+<p><b>self-denying</b>　adj. 自我克制的（self+deny 复合——把牺牲写成美德）</p>
+<p><b>consolation</b>　n. 慰藉（与第一节呼应——她的自恋父亲找消遣，她找慰藉）</p>
+<p><b>chief</b>　adj. 主要的（her chief consolation——最高级缺席时的最强限定）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She was persuaded to believe the engagement a wrong thing: indiscreet, improper, hardly capable of success, and not deserving it. ——被动语态（was persuaded）+冒号列举（四项罪名）：责任先交给劝导者，罪名再一列列挂出——奥斯丁的起诉书句式。hardly capable of success 的 hardly 把「不可能」说成「很难」。</p>
+<p>The belief of being prudent... was her chief consolation ——抽象名词作主语（The belief of being...）：把心理状态写成判决主语——belief 自己成了辩护律师。英文高级写作常用抽象名词开头代替 I think。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「被说服」不用对白，用被动句+罪名清单——was persuaded to believe X a wrong thing: A, B, C, and D。冒号后的四项列举从道德（indiscreet）滑到实用（not deserving it），让读者自己发现论证已经偷换了范畴。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>谨小慎微与自学浪漫 · Forced into Prudence</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">She had been forced into prudence in her youth, she learned romance as she grew older: the natural sequel of an unnatural beginning.</p>
+<p class="cn">她年轻的时候不得不谨小慎微，随着年龄的增长才懂得了什么是浪漫：这是畸形的开端造成的必然后果。</p>
+<p class="en">How eloquent could Anne Elliot have been! how eloquent, at least, were her wishes on the side of early warm attachment, and a cheerful confidence in futurity, against that over-anxious caution which seems to insult exertion and distrust Providence!</p>
+<p class="cn">若叫安妮•埃利奥特说起来，那该具有何等的说服力啊！至少她对早年热恋的渴望，对未来的满怀信心，是多么具有说服力啊，而过分的谨慎看起来是对努力的亵渎与对上帝的怀疑啊！</p>
+<p class="src">——第四章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：奥斯丁最冷的一句人生总结：她年轻时被迫谨小慎微，年长后自学浪漫——畸形的开端，自有其必然后果。这句话把全书的时间结构写尽了：十九岁的审慎是环境强加的，二十七岁的浪漫是自己补课补出来的。</p>
+<p><b>逻辑脉络</b>：「自学浪漫」四个字是反讽的重心：浪漫本该是青春的默认配置，安妮却要在八年理智的副作用下重新学习相信。全书真正的成长弧不是「她学会了爱」，而是「她重新拿到了爱人的许可证」——从被劝退的顺从者，变成自己决定签字的人。</p>
+<p><b>现实意义</b>：给所有「先理性后心动」的人：审慎晚熟的人不必自责，浪漫可以自学——但注意学费。补课的方式不是等待奇迹，是像安妮那样在具体场合里反复练习「表达自己的判断」，直到把外借的签字权拿回来。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>be forced into</b>　phr. 被迫进入（forced into prudence：into 接抽象名词——被推进一种品格）</p>
+<p><b>prudence</b>　n. 谨慎（prudential 的词根——奥斯丁时代的美德词，也带贬义阴影）</p>
+<p><b>romance</b>　n. 浪漫、浪漫情怀（此处抽象义——自学Romance 不等于恋爱）</p>
+<p><b>sequel</b>　n. 后果、续篇（the natural sequel：书名术语挪用——人生像连载）</p>
+<p><b>unnatural beginning</b>　phr. 畸形的开端（natural/unnatural 的最小对立对——末章 will be natural 呼应）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She had been forced into prudence in her youth, she learned romance as she grew older ——过去完成时（had been forced）vs 一般过去时（learned）的分野：被迫在先、自学在后，时态本身排出了因果。两个分句不用连词直接并置（comma splice 的文学合法化）——平行就是论证。</p>
+<p>the natural sequel of an unnatural beginning ——natural/unnatural 的词根对照：一个冒号引出的格言收束，对仗只在第八个字母上——奥斯丁式警句的全部机关。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把人生阶段写成一对时态——She had been forced into X, she learned Y as she grew older。你的英文 personal statement 写成长，可以用这个模板：过去完成时放「环境强加的」，一般过去时放「自己挣来的」，冒号后给一句 natural/un- 对仗的格言收束。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>八年重逢：说不准七年还是八年 · Seven or Eight Years Ago</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">To hear them talking so much of Captain Wentworth, repeating his name so often, puzzling over past years</p>
+<p class="cn">他们大谈而特谈温特沃思上校，一而再再而三地提到他的名字，尽情地回忆着过去的年代</p>
+<p class="en">but they could not say whether it was seven or eight years ago, was a new sort of trial to Anne's nerves.</p>
+<p class="cn">但是他们说不准这是七年以前还是八年以前的事了。听着他们的这番议论，对安妮的神经是一种新的考验。</p>
+<p class="src">——第六章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：重逢的残忍藏在闲聊里：旁人帮他回忆七年还是八年前来过这里，安妮在旁边听着，对她的神经是新的考验。而两人隔着八年半的第一次正面交锋，竟是一句语气像抱怨的「确实过去很久了！八年半过去了！」——他记得精确到月，她听出恨意。</p>
+<p><b>逻辑脉络</b>：奥斯丁用「数字」写心理：八年半是他账本上的复利记录，也是她罪状清单的页码。此后全书每一次交锋都是这一句的变奏——他挑剔她「变老了」，她怀疑他心里有别人。旧账不清理，每一次新的相遇都在自动计息。</p>
+<p><b>现实意义</b>：处理任何「重逢型关系」（旧同事、旧伙伴、旧合作方）：别假装时间不存在。对方记得精确到月的怨恨，说明账没销。要么当面对一次账，要么承认这笔账还在计息——最坏的选择是双方都装作忘了利率。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>puzzle over</b>　phr. 对……困惑苦思（puzzling over past years：puzzle 作动词——回忆的费劲）</p>
+<p><b>trial</b>　n. 考验（a new sort of trial to Anne's nerves：trial 的「考验」义，法律术语的日常化）</p>
+<p><b>nerves</b>　n. 神经、情绪承受力（to Anne's nerves——奥斯丁时代写心理压力的标准词）</p>
+<p><b>inure</b>　v. 使适应（she must inure herself：她必须自我脱敏——后文关键词）</p>
+<p><b>sort of</b>　phr. 一种（a new sort of trial：sort 的分类功能——给痛苦建档）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>To hear them talking... was a new sort of trial to Anne's nerves. ——不定式短语作主语（To hear...）：把「旁人的闲聊」包装成主语，痛苦藏在语法里—— hear 的主语是安妮，全句没提她一个字却全是她的处境。仿写：To watch them celebrate was a new sort of trial to his pride.（看他们庆祝，对他的自尊是新的考验。）</p>
+<p>repeating his name so often, puzzling over past years ——两个现在分词并列挂起：名字的重复与年代的苦思——意识流的减法，只剩动作。分词短语把听觉场景压成两帧。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写心理压力不写「她很痛苦」，写「什么动作发生在她耳边」（To hear them talking... was a trial to her nerves）——不定式主语+抽象宾语。英文小说写煎熬的黄金结构：把施加痛苦的日常动作作主语，把承受者放进所有格（Anne's nerves）。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>柯布一跳：固执的代价 · The Jump at the Cobb</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">excepting Louisa; she must be jumped down them by Captain Wentworth. In all their walks, he had had to jump her from the stiles; the sensation was delightful to her.</p>
+<p class="cn">只有路易莎例外。她要温特沃思上校扶着她从石阶上跳下去。在他们以前多次散步中，她总让温特沃思上校扶着她从栅栏边的梯级上跳下去。</p>
+<p class="en">She was safely down, and instantly, to show her enjoyment, ran up the steps to be jumped down again.</p>
+<p class="cn">她安然无恙地跳下来，为了显示她爱这么做，她马上又跑上去，想再跳一次。</p>
+<p class="src">——第十二章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：莱姆的柯布海堤上，路易莎为了证明「坚决」，坚持再跳一次，摔成了脑震荡。这一摔把全书两组人格对撞到一处：路易莎的固执 vs 安妮的审慎——温特沃思曾当面夸「路易莎有意志力」，讽刺的是，他亲手把这种意志力扶下石阶。</p>
+<p><b>逻辑脉络</b>：事件的后续才是奥斯丁的刀锋：众人慌乱，第一个站住、分工指挥、稳住全场的是安妮——她想救所有人，包括那个不再爱她的人。这场急救就是她八年学习的成绩单：审慎不是懦弱，是灾难现场唯一稀缺的资源。而温特沃思由此重新认识她——固执的人摔倒了，稳的人扶起了所有人。</p>
+<p><b>现实意义</b>：区分「坚定」与「固执」的实测法：坚定者听完风险后仍敢签自己的名字；固执者只是拒绝听。团队里谁是路易莎谁是安妮，平时看不出来——去柯布海堤（高压现场）看：谁在跳，谁在组织绳子和担架。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>be jumped down</b>　phr. 被扶跳下去（被动+使役的罕见组合——jump 及物用法：他跳她）</p>
+<p><b>stile</b>　n. 栅栏梯级（乡村越栏的台阶——旧日习惯的具体凭证）</p>
+<p><b>sensation</b>　n. 体感、快感（the sensation was delightful：身体的账目）</p>
+<p><b>precipitate</b>　adj. 过急的（she was too precipitate by half a second：早了半秒——灾难的精确计量）</p>
+<p><b>lifeless</b>　adj. 失去知觉的（was taken up lifeless：lively 的镜像词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>she must be jumped down them by Captain Wentworth ——情态动词+被动使役（must be jumped）：她连「跳」的主语权都让渡了——语法预先写好了她的固执。jump sb down sth 的及物用法把上校变成工具。</p>
+<p>she was too precipitate by half a second ——by + 精确量级的差值结构：灾难被写成半秒的时差。仿写：the deal failed by a single signature.（这笔交易只差一个签字。）——by half a second/by one vote 的问责计量法。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写事故，先写「习惯的延长线」——In all their walks, he had had to jump her from the stiles（过去完成时铺陈旧习惯），再写这一次的半秒偏差。英文叙事的 causality 模板：习惯（had done）→本次（did）→偏差量（by half a second）→后果。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>克罗夫特夫妇的马车 · The Crofts' Carriage</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">My dear Admiral, that post! we shall certainly take that post.</p>
+<p class="cn">我亲爱的将军，那儿有根柱子！我们非得撞到那根柱子上不可。</p>
+<p class="en">But by coolly giving the reins a better direction herself they happily passed the danger; and by once afterwards judiciously putting out her hand they neither fell into a rut, nor ran foul of a dung-cart</p>
+<p class="cn">不过，她镇静地往旁边一拽缰绳，大家便幸运地脱险了。后来，她又一次小心地扬了扬手，于是马车既没有滑进车辙，也没有撞上粪车。</p>
+<p class="src">——第十章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最温和的婚姻样本：克罗夫特夫妇同驾一辆车，将军转弯时妻子轻轻一拽缰绳，大家脱险；再扬一扬手，避免撞车。安妮看着他们想：这大概就是他们平时处理各种事务的方式。婚姻的分工不需要宣言，缰绳会说话。</p>
+<p><b>逻辑脉络</b>：这对夫妇是温特沃思夫妇的未来预告片：将军的自信从来不排除妻子的干预——他甚至当众说「有疑义时听她的」。奥斯丁用马车这个场景立起全书的判断标准：一个组织是否健康，看它允许不允许副驾上的人拽缰绳。对比开篇的沃尔特爵士（独行、只读自己），答案自明。</p>
+<p><b>现实意义</b>：验收合作关系的「马车法」：看双方能否在行驶中互相递信号——一方拽缰绳时另一方松手，而不是争夺方向盘。签任何长期合同之前，坐一坐对方的车。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>reins</b>　n. 缰绳（give the reins a better direction：缰绳的比喻义——权力与方向）</p>
+<p><b>coolly</b>　adv. 镇静地（coolly giving the reins：cool 的副词——危机中的体温）</p>
+<p><b>judiciously</b>　adv. 有判断力地（judge 家族副词——审慎的正面词，与 precipitate 反义）</p>
+<p><b>rut</b>　n. 车辙（fall into a rut：本义车辙、引申窠臼——一词两用）</p>
+<p><b>run foul of</b>　phr. 撞上（ran foul of a dung-cart：foul 的航海用语残余——犯规/相撞）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>by coolly giving the reins a better direction herself they happily passed the danger ——by + 动名词的方式状语前置+副词双联（coolly/happily）：手段与结果各占一个副词位——英文里最经济的「化险为夷」句式。herself 后置强调：是「她自己」。</p>
+<p>they neither fell into a rut, nor ran foul of a dung-cart ——neither...nor 平行否定+双动词短语：两个险情各配一个动词搭配，节奏像两次急转——句法模拟驾车的晃动。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写一段健康的合作关系，用「一次共同操作」而非「一句宣言」——拽缰绳（give the reins a direction）、扬手（put out her hand）、脱险（passed the danger）。英文 narrative essay 写 team 的黄金配比：一个具体动作场景顶三段 abstract praise。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>女人爱得更久：哈维尔辩论 · Our Fate Rather Than Our Merit</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Yes. We certainly do not forget you as soon as you forget us. It is, perhaps, our fate rather than our merit. We cannot help ourselves. We live at home, quiet, confined, and our feelings prey upon us.</p>
+<p class="cn">是的。我们当然不会像你们忘记我们那样那么快地忘记你们。或许与其说这是我们的优点，倒不如说我们命该如此。我们难以控制自己。我们住在家里，生活平静，活动空间有限，总是受到感情的折磨。</p>
+<p class="en">If the change be not from outward circumstances, it must be from within; it must be nature, man's nature, which has done the business for Captain Benwick.</p>
+<p class="cn">如果这种变化不是来自外界环境，那就一定是来自内心。本威克舰长之所以发生变化，肯定是出于本性，出于男人的本性。</p>
+<p class="src">——第二十三章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书思想最锋利的一场辩论：哈维尔上校说男人身体最强壮所以感情最经得起风浪；安妮接住了这个类比，把它反手拧转——你们的感情最强，我们的感情最嫩；男人更结实，却活得没有女人久，这正是男女用情方式的全部区别。「或许与其说这是我们的优点，倒不如说我们命该如此。」</p>
+<p><b>逻辑脉络</b>：这场辩论是全书高潮信的前置机关：安妮的每一句「女人爱得更久」，本威克变了心、温特沃思正在门外听见——辩论的听众不止哈维尔一人。她借论题说出了自己八年不嫁的事实，也意外地把真心递到了门外那个人耳朵里。文学史上最伟大的「说给第三个人听的对话」。</p>
+<p><b>现实意义</b>：把这场辩论当作「表达真心」的示范：想对人说的话，可以先说成一篇讲给场合的判断——逻辑站得住，听众自会把自己代入。比直接表白更体面的排练法：在具体论题上，说出你真实的立场。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>prey upon</b>　phr. 折磨、盘踞（our feelings prey upon us：prey 捕食的比喻义——感情吃人）</p>
+<p><b>confined</b>　adj. 受限制的（quiet, confined：生活半径的两个形容词）</p>
+<p><b>merit</b>　n. 优点、功劳（our fate rather than our merit：merit/fate 的责任转移对）</p>
+<p><b>outward circumstances</b>　phr. 外界环境（outward/within 的空间对仗——归因的两极）</p>
+<p><b>do the business</b>　phr. 起作用、办成事（which has done the business：口语短语在雅辩中的突然落地）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>It is, perhaps, our fate rather than our merit. ——强调句（It is）+rather than 的责任改判：把「优点」换成「命运」，谦逊与控诉一字之隔。仿写：It is, perhaps, our timing rather than our talent.（也许靠的是时机，不是天赋。）</p>
+<p>If the change be not from outward circumstances, it must be from within ——虚拟式 be（if the change be）：古雅的虚拟语气让推理带上几何证明的权威感；from outward/from within 的介词对仗完成归因二分。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把真心话藏在论题里说——想对某人说的话，写成一等一的 general argument，让那个人在听众席自己对号入座。英文 persuasive writing 的高级用途：说服场内所有人时，第一个人（you know who）已经在收信。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>信：一半痛苦，一半希望 · Half Agony, Half Hope</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">You pierce my soul. I am half agony, half hope. Tell me not that I am too late, that such precious feelings are gone for ever. I offer myself to you again with a heart even more your own than when you almost broke it, eight years and a half ago.</p>
+<p class="cn">你刺伤了我的心灵。我是既有痛苦又有希望。请别对我说为时太晚，也别说这种珍贵的感情已经一去不复返了。我再次向你求婚，比起八年半前几乎被你撕碎的心，现在我的心更加属于你。</p>
+<p class="en">I have loved none but you. Unjust I may have been, weak and resentful I have been, but never inconstant.</p>
+<p class="cn">我除了你之外，再也没有爱过别人。我或许曾经不公正，或许意志软弱，满腔怨恨，但是我从来没有朝三暮四。</p>
+<p class="src">——第二十三章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的核弹只有一封信：「你刺伤了我的心灵。我是既有痛苦又有希望。」他从门外偷听完那场辩论，冲回去边听边写——一颗比八年前更属于她的心。信的核心逻辑不是控诉，是重新报价：这半页纸上，怨恨全数作废，只剩一句「请别对我说为时太晚」。</p>
+<p><b>逻辑脉络</b>：这封信回收了全书的每一颗伏笔：「你刺伤了我的心灵」对应柯布一跳后的重新认识；「几乎被你撕碎的心」对应八年前他愤然离乡；「一句话，一个眼神」对应他此刻在门外等多久。而安妮读信后的失控——根本听不进别人的话、只想立刻出门找他——是她全书第一次不审慎，也是唯一正确的一次。</p>
+<p><b>现实意义</b>：写「重新谈判」的模板：第一句给出感受而不是罪名（刺穿了我的灵魂，而不是你伤害了我）；第二句给出复利的诚意（比当年更属于你的心）；第三句把决策权递回去（一句话，一个眼神）。八年半的怨恨写成半页纸，全靠三句结构。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>pierce</b>　v. 刺穿（You pierce my soul：pierce 的身体性——比 hurt 精确一个世纪）</p>
+<p><b>agony</b>　n. 极度痛苦（half agony, half hope：agon 与 acumen 同源——尖锐之痛）</p>
+<p><b>for ever</b>　adv. 永远（gone for ever：分开写的英式拼法——奥斯丁原版）</p>
+<p><b>inconstant</b>　adj. 不专一的（in+constant：变心的正式判词——but never inconstant 的让步否定）</p>
+<p><b>resentful</b>　adj. 怨恨的（weak and resentful：自陈罪名——信的让步段）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Tell me not that I am too late ——宾语提前的祈使否定（Tell me not that...）：古典英语的否令句式（对比 Do not tell me），宾语前置让禁令先于内容抵达——拜伦式的恳求语法。仿写：Tell me not that the door is closed.（别告诉我门已经关了。）</p>
+<p>Unjust I may have been, weak and resentful I have been, but never inconstant ——表语前置的让步排比（Unjust I may have been）：两个自认罪名+一个 but never 否认——英文道歉信的三段律：认、认、驳。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「重新报价」的信，用三句式——感受（You pierce my soul）、复利（a heart even more your own than when...）、决策权（A word, a look）。注意 even more your own than when you almost broke it 的比较从句：把当年的最痛点写进比较级，诚意就有了复利凭证。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：水兵的妻子 · A Sailor's Wife</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Anne was tenderness itself, and she had the full worth of it in Captain Wentworth's affection.</p>
+<p class="cn">安妮十分温柔，完全赢得了温特沃思上校的钟情。</p>
+<p class="en">She gloried in being a sailor's wife, but she must pay the tax of quick alarm for belonging to that profession</p>
+<p class="cn">她为做一个水兵的妻子而感到自豪，但是她必须为属于这一职业而付出担惊受怕的代价。</p>
+<p class="src">——末章 ｜ 英文与中文均据外研社双语读库（烟台大学编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：奥斯丁给全书的最后判决不带一句感伤：安妮嫁给了自己辩护过的职业——她为做一个水兵的妻子而自豪，但必须付出担惊受怕的代价。幸福是实名的，代价也是实名的；她签字时对风险是知情的。这才是「劝导」一词的终局：这次没有人劝她。</p>
+<p><b>逻辑脉络</b>：结尾的三重平衡：事业上，他为她的判断力折服，而她为他的职业自豪；家庭中，「跑得稳的马车，两个人都握过缰绳」；叙事上，全书唯一被劝坏的婚姻之外，奥斯丁又亮出三对被劝坏一生的对照组（她的父亲、姐姐、还有那位劝人者拉塞尔夫人——她「一向满意」，这一次却忐忑不安）。</p>
+<p><b>现实意义</b>：给所有做重大决定的人一个终局检验法：把决定的风险条款自己抄一遍——你签的字里有几条是你自己核过的？凡是没有自己核过账的幸福，都只是别人的判断书；核过账再签字，才是安妮式的圆满。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>tenderness itself</b>　phr. 温柔的化身（X itself 的强调构式——名词同位格的极致）</p>
+<p><b>glory in</b>　phr. 以……为荣（She gloried in being...：glory 作动词——荣耀的现在时）</p>
+<p><b>tax</b>　n. 代价（the tax of quick alarm：tax 的比喻义——幸福的税单）</p>
+<p><b>quick alarm</b>　phr. 随时的惊吓（quick 形容频率而非速度——军人妻子的心跳节律）</p>
+<p><b>belong to</b>　phr. 属于（belonging to that profession：归属的分词收尾——职业即身份）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She gloried in being a sailor's wife, but she must pay the tax of quick alarm for belonging to that profession ——glory in/but pay the tax 的收支对句：自豪是收入，惊吓是税负——一句话完成婚姻的资产负债表。for belonging to 的双重介词短语像在念合同条款。</p>
+<p>Anne was tenderness itself ——X was Y itself 的同位强调：不用 very tender，用名词+itself——把形容词升级成定义。仿写：He was patience itself.（他是耐心本身。）</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给故事收尾时「如实写价签」——幸福（gloried in）与代价（the tax of quick alarm）并列进最后一句。英文 ending 的诚实律：不让主角免费拿到任何东西；she must pay the tax for belonging to...——must 与 for 的搭配让代价读起来像条款，像她自己核过的条款。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：排他结构、被动判词、虚拟归因、收支对句，都在里面。研读这本「劝导者的账本」的最终目的，是学会分辨善意的越界与判断的边界，并把签字权留在自己手里。</p>
+<p><b>her word had no weight... she was only Anne ——她只不过是安妮罢了。</b>应用口诀：看一个系统看它牺牲谁——答案决定它能撑多久。</p>
+<p><b>never took up any book but the Baronetage ——只看《准男爵录》。</b>应用口诀：自查书房里那本书——别只读印着自己的那一页。</p>
+<p><b>She was persuaded to believe the engagement a wrong thing ——她被说服退了婚。</b>应用口诀：听劝前先问——劝的人在用谁的数据算账。</p>
+<p><b>She had been forced into prudence in her youth, she learned romance as she grew older ——年轻时被迫谨慎，年长后自学浪漫。</b>应用口诀：浪漫可以自学，学费是练习表达自己的判断。</p>
+<p><b>they could not say whether it was seven or eight years ago ——说不准七年还是八年。</b>应用口诀：重逢别装忘了利率——旧账不当面清，就一直在计息。</p>
+<p><b>she must be jumped down them by Captain Wentworth ——要上校扶她跳下去。</b>应用口诀：区分坚定与固执——坚定者签字，固执者拒绝听。</p>
+<p><b>by coolly giving the reins a better direction herself ——她镇静地自己拽了缰绳。</b>应用口诀：验收关系看副驾——能拽缰绳，才配同行。</p>
+<p><b>We certainly do not forget you as soon as you forget us ——我们不会那么快忘记你们。</b>应用口诀：真话可以先说成讲给场合的判断——听众自会代入。</p>
+<p><b>You pierce my soul. I am half agony, half hope ——你刺穿我的灵魂，一半痛苦一半希望。</b>应用口诀：重新谈判三句式——感受、诚意、决策权。</p>
+<p><b>She gloried in being a sailor's wife, but she must pay the tax ——她以做水兵的妻子为荣，但必须付出代价。</b>应用口诀：签字前自己核一遍风险条款——没核过账的幸福只是别人的判断书。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://www.gutenberg.org/ebooks/105" target="_blank" rel="noopener">Persuasion · Project Gutenberg</a><span>佐证：公版英文全文，与双语对照精读。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Persuasion_(novel)" target="_blank" rel="noopener">Persuasion · Wikipedia</a><span>佐证：遗作出版史与「秋之小说」批评谱系。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Jane_Austen" target="_blank" rel="noopener">Jane Austen · Wikipedia</a><span>延伸：六部小说总览与本书的收官位置。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Royal_Navy" target="_blank" rel="noopener">Royal Navy · Wikipedia</a><span>延伸：拿破仑战争后的海军与「职业尊严」的历史背景。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《劝导》 ｜ 英文与中文均逐字录自外研社双语读库（烟台大学编译组译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

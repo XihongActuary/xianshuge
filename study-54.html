@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 数学的故事 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/54-shuxue.html">本书书页</a></p>
+<h1>深度研读 · 数学的故事</h1>
+<p class="sub">蔡天新 著 · 中信出版集团（2018年9月）</p>
+<p class="lead">研读说明：本册是数学家蔡天新的数学文化读物，按「故事」而非教科书的方式组织，全书三辑二十个故事——甲辑讲东西方传奇的相互融合（河图洛书与幻方、阿拉伯数字的旅行、斐波那契、黄金分割、黎曼几何），乙辑讲十多位数学家的人生（泰勒斯、祖冲之、秦九韶、拿破仑师友、冯·诺依曼），丙辑讲五个悬而未决的数学问题（完美数、角谷猜想、蒙特卡罗、开普勒猜想）。数学在这里不是公式堆，而是人类好奇心的一部旅行史。本研读共十二节（据中信出版集团版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>从大禹治水到丢勒画《忧郁》：幻方的东与西</a></li>
+<li><a href="#s2"><b>贰</b>马可·波罗和阿拉伯数字的旅行</a></li>
+<li><a href="#s3"><b>叁</b>公鸡、母鸡、雏鸡与兔子：不定方程与斐波那契</a></li>
+<li><a href="#s4"><b>肆</b>黄金分割与五角星的故事</a></li>
+<li><a href="#s5"><b>伍</b>自行车的发明与黎曼几何学</a></li>
+<li><a href="#s6"><b>陆</b>玄妙的统计：从诸葛亮借箭说起</a></li>
+<li><a href="#s7"><b>柒</b>恩尼格玛，从戚继光到图灵</a></li>
+<li><a href="#s8"><b>捌</b>第一个留名的泰勒斯</a></li>
+<li><a href="#s9"><b>玖</b>畴人之家出身的祖冲之</a></li>
+<li><a href="#s10"><b>拾</b>会造桥和打仗的秦九韶</a></li>
+<li><a href="#s11"><b>拾壹</b>布丰的实验与蒙特卡罗</a></li>
+<li><a href="#s12"><b>拾贰</b>堆球问题与开普勒猜想</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>从大禹治水到丢勒画《忧郁》：幻方的东与西</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>数起源于远古时代黄河出现的“河图”和洛水出现的“洛书”。</p>
+<p>洛书上有三行三列的纵横图</p>
+<p class="src">——《数学的故事》故事一 从大禹治水到丢勒画《忧郁》 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：幻方是数学史上少数东西方各自独立起源又殊途同归的谜题。中国一侧，大禹治水传说里洛水浮出神龟，背上有「洛书」——三行三列的纵横图，每行、列及对角线之和同为十五；明代程大位断言「数起源于远古时代黄河出现的『河图』和洛水出现的『洛书』」。西方一侧，丢勒 1514 年的铜版画《忧郁》角落里嵌着一个四阶幻方，连年份都被藏进了方格里。</p>
+<p><b>逻辑脉络</b>：本故事的叙事是从神话走向构造：大洪水传说引出洛书，洛书定义幻方，随后是宋代杨辉的构造方法，再跳到文艺复兴的德国——丢勒把幻方画进版画，塞维利亚圣家族大教堂延续这个传统。一个九宫格，串起了从占卜到艺术的四千年。</p>
+<p><b>现实意义</b>：幻方是训练「结构敏感度」的绝佳玩具：同样的数字，排布不同，性质全变。它提示一种思维习惯——面对一堆数据，先问排列与对称，再问数值本身；很多问题的答案藏在结构里而不是数量里。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>马可·波罗和阿拉伯数字的旅行</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>阿拉伯数字的传播和马可·波罗的旅行都环绕了地中海，一个沿顺时针方向，另一个沿逆时针方向。</p>
+<p>用圆圈符号“0”表示零，这是印度人的一大发明。</p>
+<p class="src">——《数学的故事》故事二 马可·波罗和阿拉伯数字的旅行 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：所谓「阿拉伯数字」其实是印度人的发明：1881 年出土的巴克沙利手稿已见完整十进制记数，零用实心点表示；876 年瓜廖尔石碑上出现了清晰的圆圈「0」。这十一个符号经阿拉伯学者（如花拉子密，其著作名 al-jabr 即 algebra 的词源）传入欧洲，斐波那契 1202 年的《算经》完成推广——「阿拉伯数字的传播和马可·波罗的旅行都环绕了地中海，一个沿顺时针方向，另一个沿逆时针方向」。</p>
+<p><b>逻辑脉络</b>：本故事是一次符号学的环球旅行：印度发明（0 与位值制）→ 巴格达智慧宫的百年翻译运动保存与推进 → 经北非到比萨 → 斐波那契写进《算经》→ 商业账簿让新符号击败罗马数字。零的故事是核心：它既是「无」的概念，又是位值制的空位，还是可以参与运算的独立数字。</p>
+<p><b>现实意义</b>：「0」的发明史提醒我们：最伟大的发明往往不是造出新东西，而是给「空」一个正式座位。系统设计同理——留白、默认值、空状态，都是功能的一部分；能安放「无」的系统，才装得下「有」。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>公鸡、母鸡、雏鸡与兔子：不定方程与斐波那契</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>没有任何智慧可以不经由感觉而获得。</p>
+<p>依据“兔子问题”，很容易得到所谓的“斐波那契数列”</p>
+<p class="src">——《数学的故事》故事三 公鸡、母鸡、雏鸡与兔子 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：中国一侧是张丘建的「百鸡问题」：公鸡五钱一只、母鸡三钱一只、小鸡一钱三只，一百钱买一百只鸡，答案不唯一——这引出了丢番图方程（整系数不定方程）的整条研究线。西方一侧是斐波那契的兔子问题：「依据『兔子问题』，很容易得到所谓的『斐波那契数列』」——1，1，2，3，5，8……相邻两项之比的极限，恰好是上一故事里毕达哥拉斯学派定义的黄金分割率。</p>
+<p><b>逻辑脉络</b>：本篇的巧思在于把两个文明的趣味题并置：唐代李淳风奉诏整理《算经十书》时，百鸡问题这类不定方程已是数学教育的遗产；而斐波那契在北非学得印度—阿拉伯记数法后，用一个假想的兔子繁衍模型，无意间留下了与植物叶序、黄金分割相通的数列。题记阿奎那的话点题——「没有任何智慧可以不经由感觉而获得」，好数学常从具体可感的趣题出发。</p>
+<p><b>现实意义</b>：百鸡问题教的是「约束下的多解思维」：现实问题很少只有一个正确答案，先问解集有多大，再挑最优解。斐波那契数列则示范了模型的意外红利——一个玩具级假设（兔子永不死），长成了贯穿自然与金融的通用模式。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>黄金分割与五角星的故事</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>发现音乐与数字比例之间的秘密，这大概是物理学定律的第一次数学公式表达。</p>
+<p>这个比值约为0.618，被公认为最美的比例，叫作黄金分割比或黄金分割率。</p>
+<p class="src">——《数学的故事》故事四 黄金分割与五角星的故事 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：黄金分割是「美即比例」这一信念的最佳标本：将整体一分为二，使较大部分与整体之比等于较小部分与较大部分之比——「这个比值约为 0.618，被公认为最美的比例」。毕达哥拉斯学派以五角星为徽记，据说从铁匠铺的打铁声响中发现音乐与数字比例的秘密，伽莫夫称之为「物理学定律的第一次数学公式表达」。</p>
+<p><b>逻辑脉络</b>：故事从毕达哥拉斯「万物皆数」讲到高斯用尺规作出正十七边形（对应费尔马素数），再回到欧几里得《几何原本》里对「中外比」的严格定义，最后是开普勒的赞叹与华罗庚在全国推广黄金分割法的应用数学实践——一条从形而上到车间优选法的完整弧线。</p>
+<p><b>现实意义</b>：0.618 的实用价值分两层：一层是设计层面的比例参考（版面、构图、节奏）；另一层是华罗庚示范的方法论——把抽象比例转化为可操作的试验点选择法。抽象之美的落地，靠的正是这种「翻译成步骤」的能力。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>自行车的发明与黎曼几何学</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>当人想要模仿行走的时候，他创造出了和腿并不相像的轮子。</p>
+<p>戏称为“几何学的家丑”的著名公设</p>
+<p class="src">——《数学的故事》故事五 自行车的发明与黎曼几何学 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本篇用一个日常发明引出一场几何革命：从诸葛亮木牛流马到现代自行车，人类不断改进「轮与路」的关系；而数学一侧，两千年来没人能从欧几里得的其他公设推出第五公设（平行公设），达朗贝尔把它戏称为「几何学的家丑」。黎曼的解决方式石破天惊——区分「无限」与「无界」，让曲面上的几何自洽成立，为爱因斯坦的广义相对论备好了数学语言。</p>
+<p><b>逻辑脉络</b>：叙事双线并进：发明线从手推车到黄履庄的木狗再到阿西莫夫的机器人三定律；几何线从平行公设的屡攻不克，到罗巴切夫斯基与鲍耶的独立突破，再到黎曼的几何思想——每条线上都重复同一个母题，正如题记阿波利奈尔所说：「当人想要模仿行走的时候，他创造出了和腿并不相像的轮子」——真正突破旧框架的方案，往往长得完全不像旧方案。</p>
+<p><b>现实意义</b>：平行公设攻坚史是创新方法论的教科书：当一个公理两千年证不出来，正确动作不是继续硬攻，而是怀疑公理本身。遇到「祖传前提」，先做一次反事实推演——如果它不成立，世界会怎样？黎曼的答案改变了物理学。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>玄妙的统计：从诸葛亮借箭说起</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在抽象的意义下，一切科学都是数学；在理性的世界里，所有的判断都是统计学。</p>
+<p class="src">——《数学的故事》故事六 玄妙的统计：从诸葛亮借箭说起 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：统计学是「从数据推断本质与未来」的学科。本故事从草船借箭的概率核算讲起，经高尔顿钉板与高斯正态分布，到文学鉴定的统计实践——用词频特征判定莎士比亚或《静静的顿河》的作者归属。C. R. 劳的名言为全篇定调：「在抽象的意义下，一切科学都是数学；在理性的世界里，所有的判断都是统计学。」</p>
+<p><b>逻辑脉络</b>：本篇按「统计的三级跳」组织：从周朝「司书」式的政情记录（计数），到「政治算术」对国力的量化比较（比较），再到正态分布与假设检验（推断）——统计学的现代性正体现在它从「记录发生了什么」升级为「判断什么会什么」。</p>
+<p><b>现实意义</b>：把劳的名言用作决策清单：凡涉及样本、趋势与预测的判断，先问三件事——样本多大、分布如何、有没有对照组。草船借箭式的小概率成功不可复制，可复制的是把不确定性写进模型的功夫。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>恩尼格玛，从戚继光到图灵</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在人类战争史上，从来没有一次像这样，以如此少的兵力，取得如此大的成功，保护如此多的民众。</p>
+<p class="src">——《数学的故事》故事七 恩尼格玛，从戚继光到图灵 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：密码学的历史横跨两千五百年：从斯巴达人缠在腰带上的天书，到明代戚继光的反切码，再到二战德军的恩尼格玛密码机——图灵参与研制的炸弹机协助破译了德军约九成的通讯，丘吉尔因此说出那句评价：「在人类战争史上，从来没有一次像这样，以如此少的兵力，取得如此大的成功，保护如此多的民众。」</p>
+<p><b>逻辑脉络</b>：本篇把密码史写成「编码者与破译者的军备竞赛」：换位（斯巴达腰带）→ 代换（凯撒密码）→ 分组与密钥（反切码、维吉尼亚）→ 机械加密（恩尼格玛）→ 数学破译（图灵）→ 公钥革命（RSA）。每一轮，破译方的胜利都来自加密方留下的数学裂缝。</p>
+<p><b>现实意义</b>：RSA 把「大数分解很难」变成了现代支付安全的基石——理解这一点，就理解了为什么数学纯研究值得国家投入。同时它提示风险思维：任何安全方案的安全性，都绑定在某个「暂时无解」的数学假设上，量子计算正在改写这条假设。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>第一个留名的泰勒斯</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>不懂几何学的人请勿入内。</p>
+<p>第一个留名后世的数学家是古希腊的泰勒斯</p>
+<p class="src">——《数学的故事》故事八 第一个留名的泰勒斯 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：泰勒斯是「第一个留名后世的数学家」：他用影子测出金字塔高度，总结出以他命名的泰勒斯定理，还成功预言了日食。柏拉图学园门口那句「不懂几何学的人请勿入内」，标记了古希腊对数学的态度——几何学不只是技艺，更是理性训练的门票。</p>
+<p><b>逻辑脉络</b>：本篇从「数学家为何留名」这个文艺复兴式的对照切入（乔托之前的艺术家很少署名），再回到米利都城的商业与思想土壤：泰勒斯早年经商，游历埃及与巴比伦，把异邦的测量经验提升为证明式的几何——从「知其然」到「证其然」的一次跃迁。</p>
+<p><b>现实意义</b>：泰勒斯示范了知识的增值路径：把散落的经验（埃及人的测量）升维成可证明、可迁移的原理。学习与复盘时多做这一步——这件事背后的一般规律是什么？会证明的东西才是自己的。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>畴人之家出身的祖冲之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>割之弥细，所失弥少……</p>
+<p>祖冲之和他的儿子祖暅，就是其中的典范</p>
+<p class="src">——《数学的故事》故事九 畴人之家出身的祖冲之 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「畴人」是古代执掌天文历算的世家，祖冲之「和他的儿子祖暅，就是其中的典范」。刘徽的割圆术给出方法论——「割之弥细，所失弥少」，以极限思想逼近圆周率；祖冲之把它推到空前的高度：3.1415926 &lt; π &lt; 3.1415927，密率 355/113 领先世界近千年，大明历以 391 年 144 闰的精密周期校正历法。</p>
+<p><b>逻辑脉络</b>：本篇以阮元编纂《畴人传》开篇（初版 46 卷、316 位传主），先交代中国数学「九九贱技」的尴尬处境，再进入祖冲之的成就清单：割圆术的极限逼近、牟合方盖的体积理论、千里船日行八百里的工程实践——历算与工程在一个人身上合一。</p>
+<p><b>现实意义</b>：祖冲之的π是「把一件事做到当时极致」的样本：没有微积分的时代，靠的是笨功夫与精巧递推的结合。它提醒精度本身的价值——在某些领域（安全、计量、精算），多一位有效数字就是竞争壁垒。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>会造桥和打仗的秦九韶</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>他是他那个民族、他那个时代，也是所有时代最伟大的数学家之一。</p>
+<p class="src">——《数学的故事》故事十 会造桥和打仗的秦九韶 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：杭州西溪路上曾有一座「道古桥」，以秦九韶的字命名。这位南宋大数学家著《数书九章》二十万字，秦九韶算法至今仍是计算机多项式求值的标准方法，「大衍求一术」则是中国剩余定理的系统解法——科学史家萨顿评价：「他是他那个民族、他那个时代，也是所有时代最伟大的数学家之一。」</p>
+<p><b>逻辑脉络</b>：本篇从作者记忆中的道古桥起笔，经《咸淳临安志》的记载确认桥与人的关系，再铺开秦九韶的生平：生于四川、避乱临安、仕途起伏，兼有造桥、治水、用兵的实际才干——最后并不回避他的道德疑案，展示了一位复杂的历史人物。</p>
+<p><b>现实意义</b>：秦九韶算法是「古老的数学智慧被现代计算复活」的典型：多项式求值从朴素法的 n 次乘法加法降到一次一乘一加。给我们的启示是——评估算法与流程时，永远追问有没有更省一次运算的排布；效率常藏在结合顺序里。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>布丰的实验与蒙特卡罗</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>风格即人。</p>
+<p>蒙特卡罗方法是在“二战”期间，美国执行研制原子弹的“曼哈顿计划”时提出来的</p>
+<p class="src">——《数学的故事》故事十九 布丰的实验与蒙特卡罗 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：18 世纪，法国博物学家布丰在宴席上请客人把小针扔向画满平行线的白纸：2212 枚针中 704 枚与线相交，2212÷704 ≈ 3.142——用随机实验居然「扔」出了圆周率。当针长为线距一半时，相交概率恰为 1/π。两百年后，乌拉姆与冯·诺依曼在曼哈顿计划中把这类方法系统化，以摩纳哥赌城命名为蒙特卡罗方法。</p>
+<p><b>逻辑脉络</b>：本篇从投针实验讲到证明（圆圈开成铁丝的直观论证），再讲布丰其人：皇家植物园园长、《自然史》主编、法兰西学院院士，以「风格即人」的理念传世——一个在科学与人文两大领域同时站上顶峰的人。最后用两个例子展示蒙特卡罗的当代应用：钝角三角形估π与随机撒点测池塘面积。</p>
+<p><b>现实意义</b>：蒙特卡罗的本质是「用随机模拟换解析求解」：当系统太复杂写不出公式时，就用大量随机样本逼近答案——今天它统治着精算定价、物理模拟与量化金融。布丰实验还给出一个反直觉教训：确定性问题的答案，可以藏在随机性里。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>堆球问题与开普勒猜想</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>有些数学证明如此美妙，只能是上帝的创造，数学家不过是幸运地发现了它们而已。</p>
+<p>开普勒不仅解释了雪花为什么是六角形</p>
+<p class="src">——《数学的故事》故事二十 堆球问题与开普勒猜想 ｜ 据《数学的故事》（蔡天新 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：1594 年，探险家雷利远征南美洲前，命令科学顾问哈里奥特解决「有限船舱里怎样堆放最多炮弹」；哈里奥特写信告诉了开普勒。1611 年，开普勒在小册子《六角雪花》中不仅解释了雪花为什么是六角形，还提出猜想：同样小球的最密堆法是面心立方堆积，密度约 74%。这个猜想直到 2005 年才由黑尔斯借助海量计算机穷举宣告证明——审稿小组也只有 99% 的把握。</p>
+<p><b>逻辑脉络</b>：本篇从战争后勤（炮弹堆放）讲到纯数学（开普勒猜想），中间藏着一位被低估的天才：哈里奥特率先绘制月球地图、比伽利略早四个月发现太阳黑子，还创造了不等号「&gt;」与「&lt;」。最后回到爱多士的那句题记——「有些数学证明如此美妙，只能是上帝的创造，数学家不过是幸运地发现了它们而已」，以及它暗含的隐忧：当证明长到只有计算机能验证，美与确信该如何安放。</p>
+<p><b>现实意义</b>：开普勒猜想是「计算辅助证明」的里程碑案例，它提出的正是今天的核心命题：当结论依赖无法人工复核的 massive 计算，什么算「证明」？这不仅是数学哲学问题，也是 AI 时代的普遍问题——学会区分「被验证过的答案」与「被理解过的答案」。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《数学的故事》的目的，是借二十个故事记住一种态度：数学是人类想象力的历史，猜想的魅力在于悬而未决，而每一次「证不出」的背后都藏着一次框架升级的机会。</p>
+<p><b>在抽象的意义下，一切科学都是数学；在理性的世界里，所有的判断都是统计学</b>应用口诀：凡是判断，先问样本、分布与对照。</p>
+<p><b>在几何学中没有王者之路。</b>应用口诀：别找捷径，找框架。</p>
+<p><b>陛下，我不需要那个前提。</b>应用口诀：多余的前提，宁可不要。</p>
+<p><b>不管一个人多么聪明，和他一起长大都一定会有挫折感。</b>应用口诀：不比天赋，比复利。</p>
+<p><b>能找出的完美数不会多，就好比人类，要找出一个完美的人亦非易事。</b>应用口诀：接受稀缺，停止寻找完美。</p>
+<p><b>正如太阳以其光芒令众星失色，学者也以其能提出代数问题而使满座高朋逊色。</b>应用口诀：提出好问题，比炫耀答案更有分量。</p>
+<p><b>高等算术（数论）看起来囊括了数学的大部分罗曼史。</b>应用口诀：最简单的数字里，藏着最深的谜。</p>
+<p><b>这类纯粹的研究只对那些有勇气探究它的人才会展现出最迷人的魔力</b>应用口诀：无用的深处，常有毒牙般的甜。</p>
+<p><b>一个爱书的人，他必定不至于缺少一个忠实的朋友、一个良好的导师、一个可爱的伴侣和一个温情的安慰者。</b>应用口诀：书是最便宜的私人智库。</p>
+<p><b>或许有一天，全世界的黄金和钻石都会被挖掘殆尽，但数论却是取之不竭的珍宝。</b>应用口诀：投资可耗尽的，也投资取之不竭的。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B" target="_blank" rel="noopener">数学的故事 · 百度百科</a><span>背景：本书版本信息与蔡天新的数学文化写作谱系。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%94%A1%E5%A4%A9%E6%96%B0" target="_blank" rel="noopener">蔡天新 · 维基百科</a><span>背景：作者蔡天新——浙江大学数学学院教授、诗人，《数学传奇》作者。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Fibonacci" target="_blank" rel="noopener">Fibonacci · Wikipedia</a><span>佐证：斐波那契与《算经》——1202 年把印度—阿拉伯数字带进欧洲的关键人物。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Kepler_conjecture" target="_blank" rel="noopener">Kepler conjecture · Wikipedia</a><span>佐证：开普勒猜想四百年证明史与黑尔斯 2005 年的计算辅助证明。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《数学的故事》 ～ 原文据中信出版集团版校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

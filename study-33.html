@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 终身学习 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/33-zhongshen.html">本书书页</a></p>
+<h1>深度研读 · 终身学习</h1>
+<p class="sub">丹·苏利文 · 凯瑟琳·野村 著 · 吴果锦 译 · 湖北教育出版社 2018 · 十个你必须掌握的未来生存法则</p>
+<p class="lead">研读说明：本书是一本小而锋利的成长思维手册——十条「X 为上，Y 次之」的法则，每条都是一面镜子：照出我们在「将来/过往、学习/经历、付出/回报」之间的默认排序错误。作者的方法不是讲道理，是重排优先级。本研读按十二个主题推进，先忠实摘录原文，再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>成长思维：一本小书的大立意</a></li>
+<li><a href="#s2"><b>贰</b>法则一 将来为上，过往次之</a></li>
+<li><a href="#s3"><b>叁</b>法则二 学习为上，经历次之</a></li>
+<li><a href="#s4"><b>肆</b>法则三 付出为上，回报次之</a></li>
+<li><a href="#s5"><b>伍</b>法则四 表现为上，赞誉次之</a></li>
+<li><a href="#s6"><b>陆</b>法则五 感恩为上，成功次之</a></li>
+<li><a href="#s7"><b>柒</b>法则六 乐趣为上，劳累次之</a></li>
+<li><a href="#s8"><b>捌</b>法则七 合作为上，地位次之</a></li>
+<li><a href="#s9"><b>玖</b>法则八 信心为上，安乐次之</a></li>
+<li><a href="#s10"><b>拾</b>法则九 目标为上，金钱次之</a></li>
+<li><a href="#s11"><b>拾壹</b>法则十 问题为上，答案次之</a></li>
+<li><a href="#s12"><b>拾贰</b>起步工具：成长聚焦器</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>成长思维：一本小书的大立意</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>本书虽小，却立意深远。</p>
+<p>本书的的确确是关于成长，关于人生、人际关系、事业、经济状况改变的行动指南，应时常翻阅。</p>
+<p class="src">——《终身学习》自序「成长思维」与赞誉</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的世界观：成长不是天赋或运气，是一种可以练习的思维排序——十条法则的统一句式「X 为上，Y 次之」，就是把人生默认值里的次要项降级、把成长项提级。</p>
+<p><b>逻辑脉络</b>：「本书虽小，却立意深远」的自评是准确的：法则簿的体量刻意做小，因为它要当工具反复翻用，不是当理论一次读完——「应时常翻阅」点明了用法。</p>
+<p><b>现实意义</b>：把十条法则当成十面镜子而非十条道理：遇到卡壳时逐条对照——多半能找到一条「Y 抢了 X 的位置」的排序错误。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>法则一 将来为上，过往次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>美好的将来不必宏伟而华丽，也不必是大跨步或飞越。绝大多数成长其实是很多小步积累的结果，关键在于脚步不停。</p>
+<p class="src">——《终身学习》法则一「将来为上，过往次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：反怀旧的操作系统：过往（无论辉煌还是创伤）都只配当参考系，不当方向盘；而「美好的将来」被刻意定义得很小——小步积累，脚步不停。</p>
+<p><b>逻辑脉络</b>：论证用「不必宏伟」破除成长的门槛幻觉：大目标让人不敢起步，小步让行动无需勇气——将来为上的实际含义是「明天的一小步」优先于「昨天的整段史」。</p>
+<p><b>现实意义</b>：复盘时的时间分配纪律：谈过去不超过两成（只提取教训），谈下一步不少于八成——怀旧的上限，就是未来的起点。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>法则二 学习为上，经历次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>不断学习」对一生的成长至关重要。也许你有大量经历，却在所见、所闻、所做方面并未高明多少。单有经历并不足以保证一生的成长。但是，你若能定期将经历转化为学识，那么，你人生的每一天都会是成长的源泉。</p>
+<p class="src">——《终身学习》法则二「学习为上，经历次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：击碎「阅历崇拜」：二十年经历可能只是把一年重复了二十次——经历本身不产生成长，「定期将经历转化为学识」的转化动作才产生。</p>
+<p><b>逻辑脉络</b>：论证的关键词是「转化」：经历是原料，学识是成品，中间隔着复盘与提炼——没有转化工序的人，履历再厚也只是重复。</p>
+<p><b>现实意义</b>：给经历设转化周期：每周问一次「本周最有价值的经历教了我什么」，写下来才算转化完成——没写出来的经历，明年还会原样再经历一遍。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>法则三 付出为上，回报次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>所得易使人沉沦，付出使人成长。</p>
+<p>回报也会随之而至：收入、赞誉、认可、人气、地位、能力、才智、机遇……这些都是人梦寐以求的东西。但是，它们也可能阻碍人的成长。</p>
+<p class="src">——《终身学习》法则三「付出为上，回报次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：回报的悖论：回报（收入、赞誉、地位）是成长的产物，却会反过来终结成长——拿够了的人停止付出；把注意力从「拿到什么」转向「给出什么」，成长通道才重新打开。</p>
+<p><b>逻辑脉络</b>：论证用「沉沦/成长」的对举立论，再陈列回报清单并逐一标记其麻醉性——清单越长，警告越重：梦寐以求的东西恰恰是最危险的成长终结者。</p>
+<p><b>现实意义</b>：阶段性成功的自查：最近一年你花在「守住已有回报」上的精力是否超过了「创造新价值」——是，则回报已在拖你，该重新站回付出的位置。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>法则四 表现为上，赞誉次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>你无法控制他人的赞誉，但你能把握自己的表现。</p>
+<p>赞誉令人陶醉，在其诱惑之下，你就会围绕别人的认可和赞美去构建人生，不断重复最初给你带来赞誉的做法，而不是继续前行，去尝试新的、更好的、不同的东西。</p>
+<p class="src">——《终身学习》法则四「表现为上，赞誉次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：把评价权从他人手里收回：赞誉是别人给的（不可控），表现是自己做的（可控）——围绕赞誉构建人生的人，会被迫重复「最初成功的那个动作」，直到它失效。</p>
+<p><b>逻辑脉络</b>：论证指出赞誉的双重毒性：当下使人陶醉，长期使人僵化——「重复最初带来成功的动作」是讨好赞誉的必然结局，也是被时代淘汰的标准剧本。</p>
+<p><b>现实意义</b>：绩效自评的两栏法：左栏写「我能控制的改进」，右栏写「我无法控制的评价」——精力只投左栏，右栏只读不背。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>法则五 感恩为上，成功次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>学会主动感恩，而不是被动拥有。</p>
+<p>这些杰出人物明白，他们所取得的每一次成功，都离不开别人的帮助与配合，因此对这些人心怀感激。</p>
+<p class="src">——《终身学习》法则五「感恩为上，成功次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：区分「拥有」与「感恩」：被动拥有者把成功归因于自己，主动感恩者看见成功背后的合作网络——前者孤立自己，后者持续获得帮助。</p>
+<p><b>逻辑脉络</b>：论证用两组人的对比：能不断成功的人只是极少数，他们的共性是「明白每一次成功都离不开别人的帮助与配合」——感恩不是美德表演，是合作网络的维护协议。</p>
+<p><b>现实意义</b>：把「谢谢」从礼貌用语升级为复盘动作：每次成功后列出帮助过自己的人并回赠价值——这是最有复利的社交投资。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>法则六 乐趣为上，劳累次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>带着「取乐」的心态做事，其结果一定不差。</p>
+<p>有些人相信，要想成功，就得刻苦劳累。他们对由乐趣而来的任何收获都持高度怀疑。</p>
+<p class="src">——《终身学习》法则六「乐趣为上，劳累次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：破除「苦劳崇拜」：把劳累当美德的人，连由乐趣带来的收获都不敢领——而可持续的高产出恰恰藏在乐趣里，因为只有乐趣能让人长期留在游戏里。</p>
+<p><b>逻辑脉络</b>：论证先立（取乐的心态，结果不差），再破（对乐趣收获的怀疑是观念病灶）——劳累是成本项不是荣誉项，把享受从成就里剥离，等于掐断了可持续性的燃料。</p>
+<p><b>现实意义</b>：选择长期事业的一条硬标准：这件事有没有让你愿意免费做一部分的部分——没有乐趣内核的坚持，只是延迟崩塌。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>法则七 合作为上，地位次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>很多人为了同一个目标同心协力，其结果一定好于独力单干。</p>
+<p class="src">——《终身学习》法则七「合作为上，地位次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：地位是合作的副产品：盯着地位的人与合作者互相提防，盯着目标的人与合作者互相加成——同心协力的群体产出必然大于独力单干，这是规模上免费的超额收益。</p>
+<p><b>逻辑脉络</b>：论证的朴素值得注意：不谈博弈论不谈机制设计，只陈述一条经验事实（合作优于单干）——法则簿的写法就是把常识升级成优先级。</p>
+<p><b>现实意义</b>：项目启动时问一句：这件事做成之后，功劳簿怎么排？——如果答案是「必须我来居首」，合作就已经被地位条款提前污染了。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>法则八 信心为上，安乐次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>很多成功人士开始时都是怀揣梦想，敢于冒险，可他们在功成名就之后，就开始寻求安稳和舒适。这种心态使他们失去了干劲儿，也失去了获取成功所需的信心。</p>
+<p class="src">——《终身学习》法则八「信心为上，安乐次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：信心与安乐互斥：信心来自「刚够着的挑战」，安乐来自「已够着的舒适」——功成名就后转向寻求安稳，是信心的慢性失血，也是下一次失败的开始。</p>
+<p><b>逻辑脉络</b>：论证给出一条抛物线：怀揣梦想敢于冒险（信心高点）→功成名就寻求安稳（信心流失）→干劲儿与信心双失（下滑）——安乐不是成就的奖赏，是下一程的负债。</p>
+<p><b>现实意义</b>：每个目标达成后立刻设定「跳一跳才够着」的下一个——给信心持续供货的唯一年化方式，是不让自己长期待在舒适区。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>法则九 目标为上，金钱次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>你的眼光要放在目标上，金钱只是顺便的事。</p>
+<p>在一定条件下，金钱是衡量成功或发展的方式，也是为了实现更多可能性的有利资源；而在某些时候，没有目标的金钱只会</p>
+<p class="src">——《终身学习》法则九「目标为上，金钱次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：金钱的双面性：作为度量与资源时它是好东西，作为目标本身时它反噬——没有目标的金钱追逐会让所有决策退化为短期套现。</p>
+<p><b>逻辑脉络</b>：论证给了金钱一个精确的位置描述：「顺便的事」——顺序即因果：目标清晰且做对了的人，金钱是副产品；直接追钱的人，连目标都由出价最高者代管了。</p>
+<p><b>现实意义</b>：职业选择的双重校验：这条路的目标是我要的吗？金钱只是它的顺便还是它的全部？——后者无论薪金多高，都是慢性贬值。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>法则十 问题为上，答案次之</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>真正的好问题，能使你一生都在思考、成长。</p>
+<p>我们还是小孩子的时候，成长得很快，会问很多问题；长大之后，我们渐渐认为自己已有大量答案。</p>
+<p class="src">——《终身学习》法则十「问题为上，答案次之」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：成长与答案成反比：小孩子问题多所以长得快，成年人答案多所以停止生长——把「拥有所有答案、永不犯错」当安全感的人，等于把成长资格交了出去。</p>
+<p><b>逻辑脉络</b>：论证以「小孩vs大人」的发展对照收束全书：十条法则的共同敌人是「定型的自我」，而问题是对定型最有力的溶解剂——好问题让思考永不结业。</p>
+<p><b>现实意义</b>：定期给自己的领域换三个问题：行业里什么正在失效？我的客户真正在买什么？如果从头重来我会怎么干？——答案使人安稳，问题使人生长。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>起步工具：成长聚焦器</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>几个能帮你起步的好问题</p>
+<p>成长的决心</p>
+<p class="src">——《终身学习》附录「几个能帮你起步的好问题」「成长聚焦器」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：书的落地设计：法则之后附「起步好问题」与「成长聚焦器」——把十条法则转成可以每周执行的问句清单，完成从「知道」到「做到」的最后一公里。</p>
+<p><b>逻辑脉络</b>：附录的存在回答了法则簿的常见死法（读完激动、放下不动）：作者用工具化（问题清单＋聚焦器）把法则压进日程——工具比道理更容易成为习惯。</p>
+<p><b>现实意义</b>：最小启动方案：每周挑一条法则，用对应的起步问题问自己十分钟并写下答案——十条法则一轮一个季度，一年三轮，思维排序会真实改变。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读的最终目的，是把十条法则装进每周复盘的问句清单。</p>
+<p><b>绝大多数成长其实是很多小步积累的结果，关键在于脚步不停。</b>应用口诀：将来为上——复盘谈过去不超过两成，谈下一步不少于八成。</p>
+<p><b>单有经历并不足以保证一生的成长。</b>应用口诀：每周问「这周的经历教了我什么」，写下来才算转化。</p>
+<p><b>所得易使人沉沦，付出使人成长。</b>应用口诀：守住回报的精力超过创造新价值时，该重新付出了。</p>
+<p><b>你无法控制他人的赞誉，但你能把握自己的表现。</b>应用口诀：精力只投「我能控制的改进」，评价只读不背。</p>
+<p><b>学会主动感恩，而不是被动拥有。</b>应用口诀：每次成功后列出帮助者并回赠价值。</p>
+<p><b>带着「取乐」的心态做事，其结果一定不差。</b>应用口诀：长期事业必须有愿意免费做的乐趣内核。</p>
+<p><b>很多人为了同一个目标同心协力，其结果一定好于独力单干。</b>应用口诀：合作前先谈目标，别先谈功劳簿。</p>
+<p><b>可他们在功成名就之后，就开始寻求安稳和舒适。</b>应用口诀：目标达成即设下一个「跳一跳」目标，给信心供货。</p>
+<p><b>你的眼光要放在目标上，金钱只是顺便的事。</b>应用口诀：选路先问目标是不是自己的，金钱是顺便还是全部。</p>
+<p><b>真正的好问题，能使你一生都在思考、成长。</b>应用口诀：每季给自己的领域换三个新问题。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%88%90%E9%95%B7%E5%9E%8B%E6%80%9D%E7%B6%AD" target="_blank" rel="noopener">成长型思维 · 维基百科</a><span>佐证：Carol Dweck 成长型思维与本书法则的同构性。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%B5%82%E8%BA%AB%E5%AD%B8%E7%BF%92" target="_blank" rel="noopener">终身学习 · 维基百科</a><span>延伸：终身学习的教育学与经济学脉络。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%A4%87%E7%9B%A4" target="_blank" rel="noopener">复盘 · 维基百科</a><span>佐证：法则二「经历转化为学识」的方法载体。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%88%BB%E6%84%8F%E7%B7%B4%E7%BF%92" target="_blank" rel="noopener">刻意练习 · 维基百科</a><span>延伸：「跳一跳才够着」的挑战设计原理。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BF%83%E6%B5%81" target="_blank" rel="noopener">心流 · 维基百科</a><span>延伸：法则六「乐趣为上」的心理学基础。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%84%9F%E6%81%A9" target="_blank" rel="noopener">感恩 · 维基百科</a><span>佐证：感恩心理学的实证研究脉络。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《终身学习》 ｜ 摘录据原书文本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

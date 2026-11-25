@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 米佳的爱情 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/76-mijia.html">本书书页</a></p>
+<h1>深度研读 · 米佳的爱情</h1>
+<p class="sub">布宁 中短篇集 · 陈馥 译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为布宁代表作双篇合刊，《米佳的爱情》（1924，二十九章）写九天之内一场恋爱从「爱情之杯满溢」走到「怀着快感用力按下扳机」，《旧金山来的绅士》（1915）写一个没有名字的富豪来时头等舱、归时装进苏打水木箱走底舱。两篇相隔九年，共用同一个冷眼：一篇写爱的焚身，一篇写物的陪葬。本研读共十二节，先录原文（据《外文大家小藏本·布宁集》，陈馥 译，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>春汛般的恋爱</a></li>
+<li><a href="#s2"><b>贰</b>妒忌的煎熬</a></li>
+<li><a href="#s3"><b>叁</b>卡佳的信</a></li>
+<li><a href="#s4"><b>肆</b>别了，莫斯科</a></li>
+<li><a href="#s5"><b>伍</b>雨中失魂</a></li>
+<li><a href="#s6"><b>陆</b>阿莲卡</a></li>
+<li><a href="#s7"><b>柒</b>尘世梦与枪声</a></li>
+<li><a href="#s8"><b>捌</b>大西洲号：体面的一生</a></li>
+<li><a href="#s9"><b>玖</b>卡普里的死亡</a></li>
+<li><a href="#s10"><b>拾</b>路易吉与风笛手</a></li>
+<li><a href="#s11"><b>拾壹</b>苏打水木箱</a></li>
+<li><a href="#s12"><b>拾贰</b>两种死亡的并置</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>春汛般的恋爱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天空亮得那么庄严而喜气洋洋</p>
+<p>他的爱情之杯已经满溢。</p>
+<p class="src">——《米佳的爱情》第 2 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：小说开场不久便是全书最明亮的段落：米佳举目向上，「看见园子上面的天空亮得那么庄严而喜气洋洋」，夜莺在灌木丛里以「忘我的激情」歌唱——「米佳返回的时候走得很慢，他的爱情之杯已经满溢」。布宁把恋爱的幸福感写成一种生理上的满溢。</p>
+<p><b>逻辑脉络</b>：满溢是本册的总隐喻：杯子满到溢出，痛苦就开始。1924 年问世，布宁流亡后的代表作；1933 年他成为俄罗斯首位诺贝尔文学奖作家——本书的庄园、春汛与夜莺，全是记忆里的俄罗斯。</p>
+<p><b>现实意义</b>：恋爱最甜的那一刻，恰恰是失去的开始：杯子的容量是恒定的，人是会变的。幸福写到生理反应，就要想到它的另一面——布宁的爱情从第一页就埋着结局。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>妒忌的煎熬</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>米佳为什么爱卡佳，连他自己也不明白</p>
+<p>他对卡佳的怀疑和嫉妒也日甚一日</p>
+<p class="src">——《米佳的爱情》第 3–4 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：戏剧学校校长把卡佳「夸得忘乎所以」，她忍不住转述；争吵时她嚷道：「如果你认为我处处都这么坏，我真不明白你为什么爱我！你到底要我怎么样？」叙述者的诊断冷静得像病历：「米佳为什么爱卡佳，连他自己也不明白」「他对卡佳的怀疑和嫉妒也日甚一日」。</p>
+<p><b>逻辑脉络</b>：爱得越深，猜疑越紧——卡佳的世界在向他敞开，也在离他而去；嫉妒吃掉的不只是信任，还有等待的耐心。信成了唯一的救命稻草，而信迟迟不来。</p>
+<p><b>现实意义</b>：嫉妒是恋爱里真正的第二主角：它不消耗对手，只消耗自己。布宁写恋爱的自耗，比写热恋更高明——看不清这段关系时，先看自己的嫉妒长到了什么尺寸。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>卡佳的信</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我鄙俗，我丑恶，我学坏了，我配不上您，但是我酷爱艺术！</p>
+<p class="src">——《米佳的爱情》第 5 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：决裂由一封信完成：「亲爱的米佳！您别记仇，把过去发生的一切都忘了吧！我鄙俗，我丑恶，我学坏了，我配不上您，但是我酷爱艺术！我决定了，这已是定局，我要走了，您知道我跟谁走……」</p>
+<p><b>逻辑脉络</b>：「配不上您」与「酷爱艺术」在同一句话里打架——少女的任性与坦白，是全书最有人味的一页：她不是不爱，是要去燃烧自己认定的那种活法。米佳第一百零一遍重读这封信。</p>
+<p><b>现实意义</b>：任性的坦白，胜过体面的谎：卡佳至少没有欺骗。感情里最难的一课，是接受对方的自白——哪怕那份自白里装着你不想听的理由。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>别了，莫斯科</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>别了，莫斯科！别了，在这里经历的一切！</p>
+<p class="src">——《米佳的爱情》第 6 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：失恋的米佳回乡下庄园，出租马车驶出小巷，「天色阴沉，稀稀拉拉地掉着雨点」——他在心里说：「别了，莫斯科！别了，在这里经历的一切！」</p>
+<p><b>逻辑脉络</b>：俄罗斯大地开始以另一种节律接纳年轻人：融雪、椋鸟、炊烟、苹果花香——大地不安慰人，但大地有节律，有节律就有喘息。庄园（усадьба）是俄罗斯贵族的精神故乡，也是布宁流亡后反复回望的地方。</p>
+<p><b>现实意义</b>：换环境不是逃避，是给情绪换一个节律器：城市的失败感需要田野的慢来稀释。但注意——田野生不了爱，只能生喘息。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>雨中失魂</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>他浑身湿透，脸上没有一点血色，两只眼睛哭红了，露出疯狂的神情，那样子真可怕</p>
+<p class="src">——《米佳的爱情》第 7–8 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：母亲来信催他回莫斯科，退路也在关闭；米佳在雨中狂走——「他浑身湿透，脸上没有一点血色，两只眼睛哭红了，露出疯狂的神情，那样子真可怕。他一支接一支地吸烟，在泥泞的林荫小径上大步走着」。</p>
+<p><b>逻辑脉络</b>：布宁写崩溃不用心理独白轰炸，用外貌白描：帽子耷拉、靴子糊泥、眼睛哭红——叙述者克制了一整章，只在末尾下一句判词「那样子真可怕」，一句判词的重量超过十行渲染。</p>
+<p><b>现实意义</b>：判断一个人快到极限，不用听他说什么，看他的作息与仪表就够了：帽子和靴子比语言诚实。关心人，也要先看他的「白描」，再听他的「独白」。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>阿莲卡</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>喂，快点儿还是怎么的</p>
+<p>摸出一张皱皱巴巴的五卢布钞票，塞进阿莲卡的手心里</p>
+<p class="src">——《米佳的爱情》第 11 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：庄头儿牵线，米佳在窝棚边「摸出一张皱皱巴巴的五卢布钞票，塞进阿莲卡的手心里」；她「回头看了一眼就钻进窝棚里那有麦秸味儿的黑暗中」，只低声说一句：「喂，快点儿还是怎么的。」</p>
+<p><b>逻辑脉络</b>：这是全书最直白的场面，也是最诚实的：阿莲卡的泼辣与肉身的真实，反衬出卡佳爱情的缥缈。布宁不评判高下，只让两种爱并置——灵的爱悬空，肉的爱落地。</p>
+<p><b>现实意义</b>：灵与肉不是选择题，是同一道题的两半：只答一半的人，迟早交白卷。米佳两头奔逃，两头落空——失去爱情的空仓期最危险，那不是悲伤，是失重。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>尘世梦与枪声</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>刚刚做了一个一切尘世梦当中最可怕、最叫人恶心的梦</p>
+<p>深深地、高兴地叹了一口气，张大嘴巴，怀着快感用力按下扳机</p>
+<p class="src">——《米佳的爱情》第 29 章 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：结局只有一段：他在漫长的雨夜后醒来，「刚刚做了一个一切尘世梦当中最可怕、最叫人恶心的梦。于是他摸索着拉开床头柜的抽屉，抓起一支冰凉而沉重的左轮手枪，深深地、高兴地叹了一口气，张大嘴巴，怀着快感用力按下扳机」。（1924）</p>
+<p><b>逻辑脉络</b>：「深深地、高兴地」——死亡被写成解脱的圆满：九天的情感高压在这一声枪响里瞬间泄压，全书的结构到这一刻才显形——前面所有章节都是引信，枪声是唯一的爆炸。</p>
+<p><b>现实意义</b>：痛苦终于到头的「快感」，是全书最惊心的警示：极端情绪的高压锅需要一个出口，不是每个人都能等到泄压阀。身边人「那样子真可怕」的时候，别等他自己好起来。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>大西洲号：体面的一生</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>有名的“大西洲号”客轮就像一座设备齐全的大饭店</p>
+<p class="src">——《旧金山来的绅士》开篇 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：五十八岁的美国富豪携妻女赴欧游历两年，座驾是「有名的“大西洲号”客轮就像一座设备齐全的大饭店，有夜间酒吧、东方浴室、本船出版的报纸」——船上「四壁之外的海洋是可怖的」，但人们照常歌舞。</p>
+<p><b>逻辑脉络</b>：布宁故意不给他名字——人物被抽掉名字，就成了一个阶级的标本：生前头等舱、上流社会的季节表，就是金钱文明的全部内容。1915 年写成，正是旧欧洲对美式财富文明的宣战书。</p>
+<p><b>现实意义</b>：体面是一艘自足的船：住在船上的人以为自己在生活，其实在移动。检验你的生活有没有「四壁之外的海洋」——能看见风浪的人，才算真的在海上。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>卡普里的死亡</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>啊，真可怕！</p>
+<p class="src">——《旧金山来的绅士》中段 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：绅士在卡普里旅馆穿衣对镜、系好领结之后，突然死去——「他喃喃地说，同时低下他那结实的秃头，既不打算弄明白，也没有去思索，究竟是什么可怕」。旅馆老板连夜找棺材：「很遗憾，不能，绝对找不到。」</p>
+<p><b>逻辑脉络</b>：生前他从没想过死亡，死亡来临时他连害怕都来不及想完——「啊，真可怕！」是全书最著名的遗言：可怕的不是死亡，是他一生从未面对过死亡。大人物死了，第一件事是找木箱。</p>
+<p><b>现实意义</b>：没想过死亡的人，来不及想明白。斯多葛的旧训在布宁这里变成冷笑话：把「今天可能是最后一天」当成日程表的底色，不是消极，是清醒。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>路易吉与风笛手</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在岛上行吟一个月之久的阿布鲁齐风笛手的演奏</p>
+<p class="src">——《旧金山来的绅士》结尾 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：侍应生路易吉的口头禅是意大利语「Ha sonato, signore?」（先生，响铃了吗？）——主人死了，台词照演；而结尾是两个阿布鲁齐山民沿腓尼基之路下山，「在岛上行吟一个月之久的阿布鲁齐风笛手的演奏」照常开始。</p>
+<p><b>逻辑脉络</b>：死亡之后世界照旧：路易吉照演仪式，风笛手照唱颂歌，石匠照常上工——布宁的「冷漠结尾」是他给现代小说上的一课：死亡搅不乱什么，这才是死亡最可怕的地方。</p>
+<p><b>现实意义</b>：别高估自己在世界里的位置，也别因此灰心——世界的冷漠是中性的：它不给你的死亡让路，也不给你的失败让路，于是你的每一步都真的属于你。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>苏打水木箱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这回他被装进涂满焦油的棺材里，深藏在黑暗的底舱，不得与活人见面了</p>
+<p class="src">——《旧金山来的绅士》结尾 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卡普里弄不到棺材，遗体装进英国苏打水的长形木箱运走；回程的船舱里，「这回他被装进涂满焦油的棺材里，深藏在黑暗的底舱，不得与活人见面了」——来时头等舱，归时底舱。</p>
+<p><b>逻辑脉络</b>：同一条船完成了阶级的往返票：生前的一切头衔，折算成一只木箱的运费。布宁的清算一个形容词都不用——道具叙事：五卢布钞票、苏打水木箱、涂焦油的棺材，物件替议论说话。</p>
+<p><b>现实意义</b>：你攒下的一切，最后由别人来定运费。布宁的冷眼适合每个积累时代：别把身份当存在——身份是船票，船票只管航程，不管归途。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>两种死亡的并置</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>深深地、高兴地叹了一口气，张大嘴巴，怀着快感用力按下扳机</p>
+<p class="src">——《米佳的爱情》第 29 章 ＆《旧金山来的绅士》结尾 ｜ 据《外文大家小藏本·布宁集》（陈馥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：把米佳和绅士并排看：一个为爱自杀，「深深地、高兴地叹了一口气」；一个在对镜穿衣时猝死，临终只喃喃一句「啊，真可怕！」——前者死于激情的燃尽，后者死于体面的空转。</p>
+<p><b>逻辑脉络</b>：布宁 1915 年先写绅士，1924 年再写米佳：九年之间，他把死亡从「物的陪葬」改写成「爱的焚身」——但两次都不给读者怜悯的余地。两篇合刊即是布宁死亡书写的双联画。</p>
+<p><b>现实意义</b>：布宁用两种死亡回答同一个问题：没有爱地活着，与没有果地爱着，哪一种更荒凉。答案不在书里，在你自己排的日子里——两种死法都离活法不远。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷「两种死亡」双联画的最终目的，是学会在自己的生活里区分满溢与失重、灵与肉、船票与存在，并且在「那样子真可怕」的时刻，做那个递上泄压阀的人。</p>
+<p><b>天空亮得那么庄严而喜气洋洋</b>应用口诀：幸福写到生理反应，是痛苦的前兆。</p>
+<p><b>他的爱情之杯已经满溢。</b>应用口诀：杯子满到溢出，痛苦就开始。</p>
+<p><b>米佳为什么爱卡佳，连他自己也不明白</b>应用口诀：说不清原因的爱，才最疼。</p>
+<p><b>我鄙俗，我丑恶，我学坏了，我配不上您，但是我酷爱艺术！</b>应用口诀：任性的坦白，胜过体面的谎。</p>
+<p><b>喂，快点儿还是怎么的</b>应用口诀：肉身的真实，最省修辞。</p>
+<p><b>他浑身湿透，脸上没有一点血色，两只眼睛哭红了，露出疯狂的神情，那样子真可怕</b>应用口诀：崩溃不用独白，白描就够。</p>
+<p><b>深深地、高兴地叹了一口气，张大嘴巴，怀着快感用力按下扳机</b>应用口诀：高压的情绪需要泄压阀，别等它自己来。</p>
+<p><b>啊，真可怕！</b>应用口诀：没想过死亡的人，来不及想明白。</p>
+<p><b>这回他被装进涂满焦油的棺材里，深藏在黑暗的底舱，不得与活人见面了</b>应用口诀：来时头等舱，归时底舱——身份是船票，不是存在。</p>
+<p><b>一只装苏打水的长形木箱送进了四十三号房间</b>应用口诀：来时头等舱，归时底舱——世界不为你让路，你的每一步才真的属于你。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ivan_Bunin" target="_blank" rel="noopener">Ivan Bunin · Wikipedia</a><span>佐证：作者 1870—1953 生平，1933 年首位俄罗斯诺奖作家与流亡写作的谱系。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Mitya%27s_Love" target="_blank" rel="noopener">Mitya's Love · Wikipedia</a><span>建议：1924 年中篇的英文译本与创作背景——流亡初期写记忆里的俄罗斯。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Gentleman_from_San_Francisco" target="_blank" rel="noopener">The Gentleman from San Francisco · Wikipedia</a><span>建议：1915 年名篇原文——金钱文明判决书的完整结构分析。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Anton_Chekhov" target="_blank" rel="noopener">Anton Chekhov · Wikipedia</a><span>背景：布宁的文学师承——受教于托尔斯泰与契诃夫的俄罗斯散文传统。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《米佳的爱情》 ～ 中文据《外文大家小藏本·布宁集》（陈馥 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

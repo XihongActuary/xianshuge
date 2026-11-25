@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 茶花女 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/23-chahua.html">本书书页</a></p>
+<h1>深度研读 · 茶花女</h1>
+<p class="sub">亚历山大•小仲马 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·外研社编译组译）对照精读</p>
+<p class="lead">研读说明：小仲马 1848 年成名作，全书从葬礼与拍卖读起，人物最后才出场：玛格丽特•戈蒂埃生前是巴黎被租借最多的女人，死后是被拍卖得最快的财产。三重框架把虚构办成证词。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析＋三个英语学习模块（词汇积累／句式分析／写作借鉴）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>开篇：研究人才能写人 · A Study of People</a></li>
+<li><a href="#s2"><b>贰</b>葬礼开场：拍卖先于人物 · An Estate Was to Be Disposed Of</a></li>
+<li><a href="#s3"><b>叁</b>题词：玛农对玛格丽特，惭愧 · Manon to Marguerite, Humility</a></li>
+<li><a href="#s4"><b>肆</b>茶花历法：二十五天白，五天红 · Twenty-five Days White</a></li>
+<li><a href="#s5"><b>伍</b>我的心第一次被占据 · An Open, Undefended City</a></li>
+<li><a href="#s6"><b>陆</b>债务清单：我是玛格丽特·戈蒂埃小姐 · Debts of Forty Thousand</a></li>
+<li><a href="#s7"><b>柒</b>绝笔信：不够富，也不够穷 · Neither Rich Nor Poor Enough</a></li>
+<li><a href="#s8"><b>捌</b>父亲与那个吻 · The Only Chaste Embrace</a></li>
+<li><a href="#s9"><b>玖</b>日记：我心底原谅你 · I Forgive You from My Heart</a></li>
+<li><a href="#s10"><b>拾</b>临终：以基督徒的方式死去 · A Christian Death</a></li>
+<li><a href="#s11"><b>拾壹</b>坟前：四月里的嫩芽 · The First Leaves into Bud</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：这是我的责任 · It Was My Duty</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>开篇：研究人才能写人 · A Study of People</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">It is my considered view that no one can invent fictional characters without first having made a lengthy study of people, just as it is impossible for anyone to speak a language that has not been properly mastered.</p>
+<p class="cn">我认为，没有人可以在对人进行深入的研究之前就能创造出虚构的人物，这就像人们不可能讲一门还没有掌握的语言一样。</p>
+<p class="en">Since I am not yet of an age to invent, I must make do with telling a tale.</p>
+<p class="cn">既然还没到能够创造人物的年纪，我就必须满足于讲故事了。</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一句是一份写作宣言：研究人先于创造人，如同学话先于说话。小仲马把「虚构」降级成「转述」——他自认年纪不够，只能讲故事。这句谦虚的序言其实是全书的手法密码：接下来每一页都在装作「采访实录」。</p>
+<p><b>逻辑脉络</b>：宣言与文本严格互证：叙述者反复出示证据（海报、拍卖目录、日记、遗物、目击者），唯独不出示想象力。这种「证词化写作」是十九世纪处理不体面题材的合法手续——一个妓女的故事只有假装成社会档案才能出版。</p>
+<p><b>现实意义</b>：写任何严肃题材的顺序都一样：先研究后表达，先采访后判断。所有「我替她说」的文章，缺的都是这句前提——你研究够了吗？没研究够的人讲故事，讲的是自己。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>considered</b>　adj. 经过深思的（my considered view：consider 的过去分词作定语——郑重观点的标签词）</p>
+<p><b>invent</b>　v. 虚构、创造（invent fictional characters：发明人物——与 study 相对）</p>
+<p><b>make do with</b>　phr. 勉强凑合、只得（make do with telling a tale：降级叙事的自谦式）</p>
+<p><b>lengthy</b>　adj. 长时间的（a lengthy study of people——研究的成本声明）</p>
+<p><b>tale</b>　n. 故事（telling a tale：tale 与 novel 的文体差——轻与重的分界）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>no one can invent fictional characters without first having made a lengthy study of people ——no one can...without... 双重否定的绝对命题：写作法则被写成物理定律。类比从句 just as it is impossible... 把文艺理论接到语言学习上——对语言学习者格外亲切。</p>
+<p>I must make do with telling a tale ——make do with + 动名词：把「我只能做小事」说成文体选择——英文自谦句式的高级用法：谦逊的对象是动词不是形容词。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给非虚构作品写开场声明——先立方法论（no one can...without...），再自降身份（I must make do with...）。英文 preface 的信任工程：读者只把托付给先声明过限度的作者。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>葬礼开场：拍卖先于人物 · An Estate Was to Be Disposed Of</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">An estate was to be disposed of, the owner having died. The notice did not name the dead person</p>
+<p class="cn">这笔财产是因为主人去世而被拍卖的。海报上没有写出死者的名字</p>
+<p class="en">I have always been interested in curios. I promised myself I would not miss this opportunity, if not of actually buying, then at least of looking.</p>
+<p class="cn">我一直对古董很感兴趣。所以，我向自己保证一定不能错过这个机会，就算不买，至少也要去看看。</p>
+<p class="src">——第三章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最伟大的设计是把人物出场延后三重：先读海报（无名的「一笔财产」）、再读拍卖目录（她被拆成目录条目）、最后才见到玛格丽特本人。读者先知道她值多少钱，再知道她值多少情——落差本身就是控诉。</p>
+<p><b>逻辑脉络</b>：「主人去世而被拍卖」八个字完成了全书的定调：一个活人的全部人生被折叠成一份财产清单。茶花女的人权史被改写成物权史——爱情、美貌、忠诚，最后都躺在安坦街九号等买家。叙述者买到的《玛农·莱斯科》上有情人的题词，全书由此从物证开始倒放。</p>
+<p><b>现实意义</b>：读任何二手信息时警惕「拍卖目录视角」：新闻里的死者先变成数字，报告里的人先变成表格。先问一句——这份目录上少了哪个活人？她自己愿不愿意这样被陈列？</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>estate</b>　n. 财产、遗产（an estate was to be disposed of：人被缩写成一份遗产）</p>
+<p><b>dispose of</b>　phr. 处理、变卖（被动语态——物品才用 dispose of）</p>
+<p><b>notice</b>　n. 海报、告示（a large yellow notice——名字缺席的那张纸）</p>
+<p><b>curios</b>　n. 古董（curiosity 的截短复数——收藏家的行话）</p>
+<p><b>name</b>　v. 写出名字（did not name the dead person：name 作动词——本节最刺眼的缺席）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>An estate was to be disposed of, the owner having died. ——被动语态+分词独立主格（the owner having died）：两句话说完一场死亡与一次清算，死者连主语的资格都没有——having died 只是从属信息。英文冷叙事的巅峰句式。</p>
+<p>if not of actually buying, then at least of looking ——if not...then at least... 的降级平行：买不起就看看——欲望的真实刻度。平行结构里两个 of 短语共用 opportunity。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「人的物化」，把人从主语位置上撤下来——an estate was to be disposed of（财产被处理），the owner having died（主人顺带死了）。英文 thematic writing 的立场藏在语态里：你想控诉什么，就把它写进非主语位置。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>题词：玛农对玛格丽特，惭愧 · Manon to Marguerite, Humility</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">On the first page, written in ink in an elegant hand, was the dedication of the person who had given the book. This dedication consisted simply of these words: Manon to Marguerite, Humility.</p>
+<p class="cn">扉页上是赠书人用钢笔写的两行秀丽的字迹。题词只有寥寥几字：”玛农对玛格丽特，惭愧。”</p>
+<p class="en">What did this word 'Humility' mean?</p>
+<p class="cn">”惭愧”这两个字是什么意思呢？</p>
+<p class="src">——第三章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：拍卖桌上那本《玛农·莱斯科》扉页有两行秀丽的字迹：「玛农对玛格丽特，惭愧。」署名阿尔芒·迪瓦尔。八个字是一部小说的入场券：玛农——十八世纪因情人而死的名妓——面对玛格丽特也要惭愧，因为她死时身边没有爱，玛格丽特死时身边连爱的痕迹都被债主搬空了。</p>
+<p><b>逻辑脉络</b>：这句题词给全书装了一个参照系：文学史里「为爱而死的名妓」竞赛，玛格丽特赢了前辈，代价是死得更彻底——玛农死在沙漠里有人为她挖坟，玛格丽特死在过去自己的床上，「内心却同样迷失沙漠中，这个沙漠比埋葬玛农的沙漠更加干燥、更加荒凉、更加无情」。</p>
+<p><b>现实意义</b>：给对手写「惭愧」体题词是一种高级的辩护：不喊冤，只找参照系。被低估的东西不需要自夸，只需要放一件更著名的参照物在旁边，让读者自己算出差额。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>dedication</b>　n. 题词、献词（dedicate 的名词——扉页上的小文体）</p>
+<p><b>elegant hand</b>　phr. 秀丽的字迹（hand＝笔迹——hand 的第九种词义）</p>
+<p><b>consist of</b>　phr. 由……构成（consisted simply of these words：内容的清点句式）</p>
+<p><b>humility</b>　n. 惭愧、谦卑（拉丁词根 humilis 低——全书题眼的单词）</p>
+<p><b>superior</b>　n. 胜过一筹的人（acknowledged Marguerite as her superior——承认辈分的句式）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>written in ink in an elegant hand, was the dedication ——过去分词短语作主语+完全倒装（On the first page...was the dedication）：地点在前、实物在后——镜头从扉页推到题词。仿写：On the last page, written in haste, was the apology.（在最后一页，仓促写就的是道歉。）</p>
+<p>What did this word 'Humility' mean? ——单个大写词作引语的提问法：一个词自成谜题——把一本书的悬念压缩进一个名词。英文 hook 写作的最小单位：one word, one question.</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让一件遗物替人物说话——一句题词（八个字）+一个问句（What did this word mean?）顶三页人物介绍。英文 artifact writing：物件上的文字比旁白更可信，因为它不经过任何人的转述。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>茶花历法：二十五天白，五天红 · Twenty-five Days White</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">For twenty-five days in every month the camellias were white, and for five they were red.</p>
+<p class="cn">一个月里有二十五天玛格丽特带的茶花是白色的，剩下的五天那些花是红色的。</p>
+<p class="en">No one ever knew the reason for this variation in colour which I mention but cannot explain</p>
+<p class="cn">没人知道茶花颜色变换的原因是什么，我也只能指出现象但不能解释其中的道理。</p>
+<p class="src">——第三章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最著名的身体历法：二十五天白茶花，五天红茶花，无人知晓原因。叙述者诚实地承认「只能指出现象但不能解释道理」——这是全书叙事纪律的缩影：观察、记录、闭嘴。一个被巴黎租借最多的女人，唯一的私人信息竟藏在花色里。</p>
+<p><b>逻辑脉络</b>：白与红在文本后段得到暗示性对位：白色是她的公众日（工作），红色那五天是身体的私密时刻（不能接客）。历法的残忍在于：连生理周期都成了交易市场可以读取的行情。女人把最后的隐私物化成一朵花，而读花的人也只是为了安排租借日期。</p>
+<p><b>现实意义</b>：任何人被简化成可交易符号时，都会留下一个「茶花历法」式的暗码——外人读不懂，只有自己在意。识别你身边人的暗码，是理解人的第一步：别急着解释，先指出现象。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>camellia</b>　n. 茶花（山茶属——书名的词根，the Lady of the Camellias）</p>
+<p><b>variation</b>　n. 变化、差异（variation in colour：vary 的名词——统计学的中性词）</p>
+<p><b>frequent</b>　v. 常去（those who frequented the theatres：frequent 的动词义——高频访客）</p>
+<p><b>florist</b>　n. 花店店主（Madame Barjon——命名权人的身份）</p>
+<p><b>phenomenon</b>　n. 现象（指出现象——叙述者的纪律：只登记不解释）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>For twenty-five days in every month..., and for five they were red. ——时间状语对仗（for twenty-five days / for five）：数字 25 与 5 的悬殊就是全句的戏剧性——奥斯丁式精确计量的法国表亲。省略第二条动词（they were red 补全）——省略比完整更有节奏。</p>
+<p>which I mention but cannot explain ——mention but cannot explain 的学者式坦白：记录者的诚实条款——观察者与解释者的权限分离。英文报告写作的边界声明句式。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给人物一个「可计量的秘密」——二十五比五，不需要解释，只需要被观察到。英文 character detail 的计量法：数字本身就是悬念，连 cannot explain 都是它魅力的一部分。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>我的心第一次被占据 · An Open, Undefended City</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">To capture a heart unused to attack is like walking into an open, undefended city. Upbringing, the awareness of duty, and the family, are watchful sentries of course, but there are no sentries, however vigilant, that cannot be eluded by a girl of sixteen</p>
+<p class="cn">占据一颗没有谈过恋爱的心就像走进一座门户大开、没有防备的城市。教育、责任感和家庭当然都是最机警的哨兵，但是任何机警的哨兵都免不了会被一个十六岁的少女骗过</p>
+<p class="en">To be loved by a chaste young girl, to be the first to show her the strange mystery of love, is a great joy—but it is the easiest thing in the world.</p>
+<p class="cn">被一个纯洁的少女所爱，成为第一个向她揭示爱情秘密的人，这是一种极大的快乐，但是同时也是世界上最简单的事情。</p>
+<p class="src">——第十七章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：阿尔芒的爱情论断：占据一颗没有谈过恋爱的心，就像走进一座门户大开、没有防备的城市。教育、责任感、家庭是最机警的哨兵，却拦不住十六岁的初恋。这是全书把「纯洁」与「易攻」画等号的一页——它不是教唆，是风险说明书。</p>
+<p><b>逻辑脉络</b>：这一段的语境是阿尔芒讲完奥琳帕的插曲后对比初恋：玛格丽特这样见过世面的女人反而难懂，没谈过恋爱的少女反而一攻即破。小仲马用军事隐喻写情感经济学：越是没有防备的市场，越是进入成本最低的市场——而成本最低的东西，往往被开采得最彻底。</p>
+<p><b>现实意义</b>：教育孩子防的不是某个坏人，是「门户大开」本身：责任感与家教当哨兵可以，但哨兵会打瞌睡。真正守城的是让孩子自己知道——城门为什么开着，进来的人图什么。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>capture</b>　v. 攻占（capture a heart——军事动词写爱情的本节题眼）</p>
+<p><b>undefended</b>　adj. 无防备的（un+defended——open 的军事版）</p>
+<p><b>sentry</b>　n. 哨兵（watchful sentries：家教的责任被写成岗哨）</p>
+<p><b>elude</b>　v. 躲过、骗过（cannot be eluded by a girl of sixteen——被一个十六岁少女骗过）</p>
+<p><b>chaste</b>　adj. 纯洁的（a chaste young girl——与后文 chaste embrace 呼应）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>To capture a heart unused to attack is like walking into an open, undefended city. ——不定式主语+like 明喻：爱情论写成攻城论——unused to attack 的过去分词后置修饰把「没谈过恋爱」写成军事状态。</p>
+<p>there are no sentries, however vigilant, that cannot be eluded ——no...that cannot... 双重否定+however 插入让步：再机警的哨兵也会失守—— however vigilant 被两个逗号关进句中，让步的音量刚好。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「风险说明」用军事隐喻全程贯穿——capture（攻占）、city（城市）、sentries（哨兵）、eluded（骗过）：一套隐喻讲完一件事，不要中途换喻体。英文 extended metaphor 的纪律：一套军队，打完整场战役。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>债务清单：我是玛格丽特·戈蒂埃小姐 · Debts of Forty Thousand</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">But I am Mademoiselle Marguerite Gautier, I have debts of forty thousand and not a penny behind me, and I spend a hundred thousand francs a year: your question is out of order and my answer irrelevant.</p>
+<p class="cn">但我是玛格丽特·戈蒂埃小姐，我担负着四万法郎的债务，我没有一点儿财产，我每年还要花掉十万法郎；所以您的问题根本毫无意义，我回答您也只是白费力气。</p>
+<p class="en">Well, my dear, you should have loved me a little less or understood me a little better.</p>
+<p class="cn">我亲爱的，您就少爱我一些，或者多了解我一些。您的信让我非常伤心。</p>
+<p class="src">——第十五章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：面对「你为什么有别的情人」的质问，玛格丽特给出的不是道歉，是一张资产负债表：四万法郎债务，零财产，年支出十万法郎——所以你的问题毫无意义。这是全书最清醒的一段财务自白：爱情的忠诚，是奢侈品行业里买不起的商品。</p>
+<p><b>逻辑脉络</b>：自白与后文形成账目闭环：她后来确实变卖了车马、典当了首饰，试图用一贫如洗兑换一段真实的爱情——而账本最终要回来找她（那笔她替阿尔芒还掉、又被父亲抓住的债）。她的悲剧不是道德失败，是财务失败：一个年收入十万法郎的人，从来没有属于过自己。</p>
+<p><b>现实意义</b>：评估任何「忠诚问题」前先看资产负债表：要求一个人付出他结构上付不起的东西，是提问者的天真。反过来，想改变生活方式的人，第一步永远是清账——玛格丽特算账的速度，永远追不上账找她的速度。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>debts of forty thousand</b>　phr. 四万法郎的债务（debts of+金额——负债的报数句式）</p>
+<p><b>not a penny</b>　phr. 一分钱都没有（not a penny behind me：behind me＝身家——英国俚语刻度）</p>
+<p><b>out of order</b>　phr. 不合规则的（your question is out of order：会议术语挪用——质问程序违规）</p>
+<p><b>irrelevant</b>　adj. 不相干的（my answer irrelevant：省略系词的对句尾——账目式回答）</p>
+<p><b>to distraction</b>　phr. 疯狂地（I love you to distraction：distraction 分心的名词——爱到失神）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>your question is out of order and my answer irrelevant. ——双并列表语，第二个省略 is（my answer irrelevant）：判决书式的省略——问题与回答双双出局。英文 sharp reply 的句法减法：省掉的动词就是态度。</p>
+<p>you should have loved me a little less or understood me a little better. ——should have done 的过去责备+对称比较级（a little less / a little better）：爱与懂被放上同一架天平——道歉的反面是公式。仿写：You should have planned a little less or trusted a little more.（你本该少计划一点，或者多信任一点。）</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「报账」代替「辩护」——债务、存款、年支出三笔数报完，问题自动失效。英文 self-defense writing 的财务流派：数字面前，形容词全部投降。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>绝笔信：不够富，也不够穷 · Neither Rich Nor Poor Enough</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Farewell, my dear Marguerite. I am neither rich enough to love you as I should wish, nor poor enough to love you as you would like. Let us both forget: you, a name which must mean very little to you, and I, happiness which has become impossible for me to bear.</p>
+<p class="cn">再见了，亲爱的玛格丽特。我既没有富有到能像我自己所希望的那样去爱您，也没有贫穷到能完全按照您所要求的那样去爱您。让我们忘记彼此吧：对您来说，是忘记一个本来就没放到心上的名字；对我来说，则是忘记这份无法承受的幸福。</p>
+<p class="en">I am returning your key which I have never used and which you may find will answer some useful purpose</p>
+<p class="cn">我把您的钥匙还给您，我还从未用过它。</p>
+<p class="src">——第十三章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：阿尔芒的第一封告别信写出全书最精确的爱情不等式：不够富有到能随心所欲地爱，不够贫穷到能按你要求的方式爱。爱情需要一段财务带宽——太富要体面，太穷要面包，两个人都在带宽之外。</p>
+<p><b>逻辑脉络</b>：这封信是阿尔芒赌气写的「装出来的不爱」，但它的数学偏偏是真的：他赌不起她的生活费，她放不下她的生活方式。信末「忘记一个没放到心上的名字」是假话（他后来疯了似的把她从脑海里抹不掉），「无法承受的幸福」却是真话——幸福本身成了负债。</p>
+<p><b>现实意义</b>：给所有把「爱」当唯一变量的人：爱的持续性由两个财务参数决定——你能负担多少体面，你能放下多少面包。算完这笔账再谈永远，比谈完永远再算账体面得多。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>neither...nor...</b>　phr. 既不……也不……（neither rich enough... nor poor enough：双否定的对仗悲剧）</p>
+<p><b>should wish</b>　phr. 自己所希望的（as I should wish——should 的古雅虚拟义）</p>
+<p><b>would like</b>　phr. 对方所要求的（as you would like——两个 as 短语的错位对仗）</p>
+<p><b>bear</b>　v. 承受（happiness which has become impossible for me to bear：bear 的重量义）</p>
+<p><b>supercilious</b>　adj. 轻蔑的（a touch of supercilious irony——赌气信的语气添加剂）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>I am neither rich enough to love you as I should wish, nor poor enough to love you as you would like. ——neither/nor 对仗+enough to 不定式+两个 as 从句：一句话三层嵌套，爱情经济学写成不等式。注意 as I should wish 与 as you would like 的情态差——wish/would like，他要的与她要的从来不是一件事。</p>
+<p>you, a name which must mean very little to you, and I, happiness which has become impossible for me to bear ——you/I+同位语（a name/happiness）+定语从句的平行对句：两个人的遗忘清单各配一件行李——must mean very little 的must 是赌气，impossible to bear 的 impossible 是实话。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写告别信用「对称不等式」——neither A enough to..., nor B enough to...，两个 as 从句各站一端。英文 farewell letter 的诚实结构：先算清各自的带宽，再谈 forget——算不清的信不要发。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>父亲与那个吻 · The Only Chaste Embrace</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Well, Monsieur Duval, kiss me once as you would kiss your daughter, and I will swear to you that your touch, the only truly chaste embrace I ever received, will make me stand strong against my love. I swear that within a week, your son will be back with you, unhappy for a time perhaps, but cured for good.</p>
+<p class="cn">那么，迪瓦尔先生，吻我一下吧，就像吻您的女儿那样，我向您发誓，这个我所得到过的唯一纯洁的吻，可以给我战胜爱情的力量。我发誓一个星期之内，您的儿子就会回到您身边，他也许会难过一阵子，但他从此就得救了。</p>
+<p class="en">You are a noble-hearted young woman,” your father replied, as he kissed my forehead, ”and you are taking upon yourself a task which God will not overlook.</p>
+<p class="cn">你是一位善良的姑娘，”你父亲吻了吻我的前额，对我说，“天主不会对你要做的事情视而不见的。</p>
+<p class="src">——第二十二章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最高贵的谈判：玛格丽特向阿尔芒的父亲索要的不是宽恕，是一个「像吻女儿那样」的吻——她得到过的唯一纯洁的吻。她用它当抵押品，签下离开的合同：一星期之内还你儿子。</p>
+<p><b>逻辑脉络</b>：这场戏回收了父亲的三段式谈判：先是家世（儿子的前途）、再是债务（她刚典当的首饰）、最后是女儿布朗什——「她微笑着欢迎自己的哥哥回家，但她却不知道，在远方有一个妓女牺牲掉了自己的幸福，为的只是维护她的姓氏的尊严」。牺牲的价值用受益人的无知称量：布朗什永远不知道自己有位替身的姐姐。</p>
+<p><b>现实意义</b>：最重的牺牲往往没有收件人。给所有替别人扛事的人：你的「布朗什」可能永远不会知道，这份牺牲依然成立——但请像玛格丽特那样，先给自己收一个仪式性的报酬，哪怕只是一个吻。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>chaste embrace</b>　phr. 纯洁的拥抱（the only truly chaste embrace I ever received：ever 的全称否定——一生只有一次）</p>
+<p><b>noble-hearted</b>　adj. 高尚的（noble+hearted 复合——父亲给她的称号）</p>
+<p><b>take upon oneself</b>　phr. 把责任揽到自己身上（taking upon yourself a task——牺牲的动词形态）</p>
+<p><b>overlook</b>　v. 视而不见（God will not overlook：over+look——上天的记账动词）</p>
+<p><b>cured for good</b>　phr. 彻底治好（for good＝永久地——good 的副词义）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>kiss me once as you would kiss your daughter, and I will swear that... ——祈使+and=条件的古典句式（Kiss me, and I will swear...）：把请求与回报焊在一句里——as you would kiss your daughter 的 would 是全部尊贵的来源：不是情人之吻，是女儿之吻的虚拟。</p>
+<p>unhappy for a time perhaps, but cured for good. ——for a time / for good 的时间对仗：短期疼痛换永久痊愈——交易句的两根支柱。perhaps 插在中间保持谈判的诚实。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「牺牲的签约」，让牺牲者自己开价并自己作保（I swear that within a week...）——英文 dramatic negotiation 的尊严法则：弱势方的条款要用最完整的第一人称将来时写。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>日记：我心底原谅你 · I Forgive You from My Heart</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">You ask if I forgive you; oh! with all my heart, my dear, for the hurt you sought to do me was but a token of the love you bore me.</p>
+<p class="cn">你问我是否能原谅你，哦！我从心底原谅你，亲爱的，因为你对我造成的伤害恰恰是你对我爱的证明。</p>
+<p class="en">I have kept my bed now for a month, and so precious to me is your good opinion, that each day I write a little more of a journal of my life from the moment we parted until the moment when I shall be no longer able to hold my pen.</p>
+<p class="cn">我已经卧床一个月了，你的好意对我太珍贵了，我每天都在写日记，从我们分离的那一刻开始，直到我不能再握笔为止。</p>
+<p class="src">——日记 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：临终日记里最反常的一句判决：我心底原谅你，因为你对我造成的伤害恰恰是你对我爱的证明。伤害被重新定价为证据——这是被误解的恋人能开出的最高价格。她卧床一个月，每天都在写日记，直到握不住笔。</p>
+<p><b>逻辑脉络</b>：日记是全书的第四重框架（拍卖→阿尔芒转述→父亲转述→她的第一人称），也是全书唯一的女性声音。前三重框架里她被描述、被估价、被谈判；只有在这里，她拥有语法上的主动权——而她用主动权做的第一件事是 forgiveness。宽恕不是软弱，是把伤害兑换成证据的账务处理。</p>
+<p><b>现实意义</b>：被冤枉时最有力的回应不是自辩，是把伤害登记为爱的证明——对方欠的不是道歉，是一笔无法偿还的账。这种心态不是忍气吞声，是把「被伤害」从损失科目挪到资产科目。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>forgive from my heart</b>　phr. 从心底原谅（from my heart——宽恕的地理学）</p>
+<p><b>confine to bed</b>　phr. 卧床（be confined to my bed for a month：confine 的强制义——囚禁在床上）</p>
+<p><b>value highly</b>　phr. 极其珍视（I value your kindness so highly——临终者的资产排序）</p>
+<p><b>journal</b>　n. 日记（a journal of my life——人生日志：比 diary 更大的登记簿）</p>
+<p><b>hold my pen</b>　phr. 握笔（until I shall be no longer able to hold my pen——写作的截止日期）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>the harm you did me is the proof of your love for me. ——A is the proof of B 的再定义句：伤害与爱在同位语里换算——被动的 you did me（双宾）与主动的 your love for me（属格）完成账户转移。</p>
+<p>from the moment we parted until the moment when I shall be no longer able to hold my pen ——from...until... 的全周期状语+将来时从句：日记的起止日期用生命的余量（shall）标注——deadline 由生理决定。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「宽恕」不要写大度，要写换算——the harm you did me is the proof of your love for me。英文 reconciliation writing 的复式记账法：一笔支出（harm）改录到另一个科目（proof），宽恕就完成了。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>临终：以基督徒的方式死去 · A Christian Death</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">She has lived a sinful life, but she will die a Christian death.</p>
+<p class="cn">她的一生是罪恶的，但她将以基督徒的方式死去。</p>
+<p class="en">A few moments later, he returned with an altar-boy carrying a crucifix, and a sacristan who walked before them ringing a bell to announce that the Lord was coming to the house of the dying woman.</p>
+<p class="cn">没过多久他又回来了，还带了一个唱诗班的孩子，手里拿着一个耶稣受难十字架，走在他们前面的还有一个教堂司事，摇着铃，表示天主已经来到了临终者的家里。</p>
+<p class="src">——第二十三章 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：弥撒司事摇铃宣布天主来到临终者的家，医生说出这句判词：她的一生是罪恶的，但她将以基督徒的方式死去。一生与死亡被切成两段账：生活的账不让步，死亡的账可以结清。这是那个时代能给一个妓女的全部尊严。</p>
+<p><b>逻辑脉络</b>：临终场景的账目残酷至极：两个月垂死，「没有看到过谁在床边给她真正的安慰」——债主们当着垂死的她清算（讨债的喧嚣在她门前）。而握着十字架祷告的老妇人、十字架与铃声，构成了她最后的财产清单：全部动产只剩一场体面的死亡。</p>
+<p><b>现实意义</b>：「生前是罪人，死时是基督徒」不是宗教叙事，是关于结账权的问题：任何人都有权把人生的最后一段单独结账。别用一个人最坏的一段定义全部——账目要分科目读。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>sinful</b>　adj. 罪恶的（lived a sinful life——教会的判词形容词）</p>
+<p><b>crucifix</b>　n. 耶稣受难十字架（cross 的带像版——临终场景的标准道具）</p>
+<p><b>sacristan</b>　n. 教堂司事（圣器室管理员——铃声的执行者）</p>
+<p><b>announce</b>　v. 宣布（ringing a bell to announce——铃声的语法：announcing a 通知）</p>
+<p><b>the dying woman</b>　phr. 垂死的女人（dying 现在分词作定语——进行时的死亡）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She has lived a sinful life, but she will die a Christian death. ——has lived（现在完成）vs will die（将来）的时态对峙+宾语同源对仗（a sinful life / a Christian death）：一生与一刻被两个时态切开——英文判词的全部结构学。die a Christian death 的同源宾语（die a...death）是英语的古老构式。</p>
+<p>to announce that the Lord was coming to the house of the dying woman ——不定式目的状语+进行时（was coming）：连天主的到访都用进行时——此刻正在发生的神圣。the house of the dying woman 把她的公寓写成「临终者的家」——物权与病危的双重登记。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「分账判词」，用完成时+将来时切开一生——She has lived X, but she will die Y。英文 verdict writing 的时态规则：过去时给罪，将来时给尊严，两不相欠。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>坟前：四月里的嫩芽 · The First Leaves into Bud</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Lastly, we went to Marguerite's grave, on which the first rays of the April sun were bringing the first leaves into bud.</p>
+<p class="cn">最后，我们来到了玛格丽特的坟前，四月里的阳光已经使上面的绿叶长出了嫩芽。</p>
+<p class="en">One duty remained to Armand—to return to his father. He wished me to accompany him.</p>
+<p class="cn">阿尔芒还有一件事情要办，那就是回到他父亲那儿去。他希望我能陪他一起去。</p>
+<p class="src">——尾声 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：重葬那天，四月阳光让坟头长出嫩芽——全书唯一的春天意象，给了墓碑。玛格丽特生前住在最好的花房里，唯一真正属于她的花开在她死后。迟到的季节是全书的美学签名：嫩芽不长给她看，只长给来看她的人。</p>
+<p><b>逻辑脉络</b>：坟前戏是三条线的汇合：阿尔芒重葬亡人（换块墓地是他唯一还能为她做的）、叙述者见证（买下《玛农》、记录故事）、以及读者的道德账本（妓女葬在殉道者的仪式里）。随后阿尔芒回 C 城见父亲——「父爱高于一切」的家庭里，玛格丽特的位置只有坟头那点阳光。</p>
+<p><b>现实意义</b>：有些善意注定迟到，迟到的善意依然要做：给坟头换块墓地、给旧案写份澄清、给逝者一个交代。春天不问来得早晚——它只问来没来。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>grave</b>　n. 坟墓（Marguerite's grave——全书终点站的名词）</p>
+<p><b>first rays</b>　phr. 第一缕光线（the first rays of the April sun——迟到的阳光）</p>
+<p><b>into bud</b>　phr. 长出嫩芽（bringing the first leaves into bud：bud 的动词短语）</p>
+<p><b>duty</b>　n. 责任（One duty remained to Armand——剩余事项清单）</p>
+<p><b>accompany</b>　v. 陪同（wished me to accompany him——见证人的角色）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>the first rays of the April sun were bringing the first leaves into bud ——first 的双重复现（first rays/first leaves）：两个「第一」在同一句相遇——春天与墓碑各领一个。过去进行时 were bringing：阳光的动作正在发生，全书少有的时态暖意。</p>
+<p>One duty remained to Armand. ——One + 名词 + remained 的清单收尾句：葬礼办完，账面只剩一项——英文 epilogue 的记账式过渡。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给故事一个「迟到的春天」——把全书唯一的好天气用在最后一页（the first rays...the first leaves）。英文 ending imagery 的配给制：最亮的意象只出现一次，出现在结尾，它才最重。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：这是我的责任 · It Was My Duty</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I have told the reader all that I learned. It was my duty.</p>
+<p class="cn">我把我听到的故事都讲给了读者听。这是我的责任。</p>
+<p class="en">I am not the apostle of vice, but I would gladly be the echo of noble sorrow wherever I bear its voice in prayer.</p>
+<p class="cn">我并不是在宣传邪恶淫乱，但只要我听到这些高尚却不幸的人祈祷的声音，我就会为他们高声呼喊。</p>
+<p class="src">——尾声 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书以两份自我陈述收尾：其一，「我把我听到的故事都讲给了读者听。这是我的责任」；其二，「我并不是在宣传邪恶淫乱，但只要我听到这些高尚却不幸的人祈祷的声音，我就会为他们高声呼喊」。一句是记者式的职责声明，一句是辩护律师式的结案陈词。</p>
+<p><b>逻辑脉络</b>：小仲马的双重身份在此对账：作为儿子，他为父亲那一代人的伪善记账；作为作家，他为「不可思议的例外」立案——「玛格丽特的故事并不是随处可见的，如果它不罕见，我也就不必把它写下来了」。全书从「研究人」的宣言开始，到「听见祈祷」的呼喊结束：研究是冷的，呼喊是热的，茶花女就是这份冷热之间签下的合同。</p>
+<p><b>现实意义</b>：为弱者发声的标准动作有两个，缺一不可：把事实记全（责任），把态度亮明（呼喊）。只记事实是档案员，只喊态度是宣传员——茶花女的不朽，一半归拍卖目录，一半归那句「高声呼喊」。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>apostle</b>　n. 传道者、鼓吹者（the apostle of vice——vice 的否定式自我划界）</p>
+<p><b>echo</b>　n. 回声（the echo of noble sorrow——作家自定义为扩音器）</p>
+<p><b>noble sorrow</b>　phr. 高尚的悲哀（noble+adj 的搭配——悲剧的荣誉称号）</p>
+<p><b>in prayer</b>　phr. 在祈祷中（hear its voice in prayer——声音的来源）</p>
+<p><b>duty</b>　n. 责任（It was my duty：两词一句的收尾——全书最短的结案词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>I am not the apostle of vice, but I would gladly be the echo of noble sorrow ——not A, but B 的自我定位+gladly 的态度亮明：拒绝一个头衔，接受另一个——英文 disclaimer 的正面版。echo 比 voice 弱一级：他不发明声音，只放大它。</p>
+<p>wherever I hear its voice in prayer ——wherever+hear its voice：责任的范围状语——任何地方听到，就 anywhere 呼喊。its 指 sorrow：把「悲哀」拟成会发声的人。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：为弱者立传的结案陈词写两行——一行职责（I have told all. It was my duty），一行立场（I would gladly be the echo...）。英文 closing statement 的双联法：事实账与态度账分开记，各结各的。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：双否定命题、时态判词、对称不等式、复式记账的宽恕，都在里面。研读这本「用财产目录写成的悼词」的最终目的，是学会分辨估价与价值、牺牲与无知。</p>
+<p><b>no one can invent fictional characters without first having made a lengthy study of people ——没研究够的人，不能创造人物。</b>应用口诀：先研究后表达——没研究够的人讲故事，讲的是自己。</p>
+<p><b>An estate was to be disposed of, the owner having died. ——一笔财产被变卖，主人刚刚死去。</b>应用口诀：读二手信息先问——这份目录上少了哪个活人。</p>
+<p><b>To capture a heart unused to attack is like walking into an open, undefended city. ——占据一颗没被攻过的心，如入无人之城。</b>应用口诀：教孩子防的不是坏人，是门户大开本身。</p>
+<p><b>For twenty-five days in every month the camellias were white, and for five they were red. ——一个月二十五天白茶花，五天红。</b>应用口诀：别急着解释，先指出现象——暗码是理解人的第一步。</p>
+<p><b>I have debts of forty thousand and not a penny behind me. ——我负债四万法郎，身无分文。</b>应用口诀：谈忠诚前先看资产负债表——结构上付不起的别要求。</p>
+<p><b>I am neither rich enough to love you as I should wish, nor poor enough to love you as you would like. ——不够富，也不够穷。</b>应用口诀：爱的持续性由财务带宽决定——先算账再谈永远。</p>
+<p><b>the only truly chaste embrace I ever received ——我一生得到的唯一纯洁的拥抱。</b>应用口诀：替别人扛事前，先给自己收一个仪式性的报酬。</p>
+<p><b>the harm you did me is the proof of your love for me. ——你给我的伤害是你爱我的证明。</b>应用口诀：把伤害从损失科目挪到资产科目——宽恕是账务处理。</p>
+<p><b>She has lived a sinful life, but she will die a Christian death. ——她一生罪恶，但将以基督徒的方式死去。</b>应用口诀：任何人都有权把最后一段单独结账——账目分科目读。</p>
+<p><b>the first rays of the April sun were bringing the first leaves into bud. ——四月的阳光让绿叶长出嫩芽。</b>应用口诀：迟到的善意依然要做——春天只问来没来。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Lady_of_the_Camellias" target="_blank" rel="noopener">The Lady of the Camellias · Wikipedia</a><span>佐证：真实原型玛丽•杜普莱西与改编史（话剧/歌剧）。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/La_traviata" target="_blank" rel="noopener">Verdi, La Traviata · Wikipedia</a><span>延伸：威尔第 1853 年歌剧改编——薇奥莱塔即玛格丽特。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Manon_Lescaut" target="_blank" rel="noopener">Manon Lescaut · Wikipedia</a><span>延伸：题词里的参照系——《玛农·莱斯科》与十八世纪名妓叙事。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Alexandre_Dumas_fils" target="_blank" rel="noopener">Alexandre Dumas fils · Wikipedia</a><span>延伸：私生子的身世与「问题剧」创作观。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《茶花女》 ｜ 英文与中文均逐字录自外研社双语读库（外研社编译组译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

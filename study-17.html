@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 了不起的盖茨比 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/17-gaici.html">本书书页</a></p>
+<h1>深度研读 · 了不起的盖茨比</h1>
+<p class="sub">The Great Gatsby · F·斯科特·菲茨杰拉德 著 · 外研社双语读库·王凤月译 · 中英对照深度研读</p>
+<p class="lead">研读说明：菲茨杰拉德1925年的代表作，「爵士时代」的定音鼓，也是英语学习者绕不开的现代叙事范本。本双语研读版共十二节：目录与各节标题中英对照；原文摘录一律英文原文在前、中文译文随后；每节另设词汇积累（Vocabulary）、句式分析（Sentence Study）与写作借鉴（Writing Craft）三个英语学习模块——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>总纲：盖茨比一直都是不错的 · Gatsby Turned Out All Right</a></li>
+<li><a href="#s2"><b>贰</b>开篇：父亲的忠告 · A Father's Advice and the Gold Hat</a></li>
+<li><a href="#s3"><b>叁</b>第一章：一盏微光的绿灯 · The Single Green Light</a></li>
+<li><a href="#s4"><b>肆</b>微笑：一辈子四五次 · A Rare Smile</a></li>
+<li><a href="#s5"><b>伍</b>灰谷：埃克尔堡的眼睛 · The Eyes of Doctor T. J. Eckleburg</a></li>
+<li><a href="#s6"><b>陆</b>过去：当然能重现 · Can't Repeat the Past?</a></li>
+<li><a href="#s7"><b>柒</b>衬衫：黛西的眼泪 · Such Beautiful Shirts</a></li>
+<li><a href="#s8"><b>捌</b>绿灯褪魅：少了一样神魂颠倒 · One Enchanted Object Fewer</a></li>
+<li><a href="#s9"><b>玖</b>声音：话里都是金钱味 · Her Voice Is Full of Money</a></li>
+<li><a href="#s10"><b>拾</b>葬礼：电报与一个人 · The Funeral</a></li>
+<li><a href="#s11"><b>拾壹</b>判决：冷漠的人 · Careless People</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：逆流而上的小舟 · Boats Against the Current</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>总纲：盖茨比一直都是不错的 · Gatsby Turned Out All Right</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">it was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again. No—Gatsby turned out all right at the end;</p>
+<p class="cn">这种敏感是一种对于希望不同寻常的坚持，同时也是一种充满浪漫色彩的敏捷性。这种敏感是我从来不曾在哪个人的身上发现过的，我相信以后我也不会再从谁的身上找到。不——盖茨比一直都是不错的，</p>
+<p class="en">it is what preyed on Gatsby, what foul dust floated in the wake of his dreams that temporarily closed out my interest in the abortive sorrows and short-winded elations of men.</p>
+<p class="cn">而那些总是折磨着他的东西，那些在他梦醒之后将周围环境弄得污浊不堪的东西，却让我对于人们毫无意义的悲伤以及瞬间的欢快失去了兴趣。</p>
+<p class="src">——第一章开篇 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一段先替主角定性：盖茨比的敏感不是神经质，是「对于希望不同寻常的坚持」（an extraordinary gift for hope）——而叙述者尼克最后落笔的也是同一句判决：不——盖茨比一直都是不错的。全书的悬念不在他做了什么，而在你读完之后肯不肯同意这个「不错」。</p>
+<p><b>逻辑脉络</b>：小说的结构是个天平：一端是盖茨比的希望（绿灯、豪宅、衬衫、五年），另一端是旧钱世界的冷漠（砸碎东西然后退缩回金钱）。菲茨杰拉德故意把主角写成罪人（私酒、谎言、替死），好让「不错」的判决必须由读者自己说出——判决本身就是阅读的收尾。</p>
+<p><b>现实意义</b>：读人先读「希望的成本结构」：盖茨比押上整个人生买一个「喊不回来的名字」。自己立目标时问一句——这个希望是往前的（能更新）还是往后的（只能重演）？往后的希望再壮丽，也只是向过去摆渡。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>temperament</b>　n. 气质，性情（「创造性气质」creative temperament 的搭配高频出现在文学评论中）</p>
+<p><b>readiness</b>　n. 愿意，准备就绪（a romantic readiness：形容词+抽象名词是菲茨杰拉德的招牌搭配）</p>
+<p><b>prey on</b>　phr. 折磨，困扰（what preyed on Gatsby——prey 本义捕食，引申为在心里啃噬）</p>
+<p><b>elation</b>　n. 兴高采烈（与 sorrow 相对，short-winded elations 即转瞬即逝的欢快）</p>
+<p><b>abortive</b>　adj. 失败的，未果的（abortive sorrows：文学语域常用）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>No—Gatsby turned out all right at the end; it is what preyed on Gatsby, what foul dust floated in the wake of his dreams that temporarily closed out my interest... ——破折号先抛出判决，再用 it is...that... 强调句把「该怪谁」指向外部：preyed on 与 floated in the wake of 两个过去分词短语层层加码。模仿点：先给结论、再给元凶的强调句型。</p>
+<p>some heightened sensitivity to the promises of life ——名词短语三连：sensitivity to the promises of life 中的介词链（to→of）是英语书面语「名词化」的典型样本，把一个动作（对生活许诺敏感）压进一个名词短语。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：菲茨杰拉德开篇不写事件、写「判断」——用一个人的敏感度定义他。你可以迁移到人物速写：先给一句定性判断（他最不寻常的地方是什么），再给物证。判断句+物证句，是英文人物描写的最小可行框架。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>开篇：父亲的忠告 · A Father's Advice and the Gold Hat</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Then wear the gold hat, if that will move her; If you can bounce high, bounce for her too, Till she cry 'Lover, gold-hatted, high-bouncing lover, I must have you!'</p>
+<p class="cn">如果能让她心动，那就戴顶金帽子；如果你能跳高，那就也为她跳一跳，直到她高呼：「情人，戴着金帽子、高高跳起的情人，我非得将你要！」</p>
+<p class="en">'Whenever you feel like criticizing any one,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+<p class="cn">「每当你想批评别人的时候，」他对我说，「一定要记得并不是世界上每个人都曾拥有你所拥有的优势。」</p>
+<p class="src">——卷首题词与第一章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书门口并排挂着两句话：一句是父亲的忠告——想批评别人之前，记住并不是人人都有你拥有的优势；一句是题词的诗——戴顶金帽子、为她跳高。一句教人宽容，一句写尽追逐，盖茨比正是那个金帽子的戴帽人。</p>
+<p><b>逻辑脉络</b>：父亲的话是尼克的叙事许可证：他先声明自己「不轻易批评」，所以后面讲的一切都经过了这个门槛——他是全书唯一听完整个故事的人，也因此拿到唯一的判决权。题词则预告了盖茨比的结局：跳得再高，帽子上写的仍是「如果你能让她心动」。</p>
+<p><b>现实意义</b>：把父亲的忠告变成批评前的自检清单：我此刻站在什么位置（学历、家境、运气）？对方手里有什么牌？两行字写完，多半批评就写不下去了——这不是和稀泥，是把批评升级成可执行的判断。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>move sb.</b>　phr. 打动某人（if that will move her——move 表「使动心」是文学用法）</p>
+<p><b>bounce high</b>　phr. 跳得高（bounce 本义弹跳，押韵词 hat/bounce 构成题词的戏谑感）</p>
+<p><b>criticize</b>　v. 批评（feel like criticizing any one——any one 两分写法是二十年代拼法）</p>
+<p><b>advantage</b>　n. 优势，优越条件（haven't had the advantages：复数抽象名词，指家境与教育）</p>
+<p><b>reserve judgment</b>　phr. 保留判断（reserve 在此是动词「保留」，不是名词「预订」）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>'Whenever you feel like criticizing any one, just remember that all the people in this world haven't had the advantages that you've had.' ——祈使句骨架：feel like + 动名词（想做某事）与 remember + that 从句；两处 that 各司其职（连词/关系代词）。仿写价值：Whenever you feel like ..., just remember ... 是劝诫类写作的万能开头。</p>
+<p>部分否定：all the people ... haven't had ... ——all + 否定谓语 = 并非全都（部分否定），不是「都没有」。对比 full negation：Not all people have had... 语义相同、语气更书面。这是阅读理解与写作都常考的语义点。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：题词（epigraph）是整本书的预告片——菲茨杰拉德借一首歪诗把「表演式讨好」写成了循环句：动词帽押头韵 gold-hatted / high-bouncing，滑稽里带悲凉。写自嘲或讽刺短文时，可借「夸张头韵+第三人称转述」制造距离感。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>第一章：一盏微光的绿灯 · The Single Green Light</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">he gave a sudden intimation that he was content to be alone—he stretched out his arms toward the dark water in a curious way, and far as I was from him I could have sworn he was trembling.</p>
+<p class="cn">他一个突然的动作让我感到他在享受着一个人独处的快乐——他古怪地将自己的双手伸向幽暗的海水，虽然我当时离他很远，我敢肯定我看到他在发抖。</p>
+<p class="en">Involuntarily I glanced seaward—and distinguished nothing except a single green light, minute and far away, that might have been the end of a dock.</p>
+<p class="cn">我也不知不觉地向海上望去——我什么都看不清楚，除了很远的地方一盏闪着微光的绿灯，也许那儿便是码头的尽头吧。</p>
+<p class="src">——第一章结尾 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的图腾在第一章末尾才亮起：黑夜的海面上，一盏闪着微光的绿灯，「也许那儿便是码头的尽头吧」。尼克此刻还不知道那是什么，读者也还不知道——但盖茨比朝着它伸出双臂的姿势，已经把这个故事讲完了一半。</p>
+<p><b>逻辑脉络</b>：菲茨杰拉德的道具学：绿灯先作为纯粹的「动作」出现（一个陌生人朝海发抖），第五章盖茨比与黛西重逢后它被「祛魅」（只是一盏普通的灯），第九章才被尼克收编为全书的哲学题眼。一件道具被使用了四次，每次含义都升一级。</p>
+<p><b>现实意义</b>：给自己的远景找一个「绿灯」式的实物：一个能看见、够不着、每晚亮着的东西。欲望需要落到具体物件上才能长期供能——写下来它是什么、在哪个码头、为什么够不着。够得着的时候，记得它会变成「普通的灯」。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>intimation</b>　n. 暗示，示意（a sudden intimation that...：that 同位语从句）</p>
+<p><b>involuntarily</b>　adv. 不由自主地（in- 否定前缀+voluntary 自愿的）</p>
+<p><b>distinguish</b>　v. 分辨出，辨认（distinguished nothing except...：nothing except 结构）</p>
+<p><b>minute</b>　adj. 微小的（此处重音在第二音节 /maɪˈnjuːt/，不是名词「分钟」——阅读常考熟词僻义）</p>
+<p><b>dock</b>　n. 码头（a single green light... the end of a dock：全书的图腾藏在最平常的名词里）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>far as I was from him I could have sworn he was trembling ——far as = as far as 的倒装省略（文学语体）；could have sworn 表示「差点敢发誓」的虚拟推测，比 I saw he was trembling 主观化、更传神。仿写点：far as I could tell / could have sworn 是叙事文的两大主观刻度。</p>
+<p>distinguished nothing except a single green light, minute and far away, that might have been the end of a dock. ——名词后挂两个后置修饰：形容词短语（minute and far away）+ that 定语从句，一个 12 词的宾语把「位置感」全部写完。学这种「名词+双重后置修饰」的压缩法，句子立刻有画面。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：菲茨杰拉德从不直接写「他很渴望」，只写动作：伸出双臂、发抖、消失。英文写作第一课——show, don't tell（展示，不要告知）。把你要写的情绪换成三个可拍摄的动作，读者自己会补出那个情绪。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>微笑：一辈子四五次 · A Rare Smile</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">He smiled understandingly—much more than understandingly. It was one of those rare smiles with a quality of eternal reassurance in it, that you may come across four or five times in life.</p>
+<p class="cn">他会意地笑了笑——完全领会了。这是一种非常特殊的笑，他的笑容让人永远都不会再疑虑，而且你一辈子也只可能看到四五次。</p>
+<p class="en">It understood you just so far as you wanted to be understood, believed in you as you would like to believe in yourself and assured you that it had precisely the impression of you that, at your best, you hoped to convey.</p>
+<p class="cn">他以一种你期待着被理解的方式理解你，又似你相信自己那样相信你，而且让你放心地明白，你给他的印象真是你所希望给予别人的最好印象。</p>
+<p class="src">——第三章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：盖茨比出场写脸不写脸：尼克先被一场微笑击中——「一辈子也只可能看到四五次」的笑，它理解你、相信你、还向你保证：你给人的印象正是你希望给的。一个人靠什么让一千个陌生人相信他是牛津绅士？靠的就是这种被精确制造的「被理解感」。</p>
+<p><b>逻辑脉络</b>：这段描写是全书信任机制的核心：盖茨比的人格魅力不是财富，是把「你希望成为的样子」反射给你。尼克描述完微笑才承认自己打量了他几分钟——先给魔法，再拆后台，这是菲茨杰拉德处理「可疑的绅士」的标准节奏。</p>
+<p><b>现实意义</b>：警惕被「完美理解感」击中时的判断力：骗子与好销售共享同一门技术——照出你最好的一面。被理解得太顺滑时问一句：他了解的是我，还是我想要被看见的那个版本？前者稀有，后者可以量产。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>understandingly</b>　adv. 会意地（much more than understandingly：副词的自我比较，故作笨拙实则精确）</p>
+<p><b>reassurance</b>　n. 安抚，保证感（re-+assure：a quality of eternal reassurance 永恒的安抚感）</p>
+<p><b>come across</b>　phr. 偶然遇到（you may come across four or five times in life）</p>
+<p><b>assure</b>　v. 保证，使确信（assured you that...：assure sb. that 固定句式）</p>
+<p><b>convey</b>　v. 传达（the impression ... you hoped to convey：写作高频动词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>It understood you just so far as you wanted to be understood, believed in you as you would like to believe in yourself and assured you that... ——三个谓语动词排比（understood / believed in / assured），三个 as 结构嵌套（so far as / as you would like to）。长句不乱的秘密：并列谓语共用一个主语 It，节奏像三记轻拍。</p>
+<p>that, at your best, you hoped to convey ——双逗号插入语 at your best（在你状态最好时）把定语从句从中间劈开，是英语插入语的教科书用法：主干 that you hoped to convey 先遮住，插入语再补一刀。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「魅力」不要堆形容词，写它的效果链——他理解你→他相信你→他向你保证。菲茨杰拉德用三个动词完成了一幅肖像。你的英文人物描写也可以这样升级：一个名词（smile）+ 一串动词，胜过五个形容词。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>灰谷：埃克尔堡的眼睛 · The Eyes of Doctor T. J. Eckleburg</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The eyes of Doctor T. J. Eckleburg are blue and gigantic—their retinas are one yard high. They look out of no face but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose.</p>
+<p class="cn">T.J.埃克尔堡大夫那蓝色的眼睛犹如巨人一般——视网膜就足有一码高。眼睛周围看不到脸庞，只看见一副被一个根本看不见的鼻子支撑起来的巨大的眼镜。</p>
+<p class="en">But his eyes, dimmed a little by many paintless days under sun and rain, brood on over the solemn dumping ground.</p>
+<p class="cn">然而他的这两只眼睛经过长年累月的日晒雨淋已经暗淡无光了，却依旧若有所思地凝望着这块废弃的土地。</p>
+<p class="src">——第二章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：西卵与纽约之间是一片灰谷——倾倒场，上面立着眼科医生埃克尔堡退掉的广告牌：一码高的蓝色巨眼架在黄色眼镜上。全书唯一「一直在看」的东西，是一块被人遗忘的广告；而所有角色恰好都当它没在看。</p>
+<p><b>逻辑脉络</b>：这条走廊是全书的道德地理：绿灯（希望）在左，灰谷（代价）在中，旧钱（审判缺席）在右。汤姆的车在灰谷轧死茉特尔，盖茨比的替死也在灰谷完成——巨眼看着一切，但「眼睛只是广告，不是上帝」：菲茨杰拉德把审判的缺席写成了空间。</p>
+<p><b>现实意义</b>：识别你生活里的灰谷：任何繁荣叙事的通勤路上，都有一个「被看了但没人看」的代价区。能指名它、说清它与你的距离，就已经比全书大多数角色诚实。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>gigantic</b>　adj. 巨大的（blue and gigantic：双形容词并列的节奏）</p>
+<p><b>retina</b>　n. 视网膜（their retinas are one yard high——具体的度量让荒诞有了实物感）</p>
+<p><b>nonexistent</b>　adj. 不存在的（a nonexistent nose：否定前缀 non- 的标准构词）</p>
+<p><b>oculist</b>　n. 眼科医生（旧用法，现常说 ophthalmologist——同义换词的语域差）</p>
+<p><b>brood on</b>　phr. 笼罩，苦思（brood 本义孵蛋，引申为阴沉地盘旋/沉思——广告牌的动词，也是盖茨比的动词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>They look out of no face but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose. ——look out of no face but ... from ... 的平行介词结构（out of no face / from a pair of...），instead 加逗号插入；which pass over 定语从句收尾。「否定+instead+肯定」的三段式，是让描写产生反讽的最短路径。</p>
+<p>dimmed a little by many paintless days under sun and rain ——过去分词短语作后置定语（= which had been dimmed），paintless（无颜料的）是菲茨杰拉德的临时造词：名词+less 的即兴构词法，写作里大胆用一次胜过十个从句。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：为抽象概念找一个「一直在看」的物件（advertising eyes）——符号写作的通则：把无形的东西（道德审判）钉在一个有形的、陈旧的、被忽视的东西上。你的议论文也可以备一件这样的「道具」。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>过去：当然能重现 · Can't Repeat the Past?</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'I wouldn't ask too much of her,' I ventured. 'You can't repeat the past.'</p>
+<p class="cn">「我看还是不要对她要求太高。」我冒昧地说，「你是不可能让过去重现的。」</p>
+<p class="en">'Can't repeat the past?' he cried incredulously. 'Why of course you can!'</p>
+<p class="cn">「不能让过去重现？」他非常怀疑地大声喊道，「怎么就不能，当然能了！」</p>
+<p class="src">——第六章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：尼克劝盖茨比别对黛西要求太高——「你不可能让过去重现」；盖茨比的回答是全书的题眼：怎么就不能，当然能了！他要的不只是重遇，是把五年前的那个瞬间原样赎回——包括黛西从没爱过汤姆这句话。</p>
+<p><b>逻辑脉络</b>：盖茨比狂躁地朝四周张望，似乎过去就藏在这房子的影子里——他真的相信过去是库存，可以清点、调货、原价回购。小说随后残酷地演示了回购失败：黛西说不出「我从没爱过汤姆」，仓库里查无此货。美国梦的批判在此完成：梦的前提是把时间当商品。</p>
+<p><b>现实意义</b>：复盘时区分两种「回到过去」：复盘可用的部分（经验、教训、技艺）确实能重现；需要他人配合的部分是库存追不回的。只回购自己的那份，别向别人的记忆下订单。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>venture</b>　v. 冒昧提出（I ventured：插入引语间的「说话动词」，比 said 更有分寸感）</p>
+<p><b>incredulously</b>　adv. 怀疑地，难以置信地（in-+credulous 轻信的）</p>
+<p><b>repeat the past</b>　phr. 重现过去（repeat 的宾语是抽象时间——英语动词搭配的宽泛度）</p>
+<p><b>cry</b>　v. 喊叫（he cried incredulously：cry 此处不是哭，是喊——阅读常考熟词僻义）</p>
+<p><b>ask too much of sb.</b>　phr. 对某人要求过高（否定前置 wouldn't ask too much）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>'Can't repeat the past?' he cried incredulously. ——否定疑问句作反问：把对方的话掐头去尾再抛回去，是英语对话描写的「回声技法」（echo）。注意说话动词 cry 被副词 incredulously 前后夹住，语气全在副词里。</p>
+<p>Why of course you can! ——why 在此不是疑问词，是语气词「嗐、当然」：Why of course = 那还用说。口语强度排序：Of course &lt; Why, of course &lt; Why of course you can!（加 you can 完成回击）。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：对话交锋的写作模板——A 陈述（否定句），B 回声反问（只重复对方三四个词）+ 全盘否定。两个回合之内，人物立场自动分明。盖茨比与尼克的这段对话只有 26 个词，却完成了全书的哲学命题陈述：学这个密度。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>衬衫：黛西的眼泪 · Such Beautiful Shirts</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'I've got a man in England who buys me clothes. He sends over a selection of things at the beginning of each season, spring and fall.'</p>
+<p class="cn">「有一个人在英国帮我买衣服。每年春秋伊始，他就会挑选一些衣服给我寄过来。」</p>
+<p class="en">'They're such beautiful shirts,' she sobbed, her voice muffled in the thick folds. 'It makes me sad because I've never seen such—such beautiful shirts before.'</p>
+<p class="cn">「这些衬衫太漂亮了，」她抽泣着说，在厚厚的衬衫堆里，她的声音有些发闷，「我看了很伤心，因为以前我从来没见过如此——如此漂亮的衬衫。」</p>
+<p class="src">——第五章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：重逢的高潮不是拥抱，是一堆衬衫：盖茨比把定制衬衫一件件抛下桌子，黛西埋进衬衫堆里哭着说「从来没见过如此——如此漂亮的衬衫」。她哭的不是布料，是被浪费掉的五年——以及这五年里她本可以过的那种生活。</p>
+<p><b>逻辑脉络</b>：菲茨杰拉德用「物」完成人物审判：黛西的声音是金钱味，眼泪是衬衫味，连忏悔都要挑选昂贵的舞台。而盖茨比也半斤八两——他用衬衫当情书。两个不会直接说话的人，只能靠物质传情；物质越贵，台词越贫。</p>
+<p><b>现实意义</b>：检查亲密关系里的「衬衫式沟通」：当一份心意只能用价格和数量表达时，往往说明两个人的语言通道已经堵了。便宜的直接的话（我等你等了五年）比一屋子衬衫有效——当然，也危险得多。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>sheer</b>　adj. 纯粹的，极薄的（shirts of sheer linen：sheer 修饰织物指「极薄的」，修饰成功指「纯粹的」）</p>
+<p><b>flannel</b>　n. 法兰绒（thick silk and fine flannel：材质词三连是服饰描写的骨架）</p>
+<p><b>sob</b>　v. 抽泣（she sobbed：说话动词+主语倒装的插入式引语结构）</p>
+<p><b>muffled</b>　adj. 沉闷的，捂住的（her voice muffled in...：名词+过去分词的独立主格）</p>
+<p><b>disarray</b>　n. 凌乱（in many-colored disarray：抽象名词承载画面）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>'They're such beautiful shirts,' she sobbed, her voice muffled in the thick folds. ——引语+说话动词+独立主格（her voice muffled...）三连：独立主格结构（名词+分词）代替从句，让句子在引语和动作间无缝切换。仿写模板：she said, her eyes fixed on.../ his hands trembling with...</p>
+<p>such beautiful shirts / such—such beautiful shirts ——破折号重复（stutter repeat）是菲茨杰拉德写情绪失控的标志性手法：黛西的语言在这一刻「卡壳」，修辞即心理。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让眼泪落在「错位」的东西上——黛西不哭重逢，哭衬衫；情感通过错误的对象表达，比直接哭「我错过了你」高级十倍。英文创意写作里这叫 displaced emotion（移情于物），你写个人陈述、写随笔都适用。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>绿灯褪魅：少了一样神魂颠倒 · One Enchanted Object Fewer</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'You always have a green light that burns all night at the end of your dock.'</p>
+<p class="cn">「你家码头的尽头总有一盏绿灯通宵亮着。」</p>
+<p class="en">Now it was again a green light on a dock. His count of enchanted objects had diminished by one.</p>
+<p class="cn">现在它又变回了码头上的一盏绿灯。那令他神魂颠倒的东西又少了一样。</p>
+<p class="src">——第五章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最冷静的一段旁白：黛西近在咫尺之后，那盏绿灯「又变回了码头上的一盏绿灯」——夙愿达成的一刻，魔法解除。尼克写道：那令他神魂颠倒的东西又少了一样。得到，是欲望的减损。</p>
+<p><b>逻辑脉络</b>：这是第五章对全书命题的一次预演：盖茨比追的从来不是黛西，是绿灯本身——隔海、够不着、每晚亮着的那种距离。重逢把距离归零，梦的燃料就漏光了。小说后面的事都是这次「褪魅」的连锁反应。</p>
+<p><b>现实意义</b>：得到之后怎么保持生活质量，是比争取更难的课题：把「够不着时的灯」换成「够得着时的活」——愿望实现后立刻为它安排新的用法，否则你就守着一盏普通的灯，怀念自己曾经发抖的样子。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>burn all night</b>　phr. 通宵亮着（burn 用于灯=亮着，动词的「降格」用法）</p>
+<p><b>colossal</b>　adj. 巨大的（the colossal significance：colossal 与 gigantic 的语域差别）</p>
+<p><b>enchanted</b>　adj. 被施魔法的（enchanted objects：名词化魔幻感的经典搭配）</p>
+<p><b>diminish</b>　v. 减少（had diminished by one：diminish by + 数量的完成时表达）</p>
+<p><b>count</b>　n. 清点，总数（his count of...：count 作名词=数目，阅读常考）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Now it was again a green light on a dock. ——全书最短的关键句之一：now（时间跳切）+ again（状态回退）+ a green light（冠词从 the green light 退回 a green light——特指退回泛指，语法即叙事：魔法解除的信号藏在冠词里）。</p>
+<p>His count of enchanted objects had diminished by one. ——过去完成时（had diminished）+ by one 的精确计量：把失落写成库存盘点。学这种「把情感冷处理成账目」的笔法——英文叙事的克制美学。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：语法本身就是修辞——the green light 变 a green light，一个冠词完成「祛魅」。英文写作课很少讲这一点：特指（the）承载执念，泛指（a）承载祛魅。改自己的文章时，检查每个 the 是否还配得上。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>声音：话里都是金钱味 · Her Voice Is Full of Money</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Her voice is full of money,' he said suddenly.</p>
+<p class="cn">「她的话里都是金钱味。」他突然说道。</p>
+<p class="en">It was full of money—that was the inexhaustible charm that rose and fell in it, the jingle of it, the cymbals' song of it.</p>
+<p class="cn">她的话里是充满了金钱味——这正是她那抑扬顿挫、清脆悦耳、铙钹齐鸣般的声音其中无穷的魅力之所在。</p>
+<p class="src">——第七章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：菲茨杰拉德最著名的一句话，只占一行：黛西的声音里都是金钱。盖茨比说这话时如获至宝——他终于给黛西的魅力找到了物证；尼克则被这句话惊到失语：这是全书唯一一次，有人把旧钱的引力直接说破。</p>
+<p><b>逻辑脉络</b>：注意说话的人是谁：不是仇敌，是爱慕者。盖茨比说「金钱味」毫无贬义——他爱黛西的方式就是爱那种音色，因为那音色属于他永远进不去的旧钱世界。批判的锋刃由此更利：连被剥削的追梦人都用剥削者的货币计价爱情。</p>
+<p><b>现实意义</b>：训练对「音色」的敏感：一个家庭、一个圈子的优越感常常不在内容而在音色——从容、笃定、把一切当作理所当然的那口气。你能听出它，就能少被它定价；否则你会像盖茨比一样，用五年给一种音色付账。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>inexhaustible</b>　adj. 无穷无尽的（in-+exhaust 耗尽：负面前缀的正面词义）</p>
+<p><b>jingle</b>　n. 叮当声（硬币与铃铛的拟声词——声音描写的词汇层）</p>
+<p><b>cymbal</b>　n. 铙钹（the cymbals' song：乐器名词所有格，通感修辞）</p>
+<p><b>rise and fall</b>　phr. 抑扬起伏（rose and fell in it：声音的生理动词）</p>
+<p><b>charm</b>　n. 魅力（the inexhaustible charm that rose and fell： charm 与声音连用）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>the jingle of it, the cymbals' song of it ——of it 的叠句（anaphora of phrases）：两个「名词+of it」短语并列，代替笨重的 its jingle and the song of its cymbals。这种「of it 链」是菲茨杰拉德的音乐性所在：读出来有鼓点。</p>
+<p>Her voice is full of money ——七词名句的构造：主系表 + 具体名词（money）作表语，把不可见的社会结构塞进一个声音里。写作启示：最强的句子往往是最「错配」的——voice（听觉）×money（视觉/触觉），跨感官搭配叫 synesthesia（通感）。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：学通感修辞——把一种感官的东西交给另一种感官去说（声音里有金属、有硬币）。中英文都通用的手法，但英文实现只需一个介词短语：full of + 具体名词。练法：给身边三种声音各找一个「错的」名词。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>葬礼：电报与一个人 · The Funeral</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I think it was on the third day that a telegram signed Henry C. Gatz arrived from a town in Minnesota. It said only that the sender was leaving immediately and to postpone the funeral until he came.</p>
+<p class="cn">我想大概是在第三天的时候，从明尼苏达州的一个小镇寄来一封署名为亨利·C. 盖茨的电报。上面说发电报的人马上就动身，并要求将葬礼推迟到他来后再办。</p>
+<p class="en">'The poor son-of-a-bitch,' he said.</p>
+<p class="cn">「这家伙真他妈的可怜。」他说。</p>
+<p class="src">——第九章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：一千个派对客人，葬礼上一个人都没来。到的是一封署名亨利·C. 盖茨的电报（父亲，要求推迟葬礼）和猫头鹰眼先生（这家伙真他妈的可怜）。宾客名单即人情的资产负债表，盖茨比的负债率是百分之百。</p>
+<p><b>逻辑脉络</b>：猫头鹰眼在图书馆里曾惊叹「书本是真的」，在葬礼上给出了他唯一的悼词——粗口里裹着全书最诚实的同情。菲茨杰拉德把「谁真正看见过盖茨比」这个问题留给了两个边缘人：一个认出书的真，一个认出人的可怜。</p>
+<p><b>现实意义</b>：给社交做一次「葬礼压力测试」：你的通讯录里，能在仪式上出现的有几个？这不是悲观，是资产分级——把可支配时间投给那几个人，比维持一千个点赞关系便宜，也保值。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>telegram</b>　n. 电报（a telegram signed Henry C. Gatz：signed 过去分词后置）</p>
+<p><b>postpone</b>　v. 推迟（to postpone the funeral until he came：postpone + 名词 + until）</p>
+<p><b>solemn</b>　adj. 庄重的，凝重的（a solemn old man：葬礼场景的标配形容词）</p>
+<p><b>dismay</b>　n. 惊愕，沮丧（helpless and dismayed：两个形容词压成一个人的无措）</p>
+<p><b>son-of-a-bitch</b>　n. 混蛋（粗口+poor 的组合 poor son-of-a-bitch：骂人的话装着同情）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>It was on the third day that a telegram arrived... ——it was...that 强调句强调时间（on the third day）：强调句是英语叙事的「聚光灯」，把最冷的三个字（第三天）推到最亮处。第三天，说明尼克等了三天。</p>
+<p>It said only that the sender was leaving immediately and to postpone the funeral until he came. ——said only that... and to ...：that 从句与 to 不定式并列作宾语（口语电报体），紧缩到连主语都省——文体模仿文体：电报的语言就是电报的文体。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：悼词的写法——猫头鹰眼没有形容词、没有修辞，只有一句粗口。最重的情感要用最轻的语言写（understatement）。英文写作里：一句 The poor son-of-a-bitch 胜过一段 he was deeply moved。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>判决：冷漠的人 · Careless People</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I couldn't forgive him or like him but I saw that what he had done was, to him, entirely justified. It was all very careless and confused.</p>
+<p class="cn">我不能原谅他，也不会喜欢他，但是我明白，他所做的一切在他自己看来都是完全合乎情理的。这一切都冷漠、混乱不堪。</p>
+<p class="en">They were careless people, Tom and Daisy—they smashed up things and creatures and then retreated back into their money or their vast carelessness or whatever it was that kept them together, and let other people clean up the mess they had made....</p>
+<p class="cn">汤姆和黛西，他们都是冷漠的人——他们砸碎了东西，毁了别人，然后退缩到自己的金钱当中，退缩到他们的麻木不仁中，退缩到那些将他们联系在一起的种种一切中，却让别人来帮他们收拾烂摊子……</p>
+<p class="src">——第九章 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：尼克的终审判决：汤姆和黛西是冷漠的人——砸碎了东西和人，然后退回到金钱、麻木不仁、以及把他们联系在一起的一切之中，让别人收拾烂摊子。全书没有法庭，这一段就是判决书；而判决的最大砝码不是他们做了什么，是他们做完之后「没有一丝痛楚」。</p>
+<p><b>逻辑脉络</b>：判决的推理链值得细读：尼克先承认盖茨比的账也不干净（他所做的一切在他自己看来都是完全合乎情理的），然后说「这一切都冷漠、混乱不堪」——他在两个烂摊子之间挑出了区别：盖茨比为梦负债，旧钱为零成本。道德的杠杆是「谁在付代价」。</p>
+<p><b>现实意义</b>：记住这个判决公式：评价一个人的破坏，不看动机看成本归属——他砸完之后，收拾的人是谁？如果永远是别人，那不是强势，是冷漠；远离这种「零成本破坏者」，比证明他们坏更重要。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>careless</b>　adj. 冷漠的，漫不经心的（本义「不小心的」，此处升格为道德判断——全书判决词的关键词）</p>
+<p><b>smash up</b>　phr. 砸碎（things and creatures：物与生灵并置的冷峻）</p>
+<p><b>retreat back into</b>　phr. 退缩回（retreat 本义撤退，+back into 强化「缩回壳里」）</p>
+<p><b>vast</b>　adj. 巨大的（their vast carelessness：vast 修饰抽象名词，旧钱的语言尺度）</p>
+<p><b>clean up the mess</b>　phr. 收拾烂摊子（let other people clean up the mess：让别人收拾）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>They were careless people, Tom and Daisy ——主句+同位语（Tom and Daisy）：把名字放在判决之后，先定性后点名，像法官宣读。同位语的位置决定了句子的温度——先 careless 后 names，无一字废话。</p>
+<p>or whatever it was that kept them together ——whatever it was that... 的「收敛句式」：列举到一半放弃穷尽，用一个模糊短语收尾（他们靠什么绑在一起——金钱？麻木？随便什么）。英语长句的「泄气阀」，议论文收尾利器。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：判决式段落的三步模板——① 承认对方的部分合理性（to him, entirely justified）；② 给出总判词（careless and confused）；③ 展开判词的具体行为链（smashed...retreated...let others clean up）。先公允后定性，你的议论文说服力会翻倍。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：逆流而上的小舟 · Boats Against the Current</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that's no matter—tomorrow we will run faster, stretch out our arms farther.... And one fine morning—</p>
+<p class="cn">盖茨比相信那盏绿灯，相信那个年复一年离我们越来越远却振奋人心的未来。那时它已经弃我们而去，但是那也没关系——明天我们会跑得更快，将胳膊伸得更远……总会有那么一个晴朗的上午——</p>
+<p class="en">So we beat on, boats against the current, borne back ceaselessly into the past.</p>
+<p class="cn">于是，我们努力向前，像逆流而上的小舟，不断被推回到过去。</p>
+<p class="src">——第九章结尾 ｜ 英文据外研社双语读库原文，中文据王凤月译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文学史上最著名的结尾之一：盖茨比信那盏绿灯，信那个年年退后的极乐未来；明天我们会跑得更快，胳膊伸得更远——总会有那么一个晴朗的上午。然后是最后一句：于是我们奋力向前划，像逆流而上的小舟，不断被推回过去。</p>
+<p><b>逻辑脉络</b>：结尾把私人故事升格为国民寓言：尼克先退回荷兰水手的初见，再回到绿灯，最后落成「我们」——第一人称复数把盖茨比的执念分给每个人：我们都在向未来挥手，同时被水流推向过去。注意时态：未来永远差一个晴朗的上午，这是许诺的结构，不是事故。</p>
+<p><b>现实意义</b>：接受「逆流」的物理学：任何长期目标（健康、复利、关系）都是逆流划桨——不划就被推回去，划了也不保证抵达。但菲茨杰拉德留下的不是绝望：把「更远」当作动作而不是结果，明天你依然可以伸得更远一点。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>orgastic</b>　adj. 极乐的（orgastic future：罕见的文学词，通行本或作 orgiastic）</p>
+<p><b>recede</b>　v. 退去，后退（year by year recedes before us：以物为镜写时间）</p>
+<p><b>elude</b>　v. 避开，逃脱（It eluded us then：它躲开了我们——拟人）</p>
+<p><b>beat on</b>　phr. 不停击水（beat on：beat 的持续体，划桨的物理动词承担哲学重量）</p>
+<p><b>ceaselessly</b>　adv. 不停地（borne back ceaselessly：borne 是 bear 的过去分词=被推）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>boats against the current, borne back ceaselessly into the past ——同位语（boats...）+过去分词短语（borne back...）：主句 So we beat on 只有四个词，其余全是悬垂修饰——像船本身：动作是核心，阻力是浪。分词短语 borne（=pushed）被动含义藏在形式里。</p>
+<p>And one fine morning— ——破折号截断：省略号与破折号的组合把「许诺」永远留在未完成时。英语写作的留白技法：句子在最高点断掉，读者替你续写。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：结尾的两步法——① 从「他」跳到「我们」（人称升格，个人故事变寓言）；② 用一个物理意象收束抽象主题（beat on / current / past）。你的英文文章结尾也可以这样设计：主语换 we，意象选一个物理动作，不超过 15 词。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张可以随身携带的英文写作卡片。</p>
+<p><b>Gatsby turned out all right at the end. ——不——盖茨比一直都是不错的。</b>应用口诀：先给结论再给元凶——it is...that 强调句是英文判决书句型。</p>
+<p><b>Whenever you feel like criticizing any one, just remember that all the people in this world haven't had the advantages that you've had. ——每当你想批评别人的时候，一定要记得并不是世界上每个人都曾拥有你所拥有的优势。</b>应用口诀：Whenever you feel like ..., just remember ... 是劝诫文万能开头。</p>
+<p><b>distinguished nothing except a single green light, minute and far away ——除了很远的地方一盏闪着微光的绿灯。</b>应用口诀：名词+双重后置修饰（形容词短语+定语从句）是画面压缩法。</p>
+<p><b>It was one of those rare smiles...that you may come across four or five times in life. ——一辈子也只可能看到四五次的笑。</b>应用口诀：one of those rare + 复数名词 + that 从句 = 物以稀为贵句型。</p>
+<p><b>'Can't repeat the past?' he cried incredulously. 'Why of course you can!' ——不能让过去重现？怎么就不能，当然能了！</b>应用口诀：回声反问+语气词 why，两回合写完立场交锋。</p>
+<p><b>her voice muffled in the thick folds ——她的声音在衬衫堆里有些发闷。</b>应用口诀：独立主格（her voice muffled）是引语与动作的转换器。</p>
+<p><b>Now it was again a green light on a dock. ——现在它又变回了码头上的一盏绿灯。</b>应用口诀：the 退回 a，特指退泛指——语法即叙事。</p>
+<p><b>Her voice is full of money. ——她的话里都是金钱味。</b>应用口诀：跨感官搭配（voice×money）是通感修辞的最短实现。</p>
+<p><b>They were careless people, Tom and Daisy...let other people clean up the mess they had made. ——他们砸碎了东西，却让别人来收拾烂摊子。</b>应用口诀：先定性后点名（同位语后置）+ whatever it was that 泄气阀收尾。</p>
+<p><b>So we beat on, boats against the current, borne back ceaselessly into the past. ——于是我们努力向前，像逆流而上的小舟，不断被推回到过去。</b>应用口诀：结尾两步法——人称升格 we，物理意象收束。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BC%97%E5%85%B0%E8%A5%BF%E6%96%AF%C2%B7%E8%8F%B2%E8%8C%A8%E6%9D%B0%E6%8B%89%E5%BE%B7" target="_blank" rel="noopener">弗朗西斯·斯科特·菲茨杰拉德 · 维基百科</a><span>佐证：作者生平、「爵士时代」命名与泽尔达。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%8D%E8%B5%B7%E7%9C%BC%E7%9A%84%E7%9B%96%E8%8C%A8%E6%AF%94" target="_blank" rel="noopener">了不起的盖茨比 · 维基百科</a><span>佐证：出版史与「了不起」的批评史。</span></li>
+<li><a href="https://www.gutenberg.org/ebooks/64317" target="_blank" rel="noopener">The Great Gatsby · Project Gutenberg</a><span>延伸：英文公版全文，可作对照精读底本。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD%E6%A2%A6" target="_blank" rel="noopener">美国梦 · 维基百科</a><span>延伸：绿灯所许诺与兑现的东西。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《了不起的盖茨比》双语研读版 ｜ 英文据外研社双语读库原文，中文据王凤月译本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

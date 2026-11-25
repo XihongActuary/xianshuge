@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 达洛维夫人 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/19-daluo.html">本书书页</a></p>
+<h1>深度研读 · 达洛维夫人</h1>
+<p class="sub">Mrs Dalloway · 弗吉尼亚·吴尔夫 著 · 外研社双语读库·唐霞译 · 中英对照深度研读</p>
+<p class="lead">研读说明：意识流文学的代表作——1923年6月中旬的伦敦，议员夫人克拉丽莎·达洛维从买花开始的一天。本双语研读版共十二节：标题中英对照、摘录中英并置，每节配词汇积累、句式分析与写作借鉴——读吴尔夫，同时学她的自由间接引语、长句呼吸与「清单式记忆」。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>开篇：她要亲自去买些花 · Mrs. Dalloway Said She Would Buy the Flowers Herself</a></li>
+<li><a href="#s2"><b>贰</b>百灵与跳水 · What a Lark! What a Plunge!</a></li>
+<li><a href="#s3"><b>叁</b>大本钟：预报与报时 · Warning and Irrevocable</a></li>
+<li><a href="#s4"><b>肆</b>花椰菜与记忆清单 · Sayings About Cabbages</a></li>
+<li><a href="#s5"><b>伍</b>你快乐吗，克拉丽莎？ · Are You Happy, Clarissa?</a></li>
+<li><a href="#s6"><b>陆</b>威廉爵士：没有平衡感 · A Sense of Proportion</a></li>
+<li><a href="#s7"><b>柒</b>自杀的年轻人 · The Young Man Who Had Killed Himself</a></li>
+<li><a href="#s8"><b>捌</b>Fear no more：挽歌送给活人 · Fear No More</a></li>
+<li><a href="#s9"><b>玖</b>要是现在死去，此刻即是最幸福的 · If It Were Now to Die</a></li>
+<li><a href="#s10"><b>拾</b>理查德：我爱你，没说出口 · I Love You, Unspoken</a></li>
+<li><a href="#s11"><b>拾壹</b>脑子与心灵 · Brain versus Heart</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：因为她就在那里 · For There She Was</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>开篇：她要亲自去买些花 · Mrs. Dalloway Said She Would Buy the Flowers Herself</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Mrs. Dalloway said she would buy the flowers herself.</p>
+<p class="cn">达洛维夫人说她要亲自去买些花。</p>
+<p class="en">And then, thought Clarissa Dalloway, what a morning—fresh as if issued to children on a beach.</p>
+<p class="cn">然后，克拉丽莎·达洛维思忖，多惬意的早晨啊——空气清新得仿佛是特意送给海滩上的孩子们似的。</p>
+<p class="src">——开篇 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文学史上最著名的开门句之一：没有引子，没有背景，一个中产阶级夫人决定亲自去买花。这句话立起全书的方法论——一天就是一生：大本钟会敲十几下，但每一锤都敲在克拉丽莎的三十年上。买花这件小事是她的主权宣言。</p>
+<p><b>逻辑脉络</b>：吴尔夫的设计是「一日框架＋双线镜像」：克拉丽莎线（用晚宴抵抗死）与史密斯线（用坠落加入死）终生未见，只在结尾间接相交。开篇的「亲自」二字埋下全书命题——她要自己经营一天，正如她要自己经营存在，尽管仆人露西早把一切备好。</p>
+<p><b>现实意义</b>：给自己的生活留一件「必须亲自做的事」：它未必是大事，但必须是你本人的动作。日程被代办、被代劳、被代想淹没的时候，一句「我要亲自去买些花」是最低成本的存在确认。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>issue</b>　v. 发给（fresh as if issued to children：issued 的被动分词作后置修饰）</p>
+<p><b>cut out for her</b>　phr. 早为她备好（had her work cut out for her：固定习语，任务繁重且明确）</p>
+<p><b>take off</b>　phr. 卸下（The doors would be taken off their hinges：门从铰链卸下）</p>
+<p><b>fresh</b>　adj. 清新的（fresh as if issued...：fresh 是全书第一个形容词，也是青春的触感）</p>
+<p><b>hinge</b>　n. 铰链（记忆开关的实物——后文 squeak of the hinges 接通三十年）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Mrs. Dalloway said she would buy the flowers herself. ——间接引语（said she would）+强调副词 herself 句尾收锤：吴尔夫拒绝直接引语「I will buy the flowers myself」，因为间接引语保留叙述者的听感。仿写点：句尾的 herself 是全句唯一的重音位。</p>
+<p>what a morning—fresh as if issued to children on a beach ——感叹句（what a...）+破折号+as if 虚拟比较：三步从当下跳进比喻。as if issued（仿佛被发放）的被动虚拟让「清新」有了发放人和领取人——清晨被写成一份礼物。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：小说可以用一句日常家务开场——重大叙事不必重大事件。英文写作的 in medias res（切入事中）：从动作的决定（buy the flowers）而不是背景说明开始，读者的好奇心自己会补齐背景。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>百灵与跳水 · What a Lark! What a Plunge!</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">What a lark! What a plunge! For so it had always seemed to her, when, with a little squeak of the hinges, which she could hear now, she had burst open the French windows and plunged at Bourton into the open air.</p>
+<p class="cn">多么动听的百灵！多么迅疾的举动！对她来说过去似乎总是这样，随着合叶轻微的吱吱声，这声音她现在也能听到，她会突然打开落地窗，扎到伯顿的户外。</p>
+<p class="en">'Musing among the vegetables?'—was that it?—'I prefer men to cauliflowers'—was that it?</p>
+<p class="cn">「在蔬菜中冥想吗？」——说了那样的话吗？「我喜欢人胜过花椰菜」——说了那样的话吗？</p>
+<p class="src">——开篇·伯顿回忆 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：推开落地窗的一瞬，十八岁的克拉丽莎听见了两个词：百灵（lark）与跳水（plunge）——一个是声音，一个是动作，合起来就是青春的体感。意识流的门从这里打开：外部是六十岁的买花夫人，内部是扎进伯顿清晨空气的少女。</p>
+<p><b>逻辑脉络</b>：吴尔夫用「合叶的吱吱声」作记忆的开关——这声音她现在也能听到。全书的心理装置由此确立：当下的一响（合叶、车轮、钟声）接通三十年前的一响。时间在意识流里不是直线而是叠层。</p>
+<p><b>现实意义</b>：为你人生的关键清晨留一个「体感锚点」：声音、温度、气味——它比照片可靠。回忆的可靠性不取决于事件大小，取决于当时身体收到了什么。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>lark</b>　n. 百灵鸟；嬉戏（双关：既是鸟，也是 play——What a lark 的轻快音节）</p>
+<p><b>plunge</b>　n./v. 跳水，扎入（plunged at Bourton into the open air： plunge 与 lark 的元音对仗）</p>
+<p><b>squeak</b>　n. 吱吱声（拟声词——记忆开关的音效）</p>
+<p><b>burst open</b>　phr. 猛然推开（burst open the French windows：burst+open 复合谓语）</p>
+<p><b>cauliflower</b>　n. 花椰菜（ I prefer men to cauliflowers：prefer A to B 的经典搭配）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>What a lark! What a plunge! ——两个感叹名词短语（无动词句）：省略动词让句子只剩纯感官——一声音、一动作。仿写：What a noise! What a rush! 省略句是意识流的音节单位。</p>
+<p>with a little squeak of the hinges, which she could hear now ——现在时插入（which she could hear now）：在三十年前的回忆从句里塞进一个现在的 now——时间叠层用定语从句实现。这是英文里最优雅的「闪回」语法。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「声音」作时间机器——不合叶吱吱声、钟声、车轮声，把两个年代缝在一起。你的英文回忆写作也可以选一个声音作锚：The same kettle sings now as it sang twenty years ago.（同一个水壶现在唱着，二十年前也唱着。）</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>大本钟：预报与报时 · Warning and Irrevocable</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air.</p>
+<p class="cn">听啊！钟声隆隆地响起来了。开始是预报，悦耳动听；接着是报时，精确无误。如铅般沉重的音波在空气中渐渐消逝。</p>
+<p class="en">was what she loved; life; London; this moment of June.</p>
+<p class="cn">有她热爱的事物。生活、伦敦、这六月的时刻。</p>
+<p class="src">——开篇·维多利亚大街 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：大本钟的钟声分两截：先是一个悦耳的预报，再是一记精确的落定。这是全书最漂亮的节拍器隐喻——时间先是可能性（预报），然后是不可逆的事实（报时）。克拉丽莎穿过维多利亚大街，钟声像铅一样沉下去，一天就此开始计时。</p>
+<p><b>逻辑脉络</b>：吴尔夫用钟声做叙事的浮标：每逢整点，人物的意识浮出水面回到当下——初读者据此在意识流里定位。钟声还是「公共时间」对「私人时间」的接管装置：预报是希望的调子，报时是秩序的锤子。</p>
+<p><b>现实意义</b>：把任何计划分清两截：预报阶段（悦耳、可塑）与报时阶段（精确、不可逆）。谈判、决定、承诺都有这两截——想改主意，在预报里改；钟声落下之后，改的代价是铅做的。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>boom</b>　v. 隆隆作响（Out it boomed：副词 out 前置的倒装，钟声被推出）</p>
+<p><b>warning</b>　n. 预报（First a warning, musical：名词短语+形容词后缀的顿挫）</p>
+<p><b>irrevocable</b>　adj. 不可逆的（ir-+re+voke：已不能召回——时间法学词）</p>
+<p><b>leaden</b>　adj. 铅一般沉重的（The leaden circles dissolved：铅的圆圈在空气中溶解）</p>
+<p><b>dissolve</b>　v. 消散，溶解（物理动词写声波——通感修辞）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>First a warning, musical; then the hour, irrevocable. ——对仗的名词短语对（warning/hour，musical/irrevocable）：分号把时间劈成两半，每个名词带一个形容词尾，音节前短后长——句子本身就是钟声的形状。</p>
+<p>life; London; this moment of June. ——三名词递降排比：从最大（生活）到城市（伦敦）到一瞬（此刻）。用分号串联的名词瀑布是英文「总结句」的高音技巧：读出来像三声钟响。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给文章设计一个「节拍器」——吴尔夫的大本钟每小时把散落的意识拉回现场。你的长文（report、essay）也可以设一个每节重复出现的短语或钟点，读者靠它定位。结构重复=可读性。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>花椰菜与记忆清单 · Sayings About Cabbages</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and, when millions of things had utterly vanished—how strange it was!—a few sayings like this about cabbages.</p>
+<p class="cn">他的话她倒记得。他的双眼、他的折叠刀、他的微笑、他的暴躁，千百万件往事都已如烟消散——真怪！几句如此有关卷心菜的话却浮现出来。</p>
+<p class="src">——开篇·花园 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：三十年过去，克拉丽莎记住彼得的不是情书，是一句「我喜欢人胜过花椰菜」。记忆的清单式存档：他的双眼、他的折叠刀、他的微笑、他的暴躁——然后是花椰菜。吴尔夫在这里写下记忆的真相：大事如烟，怪话长存。</p>
+<p><b>逻辑脉络</b>：这是意识流的经典技法「清单式记忆」：把一个人拆成具体物件与具体话语，不用任何形容词。而清单的排序暴露内心的秩序——她爱的和恨的是同一个人的四样东西；花椰菜排在最后，恰恰因为它最无关紧要，所以最忠实。</p>
+<p><b>现实意义</b>：写作与告别都可以用这个办法：不用「他是个热情的人」，用「他的折叠刀、他的暴躁、他关于花椰菜的话」。具体名词是记忆的硬盘，形容词是易失缓存。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>saying</b>　n. 话，语录（his sayings：sayings 复数=口头禅集合）</p>
+<p><b>pocket-knife</b>　n. 折叠刀（复合名词：细节物件承载人格）</p>
+<p><b>grumpiness</b>　n. 暴躁，坏脾气（grumpy 的名词化——缺点也进记忆清单）</p>
+<p><b>utterly</b>　adv. 彻底地（had utterly vanished：utterly 加强消失的完成度）</p>
+<p><b>muse</b>　v. 沉思（Musing among the vegetables：现在分词开玩笑式追问）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>his eyes, his pocket-knife, his smile, his grumpiness and... a few sayings like this about cabbages ——五个 his 开头的名词短语排比：所有格 his 的重复敲出节拍，最后落到最不重要的 cabbage 上——清单的末位设计：越轻的越难忘。</p>
+<p>when millions of things had utterly vanished—how strange it was! ——过去完成时（had vanished）+破折号插入感叹（how strange!）：叙述被自己的惊讶打断——英文叙事里，破折号插叹是「叙述者的脸」露出来的瞬间。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写人用清单不用形容词——两个名词+一个口头禅，胜过一段性格分析。练法：为你要写的最熟悉的人列五样东西（四件物品+一句话），正文就用它们拼装。这是英文 memoir 写作第一课。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>你快乐吗，克拉丽莎？ · Are You Happy, Clarissa?</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Tell me,' he said, seizing her by the shoulders. 'Are you happy, Clarissa? Does Richard—'</p>
+<p class="cn">「告诉我，」他说，一边抓着她的双肩，「你快乐吗，克拉丽莎？理查德是否？」</p>
+<p class="en">The door opened.</p>
+<p class="cn">门打开了。</p>
+<p class="src">——上午·彼得重逢 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：从印度回来的旧爱彼得·沃尔什，重逢的第一问不是「你过得好吗」，而是「你快乐吗，克拉丽莎？理查德是否？」——一句把婚姻、选择与三十年全部压进去的问题。门在这时打开（「这是我的伊丽莎白」），问题悬在半空，全书没有正面回答。</p>
+<p><b>逻辑脉络</b>：彼得与理查德是婚姻辩论的永恒题面：点燃你的人 vs 安稳的人。吴尔夫的高明是不裁决——她把裁决权交给那个说不出口的「我爱你」（理查德全天都在练习，最终没说出口）。快乐问题被一个进门的女儿打断，生活总是这样代替答案。</p>
+<p><b>现实意义</b>：旧爱重逢先问快乐，不问成败——这是体面，也是情报。反过来，若你正被这个问题问住，诚实的答案不必当面向对方交付，但必须向自己交付：你快乐吗？拖延回答的成本按三十年计息。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>seize</b>　v. 抓住（seizing her by the shoulders：seize sb. by the + 身体部位的标准动作句式）</p>
+<p><b>Does Richard—</b>　phr. 理查德是否……（破折号截断的半句问——省略号语法：话没说完，门先开了）</p>
+<p><b>histrionically</b>　adv. 戏剧化地（histrionic 表演性的：克拉丽莎的社交人格形容词）</p>
+<p><b>emotionally</b>　adv. 激动地（said... emotionally, histrionically, perhaps：perhaps 一词让叙述者怀疑一切）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>'Tell me,' he said, seizing her by the shoulders. 'Are you happy, Clarissa? Does Richard—' ——引语被动作切开（he said, seizing...）：插入的现在分词 seizing 让「说」与「抓」同时发生。破折号悬置的 Does Richard— 是英文对话描写的高级留白：读者替他把问题补完，而门先开了。</p>
+<p>said... emotionally, histrionically, perhaps ——三个副词的递进怀疑链：emotionally（动情地）→histrionically（表演地）→perhaps（也许吧）：最后一个副词把前两个全部撤销——吴尔夫的不可靠叙述就藏在这个 perhaps 里。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「打断」代替「回答」——最重要的问题不解答，让门开、让电话响、让孩子进来。英文对话写作的沉默技法：the unanswered question（未回答的问题）比任何回答都响。你的剧本、你的访谈文，都可用。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>威廉爵士：没有平衡感 · A Sense of Proportion</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">But he was not mad, was he? Sir William said he never spoke of 'madness'; he called it not having a sense of proportion.</p>
+<p class="cn">但他没疯，不是吗？威廉爵士称他从未说过「疯狂」一词，他称之为没有平衡感。</p>
+<p class="en">Health we must have; and health is proportion; so that when a man comes into your room and says he is Christ (a common delusion), and has a message, as they mostly have, and threatens, as they often do, to kill himself, you invoke proportion</p>
+<p class="cn">健康是我们肯定需要的，而健康就表示平衡。所以当有人进入你的诊疗室并称他就是基督（一个普遍的幻觉），还带来了启示，像他们大都有启示一样，并如他们经常所做的一样威胁要自杀，你就得采取平衡的方法</p>
+<p class="src">——午间·布拉德肖夫妇 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：精神科名医威廉·布拉德肖爵士有他的语言洁癖：他从不使用「疯狂」，他称之为「没有平衡感」（a sense of proportion）。一句话完成诊断、定罪与推销——接着就是休养院、卧床、休息疗法。社会用礼貌的词汇把不合规格的人送进规程。</p>
+<p><b>逻辑脉络</b>：布拉德肖的「平衡感」是全书最重要的讽刺装置：它要求人对生活保持恰当比例，而史密斯青年的病恰恰源于战争中失去了一切比例。吴尔夫让克拉丽莎在晚宴上听说史密斯的死讯时，感到「与他相似」——正常人对「正常」的怀疑，比任何心理健康科普早了一百年。</p>
+<p><b>现实意义</b>：听懂诊断式的语言包装：当一个机构开始用美化词汇替换事实词（疯狂→没有平衡感，裁员→优化），规程就要启动了。被评估的人有权追问：谁定义的平衡？比例的标准写在哪里？</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>proportion</b>　n. 比例，分寸（a sense of proportion：平衡感的官方说法——全书的讽刺核心词）</p>
+<p><b>invoke</b>　v. 诉诸，援引（you invoke proportion：invoke a principle 的公文搭配）</p>
+<p><b>speke of</b>　v. 提及（never spoke of 'madness'：用引号词表示「不敢直呼其名」）</p>
+<p><b>rest in bed</b>　phr. 卧床休养（rest, rest, rest 的三连重复是吴尔夫的讽刺节奏）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>he called it not having a sense of proportion ——call it + 动名词短语：把疾病重新命名为一种「缺失」。命名即权力：relabeling（重贴标签）是英文议论文的核心概念——先改词，再改待遇。仿写：They call it not having a sense of teamwork.（他们把这叫缺乏团队精神。）</p>
+<p>rest, rest, rest ——三连重复：重复不是修辞失误，是模仿医生的处方的机械感。吴尔夫让重复承担反讽——健康女神的祷文变成了制度的车轱辘话。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：抓「替换词」写批判——找到机构把刺耳词换成体面词的那一处（madness→proportion），整篇批判就有了支点。英文 satirical essay 的基本功：quote the euphemism, then define the act（引用委婉语，然后写出实际行为）。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>自杀的年轻人 · The Young Man Who Had Killed Himself</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Death was defiance. Death was an attempt to communicate; people feeling the impossibility of reaching the centre which, mystically, evaded them; closeness drew apart; rapture faded, one was alone. There was an embrace in death.</p>
+<p class="cn">死亡是个挑战。死亡是交流的一种尝试。人们觉得不可能接近那神秘的、触摸不到的中心。亲密变得疏远，狂欢退却，只剩下自己形单影只。死亡里有着拥抱。</p>
+<p class="en">But this young man who had killed himself—had he plunged holding his treasure?</p>
+<p class="cn">但是这个自杀的年轻人——他是怀着珍贵的一切纵身一跳的吗？</p>
+<p class="src">——晚宴·小房间 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：晚宴中途，克拉丽莎被叫进小房间，得知史密斯跳楼死了。她的第一反应不是恐惧，是认同：他是怀着珍贵的一切纵身一跳的吗？——而她自己曾在穿白衣下楼时自语：倘若此刻就要死，此刻即是最幸福的。两条线在小房间那十分钟里对上了账。</p>
+<p><b>逻辑脉络</b>：吴尔夫把「死亡」和「生活」放进同一本账：史密斯用坠落加入死，克拉丽莎用晚宴抵抗死，幸存者知道自己欠着什么。「他保住了自己的东西」——她理解那个青年不肯把自己的核心交给布拉德肖医生们。这是全书最暗也最亮的十分钟。</p>
+<p><b>现实意义</b>：把「此刻即是最幸福」当作存在感的校准器：幸福有时刻表，按时刻记账，不按成就总量记账。同时读懂克拉丽莎的反应不是病态，是高共情者的正常清点。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>defiance</b>　n. 挑战，违抗（Death was defiance：主系表定义句，把死亡定义成动作）</p>
+<p><b>evade</b>　v. 躲避（the centre which... evaded them：中心主动躲避——拟人）</p>
+<p><b>rapture</b>　n. 狂喜（rapture faded：狂喜退潮——与 plunge 呼应）</p>
+<p><b>embrace</b>　n. 拥抱（There was an embrace in death：死亡里有着拥抱——五个词的悖论句）</p>
+<p><b>treasure</b>　n. 珍贵之物（holding his treasure：史密斯抱住的内核）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Death was defiance. Death was an attempt to communicate ——双定义句排比（主系表+名词短语）：用两个短句给死亡下两个定义，第二个解释第一个。英文定义式修辞：X is A. X is B that... 让抽象名词获得动作性。</p>
+<p>people feeling the impossibility of reaching the centre ——现在分词独立结构（people feeling...）：分词短语让「人们」成为背景音——句子重心落在 impossibility 上。学这种「重心后置」：把最重要的抽象名词放在从句末端。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：定义句的连发——写抽象主题（孤独、自由、失败）时，先给两个短定义句（X was A. X was B），再给一个悖论收束（There was an embrace in death）。三句一段，是英文 essay 段落的原子结构。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>Fear no more：挽歌送给活人 · Fear No More</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Fear no more the heat o' the sun Nor the furious winter's rages.</p>
+<p class="cn">不要再怕炎炎骄阳，不要再怕寒冬肆虐。</p>
+<p class="en">Fear no more, says the heart, committing its burden to some sea, which sighs collectively for all sorrows, and renews, begins, collects, lets fall.</p>
+<p class="cn">不用再害怕，那颗心说，把包袱托付给大海吧，它为所有悲伤叹息，随即复苏、开始、聚拢、任其散落。</p>
+<p class="src">——书店橱窗·《辛白林》挽歌 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：克拉丽莎路过哈查德书店，从橱窗里翻开的书上读到《辛白林》的挽歌：不要再怕骄阳的热度，不要再怕寒冬的狂怒——死者已经不怕了。这行诗全书复现多次，是死亡的温柔版本：一份写给逝者的安慰，被一个活人反复借用来给自己降温。</p>
+<p><b>逻辑脉络</b>：挽歌在书里承担「死亡教育」：它不渲染恐惧，只清点解脱——骄阳与寒冬都管不着你了。克拉丽莎对这首诗的反复默诵，与史密斯线的坠落形成对照：同样面对死，一个把它读成诗，一个把它走成路。</p>
+<p><b>现实意义</b>：给自己备一首「降温诗」：面对不可逆之事（告别、损失、衰老），寻找一句能把恐惧翻译成安放的话。安慰的高段位不是「没事的」，是「那些都不再能伤害你了」。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>furious</b>　adj. 狂怒的（the furious winter's rages：winter 拟人+rage 名词——莎士比亚的天气）</p>
+<p><b>rage</b>　n. 狂暴（rages 复数： storms of anger——莎剧措辞）</p>
+<p><b>commit</b>　v. 托付（committing its burden to some sea：commit A to B 的正式搭配）</p>
+<p><b>sigh</b>　v. 叹息（sighs collectively：collectively 副词把海写成集体）</p>
+<p><b>o' the sun</b>　phr. = of the sun（莎剧缩写体——引用时的「古体标记」）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Fear no more, says the heart, committing its burden to some sea ——引语倒装（says the heart）+现在分词伴随（committing...）：心被拟人成说话者，动作挂在嘴后。which sighs collectively..., and renews, begins, collects, lets fall ——四个动词裸排（无宾语），海的呼吸节奏。学这种「动词瀑布」：四个动词不加修饰连发，句子获得生理节奏。</p>
+<p>Fear no more the heat o' the sun ——祈使句+否定：fear no more 的宾语提前（the heat o' the sun），莎士比亚的诗歌倒装。modern 英语会写 Do not fear the heat of the sun——引文保留古体正是「引经据典」的效果。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：引用古诗为自己说话——克拉丽莎借莎剧挽歌给自己降温，引用即「借他人的舌头说自己的心事」。你的英文写作也可以引一行诗/歌词作 section 的呼吸点：引文要短（一行内），要复现（同一行出现两次以上才叫 motif）。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>要是现在死去，此刻即是最幸福的 · If It Were Now to Die</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">feeling as she crossed the hall 'if it were now to die, 'twere now to be most happy.' That was her feeling—Othello's feeling, and she felt it, she was convinced, as strongly as Shakespeare meant Othello to feel it.</p>
+<p class="cn">走过大厅时觉得：「要是现在死去，此刻即是最幸福的。」那即是她的感受——奥赛罗的感受，她感觉到了这一点，她深信自己感觉到的与莎士比亚想让奥赛罗感觉到的一样强烈。</p>
+<p class="src">——回忆·伯顿之夜 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：伯顿时代的克拉丽莎走过大厅去见萨莉·西顿，自觉「要是现在死去，此刻即是最幸福的」——并确认那是奥赛罗的感受。幸福被精确到时刻：不是拥有什么，是此刻的浓度足够支付一生。</p>
+<p><b>逻辑脉络</b>：吴尔夫引用奥赛罗杀死苔丝狄蒙娜前的台词语境，却把杀意替换成幸福感——最强烈的爱与最彻底的失去感在同一秒重合。这句话与史密斯线的互为镜像：同一句话，一个出自狂喜，一个出自绝望，界限薄得像白色裙衣。</p>
+<p><b>现实意义</b>：记录你自己的「此刻即是最幸福」清单：它必然短小，且大多无关成就。当生活被绩效思维填满时，这份清单是唯一的解毒剂——幸福按浓度结算，不按总量结算。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>were to die</b>　phr. 虚拟将来（if it were now to die：were 虚拟式+to 不定式表将来——莎剧句法）</p>
+<p><b>'twere</b>　phr. = it were（古体缩写：莎士比亚原文的音节压缩）</p>
+<p><b>convinced</b>　adj. 确信的（she was convinced：被动表心理状态）</p>
+<p><b>frock</b>　n. 连衣裙（in a white frock：一个白色符号贯穿全书）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>as strongly as Shakespeare meant Othello to feel it ——双重比较嵌套：as strongly as（与她感受一样强）+ meant Othello to feel（莎士比亚想让奥赛罗感到的强度）：一句话把「作者意图」写进人物感受——meta 叙事的语法实现。meant sb. to do（想让某人做）的搭配值得背。</p>
+<p>That was her feeling—Othello's feeling ——同位语的判断链：her feeling=Othello's feeling，等号把私人狂喜接到文学谱系上——引经据典的高级形态：不说「如奥赛罗所说」，直接说「这就是他的感受」。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把自己的一刻接到文学谱系——写强烈的体验时，找一部经典给它作证（That was her feeling—Othello's feeling）。你的英文 personal essay：That was my feeling—Ahab's feeling（那不是我的偏执，是亚哈的）——借经典作镜子，文章立刻有纵深。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>理查德：我爱你，没说出口 · I Love You, Unspoken</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">setting off with his great bunch held against his body to Westminster to say straight out in so many words (whatever she might think of him), holding out his flowers, “I love you.” Why not?</p>
+<p class="cn">他要献上他的花，直接明了地说（不管她会怎么看他）：“我爱你。”为何不这样做？</p>
+<p class="en">Here he was walking across London to say to Clarissa in so many words that he loved her. Which one never does say, he thought. Partly one's lazy; partly one's shy.</p>
+<p class="cn">而他正走过伦敦要直截了当地对克拉丽莎说他是爱她的。他从来没说过这样的话，他想。有几分是因为懒散，有几分是因为腼腆。</p>
+<p class="src">——午间·理查德回家 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：理查德带着一束花走回威斯敏斯特，一路练习一句直接明了的话：我爱你。最终他把花放下，只说了「我送的」。全书最心酸的心理描写在后半句：他从来没说过这样的话，有几分是因为懒散，有几分是因为腼腆。</p>
+<p><b>逻辑脉络</b>：这束花与彼得的问句「你快乐吗」构成对峙：理查德给的是行动（花、午间、家），彼得给的是追问（快乐、选择、三十年）。吴尔夫不下裁决，只记账：安全不是错的，只是永远欠一句话——欠条在克拉丽莎那里挂了三十年。</p>
+<p><b>现实意义</b>：「我爱你」这类话有保质期：练习一百遍不如出口一次。给重要的人的话，别让懒散和腼腆代理签发。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>in so many words</b>　phr. 直截了当地（say in so many words：明确说出——与 not in so many words 反义对偶）</p>
+<p><b>holding out</b>　phr. 递出（holding out his flowers：hold out 伸手递交）</p>
+<p><b>lazy</b>　adj. 懒散的（Partly one's lazy：one 泛指代词把私事写成通例）</p>
+<p><b>shy</b>　adj. 腼腆的（partly one's shy：两个 partly 的对仗，把深情写成病理报告）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Which one never does say, he thought. Partly one's lazy; partly one's shy. ——泛指代词 one + does 强调：never does say（确实从不说）；one's lazy/one's shy 用 one 代替 I——把自己的人生教训写成全人类的规律。这种「第三人称化」是英文自嘲的最高形态。</p>
+<p>(whatever she might think of him) ——插入的让步从句：括号里的心理余数——他连表白都要预设她的眼光。英文括号的叙事用途：装「不敢大声说」的半句。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把「没说出口的话」写成一句语法——吴尔夫让理查德的深情停在间接引语里（say... that he loved her），永远到不了直接引语的引号内。你的写作也可以这样标记「未完成的爱」：用间接引语写他练习的那句话，读者会替他难受。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>脑子与心灵 · Brain versus Heart</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Richard has improved. You are right,' said Sally. 'I shall go and talk to him. I shall say goodnight. What does the brain matter,' said Lady Rosseter, getting up, 'compared with the heart?'</p>
+<p class="cn">「理查德进步了。你讲得不错。」萨莉说道。「我要去跟他谈谈。我会向他告辞。脑子有什么要紧，」罗塞特太太说道，一边站了起来，「与心灵相比的话？」</p>
+<p class="src">——晚宴 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：晚宴上，昔日的萨莉·西顿（如今的罗塞特夫人）起身去向理查德道别，抛出全书最轻快也最重的一句话：脑子有什么要紧，与心灵相比的话？她刚刚听克拉丽莎讲了三十年前与彼得的争执——女人的结论如此简单，把学者们绕了三百年的问题一锤定音。</p>
+<p><b>逻辑脉络</b>：这句话回收了整场晚宴的人性清点：在座的公爵夫人、伯爵夫人、教授们各有各的脑子，而萨莉只用一句心灵压秤。吴尔夫在全书的思想辩论之后，让一个最不「深刻」的人说出最深的话——意识流小说的裁判方式：不是论证赢，是活着赢。</p>
+<p><b>现实意义</b>：紧要关头的排序题：该用脑时用脑，但优先级永远先问心——心不认账的方案，脑子算得再精也是负债。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>compared with</b>　phr. 与……相比（What does the brain matter... compared with the heart?：比较级的疑问式）</p>
+<p><b>get up</b>　phr. 起身（getting up：现在分词插入——说与做同时进行）</p>
+<p><b>say goodnight</b>　phr. 道晚安（I shall say goodnight：日常动作压住宏大命题）</p>
+<p><b>improve</b>　v. 进步（Richard has improved：三十年后最朴素的评语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>What does the brain matter... compared with the heart? ——matter 作动词的否定疑问：What does X matter（X 有什么要紧）+ compared with Y。两个身体名词（brain/heart）的元音对仗（二者都是单音节）让句子像格言。仿写：What does the salary matter compared with the meaning?</p>
+<p>said Lady Rosseter, getting up ——说话动词+分词插入的位置：插在引语中间，把起身这个动作放进「心灵」二字之前——她的身体先于结论做出了选择。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让结论从最不深刻的人嘴里说出——议论文的反高潮技巧：全篇论证之后，由一个次要人物用一句大白话收束。英文写作的 understated climax（低调高潮）：句子越简单，越像真理。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：因为她就在那里 · For There She Was</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">What is this terror? what is this ecstasy? he thought to himself. What is it that fills me with extraordinary excitement?</p>
+<p class="cn">为什么会畏惧？为什么会狂喜？他暗自思量。是什么让我如此激动？</p>
+<p class="en">For there she was.</p>
+<p class="cn">因为她就在那里。</p>
+<p class="src">——全书结尾 ｜ 英文据外研社双语读库原文，中文据唐霞译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：晚宴散场，彼得独坐，狂喜与恐惧同时涌上心头——是什么让我如此激动？是克拉丽莎，他说。因为她就在那里。全书五个词收束：For there she was。没有总结，没有裁决，只有存在本身。</p>
+<p><b>逻辑脉络</b>：结尾回收了全部装置：彼得的狂喜对应清晨克拉丽莎的「百灵与跳水」；大本钟最后敲响的落定对应「她就在那里」的存在式。一整天的伦敦、一条自杀的消息、一场晚宴——全部压进这个静动词：she was。</p>
+<p><b>现实意义</b>：把「存在本身即为答案」写进自我评价体系：一天不需要赢来证明，只需要你在场。被生活反复追问「值得吗」的时候，可以像吴尔夫一样只答三个字——在那里。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>terror</b>　n. 恐惧（What is this terror?：疑问词+指示词的三连追问开头）</p>
+<p><b>ecstasy</b>　n. 狂喜（与 terror 对举：终点的情绪是两者之和）</p>
+<p><b>extraordinary</b>　adj. 非凡的（extraordinary excitement：extra+ordinary 的构词提示）</p>
+<p><b>It is...</b>　phr. 存在判断句（It is Clarissa：不是 She is——强调句式的辨认）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>What is this terror? what is this ecstasy? ——三连疑问的自问（thought to himself）：疑问句的主干 What is this X? 让情绪名词化为可审视的对象——自我对话的语法。</p>
+<p>It is Clarissa, he said. For there she was. ——强调句（It is）+连词 for（因为）+倒装的存在句（there she was）：For 引出全书的最终理由——存在本身。五个词的收束：For there she was 是英语小说最著名的收尾之一，语法上只是个 there be 的倒装，力量全在「不加解释」。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：结尾学「存在式」——不用完成时（she had done）、不用将来时（she would），用过去时的存在（she was）。你的英文文章结尾也试一次：砍掉总结句，只留 For there it was.——存在本身即结论。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：间接引语、独立结构、名词瀑布、未完成的爱，都在里面。</p>
+<p><b>Mrs. Dalloway said she would buy the flowers herself. ——达洛维夫人说她要亲自去买些花。</b>应用口诀：间接引语+句尾 herself——主权藏在重音位。</p>
+<p><b>What a lark! What a plunge! ——多么动听的百灵！多么迅疾的举动！</b>应用口诀：无动词感叹句是意识流的音节单位。</p>
+<p><b>First a warning, musical; then the hour, irrevocable. ——开始是预报，悦耳动听；接着是报时，精确无误。</b>应用口诀：名词+形容词尾的对仗——句子模仿钟声的形状。</p>
+<p><b>it was his sayings one remembered... a few sayings like this about cabbages. ——他的话她倒记得……几句关于卷心菜的话。</b>应用口诀：写人用清单不用形容词——末位放最轻的。</p>
+<p><b>'Are you happy, Clarissa? Does Richard—' ——你快乐吗，克拉丽莎？理查德是否——</b>应用口诀：最重要的问题不回答——让门先开。</p>
+<p><b>he called it not having a sense of proportion. ——他称之为没有平衡感。</b>应用口诀：抓替换词写批判——先改词再改待遇。</p>
+<p><b>Death was defiance. Death was an attempt to communicate. ——死亡是个挑战。死亡是交流的一种尝试。</b>应用口诀：双定义句+悖论收束，抽象主题的三句法。</p>
+<p><b>Fear no more, says the heart. ——不用再害怕，那颗心说。</b>应用口诀：引一行诗作 motif，复现两次才叫主题。</p>
+<p><b>Partly one's lazy; partly one's shy. ——有几分是因为懒散，有几分是因为腼腆。</b>应用口诀：one 泛指代词——把私事写成全人类的规律。</p>
+<p><b>For there she was. ——因为她就在那里。</b>应用口诀：结尾用存在式——砍掉总结句。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%BE%BE%E6%B4%9B%E7%BB%B4%E5%A4%AB%E4%BA%BA" target="_blank" rel="noopener">达洛维夫人 · 维基百科</a><span>佐证：创作史（The Hours → 本书）与改编谱系。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BC%97%E5%90%89%E5%B0%BC%E4%BA%9A%C2%B7%E4%BC%8D%E5%B0%94%E5%A4%AB" target="_blank" rel="noopener">弗吉尼亚·伍尔夫 · 维基百科</a><span>佐证：生平、霍加斯出版社与《一间自己的房间》。</span></li>
+<li><a href="https://www.gutenberg.org/ebooks/1550" target="_blank" rel="noopener">Mrs Dalloway · Project Gutenberg（澳洲分站收录）</a><span>延伸：英文全文对照底本。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%84%8F%E8%AF%86%E6%B5%81" target="_blank" rel="noopener">意识流 · 维基百科</a><span>延伸：乔伊斯—吴尔夫—福克纳的技法谱系。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《达洛维夫人》双语研读版 ｜ 英文据外研社双语读库原文，中文据唐霞译本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

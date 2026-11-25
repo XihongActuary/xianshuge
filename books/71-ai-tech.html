@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仙书阁 · 《人工智能技术与方法》· 仙书阁书库</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="ai-tech">
+
+<div class="wrap">
+
+<div class="toc-col">
+<aside id="toc">
+  <div class="toc-head">
+    <h3>目 录</h3>
+    <button class="toc-fold" title="折叠目录">◀</button>
+  </div>
+  <div class="crumb"><a href="../index.html">◄ 返回书库</a> · 第七十一部</div>
+  <ol>
+  <li><a href="#info">〇 · 书籍信息</a></li>
+  <li><a href="#theme">一 · 核心主题总览</a></li>
+  <li><a href="#part1">二 · 第一段 知识表示 —— <span class="jt" data-n="z2">符号智能</span>的地基</a>
+  <ol class="sub">
+  <li><a href="#p1c1">符号智能的三件事</a></li>
+  <li><a href="#p1c2">推理的两种演绎</a></li>
+  </ol>
+  </li>
+  <li><a href="#part2">三 · 第二段 不确定推理 —— 给「大概」定价</a>
+  <ol class="sub">
+  <li><a href="#p2c1">为什么要不确定</a></li>
+  <li><a href="#p2c2">三套工具的分工</a></li>
+  </ol>
+  </li>
+  <li><a href="#part3">四 · 第三段 搜索 —— 问题求解的地图术</a>
+  <ol class="sub">
+  <li><a href="#p3c1">从穷举到剪枝</a></li>
+  <li><a href="#p3c2">博弈树：对手在场</a></li>
+  </ol>
+  </li>
+  <li><a href="#part4">五 · 第四段 <span class="jt" data-n="z3">计算智能</span> —— 模糊·神经·遗传三件套</a>
+  <ol class="sub">
+  <li><a href="#p4c1">模糊：给语言装上刻度</a></li>
+  <li><a href="#p4c2">神经网络：让联系从数据里长出来</a></li>
+  <li><a href="#p4c3">遗传算法：让最优自己浮出来</a></li>
+  </ol>
+  </li>
+  <li><a href="#characters">六 · 人物图鉴与成长弧线</a></li>
+  <li><a href="#symbols">七 · 主题与象征</a></li>
+  <li><a href="#craft">八 · 写作手法赏析</a></li>
+  <li><a href="#mingduan">九 · 名段欣赏</a></li>
+  <li><a href="#quotes">十 · 金句摘录</a></li>
+  <li><a href="#tuozhan">十一 · 拓展阅读</a></li>
+  <li><a href="#ganyu">十二 · 个人感悟与心得</a></li>
+  <li><a href="#recap">十三 · 一页速查（复习用）</a></li>
+  </ol>
+</aside>
+<div class="toc-resizer" title="拖拽调整宽度"></div>
+</div>
+
+<main>
+
+<header class="hero">
+  <div class="kicker">读 书 笔 记 · 第 七十一 部</div>
+  <h1>人工智能技术与方法</h1>
+  <div class="sub-title">—— 符号智能＋计算智能 · 八章双线 ——</div>
+  <div class="meta">
+    <span>夏定纯 · 徐涛 编著 · 华中科技大学出版社（2004）</span>
+    <span>体裁：高校人工智能教材 · 八章两部分</span>
+    <span>关键词：知识表示 · 推理 · 搜索 · 模糊 · 神经网络 · 遗传算法</span>
+  </div>
+</header>
+<!-- ================= 书籍信息 -->
+<section id="info">
+  <h2>〇 · 书籍信息</h2>
+  <div class="card">
+    <h5>基本信息</h5>
+    <table>
+      <tr><th style="width:110px">总纲</th><td>内容提要给出全书的分野：<strong>「符号智能即所谓的传统人工智能，主要研究基于知识的智能，它包括三个方面：知识表示、知识运用和知识获取」——传统人工智能研究的思路是「自上而下」，将知识通过符号进行表示和运用</strong></td></tr>
+      <tr><th style="width:110px">对极</th><td><strong>「计算智能是研究基于数据的智能，包括神经网络、遗传算法、模糊技术和人工生命等，它以数据为基础，通过训练建立联系，进行问题求解」——「自上而下」对「自下而上」：这本书用八章把两条路线各讲一半（1–5章符号 · 6–8章计算智能）</strong></td></tr>
+      <tr><th style="width:110px">结构</th><td><strong>「全书共8章，分为两部分。第一部分包括第1章到第5章，介绍人工智能的一般性原理和技术实现，主要有知识的表示、问题的求解、推理与搜索等；第二部分包括第6章到第8章，介绍现代人工智能中几种重要的智能技术与方法，主要有模糊技术、神经网络、遗传算法等」</strong></td></tr>
+      <tr><th style="width:110px">一句话</th><td><strong>这是一本把「AI 的骨架」讲全的教材：知识怎么表示、结论怎么推出、不确定怎么算、路径怎么搜——最后用模糊·神经·遗传三件现代武器收尾——二十年前的教材，框架至今未过时</strong>。</td></tr>
+    </table>
+  </div>
+  <div class="lead">
+    前言给出学科定位：<span class="jt" data-n="z1"><strong>「人工智能是20世纪50年代兴起的覆盖面很广的一门新学科，其主要目标是用人工系统来模拟人的问题求解、推理和学习等方面的能力」——涉及计算机科学、控制论、信息论、神经生理学、心理学、语言学和认知科学等多学科</strong>。读法提示：第 2 章知识表示与第 5 章搜索是符号智能的两大基石，第 4 章不确定推理（确定性方法·主观 Bayes·证据理论）是工程落地的关键，第 6–8 章是「自下而上」路线的三件套</span>。
+  </div>
+</section>
+<!-- ================= 核心主题 -->
+<section id="theme">
+  <h2>一 · 核心主题总览</h2>
+  这部八章教材的四条主线：
+  <div class="card zhu">
+    <h5>① 表示先于推理</h5>
+    <p>符号智能的第一定律：<strong>「知识表示、知识运用和知识获取」——表示排在运用之前：谓词逻辑、产生式规则、语义网络、框架、脚本五种表示法（第2章）各有适配的问题形态——选错表示法，推理引擎再好也跑不动——教材把 5 节篇幅全部给表示，是顺序即重点的写法</strong></p>
+  </div>
+  <div class="card">
+    <h5>② 不确定性的工程化</h5>
+    <p>第 4 章是全书最实用的部分：<strong>「这是因为构成知识的信息可能是精确的，也可能是不精确」——确定性方法（可信度 CF）、主观 Bayes 方法、证据理论（D-S 理论）三套工具，把「大概」「可能」翻译成可计算的信任度——AI 落地的第一课：现实世界的数据都是脏的，推理器必须带不确定性接口</strong></p>
+  </div>
+  <div class="card">
+    <h5>③ 搜索即问题求解</h5>
+    <p>第 5 章的地图术：<strong>「还可以融合附加的启发式等知识，使得问题求解的推理向着最有希望的方向上进行」——盲目搜索（宽度·深度）穷举，启发式搜索用评估函数剪枝，博弈树搜索处理「对手在场」的情形——从状态空间到 A* 算法：问题求解被抽象成「在图上找路」</strong></p>
+  </div>
+  <div class="card">
+    <h5>④ 自下而上的新路线</h5>
+    <p>第二部分的宣言：<strong>「这一『自下而上』的新的研究方法引起来自各方面越来越多的关注，成为现代人工智能新的研究热点与方向」——模糊技术（用隶属度处理语言）、神经网络（用数据训练联系）、遗传算法（用演化逼近最优）——三条路共享一个信念：智能可以从数据与适应中长出来，不必手工编写</strong></p>
+  </div>
+</section>
+<!-- ================= 第一段 知识表示 —— 符号智能的地基 -->
+<section id="part1">
+  <h2>二 · 第一段 知识表示 —— 符号智能的地基<span class="rhyme">—— 谓词 · 产生式 · 框架 · 脚本 ——</span></h2>
+
+  <h3 id="p1c1">符号智能的三件事</h3>
+  <p>第 1–2 章定框架：<strong>「符号智能即所谓的传统人工智能，主要研究基于知识的智能，它包括三个方面：知识表示、知识运用和知识获取」——「传统人工智能研究的思路是『自上而下』，它将知识通过符号进行表示和运用，并具体化为规则等形式」——表示法五种：谓词逻辑（严谨可证明）、产生式规则（IF-THEN 好执行）、语义网络（关系可视化）、框架（结构化槽位）、脚本（事件序列）——五种表示法不是并列的备胎，是五种不同问题形态的专用模具</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 表示法</h5>
+    <table>
+      <tr><th style="width:150px">自上而下</th><td>符号智能路线：知识先编成规则</td></tr>
+      <tr><th style="width:150px">谓词逻辑</th><td>可证明的严谨：数理逻辑的直接继承</td></tr>
+      <tr><th style="width:150px">产生式</th><td>IF-THEN 规则：专家系统的语言</td></tr>
+      <tr><th style="width:150px">框架/脚本</th><td>结构化槽位与事件序列：常识的容器</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「知识表示、知识运用和知识获取」。</strong>——顺序即重点：<strong>表示在先、运用在后——选错模具，推理再强也白搭</strong>。</p>
+  </div>
+
+  <h3 id="p1c2">推理的两种演绎</h3>
+  <p>第 3 章把推理收敛成两族：<strong>自然演绎推理——从前提按逻辑规则一步步推结论；归结演绎推理——反着来：要证结论成立，先假设它不成立，推出矛盾即得证——归结原理把定理证明变成机械可执行的符号操作，这是自动定理证明的基石：AI 第一次把「证明」从天赋变成流程</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 归结</h5>
+    <table>
+      <tr><th style="width:150px">自然演绎</th><td>正向推：前提→结论</td></tr>
+      <tr><th style="width:150px">归结原理</th><td>反向证：否定结论→找矛盾</td></tr>
+      <tr><th style="width:150px">自动定理证明</th><td>证明流程化：AI 最早的完整战果</td></tr>
+      <tr><th style="width:150px">子句集</th><td>归结的操作对象：化到最简再动手</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>证明不了就证伪它的否定。</strong>——归结原理的口诀：<strong>把「证明」变成「找矛盾」——机器第一次摸到了人类演绎的内核</strong>。</p>
+  </div>
+</section>
+<!-- ================= 第二段 不确定推理 —— 给「大概」定价 -->
+<section id="part2">
+  <h2>三 · 第二段 不确定推理 —— 给「大概」定价<span class="rhyme">—— CF · 主观Bayes · 证据理论 ——</span></h2>
+
+  <h3 id="p2c1">为什么要不确定</h3>
+  <p>第 4 章开篇即动机：<strong>「这是因为构成知识的信息可能是精确的，也可能是不精确」——现实世界的证据天然带噪：病人说「有点发烧」，观测说「大概率是」——确定性方法（CF）给每条规则贴可信度系数，推理时逐级传播；主观 Bayes 方法（PROSPECTOR 系统）用似然比把专家的「怀疑/信任」变成贝叶斯更新；证据理论（D-S 理论）更进一步：允许「不知道」——信任可以分配给「既非真也非假」的区间</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 不确定</h5>
+    <table>
+      <tr><th style="width:150px">可信度 CF</th><td>确定性方法：规则系数逐级传播</td></tr>
+      <tr><th style="width:150px">主观 Bayes</th><td>似然比更新：专家直觉的贝叶斯化</td></tr>
+      <tr><th style="width:150px">D-S 证据理论</th><td>信任函数：允许把票投给「不知道」</td></tr>
+      <tr><th style="width:150px">信任区间</th><td>真假的区间估计：不是单点</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「构成知识的信息可能是精确的，也可能是不精确」。</strong>——教材的诚实开场：<strong>先承认数据是脏的，再谈方法——AI 工程的第一课</strong>。</p>
+  </div>
+
+  <h3 id="p2c2">三套工具的分工</h3>
+  <p>三套不确定推理工具不是冗余，是三种证据形态的适配：<strong>CF 适合「经验规则＋弱理论」的领域（医疗专家系统 MYCIN 的遗产）；主观 Bayes 适合「有先验概率可用」的领域（矿物勘探 PROSPECTOR 的实战）；D-S 适合「多源证据需要合成」的领域——三套工具共同的信念：不确定性不是推理的敌人，是可以定价、传播、合成的资源——这一章是 2004 年的教材里最不显老的部分</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 分工</h5>
+    <table>
+      <tr><th style="width:150px">MYCIN 遗产</th><td>CF 的出身：医疗专家系统的可信度</td></tr>
+      <tr><th style="width:150px">PROSPECTOR</th><td>主观 Bayes 的实战：矿物勘探</td></tr>
+      <tr><th style="width:150px">证据合成</th><td>D-S 的强项：多源证据的融合</td></tr>
+      <tr><th style="width:150px">不确定即资源</th><td>不是噪声：是可计算的信任度</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>不确定性可以定价、传播、合成。</strong>——工程思维的分水岭：<strong>把「大概」当噪声就卡住，当资源就通了——概率工具箱的价值在此</strong>。</p>
+  </div>
+</section>
+<!-- ================= 第三段 搜索 —— 问题求解的地图术 -->
+<section id="part3">
+  <h2>四 · 第三段 搜索 —— 问题求解的地图术<span class="rhyme">—— 盲目 · 启发式 · 博弈树 ——</span></h2>
+
+  <h3 id="p3c1">从穷举到剪枝</h3>
+  <p>第 5 章把问题求解抽象成状态空间找路：<strong>盲目搜索策略（宽度优先·深度优先）——不挑路，穷举到底，保证找到但代价大；启发式搜索——「融合附加的启发式等知识，使得问题求解的推理向着最有希望的方向上」推进：评估函数给每个节点打分，A* 算法用「已走代价＋预估代价」作为评分——启发式的本质：用领域知识换搜索效率；书还给出棋盘势态实例，把抽象算法落到可画的棋盘上</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 启发式</h5>
+    <table>
+      <tr><th style="width:150px">状态空间</th><td>问题求解的地图：节点是状态，边是动作</td></tr>
+      <tr><th style="width:150px">盲目搜索</th><td>穷举：保证解但不保证快</td></tr>
+      <tr><th style="width:150px">评估函数</th><td>启发式的核心：给节点打分</td></tr>
+      <tr><th style="width:150px">A* 算法</th><td>已走＋预估：最优路径的经典解</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「使得问题求解的推理向着最有希望的方向上」。</strong>——启发式的定义：<strong>领域知识换搜索效率——知道得越多，走得越少</strong>。</p>
+  </div>
+
+  <h3 id="p3c2">博弈树：对手在场</h3>
+  <p>第 5.4 节处理最特殊的一类搜索：<strong>博弈树搜索——对手会反应：你走一步，对手走一步——Max-Min 博弈：自己选使己方评分最大的一步，假设对手会选使己方评分最小的一步——α-β 剪枝在不改变结果的前提下砍掉大量分支——博弈树是搜索技术的试金石：从国际象棋到围棋，机器博弈的历史就是搜索算法的进化史</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 博弈</h5>
+    <table>
+      <tr><th style="width:150px">Max-Min</th><td>我方取最大：假设对手取我方最小</td></tr>
+      <tr><th style="width:150px">α-β 剪枝</th><td>结果不变的减负：砍掉无用分支</td></tr>
+      <tr><th style="width:150px">博弈树</th><td>对抗性搜索：两层一个回合</td></tr>
+      <tr><th style="width:150px">试金石</th><td>棋类是搜索算法的练兵场</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>做最好的打算，假设对手做对你最坏的打算。</strong>——Max-Min 的一句人话：<strong>对抗性决策的保守智慧—— α-β 剪枝再把这个保守变成可计算</strong>。</p>
+  </div>
+</section>
+<!-- ================= 第四段 计算智能 —— 模糊·神经·遗传三件套 -->
+<section id="part4">
+  <h2>五 · 第四段 计算智能 —— 模糊·神经·遗传三件套<span class="rhyme">—— 隶属度 · 训练 · 演化 ——</span></h2>
+
+  <h3 id="p4c1">模糊：给语言装上刻度</h3>
+  <p>第 6 章是「自下而上」的第一件武器：<strong>模糊逻辑——书中的入门例：身高 1.45 m 在经典集合里被判为「个子不高」即 x=0，但「对于其余的身高……看法就不统一了」——模糊集合给「高」一个隶属度：不是 0/1 的判决，是 0 到 1 的连续刻度；「模糊规则与推理」把「如果高且胖则风险大」这样的句子变成可计算的推理链——模糊技术处理的是人类语言的天然地带：精确数学够不着的「大概」「差不多」</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 隶属度</h5>
+    <table>
+      <tr><th style="width:150px">隶属度</th><td>0 到 1 的连续刻度：高矮胖瘦不再二值</td></tr>
+      <tr><th style="width:150px">模糊集合</th><td>边界的渐变：判决变成刻度</td></tr>
+      <tr><th style="width:150px">模糊规则</th><td>语言化的 IF-THEN：句子的可计算化</td></tr>
+      <tr><th style="width:150px">模糊推理</th><td>从模糊前提推模糊结论：推理链</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>身高 1.45 m 在经典集合里「不算高」即 x=0。</strong>——教材的入门例：<strong>经典集合说 0，模糊集合说「接近 0 但不是 0」——一个数字之争，两个学派的分水岭</strong>。</p>
+  </div>
+
+  <h3 id="p4c2">神经网络：让联系从数据里长出来</h3>
+  <p>第 7 章转向第二件武器：<strong>「20世纪80年代人工神经网络研究出现了新的突破，基于结构演化的计算智能迅速成为人工智能研究的发展方向」——人工神经网络不存规则，只存权重：以数据为基础，通过训练建立联系——从感知机到多层网络到反向传播，教材把「学习」定义成误差驱动的权重调整：网络不是被编写出来的，是被训练出来的——「自下而上」路线的核心示范</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 训练</h5>
+    <table>
+      <tr><th style="width:150px">权重</th><td>网络的知识形态：不存规则存权重</td></tr>
+      <tr><th style="width:150px">反向传播</th><td>误差回传：权重调整的通用引擎</td></tr>
+      <tr><th style="width:150px">自适应线性单元</th><td>Adaline：最早的收敛保证</td></tr>
+      <tr><th style="width:150px">训练</th><td>「通过训练建立联系」：智能从数据长出</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>网络不是被编写出来的，是被训练出来的。</strong>——两代 AI 的分界句：<strong>符号智能写规则，神经网络练权重——今天的深度学习，是这句话的延长线</strong>。</p>
+  </div>
+
+  <h3 id="p4c3">遗传算法：让最优自己浮出来</h3>
+  <p>第 8 章收尾于第三件武器：<strong>遗传算法基本原理——「标准的遗传算法是对群体中的个体进行遗传操作」：编码→初始群体→适应度评估→选择·交叉·变异→新群体，循环直到收敛——「由于遗传算法是对群（体的）」并行搜索：不从一个点出发爬山，而是让一片种群整体演化——与前两章同构：模糊处理语言的模糊、神经网络处理数据的关联、遗传算法处理空间的搜索——三件套合起来，「自下而上」的方法论完整成型</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 演化</h5>
+    <table>
+      <tr><th style="width:150px">编码</th><td>解的染色体化：优化问题的表示层</td></tr>
+      <tr><th style="width:150px">适应度</th><td>环境的评分：选择的标准</td></tr>
+      <tr><th style="width:150px">选择·交叉·变异</th><td>三大遗传操作：复制中带创新</td></tr>
+      <tr><th style="width:150px">并行搜索</th><td>种群整体演化：不是一个点爬山</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「标准的遗传算法是对群体中的个体进行遗传操作」。</strong>——GA 的最小定义：<strong>群体·个体·遗传操作三词齐全即成立——优化问题从此有了「进化」这一个动词</strong>。</p>
+  </div>
+</section>
+<!-- ================= 人物图鉴 -->
+<section id="characters">
+  <h2>六 · 人物图鉴与成长弧线<span class="rhyme">—— 主角配角 · 一张表看穿 ——</span></h2>
+  <div class="card zhu">
+    <h5>主要人物</h5>
+    <p><strong>夏定纯 · 徐涛</strong>——编著者——<strong>华中科技大学教师：教材面向「高等院校有关专业学生学习人工智能课程」——2004 年成书，框架至今仍在本科课程表里</strong></p>
+    <p><strong>符号智能</strong>——第一主角——<strong>「主要研究基于知识的智能」：表示·运用·获取三件事——1–5 章的全部内容</strong></p>
+    <p><strong>计算智能</strong>——第二主角——<strong>「研究基于数据的智能，包括神经网络、遗传算法、模糊技术和人工生命等」——6–8 章的现代三件套</strong></p>
+    <p><strong>A* 算法</strong>——搜索章的高峰——<strong>已走代价＋预估代价：启发式搜索的经典形态——问题求解的地图术集成品</strong></p>
+  </div>
+  <div class="card">
+    <h5>次要人物（功能位）</h5>
+    <table>
+      <tr><th style="width:150px">MYCIN</th><td>CF 的出身——<strong>医疗专家系统的可信度系数：确定性方法的家史</strong></td></tr>
+      <tr><th style="width:150px">PROSPECTOR</th><td>主观 Bayes 的实战——<strong>矿物勘探系统的似然比更新：贝叶斯方法的工程首秀</strong></td></tr>
+      <tr><th style="width:150px">Dempster-Shafer</th><td>证据理论的命名者——<strong>信任函数与「不知道」的表示：不确定推理的第三条路</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 主题与象征 -->
+<section id="symbols">
+  <h2>七 · 主题与象征<span class="rhyme">—— 每个道具都在说话 ——</span></h2>
+  <div class="card">
+    <table>
+      <tr><th style="width:150px">自上而下 ↔ 自下而上</th><td>全书的大分野——<strong>符号智能写规则 vs 计算智能练权重：1–5 章 vs 6–8 章</strong></td></tr>
+      <tr><th style="width:150px">表示 ↔ 推理 ↔ 搜索</th><td>符号智能三支柱——<strong>「知识的表示、问题的求解、推理与搜索」：地基·引擎·地图</strong></td></tr>
+      <tr><th style="width:150px">隶属度 ↔ 二值判决</th><td>模糊革命——<strong>「1.45 m 不算高」：0/1 变 0–1，判决变刻度</strong></td></tr>
+      <tr><th style="width:150px">规则 ↔ 权重</th><td>知识的两种形态——<strong>符号智能存规则，神经网络存权重：编写与训练的分界</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 写作手法 -->
+<section id="craft">
+  <h2>八 · 写作手法赏析<span class="rhyme">—— 怎么写，就能怎么学 ——</span></h2>
+  <div class="card">
+    <h5>① 两部分对称法</h5>
+    <p>「第一部分1–5章…第二部分6–8章」——<strong>符号与计算智能各占一半：结构即观点</strong></p>
+    <h5>② 三套工具并列法</h5>
+    <p>确定性·主观Bayes·证据理论——<strong>不排座次，按证据形态分工：教材的克制</strong></p>
+    <h5>③ 例题落地</h5>
+    <p>「给出棋盘的几个势态」——<strong>抽象算法配可画棋盘：每章都有可动手的实例</strong></p>
+    <h5>④ 三件套收束</h5>
+    <p>模糊·神经·遗传收尾——<strong>「自下而上」方法论的三种实现：一章一件，不混讲</strong></p>
+  </div>
+</section>
+<!-- ================= 名段欣赏 -->
+<section id="mingduan">
+  <h2>九 · 名段欣赏<span class="rhyme">—— 原文精读 · 逐段赏析 ——</span></h2>
+  <div class="mingduan" data-idx="壹">
+    <div class="md-src">表示先于推理</div>
+    <div class="md-text">符号智能第一定律。<strong>五种表示法是五种问题形态的专用模具——选错模具，推理引擎再好也跑不动</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="贰">
+    <div class="md-src">归结原理</div>
+    <div class="md-text">把证明变成找矛盾。<strong>否定结论→推出矛盾→得证——「证明」第一次从天赋变成流程</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="叁">
+    <div class="md-src">不确定即资源</div>
+    <div class="md-text">第 4 章的工程哲学。<strong>CF·Bayes·D-S 三套工具把「大概」定价、传播、合成——2004 年的教材里最不显老的一章</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="肆">
+    <div class="md-src">启发式换效率</div>
+    <div class="md-text">搜索章的核心交易。<strong>「向着最有希望的方向上」——领域知识换搜索代价：知道得越多，走得越少</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="伍">
+    <div class="md-src">训练而非编写</div>
+    <div class="md-text">两代 AI 的分界句。<strong>神经网络不存规则存权重——「通过训练建立联系」：智能从数据里长出来</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="陆">
+    <div class="md-src">种群演化</div>
+    <div class="md-text">遗传算法的并行观。<strong>不让一个点爬山，让一片种群整体演化——最优解自己浮出来</strong>。</div>
+  </div>
+</section>
+<!-- ================= 金句 -->
+<section id="quotes">
+  <h2>十 · 金句摘录<span class="rhyme">—— 12 条 · 中英对照 · 带出处 ——</span></h2>
+  <blockquote>"人工智能是20世纪50年代兴起的覆盖面很广的一门新学科，其主要目标是用人工系统来模拟人的问题求解、推理和学习等方面的能力。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"全书共8章，分为两部分。第一部分包括第1章到第5章，介绍人工智能的一般性原理和技术实现，主要有知识的表示、问题的求解、推理与搜索等。"<span class="src">—— 内容提要</span></blockquote>
+  <blockquote>"第二部分包括第6章到第8章，介绍现代人工智能中几种重要的智能技术与方法，主要有模糊技术、神经网络、遗传算法等。"<span class="src">—— 内容提要</span></blockquote>
+  <blockquote>"符号智能即所谓的传统人工智能，主要研究基于知识的智能，它包括三个方面：知识表示、知识运用和知识获取。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"传统人工智能研究的思路是「自上而下」，它将知识通过符号进行表示和运用，并具体化为规则等形式。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"计算智能是研究基于数据的智能，包括神经网络、遗传算法、模糊技术和人工生命等，它以数据为基础，通过训练建立联系，进行问题求解。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"这一「自下而上」的新的研究方法引起来自各方面越来越多的关注，成为现代人工智能新的研究热点与方向。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"还可以融合附加的启发式等知识，使得问题求解的推理向着最有希望的方向上进行。"<span class="src">—— 第3章 · 推理</span></blockquote>
+  <blockquote>"这是因为构成知识的信息可能是精确的，也可能是不精确的。"<span class="src">—— 第4章 · 不确定推理概述</span></blockquote>
+  <blockquote>"主要有模糊技术、神经网络、遗传算法等。"<span class="src">—— 内容提要 · 第二部分</span></blockquote>
+  <blockquote>"20世纪80年代人工神经网络研究出现了新的突破，基于结构演化的计算智能迅速成为人工智能研究的发展方向。"<span class="src">—— 前言</span></blockquote>
+  <blockquote>"标准的遗传算法是对群体中的个体进行遗传操作。"<span class="src">—— 第8章 · 遗传算法基本原理</span></blockquote>
+</section>
+<!-- ================= 拓展阅读 -->
+<section id="tuozhan">
+  <h2>十一 · 拓展阅读<span class="rhyme">—— 原文 · 词条 · 译文 ——</span></h2>
+  <div class="card">
+    <h5>原文关键词</h5>
+    <ul class="ext">
+      <li><a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" target="_blank">人工智能</a> —— </li>
+      <li><a href="https://zh.wikipedia.org/wiki/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95" target="_blank">遗传算法</a> —— </li>
+      <li><a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E7%B3%8A%E9%80%BB%E8%BE%91" target="_blank">模糊逻辑</a> —— </li>
+    </ul>
+    <h5>同域书架</h5>
+    <ul class="ext">
+      <li><a href="../books/69-likaiifu-ai.html" target="_blank">人工智能（第69部）</a> —— </li>
+      <li><a href="../books/70-computational-intelligence.html" target="_blank">计算智能导论（第70部）</a> —— </li>
+      <li><a href="../books/36-rensheng.html" target="_blank">人生算法（第36部）</a> —— </li>
+    </ul>
+  </div>
+</section>
+<!-- ================= 个人感悟 -->
+<section id="ganyu">
+  <h2>十二 · 个人感悟与心得<span class="rhyme">—— 三点心得 ——</span></h2>
+  <div class="card">
+    <h3>三点感悟</h3>
+    <h5>① 框架先行的教材观</h5>
+    <p><strong>八章把「表示→推理→不确定→搜索→模糊→神经→遗传」排成一条完整动线——二十年过去，深度学习火到天上去，但本科 AI 课的骨架仍是这套：框架的寿命比热点长</strong>。</p>
+    <h5>② 不确定性是 AI 的成人礼</h5>
+    <p><strong>第 4 章三套工具说明同一件事：真实世界的数据是脏的，推理器必须带不确定性接口——「可能是精确的，也可能是不精确的」这一句，是所有工程落地的前提</strong>。</p>
+    <h5>③ 两条路线终将合流</h5>
+    <p><strong>「自上而下」的符号智能与「自下而上」的计算智能在书里各占一半——今天的大模型正是合流的产物：预训练自下而上，指令与知识自上而下——教材的对称结构预言了行业的现在</strong>。</p>
+    <p style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);color:var(--dim);">
+      八章读毕，这本 2004 年教材的价值判断可以压缩成一句话——<strong>符号智能教「怎么把人类的知识写清楚」，计算智能教「怎么让机器自己学出知识」——表示→推理→搜索是骨架，模糊→神经→遗传是翅膀；两条路线在书里是对称的两部分，在行业里是合流的一个现在——教材最诚实的预言，是把「自下而上成为现代人工智能新的研究热点与方向」这句 2004 年的话，原样兑现给了今天</strong>。
+    </p>
+  </div>
+</section>
+<!-- ================= 速查 -->
+<section id="recap">
+  <h2>十三 · 一页速查（复习用）</h2>
+  <table>
+    <tr><th style="width:120px">符号智能三件事</th><td>表示·运用·获取：自上而下</td></tr>
+    <tr><th style="width:120px">归结原理</th><td>证明变成找矛盾</td></tr>
+    <tr><th style="width:120px">不确定即资源</th><td>CF·Bayes·D-S 三套工具</td></tr>
+    <tr><th style="width:120px">启发式换效率</th><td>向着最有希望的方向</td></tr>
+    <tr><th style="width:120px">训练而非编写</th><td>智能从数据里长出来</td></tr>
+  </table>
+</section>
+<!-- ================= 思维导图 -->
+<section class="sec" id="mindmap">
+  <h2>十四 · 全书思维导图<span class="rhyme">—— 一图纵览 ——</span></h2>
+  <div class="card mindmap-card">
+    <img src="../assets/mindmaps/71-ai-tech.svg" alt="《人工智能技术与方法》思维导图">
+    <p class="mindmap-tip">一图纵览全书骨架 · 中英双语对照 · 手机端可左右滑动查看全图</p>
+  </div>
+</section>
+
+<footer>
+  <div class="crumbs"><a href="../index.html">◄ 返回书库</a></div>
+  仙书阁 ｜ 用心读 · 用行证<br>
+  <span class="brand">用数据讲书 · 用真心做生活</span>
+</footer>
+
+<button class="totop" title="御风而上" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</main>
+</div>
+
+<!-- ================= 注释数据 ================= -->
+<script>
+window.ZHUSHI = {
+  z1: {
+    t: "学科定位",
+    b: "前言首句——人工智能 20 世纪 50 年代兴起，目标是「用人工系统来模拟人的问题求解、推理和学习等方面的能力」，涉及计算机科学、控制论、信息论、神经生理学、心理学、语言学和认知科学。",
+    links: [
+      { n: "info · 总纲", u: "#info" }
+    ]
+  },
+  z2: {
+    t: "符号智能",
+    b: "「主要研究基于知识的智能」——知识表示（谓词逻辑·产生式·语义·框架·脚本）、知识运用（推理）、知识获取——本书第 1–5 章；思路「自上而下」。",
+    links: [
+      { n: "第1–2段", u: "#parts" }
+    ]
+  },
+  z3: {
+    t: "计算智能",
+    b: "「研究基于数据的智能」——神经网络、遗传算法、模糊技术和人工生命等，以数据为基础「通过训练建立联系」——本书第 6–8 章；思路「自下而上」。",
+    links: [
+      { n: "第4段 · 三件套", u: "#parts" }
+    ]
+  }
+};
+</script>
+
+<script src="../assets/bgm.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

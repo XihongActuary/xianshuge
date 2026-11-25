@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 地平线2025：人工智能来了 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/37-dipingxian.html">本书书页</a></p>
+<h1>深度研读 · 地平线2025：人工智能来了</h1>
+<p class="sub">熊清泉 主编 · 湖南科学技术出版社（2018年8月）</p>
+<p class="lead">研读说明：本册是一部以 2017—2018 年为切口的 AI 全景观察集，熊清泉主编，按十二篇布局——从智能制造、农业、教育、医疗、交通、金融、物流、军事，到阿尔法元、中国故事、霍金预言与科技前沿。它的价值不在理论，而在把「人工智能正在晃动每一个行业」这件事，用海量一手案例钉进了现实。本研读共十二节，逐篇采录原文（据湖南科学技术出版社版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>智能制造晃动世界：全球三分之一机器人卖到中国</a></li>
+<li><a href="#s2"><b>贰</b>与「望天收」告别：AI 如何指导农耕</a></li>
+<li><a href="#s3"><b>叁</b>死记硬背不行啦：机器人高考 134 分</a></li>
+<li><a href="#s4"><b>肆</b>可以实现永生吗？：手术机器人与病理 AI</a></li>
+<li><a href="#s5"><b>伍</b>红灯·绿灯·黄灯：从智轨到城市大脑</a></li>
+<li><a href="#s6"><b>陆</b>驾驶舱里的最后判断：萨利机长的边界</a></li>
+<li><a href="#s7"><b>柒</b>神奇的预测：AI 金融的两副面孔</a></li>
+<li><a href="#s8"><b>捌</b>没有温度的超市？无人零售与「无用阶级」之辩</a></li>
+<li><a href="#s9"><b>玖</b>智慧物流 2.0：无人仓里的 3 倍效率</a></li>
+<li><a href="#s10"><b>拾</b>国家大事不可不察：AI 军事与第三次抵消战略</a></li>
+<li><a href="#s11"><b>拾壹</b>会思考、会学习的机器：阿尔法元与围棋的黄昏</a></li>
+<li><a href="#s12"><b>拾贰</b>厉害啦！中国：数据、资本与库克的担忧</a></li>
+<li><a href="#s13"><b>拾叁</b>霍金的预言能走多远？：狂人的推特与物理学的警告</a></li>
+<li><a href="#s14"><b>拾肆</b>科技前沿东南西北：从费奥多尔到 Face ID</a></li>
+<li><a href="#s15"><b>拾伍</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>智能制造晃动世界：全球三分之一机器人卖到中国</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>2016年中国工业机器人销售量增长27%，销量占全球近1/3，位列世界第一</p>
+<p>从世界范围内看，中国的机器人市场是发展速度最快的</p>
+<p class="src">——《地平线2025》第一篇 智能制造晃动世界 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：国际机器人联合会（IFR）统计：2016 年中国工业机器人销售量增长 27%，销量占全球近三分之一，位列世界第一；彭博社的判断更直白——中国的机器人市场是发展速度最快的。从珠江三角洲便宜的国产装配机器人，到北京规划的自主品牌机器人 2020 年拿下国内 50% 份额，「机器换人」在中国不是概念，是产能。</p>
+<p><b>逻辑脉络</b>：本篇的叙事框架是「统计＋来电＋点评」：先给 IFR 的硬数据，再放各国机器人企业逐鹿中国市场的现场报道。逻辑支点只有一个——制造业的智能化改造由成本曲线驱动，中国劳动力结构变化与机器人价格下降两条曲线相交，交汇点就是 2016 前后这几年的爆发窗口。</p>
+<p><b>现实意义</b>：判断一轮产业智能化浪潮，先看三样东西：装机量增速、国产化率、单位成本斜率。三者同向加速时，自动化从「可选项」变成「生存项」——今天看任何行业的智能化，都可以套用这三把尺子。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>与「望天收」告别：AI 如何指导农耕</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人工智能将可以帮助农民选择合适的水源</p>
+<p>无人拖拉机、农用无人机、背包机器人和收割机器人将成为新一代“农民”</p>
+<p class="src">——《地平线2025》第二篇 与“望天收”告别 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：传统农作凭经验：灌溉、施肥、除虫全靠手感，过度与不足都造成损失。AI 农业从两件事切入——传感器采集农田数据、算法给出精准作业方案。而本书对 2025 的展望更直接：黄牛退休、「铁牛」耕地、农民进城、专家种田，无人拖拉机、农用无人机、背包机器人和收割机器人将成为新一代「农民」。</p>
+<p><b>逻辑脉络</b>：本篇用「望天收」这个古词做题眼：农业的不确定性来自天，而 AI 的第一性价值恰恰是把不确定性转化为数据问题。叙事从温室大棚的智能控制推到田野里的数据决策，再到「新一代农民」的远景，完成从工具到生产关系的推演。</p>
+<p><b>现实意义</b>：任何「靠天吃饭」的行业都藏着同样的改造逻辑：把老把式的经验拆成可采集的变量，再交给算法做实时决策。评估一个农业 AI 项目是否务实，就看它有没有回答「数据从哪块田里来、决策落到哪台机器上」。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>死记硬背不行啦：机器人高考 134 分</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>报道说有两台机器人，得分分别是134分和105分（满分150分）</p>
+<p>挑战2017年6月7日的2017年高考数学卷</p>
+<p class="src">——《地平线2025》第三篇 死记硬背不行啦 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：2017 年 6 月 7 日，成都某科技公司研发的 AI-MATHS 作为「数学高考机器人」，在无监考、输入试卷电子版「读题」的条件下挑战高考数学卷。据报道有两台机器人分别得 134 分和 105 分（满分 150 分），而 AI-MATHS 的目标是到 2020 年全部参加高考。教育界最怕的正是篇题那四个字：死记硬背。</p>
+<p><b>逻辑脉络</b>：本篇把 AI 对教育的冲击写成一场「考试倒逼改革」：机器人先攻下最标准化的数学卷，意味着凡是可以被标准化的学习与考核，机器都在快速逼近甚至超越。篇内同时引入戴曼迪斯等人的创新教育观——未来人的价值要从「记住知识」转向提出问题与创造力。</p>
+<p><b>现实意义</b>：给自己（或孩子）的教育投资做个压力测试：这门技能、这套训练，放在「机器 134 分」的世界里还剩多少溢价？凡是能被题库化的能力都在贬值通道里，提问题、做判断、跨场景迁移才是增值的部分。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>可以实现永生吗？：手术机器人与病理 AI</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这名病理学家的准确率为73.3%，而人工智能交出的答卷是88.5%</p>
+<p class="src">——《地平线2025》第四篇 可以实现永生吗？ ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：医疗是本篇的主战场：达芬奇手术机器人把微创手术做到极致，Watson 在肿瘤辅助诊疗中给出方案，而一组对照实验给出了最锋利的数字——同一组肿瘤组织的诊断评分中，病理学家的准确率为 73.3%，人工智能交出的答卷是 88.5%。谷歌的病理AI、种植牙机器人则把「精度超过人手人眼」从新闻变成了常态。</p>
+<p><b>逻辑脉络</b>：篇题「可以实现永生吗」是个诱饵：本篇真正的论点不是永生，而是「医疗能力的重新分配」——当诊断、手术、随访都出现了超越平均水平的机器，优质医疗第一次具备了可复制的属性。方舟子等点评人的加入，则提醒读者：AI 医疗的瓶颈不在算法，而在数据标注、责任划分与临床接纳。</p>
+<p><b>现实意义</b>：评估医疗 AI 产品，别问「它像不像医生」，问两个数：它在哪个具体任务上超过人（如 88.5% 对 73.3%），以及错了谁来负责。前者决定能不能用，后者决定敢不敢用。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>红灯·绿灯·黄灯：从智轨到城市大脑</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>它采用了中车株洲所自主研发的“虚拟轨道跟随控制”技术</p>
+<p>“城市大脑”的推进，仍面临着众多现实难题，也绝非可以快速复制、遍地开花</p>
+<p>其停车场覆盖城市已超过200座</p>
+<p class="src">——《地平线2025》第五篇 红灯·绿灯·黄灯 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：智慧交通在本篇集结了三类样板：中车株洲的「智轨」列车以「虚拟轨道跟随控制」技术在城市道路上试运行；杭州城市大脑自 2016 云栖大会起成为治堵标杆；智慧停车独角兽 ETCP 覆盖城市超过 200 座，大数据停车平台沉淀海量出行记录。但作者同样亮出黄灯——城市大脑的推进「仍面临着众多现实难题，也绝非可以快速复制、遍地开花」。</p>
+<p><b>逻辑脉络</b>：「红灯·绿灯·黄灯」的标题本身就是论证结构：绿灯是已经跑通的场景（智轨、停车、闯红灯检测），黄灯是数据孤岛与复制难题，红灯则是伦理与安全边界。荷兰 Phileas 破产的教训（技术领先但商业模式先行失败）被专门引用，构成对技术乐观主义的制衡。</p>
+<p><b>现实意义</b>：智慧城市项目遍地开花的年代，「某城案例」最容易被过度外推。判断能否复制，看三样：本地数据基础、财政与运营模式、以及先例失败的原因清单——Phileas 式的「技术成功、生意失败」至今仍是样板工程最常踩的坑。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>驾驶舱里的最后判断：萨利机长的边界</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>好莱坞大片《萨利机长》中的英雄机长，就是依靠飞行员特有的应变决断能力，果断将双发停车的飞机迫降在哈德逊河</p>
+<p>大家都在搞无人驾驶，是因为无人驾驶车是人工智能在交通方面应用的一个亮点</p>
+<p class="src">——《地平线2025》第五篇 红灯·绿灯·黄灯（点评） ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：技术经济观察家瞬雨借《萨利机长》划出人机边界：双发停车的飞机被机组迫降在哈德逊河，靠的是「飞行员特有的应变决断能力」——面对没训练过、没接触过、职业生涯里也无先例的突发状况，AI 很难像人一样临场决断。而东土科技市场总监的话则点破行业现实：大家都在搞无人驾驶，因为它「是人工智能在交通方面应用的一个亮点」。</p>
+<p><b>逻辑脉络</b>：这篇点评的功能是为全篇收口：前面五节的案例展示 AI 在交通的「可为」，点评则圈出「不可为」——自动驾驶的真正难点不是正常路况的驾驶，而是长尾突发事件的判断。亮点叙事（东土科技）与边界叙事（萨利机长）互为表里，构成对无人驾驶热的一条冷静注脚。</p>
+<p><b>现实意义</b>：任何自动化方案都要先回答「萨利机长问题」：当系统遇到训练集之外的情况，谁接管、凭什么接管？保留一条人可以最后拍板的通道，不是对 AI 的不信任，而是对未知的尊重。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>神奇的预测：AI 金融的两副面孔</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>高频程序化交易Virtu FinancialLLC公司在1238个交易日中，仅有一个交易日出现了亏损</p>
+<p>交通银行在2015年年底推出国内首个智慧型人工智能服务机器人“娇娇”</p>
+<p class="src">——《地平线2025》第六篇 神奇的预测 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：AI 金融篇给出两组震撼数字：高频程序化交易公司 Virtu 在 1238 个交易日中仅有一个交易日亏损，把「稳定的精准」具象化；国内银行侧，交通银行 2015 年底推出首个智慧型 AI 服务机器人「娇娇」并进驻多省市网点，智能客服与机器 банкир 成为银行网点的标配。李开复的白皮书则断言金融将是 AI 落地最猛的领域。</p>
+<p><b>逻辑脉络</b>：本篇沿「交易—风控—服务」三层展开：交易端看 Virtu、Rebellion 等程序化巨头的战绩；风控端讲 AI 用秒级审批换来更低坏账；服务端从蚂蚁金服 OCR 到娇娇再到柜面替代率。三层共同指向一个机制——金融的一切最终都是数据与规则，而数据与规则恰是机器的主场。</p>
+<p><b>现实意义</b>：看一家金融机构的智能化成色，别数机器人数量，看三个比率：决策自动化率、单笔业务处理时长、异常识别命中率。Virtu 那种「1238 天只有一天亏」的稳定，本质是规则化程度高的胜利——你的业务有多少环节也做到了这种可重复？</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>没有温度的超市？无人零售与「无用阶级」之辩</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>消费者在线下实体店购物时需要“温度”，而没有了现场的服务人员，这种“温度”也就没有了</p>
+<p>工业革命使我们成为“无产阶级”，这是社会的进步；人工智能可能会使我们进一步成为“无用阶级”，则更是社会的进步</p>
+<p class="src">——《地平线2025》第六篇 神奇的预测（延伸） ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：无人超市热潮中，原当当网 COO 黄若泼了一盆冷水：无人超市省了收银与理货，却省不掉后端技术维护与补货，更关键的是——消费者线下购物需要「温度」，没有了现场服务人员，这种「温度」也就没有了。而王飞跃的点评把话题推向哲学层面：工业革命造就「无产阶级」是社会的进步，AI 造就「无用阶级」将更是进步——正如徐光启所谓「无用之用，众用之基」。</p>
+<p><b>逻辑脉络</b>：本节把第六篇从效率叙事转到价值叙事：Amazon Go、淘咖啡们证明「无人」技术可行，黄若的「温度」质疑点出体验可行的缺口；王飞跃则用徐光启四百年前的感慨，把「被替代」重新定义为「被解放」的前提条件——前提是社会制度接得住。</p>
+<p><b>现实意义</b>：判断任何「去人工化」项目，先做两道题：成本表上省掉的人力，会不会在后端与体验端加倍还回来？被替代下来的人去了哪里？答不出第二问的效率红利，最终都会以社会成本的形式回账。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>智慧物流 2.0：无人仓里的 3 倍效率</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>使用机器人进行仓库小件商品的拣选，不仅准确率可达99.99%以上，而且效率还是人工拣选的3倍以上</p>
+<p class="src">——《地平线2025》第七篇 智慧物流2.0时代全面开启 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：物流篇的核心数字只有一个但足够重：机器人仓内小件拣选，准确率可达 99.99% 以上，效率是人工拣选的 3 倍以上。从菜鸟海宁仓的 AGV、京东的无人机与无人车，到苏宁 200 台机器人集群作业，电商巨头的物流军备竞赛把「仓储—分拣—末端配送」全链条推入无人化。</p>
+<p><b>逻辑脉络</b>：本篇的论证骨架是「成本—时效—规模」三角：人力成本上涨给了机器入场券，时效竞争（当日达、小时达）给了机器必要性，订单规模给了机器摊薄成本的场地。贝恩关于物流费用占 GDP 比重的引用，则把企业效率问题升格为国家效率问题。</p>
+<p><b>现实意义</b>：99.99% 的准确率加 3 倍效率，是典型的「双指标碾压」：当一项自动化在质量与速度上同时占优，替代就不再取决于意愿而取决于资本回收期。评估自己行业的自动化空间，找那对「同时更准、更快」的环节下手，其余的都是伪命题。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>国家大事不可不察：AI 军事与第三次抵消战略</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>美国国防部明确把人工智能作为第三次“抵消战略”的重要技术支柱</p>
+<p>围绕人类在“观察、调整、决策、行动”（OODA）这一决策循环周期中所处的位置</p>
+<p class="src">——《地平线2025》第八篇 国家大事不可不察 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：军事篇开宗明义：美国国防部把人工智能明确为第三次「抵消战略」的重要技术支柱，智能无人系统获得重点投资。人机关系的理论骨架则是经典的 OODA 循环——观察、调整、决策、行动——讨论的核心问题变成了「人类在这一决策循环中所处的位置」：是环内操控，环上监督，还是环外旁观。</p>
+<p><b>逻辑脉络</b>：本篇沿「大国战略—技术清单—理论框架」推进：从第三次抵消战略的预算与规划，到无人机蜂群、无人坦克、外骨骼等九大改变，再到 OODA 循环对人类位置的重新定义。点评人关于国际公约与伦理的呼吁，构成对纯军事视角的制衡。</p>
+<p><b>现实意义</b>：OODA 循环是个好用的决策工具：无论军事还是商业，自动化程度的设计本质是「人在环内还是环外」的选择。关键决策链上，宁可慢，也要留出人做「调整」的位置——那是一切责任与纠错的入口。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>会思考、会学习的机器：阿尔法元与围棋的黄昏</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>今天的震惊突破了昨天的震惊</p>
+<p class="src">——《地平线2025》第九篇 会思考、会学习的机器 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：2017 年柯洁 0:3 负于 AlphaGo，中国国家围棋队领队华学明的感叹「今天的震惊突破了昨天的震惊」颇具代表性；而真正的冲击还在后头——AlphaGo Zero 不用人类棋谱，从零自我对弈 3 天 490 万盘，100:0 击败旧版，西尔弗称之为「抛弃人类定式」的独门绝技。围棋，这个被公认无法被机器攻克的高地，一夜易主。</p>
+<p><b>逻辑脉络</b>：本篇从图灵 1950 年《计算机器与智能》的预言起笔，经 AlphaGo 对李世石、樊麾的战绩，落到 AlphaGo Zero 的强化学习突破：机器第一次在没有人类示范的情况下，超越人类积累千年的知识。「杞人忧天」与「风险警示」两种声音并置，把讨论从棋盘推向通用智能。</p>
+<p><b>现实意义</b>：AlphaGo Zero 的启示是方法论级的：最深的功力未必来自模仿最好的样本，可能来自「脱离定式的自我迭代」。个人的学习系统里，值得留一块不参考任何范本、纯粹按反馈自证的练习区——那里常常长出别人教不出来的东西。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>厉害啦！中国：数据、资本与库克的担忧</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>AI进步速度太快了，以后会更完美、更强。</p>
+<p>我并不担心机器会像人一样思考，我担心的是人像机器一样思考。</p>
+<p>谷歌中国前总裁李开复形容这些数据就是人工智能的“燃料”</p>
+<p class="src">——《地平线2025》第十篇 厉害啦！中国 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：柯洁赛后感叹「AI 进步速度太快了，以后会更完美、更强」；乌镇峰会上库克留下全书最警醒的一句话：「我并不担心机器会像人一样思考，我担心的是人像机器一样思考。」而中国故事的底座被李开复一语道破——7.31 亿网民与 13.9 亿手机用户产生的海量数据，「就是人工智能的燃料」。</p>
+<p><b>逻辑脉络</b>：本篇是全书的国别高光章：从麦肯锡关于中国电商与支付占全球比重的数据，到 BAT 与 GAFA 的市值对比、2017 年全球近一半 AI 投资流向中国，再到神威太湖之光的算力储备。柯洁与库克代表两种收尾——前者承认追赶不了速度，后者提醒不要在追赶中弄丢人的价值。</p>
+<p><b>现实意义</b>：「数据是燃料」的另一面是：谁有场景谁就有燃料，谁有燃料谁就能训练更强的模型。个人与机构的启示相同——与其空谈学 AI，不如先问自己手里沉淀了什么别人没有的数据与场景。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>霍金的预言能走多远？：狂人的推特与物理学的警告</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>创造人工智能可能是人类文明史上最伟大的事件，但也可能是最后一个。</p>
+<p>中国、俄罗斯……不久后各国的计算机科学都会非常强大</p>
+<p class="src">——《地平线2025》第十一篇 霍金的预言能走多远？ ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：霍金的判断是全书最重的引文：「创造人工智能可能是人类文明史上最伟大的事件，但也可能是最后一个。」马斯克则在 2017 年 9 月 4 日的推特连环警告「第三次世界大战很有可能会由人工智能引起」，并援引普京的判断——「中国、俄罗斯……不久后各国的计算机科学都会非常强大」。扎克伯格与之隔空对呛，构成 2017 年 AI 争论最著名的三角。</p>
+<p><b>逻辑脉络</b>：本篇把「预言」写成一张光谱：马斯克代表近期风险（武器化与军备竞赛），霍金代表文明尺度的长期风险，盖茨则给出时间上更迟缓的中段判断。联合国海牙 AI 中心的设立被引为制度回应——预言的真正意义不是预测，而是提前搭建应对框架。</p>
+<p><b>现实意义</b>：对「末日预言」的正确用法不是站队恐慌或嘲讽，而是把它拆成可操作的观察项：哪些节点（武器化、失控实验、就业冲击）出现时需要改变行为？预言家的价值在清单，不在日期。</p>
+</div>
+</section>
+<section id="s14">
+<h2><span class="no">拾肆</span>科技前沿东南西北：从费奥多尔到 Face ID</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>谁将成为俄罗斯最新的“联邦”号载人飞船的首飞宇航员？答案已经揭晓——一位名叫费奥多尔的智能机器人。</p>
+<p>所有感应器都集中在机身前面的“刘海儿”里</p>
+<p class="src">——《地平线2025》第十二篇 科技前沿东南西北 ｜ 据《地平线2025》（熊清泉 主编）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：收尾篇是一幅 AI 前沿的全景拼图：俄罗斯宣布「联邦」号飞船的首飞「宇航员」将是智能机器人费奥多尔；苹果 iPhone X 取消 Touch ID 改用 Face ID，所有感应器集中在机身前的「刘海儿」里，3 万个光点完成人脸识别；再加上机器人厨师、按摩机器人、AI 智商调查、Neuralink 神经织网——前沿不再是单点突破，而是全方位漫灌。</p>
+<p><b>逻辑脉络</b>：本篇以「东南西北」为题眼，刻意做空间与领域的大扫掠：太空（费奥多尔）、消费电子（Face ID）、餐饮、家庭、医疗、脑机接口。扫掠背后的统一线索是——2017 前后的 AI 已从「演示级」进入「产品级」，每一项前沿背后都站着一家要发货的公司。</p>
+<p><b>现实意义</b>：读前沿清单的正确姿势是区分「演示」与「产品」：能报出出货量、良率、复购的（如 Face ID 之于 iPhone），才算真正落地；只存在于发布会视频里的，保持欣赏即可。用这个过滤器，每年的科技新闻都能自动降噪。</p>
+</div>
+</section>
+<section id="s15">
+<h2><span class="no">拾伍</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这部 AI 全景观察的最终目的，是学会在技术狂潮里辨认边界（萨利机长）、燃料（数据）与温度（黄若之问），并且永远留一道人来拍板的通道。</p>
+<p><b>AI进步速度太快了，以后会更完美、更强。</b>应用口诀：别跟机器比速度，跟机器比方向。</p>
+<p><b>我并不担心机器会像人一样思考，我担心的是人像机器一样思考。</b>应用口诀：把人用成机器，才是最大的浪费。</p>
+<p><b>创造人工智能可能是人类文明史上最伟大的事件，但也可能是最后一个。</b>应用口诀：预言当清单用，不当日子过。</p>
+<p><b>工业革命使我们成为“无产阶级”，这是社会的进步；人工智能可能会使我们进一步成为“无用阶级”，则更是社会的进步</b>应用口诀：无用之用，众用之基。</p>
+<p><b>高频程序化交易Virtu FinancialLLC公司在1238个交易日中，仅有一个交易日出现了亏损</b>应用口诀：规则化程度决定稳定度。</p>
+<p><b>这名病理学家的准确率为73.3%，而人工智能交出的答卷是88.5%</b>应用口诀：先比数字，再谈信任。</p>
+<p><b>使用机器人进行仓库小件商品的拣选，不仅准确率可达99.99%以上，而且效率还是人工拣选的3倍以上</b>应用口诀：双指标碾压处，替代必然发生。</p>
+<p><b>今天的震惊突破了昨天的震惊</b>应用口诀：对指数事物，今天调低明天的想象。</p>
+<p><b>好莱坞大片《萨利机长》中的英雄机长，就是依靠飞行员特有的应变决断能力，果断将双发停车的飞机迫降在哈德逊河</b>应用口诀：自动化越深，越要留人来兜底。</p>
+<p><b>消费者在线下实体店购物时需要“温度”，而没有了现场的服务人员，这种“温度”也就没有了</b>应用口诀：省掉的人，会在体验里讨回来。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AlphaGo_Zero" target="_blank" rel="noopener">AlphaGo Zero · Wikipedia</a><span>佐证：AlphaGo Zero 从零自我对弈 490 万盘、100:0 击败旧版的完整数据。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank" rel="noopener">AlphaGo · Wikipedia</a><span>背景：AlphaGo 与樊麾、李世石、柯洁对局的完整年表。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Sully_(film)" target="_blank" rel="noopener">Sully (film) · Wikipedia</a><span>建议：《萨利机长》电影信息——人机决断边界的经典叙事。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Amazon_Go" target="_blank" rel="noopener">Amazon Go · Wikipedia</a><span>背景：Amazon Go 无人超市与 Just Walk Out 技术——本书第六篇的国际对照。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《地平线2025：人工智能来了》 ～ 中文据《地平线2025》（熊清泉 主编）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 一个陌生女人的来信 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/78-laixin.html">本书书页</a></p>
+<h1>深度研读 · 一个陌生女人的来信</h1>
+<p class="sub">茨威格 中篇双篇 · 张玉书 译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为茨威格代表作双篇合刊：《一个陌生女人的来信》（1922）以书信体讲一个女人二十年的暗恋——十三岁初遇、三次夜晚、年年白玫瑰，直到蓝花瓶空了；《一个女人一生中的二十四小时》（1927）讲 C 太太四十二岁那年在蒙特卡洛的二十四小时——一双赌徒痉挛的手、一场激情的完整坍塌、二十四年忏悔。两篇互为镜像：写信人自述，听信人记录。本研读共十二节，先录原文（据《外文大家小藏本·茨威格集》，张玉书 译，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>第一句：陌生的你</a></li>
+<li><a href="#s2"><b>贰</b>十三岁初遇</a></li>
+<li><a href="#s3"><b>叁</b>你没有认出我</a></li>
+<li><a href="#s4"><b>肆</b>孩子与产院</a></li>
+<li><a href="#s5"><b>伍</b>白玫瑰</a></li>
+<li><a href="#s6"><b>陆</b>付钞票</a></li>
+<li><a href="#s7"><b>柒</b>老约翰</a></li>
+<li><a href="#s8"><b>捌</b>蓝花瓶空了</a></li>
+<li><a href="#s9"><b>玖</b>二十四小时：开局</a></li>
+<li><a href="#s10"><b>拾</b>手相术与赌徒的手</a></li>
+<li><a href="#s11"><b>拾壹</b>背誓与羞辱</a></li>
+<li><a href="#s12"><b>拾贰</b>红晕：全书的终场</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>第一句：陌生的你</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>你，从来也没有认识过我的你啊！</p>
+<p>我的儿子昨天死了</p>
+<p class="src">——《一个陌生女人的来信》开篇 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：信的第一行就是全书的机关：「你，从来也没有认识过我的你啊！」第二行是死亡通知：「我的儿子昨天死了」——称谓即主题，开头即倒叙。</p>
+<p><b>逻辑脉络</b>：一个收信人不认识的称呼，宣布了这封信的全部悲剧结构——它注定是一封单向的信，发信人已经把生命的最后一刻用来写它。1922 年出版，茨威格「链条小说」的巅峰。</p>
+<p><b>现实意义</b>：陌生不是距离，是不被看见：你对身边人的了解，可能少于一个恰好路过的陌生人。这封信值得每个人自查一遍——你有几个「认识」的人，其实从未被你看见？</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>十三岁初遇</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>从这一秒钟起，我就爱上了你。</p>
+<p class="src">——《一个陌生女人的来信》初遇 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作家搬进维也纳同一栋楼，十三岁的少女一见倾心：「从这一秒钟起，我就爱上了你。」紧接着她自己拆穿这句话的陈腐——「我知道，女人们经常向你这个娇纵惯了的人说这句话。可是请相信我，没有一个女人像我这样死心塌地、舍身忘己地爱过你。」</p>
+<p><b>逻辑脉络</b>：她先拆穿这句话的陈腐，再证明它不陈腐——茨威格的心理写实：连告白都自带反讽的免疫系统。偷看门缝、亲吻门把手、在雪地里等他：暗恋的全部仪式，都源于对方的一无所知。</p>
+<p><b>现实意义</b>：一秒即终身：检验你自己的「一秒钟」——那些真正改变你走向的瞬间，通常毫无仪式感。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>你没有认出我</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>可是你的眼睛微笑着，亲切然而一无所知。你又吻了我一下。可是你没有认出我来。</p>
+<p class="src">——《一个陌生女人的来信》重逢 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：成年后回到维也纳重逢，三度共度良宵——而他把她当作新的艳遇。第三夜后他远行，归来后她已生下孩子。重逢之夜的泪点在她出门前的最后一眼：「可是你的眼睛微笑着，亲切然而一无所知。你又吻了我一下。可是你没有认出我来。」</p>
+<p><b>逻辑脉络</b>：三次亲密，三次陌生：茨威格把「认不出」写成最残忍的重复——认出是爱情里最贵的奢侈品。温柔与盲目共用一副眼睛。</p>
+<p><b>现实意义</b>：重复即悲剧：一段关系里同样的误解出现三次，就不是误会了，是结构。别用「他其实爱我」修补结构性失明。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>孩子与产院</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一个人的羞耻心被人们的目光钉在十字架上，备受他们的毒言恶语的鞭笞</p>
+<p class="src">——《一个陌生女人的来信》母与子 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：生下他的孩子，是她「抓住他」的唯一方式；为抚养孩子她甘愿委身富人，在贫民产院受尽屈辱——「在那里，一个人的羞耻心被人们的目光钉在十字架上，备受他们的毒言恶语的鞭笞」。</p>
+<p><b>逻辑脉络</b>：产院一整段是全书最黑的部分：茨威格让单恋的代价具体到病床、消毒水和被翻动的被单——浪漫被折算成生存的账单。孩子夭折成为写信的直接原因：抓不住的都失去了。</p>
+<p><b>现实意义</b>：任何「抓住一个人」的策略都有成本表：算一算你愿意为执念支付的最大额度——产院的账单是茨威格给浪漫主义的现价折让。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>白玫瑰</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>每逢你的生日，总要给你送去一束白玫瑰</p>
+<p class="src">——《一个陌生女人的来信》年年一束 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：每年他的生日，「总要给你送去一束白玫瑰，和你在我们恩爱的第一夜之后送给我的那些花一模一样」——十一年间他从未问过一次是谁送的花。</p>
+<p><b>逻辑脉络</b>：白玫瑰是全书最安静的道具：一场持续十一年的匿名通信，收件人从没读过正文；她自己却把这束花当作每年一次的重逢——暗恋的全部宗教仪式感，都在这一束花里。</p>
+<p><b>现实意义</b>：仪式是对遗忘的反抗：你的生活里有没有一件「无人知晓但年年照做」的事？它不一定被看见，但它定义你。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>付钞票</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我看到你非常谨慎地把几张大钞票塞进我的暖手筒</p>
+<p class="src">——《一个陌生女人的来信》最深的侮辱 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：最后一次重逢，他把她当成烟花女子，眼色付款——「我看到你非常谨慎地把几张大钞票塞进我的暖手筒。我在这一瞬间怎么会没有叫出声来，没有扇你一个嘴巴呢！——我从小就爱你，并且是你儿子的母亲，可你却为了这一夜付钱给我……」</p>
+<p><b>逻辑脉络</b>：她接受了钞票——为了不揭穿自己唯一的尊严；这一段是茨威格心理描写的巅峰：受辱者最大的体面，是把侮辱当作秘密保管。</p>
+<p><b>现实意义</b>：被误解时最贵的反应是沉默：解释给不懂的人，等于把伤口展览两遍。她收下钞票，也收下了全书最深的孤独。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>老约翰</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>他在这一秒钟里对我的了解比你一辈子对我的了解还多。</p>
+<p class="src">——《一个陌生女人的来信》对照 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：出门时她在前屋撞见老仆人约翰——这位从她童年起就没见过她的老人，一眼认出了她：「他在这一秒钟里对我的了解比你一辈子对我的了解还多。」她把那几张「鞭笞我的钞票」匆忙塞在约翰手里。</p>
+<p><b>逻辑脉络</b>：认知的悖论在此完成闭环：仆人认出了童年时代的小女孩，主人却认不出爱了他二十年的女人——最亲密者最盲目，最疏远者最明亮；她把侮辱递给唯一认出她的人，一个动作完成全部清算。</p>
+<p><b>现实意义</b>：身份会挡住眼睛，爱不会：组织、家庭、友情里都有「老约翰时刻」——真正看见你的人，往往不在你的关系清单上。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>蓝花瓶空了</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>他感觉到死亡，感觉到不朽的爱情</p>
+<p class="src">——《一个陌生女人的来信》结尾 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作家读完这封长信，眼前浮起「隐约的怀念」般的印象——茨威格只给了一句：「他感觉到死亡，感觉到不朽的爱情。」蓝花瓶从此空了，但作家永远不会知道送花的人是谁。</p>
+<p><b>逻辑脉络</b>：不给顿悟，只给战栗：这是茨威格最狠的一笔——他让读者彻底知道，让当事人永远不知道；标题的「陌生」二字直到最后一行仍然成立。</p>
+<p><b>现实意义</b>：把别人的一生读成「文学意象」，本身就是第二次错过：提醒自己别急着给别人的倾诉贴标签——先问一句「后来呢」。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>二十四小时：开局</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>二十四小时完全可能决定一个女人的命运</p>
+<p class="src">——《一个女人一生中的二十四小时》餐桌争论 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：里维埃拉的旅馆餐桌上，昂里哀特太太与人私奔引爆争论；「我」热情洋溢地宣称「二十四小时完全可能决定一个女人的命运」——一直沉默的英国 C 太太第二天找到他，讲出自己四十二岁那年蒙特卡洛的二十四小时。</p>
+<p><b>逻辑脉络</b>：小说是《来信》的镜像：写信人自述，听信人记录——茨威格让「倾听」成为叙事的入口：你愿意听多久，别人就敢讲多深。</p>
+<p><b>现实意义</b>：别人愿意对你讲多深，取决于你上次听别人讲话的样子：倾听是你唯一能预付的信任。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>手相术与赌徒的手</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>永远不去看脸，只看桌子这个四方形，而在这四方形里，也只看人的双手</p>
+<p class="src">——《一个女人一生中的二十四小时》C 太太自述 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：C 太太看赌的方法来自亡夫：「永远不去看脸，只看桌子这个四方形，而在这四方形里，也只看人的双手。」她看见一双痉挛着、抽搐着的手——一个输光的人。</p>
+<p><b>逻辑脉络</b>：茨威格全程不写赌徒的脸，只写手：激情的病灶长在手上——抽搐、痉挛、把钞票抓来摊开；只看手的观察法，是文学史上最著名的激情诊断术。</p>
+<p><b>现实意义</b>：脸可以伪装，手不会：开会、谈判、牌桌上，看一个人的手比看他的脸更有信息量——紧握、搓动、悬停，全是潜台词。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>背誓与羞辱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我答应过您，绝对坦率真诚。</p>
+<p>夫人，请安静！</p>
+<p class="src">——《一个女人一生中的二十四小时》结局 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：C 太太的开场承诺是「我答应过您，绝对坦率真诚」——赌徒在教堂发誓后次日背誓重回赌台，当众把钱扔向她：「您别烦我！」管台子的喝道「夫人，请安静！」——她错失送行、被掷钞受辱；十年后听闻他在蒙特卡洛开枪自杀。</p>
+<p><b>逻辑脉络</b>：讲完这一切，C 太太说「我现在轻松多了」——一场激情的完整坍塌，用二十四年忏悔作答：坦率是她给往事的最后一笔清偿。</p>
+<p><b>现实意义</b>：讲出来是清偿：压了二十四年的事，讲完就「轻松多了」——找那个值得的倾听者，把你的一小时也讲完。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>红晕：全书的终场</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>恭恭敬敬地吻了吻她那枯萎得像秋叶似的微微颤抖的手</p>
+<p class="src">——《一个女人一生中的二十四小时》结尾 ｜ 据《外文大家小藏本·茨威格集》（张玉书 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：C 太太起身告辞——「她的两颊泛起一阵红晕，直升到她的白发」「往事的回忆使她像新娘一样慌乱，自己的坦白使她羞怯」——「我」低下头，「恭恭敬敬地吻了吻她那枯萎得像秋叶似的微微颤抖的手」。</p>
+<p><b>逻辑脉络</b>：全书的终场是一个吻，落在手上——茨威格从不裁决，只留一个少女般的红晕：六十七岁脸上的激情余温，「不知这是往日激情的反射，还是心情慌乱的结果」。</p>
+<p><b>现实意义</b>：坦率本身是尊严：敢于完整讲述自己的人，已经赢了故事——倾听者的吻落在手上，就是给坦率发的勋章。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷「激情病理学」双联画的最终目的，是学会在自己的生活里区分看见与认出、倾听与评判、坦率与体面，并且在别人开口讲那件压了很多年的事时，先闭嘴听完。</p>
+<p><b>你，从来也没有认识过我的你啊！</b>应用口诀：陌生不是距离，是不被看见。</p>
+<p><b>我的儿子昨天死了</b>应用口诀：信以死亡开头，倒叙由此展开。</p>
+<p><b>从这一秒钟起，我就爱上了你。</b>应用口诀：一秒即终身。</p>
+<p><b>可是你的眼睛微笑着，亲切然而一无所知。你又吻了我一下。可是你没有认出我来。</b>应用口诀：认出是爱情里最贵的奢侈品。</p>
+<p><b>每逢你的生日，总要给你送去一束白玫瑰</b>应用口诀：仪式是对遗忘的反抗。</p>
+<p><b>我看到你非常谨慎地把几张大钞票塞进我的暖手筒</b>应用口诀：把侮辱当秘密保管，不解释。</p>
+<p><b>他在这一秒钟里对我的了解比你一辈子对我的了解还多。</b>应用口诀：身份挡住眼睛，爱不会。</p>
+<p><b>他感觉到死亡，感觉到不朽的爱情</b>应用口诀：别急着贴标签，先问「后来呢」。</p>
+<p><b>二十四小时完全可能决定一个女人的命运</b>应用口诀：一天足够拆掉四十二年的体面。</p>
+<p><b>恭恭敬敬地吻了吻她那枯萎得像秋叶似的微微颤抖的手</b>应用口诀：坦率本身是尊严。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Stefan_Zweig" target="_blank" rel="noopener">Stefan Zweig · Wikipedia</a><span>佐证：作者 1881—1942 生平，维也纳出身、流亡写作与 1942 年巴西的结局。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Letter_from_an_Unknown_Woman" target="_blank" rel="noopener">Letter from an Unknown Woman · Wikipedia</a><span>建议：1922 年原作与电影改编史（1948 奥逊·威尔斯版／2004 徐静蕾版）。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Twenty-Four_Hours_in_the_Life_of_a_Woman" target="_blank" rel="noopener">Twenty-Four Hours in the Life of a Woman · Wikipedia</a><span>建议：1927 年姊妹篇——激情病理学的另一半。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Sigmund_Freud" target="_blank" rel="noopener">Sigmund Freud · Wikipedia</a><span>背景：茨威格的手术刀来源——同时代维也纳的潜意识研究。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《一个陌生女人的来信》 ～ 中文据《外文大家小藏本·茨威格集》（张玉书 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

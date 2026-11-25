@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 秘密花园 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/22-mimi.html">本书书页</a></p>
+<h1>深度研读 · 秘密花园</h1>
+<p class="sub">弗朗西丝·霍奇森·伯内特 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·陈子博 卫昱译）对照精读</p>
+<p class="lead">研读说明：伯内特（1911）的儿童文学经典：坏脾气的玛丽与「要死了」的柯林，在一座锁了十年的花园里互相种活。药方只有三样——泥土、同伴和被需要。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析＋三个英语学习模块（词汇积累／句式分析／写作借鉴）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>开篇：最别扭的小孩 · The Most Disagreeable-looking Child</a></li>
+<li><a href="#s2"><b>贰</b>被遗忘的幸存者 · Forgotten Alive</a></li>
+<li><a href="#s3"><b>叁</b>专横的六岁 · Tyrannical and Selfish</a></li>
+<li><a href="#s4"><b>肆</b>风还是哭声 · The Wind or the Crying</a></li>
+<li><a href="#s5"><b>伍</b>锁了十年的花园 · Locked Up for Ten Years</a></li>
+<li><a href="#s6"><b>陆</b>门把手与知更鸟 · The Knob of a Door</a></li>
+<li><a href="#s7"><b>柒</b>我可以要一点儿泥土吗 · A Bit of Earth</a></li>
+<li><a href="#s8"><b>捌</b>迪肯的口袋 · Dickon's Brown Paper Package</a></li>
+<li><a href="#s9"><b>玖</b>我会活到永远 · I Shall Live Forever</a></li>
+<li><a href="#s10"><b>拾</b>魔法在我身上 · The Magic Is in Me</a></li>
+<li><a href="#s11"><b>拾壹</b>玫瑰与蓟草 · Where You Tend a Rose</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：科林少爷 · Master Colin</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>开篇：最别扭的小孩 · The Most Disagreeable-looking Child</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">When Mary Lennox was sent to Misselthwaite Manor to live with her uncle everybody said she was the most disagreeable-looking child ever seen. It was true, too.</p>
+<p class="cn">玛丽·伦诺克斯被送到米瑟斯韦特庄园和她姑父一起生活。那里的每个人都说，从没见过如此别扭的小孩儿。不过，也确实如此。</p>
+<p class="en">She had a little thin face and a little thin body, thin light hair and a sour expression.</p>
+<p class="cn">她小脸消瘦、身板单薄、头发稀疏，总是一脸不高兴的样子。</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：开篇不美化主角，先把丑话说尽：人人说她是没见过的最别扭的小孩——而且确实如此。儿童文学里罕见的诚实：主角不是受害的天使，是一个把所有不幸都长成了刺的孩子。</p>
+<p><b>逻辑脉络</b>：第一章给出病根清单：爸爸忙碌、妈妈赴宴，「他们总是顺着她，对她有求必应」——玛丽是被伺候病的孩子。全书的三位病人玛丽、柯林、克雷文先生共享同一张病历：照顾过度，需要不足。花园是他们共同的处方。</p>
+<p><b>现实意义</b>：区分「照顾」与「喂养」：被照顾到六岁的玛丽是个刺球，被需要着的狄肯健康得像野花。自查你家里、团队里「顺着来」的比例——顺着来的地方长不出能扛事的人。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>disagreeable-looking</b>　adj. 别扭的、讨人嫌的（disagreeable+looking 复合——look 的构词第二例）</p>
+<p><b>It was true, too.</b>　phr. 也确实如此（三词短句盖章——叙述者站队的方法）</p>
+<p><b>thin light hair</b>　phr. 稀疏浅色的头发（两个形容词连排共用一个名词——英语描写的堆叠法）</p>
+<p><b>sour</b>　adj. 酸的、乖戾的（a sour expression：味觉词写表情——英文五官通感）</p>
+<p><b>Ayah</b>　n. 印度奶妈（外来词直接入文——殖民地背景的词汇痕迹）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>everybody said she was the most disagreeable-looking child ever seen ——最高级+ever seen 的「史上最」结构：everyone 主语+间接引语——把全书的开场白交给舆论。仿写：everybody said it was the most difficult project ever attempted.（人人说这是史上最难的项目。）</p>
+<p>It was true, too. ——too 收尾的盖章短句：叙述者确认传言，两秒内完成反讽立场声明——儿童文学里罕见的作者签名动作。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：开篇先给「舆论判决」再补「作者盖章」（everybody said... It was true, too.）——不辩护、不美化。英文 character introduction 的诚实律：把主角最讨嫌的一面放在第一段，读者才有整本书的弧光可看。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>被遗忘的幸存者 · Forgotten Alive</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">she had been angry because no one seemed to remember that she was alive.</p>
+<p class="cn">她非常生气，因为好像大家都忘记了她还活着。</p>
+<p class="en">Everyone was too panic-stricken to think of a little girl no one was fond of.</p>
+<p class="cn">恐慌之下的人们，自然无暇顾及一个不招待见的小女孩儿。</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：霍乱过后的空房子里，玛丽独自等待，才发现「大家都忘了她还活着」。儿童文学史上最冷的一句幸存者自白：死亡可以夺走所有人，唯独夺不走「没人记得你」这件事带来的愤怒——这份愤怒后来成了她走进花园的燃料。</p>
+<p><b>逻辑脉络</b>：伯内特用「遗忘」完成主角的起跑姿势：无人认领的孩子被送往米瑟斯韦特庄园，恰好逃进了那个无人认领的花园。两个被遗忘的存在互相认领——这是全书的结构原点：修复从来始于「有人记得你」。</p>
+<p><b>现实意义</b>：任何系统的重建都从清点「被遗忘的资产」开始：荒园、闲置的人、搁置的项目。别急着扔——先问谁还记得它原来的样子。克雷文先生的花园荒了十年，钥匙一直在土里等着。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>panic-stricken</b>　adj. 惊慌失措的（panic+stricken 复合：stricken 被击中——被恐慌击中的人们）</p>
+<p><b>be fond of</b>　phr. 喜爱（a little girl no one was fond of：否定性定语从句——没有「喜欢她的人」这个集合）</p>
+<p><b>alive</b>　adj. 活着（remember that she was alive：alive 表语形容词——只作表语的词）</p>
+<p><b>seem to</b>　phr. 似乎（no one seemed to remember：seem 的缓冲——愤怒里的克制）</p>
+<p><b>wailing</b>　n. 嚎哭（霍乱场景词——声音描写的强度层级：cry/sob/wail）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>no one seemed to remember that she was alive ——否定主语+that 从句：遗忘被写成一次「没记住」——alive 这个词的落点是全句最重的音节。英文写「被忽视」的黄金句式：no one + 记忆动词 + 那个最基本的事实。</p>
+<p>Everyone was too panic-stricken to think of a little girl no one was fond of ——too...to... 结构嵌套否定性定语从句（no one was fond of）：双重否定叠出一个被全系统跳过的人——句法本身就是她的处境。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写孤独不用 lonely，用「被系统跳过的事实链」——她生气（angry）的原因是没人记得她活着（remember that she was alive）。英文 essay 写 marginalized 的示范：把宏大词汇换成最基本的事实动词（remember、think of）。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>专横的六岁 · Tyrannical and Selfish</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">they always obeyed her and gave her her own way in everything, because the Mem Sahib would be angry if she was disturbed by her crying</p>
+<p class="cn">他们总是顺着她，对她有求必应。因为如果她的哭声吵到女主人的话，女主人会发火的</p>
+<p class="en">The young English governess who came to teach her to read and write disliked her so much that she gave up her place in three months</p>
+<p class="cn">曾有一个年轻的英国家庭女教师来教她读写。那老师很讨厌她，不到三个月就辞职不干了。</p>
+<p class="src">——第一章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：六岁就当上「全世界最专横、最自私的孩子」，靠的不是天赋，是体系化生产：印度奶妈有求必应、家庭教师三个月一换、妈妈的信条是「孩子的哭声会吵到女主人」。伯内特不控诉孩子，她控诉那个把孩子泡在顺从里的环境。</p>
+<p><b>逻辑脉络</b>：与玛莎家形成对照：约克郡的穷孩子「像小鹰和小狐狸一样饿」，反而结实、会笑、会照顾人。全书用两组家庭做营养学实验——玛丽在顺从中长成刺，迪肯在饥饿中长出翅膀。专横不是性格，是缺「被需要」这个营养素的症状。</p>
+<p><b>现实意义</b>：孩子的「性格问题」，先做环境体检再下结论：需求被无条件满足、责任被系统性代劳，专横是理性选择。处方不是更严的管教，是给一份真实的责任——像玛丽后来那样，有块泥土要她自己耕。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>obey</b>　v. 顺从（they always obeyed her：仆人向孩子的权力倒挂）</p>
+<p><b>give her her own way</b>　phr. 让她随心所欲（双所有格 her her——give sb sth 结构里的著名拗口）</p>
+<p><b>governess</b>　n. 家庭女教师（govern+ess：管辖者+阴性后缀——维多利亚家庭词）</p>
+<p><b>give up one's place</b>　phr. 辞职不干（place 的老式说法——职位即位置）</p>
+<p><b>in three months</b>　phr. 三个月内（in+时间段表「之内」——离职速度的计量）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>disliked her so much that she gave up her place in three months ——so...that... 结果状语：厌恶的强度用「离职时长」量化——三个月是本句唯一的数字，也是全部论据。仿写：liked the tool so much that he rebuilt his workflow around it.（他喜欢这工具到把整个流程围着它重搭。）</p>
+<p>because the Mem Sahib would be angry if she was disturbed by her crying ——would+if 的双重假设链：母亲的怒气是整个因果的起点——从句套从句，权力关系全在语法层级里。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「被惯坏」，列「辞职清单」——奶妈顺从（obeyed）、教师三个月就走（gave up her place in three months）。英文环境描写的实证法：不写性格结论，写一连串「留下的人做了什么、离开的人多久离开」。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>风还是哭声 · The Wind or the Crying</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">There!” said Mary. “I told you so! It is some one crying—and it isn't a grown-up person.</p>
+<p class="cn">你听！”玛丽说，”我都跟你说过了！就是有人在哭——而且不是大人。</p>
+<p class="en">It was th' wind,” said Martha stubbornly. “An' if it wasn't, it was little Betty Butterworth, th' scullery-maid. She's had th' toothache all day.</p>
+<p class="cn">那是风。”玛莎生硬地说，”若不是风，就是小贝蒂·贝特沃思，那个在后厨帮忙的仆人。她今天一整天都牙疼。</p>
+<p class="src">——第五／六章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：庄园深夜的哭声，仆人异口同声说是风。玛丽偏不信：不是风的哭声。这个「不信」是全书的转折点——她那讨人嫌的执拗第一次用对了方向：别人都学会绕开的谜，只有新来的孩子当真。</p>
+<p><b>逻辑脉络</b>：哭声是全书的社会隐喻：柯林的病夫论早已成为庄园的集体规矩——「别去提，别去看，别去哭」。每个人都默认了风的说法，包括忠厚的玛莎。玛丽的「不信」不是聪明，是她还没学会这里的潜规则。破局者永远是尚未被规则同化的人。</p>
+<p><b>现实意义</b>：组织里凡是「大家都说是风」的声音，值得新来的人多问一句：风不会定点定时地哭。旧系统里流传的解释，往往是某个「不能提」的柯林——找到那个哭声，比接受风的说法有用得多。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>stubbornly</b>　adv. 固执地（said Martha stubbornly：对话标签里的副词——玛莎的立场藏在副词里）</p>
+<p><b>scullery-maid</b>　n. 后厨女仆（scullery 洗碗间——约克郡宅邸的层级词）</p>
+<p><b>toothache</b>　n. 牙疼（复合词：tooth+ache——ache 疼痛家族的成员）</p>
+<p><b>th'</b>　abbr. the 的约音（约克郡方言拼法：th' wind——方言的听觉转写）</p>
+<p><b>an'</b>　abbr. and 的约音（方言连读——伯内特的方言拼写系统）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>It is some one crying—and it isn't a grown-up person. ——双重判断+破折号补刀：先确认「有人在哭」，再排除「大人」——两句比一句「是个孩子在哭」多一层推理感。some one 的分写是 1911 年的旧拼法（今 some one→someone）。</p>
+<p>An' if it wasn't, it was little Betty Butterworth ——方言虚拟替补（if it wasn't, it was...）：玛莎的解释系统自带备选项——一句话暴露「风」从来是推诿而非结论。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「集体沉默」，让每个角色提供一个备用谎言（风、牙疼的女仆）——备用项越具体，越显得解释是连夜编的。英文 dialogue 的群像技法：每个配角只给一句台词，但台词必须自洽地错。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>锁了十年的花园 · Locked Up for Ten Years</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">One of th' gardens is locked up. No one has been in it for ten years.</p>
+<p class="cn">其中一个花园是锁上的。十年了，没人进去过。</p>
+<p class="en">Mr. Craven had it shut when his wife died so sudden. He won't let no one go inside. It was her garden. He locked th' door an' dug a hole and buried th' key.</p>
+<p class="cn">他的妻子突然去世后，克雷文先生就让人把门锁上了。他再也不让任何人进去。那以前是他妻子的花园。他把门锁上，挖了个洞把钥匙埋了进去。</p>
+<p class="src">——第五章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最著名的设定：妻子死后，克雷文先生锁上花园，埋掉钥匙，十年不准任何人进去——连他自己也不进。这不是园艺，是一场持续十年的自我惩罚：把最痛的东西封起来，是人对创伤最本能的处理方式。</p>
+<p><b>逻辑脉络</b>：花园的荒芜与克雷文先生的心境同步生长：玫瑰枯，人也枯；藤蔓爬满墙，悲伤也爬满墙。而转折不靠劝——靠两个孩子的悄悄开工。伯内特的心理学在此领先于时代：悲伤不能被劝说走，只能被新的生长替代。生命自己会找入口。</p>
+<p><b>现实意义</b>：处理创伤的「花园法」：封存不是修复，钥匙埋进土里十年也不会消失。真正的疗愈是允许它重新长东西——不是删除记忆，是在原来的地方种新的。锁上的园子里，玫瑰其实一直活着。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>lock up</b>　phr. 锁上、封存（is locked up：被动——园子的状态由他人决定）</p>
+<p><b>died so sudden</b>　phr. 死得那么突然（sudden 作副词的方言用法——标准语为 suddenly）</p>
+<p><b>won't let no one</b>　phr. 双重否定（won't let no one go：方言的非标准双重否定=强烈否定）</p>
+<p><b>bury</b>　v. 埋（buried th' key：埋钥匙——创伤管理的实体化动作）</p>
+<p><b>It was her garden.</b>　句式（过去时 be+her：所有权的追认——三个词写完一段婚姻）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>He locked th' door an' dug a hole and buried th' key. ——三个连续过去式的动作链（locked-dug-buried）：锁、挖、埋——创伤处理的完整工序被压缩进一行动词流水。注意 an'/and 的方言混拼与连词重复（an'...and）。</p>
+<p>It was her garden. ——最短过去时判断句：It was 的「曾是」是全段的痛点——现在时里它什么都不是。英文抒情的最小单位：一个时态的改写。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「封存」，用三个具体动词收尾——锁（locked）、挖（dug）、埋（buried）。英文叙事写 trauma 的物质化模板：把抽象的「放下/封存」翻译成一件能在三秒内做完的事，让读者亲手看见决绝。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>门把手与知更鸟 · The Knob of a Door</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">suddenly the gust of wind swung aside some loose ivy trails, and more suddenly still she jumped toward it and caught it in her hand. This she did because she had seen something under it—a round knob which had been covered by the leaves hanging over it. It was the knob of a door.</p>
+<p class="cn">突然那阵风把一些松散的常春藤树枝拂至一旁，玛丽更加突然地向它一跳，把它抓在了手中。她这么做，是因为她在它身下看到了什么东西——一个圆形的手柄，原来一直被覆盖在上面的树叶盖住了。那是个门把手。</p>
+<p class="en">The robin kept singing and twittering away and tilting his head on one side, as if he were as excited as she was.</p>
+<p class="cn">知更鸟一直唱着歌，喳喳地叫，头歪向一侧，好像它也和玛丽一样兴奋。</p>
+<p class="src">——第八章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：门是被一只知更鸟「领路」找到的：风拂开常春藤，露出被盖了十年的门把手；钥匙就埋在松土里。全书的运气全部披着自然的外衣——鸟、风、土，各司其职。伯内特不写魔法，写的是「你开始耕，世界开始帮」。</p>
+<p><b>逻辑脉络</b>：这一幕是全书的哲学题眼：知更鸟为什么偏偏停在那片土？——因为玛丽和迪肯正在那里翻土。不是鸟选择了玛丽，是忙碌的人恰好站在了机会路过的地方。门把手被树叶盖了十年，没人找过，就没人看见。</p>
+<p><b>现实意义</b>：给所有等风口的人：风只拂开正在翻土的人头顶的藤条。找门把手的前提是让自己站在土里——两手不空的人，才接得住偶然。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>gust</b>　n. 一阵风（a gust of wind——阵风的量词搭配）</p>
+<p><b>ivy trails</b>　phr. 常春藤藤蔓（trail 本义拖尾——藤的动态名词）</p>
+<p><b>knob</b>　n. 球形把手（a round knob：门把手的标准词——doorknob 的词根）</p>
+<p><b>swing aside</b>　phr. 拂开（swung aside some loose ivy trails：aside 副词补位）</p>
+<p><b>twitter</b>　v. 啾啾叫（鸟鸣拟声——今义「发推」的词源即在此）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>more suddenly still she jumped toward it ——比较级+still 的递进强调（more suddenly still）：风的快与她的跳被同一个结构串成接力——still 在比较级后表「更加」。仿写：more oddly still, the door was unlocked.（更怪的是，门没锁。）</p>
+<p>This she did because... ——宾语前置倒装（This she did）：把动作宾语拎到句首，为下一句的解释让路——英语里最古典的指大句式。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「运气」，把功劳分配给环境三件套（风、鸟、土）而人只做动作（jumped、caught）——英文 narrative 的 luck-writing 法则：偶然越像自然现象，读者的代入越安全。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>我可以要一点儿泥土吗 · A Bit of Earth</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Might I,” quavered Mary, “might I have a bit of earth?</p>
+<p class="cn">我可以，”玛丽颤抖着，”我可以要一点儿泥土吗？</p>
+<p class="en">Earth!” he repeated. “What do you mean?</p>
+<p class="cn">泥土！”他重复道，”你是什么意思？</p>
+<p class="src">——第十一章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最动人的请求只有五个字：我可以要一点儿泥土吗？——一个从没有过任何东西的孩子，向姑父要的不是玩具、不是零花钱，是一小块可以自己耕的土。「颤抖着」三个字写尽了她对这请求的郑重：泥土是她第一次敢开口的东西。</p>
+<p><b>逻辑脉络</b>：克雷文先生听错了问题——他以为孩子要的是玩具，愣住之后随手给了。但这句话在故事里的作用远超一个场景：玛丽要泥土，等于要一份「属于自己的事业」；她后来用同一句话的逻辑要迪肯、要柯林、要花园——人一旦学会说「我要一小块可以耕的东西」，就再也回不去了。</p>
+<p><b>现实意义</b>：谈判任何资源时记住这个句式：要得越具体、越小、越能自耕，越难被拒绝。「给我一块泥土」比「给我一个花园」更容易得到，也更容易长出花园——因为土在你手里，耕是你自己的事。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>quaver</b>　v. 颤抖着说（quavered Mary：声音的颤抖——说话动词的精细分级）</p>
+<p><b>a bit of</b>　phr. 一点儿（a bit of earth：bit 的计量——最小可谈判单位）</p>
+<p><b>earth</b>　n. 泥土（earth 的本义土壤——大写 Earth 才是地球，一词两界的分界）</p>
+<p><b>repeat</b>　v. 重复道（Earth! he repeated——对话标签的回声技法）</p>
+<p><b>seeds</b>　n. 种子（to plant seeds in——泥土的用途状语，后文原句）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Might I... might I have a bit of earth? ——情态动词 might 的最敬问法+重复开口（might I...might I）：请求被怯懦切成两半，重复的不是词是勇气。对比 can I/could I/might I 的敬意阶梯——might 是梯顶。</p>
+<p>Earth!” he repeated. ——单词引语+repeated 的回声结构：把对方的最后一个词单独拎出作问句主语——英语对话里「听错/震惊」的标准处理。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「人生最重要的请求」，用最小的计量词（a bit of）+最敬的情态词（might）——具体的谦卑最难拒绝。英文 negotiation 写作的金句公式：tiny quantity + mighty politeness（a bit of earth / might I）。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>迪肯的口袋 · Dickon's Brown Paper Package</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">They sat down and he took a clumsy little brown paper package out of his coat pocket. He untied the string and inside there were ever so many neater and smaller packages with a picture of a flower on each one.</p>
+<p class="cn">他们坐下，迪肯从外衣口袋拿出一个粗粗笨笨的牛皮纸小棕口袋。他解开绳子，袋子里面还有好多个整齐的更小的袋子，每个上面都有一种花的图案。</p>
+<p class="en">Mignonette's th' sweetest smellin' thing as grows, an' it'll grow wherever you cast it, same as poppies will.</p>
+<p class="cn">木樨花味道最甜美，你随便播种在哪里都能长，罂粟也是这样。</p>
+<p class="src">——第十二章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：迪肯的魔法道具是一个旧口袋：一层层牛皮纸小袋，每袋一种花籽，上面画着花。他是全书唯一没有病的男孩，靠的不是资源，是秩序——口袋的整齐程度就是他生活的整齐程度。自然的礼物都是这样抵达的：粗粗笨笨，但井井有条。</p>
+<p><b>逻辑脉络</b>：口袋是「分享的容器」：迪肯的种子不标价、不署名，见谁分谁。玛丽从他那里学到的第一课不是园艺，是给予的姿势——后来她把秘密分给柯林，把花籽分给病床，把花园分给全世界。传染健康比传染疾病难，但伯内特证明它同样可行。</p>
+<p><b>现实意义</b>：整理你的「口袋」：随身的专业工具、可复用的清单、分得出去的经验——一个人的口袋里有没有给别人的东西，决定了他能带出多少同伴。口袋粗笨没关系，分层清楚最重要。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>clumsy</b>　adj. 笨拙的（a clumsy little brown paper package：clumsy 修饰物件——外粗内秀的伏笔）</p>
+<p><b>untie</b>　v. 解开（untied the string：un+tie 反义构词）</p>
+<p><b>mignonette</b>　n. 木樨草（法语借词——香气植物的雅词）</p>
+<p><b>cast</b>　v. 播撒（wherever you cast it：cast seed 的播撒义）</p>
+<p><b>wherever</b>　conj. 无论哪里（wherever you cast it——穷孩子的乐观副词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>a clumsy little brown paper package ——五连前置修饰语（clumsy+little+brown+paper+package）：英语形容词的骑序示范——观点形（clumsy）→尺寸（little）→颜色（brown）→材质（paper）→中心词。与后文 ever so many neater and smaller packages 形成外/内对照。</p>
+<p>it'll grow wherever you cast it, same as poppies will ——wherever 让步+same as 类比：生命力被写成无条件的承诺——will 的重复出现让花有了意志。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写一个人的「秩序感」，写他的收纳而不是他的宣言——一层牛皮纸袋、每袋一种花籽、每袋画着那种花。英文 profile 写作的物证法：三个收纳细节顶一段 personality assessment。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>我会活到永远 · I Shall Live Forever</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">I shall live forever and ever and ever!” he cried grandly.</p>
+<p class="cn">我会活到永远永远永远！·”他郑重地叫道，</p>
+<p class="en">I shall find out thousands and thousands of things. I shall find out about people and creatures and everything that grows—like Dickon—and I shall never stop making Magic.</p>
+<p class="cn">我会有千千万万个发现。我要了解人、动物还有一切可以生长的东西——像迪肯那样——我永远不会放弃魔法。</p>
+<p class="src">——第二十一章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十年躺在病床上的柯林，站进花园的那天喊出了这句话：我会活到永远——永远——永远！儿童文学史上最健康的喊声：不是「我不想死」，是「我要活」。两者差着一整个人生观——前一个是恐惧，后一个是胃口。</p>
+<p><b>逻辑脉络</b>：柯林的康复链条没有一环是药物：玛丽顶撞他（没人敢和他对着干，他第一次被怼）、迪肯的动物、玫瑰的呼吸、大笑半小时、还有「保密」这件事本身。他好起来不是因为被治好，是因为被需要——花园里有一株玫瑰的位置、朋友里有一个只有他能顶的班。</p>
+<p><b>现实意义</b>：给所有「要死了」式的自我叙述者：把主语从「我会死」换成「我要活」，用词决定了身体的走向。柯林的病历证明，最大的治疗变量不是药，是每天清晨有一个让你非起床不可的约会。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>grandly</b>　adv. 郑重地、气派地（he cried grandly：grand 的副词——宣言的仪式感）</p>
+<p><b>find out</b>　phr. 查明、发现（find out thousands of things：口语化的求知动词）</p>
+<p><b>creature</b>　n. 生物（people and creatures：人与动物的并置——众生平等的词汇层）</p>
+<p><b>make Magic</b>　phr. 施魔法、行魔法（never stop making Magic：make 的能动性——魔法是手工活）</p>
+<p><b>shall</b>　aux. 将要（I shall live：第一人称 shall 的古典宣言体——对比 will 的随意）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>forever and ever and ever ——三连叠加的时间副词：法律誓言（forever and ever）+童谣叠句（and ever）的混血——一次喊声里的两种文体。仿写：thanks a million and a million and a million.（感谢一百万次再一百万次。）</p>
+<p>I shall never stop making Magic ——never stop doing 的双负正结构（never stop=always）：never+停止类动词＝最高级的坚持——比 always 更有声音。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写康复/成长的高潮，让宣言带「清单」（thousands of things to find out）而不只是情绪（I'm well!）——英文 climactic speech 的配重法：一句情绪+三行计划，情绪才立得住。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>魔法在我身上 · The Magic Is in Me</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The sun is shining—the sun is shining. That is the Magic. The flowers are growing—the roots are stirring. That is the Magic. Being alive is the Magic—being strong is the Magic. The Magic is in me—the Magic is in me. It is in me—it is in me. It's in every one of us. It's in Ben Weatherstaff's back. Magic! Magic! Come and help!</p>
+<p class="cn">阳光普照——阳光普照。那就是魔法。鲜花盛开——根须生长。那就是魔法。生存是魔法——健康是魔法。魔法在我身上——魔法在我身上。在我身上——在我身上。在每个人的身上。在本•韦瑟斯塔夫的背上。魔法！魔法！　来帮助我们吧！</p>
+<p class="en">He said it a great many times—not a thousand times but quite a goodly number.</p>
+<p class="cn">他重复了一遍又一遍——虽没有一千次，但次数也可观。</p>
+<p class="src">——第二十二章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：柯林对着花园做「实验」：阳光、种子、肌肉、食欲、心情——他把这一切起作用的力量统称为魔法。伯内特拒绝给魔法任何超自然的解释：它就是那个「种子发芽、伤口愈合、心情转阳」的系统本身。1911 年的正名书：希望不是祈祷，是可耕作的项目。</p>
+<p><b>逻辑脉络</b>：「魔法实验」是全书的哲学收束：三个孩子对着花园反复念诵「魔法在我身上」，翻译成现代语言就是自我暗示＋行为激活——柯林后来承认，反复念叨的力量在于他必须先「认真试」。咒语有效的前提是耕种有效；魔法从不绕开劳动单独起作用。</p>
+<p><b>现实意义</b>：建立你自己的「魔法清单」：把身体里那些确实起作用的系统（睡眠、阳光、同伴、被需要、大笑）列出来，天天念、天天做。重点是柯林的原话——你得先认真试，魔法才肯被你借走。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>chant</b>　v. 反复吟诵（I will chant：chant 的仪式义——咒语的原形动词）</p>
+<p><b>stir</b>　v. 萌动（the roots are stirring：root stir——进行时的地下动作）</p>
+<p><b>goodly</b>　adj. 相当大的（quite a goodly number：古雅形容词——英式委婉的量级词）</p>
+<p><b>being alive</b>　phr. 生存（Being alive is the Magic：动名词主语——状态升格为力量）</p>
+<p><b>come and help</b>　phr. 来帮忙（Come and help!：祈使+连动——咒语的收尾动词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Being alive is the Magic—being strong is the Magic. ——动名词主语+判断句的四连排比：每一句都是 X is the Magic——把定义句用成节拍器。仿写：Showing up is the skill—following up is the skill.（到场就是本事——跟进也是本事。）</p>
+<p>not a thousand times but quite a goodly number ——not X but Y 的量级纠正：叙述者假装纠正读者的夸张，实际在放大——英式幽默的计量学。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「自我暗示」，用定义句排比而非形容词堆砌——X is the Magic 连打四拍，每拍换一个主语（阳光、花、生存、健康）。英文 affirmative writing 的节奏配方：同一句式+轮换主语，重复本身就是说服。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>玫瑰与蓟草 · Where You Tend a Rose</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Two things cannot be in one place. “Where, you tend a rose, my lad, A thistle cannot grow.”</p>
+<p class="cn">这两中念头不能共处一室。”孩子，你在哪里种下玫瑰，哪里就长不出蓟草。”</p>
+<p class="en">Much more surprising things can happen to any one who, when a disagreeable or discouraged thought comes into his mind, just has the sense to remember in time and push it out by putting in an agreeable determinedly courageous one.</p>
+<p class="cn">如果谁能在不愉快的或者让人扫兴的念头出现时，依靠理智，借助愉快积极的思绪将它拒之门外，那么，这个人身上会有更加惊人的事情发生。</p>
+<p class="src">——第二十七章（索尔比妈妈的话） ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：索尔比妈妈一句话总结全书的园艺哲学：种下玫瑰的地方，蓟草长不出来。两样东西不能共处一室——这不是比喻，是园丁的常识：地就那么大，根系在争同一份水。心里的地也是。（译文「这两中念头」为双语读库原文如此，照录。）</p>
+<p><b>逻辑脉络</b>：这句话在末章作为克雷文先生的转机出现：他在异地重新想起蓝色勿忘我，那「简单的想法渐渐填充着他的心灵——就像一股甜美清冽的甘泉在一潭死水中涌出」。多年的恨与新的念头不能同时占据他——蓟草退场，不是因为被拔掉，是因为玫瑰长起来了。</p>
+<p><b>现实意义</b>：戒除任何坏习惯的最优策略不是拔蓟草，是种玫瑰：把注意力、时间、手艺都押给一个会生长的东西。蓟草不会灭绝，它只是在玫瑰的地界上没有位置。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>tend</b>　v. 照料（Where you tend a rose：tend garden/tend a rose——园丁的核心动词）</p>
+<p><b>thistle</b>　n. 蓟草（苏格兰国花——荒地的标记植物）</p>
+<p><b>my lad</b>　phr. 孩子（约克郡长辈对男孩的称呼——索尔比妈妈的乡音）</p>
+<p><b>have the sense to</b>　phr. 有头脑去做（just has the sense to remember：sense 的「判断力」义）</p>
+<p><b>push out</b>　phr. 推出、替换（push it out by putting in...：by + 动名词——替换的机制）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Where, you tend a rose, my lad, A thistle cannot grow. ——where 引导的地点状语从句+大写 A 的格言排版：句中大写是民谚的视觉标记——谚语体让园艺常识升格为人生律法。</p>
+<p>push it out by putting in an agreeable determinedly courageous one ——by putting in 的机制句：念头不是被消灭的，是被顶替的——一个 by 短语写完整个行为心理学。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给全书/全案收一个「谚语式结句」——Two things cannot be in one place. 先立常识、再挂格言（A thistle cannot grow）。英文 closing line 的配方：常识句+押头韵的小句（tend a rose / thistle...），读者带走的是韵脚不是论证。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：科林少爷 · Master Colin</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Across the lawn came the Master of Misselthwaite and he looked as many of them had never seen him.</p>
+<p class="cn">穿过草地走来的是米瑟斯韦特庄园的主人，他的样子是许多人从未见过的。</p>
+<p class="en">And by his side with his head up in the air and his eyes full of laughter walked as strongly and steadily as any boy in Yorkshire—Master Colin.</p>
+<p class="cn">在他旁边，高昂着头，眼中充满笑意，而且步伐像约克郡所有的男孩一样稳健的，正是——科林少爷。</p>
+<p class="src">——末章 ｜ 英文与中文均据外研社双语读库（陈子博 卫昱译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最后一幕是给仆人们的一次集体目击：那个「要死了」的科林少爷，高昂着头，眼里全是笑，走得像约克郡任何一个男孩。十年的一句话判决——「这孩子活不长」——被当场改判。而改判的法庭不在医院，在花园。</p>
+<p><b>逻辑脉络</b>：结尾回收全书的账目：玛丽的刺拔掉了（她自己先好起来）；柯林的判决改了（他不是被治好的，是被种活的）；克雷文先生回来了（他梦里的花园、妻子的微笑、儿子的背影一次对齐）；迪肯继续分享他的口袋。四个病人各自康复，药方相同：泥土、同伴、被需要。</p>
+<p><b>现实意义</b>：把「秘密花园」当作任何长期项目的隐喻：看起来死透的东西（团队、产品、关系、自己）值得先浇水再看判决书——判决常常只是十年没人进去过。钥匙可能一直埋在土里，知更鸟只带正在翻土的人去。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>lawn</b>　n. 草坪（across the lawn：英式庄园的空间词）</p>
+<p><b>the Master</b>　n. 主人、少爷（Master of Misselthwaite：Master 的旧式敬称——与 Master Colin 同词复现）</p>
+<p><b>steadily</b>　adv. 稳健地（walked as strongly and steadily：strong/steady 双副词——康复的两项指标）</p>
+<p><b>full of laughter</b>　phr. 充满笑意（his eyes full of laughter：with 独立主格——眼神的报表）</p>
+<p><b>by his side</b>　phr. 在他身旁（And by his side...：介词短语主语的倒装起点）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Across the lawn came the Master of Misselthwaite ——完全倒装（地点状语+came+主语）：终点在句尾——主人最后的出场被语序安排成舞台登场。仿写：Through the door came the answer, at last.（答案终于从门外走了进来。）</p>
+<p>And by his side... walked...—Master Colin. ——倒装+破折号揭示：全句把主语压到最后一词（Master Colin）——名字即包袱，身份即高潮。英文揭幕句式：描述先行，命名收尾。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让结尾「先见其人、后闻其名」——用完全倒装把主语（名字）押到最后一个词，破折号后揭晓。英文 final reveal 的舞台技法：Across the lawn came... —Master Colin.，读者最后听到的那个词就是你想让他记住的词。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：盖章短句、动词流水、完全倒装、谚语收尾，都在里面。研读这本「园丁的手册」的最终目的，是学会分辨照顾与被需要、封存与耕种，并在自己「要死了」的时刻，去花园里找一个只有你能顶的班。</p>
+<p><b>the most disagreeable-looking child ever seen. It was true, too ——最别扭的小孩，而且确实如此。</b>应用口诀：主角别美化——病根先说尽，处方才对症。</p>
+<p><b>no one seemed to remember that she was alive ——没人记得她还活着。</b>应用口诀：重建从清点被遗忘的资产开始——荒园、闲置的人、搁置的项目。</p>
+<p><b>as tyrannical and selfish a little pig as ever lived ——最专横自私的小孩。</b>应用口诀：性格问题先做环境体检——顺着来的地方长不出扛事的人。</p>
+<p><b>It was th' wind,” said Martha stubbornly ——那是风，玛莎固执地说。</b>应用口诀：凡是大家都说是风的声音，新来的人多问一句。</p>
+<p><b>No one has been in it for ten years ——十年没人进去过。</b>应用口诀：封存不是修复——钥匙埋十年也不消失，让原地重新长东西。</p>
+<p><b>might I have a bit of earth? ——我可以要一点儿泥土吗？</b>应用口诀：要得越具体越小越能自耕，越难被拒绝。</p>
+<p><b>ever so many neater and smaller packages ——一层层更整齐的小袋子。</b>应用口诀：口袋里有没有分得出去的东西，决定你能带出多少同伴。</p>
+<p><b>I shall live forever and ever and ever! ——我会活到永远永远永远！</b>应用口诀：把主语从「我会死」换成「我要活」——用词决定身体走向。</p>
+<p><b>The Magic is in me—the Magic is in me. ——魔法在我身上——魔法在我身上。</b>应用口诀：先认真试，魔法才肯被你借走。</p>
+<p><b>Where you tend a rose, my lad, A thistle cannot grow ——种玫瑰处不生蓟草。</b>应用口诀：戒坏习惯靠种玫瑰——蓟草不是被拔掉，是没了位置。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://www.gutenberg.org/ebooks/113" target="_blank" rel="noopener">The Secret Garden · Project Gutenberg</a><span>佐证：公版英文全文，与双语对照精读。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Secret_Garden" target="_blank" rel="noopener">The Secret Garden · Wikipedia</a><span>佐证：创作史（连载到全本）与「magic」的解读谱系。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Frances_Hodgson_Burnett" target="_blank" rel="noopener">Frances Hodgson Burnett · Wikipedia</a><span>延伸：作者生平与她的花园原型。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Horticultural_therapy" target="_blank" rel="noopener">Horticultural therapy · Wikipedia</a><span>延伸：园艺疗法词条——本书被引用的现代科学注脚。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《秘密花园》 ｜ 英文与中文均逐字录自外研社双语读库（陈子博 卫昱译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

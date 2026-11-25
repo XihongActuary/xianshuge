@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1090" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="动物农场思维导图">
+  <path d="M 200 545 C 250 545, 258 82, 316 82" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 82 C 556 82, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 82 C 556 82, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 545 C 250 545, 258 242, 316 242" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 242 C 556 242, 566 190, 596 190" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 242 C 556 242, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 242 C 556 242, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 545 C 250 545, 258 402, 316 402" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 402 C 556 402, 566 376, 596 376" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 402 C 556 402, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 545 C 250 545, 258 562, 316 562" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 562 C 556 562, 566 510, 596 510" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 562 C 556 562, 566 562, 596 562" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 562 C 556 562, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 545 C 250 545, 258 748, 316 748" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 748 C 556 748, 566 696, 596 696" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 748 C 556 748, 566 748, 596 748" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 748 C 556 748, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 545 C 250 545, 258 960, 316 960" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 960 C 556 960, 566 882, 596 882" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 960 C 556 960, 566 934, 596 934" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 960 C 556 960, 566 986, 596 986" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 960 C 556 960, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="497" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="523" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">动物农场</text>
+  <text x="115" y="543" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Animal Farm</text>
+  <text x="115" y="565" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">革命的完整档案</text>
+  <text x="115" y="581" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">A Complete Archive of the Revolution</text>
+  <rect x="316" y="58" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="80" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">第一幕 · 革命诞生</text>
+  <text x="422" y="98" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Act I · The Revolution</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">老麦哲的演讲</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Old Major's Speech</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">起义与七诫</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The Rebellion &amp; the Seven Commandments</text>
+  <rect x="316" y="218" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="240" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">第二幕 · 日常阴影</text>
+  <text x="422" y="258" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Act II · Shadows of Routine</text>
+  <circle cx="602" cy="190" r="4" fill="#7fa8c9"/>
+  <text x="618" y="189" font-size="15" fill="#cfc6b2">双星与识字班</text>
+  <text x="618" y="206" font-size="11" font-style="italic" fill="#8fa3b8">Rival Stars &amp; the Reading Class</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">首例特权 · 牛奶苹果</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">First Privilege · Milk &amp; Apples</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">牛棚大战</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Battle of the Cowshed</text>
+  <rect x="316" y="378" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="400" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">第三幕 · 驱逐风车</text>
+  <text x="422" y="418" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Act III · Exile &amp; Windmill</text>
+  <circle cx="602" cy="376" r="4" fill="#a3c98a"/>
+  <text x="618" y="375" font-size="15" fill="#cfc6b2">九条狗出场</text>
+  <text x="618" y="392" font-size="11" font-style="italic" fill="#8fa3b8">Enter the Nine Dogs</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">风车与劳役</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Windmill &amp; Drudgery</text>
+  <rect x="316" y="538" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="560" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">第四幕 · 恐怖背叛</text>
+  <text x="422" y="578" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Act IV · Terror &amp; Betrayal</text>
+  <circle cx="602" cy="510" r="4" fill="#c98a8a"/>
+  <text x="618" y="509" font-size="15" fill="#cfc6b2">大清洗</text>
+  <text x="618" y="526" font-size="11" font-style="italic" fill="#8fa3b8">The Great Purge</text>
+  <circle cx="602" cy="562" r="4" fill="#c98a8a"/>
+  <text x="618" y="561" font-size="15" fill="#cfc6b2">木材交易 · 假钞</text>
+  <text x="618" y="578" font-size="11" font-style="italic" fill="#8fa3b8">Timber Deal &amp; Counterfeit Notes</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">风车之战</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Battle of the Windmill</text>
+  <rect x="316" y="724" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="746" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">第五幕 · 猪人合流</text>
+  <text x="422" y="764" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Act V · Pigs Become Men</text>
+  <circle cx="602" cy="696" r="4" fill="#b39ac9"/>
+  <text x="618" y="695" font-size="15" fill="#cfc6b2">鲍克瑟之死</text>
+  <text x="618" y="712" font-size="11" font-style="italic" fill="#8fa3b8">Boxer's Death</text>
+  <circle cx="602" cy="748" r="4" fill="#b39ac9"/>
+  <text x="618" y="747" font-size="15" fill="#cfc6b2">用后腿走路</text>
+  <text x="618" y="764" font-size="11" font-style="italic" fill="#8fa3b8">Walking on Hind Legs</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">庄园农场改回</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Manor Farm Restored</text>
+  <rect x="316" y="936" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="958" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">主题象征</text>
+  <text x="422" y="976" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">Themes &amp; Symbols</text>
+  <circle cx="602" cy="882" r="4" fill="#d9c98a"/>
+  <text x="618" y="881" font-size="15" fill="#cfc6b2">权力的异化</text>
+  <text x="618" y="898" font-size="11" font-style="italic" fill="#8fa3b8">Alienation of Power</text>
+  <circle cx="602" cy="934" r="4" fill="#d9c98a"/>
+  <text x="618" y="933" font-size="15" fill="#cfc6b2">语言即权力</text>
+  <text x="618" y="950" font-size="11" font-style="italic" fill="#8fa3b8">Language Is Power</text>
+  <circle cx="602" cy="986" r="4" fill="#d9c98a"/>
+  <text x="618" y="985" font-size="15" fill="#cfc6b2">等级的重建</text>
+  <text x="618" y="1002" font-size="11" font-style="italic" fill="#8fa3b8">Hierarchy Rebuilt</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">劳动被出卖</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Labor Betrayed</text>
+</svg>

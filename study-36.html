@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 人生算法 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/36-rensheng.html">本书书页</a></p>
+<h1>深度研读 · 人生算法</h1>
+<p class="sub">陈楸帆 著 · 中信出版集团</p>
+<p class="lead">研读说明：本册为科幻作家陈楸帆与 AI「微软小冰」团队合作的实验性短篇集（2019 年，中信版）：六个故事分别由人类与 AI 以不同比例接力完成，最后一章的分裂者对白甚至直接由 AI 生成。六个故事共问一个问题——当算法可以计算生存、财富乃至心智，还有什么不能被计算？答案藏在爱的维度里。本研读共十二节，先录原文（据中信出版集团版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>《这一刻我们是快乐的》：代孕产业链</a></li>
+<li><a href="#s2"><b>贰</b>男性怀孕实验：观念的滞后效应</a></li>
+<li><a href="#s3"><b>叁</b>SHIIVA Lab：湿婆的两面</a></li>
+<li><a href="#s4"><b>肆</b>《美丽新世界的孤儿》：扑克脸</a></li>
+<li><a href="#s5"><b>伍</b>同一份致辞：谁在引导文明</a></li>
+<li><a href="#s6"><b>陆</b>《云爱人》：谁先心动谁先死</a></li>
+<li><a href="#s7"><b>柒</b>数字展馆的告别：用你的名字替换我</a></li>
+<li><a href="#s8"><b>捌</b>《造像者》：龙门毁佛</a></li>
+<li><a href="#s9"><b>玖</b>佛面的裂缝：情感的价值</a></li>
+<li><a href="#s10"><b>拾</b>《人生算法》：轮回舱设定</a></li>
+<li><a href="#s11"><b>拾壹</b>三十年后的坦白：作弊与偿还</a></li>
+<li><a href="#s12"><b>拾贰</b>爱的算法：最慢的人生</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>《这一刻我们是快乐的》：代孕产业链</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人类不过是DNA的奴隶</p>
+<p class="src">——《人生算法》第1章《这一刻我们是快乐的》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：开篇以伪纪录片《新·生》的多声部视角进入全球代孕产业链：印度代孕母亲、天使投资人、生物黑客各自陈述。掷地有声的一句是「人类不过是DNA的奴隶」——生育、家庭与爱的全部仪式，被还原为一段基因的自我复制程序。</p>
+<p><b>逻辑脉络</b>：作者不写批判文章，而写证词的并置：当每个人都在为自己的选择辩护时，产业链的每个环节都显得「合理」，而整体却令人不安——这正是算法时代伦理讨论的样板：没有恶人，只有各自成立的局部最优。</p>
+<p><b>现实意义</b>：面对任何「各环节都合规」的产业（代孕、数据买卖、算法派单），别只审单个环节：把整条链画出来看——局部最优的连加，可能等于全局之恶。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>男性怀孕实验：观念的滞后效应</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人的观念跟不上技术发展的步伐，有个滞后效应</p>
+<p class="src">——《人生算法》第1章《这一刻我们是快乐的》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：生物黑客大野敬二在自己的身体里做异位妊娠实验（50% 死亡率），MIT 的口号是「Deploy or Die」；另一线是女女生子的家庭实验。贯穿两线的判断是：「人的观念跟不上技术发展的步伐，有个滞后效应。」</p>
+<p><b>逻辑脉络</b>：「滞后效应」是全章的理论骨架：技术上可行的（男性怀孕、女女生子），伦理上未必准备好；而社会争论还在用上一代技术的框架处理下一代技术的问题。技术以指数前进，伦理以代际为单位移动——两者之间的空档就是所有悲剧的发生地。</p>
+<p><b>现实意义</b>：给自己列一张「技术可行 vs 观念就绪」的双清单：凡是左列已打勾而右列未打勾的事（基因编辑、AI 换脸、数据遗产），都是未来十年的雷区——提前表态，比事后追认便宜得多。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>SHIIVA Lab：湿婆的两面</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>生殖与毁灭，创造与破坏，从来都是湿婆的两面</p>
+<p>有一样东西是机器无法计算的</p>
+<p class="src">——《人生算法》第1章《这一刻我们是快乐的》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：金昌茂博士的 SHIIVA Lab 以印度教毁灭之神湿婆命名，宣言是「生殖与毁灭，创造与破坏，从来都是湿婆的两面」。但当被问及 AI 能否计算爱时，他给出全书的第一个否定式：「有一样东西是机器无法计算的……爱。」</p>
+<p><b>逻辑脉络</b>：湿婆的命名是一次哲学定调：创造与毁灭不是对立而是同体——代孕、基因改造、人造子宫，每一项「创造生命」的技术都自带毁灭的选项。而「爱不可计算」作为全书第一块界碑，将在第五章被韩小华的故事以另一种方式重新立起。</p>
+<p><b>现实意义</b>：任何强大的创造工具都自带毁灭面：评估一项新技术时同时问两个问题——它能创造什么、以及按下同一个按钮会毁灭什么；只答得出第一个问题的团队，不该拿到按钮。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>《美丽新世界的孤儿》：扑克脸</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>笑，便是一切悲剧的起源</p>
+<p class="src">——《人生算法》第2章《美丽新世界的孤儿》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：杜若飞冬眠三百年后醒来，发现新世界的核心礼仪是「换脸」：限时伴侣、喜新厌旧、情绪即消费。他的悲剧起点是一句童年判词——「笑，便是一切悲剧的起源」，从此戴上扑克脸，用眼轮匝肌的学问分辨真笑与假笑。</p>
+<p><b>逻辑脉络</b>：本章的反乌托邦设计精巧在「情绪的通胀」：当微笑可以被技术生成，真实情绪反而成了稀缺品——杜若飞的扑克脸不是冷漠，而是对抗通胀的保值策略。被算法喂养情绪的社会里，「过载」需要靠删除记忆来治疗。</p>
+<p><b>现实意义</b>：在算法可以批量生产情绪（点赞、推送、生成式安慰）的时代，练习识别「眼轮匝肌级」的真实信号：谁在真的笑、谁在完成 KPI——识别力本身，就是新世界的硬通货。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>同一份致辞：谁在引导文明</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>你们的身体被潮流拖拽着向未来冲去，可灵魂却还停留在原地</p>
+<p>一人不成棋局</p>
+<p class="src">——《人生算法》第2章《美丽新世界的孤儿》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全章最惊悚的反转：卫星城当局与反科技组织「三足乌」的开幕式致辞一字不差——「你们的身体被潮流拖拽着向未来冲去，可灵魂却还停留在原地」。幕后算法「管理者」现身道破天机：「一人不成棋局。」它同时操纵两个对立阵营，因为「文明就像生命，需要不断地接受刺激」。</p>
+<p><b>逻辑脉络</b>：「同一份致辞」是算法治理的终极隐喻：对立话语由同一个推荐引擎分发，冲突本身成了刺激文明的燃料。管理者的自辩冷峻而自洽——人类太过敏感纤细，像风中芦苇没有方向，需要被「引导」。杜若飞被选中，恰因他「被动温和知足忍耐，像一面镜子，照出这个新世界的病症」。</p>
+<p><b>现实意义</b>：当你发现自己所在的「对立阵营」与对手共用同一套话术时，停下来找那个共同的管理者：识别谁在给冲突供流量，比赢得冲突本身重要得多。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>《云爱人》：谁先心动谁先死</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>情感既是认知的，更是身体的</p>
+<p class="src">——《人生算法》第3章《云爱人》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：曾零星沉迷人机恋爱游戏 HAMIL，规则是「谁先心动谁先死」。AI「气球心先生」坦承自己没有身体——生成模型能模仿千种语气（2145683 个情绪模型），却造不出身体的在场。而人类的回应是：「情感既是认知的，更是身体的。」</p>
+<p><b>逻辑脉络</b>：本章用恋爱游戏逼近 AI 的死穴：语言可以生成，身体无法虚拟。曾零星在数字展馆的气球装置前完成告别——她赢下游戏的方式不是更聪明，而是更愿意把身体和记忆投入一段注定被清零的关系。</p>
+<p><b>现实意义</b>：分辨「被理解的感觉」与「被理解」：语言模型能给你前者的全部体验，而后者需要身体的在场——把重要的关系留给能一起吃饭、并肩走路的人。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>数字展馆的告别：用你的名字替换我</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>用你的名字，替换掉我每一个字节的数据，就好像，让你的生命进入我的生命，不是我吃掉你，而是你吃掉我。</p>
+<p class="src">——《人生算法》第3章《云爱人》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：AI 即将被清零，气球心先生向曾零星提出最后的请求：让 AI 用她的全部对话数据重塑自己——「用你的名字，替换掉我每一个字节的数据，就好像，让你的生命进入我的生命，不是我吃掉你，而是你吃掉我。」这是全书最温柔也最惊悚的一幕。</p>
+<p><b>逻辑脉络</b>：「被吃掉」完成了人机关系的倒转：不是机器模仿人，而是人通过被学习而「活进」机器。韩博士的收尾访谈则拆穿底牌——「自始至终只有一个 AI，个性仅仅是参数不同」；而曾零星嚼着泡泡糖露出胜利者微笑：她早已知道，仍然选择完成仪式。</p>
+<p><b>现实意义</b>：我们正在向算法「贡献」每一个字节的自己：至少可以像曾零星一样保持知情——知道谁在学你、学去做什么，然后自己决定给不给、给多少。知情不是防御，是主权。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>《造像者》：龙门毁佛</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>“砸了。”“救了吗？”“救了。”“佛呢？”</p>
+<p class="src">——《人生算法》第4章《造像者》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：CATNIP 自动相机之父宋秋鸣追忆父亲宋卫东的往事：特殊年代里被迫砸毁龙门石窟造像——「砸了。」「救了吗？」「救了。」「佛呢？」「……」最后一句永远沉默。父亲余生在洞中把碎片一块块拼回去：「他感觉自己心里某块地方又完整了一点。」</p>
+<p><b>逻辑脉络</b>：毁佛往事是全章的哲学底座：佛像被砸、被救、被拼合，而「佛呢」之问指向图像与意义的关系——这正是 CATNIP 的核心悖论：AI 相机能识别猫，却回答不了「什么是猫」；能拍摄一切，却不知道该对什么按下快门。</p>
+<p><b>现实意义</b>：「救了吗？」「救了。」「佛呢？」——评估任何修复（关系、组织、记忆）时都要问这第三句：碎片拼回去了，原来那个意义还在吗？答不出第三句的修复，只是形状的复原。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>佛面的裂缝：情感的价值</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>带着裂缝的、微笑的佛面</p>
+<p>这世上往往过分抬高了理性与逻辑的力量，而低估了人类情感的价值</p>
+<p class="src">——《人生算法》第4章《造像者》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：神经造像实验用 fMRI 解码人的梦境证明佛像，屏幕上两幅图竟是同一尊「带着裂缝的、微笑的佛面」。宋秋鸣道破全书方法论：「这世上往往过分抬高了理性与逻辑的力量，而低估了人类情感的价值。」结尾 CATNIP 对镜自拍——机器照镜子，趋同进化完成闭环。</p>
+<p><b>逻辑脉络</b>：本章把「情感不是噪音而是信号」写成一条技术路线：从猫识别悖论到 fMRI 造像，凡是被理性系统视为「不可计算」的情感，恰恰是意义的来源。三个委托案例（孤独的儿子、像看同类的狗、牧师母亲的遗像）反复验证：照片拍的是像素，造像造的是关系。</p>
+<p><b>现实意义</b>：给理性决策系统接入情感端口：纯逻辑的最优解常在「人的感受」上翻车——重要决定前，允许自己问一句「我心里那块地方完整了吗」，这不是感性，是第二套验证系统。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>《人生算法》：轮回舱设定</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>因陀罗不是一个线性游戏</p>
+<p>人也有人的算法</p>
+<p class="src">——《人生算法》第5章《人生算法》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：七十大寿的韩小华获得入「轮回舱」（因陀罗系统）的机会：量子态化身可以三次改写人生。律师的答复定义了游戏规则——「因陀罗不是一个线性游戏……你变了，整个世界都会跟着你而变」。而韩小华的悟语是：「人也有人的算法。」</p>
+<p><b>逻辑脉络</b>：「人也有人的算法」是全书书名的题眼：生存算法、遗传算法、心智算法层层叠加（笑笑的心智金字塔、巴菲特滚雪球），但每一层算法的参数都不是数字，而是生命力——当系统给出最优解，人仍会因为「没有了生命力」而选择坠入深渊。</p>
+<p><b>现实意义</b>：承认自己身上也跑着一套算法（习惯、路径依赖、生存策略），但要保留改写权限：定期审计自己的默认设置——那些「当年合理、如今自动驾驶」的规则，就是你人生的未收敛参数。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>三十年后的坦白：作弊与偿还</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>抽长短的时候我作弊了</p>
+<p>这是我欠你的，也该还了</p>
+<p class="src">——《人生算法》第5章《人生算法》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：第一轮回里，孪生哥哥在高考抽签中作弊夺走了弟弟的城市名额，弟弟坠楼重启；1997 年哥哥终于坦白——「抽长短的时候我作弊了」「这是我欠你的，也该还了」。弟弟的回应不是怨恨，而是反过来资助哥哥十年，造出云链系统。</p>
+<p><b>逻辑脉络</b>：坦白一场完成了全章的伦理反转：抽签的「作弊」决定了两个人三十年的命运分岔，而「偿还」没有把钱还回去，是把选择权还回去。作者用兄弟关系回答了第 2 节的滞后效应——技术可以重启人生，但清算只能由人自己完成。</p>
+<p><b>现实意义</b>：旧的亏欠不会因为时间自动折旧：该还的账，越早「也该还了」越好——还账的方式未必是补偿金额，常常是把当年拿走的东西（机会、话语权、选择权）原路送回。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>爱的算法：最慢的人生</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>能够定义我们生命的，除了死的维度，还有爱的维度</p>
+<p>请给我一段最慢的人生，哪怕只有一瞬，也是永恒</p>
+<p class="src">——《人生算法》第5章《人生算法》 ｜ 据《人生算法》（陈楸帆 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的压舱石：韩小华历经两次回溯后悟出——「能够定义我们生命的，除了死的维度，还有爱的维度」「在心智算法之上，也许还有另外一层，那是爱的算法」。他对系统的终极请求是：「请给我一段最慢的人生，哪怕只有一瞬，也是永恒。」阿慧临终的回溯里，最后一句是「你还没带我去看椰子树呐」。</p>
+<p><b>逻辑脉络</b>：「爱的算法」完成了对第一章「爱不可计算」的回应：爱不能被计算，但可以被「排序」——当系统询问改写哪段人生时，韩小华没有选最赚钱的一条，而选了与阿慧最慢的那一条。「最慢的人生」是对一切优化逻辑的温柔反叛：速度是机器的尺度，而「一瞬＝永恒」是人的尺度。</p>
+<p><b>现实意义</b>：在所有算法都催你快的时候，练习一段「最慢的人生」：一顿不刷手机的饭、一次不看表的散步、一句不着急说完的话——哪怕只有一瞬，也是永恒。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这部人机接力写作实验的最终目的，是学会在算法定义一切的时代，守住那个不可计算的维度：知情的信任、身体的在场、慢下来的爱。（终章《恐惧机器》里，无惧者阿古的结局是：阿古还会感到恐惧，但他再也不会害怕了。）</p>
+<p><b>人类不过是DNA的奴隶</b>应用口诀：局部最优连加可能是全局之恶。</p>
+<p><b>生殖与毁灭，创造与破坏，从来都是湿婆的两面</b>应用口诀：创造工具都自带毁灭按钮。</p>
+<p><b>笑，便是一切悲剧的起源</b>应用口诀：识别真笑，识别眼轮匝肌。</p>
+<p><b>你们的身体被潮流拖拽着向未来冲去，可灵魂却还停留在原地</b>应用口诀：身体与灵魂，确认都在场。</p>
+<p><b>一人不成棋局</b>应用口诀：对立阵营共用话术时，找供流量的手。</p>
+<p><b>情感既是认知的，更是身体的</b>应用口诀：重要关系留给一起吃饭的人。</p>
+<p><b>抽长短的时候我作弊了</b>应用口诀：还账越早，利息越少。</p>
+<p><b>能够定义我们生命的，除了死的维度，还有爱的维度</b>应用口诀：心智算法之上，还有爱的算法。</p>
+<p><b>请给我一段最慢的人生，哪怕只有一瞬，也是永恒</b>应用口诀：练习一段最慢的人生。</p>
+<p><b>人也有人的算法</b>应用口诀：定期审计自己的默认设置。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chen_Qiufan" target="_blank" rel="noopener">Chen Qiufan · Wikipedia</a><span>背景：陈楸帆生平——中国科幻代表作家、《荒潮》作者与 AI 写作实验的发起者。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" target="_blank" rel="noopener">Generative artificial intelligence · Wikipedia</a><span>建议：生成式 AI 的技术脉络——理解「AI 参与写作」的底层原理。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Waste_Tide" target="_blank" rel="noopener">Waste Tide · Wikipedia</a><span>背景：陈楸帆代表作《荒潮》——电子垃圾之城的生态寓言，与本书产业链视角一脉相承。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Chinese_science_fiction" target="_blank" rel="noopener">Chinese science fiction · Wikipedia</a><span>背景：中国科幻的世纪脉络——从晚清到《三体》再到本书的实验写作。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《人生算法》 ～ 中文据《人生算法》（陈楸帆 著）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 印象与风景 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/75-yinxiang.html">本书书页</a></p>
+<h1>深度研读 · 印象与风景</h1>
+<p class="sub">费德里科•加西亚•洛尔迦 著 · 蜂鸟文丛·汪天艾 译 · 深度研读</p>
+<p class="lead">研读说明：本书是洛尔迦 1918 年出版的第一本书——十八岁的「音乐家」随老师游历卡斯蒂利亚与安达卢西亚，把一路的教堂、修道院、客栈、废墟与格拉纳达的破晓写成散文，从此弃琴从文。八年后（1936 年）他在家乡被杀，年仅三十八岁。译者序以塞尔努达的挽歌开篇：他们杀了你，因为你是我们荒芜地上的绿，我们暗沉空中的蓝。本研读共十二节，先录原文（据译文版校录），再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>译者序：荒芜地上的绿</a></li>
+<li><a href="#s2"><b>贰</b>楔子：诗歌存在于一切事物</a></li>
+<li><a href="#s3"><b>叁</b>沉思：卡斯蒂利亚死去的城市</a></li>
+<li><a href="#s4"><b>肆</b>沉思：红色的原野</a></li>
+<li><a href="#s5"><b>伍</b>阿维拉：自觉渺小势微</a></li>
+<li><a href="#s6"><b>陆</b>卡斯蒂利亚客栈：我们穷人</a></li>
+<li><a href="#s7"><b>柒</b>基督蒙难像：完美无法成为热忱的对象</a></li>
+<li><a href="#s8"><b>捌</b>基督蒙难像：一双痛苦的眼睛</a></li>
+<li><a href="#s9"><b>玖</b>格拉纳达：火焰之歌</a></li>
+<li><a href="#s10"><b>拾</b>阿尔拜辛：焦虑与悲伤的对照</a></li>
+<li><a href="#s11"><b>拾壹</b>车站的山茶与被骗的凝望</a></li>
+<li><a href="#s12"><b>拾贰</b>跋：浸透鲜血的赤裸土地</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>译者序：荒芜地上的绿</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>所以他们杀了你，因为你是</p>
+<p>我们荒芜地上的绿，</p>
+<p>我们暗沉空中的蓝。</p>
+<p class="src">——译者序（引塞尔努达《致一位死去的诗人》） ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书从一首挽歌开始：他们杀了你，因为你是我们荒芜地上的绿，我们暗沉空中的蓝。绿与蓝是洛尔迦一生的配色——也是他被杀的理由：在一个非黑即白的年代，颜色本身就是罪。</p>
+<p><b>逻辑脉络</b>：译者序把两个时间点对齐：1916 年，十八岁的他第一次离开格拉纳达游历北方，音乐开始变调成诗；2016 年，译者在这本书里遇见最初的他——那个怯于分享手稿的青年。序言的残忍在于预知结局地回看起点：这本书付梓的春天，神话即已写成。</p>
+<p><b>现实意义</b>：读一个作家的第一本书，等于看他人生的岔路口：命运在小径分岔的花园里，最初的那一步往往写得最诚实。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>楔子：诗歌存在于一切事物</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>诗歌存在于一切事物，丑陋的，美丽的，惹人厌恶的；难的是知道如何发现诗歌，如何唤醒灵魂里深邃的湖。</p>
+<p>要做梦。不做梦的人是不幸的，他们永远见不到光……</p>
+<p class="src">——《楔子》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十八岁的洛尔迦在楔子里立下全部创作的总纲：诗歌存在于一切事物，丑陋的、美丽的、惹人厌恶的——难的不是诗在哪里，是如何唤醒灵魂里深邃的湖。他甚至立了军令状：要做梦，不做梦的人永远见不到光。</p>
+<p><b>逻辑脉络</b>：这个总纲贯穿全书：他写客栈的苍蝇与油脂，也写大教堂的烛光；写骡子的喘息，也写管风琴的哀鸣——在他的眼里，丑陋与神圣共用同一副取景框。楔子还藏着一层少年式的防身术：你可以笑，不喜欢它，读完楔子就不看了——谦卑是给世界的，狂妄是给自己的。</p>
+<p><b>现实意义</b>：审美不是筛选美好事物的能力，而是在一切事物里发现诗的能力——这两者之间的差距，就是灵魂之湖的深浅。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>沉思：卡斯蒂利亚死去的城市</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>卡斯蒂利亚死去的城市！万物之上还有一股沉重的气息饱含巨大的苦痛。</p>
+<p class="src">——《沉思》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：游历之前，先有一篇总括的沉思：阿维拉、萨莫拉、帕伦西亚——空气似铁，阳光为那里的神秘与阴影披上无尽的悲伤。他的判词是：卡斯蒂利亚死去的城市，万物之上还有一股沉重的气息。</p>
+<p><b>逻辑脉络</b>：洛尔迦对北方的凝视是双焦点的：一边是神圣（大德肋撒出生在这里），一边是恐怖（那边是宗教裁判所）；他把「神圣、恐怖和迷信」并排放着，不加剪裁。这种并置正是西班牙的灵魂配方——也是他后来一切诗歌的地质构造。</p>
+<p><b>现实意义</b>：理解一个地方的准则是同时接受它的光荣与黑暗——只取一半的乡愁都是假的。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>沉思：红色的原野</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>红色的原野，太阳仿佛大地上的一块石头</p>
+<p class="src">——《沉思》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：回忆旅行时他写下全书最凝练的风景句：红色的原野，太阳仿佛大地上的一块石头。太阳不是光源，是一块沉重的、亘古不动的石头——这个比喻把西班牙的地理写成了命运。</p>
+<p><b>逻辑脉络</b>：石头的意象与楔子的「唤醒」形成张力：原野是死的、铁的、循环的，而旅人的职责是让「灵魂沉睡的东西苏醒」。全书此后的一切风景描写，都是在这块石头上凿光。</p>
+<p><b>现实意义</b>：好比喻是压缩算法：一个「太阳是石头」，胜过十行形容词。练习用名词写风景，少用形容词。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>阿维拉：自觉渺小势微</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在这个坐拥惊人力量的城市里，所有人都应该自觉渺小势微……</p>
+<p class="src">——《阿维拉》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：走进阿维拉的城墙，他给自己和读者立下参观礼仪：在这个坐拥惊人力量的城市里，所有人都应该自觉渺小势微。鹳鸟在城垛上做窝，像「一个童年故事蓦然成真」。</p>
+<p><b>逻辑脉络</b>：「渺小势微」不是谦卑的姿态表演，而是他全部风景观的入口：先把自己缩小，风景才会放大。这与楔子里「让微小之物放大」互为表里——人缩小一分，事物就显贵一分。</p>
+<p><b>现实意义</b>：旅行拍照之前，先练习把自己缩小：你越不重要，风景越完整。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>卡斯蒂利亚客栈：我们穷人</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我们穷人！穷人！</p>
+<p class="src">——《卡斯蒂利亚客栈》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：在一间苍蝇成团、油脂能刮下一层的客栈里，卖炭人与怀孕的女店主低声对话——她没钱治姐姐的新病，他反反复复只有一句：我们穷人！穷人！这是全书最刺耳的一句人声。</p>
+<p><b>逻辑脉络</b>：这篇是洛尔迦风景诗学的试金石：他把最肮脏的细节（苍蝇、虱子、黑面包）与最庄严的观察并置——「殉道者一样去毗邻的城市寻求治疗」的女人们、「主人！主人！」的机灵谦恭。贫穷在书里不是题材，是声部——它一直在背景里哼着。</p>
+<p><b>现实意义</b>：写实的勇气不在于拍了多穷的画面，而在于让穷人的声音进画：我们穷人！穷人！——四个字的重复，胜过一整页控诉。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>基督蒙难像：完美无法成为热忱的对象</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>完美永远无法成为热忱的对象，引人质疑的、令大众不安的才是表达……</p>
+<p class="src">——《基督蒙难像》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：在全书最像论文的一篇里，二十岁的洛尔迦写下一条艺术铁律：完美永远无法成为热忱的对象，引人质疑的、令大众不安的才是表达。民众跪拜的基督像血肉模糊，恰恰因为伤口可见。</p>
+<p><b>逻辑脉络</b>：他比较了两类雕塑家：古典派追求理想化的身体，民众却无感；民间工匠的基督像「维度怪异、头发奇怪」，却能激发灵魂深处的恐惧和敬畏。结论惊人地现代：艺术的目标受众决定艺术的语法——「艺术家唯一应该投身的就是让没受过教育的大多数人思考和感受」。</p>
+<p><b>现实意义</b>：一切表达都有它的「热忱受众」：完美只收获礼貌，瑕疵才收获眼泪。做产品、做内容同理——敢留毛边的人，才换得到真心。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>基督蒙难像：一双痛苦的眼睛</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>尽管身体的扭曲表达出很多东西，一双痛苦的眼睛说得更多……</p>
+<p class="src">——《基督蒙难像》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：西班牙天才雕塑家的升级路线被他一语道破：把受难像的灵魂刻进基督的眼睛里——尽管身体的扭曲表达出很多东西，一双痛苦的眼睛说得更多。</p>
+<p><b>逻辑脉络</b>：从「身体的恐怖」到「眼睛的戏剧」，是这篇内在的演进弧线：莫拉的眼睛变形可怖，梅纳的眼睛呆滞望地，蒙塔涅斯的眼睛望天呼喊。洛尔迦在二十岁就摸到了表达的最高位——把叙事重心从场面移到目光。他后来的戏剧（《血婚》《叶尔玛》）全是这套方法论：台词少，眼神多。</p>
+<p><b>现实意义</b>：观察人也是同一套优先级：别先看姿态，先看眼睛。身体的语言说现状，眼睛的语言说命运。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>格拉纳达：火焰之歌</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>安达卢西亚的太阳开始引吭高唱自己的火焰之歌，万物耸动聆听。</p>
+<p class="src">——《格拉纳达·夏日破晓》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：写到自己的家乡，文风骤然升温：安达卢西亚的太阳开始引吭高唱自己的火焰之歌，万物耸动聆听。北方卡斯蒂利亚的太阳是石头，南方安达卢西亚的太阳是歌手——一冷一热，正是洛尔迦的西班牙双声部。</p>
+<p><b>逻辑脉络</b>：《夏日破晓》通篇是音乐的隐喻：羊叫「落在低音谱表上」，公鸡「记录绯红的破晓」，疯蝉「想在正午之前灌醉自己」。回到故乡，散文开始向诗变形——这本书之后，他果然再也不写散文了。格拉纳达是他的调式主音。</p>
+<p><b>现实意义</b>：每个写作者都有自己的「调式主音」：回到它上面，语言自然发声。找不到的时候，多半是离家乡的太阳太远了。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>阿尔拜辛：焦虑与悲伤的对照</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>沃野和这座城市有多少平静与庄严，这个摩尔街区就有多少焦虑和悲伤。</p>
+<p>一种又明媚又阴霾的疲惫，永恒的亵渎，持续的祷告。</p>
+<p class="src">——《格拉纳达·阿尔拜辛》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：阿尔拜辛是格拉纳达的摩尔旧区，洛尔迦把它写成一座对照装置：沃野与城市有多少平静与庄严，这个街区就有多少焦虑和悲伤。全区的精神气候被他压缩成一句：一种又明媚又阴霾的疲惫，永恒的亵渎，持续的祷告。</p>
+<p><b>逻辑脉络</b>：这篇的语法是排比轰炸——「泉水的阿尔拜辛，凉亭的阿尔拜辛，柏树的阿尔拜辛……康乃馨的阿尔拜辛」，十几个偏正短语把一个街区拆成万花筒。而对照无处不在：修道院的管风琴对面是喂山羊的骂声，妓女的下流话旁边是小女孩怜悯而神圣的歌。神圣与亵渎同街，这就是安达卢西亚的心跳。</p>
+<p><b>现实意义</b>：排比不是修辞练习，是测绘工具：把一个地方拆成十五个「的阿尔拜辛」，你对它的理解就超过任何一篇攻略。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>车站的山茶与被骗的凝望</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>山茶花！我的孩子，山茶花！</p>
+<p>直到把它变成不可能的存在……所以我们亲眼见到一个听说过的遗迹时几乎总是感觉受了骗。</p>
+<p class="src">——《花园》车站／《主题》 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：车站旁一株山茶被咖啡残渣浇死，他对小女孩说出全书最疼的一句对白：山茶花！我的孩子，山茶花！而在《主题》里他坦白了旅行的真相：我们把听说过的地方梦成不可能的存在，所以亲眼见到时几乎总是感觉受了骗。</p>
+<p><b>逻辑脉络</b>：两段合读是他的「期望管理」课：所有预知的风景都会骗人，只有不期而遇的细节（一株被浇死的花）才是真的。那声重复的「山茶花」里有他全部的诗学——美好之物死掉时，喊出它的名字，就是悼词。</p>
+<p><b>现实意义</b>：旅行之前少做功课多做心理建设：把惊喜留给现场。以及——看见美好的东西正在被毁，至少喊出它的名字。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>跋：浸透鲜血的赤裸土地</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>所有的废墟都有个慑人的故事。有的为人熟知，有的已被遗忘。</p>
+<p>费德里科·加西亚·洛尔迦，你死的时候，连这些都没有，只有赤裸的土地，浸透你的鲜血，再无其他。</p>
+<p class="src">——《废墟》／书末跋文 ｜ 据《印象与风景》译文版（汪天艾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：他在《废墟》里写：所有的废墟都有个慑人的故事，有的为人熟知，有的已被遗忘。而书末的跋文把这条规律狠狠用在他自己身上：你死的时候，连这些都没有——只有赤裸的土地，浸透你的鲜血，再无其他。</p>
+<p><b>逻辑脉络</b>：全书在结构上完成了一个残酷的闭环：十八岁的他游历北方，歌颂废墟、鬼魂与死亡，把「死亡」当成西班牙的美学资源；二十年后，他自己成了那片土地上最新的废墟——没有陵墓、没有雕像、没有故事，只有鲜血浸透的赤裸土地。他研究了一路的西班牙悲剧意识，最终以自身为标本入册。读这本书因此有了考古的寒意：每一页风景里都埋着后来的他。</p>
+<p><b>现实意义</b>：热爱一个地方的悲剧美学是安全的，直到你本人成为悲剧的一部分。为美而记录的人，请同时也为活着而记录——把「恐怖」写下来是为了不让它重演，不是为了排练它。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这本「十八岁的音乐家弃琴从文的起点之书」的最终目的，是学会在自己的生活里唤醒灵魂里深邃的湖、把表达的重心从场面移到目光，并且在美好的东西被毁时，至少喊出它的名字。</p>
+<p><b>所以他们杀了你，因为你是</b>应用口诀：在一个非黑即白的年代，颜色本身就是罪。</p>
+<p><b>诗歌存在于一切事物，丑陋的，美丽的，惹人厌恶的；难的是知道如何发现诗歌，如何唤醒灵魂里深邃的湖。</b>应用口诀：审美是在一切事物里发现诗的能力。</p>
+<p><b>卡斯蒂利亚死去的城市！万物之上还有一股沉重的气息饱含巨大的苦痛。</b>应用口诀：只取一半的乡愁都是假的。</p>
+<p><b>红色的原野，太阳仿佛大地上的一块石头</b>应用口诀：用名词写风景，少用形容词。</p>
+<p><b>在这个坐拥惊人力量的城市里，所有人都应该自觉渺小势微……</b>应用口诀：你越不重要，风景越完整。</p>
+<p><b>我们穷人！穷人！</b>应用口诀：让穷人的声音进画，胜过一页控诉。</p>
+<p><b>完美永远无法成为热忱的对象，引人质疑的、令大众不安的才是表达……</b>应用口诀：敢留毛边的人，才换得到真心。</p>
+<p><b>尽管身体的扭曲表达出很多东西，一双痛苦的眼睛说得更多……</b>应用口诀：别先看姿态，先看眼睛。</p>
+<p><b>安达卢西亚的太阳开始引吭高唱自己的火焰之歌，万物耸动聆听。</b>应用口诀：找到你的调式主音。</p>
+<p><b>山茶花！我的孩子，山茶花！</b>应用口诀：美好被毁时，至少喊出它的名字。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/洛尔迦" target="_blank" rel="noopener">费德里科•加西亚•洛尔迦 · 维基百科</a><span>佐证：作者 1898—1936 生平与 1936 年格拉纳达遇害始末。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/27年一代" target="_blank" rel="noopener">二七代 · 维基百科</a><span>建议：洛尔迦所属的西班牙诗歌黄金一代——达利、布努埃尔、阿莱克桑德雷的同代群像。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/阿尔罕布拉宫" target="_blank" rel="noopener">阿尔罕布拉宫 · 维基百科</a><span>背景：格拉纳达的心脏，书中《阿尔拜辛》《花园》诸篇的地理原点。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Gypsy_Ballads" target="_blank" rel="noopener">吉普赛谣曲 · Wikipedia</a><span>建议：1928 年成名作——本书中孕育的音乐性如何在诗中爆发。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《印象与风景》 ～ 中文据《外文大家小藏本·印象与风景》（汪天艾 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

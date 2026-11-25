@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 820" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="机器70年思维导图">
+  <path d="M 200 410 C 250 410, 258 68, 316 68" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 68 C 556 68, 566 49, 596 49" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 68 C 556 68, 566 87, 596 87" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 189, 316 189" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 189 C 556 189, 566 151, 596 151" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 189 C 556 189, 566 189, 596 189" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 189 C 556 189, 566 227, 596 227" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 310, 316 310" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 310 C 556 310, 566 291, 596 291" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 310 C 556 310, 566 329, 596 329" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 412, 316 412" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 412 C 556 412, 566 393, 596 393" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 412 C 556 412, 566 431, 596 431" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 514, 316 514" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 514 C 556 514, 566 495, 596 495" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 514 C 556 514, 566 533, 596 533" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 616, 316 616" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 616 C 556 616, 566 597, 596 597" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 616 C 556 616, 566 635, 596 635" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 410 C 250 410, 258 737, 316 737" fill="none" stroke="#8ac9c0" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 737 C 556 737, 566 699, 596 699" fill="none" stroke="#8ac9c0" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 737 C 556 737, 566 737, 596 737" fill="none" stroke="#8ac9c0" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 737 C 556 737, 566 775, 596 775" fill="none" stroke="#8ac9c0" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="36" y="376" width="164" height="68" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="118" y="404" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">机器70年</text>
+  <text x="118" y="430" text-anchor="middle" font-size="12.5" fill="#d9b26a" opacity="0.9">效率文明变革</text>
+  <rect x="316" y="49" width="212" height="38" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="74" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#d9b26a">重建 · 开篇</text>
+  <circle cx="602" cy="49" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">文明重建 · 效率对决</text>
+  <circle cx="602" cy="87" r="4" fill="#d9b26a"/>
+  <text x="618" y="93" font-size="15" fill="#cfc6b2">数字殖民 · 加速的技术</text>
+  <rect x="316" y="170" width="212" height="38" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="195" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#7fa8c9">势态 · 一章</text>
+  <circle cx="602" cy="151" r="4" fill="#7fa8c9"/>
+  <text x="618" y="157" font-size="15" fill="#cfc6b2">机器的生命体征</text>
+  <circle cx="602" cy="189" r="4" fill="#7fa8c9"/>
+  <text x="618" y="195" font-size="15" fill="#cfc6b2">摩尔定律失速</text>
+  <circle cx="602" cy="227" r="4" fill="#7fa8c9"/>
+  <text x="618" y="233" font-size="15" fill="#cfc6b2">夜不闭户 · 沉默的大多数</text>
+  <rect x="316" y="291" width="212" height="38" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="316" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#a3c98a">进退 · 二章</text>
+  <circle cx="602" cy="291" r="4" fill="#a3c98a"/>
+  <text x="618" y="297" font-size="15" fill="#cfc6b2">我们已被数字化</text>
+  <circle cx="602" cy="329" r="4" fill="#a3c98a"/>
+  <text x="618" y="335" font-size="15" fill="#cfc6b2">想象力 · 有机智慧体</text>
+  <rect x="316" y="393" width="212" height="38" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="418" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#c98a8a">接入 · 三章</text>
+  <circle cx="602" cy="393" r="4" fill="#c98a8a"/>
+  <text x="618" y="399" font-size="15" fill="#cfc6b2">保留精神 · 摆脱肉体</text>
+  <circle cx="602" cy="431" r="4" fill="#c98a8a"/>
+  <text x="618" y="437" font-size="15" fill="#cfc6b2">从 PC 到移动的鸿沟</text>
+  <rect x="316" y="495" width="212" height="38" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="520" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#b39ac9">预知 · 四章</text>
+  <circle cx="602" cy="495" r="4" fill="#b39ac9"/>
+  <text x="618" y="501" font-size="15" fill="#cfc6b2">注意力经济</text>
+  <circle cx="602" cy="533" r="4" fill="#b39ac9"/>
+  <text x="618" y="539" font-size="15" fill="#cfc6b2">分享 · 免费 · 社交化</text>
+  <rect x="316" y="597" width="212" height="38" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="622" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#d9c98a">数据 · 五六</text>
+  <circle cx="602" cy="597" r="4" fill="#d9c98a"/>
+  <text x="618" y="603" font-size="15" fill="#cfc6b2">数据资产定价</text>
+  <circle cx="602" cy="635" r="4" fill="#d9c98a"/>
+  <text x="618" y="641" font-size="15" fill="#cfc6b2">统计学家最稀缺</text>
+  <rect x="316" y="718" width="212" height="38" rx="9" fill="#8ac9c01f" stroke="#8ac9c0" stroke-width="1.4"/>
+  <text x="422" y="743" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#8ac9c0">争夺 · 七八</text>
+  <circle cx="602" cy="699" r="4" fill="#8ac9c0"/>
+  <text x="618" y="705" font-size="15" fill="#cfc6b2">权力崇拜 · 小小世界</text>
+  <circle cx="602" cy="737" r="4" fill="#8ac9c0"/>
+  <text x="618" y="743" font-size="15" fill="#cfc6b2">AI 诊疗 · 认知计算</text>
+  <circle cx="602" cy="775" r="4" fill="#8ac9c0"/>
+  <text x="618" y="781" font-size="15" fill="#cfc6b2">VR 与终端争夺</text>
+</svg>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 904" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="奥兰多思维导图">
+  <path d="M 200 452 C 250 452, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 268, 316 268" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 268 C 556 268, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 268 C 556 268, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 428, 316 428" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 428 C 556 428, 566 376, 596 376" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 428 C 556 428, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 428 C 556 428, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 614, 316 614" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 614 C 556 614, 566 562, 596 562" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 614 C 556 614, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 614 C 556 614, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 800, 316 800" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 800 C 556 800, 566 748, 596 748" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 800 C 556 800, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 800 C 556 800, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="404" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="430" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">奥兰多</text>
+  <text x="115" y="450" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Orlando</text>
+  <text x="115" y="472" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">四百年的传记</text>
+  <text x="115" y="488" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">A Biography Across Four Centuries</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">宫廷 · 初恋</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Court &amp; First Love</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">伊丽莎白召见</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">The Queen's Summons</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">萨沙与背叛</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Sasha &amp; Betrayal</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">大冰冻</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The Great Frost</text>
+  <rect x="316" y="244" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="266" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">东行 · 蜕变</text>
+  <text x="422" y="284" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">East &amp; Metamorphosis</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">君士坦丁堡大使</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Ambassador to Constantinople</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">变性之夜</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">The Change of Sex</text>
+  <rect x="316" y="404" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="426" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">流亡 · 时代</text>
+  <text x="422" y="444" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Exile &amp; Eras</text>
+  <circle cx="602" cy="376" r="4" fill="#a3c98a"/>
+  <text x="618" y="375" font-size="15" fill="#cfc6b2">吉普赛岁月</text>
+  <text x="618" y="392" font-size="11" font-style="italic" fill="#8fa3b8">With the Gipsies</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">维多利亚服饰</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Victorian Crinoline</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">评论家登场</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">The Critic Arrives</text>
+  <rect x="316" y="590" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="612" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">成诗 · 现代</text>
+  <text x="422" y="630" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">The Poem &amp; Modernity</text>
+  <circle cx="602" cy="562" r="4" fill="#c98a8a"/>
+  <text x="618" y="561" font-size="15" fill="#cfc6b2">谢尔默丁婚约</text>
+  <text x="618" y="578" font-size="11" font-style="italic" fill="#8fa3b8">Marriage to Shel</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">《橡树》出版</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">The Oak Published</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">大雷雨与自我们</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Storm of Selves</text>
+  <rect x="316" y="776" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="798" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">主题</text>
+  <text x="422" y="816" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Themes</text>
+  <circle cx="602" cy="748" r="4" fill="#b39ac9"/>
+  <text x="618" y="747" font-size="15" fill="#cfc6b2">身份=记忆+作品</text>
+  <text x="618" y="764" font-size="11" font-style="italic" fill="#8fa3b8">Identity as Memory</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">性别流动</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Sexual Fluidity</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">日常的小奇迹</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Little Daily Miracles</text>
+</svg>

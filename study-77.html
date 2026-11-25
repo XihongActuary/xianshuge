@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 地粮 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/77-diliang.html">本书书页</a></p>
+<h1>深度研读 · 地粮</h1>
+<p class="sub">纪德 散文诗 · 盛澄华 译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为纪德 1897 年出版的散文诗集，被奉为「不安的一代人的《圣经》」：献词引《古兰经》「我们地上的粮食正是这些果子」，正文分引言、八卷、颂歌（代尾声）与寄语——通篇对一位虚构读者「奈带奈蔼」说话，没有情节没有人物（纪德自己说「在这本书内根本就没有人物」）。开头与结尾各劝读者一次「抛开这书，去生活」。本研读共十二节，先录原文（据《外文大家小藏本·纪德集》，盛澄华 1942 年译，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>献词：果子</a></li>
+<li><a href="#s2"><b>贰</b>引言：跑到外面去</a></li>
+<li><a href="#s3"><b>叁</b>卷一：幸福醒来</a></li>
+<li><a href="#s4"><b>肆</b>卷二：粮食！我期待着你们</a></li>
+<li><a href="#s5"><b>伍</b>卷三：地名短章</a></li>
+<li><a href="#s6"><b>陆</b>卷四：果子之歌</a></li>
+<li><a href="#s7"><b>柒</b>卷五：农庄八扇门</a></li>
+<li><a href="#s8"><b>捌</b>卷六：林扣斯</a></li>
+<li><a href="#s9"><b>玖</b>卷七：窗与渡海</a></li>
+<li><a href="#s10"><b>拾</b>卷八：磷光</a></li>
+<li><a href="#s11"><b>拾壹</b>热诚与赤裸</a></li>
+<li><a href="#s12"><b>拾贰</b>寄语：再抛开一次</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>献词：果子</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我们地上的粮食正是这些果子</p>
+<p class="src">——献词（《古兰经》卷二章二三） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：献给友人莫里斯·基约的题词只有一句：「我们地上的粮食正是这些果子。——《古兰经》卷二章二三」——书名「地粮」由此而来。</p>
+<p><b>逻辑脉络</b>：粮食不在天国，在地上；不在来世，在眼前——这一句立起了全书的唯物神学：把经文的字句倒过来读，天堂的果子就是地上的果子。纪德 1947 年获诺贝尔文学奖。</p>
+<p><b>现实意义</b>：检验你的「粮食观」：你把好日子放在哪里？纪德的答案简单得刺眼——放在你能咬到的那一口上。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>引言：跑到外面去</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>而当你念完时，抛开这本书——跑到外面去！</p>
+<p class="src">——引言 ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书纲领只有一句：「而当你念完时，抛开这本书——跑到外面去！我愿它能给你这欲望：离开任何地点，离开你的故乡、你的家、你的居室、你的思想。别带走我这书。」</p>
+<p><b>逻辑脉络</b>：注意命令的完整版：不只离开地点，还要离开「你的思想」——纪德要人越狱的监狱包括自己脑子里的那间；1927 年原序里他承认，这是「与家庭决裂」年代的产物。「奈带奈蔼」是因不知读者真名而代取的名字。</p>
+<p><b>现实意义</b>：检验你读过的每一本书：它让你开始做了什么？如果答案是「读下一本书」，你还在船上，没上岸——书的使命是让书失效。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>卷一：幸福醒来</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我懒散的、长期昏睡的幸福醒来了……</p>
+<p>别希求在固定的地方找到神。万物都指神，无一能启示神。</p>
+<p class="src">——卷一（哈非士题词） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷一以波斯诗人哈非士的题词开场：「我懒散的、长期昏睡的幸福醒来了……」随后是全书的神学底线：「别希求在固定的地方找到神。万物都指神，无一能启示神。每种造物使我们与神远离，当我们的目光一固定在它身上。」</p>
+<p><b>逻辑脉络</b>：凝视即遮蔽——任何被固定凝视的对象都会变成偶像：这是《地粮》给一切「寻找」的人的警告。粮食的谱系来自东方的哈非士，不是希腊。</p>
+<p><b>现实意义</b>：盯得太紧的东西最先失真：目标、爱人、信仰都是。留下「不固定」的余地，万物才继续指路。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>卷二：粮食！我期待着你们</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>粮食！我期待着你们，粮食！我的饥饿不能半途而止：不满足总不甘休</p>
+<p class="src">——卷二 ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷二是全书最响亮的一章：「粮食！我期待着你们，粮食！我的饥饿不能半途而止：不满足总不甘休；道德无以助我只能借饥贫养育我的灵魂。满足！我探寻你们。你们绮丽如夏日之晨曦。」</p>
+<p><b>逻辑脉络</b>：「道德无以助我」——纪德直接把道德请出了粮食的餐桌：灵魂要靠饥饿喂养，不靠戒律喂养；紧接着的宣言是「我知道我的每一欲望已有它应得的回音」——欲望不是罪，是尚未兑现的感官权利。</p>
+<p><b>现实意义</b>：先恢复饿的能力，再谈吃什么：一个对什么都不饿的人，给他满桌粮食也是浪费。饥饿是能力，不是缺乏。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>卷三：地名短章</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>每一滴水，每一线光，每一生命，欢情地死去。</p>
+<p class="src">——卷三（菩该塞别墅） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷三以地名为标题一路南下：菩该塞别墅、罗马的花园、拿波利、突尼斯、翁夫勒……最动人的一句写在菩该塞：「每一滴水，每一线光，每一生命，欢情地死去。欢情！这词，我愿不断地反复提到它。」</p>
+<p><b>逻辑脉络</b>：「欢情地死去」——连消逝都要带着欢情：这是全书最接近哲学定义的一句，纪德的美学不是永恒，是强度。地理即精神地图：每一站都是一次感官的开学。</p>
+<p><b>现实意义</b>：连消逝都要带欢情：检验你结束一件事的方式——散场时的姿态，比开场时的排场更能定义你。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>卷四：果子之歌</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如今请歌无花果，夏美纳，因它的情爱蔽而不显。</p>
+<p class="src">——卷四（翡冷翠聚会） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷四是一场翡冷翠聚会：美那尔克自述、石榴之歌、无花果、病之旋曲——多声部的散文诗写成室内乐。夏美纳唱道：「如今请歌无花果，夏美纳，因它的情爱蔽而不显。」</p>
+<p><b>逻辑脉络</b>：「密室中自庆喜节；无香外泄。因未发散，香味成美味」——石榴与无花果都以果实自喻：外壳粗粝或平凡，内里甜蜜。美的价值在果肉，不在果皮。</p>
+<p><b>现实意义</b>：最深的甜不外泄：把自己最好的一部分收进「密室」，不是保守，是密度——散发越少的香味，留下的越浓。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>卷五：农庄八扇门</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>取出你的锁匙，一一地，给我打开每一扇门……</p>
+<p class="src">——卷五（多雨的诺曼底） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷五回到故乡诺曼底：「多雨的诺曼底；恬静的乡间……」农庄一章用锁匙串起全部空间：「取出你的锁匙，一一地，给我打开每一扇门……第一扇是仓库的门：唉！要是时间是忠实的话！」</p>
+<p><b>逻辑脉络</b>：与卷三的异域对照，卷五写的是根：纪德的翅膀上长着诺曼底的泥土——流浪与故乡不是对立的，同一种欲望的两个方向。每一扇门都是一种生活的邀请：故乡不是退路，是粮仓。</p>
+<p><b>现实意义</b>：「一一地」打开——体验的伦理是不许跳读：你生活里的房间，有几间从来没进去过？</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>卷六：林扣斯</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>生来为观看，矢志在守望。</p>
+<p>奈带奈蔼，我是钟楼的看守者林扣斯。</p>
+<p class="src">——卷六（歌德《浮士德》第二部题词） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷六题词直接引用歌德《浮士德》第二部：「生来为观看，矢志在守望。」随后「我」现身：「奈带奈蔼，我是钟楼的看守者林扣斯。长夜漫漫！从钟楼顶上，晨曦！我向你高呼，永不嫌太绚烂的晨曦！」</p>
+<p><b>逻辑脉络</b>：看守塔楼的人只看、只守——他不占有晨曦，只报知晨曦：这是全书最接近纪德自画像的一章——作家即守望者。重复的日出，次次都是第一次。</p>
+<p><b>现实意义</b>：看也是生活：不是每种价值都要变现。留一个不产出、只观看的岗位给自己——钟楼上的晨曦，只发给醒着的人。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>卷七：窗与渡海</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>唉！窗扉！多少次我的焦额印在你的玻璃上而得清凉</p>
+<p class="src">——卷七（渡海） ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷七渡海去非洲，热望的对象从粮食扩展到干渴与沙漠；失眠的夜里他向窗告白：「唉！窗扉！多少次我的焦额印在你的玻璃上而得清凉。」</p>
+<p><b>逻辑脉络</b>：窗是守望者的第二道具——隔着一层玻璃看世界：纪德诚实地承认，体验永远有中介。焦额印在玻璃上的凉意，是他给自己的体温计。</p>
+<p><b>现实意义</b>：体验隔着玻璃依然算数：不是所有经历都要「亲历才算」。承认中介的存在，反而让人诚实——重要的是你的额头有没有贴上去。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>卷八：磷光</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我们的动作依附着我们，正像磷光依附着磷。</p>
+<p class="src">——卷八 ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：卷八是全书的哲学重心：「我们的动作依附着我们，正像磷光依附着磷。它们耗尽我们，那是真的，但它们形成我们的光辉。而如果我们的灵魂称得上什么的话，那只因它比别一些人的灵魂燃烧得更热烈。」</p>
+<p><b>逻辑脉络</b>：磷光必须在黑暗中才可见——行为的光辉以耗损为燃料：纪德不悔其欲，但也不回避欲的账单；这一段的诚实，是全书不沦为鸡汤的全部秘密。</p>
+<p><b>现实意义</b>：怕耗尽的人最后什么也没剩下：磷在黑暗里的光，正是它烧掉的那部分自己。自由的账单与光辉是同一张收据。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>热诚与赤裸</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人都可能整个地赤裸；一切情绪都可能达到完满的境地。</p>
+<p class="src">——卷八 ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「奈带奈蔼，我将教给你热诚。宁过一种至情的生活，奈带奈蔼，而不求安息。」而热诚的方法论是：「人都可能整个地赤裸；一切情绪都可能达到完满的境地。」</p>
+<p><b>逻辑脉络</b>：「赤裸」指摆脱一切遮蔽的直接生活——不借礼仪、不借传统、不借别人的解释去感受；「忧郁只是消沉后的热诚」：纪德连忧郁都收编为燃料。</p>
+<p><b>现实意义</b>：给你的情绪做一次「脱衣检查」：哪些感受是被礼仪和惯性穿着的？脱掉之后剩下的，才是你的体温。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>寄语：再抛开一次</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>抛开我这书，千万对你自己说：这只是站在生活前千百种可能的姿态之一。</p>
+<p>觅取你自己的。</p>
+<p class="src">——寄语 ｜ 据《外文大家小藏本·纪德集》（盛澄华 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的收束与引言遥相呼应：「如果我给你把粮食取来，你不会感到饥饿；如果我给你把床铺就，你不会再有睡意。抛开我这书，千万对你自己说：这只是站在生活前千百种可能的姿态之一。觅取你自己的。」</p>
+<p><b>逻辑脉络</b>：「千百种可能的姿态之一」——一本书只是一种活法的样本；《地粮》被奉为「不安的一代人的《圣经》」，而它教的第一课就是：圣经也要扔。动词是「觅取」不是「接受」：粮食要自己摘。</p>
+<p><b>现实意义</b>：反教条的教条：把自己信的东西降格为样本之一，你才可能真的活成第二个人——谦逊到极致的狂妄，才是自由的语法。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷「地上的粮食」的最终目的，是学会在自己的生活里区分粮食与戒律、观看与占有、耗损与光辉，并且在读完任何一本书之后，敢对自己说一句：抛开这书，去生活。</p>
+<p><b>我们地上的粮食正是这些果子</b>应用口诀：好日子放在你能咬到的那一口上。</p>
+<p><b>而当你念完时，抛开这本书——跑到外面去！</b>应用口诀：书的使命是让书失效。</p>
+<p><b>我懒散的、长期昏睡的幸福醒来了……</b>应用口诀：醒来的第一天最重要。</p>
+<p><b>别希求在固定的地方找到神。万物都指神，无一能启示神。</b>应用口诀：凝视即遮蔽，留余地才看得见。</p>
+<p><b>粮食！我期待着你们，粮食！我的饥饿不能半途而止：不满足总不甘休</b>应用口诀：饥饿是能力，不是缺乏。</p>
+<p><b>每一滴水，每一线光，每一生命，欢情地死去。</b>应用口诀：散场时的姿态，定义你。</p>
+<p><b>如今请歌无花果，夏美纳，因它的情爱蔽而不显。</b>应用口诀：最深的甜不外泄。</p>
+<p><b>生来为观看，矢志在守望。</b>应用口诀：看也是生活。</p>
+<p><b>我们的动作依附着我们，正像磷光依附着磷。</b>应用口诀：怕耗尽的人，最后什么也没剩下。</p>
+<p><b>抛开我这书，千万对你自己说：这只是站在生活前千百种可能的姿态之一。</b>应用口诀：一本书只是一种活法，觅取你自己的。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Andr%C3%A9_Gide" target="_blank" rel="noopener">André Gide · Wikipedia</a><span>佐证：作者 1869—1951 生平，1947 年诺奖与「不安的一代」的精神谱系。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Les_Nourritures_terrestres" target="_blank" rel="noopener">Les Nourritures terrestres · Wikipedia</a><span>建议：1897 年原版与 1927 年原序的增补史——「与家庭决裂」的年代之作。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Goethe%27s_Faust" target="_blank" rel="noopener">Goethe's Faust · Wikipedia</a><span>背景：卷六林扣斯之歌的出处——《浮士德》第二部的守望者。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Counterfeiters_(Gide_novel)" target="_blank" rel="noopener">The Counterfeiters · Wikipedia</a><span>延伸：纪德唯一长篇《伪币制造者》——与《地粮》并读看他的两条路。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《地粮》 ～ 中文据《外文大家小藏本·纪德集》（盛澄华 译，1942 年译于城固）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

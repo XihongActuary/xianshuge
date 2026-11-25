@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 蜜月 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/83-mansfield.html">本书书页</a></p>
+<h1>深度研读 · 蜜月</h1>
+<p class="sub">曼斯菲尔德 短篇小说集 · 萧乾 文洁若 萧荔 译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为曼斯菲尔德《蜜月》（21 篇，1911–1922 年作），萧乾、文洁若、萧荔合译，文洁若译本序作于 1988 年作家百年诞辰，人文社 2017 年版据 Vintage Classics 1991 年版译出。她被称为「英语世界的契诃夫」，一生写 88 篇短篇，34 岁客死枫丹白露；她说自己「是一架照相机」。本研读共十二节，先录原文（据人民文学出版社版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>照相机宣言</a></li>
+<li><a href="#s2"><b>贰</b>没有妹妹</a></li>
+<li><a href="#s3"><b>叁</b>受罪的资格</a></li>
+<li><a href="#s4"><b>肆</b>小妞儿：心有多大</a></li>
+<li><a href="#s5"><b>伍</b>稚气却很自然</a></li>
+<li><a href="#s6"><b>陆</b>起风了</a></li>
+<li><a href="#s7"><b>柒</b>麻雀的童话</a></li>
+<li><a href="#s8"><b>捌</b>心理：失败的告白</a></li>
+<li><a href="#s9"><b>玖</b>启示：像风那样自由</a></li>
+<li><a href="#s10"><b>拾</b>航海：祖母的诗</a></li>
+<li><a href="#s11"><b>拾壹</b>一杯茶</a></li>
+<li><a href="#s12"><b>拾贰</b>蜜月：自由自在</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>照相机宣言</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我是一架照相机——一架自行选景的照相机，而我的选择取决于我对人生的态度。</p>
+<p>她打破了过去的小说简单地叙述故事的传统，为短篇小说创作开辟了新的途径。</p>
+<p class="src">——文洁若译本序（引曼斯菲尔德自述） ｜ 据《蜜月》（萧乾 文洁若 萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文洁若序引曼斯菲尔德自述：「我是一架照相机——一架自行选景的照相机，而我的选择取决于我对人生的态度。」序并总结她的文学史位置：「她打破了过去的小说简单地叙述故事的传统，为短篇小说创作开辟了新的途径。」</p>
+<p><b>逻辑脉络</b>：「自行选景」四个字是理解全书的钥匙：曼斯菲尔德不铺陈故事，只截取生活的底片——一次理发、一杯茶、一场风、一只麻雀——而选景角度本身，就是她的人生态度；契诃夫式的「无情节、重瞬息」经她移植进英语小说。</p>
+<p><b>现实意义</b>：人人都在「拍照」，差别只在选景：你今天的注意力镜头对准了什么（焦虑的头条，还是窗外的光），冲洗出来的就是什么人生——像她一样，做一架「自行选景」的相机。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>没有妹妹</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>胡扯，我没有妹妹。我的孩子是跟我的裁缝的女儿一道来的。</p>
+<p class="src">——《蜜月·男爵夫人的妹妹》结尾 ｜ 据《蜜月》（文洁若 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：小说里的社交圈争相传颂「男爵夫人的妹妹」如何优雅神秘，人人以见过她为荣；终于有人当面问起，男爵夫人尖声答道：「胡扯，我没有妹妹。我的孩子是跟我的裁缝的女儿一道来的。」——整个圈子的谈资原来建立在一场虚构之上。</p>
+<p><b>逻辑脉络</b>：这是曼斯菲尔德最轻快的讽刺小品：谣言的诞生、传播与破产全程无恶意——每个人只是添了一点点想象，圈子的虚荣便自动生产出一位「妹妹」。戳穿的那句话之所以响亮，因为它同时戳破了十几个人的体面。</p>
+<p><b>现实意义</b>：遇到「人人都见过、人人说得出细节」的人物与故事，先问一句源头在哪：社交叙事的闭环往往只需要一句「胡扯，我没有妹妹」就能检验——敢问的人，才有干净的信息。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>受罪的资格</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>啊，喔唷！任何人也不能指责我，说我不懂得什么叫作受罪。</p>
+<p class="src">——《蜜月·娃娃诞生的那一天》结尾 ｜ 据《蜜月》（萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：青年夫妇为「娃娃诞生的那一天」各怀心思：丈夫安德利亚宾兹尔在产房外的走廊里走了一夜，忍受着想象、恐惧与旁人的白眼；婴儿平安降生后，他疲惫而庄严地宣布：「啊，喔唷！任何人也不能指责我，说我不懂得什么叫作受罪。」</p>
+<p><b>逻辑脉络</b>：曼斯菲尔德把「受罪」的荣誉判给了走廊而不是产床：等待者的煎熬无人看见、无处诉说，却在婴儿啼哭的一刻被自动清零——这篇小说以喜剧口吻写出父职的原初体验：你先在走廊里长大成人，然后才成为父亲。</p>
+<p><b>现实意义</b>：向所有在「走廊」里等待的人致意：手术室外、考场外、面试外——他们的煎熬不写在结果里。也别忘了给自己的走廊之夜记一笔：那是没人发证章的成人礼。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>小妞儿：心有多大</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>耶稣干吗要造爸爸呀？</p>
+<p>好爸爸，你的心多大呀。</p>
+<p class="src">——《蜜月·小妞儿》 ｜ 据《蜜月》（萧乾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：发烧的小女孩凯基娅被父亲抱进怀里，她在半睡半醒中把电视里的「现在我要吃掉你」听岔了，哭问「耶稣干吗要造爸爸呀？」；父亲抱着她讲故事、轻拍安抚，最后她贴着他的胸口说：「噢，我的头贴在你胸口上哪，我听见它在跳。好爸爸，你的心多大呀。」</p>
+<p><b>逻辑脉络</b>：萧乾在本册附录《我爱〈小妞儿〉》里专门分析过这篇小说：全篇的张力建立在孩子的误会逻辑上——白天里威严的「爸爸」在她梦里是怪物，深夜里却成了心最大的人；曼斯菲尔德不解释和解，只让一只耳朵贴上一次心跳，敌意就完成了转化。</p>
+<p><b>现实意义</b>：「你的心多大呀」是对父职最朴素也最高的评价：孩子量的不是胸围，是你能装下她的恐惧而不发作的容量——成年人之间，这句话同样成立：谁的心能装下谁的坏情绪，谁就是谁的「好爸爸」。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>稚气却很自然</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人生就是这样的——稚气却很自然。</p>
+<p>花园里阴影幢幢——它们织出一张黑网，笼罩住农舍、树木、亨利和电报纸。</p>
+<p class="src">——《蜜月·稚气却很自然》 ｜ 据《蜜月》（文洁若 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：未婚妻贝丽尔与亨利在花园里有一场轻飘飘的调情，亨利笑言：「人生就是这样的——稚气却很自然。」当晚一封电报送到，亨利已在别处订婚；贝丽尔独自站在暮色里——「花园里阴影幢幢——它们织出一张黑网，笼罩住农舍、树木、亨利和电报纸」。</p>
+<p><b>逻辑脉络</b>：小说的结构是一支玩笑曲与一封电报的对位：白天「稚气却很自然」的轻快，入夜被七节歌谣式的咏叹压成阴影——曼斯菲尔德用光影切换完成审判：青春的天真不是错，错的是把天真当成了对冲一切风险的保单。</p>
+<p><b>现实意义</b>：「稚气却很自然」是人生的常态，但签名的电报总在日落后来：重要关系里，玩笑的边界要靠书面确认——别让最轻的那句话，替最重的后果背书。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>起风了</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>风啊——风。</p>
+<p class="src">——《蜜月·起风了》结尾 ｜ 据《蜜月》（萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：姐弟二人相依在风声大作的房子里：弟弟包济病着，姐姐守着他熬过一夜又一夜的风；包济说梦见风把一切都卷走，姐姐把毯子掖紧、把灯芯剪亮。全篇结尾只有一句：「风啊——风。」</p>
+<p><b>逻辑脉络</b>：这篇是曼斯菲尔德技法最纯的示范：没有事件，只有风声、灯光与两个人——风既是天气又是命运（史实注里，包济的人物原型三年后死于演习）；她把「叙事」缩到最小，把「气氛」放到最大，正是文洁若序里说的散文诗式的旋律。</p>
+<p><b>现实意义</b>：生活里也有只属于两个人的「风夜」：重要的不是风什么时候停，是屋里那盏灯有没有人管——危机时刻，把毯子掖紧、把灯芯剪亮的动作，比一切安慰的话语更像爱。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>麻雀的童话</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>想吃点儿啥，想吃点儿啥！</p>
+<p>但是已经太迟了。小男孩儿们又变成麻雀，抖翅飞去——飞得无影无踪，怎么叫也听不见了。</p>
+<p class="src">——《蜜月·郊区童话》结尾 ｜ 据《蜜月》（萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：郊区冬日，B 先生在冰冻的草坪上喂麻雀，一只麻雀突然变成小男孩，隔着窗户喊「想吃点儿啥，想吃点儿啥！」；B 先生端出面包牛奶，孩子们扑打着胳膊跳舞——可等 B 先生回到窗前，「但是已经太迟了。小男孩儿们又变成麻雀，抖翅飞去——飞得无影无踪，怎么叫也听不见了」。</p>
+<p><b>逻辑脉络</b>：童话的逻辑被曼斯菲尔德反用：不是魔法解除、皆大欢喜，而是善意迟到了一步——食物备好了，孩子已飞走。「怎么叫也听不见了」是全篇最冷的一句：她把社会援助的经典困境（善意总是晚于需要）写成了寓言。</p>
+<p><b>现实意义</b>：善意的有效期比善意本身重要：等你想好了形式、批好了预算，窗外的「小男孩」多半已变回麻雀——把帮助做成常态化的、不设门槛的，而不是仪式化的、需要排期的。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>心理：失败的告白</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>你伤了我的心！你伤了我的心！咱们失败了。</p>
+<p>你干吗不走！不，别走吧。留下。不——你走吧！</p>
+<p class="src">——《蜜月·心理》 ｜ 据《蜜月》（萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：一男一女作家相对而坐，彼此心里都翻涌着爱意，嘴上却始终谈着别人的作品与尴尬的玩笑；客人告辞后，女主人公在门厅里送上帽子手杖，心里同时响起两句话：「你伤了我的心！你伤了我的心！咱们失败了。」与「你干吗不走！不，别走吧。留下。不——你走吧！」</p>
+<p><b>逻辑脉络</b>：「心理」这篇独白剧是曼斯菲尔德的心理写实主义极致：体面的话说尽，真心一字未出口——门厅里那两句自相矛盾的内心呐喊，是所有「体面人」共同的双声带；她不审判谁，只把「错过的时机」这个人类通病放到显微镜下。</p>
+<p><b>现实意义</b>：「咱们失败了」往往不是败给感情本身，而是败给轮流让对方先开口的默契：重要的话，设一个期限——超过期限还没说出口的「留下」，就真的成了「你走吧」。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>启示：像风那样自由</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我自由了，我自由了！我像风那样自由！</p>
+<p>不，不，她不属于任何人，只属于生命。</p>
+<p class="src">——《蜜月·启示》 ｜ 据《蜜月》（萧荔 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：莫妮卡婚后第三年，在一个「狂诞的白色的清晨」突然觉醒，对着镜子感到「一股极为强烈而莫名其妙的激动」，心里叫嚷：「我自由了，我自由了！我像风那样自由！」她记起理发师乔治痛失幼女的往事，于是抛下婚姻跑到理发店，只为把手放在乔治肩上——然后径直去码头，登船离开。</p>
+<p><b>逻辑脉络</b>：全篇把「觉醒」写成身体先于思想的动作：激动在内心泛起、双臂要张开、东西要扔——先是自由的感觉，然后才是自由的行动；但曼斯菲尔德不替读者鼓掌：她让莫妮卡的自由以抛下一切为代价，连名字都没来得及安顿。</p>
+<p><b>现实意义</b>：「我像风那样自由」值得追求，但要区分两种风：把别人吹开的风，与把自己吹开的风——前者只需一走了之，后者要求你对自己的每一次抛下负责。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>航海：祖母的诗</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>逝矣！黄金般的一小时，每分钟都是一颗钻石。光阴一去不复返，任何补偿也无济于事！</p>
+<p class="src">——《蜜月·航海》 ｜ 据《蜜月》（萧乾 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：爷爷带孙女斐内拉坐火车去航海，晨光里老人对她说：「要是我每天都能和你要好，像今天早上这样……」车厢里挂着死去的奶奶留下的黑框座右铭：「逝矣！黄金般的一小时，每分钟都是一颗钻石。光阴一去不复返，任何补偿也无济于事！」而老人快活地眨着眼睛，像在对铭文做一个鬼脸。</p>
+<p><b>逻辑脉络</b>：铭文与鬼脸是全篇的对位：逝者的诗用「任何补偿也无济于事」判了时间死刑，生者的老人却用一次小小的私奔证明补偿存在——快乐就在今晨这趟火车上。曼斯菲尔德把「珍惜时间」的训诫从墙上摘下来，装进了一次真的出发。</p>
+<p><b>现实意义</b>：对「黄金般的一小时」最好的态度，不是抄在墙上，而是马上用掉它：想带谁去航海，就去——壁炉上方的铭文管不了今天的火车，管得了的只有你的决定。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>一杯茶</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>她俊得出奇。</p>
+<p>我俊吗？</p>
+<p class="src">——《蜜月·一杯茶》结尾 ｜ 据《蜜月》（文洁若 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：富太太罗斯玛丽在旧货店门口捡回一个饥寒交迫的女孩史密斯小姐，请她喝了一杯茶、吃了一顿饭，并视为一场慷慨的善举；丈夫菲利普却说破天机：「她俊得出奇。」当晚，罗斯玛丽把珍珠首饰塞给女孩、送她出门，然后穿着睡衣对镜自照，轻声问：「菲利普，我俊吗？」</p>
+<p><b>逻辑脉络</b>：结尾一问是全书最冷的镜子：慈善的真实动机在丈夫的一句话里现形——善举原来是一场与情人（美貌）的竞争。曼斯菲尔德不写坏人，只写「自我感动」的精算过程：珍珠是赎金，镜子是法庭，「我俊吗」问的是丈夫，审判的却是她自己。</p>
+<p><b>现实意义</b>：行善之前照一照这面镜子：你是在帮那个人，还是在帮「那个在帮人的自己」？前者给对方要的东西，后者给自己要的观众——分清这两件事，善举才不会变成一场表演。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>蜜月：自由自在</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>咱们可以自由自在。</p>
+<p>趁着那个老怪物还没有再呱呱地叫，咱们走吧。</p>
+<p class="src">——《蜜月·蜜月》 ｜ 据《蜜月》（文洁若 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：新婚的范妮与乔治在地中海度蜜月，每天重复的话是：「想想看，多么奇妙啊。咱们在这里完全不受干扰……咱们可以自由自在。」可旅馆餐厅那位西班牙老歌手每晚准时开嗓；乔治哀号：「啊，老天爷！趁着那个老怪物还没有再呱呱地叫，咱们走吧。」——两人相视而笑，逃离餐厅，融入夜色。</p>
+<p><b>逻辑脉络</b>：压题之作把「蜜月」写成自由的定义测试：范妮反复念叨的「不受干扰」其实从未实现——干扰一直在（老歌手、日程、彼此的期待），真正的自由是最后那个「走吧」的动作：不等环境完美，先夺回主动权。</p>
+<p><b>现实意义</b>：「自由自在」从来不是一处的静态属性，是一个个「走吧」的动态总和：等不来没有干扰的环境，就练出走开的能力——趁老怪物还没开口，你们本来就可以走。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这位「英语世界的契诃夫」的最终目的，是学会做一架自行选景的照相机，并在生活的底片上认出自己的虚荣、错过的时机与迟到的善意。</p>
+<p><b>我是一架照相机——一架自行选景的照相机，而我的选择取决于我对人生的态度。</b>应用口诀：镜头对准什么，人生就冲洗出什么。</p>
+<p><b>胡扯，我没有妹妹。我的孩子是跟我的裁缝的女儿一道来的。</b>应用口诀：敢问源头的人，才有干净的信息。</p>
+<p><b>啊，喔唷！任何人也不能指责我，说我不懂得什么叫作受罪。</b>应用口诀：向走廊里的等待者致意。</p>
+<p><b>好爸爸，你的心多大呀。</b>应用口诀：装得下坏情绪的人，心最大。</p>
+<p><b>人生就是这样的——稚气却很自然。</b>应用口诀：玩笑别替后果背书。</p>
+<p><b>风啊——风。</b>应用口诀：风夜里管灯的人，就是爱。</p>
+<p><b>但是已经太迟了。小男孩儿们又变成麻雀，抖翅飞去——飞得无影无踪，怎么叫也听不见了。</b>应用口诀：善意的有效期比善意重要。</p>
+<p><b>你伤了我的心！你伤了我的心！咱们失败了。</b>应用口诀：重要的话设个期限。</p>
+<p><b>我自由了，我自由了！我像风那样自由！</b>应用口诀：分清吹开别人的风与吹开自己的风。</p>
+<p><b>我俊吗？</b>应用口诀：帮人，不是帮那个在帮人的自己。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Katherine_Mansfield" target="_blank" rel="noopener">Katherine Mansfield · Wikipedia</a><span>佐证：曼斯菲尔德生平——新西兰、伦敦、格济耶夫（古尔杰耶夫）的晚年与 1923 年结局。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Bliss_(short_story_collection)" target="_blank" rel="noopener">Bliss and Other Stories · Wikipedia</a><span>建议：本册篇目原刊脉络——1911–1922 年发表史与《园会》等姊妹集。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Anton_Chekhov" target="_blank" rel="noopener">Anton Chekhov · Wikipedia</a><span>背景：「英语世界的契诃夫」——契诃夫短篇美学与曼斯菲尔德的承传。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Xiao_Qian" target="_blank" rel="noopener">Xiao Qian · Wikipedia</a><span>背景：译者萧乾的文学翻译生涯及其对曼斯菲尔德的偏爱。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《蜜月》 ～ 中文据《蜜月》（萧乾 文洁若 萧荔 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

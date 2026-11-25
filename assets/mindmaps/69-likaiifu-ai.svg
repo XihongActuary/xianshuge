@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1142" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="人工智能思维导图">
+  <path d="M 200 571 C 250 571, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 852, 316 852" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 852 C 556 852, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 1038, 316 1038" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1038 C 556 1038, 566 986, 596 986" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="523" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="549" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">人工智能</text>
+  <text x="115" y="569" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">AI Superpowers of Mind</text>
+  <text x="115" y="591" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">深度学习＋大数据 · 从热潮到变革</text>
+  <text x="115" y="607" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">From Booms to Transformation</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">AI来了</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">AI Is Here</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">无处不在</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Everywhere already</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">碳基硅基平等</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Carbon meets silicon</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">AI恐惧症</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">Fear as default</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">三次热潮</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Three Booms</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">图灵测试</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Turing test</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">语音识别</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Speech recognition</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">深度学习＋大数据</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">DL plus big data</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">三级阶梯</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Weak, Strong, Super</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">弱AI实例</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">AlphaGo as weak AI</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">奇点悬念</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Singularity unknown</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">跨领域短板</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Cross-domain gap</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">失业方程</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">The 50% Equation</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">约50%受影响</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">50 percent affected</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">霍金之问</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Hawking's warning</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">新就业对冲</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">New jobs offset</text>
+  <rect x="316" y="828" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="850" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">场景地图</text>
+  <text x="422" y="868" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Application Map</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">自动驾驶</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Autonomous driving</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">智慧金融医疗</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Fin and health</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">各擅胜场</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">Respective strengths</text>
+  <rect x="316" y="1014" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1036" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">教育与意义</text>
+  <text x="422" y="1054" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">Education &amp; Meaning</text>
+  <circle cx="602" cy="986" r="4" fill="#d9c98a"/>
+  <text x="618" y="985" font-size="15" fill="#cfc6b2">该学什么</text>
+  <text x="618" y="1002" font-size="11" font-style="italic" fill="#8fa3b8">What to learn</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">个性化教育</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Personalized learning</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">意义之问</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">The meaning question</text>
+</svg>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 770" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="都柏林人思维导图">
+  <path d="M 200 385 C 250 385, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 385 C 250 385, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="337" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="363" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">都柏林人</text>
+  <text x="115" y="383" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Dubliners</text>
+  <text x="115" y="405" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">乔伊斯 · 精神麻痹与顿悟</text>
+  <text x="115" y="421" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Joyce · Paralysis and Epiphany</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">瘫痪</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Paralysis</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">亮灯的方窗</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">The Lit Window</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">一个词</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The Word</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">传染的凝视</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The Contagious Gaze</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">逃避</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Escape</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">东方的魔力</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Oriental Magic</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">码头的僵立</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Frozen at the Quay</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">虚荣的烧灼</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">Vanity's Burn</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">生意</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">The Business</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">洗洗罐子</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Washing the Pot</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">禁止蜡烛</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">No Candles</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">精神会计</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Spiritual Accounts</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">雪落</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">The Snow</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">歌声与象征</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Song and Symbol</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">为她而死的男孩</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">The Boy Who Died</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">生者与死者</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">The Living and the Dead</text>
+</svg>

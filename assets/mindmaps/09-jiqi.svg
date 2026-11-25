@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 904" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="乞力马扎罗的雪思维导图">
+  <path d="M 200 452 C 250 452, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 640, 316 640" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 640 C 556 640, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 640 C 556 640, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 452 C 250 452, 258 800, 316 800" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 800 C 556 800, 566 748, 596 748" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 800 C 556 800, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 800 C 556 800, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="404" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="430" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">乞力马扎罗的雪</text>
+  <text x="115" y="450" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">The Snows of Kilimanjaro</text>
+  <text x="115" y="472" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">海明威短篇十四篇</text>
+  <text x="115" y="488" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Under the Iceberg</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">死亡与勇气</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Death &amp; Courage</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">麦考博</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">The Short Happy Life</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">乞力马扎罗</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The Snows</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">豹尸之谜</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The Leopard</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">天真与幻灭</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Innocence &amp; Illusion</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">白象似的群山</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Hills Like White Elephants</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">雨中的猫</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Cat in the Rain</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">一天的等待</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">A Day's Wait</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">冰山手艺</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">The Iceberg Craft</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">干净光亮的地方</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">A Clean, Well-Lighted Place</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">印第安人营地</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Indian Camp</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">nada 祷文</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">The Nada Prayer</text>
+  <rect x="316" y="616" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="638" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">风格与人</text>
+  <text x="422" y="656" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Style &amp; People</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">电报句</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Telegraphic Style</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">迷惘的一代</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Lost Generation</text>
+  <rect x="316" y="776" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="798" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">主题</text>
+  <text x="422" y="816" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Themes</text>
+  <circle cx="602" cy="748" r="4" fill="#b39ac9"/>
+  <text x="618" y="747" font-size="15" fill="#cfc6b2">死前盘点</text>
+  <text x="618" y="764" font-size="11" font-style="italic" fill="#8fa3b8">Deathbed Inventory</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">潜台词</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Subtext</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">独自硬扛</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Silent Endurance</text>
+</svg>

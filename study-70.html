@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 计算智能导论 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/70-computational-intelligence.html">本书书页</a></p>
+<h1>深度研读 · 计算智能导论</h1>
+<p class="sub">Computational Intelligence: An Introduction, 2nd Edition · Andries P. Engelbrecht（Wiley 2007）</p>
+<p class="lead">研读说明：这是南非比勒陀利亚大学 Andries P. Engelbrecht 所著《Computational Intelligence: An Introduction》第二版（Wiley，2007），全书分六部分二十三章：第一部分给计算智能（CI）下定义并梳理五大范式与人工智能简史；第二部分讲人工神经网络（神经元、监督学习、无监督学习、径向基网络、强化学习、性能问题）；第三部分讲进化计算（通用进化算法、遗传算法、遗传编程、进化规划、进化策略、差分进化、文化算法、协同进化）；第四部分讲群智能（粒子群、蚁群）；第五部分讲人工免疫系统（自然免疫与人工免疫模型）；第六部分讲模糊系统与粗糙集。作者在序言里说得很清楚：本书面向三年级本科生与研究生，也可供生物信息、生化、机械化工、经济、音乐、医学等「没有 CI 知识但需要它」的人使用。这本书的价值不在公式推导，而在它给每个范式都指认了一个生物原型——神经网络学神经元，进化计算学自然选择，群智能学鸟群蚁群，免疫系统学抗体，模糊系统学人怎么用不精确的词说话。读懂这条「生物原型—计算模型」的对应线，比记住任何一个算法都管用。本研读共十二节，按六部分的顺序走，每节三条英文原句（照原书抄录），配中文解读三段。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>什么是计算智能：五个范式与一个共同前提</a></li>
+<li><a href="#s2"><b>贰</b>智能与图灵：一个还没结束的争论</a></li>
+<li><a href="#s3"><b>叁</b>人工神经元：一个非线性映射单元</a></li>
+<li><a href="#s4"><b>肆</b>监督学习：有老师，也要有训练集</a></li>
+<li><a href="#s5"><b>伍</b>无监督学习：没有老师，只有结构</a></li>
+<li><a href="#s6"><b>陆</b>强化学习：奖励、惩罚与试错</a></li>
+<li><a href="#s7"><b>柒</b>性能：不只看准确率</a></li>
+<li><a href="#s8"><b>捌</b>进化计算：把优化交给进化</a></li>
+<li><a href="#s9"><b>玖</b>遗传算法：探索与开发的调节阀</a></li>
+<li><a href="#s10"><b>拾</b>群智能：粒子群与「飞向最优」</a></li>
+<li><a href="#s11"><b>拾壹</b>人工免疫系统：区分自我与非我</a></li>
+<li><a href="#s12"><b>拾贰</b>模糊系统与粗糙集：不精确也是一种精确</a></li>
+<li><a href="#s13"><b>拾叁</b>Ten Sentences to Carry: A Pocket Companion to CI</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>什么是计算智能：五个范式与一个共同前提</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Computational Intelligence (CI) – the study of adaptive mechanisms to enable or facilitate intelligent behavior in complex and changing environments.</p>
+<p>no one paradigm is superior to the others in all situations</p>
+<p>Each of the CI paradigms has its origins in biological systems.</p>
+<p class="src">— Chapter 1, Introduction to Computational Intelligence ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者给 CI 的定义只有一句，但每个词都在设限：它是研究「适应性机制」（adaptive mechanisms）的学问，目的是让智能行为在「复杂且变化的环境」（complex and changing environments）中得以发生或更容易发生。所以 CI 不是「让机器变聪明」的豪言，而是「在环境会变的前提下，怎么让系统自己调整」。他列出的五个范式是：人工神经网络（NN）、进化计算（EC）、群智能（SI）、人工免疫系统（AIS）、模糊系统（FS）。这五者之上还有一层判断——没有任何一个范式在所有情形下都优于其他范式，所以当下的趋势是做混合系统（hybrid），取各自的长处、补各自的短处。</p>
+<p><b>逻辑脉络</b>：第一章的骨架是「定义—划界—溯源」。定义之后先划界：CI 属于人工智能的一个分支，与逻辑、演绎推理、专家系统、案例推理、符号机器学习并列；作者也坦白自己的分类会引发争议——群智能与人工免疫系统被不少研究者归入「人工生命」而非 CI，但他坚持收入，理由是粒子群优化与蚁群优化确实满足上面那条定义。溯源部分则给每个范式配一个生物原型：NN 模拟生物神经系统，EC 模拟自然进化（含基因与行为进化），SI 模拟群居生物的社会行为，AIS 模拟人体免疫系统，FS 源于对生物如何与环境交互的研究。</p>
+<p><b>现实意义</b>：三条：一，「在变化的环境中」是这套方法论的前提条件，如果环境稳定、规则清楚，用传统算法更好；二，承认没有万能范式，是工程判断的起点——选模型先问「这类问题的结构像哪一种生物机制」；三，混合不是折中，是把每个组件的强项放在它擅长的位置上。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>智能与图灵：一个还没结束的争论</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Can computers be intelligent? This is a question that to this day causes more debate than the definitions of intelligence.</p>
+<p>He believed that machines could be created that would mimic the processes of the human brain.</p>
+<p>there are still no solutions to the complex problem of modeling intuition, consciousness and emotion – which form integral parts of human intelligence.</p>
+<p class="src">— Chapter 1, Introduction to Computational Intelligence ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者先承认一个尴尬：连「智能」都定义不清。字典说智能是理解、从经验中获益、有思考与推理能力，其他关键词还有创造性、技能、意识、情绪、直觉。接着他把问题升级：计算机能有智能吗？这个问题引起的争论比智能的定义还多。图灵在 1950 年给出可操作的替代方案——不看机器「是否真的在想」，只看它能不能在对话中骗过审问者；他甚至预测，到 2000 年，一台有一千兆比特存储的计算机有五成以上概率通过五分钟版测试。</p>
+<p><b>逻辑脉络</b>：这一节的真正重点是「图灵相信什么、又留下了什么」。图灵坚信「大脑能做的事，精心设计的计算机没有做不到的」，这个信念在当时近乎狂妄，五十多年后仍被视为有远见；但作者紧接着指出缺口：生物神经系统的局部建模已经成功，而直觉、意识、情绪这三样构成人类智能核心的东西，「至今仍无解」。于是图灵测试的意义被重新定位——它不证明智能，它只是把无法定义的东西换成一个可以操作的标准，而标准本身是可以被讨论、被质疑的。</p>
+<p><b>现实意义</b>：三条：一，遇到无法定义的概念，先找一个可操作的行为标准，这是工程推进的常用手法；二，把「已经做到」与「还没做到」分开列账，才不会被宣传语带走；三，图灵那句「大脑能做的计算机没有做不到」是信念而非定理——它可以激励研究，但不能当作结论。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>人工神经元：一个非线性映射单元</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The brain is a complex, nonlinear and parallel computer.</p>
+<p>To each input signal, zi, is associated a weight, vi, to strengthen or deplete the input signal.</p>
+<p>Product units allow higher-order combinations of inputs, having the advantage of increased information capacity.</p>
+<p class="src">— Chapter 1 &amp; Chapter 2, The Artificial Neuron ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一个技术性判断是这句：大脑是一台复杂、非线性、并行的计算机。它做人脸识别、知觉、运动控制，比任何计算机都快——尽管硅门的开关在纳秒级、神经事件在毫秒级，慢了一百万倍，却胜在并行与连接。人工神经元抽取的正是这个最小单元：接收一组输入信号 z，给每个输入配一个权重 v，权重的作用是「增强或削弱」这个信号；再求和、减阈值、过激活函数，得到输出。权重可正可负，这就是「学习」发生的地方——学习就是改权重。</p>
+<p><b>逻辑脉络</b>：第二章由外到内拆解这个单元：先讲净输入怎么算，最常见的是加权和，这类单元叫求和单元（SU）；另一条路是乘积单元（PU），把输入按幂次相乘，好处是能表达更高阶的组合、信息容量更大。再讲激活函数——单调递增的映射，常见的有阶跃、线性、S 形，选择哪一种决定了这个神经元能表示什么样的边界。最后讲学习规则：Hebbian、误差修正、竞争学习等，各自对应不同的「怎么改权重」。</p>
+<p><b>现实意义</b>：三条：一，一个模型的最小单元决定了它的天花板——单个神经元只能画一条直线，这一点后面会反复用到；二，权重不是参数摆设，它是「这件事有多重要」的量化表达，正负号就是方向；三，并行不是快一点，是换一种计算范式——用大量简单单元换复杂表达。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>监督学习：有老师，也要有训练集</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Single neurons have limitations in the type of functions they can learn.</p>
+<p>A single neuron (implementing a SU) can be used to realize linearly separable functions only.</p>
+<p>Supervised learning requires a training set that consists of input vectors and a target vector associated with each input vector.</p>
+<p class="src">— Chapter 3, Supervised Learning Neural Networks ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：第三章开头就把单神经元的局限讲透：一个求和单元只能实现线性可分的函数，一旦要学的函数不是线性可分的，就必须用分层网络。这是神经网络史上最著名的一道墙——1969 年 Minsky 与 Papert 用异或问题指出这堵墙的存在，直接导致研究进入低谷，直到多层网络与反向传播把墙拆开。本节的核心句也在提醒：所谓「深度」，最初不是为了深，而是为了绕开线性不可分。</p>
+<p><b>逻辑脉络</b>：监督学习的定义很朴素：训练集必须包含输入向量，以及每个输入向量对应的目标向量；学习器用目标向量判断自己学得好不好，并据此调整权重以降低整体误差。这一章按网络类型铺开：标准多层网络、函数连接网络、简单递归网络、时延网络、乘积单元网络、级联网络；再讲各种监督学习规则（梯度下降、共轭梯度、LeapFrog、粒子群优化），最后落到集成网络（ensemble）。一条线索很清楚：架构决定能表示什么，学习规则决定能不能找到它。</p>
+<p><b>现实意义</b>：三条：一，判断一个问题能不能用线性模型解，先看它在特征空间里是不是「一刀能切开」；二，「有老师」的代价是要有标注，标注的成本往往比算力更贵；三，误差是唯一的反馈信号，设计损失函数就是设计学习的方向。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>无监督学习：没有老师，只有结构</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>An important feature of NNs is their ability to learn from their environment.</p>
+<p>the objective of unsupervised learning is to discover patterns or features in the input data with no help from a teacher.</p>
+<p>others such as the ability to learn, memorize and still generalize, prompted research in algorithmic modeling of biological neural systems</p>
+<p class="src">— Chapter 4, Unsupervised Learning Neural Networks ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：第四章的转折句很干脆：与监督学习相对，无监督学习的目标是在「没有老师帮助」的情况下，从输入数据里发现模式或特征。这句话把问题从「预测正确答案」换成了「发现隐藏结构」。作者还引了亚里士多德：人的记忆能把相似的、矛盾的、空间上靠近的、时间上相邻的事物连起来——联想学习的古老观察，正是自组织映射与赫布学习的远祖。</p>
+<p><b>逻辑脉络</b>：本章的模型谱系是：赫布学习（一起激活的神经元连接增强）→ 主成分学习（找方差最大的方向）→ 学习向量量化 LVQ-I（用原型向量代表类别）→ 自组织特征映射 SOM（把高维数据压到低维网格上，同时保留拓扑关系）。共同点是都没有目标向量，只有输入分布；网络自己形成「谁跟谁像」的内部表示。这也解释了为什么作者在第 1 章强调 NN 的三大能力：学习、记忆、还能泛化——泛化的前提是它抓到了结构，而不是背下了答案。</p>
+<p><b>现实意义</b>：三条：一，没有标签时，问题从「分类」变成「聚类与降维」，先看结构再谈预测；二，自组织映射的思路可以直接借用——把复杂对象放到一张低维地图上，邻近关系就是相似关系；三，「能学、能记、还能泛化」是三条独立的能力，模型在测试集上崩掉，通常是第三条没做到。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>强化学习：奖励、惩罚与试错</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The basic idea is that of awarding the learner (agent) for correct actions, and punishing wrong actions.</p>
+<p>Intuitively, RL is a process of trial and error, combined with learning.</p>
+<p>the agent has absolutely no prior knowledge of what action to take, and has to discover (or explore) which actions yield the highest reward.</p>
+<p class="src">— Chapter 6, Reinforcement Learning ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：强化学习的思想来源是动物学习心理学：对正确的动作给奖励，对错误的动作给惩罚。作者用一句话概括它的直觉形态——试错加上学习。智能体根据当前环境状态决定动作，通过反馈（这个动作有多可取）逐渐学会「什么状态该做什么动作」。最关键的限定是：智能体对「该采取什么动作」毫无先验知识，必须自己去发现、去探索哪些动作能带来最高奖励。</p>
+<p><b>逻辑脉络</b>：第六章把 RL 分成三块：概述（奖励、状态、动作、策略）、无模型方法（不建立环境模型，直接从经验学）、连接主义方法（用神经网络做函数逼近）。形式化定义是：学习一个从情境到动作的映射，目标是最大化标量奖励信号。难点在两个地方：延迟奖励（现在的动作，奖励可能很久以后才来）与探索—利用的权衡（一直用已知最好的动作，就永远发现不了更好的）。作者也指出，第 5 章的 LVQ-II 就是一个用奖励惩罚机制训练网络的例子。</p>
+<p><b>现实意义</b>：三条：一，任何「没有标准答案、只有结果好坏」的场景，都是强化学习式的——先定义奖励，再谈策略；二，探索是必须付的成本，只利用不探索会锁死在局部最优；三，延迟奖励要求耐心记账，短期指标好看不等于策略正确。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>性能：不只看准确率</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Performance is possibly the driving force of all organisms.</p>
+<p>The performance of an artificial NN is not just measured as the accuracy achieved by the network, but aspects such as computational complexity and convergence characteristics are just as important.</p>
+<p>The vast number of theoretical analyses of NNs made it possible to better understand the working of NNs – to unravel the “black box”.</p>
+<p class="src">— Chapter 7, Performance Issues ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：第七章开头有一句很像格言的话：性能也许是所有生物体的驱动力。作者把它平移到工程上：性能是设计神经网络时必须考虑的最重要方面。但「性能」不等于准确率——准确率只是其中一项，计算复杂度、收敛特性同样重要。这句话对今天仍有提醒作用：一个准确率高但训练要三天、推理要一秒的模型，在很多场景里是不可用的。</p>
+<p><b>逻辑脉络</b>：本章把性能拆成三类度量：准确率（含泛化误差）、复杂度、收敛性。作者特别强调泛化：网络在训练时没见过的点上表现如何，才是学习的终极目标，所以「低泛化误差」是衡量学习器的最终标准。另一条线是方法论的变化——早期设计网络靠专家直觉与经验法则，后来大量理论分析让研究者能更好地理解网络内部，把「黑箱」打开；这些洞察反过来指导了性能改进。</p>
+<p><b>现实意义</b>：三条：一，评价模型至少看三个数：准确率、算得起吗、收敛稳不稳；二，泛化误差才是目标，训练误差只是过程指标；三，「打开黑箱」不是学术趣味，它是改进的前提——不知道为什么好，就不知道为什么坏。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>进化计算：把优化交给进化</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Evolution is an optimization process where the aim is to improve the ability of an organism (or system) to survive in dynamically changing and competitive environments.</p>
+<p>Evolutionary computation (EC) refers to computer-based problem solving systems that use computational models of evolutionary processes, such as natural selection, survival of the fittest and reproduction, as the fundamental components of such computational systems.</p>
+<p>an evolutionary algorithm (EA) is a stochastic search for an optimal solution to a given problem.</p>
+<p class="src">— Chapter 8, Introduction to Evolutionary Computation ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者先把进化本身定义成一个优化过程：目标是提高一个生物体（或系统）在动态变化且充满竞争的环境中存活的能力。注意这个定义里的三个限定——动态、变化、竞争，缺一个，进化的必要性就下降。然后把达尔文与拉马克摆在一起：拉马克认为个体在生命期内适应并把获得的性状传给后代（用进废退），达尔文认为是有利变异者更可能存活繁殖、性状逐代积累并成为主流。现代计算用的主要是后者。</p>
+<p><b>逻辑脉络</b>：进化计算的定义是：用进化过程的计算模型（自然选择、适者生存、繁殖）作为基本组件来解题的计算机系统。再往下抽象一层：进化算法是「对给定问题的最优解做随机搜索」。这个「随机」不是乱来，而是把搜索的多样性作为资源。一个通用 EA 由五部分组成：解的编码（染色体）、评价个体生存能力的适应度函数、初始种群的生成、选择算子、以及繁殖（交叉与变异）算子；再加上停止条件。</p>
+<p><b>现实意义</b>：三条：一，凡是「解空间巨大、没有梯度可导、但能评价好坏」的问题，都可以试着交给进化算法；二，进化算法的四个零件（编码、适应度、选择、变异）可以直接当作设计检查表；三，随机性是搜索的资源而不是缺陷——过早收敛，往往是多样性被提前消耗掉了。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>遗传算法：探索与开发的调节阀</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>A large initial mutation rate favors exploration in the initial steps of the search</p>
+<p>A good strategy is to base the probability of being mutated on the fitness of the individual</p>
+<p>Ultimately, finding the best set of operators and control parameter values is a multi-objective optimization problem by itself.</p>
+<p class="src">— Chapter 9, Genetic Algorithms ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：遗传算法这一章最实用的一条结论，是关于变异率的调度：初始阶段用较大的变异率，有利于「探索」，随着代数增加逐步降低变异率，有利于「开发」。原书紧接着写道：随着代数增加逐步降低变异率，「开发」（exploitation）就被促成了。这是全书少见的一处把直觉讲成机制的段落——探索是往未知处撒网，开发是在已知好区域里精修，两者是同一个旋钮的两端。另一条策略更细：让变异概率跟个体的适应度挂钩，越适应越少变异，越不适应越该变异。</p>
+<p><b>逻辑脉络</b>：本章的结构是「基本 GA → 变体」。基本内容包括编码（二进制、格雷码、浮点）、适应度函数、选择（轮盘赌、锦标赛、排序）、交叉（单点、多点、均匀）、变异，以及控制参数（种群规模、交叉率、变异率、代数）。作者随后承认一个现实：交叉率与变异率的最优值依赖具体问题，所以有人做自适应参数、有人做动态调度；而「找到最好的一组算子与参数值」这件事本身，就是一个多目标优化问题。</p>
+<p><b>现实意义</b>：三条：一，任何搜索过程都要管好「探索/开发」的比例，早期多试、后期精修，人工调参也该遵守这个节奏；二，把资源向「表现差的个体」倾斜（多变异），比均匀用力更有效；三，调参本身是个多目标问题——想要精度、又想要速度，先明确权重再动手。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>群智能：粒子群与「飞向最优」</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Particle swarm optimization (PSO) is a stochastic optimization approach, modeled on the social behavior of bird flocks.</p>
+<p>Each particle in the swarm represents a candidate solution to the optimization problem.</p>
+<p>The effect is that particles “fly” toward an optimum, while still searching a wide area around the current best solution.</p>
+<p class="src">— Chapter 16, Particle Swarm Optimization ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：群智能的来源是鸟群。作者写得很形象：鸟群那种优雅却难以预测的「编队舞蹈」，启发了粒子群优化；蚂蚁觅食的行为，启发了蚁群优化。PSO 是一种随机优化方法，模仿鸟群的社会行为；每个粒子代表一个候选解，一群粒子组成「群」（swarm）。粒子在多维搜索空间里「飞」，根据自己的经验与邻居的经验调整位置——它同时参考「自己到过的最好位置」和「邻居的最好位置」。</p>
+<p><b>逻辑脉络</b>：第十六章从社会行为的建模讲到算法构件：粒子位置与速度的更新公式、惯性权重（w）、两个加速系数（c1 认知、c2 社会）、邻域拓扑（全局最好还是局部最好），以及收敛性分析（Clerc 与 Kennedy 的收缩模型给出了保证收敛的参数区间）。作者还专门讨论了参数随时间线性变化的自适应策略，以及单解 PSO（把整个群缩成一个粒子，用于动态环境）。</p>
+<p><b>现实意义</b>：三条：一，「个体经验 + 邻居经验」是最简洁的协作模型，可以直接搬进团队决策；二，惯性权重决定「敢不敢继续往前冲」，调到 0 就只会往已知最好处塌陷；三，效果那句话值得记住——粒子一边飞向最优，一边仍在当前最优周围大范围搜索，好的搜索从不放弃「再看看别处」。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>人工免疫系统：区分自我与非我</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>The natural immune system (NIS) has an amazing pattern matching ability, used to distinguish between foreign cells entering the body (referred to as non-self, or antigen) and the cells belonging to the body (referred to as self).</p>
+<p>An artificial immune system (AIS) models some of the aspects of a NIS</p>
+<p>One of the main application areas of AISs is in anomaly detection, such as fraud detection, and computer virus detection.</p>
+<p class="src">— Chapter 1 &amp; Chapter 19, Artificial Immune Models ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：自然免疫系统最惊人的能力是模式匹配：它要区分进入体内的外来细胞（非我，抗原）与属于身体自身的细胞（自我）。这套「自我/非我」的二分，是人工免疫系统的全部灵感来源。作者列了四种免疫理论：经典观点（用淋巴器官产生的淋巴细胞区分自我与非我）、克隆选择（活跃的 B 细胞通过克隆产生抗体，克隆过程还带变异）、危险理论（区分危险与非危险抗原，而不是自我与非我）、网络理论（B 细胞构成网络，一个被激活会刺激与它相连的其他 B 细胞）。</p>
+<p><b>逻辑脉络</b>：第十九章把上述理论转成算法：否定选择算法（生成一批「不与自我匹配」的检测器，用来发现异常）、克隆选择算法（选出最匹配的抗体，克隆并高频变异，再从变异体中挑更好的）、免疫网络算法。这三类算法的共同点是把「识别」当作「匹配」来做，把「学习」当作「克隆加变异」来做。应用侧，作者点明最主要的落点是异常检测——欺诈检测与计算机病毒检测。</p>
+<p><b>现实意义</b>：三条：一，「什么算异常」可以用排除法定义——先学会「正常」，剩下都是可疑，这在监控、风控里极其好用；二，克隆选择给了一个可操作的改进循环：选出最好的、复制、小步变异、再选；三，免疫系统天生是分布式的、没有中央指挥，去中心化的检测体系比单点判断更抗打。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>模糊系统与粗糙集：不精确也是一种精确</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>Traditional set theory requires elements to be either part of a set or not.</p>
+<p>Human reasoning is, however, almost always not this exact.</p>
+<p>With fuzzy sets, an element belongs to a set to a certain degree of certainty.</p>
+<p class="src">— Chapter 1 &amp; Chapter 20, Fuzzy Sets ｜ 据 Wiley 2007 年版校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：传统集合论要求一个元素要么属于某集合、要么不属于；二值逻辑要求参数取值非 0 即 1，推理结果也受同样约束。但人的推理几乎从不这么精确——我们的观察与判断总带着不确定的成分。作者举的例子很妙：人能毫不费力地理解「有些计算机专业的学生能用大多数编程语言写程序」，可计算机怎么表示并推理这个事实？模糊集合给出的答案是：元素以「一定的确定程度」属于集合，隶属度取 0 到 1 之间的数。</p>
+<p><b>逻辑脉络</b>：第六部分的主线是「从隶属函数到推理系统再到控制器」：第 20 章讲模糊逻辑与隶属函数（三角形、梯形、高斯形，以及模糊算子），第 21 章讲模糊推理系统（模糊化、规则库、推理、去模糊化），第 22 章讲模糊控制器，第 23 章讲粗糙集——另一种处理不精确的办法，用「下近似/上近似」把边界模糊的集合框住，而不给每个元素分配隶属度。两条路线合起来，构成了这个范式对「不确定」的两种回答。</p>
+<p><b>现实意义</b>：三条：一，凡是人用形容词做判断的场景（很热、偏贵、比较高），都适合用隶属度而不是阈值；二，模糊规则把专家经验写成「如果…那么…」，可读性远高于权重矩阵；三，隶属函数的选择就是建模者的立场——同一句「个子高」，取 1.75 还是 1.80 做分界，结论就不一样，必须写清楚。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>Ten Sentences to Carry: A Pocket Companion to CI</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>十二节读完，能带走的十句英文。按「是什么、怎么学、怎么搜、怎么评」四类排开，每句配一句中文口诀——不必背，留着在选模型、调参数、写报告的时候对一遍。</p>
+<p><b>Computational Intelligence (CI) – the study of adaptive mechanisms to enable or facilitate intelligent behavior in complex and changing environments.</b>应用口诀：先问环境会不会变，再决定要不要自适应。</p>
+<p><b>no one paradigm is superior to the others in all situations</b>应用口诀：没有万能模型，只有匹配的结构。</p>
+<p><b>The brain is a complex, nonlinear and parallel computer.</b>应用口诀：别用串行的思路照抄并行的大脑。</p>
+<p><b>Single neurons have limitations in the type of functions they can learn.</b>应用口诀：单层只能切一刀，切不开就加层。</p>
+<p><b>Intuitively, RL is a process of trial and error, combined with learning.</b>应用口诀：没有标准答案时，把结果好坏变成奖励。</p>
+<p><b>Performance is possibly the driving force of all organisms.</b>应用口诀：先定评价标准，再谈优化。</p>
+<p><b>an evolutionary algorithm (EA) is a stochastic search for an optimal solution to a given problem.</b>应用口诀：随机不是乱撞，是把多样性当资源。</p>
+<p><b>Each particle in the swarm represents a candidate solution to the optimization problem.</b>应用口诀：一群候选解，比一个更抗局部最优。</p>
+<p><b>Human reasoning is, however, almost always not this exact.</b>应用口诀：人话本来模糊，别硬套非 0 即 1。</p>
+<p><b>there are still no solutions to the complex problem of modeling intuition, consciousness and emotion</b>应用口诀：承认边界，才知道下一步该做什么。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computational_intelligence" target="_blank" rel="noopener">Computational Intelligence · Wikipedia</a><span>五大范式与术语的英文总览，适合与本书第 1 章对照，看分类争议的来龙去脉。</span></li>
+<li><a href="https://cilib.sourceforge.net" target="_blank" rel="noopener">CIlib · 本书配套开源库</a><span>作者所在研究组开发的 Java 库，含 PSO、神经网络、进化计算框架，可直接跑书中的算法。</span></li>
+<li><a href="https://ieee-cis.org/" target="_blank" rel="noopener">IEEE Computational Intelligence Society</a><span>该领域的权威学会，会刊与会议论文是本书之后二十年的技术延续。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Artificial_neural_network" target="_blank" rel="noopener">Artificial Neural Network · Wikipedia</a><span>从感知器到深度学习的谱系梳理，可补本书成书之后的部分（本书止于 2007 年）。</span></li>
+</ul>
+</section>
+
+<footer>原文据 Wiley 2007 年版 Computational Intelligence: An Introduction (2nd ed.) 校录 ｜ 深度研读 · 仙书阁</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仙书阁 · 《人工智能》· 仙书阁书库</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="likaiifu-ai">
+
+<div class="wrap">
+
+<div class="toc-col">
+<aside id="toc">
+  <div class="toc-head">
+    <h3>目 录</h3>
+    <button class="toc-fold" title="折叠目录">◀</button>
+  </div>
+  <div class="crumb"><a href="../index.html">◄ 返回书库</a> · 第六十九部</div>
+  <ol>
+  <li><a href="#info">〇 · 书籍信息</a></li>
+  <li><a href="#theme">一 · 核心主题总览</a></li>
+  <li><a href="#part1">二 · 第一段 AI 来了 —— 无处不在与三级阶梯</a>
+  <ol class="sub">
+  <li><a href="#p1c1">无处不在的人工智能</a></li>
+  <li><a href="#p1c2">图灵测试与三级阶梯</a></li>
+  </ol>
+  </li>
+  <li><a href="#part2">三 · 第二段 复兴密码 —— 深度学习＋大数据</a>
+  <ol class="sub">
+  <li><a href="#p2c1">三波热潮的接力</a></li>
+  <li><a href="#p2c2">AlphaGo 的启示</a></li>
+  </ol>
+  </li>
+  <li><a href="#part3">四 · 第三段 变革版图 —— 50% 与落地场景</a>
+  <ol class="sub">
+  <li><a href="#p3c1">50%的失业方程</a></li>
+  <li><a href="#p3c2">四大落地场景</a></li>
+  <li><a href="#p3c3">中国机会与创新工场</a></li>
+  </ol>
+  </li>
+  <li><a href="#part4">五 · 第四段 迎接未来 —— 教育与个人发展</a>
+  <ol class="sub">
+  <li><a href="#p4c1">AI时代该学什么</a></li>
+  <li><a href="#p4c2">教育的变革实验</a></li>
+  <li><a href="#p4c3">有了AI，人生还有意义吗</a></li>
+  </ol>
+  </li>
+  <li><a href="#characters">六 · 人物图鉴与成长弧线</a></li>
+  <li><a href="#symbols">七 · 主题与象征</a></li>
+  <li><a href="#craft">八 · 写作手法赏析</a></li>
+  <li><a href="#mingduan">九 · 名段欣赏</a></li>
+  <li><a href="#quotes">十 · 金句摘录</a></li>
+  <li><a href="#tuozhan">十一 · 拓展阅读</a></li>
+  <li><a href="#ganyu">十二 · 个人感悟与心得</a></li>
+  <li><a href="#recap">十三 · 一页速查（复习用）</a></li>
+  </ol>
+</aside>
+<div class="toc-resizer" title="拖拽调整宽度"></div>
+</div>
+
+<main>
+
+<header class="hero">
+  <div class="kicker">读 书 笔 记 · 第 六十九 部</div>
+  <h1>人工智能</h1>
+  <div class="sub-title">—— 深度学习＋大数据 · 从热潮到变革 ——</div>
+  <div class="meta">
+    <span>李开复 · 王咏刚 著 · 磨铁数盟 2017（ISBN 9787514217155）</span>
+    <span>体裁：科技科普 · 六章全景</span>
+    <span>关键词：<span class="jt" data-n="z2">三次AI热潮</span> · AlphaGo · 50% · 创新工场</span>
+  </div>
+</header>
+<!-- ================= 书籍信息 -->
+<section id="info">
+  <h2>〇 · 书籍信息</h2>
+  <div class="card">
+    <h5>基本信息</h5>
+    <table>
+      <tr><th style="width:110px">总纲</th><td>第一章开篇即定调：<strong>「人工智能已经来了，而且它就在我们身边，几乎无处不在」——全书六章是一条从「是什么」到「怎么办」的完整动线：来了→复兴→人机大战→时代变革→创新创业→教育与个人发展</strong></td></tr>
+      <tr><th style="width:110px">主公式</th><td>第二章章名就是全书的技术底座：<strong>「AI复兴：深度学习＋大数据＝人工智能」——第三次热潮与前两次的本质区别在此：不是理论翻新，是算法遇上了互联网规模的数据</strong></td></tr>
+      <tr><th style="width:110px">关键数字</th><td><strong>「我的预测是，<span class="jt" data-n="z3">约50%</span>的人类工作会受到人工智能的影响」——第四章用自动驾驶、智慧金融、智慧医疗、艺术创作四大场景验证这个数字的落点</strong></td></tr>
+      <tr><th style="width:110px">一句话</th><td><strong>这是一本把「AI焦虑」翻译成「AI行动清单」的书：弱人工智能是今天的现实，强人工智能是明天的悬念，而教育与个人发展是你今天就能做的准备</strong>。</td></tr>
+    </table>
+  </div>
+  <div class="lead">
+    书的起点不是技术史，是一句科幻对白：克拉克在《2010：太空漫游》里写——<span class="jt" data-n="z1"><strong>「不管我们是碳基人类还是硅基机器人，都没有本质的区别。我们中的每一员都应获得应有的尊重」——李开复用这句话给全书定了情绪基调：讲技术，但先讲人</strong>。读法提示：第一章看「无处不在」建立实感，第二章抓住「深度学习＋大数据」这一个公式，第四章按场景地图挑自己关心的行业精读，第六章的「AI时代该学什么」适合直接对照自己的学习计划</span>。
+  </div>
+</section>
+<!-- ================= 核心主题 -->
+<section id="theme">
+  <h2>一 · 核心主题总览</h2>
+  这本六章小书的四条主线：
+  <div class="card zhu">
+    <h5>① 三次热潮一张表</h5>
+    <p>AI不只有一次浪潮：<strong>「图灵测试与第一次AI热潮」「语音识别与第二次AI热潮」「深度学习携手大数据引领第三次AI热潮」——书用三波对照破除「AI一夜爆发」的错觉：每一次热潮背后都有被低估的前夜，每一次寒冬都藏着下一次复兴的种子</strong>。</p>
+  </div>
+  <div class="card">
+    <h5>② 弱·强·超三级阶梯</h5>
+    <p>概念的分级是判断力的地基：<strong>「AlphaGo是弱人工智能的一个最好实例。AlphaGo在围棋领域超越了人类最顶尖选手」——但围棋是一维的封闭问题；弱AI是今天的现实，强AI与超AI是逻辑推演：分清三级，才不会被科幻叙事带跑</strong>。</p>
+  </div>
+  <div class="card">
+    <h5>③ 50%的失业方程</h5>
+    <p>全书最锋利的数字：<strong>「我的预测是，约50%的人类工作会受到人工智能的影响」——但书同时引霍金的担忧又给出对冲：「同时也会制造出足够多的新的就业机会」——受影响不等于被消灭：方程式的解法在第六章的教育与转型里</strong></p>
+  </div>
+  <div class="card">
+    <h5>④ 中国机会</h5>
+    <p>视角落地的位置：<strong>第五章「AI是中国创新、创业的最好机会」与「创新工场的AI布局」——作者是投资人：全书对场景的挑选（自动驾驶、智慧金融、智慧医疗、智慧生活、艺术创作）本身就是一张投资地图</strong></p>
+  </div>
+</section>
+<!-- ================= 第一段 AI 来了 —— 无处不在与三级阶梯 -->
+<section id="part1">
+  <h2>二 · 第一段 AI 来了 —— 无处不在与三级阶梯<span class="rhyme">—— 图灵 · ELIZA · 弱强超 ——</span></h2>
+
+  <h3 id="p1c1">无处不在的人工智能</h3>
+  <p>第一章把AI从实验室拉回日常：<strong>「人工智能已经来了，而且它就在我们身边，几乎无处不在」——手机的语音助手、新闻推荐、人脸识别、机器翻译都是AI的日常形态；书的策略是先破「恐惧」再立「认知」：科幻巨匠克拉克的「碳基硅基应互相尊重」是开篇的第一句引文——技术叙事从平等想象开始，不从末日想象开始</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 无处不在</h5>
+    <table>
+      <tr><th style="width:150px">无处不在</th><td>AI的日常化程度：你用的时候不知道在用</td></tr>
+      <tr><th style="width:150px">碳基/硅基</th><td>克拉克的平等想象：生命形态不决定尊重份额</td></tr>
+      <tr><th style="width:150px">AI恐惧症</th><td>「许多人就又不约而同地患上人工智能恐惧症」</td></tr>
+      <tr><th style="width:150px">无处不在→看不见</th><td>好技术的终局是隐形：基础设施化</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「人工智能已经来了，而且它就在我们身边，几乎无处不在。」</strong>——科普书的第一句应该这样写：<strong>先宣布现状，再讨论未来——AI不是「将要来」，是「已经来」</strong>。</p>
+  </div>
+
+  <h3 id="p1c2">图灵测试与三级阶梯</h3>
+  <p>什么是AI？书给出一个分级框架：<strong>弱人工智能——单一领域的专用智能；强人工智能——跨领域的通用智能；超人工智能——全面超越人类。第三级对应「奇点」：<strong>「未来学家和科幻作者喜欢用『奇点』来表示超人工智能到来的那个神秘时刻」——但书的态度清醒：「没有人知道奇点会不会到来，会在何时到来」——AlphaGo赢了李世石，也仍然是弱AI的胜利：一个领域的满分不等于所有领域的及格</strong></strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 分级</h5>
+    <table>
+      <tr><th style="width:150px">弱人工智能</th><td>专用智能：围棋满分，跨领域零分</td></tr>
+      <tr><th style="width:150px">强人工智能</th><td>通用智能：像人一样跨领域推理</td></tr>
+      <tr><th style="width:150px">超人工智能</th><td>超越人类：目前只是逻辑推演</td></tr>
+      <tr><th style="width:150px">奇点</th><td>「没有人知道奇点会不会到来」</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>「没有人知道奇点会不会到来，会在何时到来。」</strong>——科普的诚实句式：<strong>把科幻的悬念还给科幻，把可讨论的现实留在当下</strong>。</p>
+  </div>
+</section>
+<!-- ================= 第二段 复兴密码 —— 深度学习＋大数据 -->
+<section id="part2">
+  <h2>三 · 第二段 复兴密码 —— 深度学习＋大数据<span class="rhyme">—— 图灵测试 · 语音识别 · AlphaGo ——</span></h2>
+
+  <h3 id="p2c1">三波热潮的接力</h3>
+  <p>第二章的标题本身就是公式：<strong>「AI复兴：深度学习+大数据=人工智能」——三次热潮各有引擎：第一次靠图灵测试点燃想象，第二次靠语音识别落地场景，第三次靠「深度学习携手大数据」全面铺开；书对历史的态度是对照式的：每次热潮的技术内核不同，但公众的认知曲线惊人相似——先是惊叹，然后恐惧，最后习惯</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 三次热潮</h5>
+    <table>
+      <tr><th style="width:150px">第一次热潮</th><td>符号主义与图灵测试：从0到1</td></tr>
+      <tr><th style="width:150px">第二次热潮</th><td>统计方法与语音识别：从1到场景</td></tr>
+      <tr><th style="width:150px">第三次热潮</th><td>深度学习＋大数据：从场景到基础设施</td></tr>
+      <tr><th style="width:150px">热潮循环</th><td>惊叹→恐惧→习惯：公众认知三段式</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「深度学习携手大数据引领第三次AI热潮。」</strong>——公式即章名：<strong>算法是引擎，数据是燃料——单独任何一个都点不着火</strong>。</p>
+  </div>
+
+  <h3 id="p2c2">AlphaGo 的启示</h3>
+  <p>第三章用一场对局讲透弱AI的能与不能：<strong>「普通公众对人工智能快速发展的认知，始于2016年初AlphaGo的惊世对局」——「AlphaGo在围棋领域超越了人类最顶尖选手」；但书的追问更有价值：「AlphaGo带给人类的启示究竟是什么？」——启示不在机器会下棋，而在机器学会了人类说不清的策略：50%胜率的落子为什么最优，机器说不清，人类也算不清——可解释性成了新时代的问题</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 黑箱</h5>
+    <table>
+      <tr><th style="width:150px">惊世对局</th><td>2016李世石五番棋：公众认知的分水岭</td></tr>
+      <tr><th style="width:150px">弱AI实例</th><td>「AlphaGo是弱人工智能的一个最好实例」</td></tr>
+      <tr><th style="width:150px">策略学习</th><td>机器会用，但说不清为什么用</td></tr>
+      <tr><th style="width:150px">启示</th><td>不是「机器赢了」，是「学习方式变了」</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>AlphaGo赢了，但它是弱AI——围棋的满分不等于跨领域的及格。</strong>——判断AI新闻的过滤器：<strong>看到「AI超越人类」先问一句：在哪个领域？封闭还是开放？</strong></p>
+  </div>
+</section>
+<!-- ================= 第三段 变革版图 —— 50% 与落地场景 -->
+<section id="part3">
+  <h2>四 · 第三段 变革版图 —— 50% 与落地场景<span class="rhyme">—— 失业方程 · 四大场景 · 中国机会 ——</span></h2>
+
+  <h3 id="p3c1">50%的失业方程</h3>
+  <p>第四章先摆最尖锐的问题：<strong>「我的预测是，约50%的人类工作会受到人工智能的影响」——霍金的版本更冷：「工厂自动化已经让众多传统制造业工人失业，人工智能的兴起很有可能会让失业潮波及中产阶级」——书的对冲不是安慰，是历史参照：电报行业被取代时，人们相信新技术的优越性——「同时也会制造出足够多的新的就业机会」：受影响≠被消灭，转型成本才是真正的变量</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 受影响</h5>
+    <table>
+      <tr><th style="width:150px">约50%</th><td>受影响工作的粗估：影响不等于消灭</td></tr>
+      <tr><th style="width:150px">霍金之问</th><td>失业潮波及中产：自动化阶梯向上爬</td></tr>
+      <tr><th style="width:150px">电报参照</th><td>新技术替换旧岗位的历史轮回</td></tr>
+      <tr><th style="width:150px">新就业机会</th><td>对冲项：转型成本与时间差是关键</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「我的预测是，约50%的人类工作会受到人工智能的影响。」</strong>——数字的用法示范：<strong>给区间不给判决——50%是「受影响」，不是「被失业」：读科普先看清楚谓语</strong>。</p>
+  </div>
+
+  <h3 id="p3c2">四大落地场景</h3>
+  <p>第四章的目录就是一张投资地图：<strong>「自动驾驶：AI最大的应用场景」「智慧金融：AI目前最被看好的落地领域」「智慧医疗：AI将成为医生的好帮手」「艺术创作：AI与人类各擅胜场」——场景的排序暗含确定性梯度：自动驾驶数据最多场景最闭环，金融先落地因为数字原生，医疗是辅助定位而非替代定位，艺术创作是人类的保留地——AI与人类各擅胜场不是客气话，是场景筛选的结论</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 场景地图</h5>
+    <table>
+      <tr><th style="width:150px">自动驾驶</th><td>「AI最大的应用场景」：数据与闭环双全</td></tr>
+      <tr><th style="width:150px">智慧金融</th><td>「目前最被看好的落地领域」：数字原生</td></tr>
+      <tr><th style="width:150px">智慧医疗</th><td>好帮手定位：辅助而非替代</td></tr>
+      <tr><th style="width:150px">各擅胜场</th><td>艺术创作的分工：AI有形式，人类有缘由</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>「艺术创作：AI与人类各擅胜场。」</strong>——场景判断的分界线：<strong>有标准答案的归机器，需要缘由和意义的归人——这也是职业选择的分界线</strong>。</p>
+  </div>
+
+  <h3 id="p3c3">中国机会与创新工场</h3>
+  <p>第五章把地图缩到中国：<strong>「AI是中国创新、创业的最好机会」——理由是三重叠加：市场大、数据足、政策顺；「创新工场的AI布局」给出投资人的具体打法；书的姿态是务实乐观：不谈概念谈布局——第四章的场景清单＋第五章的布局清单，构成从「看懂」到「行动」的通道</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 中国机会</h5>
+    <table>
+      <tr><th style="width:150px">最好机会</th><td>市场·数据·政策三重叠加</td></tr>
+      <tr><th style="width:150px">创新工场</th><td>作者的投资实践：从看懂到布局</td></tr>
+      <tr><th style="width:150px">大时代大格局</th><td>第五章起手式：技术浪潮配市场纵深</td></tr>
+      <tr><th style="width:150px">务实乐观</th><td>不谈概念谈清单：科普的下半场是行动</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>「AI是中国创新、创业的最好机会。」</strong>——投资视角的落点：<strong>技术窗口期＋市场纵深＝时间差红利——窗口期不等人</strong>。</p>
+  </div>
+</section>
+<!-- ================= 第四段 迎接未来 —— 教育与个人发展 -->
+<section id="part4">
+  <h2>五 · 第四段 迎接未来 —— 教育与个人发展<span class="rhyme">—— 学什么 · 怎么学 · 意义何在 ——</span></h2>
+
+  <h3 id="p4c1">AI时代该学什么</h3>
+  <p>第六章把答案落到个人：<strong>「AI时代该如何学习？」「AI时代该学什么？」——书给出的方向是：重复性工作最容易被自动化，所以学习要从「与机器比效率」转向「做机器做不了的事」：跨领域推理、常识、审美、协作——「这可以让那些高级人才将更多的时间」投入创造性工作：自动化的另一半礼物是时间，能不能接住，看学习结构</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 学习结构</h5>
+    <table>
+      <tr><th style="width:150px">重复性工作</th><td>最容易被自动化：学习的下限警钟</td></tr>
+      <tr><th style="width:150px">跨领域</th><td>弱AI的短板：人类学习的加分项</td></tr>
+      <tr><th style="width:150px">高级人才时间</th><td>自动化解放出的时间：流向创造性工作</td></tr>
+      <tr><th style="width:150px">人机分工</th><td>效率归机器：缘由与意义归人</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>重复性最容易被自动化——学习结构的升级方向是机器做不了的事。</strong>——个人策略三问：<strong>我的工作有多重复？我的判断机器能不能替？我的时间自动化后流向哪里？</strong></p>
+  </div>
+
+  <h3 id="p4c2">教育的变革实验</h3>
+  <p>第六章用密涅瓦大学讲教育的新形态：<strong>「沉浸式全球化体验」——「学生可以随时与最优秀的学者互动」的远程在线教育；书同时提出教育改造的两个考题：「个性化、定制化的教育该如何设计」「如何评估定制化教育的效果」——AI时代的教育悖论：AI让个性化成为可能，但评价体系还停留在标准化——考题比答案先到</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 教育考题</h5>
+    <table>
+      <tr><th style="width:150px">沉浸式全球化体验</th><td>密涅瓦模式：城市即校园</td></tr>
+      <tr><th style="width:150px">远程在线教育</th><td>「随时与最优秀的学者互动」</td></tr>
+      <tr><th style="width:150px">个性化定制</th><td>AI赋能教育的可能性：因材施教的规模化</td></tr>
+      <tr><th style="width:150px">评估难题</th><td>评价体系滞后于教学形态：考题先到</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>AI让个性化教育成为可能，但评估体系还是标准化的。</strong>——教育变革的瓶颈：<strong>不是教不起，是评不动——工具先行，制度跟上，中间有十年</strong>。</p>
+  </div>
+
+  <h3 id="p4c3">有了AI，人生还有意义吗</h3>
+  <p>全书的收束在最后一节：<strong>「有了AI，人生还有意义吗？」——书的态度藏在开篇的克拉克引文里：「不管我们是碳基人类还是硅基机器人，都没有本质的区别。我们中的每一员都应获得应有的尊重」——意义问题没有被机器改变：从蒸汽机到AlphaGo，人类一直在回答同一道题——当效率被外包，什么值得投入一生；书用六章铺垫，只把这个问题留在最后：留给读者自己作答</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 概念 · 意义</h5>
+    <table>
+      <tr><th style="width:150px">意义之问</th><td>全书最后一节标题：技术书的哲学落点</td></tr>
+      <tr><th style="width:150px">碳基硅基</th><td>克拉克的平等句：尊重不按介质分配</td></tr>
+      <tr><th style="width:150px">效率外包</th><td>蒸汽机到AI一脉相承：体力→脑力</td></tr>
+      <tr><th style="width:150px">留白作答</th><td>科普的收尾艺术：问题比答案长寿</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>当效率被外包，什么值得投入一生？</strong>——AI时代的终极问题：<strong>效率有最优解，意义没有——这正是人留给自己的位置</strong>。</p>
+  </div>
+</section>
+<!-- ================= 人物图鉴 -->
+<section id="characters">
+  <h2>六 · 人物图鉴与成长弧线<span class="rhyme">—— 主角配角 · 一张表看穿 ——</span></h2>
+  <div class="card zhu">
+    <h5>主要人物</h5>
+    <p><strong>李开复</strong>——全书主笔——<strong>创新工场创始人：从微软谷歌高管到AI投资人——第五章「创新工场的AI布局」即其亲历：科普之外自带产业视角</strong></p>
+    <p><strong>王咏刚</strong>——合著者——<strong>技术作者：负责把深度学习与算法脉络讲成可读的故事——书的科普密度与故事节奏出自这一组合</strong></p>
+    <p><strong>AlphaGo</strong>——全书最重要的角色——<strong>「AlphaGo是弱人工智能的一个最好实例」：2016年惊世对局是公众认知的分水岭，也是全书概念的试金石</strong></p>
+    <p><strong>克拉克</strong>——开篇定调者——<strong>《2010：太空漫游》的「碳基硅基互相尊重」：技术书的情绪起点——先讲人，再讲机器</strong></p>
+  </div>
+  <div class="card">
+    <h5>次要人物（功能位）</h5>
+    <table>
+      <tr><th style="width:150px">图灵</th><td>第一次热潮的源头——<strong>「图灵测试与第一次AI热潮」：机器能不能思考，从一道测试题开始</strong></td></tr>
+      <tr><th style="width:150px">霍金</th><td>最冷的警告——<strong>「人工智能的兴起很有可能会让失业潮波及中产阶级」：与开复的50%形成对冲对话</strong></td></tr>
+      <tr><th style="width:150px">李世石</th><td>对局的对面——<strong>「围棋世界冠军李世石坐在AlphaGo面前，宿命再一次降临」：人类在棋盘上的最后一道防线</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 主题与象征 -->
+<section id="symbols">
+  <h2>七 · 主题与象征<span class="rhyme">—— 每个道具都在说话 ——</span></h2>
+  <div class="card">
+    <table>
+      <tr><th style="width:150px">50% ↔ 影响而非消灭</th><td>失业方程的分寸——<strong>「约50%的人类工作会受到人工智能的影响」：谓语是「影响」不是「取代」</strong></td></tr>
+      <tr><th style="width:150px">深度学习 ↔ 大数据</th><td>复兴的引擎与燃料——<strong>「深度学习+大数据=人工智能」：单独任何一个都点不着火</strong></td></tr>
+      <tr><th style="width:150px">弱 ↔ 强 ↔ 超</th><td>AI的三级阶梯——<strong>AlphaGo是弱AI的满分：一个领域的满分不等于跨领域的及格</strong></td></tr>
+      <tr><th style="width:150px">自动驾驶 ↔ 各擅胜场</th><td>场景的确定性梯度——<strong>有标准答案的归机器，需要意义的归人</strong></td></tr>
+      <tr><th style="width:150px">奇点 ↔ 「没有人知道」</th><td>科幻与现实之间——<strong>「没有人知道奇点会不会到来，会在何时到来」</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 写作手法 -->
+<section id="craft">
+  <h2>八 · 写作手法赏析<span class="rhyme">—— 怎么写，就能怎么学 ——</span></h2>
+  <div class="card">
+    <h5>① 公式即章名</h5>
+    <p>「深度学习+大数据=人工智能」——<strong>把技术结论直接放标题：全书最短的知识压缩</strong></p>
+    <h5>② 场景选单法</h5>
+    <p>第四章目录即地图——<strong>自动驾驶·金融·医疗·艺术：确定性从高到低的排序暗含投资逻辑</strong></p>
+    <h5>③ 引文定调</h5>
+    <p>开篇克拉克「碳基硅基互相尊重」——<strong>技术书先讲人：恐惧叙事与平等叙事的分水岭</strong></p>
+    <h5>④ 数字加谓语</h5>
+    <p>「约50%……会受到……影响」——<strong>给区间不给判决：科普写作的诚实句式</strong></p>
+    <h5>⑤ 问题收尾</h5>
+    <p>最后一节「有了AI，人生还有意义吗？」——<strong>六章铺垫一个问题：留白比答案长寿</strong></p>
+  </div>
+</section>
+<!-- ================= 名段欣赏 -->
+<section id="mingduan">
+  <h2>九 · 名段欣赏<span class="rhyme">—— 原文精读 · 逐段赏析 ——</span></h2>
+  <div class="mingduan" data-idx="壹">
+    <div class="md-src">AI已经来了</div>
+    <div class="md-text">现状宣判句。<strong>「它就在我们身边，几乎无处不在」——AI不是未来时，是进行时：讨论未来之前先认领现在</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="贰">
+    <div class="md-src">深度学习＋大数据</div>
+    <div class="md-text">第三次热潮的完整公式。<strong>算法是引擎，数据是燃料——这句话同时解释了为什么前两次热潮会熄火</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="叁">
+    <div class="md-src">AlphaGo是弱AI实例</div>
+    <div class="md-text">概念的试金石。<strong>围棋满分≠跨领域及格：看到「AI超越人类」先问领域与边界——分级思维是判断力的地基</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="肆">
+    <div class="md-src">约50%受影响</div>
+    <div class="md-text">失业方程的关键词。<strong>「受影响」不等于「被消灭」——同时会制造新就业：转型成本与时间差才是真正的战场</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="伍">
+    <div class="md-src">各擅胜场</div>
+    <div class="md-text">人机分工的分界线。<strong>有标准答案的归机器，需要缘由与意义的归人——职业选择的坐标系一秒画好</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="陆">
+    <div class="md-src">人生意义之问</div>
+    <div class="md-text">全书的问题式收尾。<strong>当效率被外包，什么值得投入一生——机器答不了的，正是人保得住的</strong>。</div>
+  </div>
+</section>
+<!-- ================= 金句 -->
+<section id="quotes">
+  <h2>十 · 金句摘录<span class="rhyme">—— 15 条 · 中英对照 · 带出处 ——</span></h2>
+  <blockquote>"人工智能已经来了，而且它就在我们身边，几乎无处不在。"<span class="src">—— 第一章 · 人工智能来了</span></blockquote>
+  <blockquote>"不管我们是碳基人类还是硅基机器人，都没有本质的区别。我们中的每一员都应获得应有的尊重。"<span class="src">—— 克拉克 · 《2010：太空漫游》</span></blockquote>
+  <blockquote>"深度学习携手大数据引领第三次AI热潮。"<span class="src">—— 第二章 · AI复兴</span></blockquote>
+  <blockquote>"AlphaGo是弱人工智能的一个最好实例。"<span class="src">—— 第三章 · 人机大战</span></blockquote>
+  <blockquote>"未来学家和科幻作者喜欢用「奇点」（Singularity）来表示超人工智能到来的那个神秘时刻。"<span class="src">—— 第三章 · 奇点来临？</span></blockquote>
+  <blockquote>"没有人知道奇点会不会到来，会在何时到来。"<span class="src">—— 第三章 · 奇点来临？</span></blockquote>
+  <blockquote>"我的预测是，约50%的人类工作会受到人工智能的影响。"<span class="src">—— 第四章 · AI会让人类大量失业吗？</span></blockquote>
+  <blockquote>"工厂自动化已经让众多传统制造业工人失业，人工智能的兴起很有可能会让失业潮波及中产阶级。"<span class="src">—— 霍金 · 第四章引文</span></blockquote>
+  <blockquote>"工作被取代，同时也会制造出足够多的新的就业机会。"<span class="src">—— 第四章 · 历史参照</span></blockquote>
+  <blockquote>"自动驾驶：AI最大的应用场景。"<span class="src">—— 第四章 · 场景目录</span></blockquote>
+  <blockquote>"智慧金融：AI目前最被看好的落地领域。"<span class="src">—— 第四章 · 场景目录</span></blockquote>
+  <blockquote>"艺术创作：AI与人类各擅胜场。"<span class="src">—— 第四章 · 场景目录</span></blockquote>
+  <blockquote>"AI是中国创新、创业的最好机会。"<span class="src">—— 第五章 · 机遇来临</span></blockquote>
+  <blockquote>"AI时代该如何学习？AI时代该学什么？"<span class="src">—— 第六章 · 迎接未来</span></blockquote>
+  <blockquote>"有了AI，人生还有意义吗？"<span class="src">—— 第六章 · 全书末节</span></blockquote>
+</section>
+<!-- ================= 拓展阅读 -->
+<section id="tuozhan">
+  <h2>十一 · 拓展阅读<span class="rhyme">—— 原文 · 词条 · 译文 ——</span></h2>
+  <div class="card">
+    <h5>原文关键词</h5>
+    <ul class="ext">
+      <li><a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BC%80%E5%A4%8D" target="_blank">李开复</a> —— </li>
+      <li><a href="https://zh.wikipedia.org/wiki/AlphaGo" target="_blank">AlphaGo</a> —— </li>
+      <li><a href="https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0" target="_blank">深度学习</a> —— </li>
+    </ul>
+    <h5>同域书架</h5>
+    <ul class="ext">
+      <li><a href="../books/04-jiqi70.html" target="_blank">机器70年（第4部）</a> —— </li>
+      <li><a href="../books/36-rensheng.html" target="_blank">人生算法（第36部）</a> —— </li>
+      <li><a href="../books/37-dipingxian.html" target="_blank">地平线2025（第37部）</a> —— </li>
+    </ul>
+  </div>
+</section>
+<!-- ================= 个人感悟 -->
+<section id="ganyu">
+  <h2>十二 · 个人感悟与心得<span class="rhyme">—— 三点心得 ——</span></h2>
+  <div class="card">
+    <h3>三点感悟</h3>
+    <h5>① 先认领现在，再讨论未来</h5>
+    <p><strong>「人工智能已经来了」——大多数AI焦虑来自把进行时当成将来时：你的手机推荐、人脸识别、语音输入早已是AI——认清现状，恐惧自动减半</strong>。</p>
+    <h5>② 分级是判断力的地基</h5>
+    <p><strong>弱·强·超三级阶梯是AI新闻的过滤器：看到「AI超越人类」先问在哪个领域、封闭还是开放——AlphaGo的围棋满分不救跨领域的及格线</strong>。</p>
+    <h5>③ 把「影响」读成行动清单</h5>
+    <p><strong>「约50%的人类工作会受到人工智能的影响」——谓语是影响：受影响的对应动作是转型，不是恐慌——第六章「该学什么」是这道题的参考答案</strong>。</p>
+    <p style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);color:var(--dim);">
+      六章读毕，这本书的真正结论不在任何一章里，而在三个句式的落差之间——<strong>「AI已经来了」（现状）→「约50%受影响」（方程）→「有了AI，人生还有意义吗」（提问）——克拉克的碳基硅基平等句是全书的暗线：技术上弱AI是现实、强AI是悬念，但尊重不需要等技术成熟：教育、转型、意义之问，都是今天就能开始做的准备</strong>。
+    </p>
+  </div>
+</section>
+<!-- ================= 速查 -->
+<section id="recap">
+  <h2>十三 · 一页速查（复习用）</h2>
+  <table>
+    <tr><th style="width:120px">AI已经来了</th><td>无处不在：从未来时改为进行时</td></tr>
+    <tr><th style="width:120px">深度学习＋大数据</th><td>第三次热潮公式：引擎配燃料</td></tr>
+    <tr><th style="width:120px">弱·强·超</th><td>AI三级阶梯：判断力的地基</td></tr>
+    <tr><th style="width:120px">约50%受影响</th><td>失业方程：影响不等于消灭</td></tr>
+    <tr><th style="width:120px">各擅胜场</th><td>人机分界：标准答案归机器</td></tr>
+  </table>
+</section>
+<!-- ================= 思维导图 -->
+<section class="sec" id="mindmap">
+  <h2>十四 · 全书思维导图<span class="rhyme">—— 一图纵览 ——</span></h2>
+  <div class="card mindmap-card">
+    <img src="../assets/mindmaps/69-likaiifu-ai.svg" alt="《人工智能》思维导图">
+    <p class="mindmap-tip">一图纵览全书骨架 · 中英双语对照 · 手机端可左右滑动查看全图</p>
+  </div>
+</section>
+
+<footer>
+  <div class="crumbs"><a href="../index.html">◄ 返回书库</a></div>
+  仙书阁 ｜ 用心读 · 用行证<br>
+  <span class="brand">用数据讲书 · 用真心做生活</span>
+</footer>
+
+<button class="totop" title="御风而上" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</main>
+</div>
+
+<!-- ================= 注释数据 ================= -->
+<script>
+window.ZHUSHI = {
+  z1: {
+    t: "碳基硅基之问",
+    b: "克拉克《2010：太空漫游》的对白——「不管我们是碳基人类还是硅基机器人，都没有本质的区别」——全书开篇第一句引文，定下「先讲人，再讲机器」的基调。",
+    links: [
+      { n: "info · 总纲", u: "#info" }
+    ]
+  },
+  z2: {
+    t: "三次AI热潮",
+    b: "第二次章名「AI复兴：深度学习+大数据=人工智能」——三次热潮分别是：图灵测试（第一次）、语音识别（第二次）、深度学习＋大数据（第三次）——每次热潮的引擎不同，公众认知曲线相似。",
+    links: [
+      { n: "第2段 · 复兴密码", u: "#parts" }
+    ]
+  },
+  z3: {
+    t: "约50%",
+    b: "第四章李开复对全人类工作受AI影响程度的粗略估计——注意谓语是「受影响」而非「被取代」——书同时给出「同时也会制造出足够多的新的就业机会」的对冲与第六章的教育应对。",
+    links: [
+      { n: "第3段 · 变革版图", u: "#parts" }
+    ]
+  }
+};
+</script>
+
+<script src="../assets/bgm.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

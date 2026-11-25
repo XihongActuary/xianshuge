@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仙书阁 · 《计算智能导论》· 仙书阁书库</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="computational-intelligence">
+
+<div class="wrap">
+
+<div class="toc-col">
+<aside id="toc">
+  <div class="toc-head">
+    <h3>目 录</h3>
+    <button class="toc-fold" title="折叠目录">◀</button>
+  </div>
+  <div class="crumb"><a href="../index.html">◄ 返回书库</a> · 第七十部</div>
+  <ol>
+  <li><a href="#info">〇 · 书籍信息</a></li>
+  <li><a href="#theme">一 · 核心主题总览</a></li>
+  <li><a href="#part1">二 · Part I 导论 —— 五大范式总览</a>
+  <ol class="sub">
+  <li><a href="#p1c1">The Brain: 一台非线性并行计算机</a></li>
+  <li><a href="#p1c2">AI 与 CI 的分界</a></li>
+  </ol>
+  </li>
+  <li><a href="#part2">三 · Part II 神经网络 —— 从生物神经元到学习规则</a>
+  <ol class="sub">
+  <li><a href="#p2c1">An Artificial Neuron: 从突触到权重</a></li>
+  <li><a href="#p2c2">监督与无监督：两种学习</a></li>
+  </ol>
+  </li>
+  <li><a href="#part3">四 · Part III 进化计算 —— 适者生存即搜索算法</a>
+  <ol class="sub">
+  <li><a href="#p3c1">Survival of the Fittest: 弱者必须死去</a></li>
+  <li><a href="#p3c2">GA 家族与遗传规划</a></li>
+  </ol>
+  </li>
+  <li><a href="#part4">五 · Part IV 群智能与模糊 —— 涌现与用词计算</a>
+  <ol class="sub">
+  <li><a href="#p4c1">Swarm Intelligence: 不聪明个体的聪明集体</a></li>
+  <li><a href="#p4c2">Fuzzy Logic: 用词而非数字做计算</a></li>
+  </ol>
+  </li>
+  <li><a href="#characters">六 · 人物图鉴与成长弧线</a></li>
+  <li><a href="#symbols">七 · 主题与象征</a></li>
+  <li><a href="#craft">八 · 写作手法赏析</a></li>
+  <li><a href="#mingduan">九 · 名段欣赏</a></li>
+  <li><a href="#quotes">十 · 金句摘录</a></li>
+  <li><a href="#tuozhan">十一 · 拓展阅读</a></li>
+  <li><a href="#ganyu">十二 · 个人感悟与心得</a></li>
+  <li><a href="#recap">十三 · 一页速查（复习用）</a></li>
+  </ol>
+</aside>
+<div class="toc-resizer" title="拖拽调整宽度"></div>
+</div>
+
+<main>
+
+<header class="hero">
+  <div class="kicker">读 书 笔 记 · 第 七十 部</div>
+  <h1>计算智能导论</h1>
+  <div class="title-en">Computational Intelligence: An Introduction (2nd ed.)</div>
+  <div class="sub-title">—— 五大范式 · 向自然借算法 ——</div>
+  <div class="meta">
+    <span>Andries P. Engelbrecht 著 · Wiley 2007 第二版（英文原版 630页）</span>
+    <span>体裁：计算智能经典教材（比勒陀利亚大学）</span>
+    <span>关键词：神经网络 · 进化计算 · 群智能 · 免疫系统 · 模糊系统</span>
+    <span>摘录格式：<span class="jt" data-n="z2">英文原文＋中文解析</span></span>
+  </div>
+</header>
+<!-- ================= 书籍信息 -->
+<section id="info">
+  <h2>〇 · 书籍信息</h2>
+  <div class="card">
+    <h5>基本信息</h5>
+    <table>
+      <tr><th style="width:110px">总纲</th><td>全书把计算智能拆成五大范式：<strong>NN（模型神经网络）、EC（模型自然演化）、SI（模型 swarm 群体行为）、AIS（模型人类免疫系统）、FS（源于生物体与环境的交互）——第一章的范式图（Figure 1.1）是一张向自然借算法的地图</strong></td></tr>
+      <tr><th style="width:110px">结构</th><td>六大部分：<strong>导论 → 人工神经网络（监督/无监督学习）→ 进化计算（GA·GP·DE·ES·CMA·PSO·ACO）→ 群智能 → 人工免疫系统 → 模糊系统——34章从生物原型走到数学实现，每章配 benchmark 函数与作业题</strong></td></tr>
+      <tr><th style="width:110px">英文地位</th><td><strong>这本研究手册是计算智能领域的标准入门教材：从 2002 年初版到 2007 年第二版，其「生物原型→数学模型→算法伪代码」的三段式写法被后来的教材广泛模仿</strong></td></tr>
+      <tr><th style="width:110px">一句话</th><td><strong>「Enormous successes have been achieved through the modeling of biological and natural intelligence, resulting in so-called intelligent systems.」——整本书只讲一件事：自然界的笨办法，恰恰是搜索空间里的聪明办法</strong>。</td></tr>
+    </table>
+  </div>
+  <div class="lead">
+    第一章开宗明义：<span class="jt" data-n="z1"><strong>「Enormous successes have been achieved through the modeling of biological and natural intelligence, resulting in so-called intelligent systems.」——从生物智能与自然智能的建模中，人们取得了巨大的成功</strong>。读法提示：第一章先建立五范式全景（NN·EC·SI·AIS·FS），第二章走进神经元与激活函数，第 9 章是遗传算法的标准章节，第 16 章讲 PSO，第 20–22 章讲模糊集与模糊控制——本页摘录按「英文原文＋中文解析」成对给出</span>。
+  </div>
+</section>
+<!-- ================= 核心主题 -->
+<section id="theme">
+  <h2>一 · 核心主题总览</h2>
+  这部六百页英文教材的四条母题：
+  <div class="card zhu">
+    <h5>① 向自然借算法</h5>
+    <p>五范式全是仿生学：<strong>大脑（NN）、自然演化（EC）、鸟群鱼群（SI）、免疫系统（AIS）、语言的模糊性（FS）——书的第一性原理是：自然界的解法是亿万次试错筛出来的，把筛法搬进计算机，比人工设计规则更高效——「The brain is a complex, nonlinear and parallel computer.」（大脑是一台复杂、非线性、并行的计算机）</strong></p>
+  </div>
+  <div class="card">
+    <h5>② 弱个体·强集体</h5>
+    <p>群智能的定义句是全书最漂亮的一句：<strong>「Swarm intelligence is the property of a system whereby the collective behaviors of unsophisticated agents interacting locally with their environment cause coherent functional global patterns to emerge.」——不聪明的个体＋局部的交互＝涌现出聪明的全局图景：没有指挥官，只有规则</strong></p>
+  </div>
+  <div class="card">
+    <h5>③ 适者生存的搜索</h5>
+    <p>进化计算把达尔文变成优化器：<strong>「Evolutionary computation (EC) has as its objective to mimic processes from natural evolution, where the main concept is survival of the fittest: the weak must die.」（主旨是模拟自然演化，核心概念是适者生存：弱者必须死去）——种群·选择·交叉·变异，四大算子构成一个可以跑起来的搜索引擎</strong></p>
+  </div>
+  <div class="card">
+    <h5>④ 用词计算</h5>
+    <p>模糊逻辑的宣言：<strong>「Where fuzzy logic is frequently described as computing with words rather than numbers, fuzzy control is described as control with sentences rather than equations.」——模糊逻辑是用词而非数字做计算，模糊控制是用句子而非方程做控制：把「如果热了就调低空调」翻译成可执行的数学</strong></p>
+  </div>
+</section>
+<!-- ================= Part I 导论 —— 五大范式总览 -->
+<section id="part1">
+  <h2>二 · Part I 导论 —— 五大范式总览<span class="rhyme">—— NN · EC · SI · AIS · FS ——</span></h2>
+
+  <h3 id="p1c1">The Brain: 一台非线性并行计算机</h3>
+  <p><strong>Chapter 1 原文：The brain is a complex, nonlinear and parallel computer. It has the ability to perform tasks such as pattern recognition, perception and motor control much faster than any computer.</strong>（大脑是一台复杂、非线性、并行的计算机，它在模式识别、感知与运动控制上比任何计算机都快）——解析：速度差来自结构差：硅门以纳秒计，神经以毫秒计，但大脑赢了——因为并行：皮层约有 10–500 亿个神经元、60 万亿个突触，粗略分成约 1000 个模块并行开工——单点慢、全局快，这是全书一切算法的原型直觉。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 并行</h5>
+    <table>
+      <tr><th style="width:150px">nonlinear</th><td>非线性：整体不等于部分之和——学习的前提</td></tr>
+      <tr><th style="width:150px">parallel</th><td>并行：1000 个模块同时开工——速度差的真实来源</td></tr>
+      <tr><th style="width:150px">pattern recognition</th><td>模式识别：大脑的看家本领</td></tr>
+      <tr><th style="width:150px">motor control</th><td>运动控制：毫秒级神经完胜纳秒级硅门</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>The brain is a complex, nonlinear and parallel computer.</strong>——定义句的极简写法：<strong>三个形容词排成一行，第 2 章的全部数学都是这三个词的展开</strong>。</p>
+  </div>
+
+  <h3 id="p1c2">AI 与 CI 的分界</h3>
+  <p>第一章给出计算智能（CI）的定位：<strong>AI（人工智能）追求「让机器像人一样聪明」的传统路线（符号、逻辑、知识工程）；CI 则放弃「复制推理」，改为「模仿自然算法」：五范式没有一个是抄人类思维的——大脑抄的是生物结构，进化抄的是种群筛选，群体抄的是社会行为——一条「自下而上」的路：不教机器规则，让机器在数据与环境里自己长出规则</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 范式</h5>
+    <table>
+      <tr><th style="width:150px">computational intelligence</th><td>计算智能：自然算法的总称</td></tr>
+      <tr><th style="width:150px">paradigms</th><td>范式：Figure 1.1 的五个分支</td></tr>
+      <tr><th style="width:150px">intelligent systems</th><td>「resulting in so-called intelligent systems」：建模的产物</td></tr>
+      <tr><th style="width:150px">top-down vs bottom-up</th><td>符号AI自上而下 vs CI自下而上</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>CI 不抄人类思维，抄自然算法。</strong>——AI 家族的位置感：<strong>符号主义走「自上而下」，计算智能走「自下而上」——两条路在今天的深度学习里合流</strong>。</p>
+  </div>
+</section>
+<!-- ================= Part II 神经网络 —— 从生物神经元到学习规则 -->
+<section id="part2">
+  <h2>三 · Part II 神经网络 —— 从生物神经元到学习规则<span class="rhyme">—— 神经元 · 激活函数 · 监督与无监督 ——</span></h2>
+
+  <h3 id="p2c1">An Artificial Neuron: 从突触到权重</h3>
+  <p><strong>原文：The basic building blocks of biological neural systems are nerve cells, referred to as neurons. ... A signal is transmitted to the axon of a neuron only when the cell 「fires」.</strong>（生物神经系统的基本构件是神经细胞——神经元；只有当细胞「点火」时，信号才传向轴突）——解析：人工神经元（AN）是对生物神经元（BN）的直接建模：接收信号→加权求和→超过阈值才「点火」——神经网络的全部智慧，就是把「点火与否」这个二元判断升级成可学习的权重问题：第 2 章的激活函数与第 3 章的梯度下降，都是围绕这一点展开。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 神经元</h5>
+    <table>
+      <tr><th style="width:150px">neuron</th><td>神经元：细胞体·树突·轴突三件套</td></tr>
+      <tr><th style="width:150px">synapse</th><td>突触：轴突到树突的连接——权重的原型</td></tr>
+      <tr><th style="width:150px">fires</th><td>点火：超过阈值才发信号</td></tr>
+      <tr><th style="width:150px">activation function</th><td>激活函数：点火的数学化</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>A signal is transmitted to the axon of a neuron only when the cell fires.</strong>——「only when」是关键：<strong>神经元的本质是阈值判断——深度学习的门控思想从这里就开始了</strong>。</p>
+  </div>
+
+  <h3 id="p2c2">监督与无监督：两种学习</h3>
+  <p>书把神经网络学习分成两大族：<strong>监督学习（supervised）——有标签、有目标误差、靠反向传播调权重；无监督学习（unsupervised）——无标签，靠数据自身的结构自组织：Hebbian 学习、自组织特征映射（SOM）、主成分分析——书的框架一句话讲完：有老师照标签学，没老师照邻居学；今天深度学习的预训练＋微调，本质仍是这两族学习规则的组合</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 学习</h5>
+    <table>
+      <tr><th style="width:150px">supervised learning</th><td>监督学习：标签驱动误差最小化</td></tr>
+      <tr><th style="width:150px">unsupervised learning</th><td>无监督学习：结构驱动自组织</td></tr>
+      <tr><th style="width:150px">Hebbian learning</th><td>赫布法则：一起点火的连接变强</td></tr>
+      <tr><th style="width:150px">self-organizing map</th><td>SOM：自组织特征映射</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>有老师照标签学，没老师照邻居学。</strong>——两大学习族的口诀：<strong>监督学的上限由标签质量决定，无监督学的上限由数据结构决定——数据的地位在2007年就已经被写进教材框架</strong>。</p>
+  </div>
+</section>
+<!-- ================= Part III 进化计算 —— 适者生存即搜索算法 -->
+<section id="part3">
+  <h2>四 · Part III 进化计算 —— 适者生存即搜索算法<span class="rhyme">—— 种群 · 选择 · 交叉 · 变异 ——</span></h2>
+
+  <h3 id="p3c1">Survival of the Fittest: 弱者必须死去</h3>
+  <p><strong>原文：Evolutionary computation (EC) has as its objective to mimic processes from natural evolution, where the main concept is survival of the fittest: the weak must die.</strong>（进化计算的目标是模拟自然演化，核心概念是适者生存：弱者必须死去）——解析：书接着给出达尔文的残酷注脚：有的鸟巢里一只雏鸟抢到更多食物、变强，最后把兄弟姐妹全部挤出巢外——进化算法把这幅图景工程化：个体（chromosome）→适应度评估→选择→交叉（reproduction）→变异——「坏特征者弱，弱者出局」：一个优化器被三行自然史讲清楚。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 进化</h5>
+    <table>
+      <tr><th style="width:150px">survival of the fittest</th><td>适者生存：EC的第一原理</td></tr>
+      <tr><th style="width:150px">the weak must die</th><td>弱者必须死去：选择压力的直译</td></tr>
+      <tr><th style="width:150px">chromosome</th><td>染色体：个体的编码（解向量）</td></tr>
+      <tr><th style="width:150px">crossover / mutation</th><td>交叉与变异：探索与开发的两条腿</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>... the main concept is survival of the fittest: the weak must die.</strong>——冒号后的补刀：<strong>学术定义先给雅的（适者生存），再给狠的（弱者必须死）——论文写作范本：一句话两个层次</strong>。</p>
+  </div>
+
+  <h3 id="p3c2">GA 家族与遗传规划</h3>
+  <p>第三部分覆盖整个进化算法族谱：<strong>遗传算法（GA）——二进制/实数编码的标准流程（第 9 章）；遗传规划（GP）——把「个体」从解向量升级为程序树（第 10 章）：让算法自己长出公式；差分进化（DE）与进化策略（ES）——实数编码的变体家族；书还讲多目标（vector evaluated GA）与协同进化（coevolution）——族谱的启示：同一个达尔文引擎，换编码方式就长出一个新分支</strong>。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 族谱</h5>
+    <table>
+      <tr><th style="width:150px">genetic algorithm</th><td>GA：选择·交叉·变异三件套</td></tr>
+      <tr><th style="width:150px">genetic programming</th><td>GP：个体是程序树——算法长公式</td></tr>
+      <tr><th style="width:150px">differential evolution</th><td>DE：实数编码的差分变异</td></tr>
+      <tr><th style="width:150px">multi-objective</th><td>多目标：vector evaluated GA</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>同一个达尔文引擎，换编码长出新分支。</strong>——算法家族的观察法：<strong>GA解向量、GP解程序、DE解实数——引擎不变，表示法一换就是一篇新论文</strong>。</p>
+  </div>
+</section>
+<!-- ================= Part IV 群智能与模糊 —— 涌现与用词计算 -->
+<section id="part4">
+  <h2>五 · Part IV 群智能与模糊 —— 涌现与用词计算<span class="rhyme">—— 鸟群 · 蚁群 · 模糊集 ——</span></h2>
+
+  <h3 id="p4c1">Swarm Intelligence: 不聪明个体的聪明集体</h3>
+  <p><strong>原文：Swarm intelligence is the property of a system whereby the collective behaviors of unsophisticated agents interacting locally with their environment cause coherent functional global patterns to emerge.</strong>（群智能是这样一个系统的属性：不复杂的个体只做局部交互，其集体行为却涌现出协调一致的、有功能的全局图景）——解析：这是全书最漂亮的一句定义：三要素——个体不聪明（unsophisticated）、交互仅局部（interacting locally）、全局却有序（coherent global patterns）——鸟群没有指挥官、蚁群没有蓝图：第 16 章 PSO 让粒子记住自己的最好位置，第 17 章 ACO 让蚂蚁沿途留下信息素——「记住自己＋追随邻居」两条规则，跑出全场最优的搜索。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 涌现</h5>
+    <table>
+      <tr><th style="width:150px">unsophisticated agents</th><td>不聪明的个体：规则极简</td></tr>
+      <tr><th style="width:150px">interacting locally</th><td>局部交互：只见邻居不见全局</td></tr>
+      <tr><th style="width:150px">emerge</th><td>涌现：全局图景凭空长出</td></tr>
+      <tr><th style="width:150px">pheromone</th><td>信息素：蚁群的环境记忆</td></tr>
+    </table>
+    <p><b>句型</b> ｜ <strong>The collective behaviors of unsophisticated agents interacting locally with their environment cause coherent functional global patterns to emerge.</strong>——定义句三要素：<strong>个体笨、交互近、全局巧——分布式系统的设计模板，两行规则足够</strong>。</p>
+  </div>
+
+  <h3 id="p4c2">Fuzzy Logic: 用词而非数字做计算</h3>
+  <p><strong>原文：Where fuzzy logic is frequently described as computing with words rather than numbers, fuzzy control is described as control with sentences rather than equations.</strong>（模糊逻辑常被描述为「用词而非数字做计算」，模糊控制则被描述为「用句子而非方程做控制」）——解析：传统控制要用微分方程描述「温度多高、转速多快」的精确关系；模糊控制只需「如果很热，就把风速调大」这样的句子——第 20 章模糊集合给「热」一个隶属度（0.7 的热），第 21 章模糊推理把规则串起来，第 22 章解模糊化把「很热」折算成具体电压——人类语言的粗糙，恰恰是面对复杂系统时的精确。</p>
+  <div class="card">
+    <h5>◆ 语言学习 · 原文精读 · 模糊</h5>
+    <table>
+      <tr><th style="width:150px">computing with words</th><td>用词计算：模糊逻辑的宣言</td></tr>
+      <tr><th style="width:150px">membership function</th><td>隶属函数：「热」到什么程度算热</td></tr>
+      <tr><th style="width:150px">fuzzy rule</th><td>模糊规则：如果…那么…的句子</td></tr>
+      <tr><th style="width:150px">defuzzification</th><td>解模糊化：句子折算回电压</td></tr>
+    </table>
+    <p><b>习语</b> ｜ <strong>用句子做控制，不用方程。</strong>——模糊控制的哲学：<strong>语言的粗糙是对复杂系统的诚实——世界先模糊后精确，工程顺着来</strong>。</p>
+  </div>
+</section>
+<!-- ================= 人物图鉴 -->
+<section id="characters">
+  <h2>六 · 人物图鉴与成长弧线<span class="rhyme">—— 主角配角 · 一张表看穿 ——</span></h2>
+  <div class="card zhu">
+    <h5>主要人物</h5>
+    <p><strong>Andries P. Engelbrecht</strong>——作者——<strong>南非比勒陀利亚大学教授：CI 教材化的推手——「生物原型→数学模型→算法伪代码」三段式写法的标准制定者</strong></p>
+    <p><strong>大脑</strong>——全书第一模型——<strong>「The brain is a complex, nonlinear and parallel computer.」：<span class="jt" data-n="z3">10–500亿神经元</span>·60万亿突触·约1000模块并行——NN 范式的原型机</strong></p>
+    <p><strong>达尔文</strong>——第三部分的引擎——<strong>「survival of the fittest: the weak must die」——进化计算把自然史压缩成一个优化循环</strong></p>
+    <p><strong>蚁群</strong>——最优雅的搜索器——<strong>ACO 蚂蚁沿路留信息素：没有蓝图，路径自己变直——涌现的最小案例</strong></p>
+  </div>
+  <div class="card">
+    <h5>次要人物（功能位）</h5>
+    <table>
+      <tr><th style="width:150px">粒子群（PSO）</th><td>第16章主角——<strong>粒子记住自己最好的位置＋追随邻居的最好位置：两条规则跑遍连续空间</strong></td></tr>
+      <tr><th style="width:150px">免疫系统（AIS）</th><td>第五范式——<strong>识别·学习·记忆的人工免疫算法：把「敌我识别」变成异常检测</strong></td></tr>
+      <tr><th style="width:150px">Hebb</th><td>学习规则之父——<strong>「一起点火，连接变强」：无监督学习的第一条法则</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 主题与象征 -->
+<section id="symbols">
+  <h2>七 · 主题与象征<span class="rhyme">—— 每个道具都在说话 ——</span></h2>
+  <div class="card">
+    <table>
+      <tr><th style="width:150px">大脑 ↔ 并行计算机</th><td>NN 的原型——<strong>单点慢全局快：结构优势压倒元件速度</strong></td></tr>
+      <tr><th style="width:150px">弱者必须死 ↔ 选择压力</th><td>EC 的第一原理——<strong>「the weak must die」：没有淘汰就没有进化</strong></td></tr>
+      <tr><th style="width:150px">笨个体 ↔ 巧全局</th><td>SI 的涌现公式——<strong>unsophisticated＋local＝coherent global</strong></td></tr>
+      <tr><th style="width:150px">句子 ↔ 方程</th><td>模糊控制的宣言——<strong>computing with words：语言的粗糙是复杂系统里的精确</strong></td></tr>
+    </table>
+  </div>
+</section>
+<!-- ================= 写作手法 -->
+<section id="craft">
+  <h2>八 · 写作手法赏析<span class="rhyme">—— 怎么写，就能怎么学 ——</span></h2>
+  <div class="card">
+    <h5>① 三段式章节法</h5>
+    <p>生物原型→数学模型→伪代码——<strong>全书 34 章统一的骨架：后来 CI 教材的默认格式</strong></p>
+    <h5>② 定义句双层次</h5>
+    <p>「适者生存：弱者必须死」——<strong>先雅后狠：冒号补刀是英文教材写作的范本</strong></p>
+    <h5>③ benchmark 函数库</h5>
+    <p>第 555 页起的基准函数——<strong>算法不比故事比收敛：统一赛场的传统由此确立</strong></p>
+    <h5>④ 图先行</h5>
+    <p>Figure 1.1 范式图——<strong>一页地图定位全书：教材的第一张图就是目录的替身</strong></p>
+  </div>
+</section>
+<!-- ================= 名段欣赏 -->
+<section id="mingduan">
+  <h2>九 · 名段欣赏<span class="rhyme">—— 原文精读 · 逐段赏析 ——</span></h2>
+  <div class="mingduan" data-idx="壹">
+    <div class="md-src">The brain is a computer</div>
+    <div class="md-text">NN 范式的第一句。<strong>复杂·非线性·并行三词定纲——后面的全部数学都是这三个形容词的展开</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="贰">
+    <div class="md-src">The weak must die</div>
+    <div class="md-text">EC 的最狠注脚。<strong>适者生存的工程化版本：选择压力是优化器的动力——没有淘汰就没有收敛</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="叁">
+    <div class="md-src">Unsophisticated agents</div>
+    <div class="md-text">群智能的三要素。<strong>个体笨、交互近、全局巧——涌现不需要指挥官，两行规则足够</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="肆">
+    <div class="md-src">Computing with words</div>
+    <div class="md-text">模糊逻辑的宣言。<strong>用词计算、用句控制——把「如果热了就调风速」写成可执行的数学</strong>。</div>
+  </div>
+  <div class="mingduan" data-idx="伍">
+    <div class="md-src">自下而上</div>
+    <div class="md-text">CI 对符号 AI 的路线差。<strong>不教机器规则，让机器在数据里长出规则——今天深度学习的路线图，2007 年已画好</strong>。</div>
+  </div>
+</section>
+<!-- ================= 金句 -->
+<section id="quotes">
+  <h2>十 · 金句摘录<span class="rhyme">—— 8 条 · 中英对照 · 带出处 ——</span></h2>
+  <blockquote>"Enormous successes have been achieved through the modeling of biological and natural intelligence."<span class="trans">从生物智能与自然智能的建模中已取得巨大成功。</span><span class="src">—— Chapter 1 · Introduction</span></blockquote>
+  <blockquote>"The brain is a complex, nonlinear and parallel computer."<span class="trans">大脑是一台复杂、非线性、并行的计算机。</span><span class="src">—— Chapter 1 · Paradigms</span></blockquote>
+  <blockquote>"It is estimated that there is in the order of 10-500 billion neurons in the human cortex, with 60 trillion synapses."<span class="trans">据估计人类皮层约有 100–5000 亿个神经元、60 万亿个突触。</span><span class="src">—— Chapter 1 · NN</span></blockquote>
+  <blockquote>"A signal is transmitted to the axon of a neuron only when the cell 「fires」."<span class="trans">只有当细胞「点火」时，信号才被传向轴突。</span><span class="src">—— Chapter 1 · Biological Neuron</span></blockquote>
+  <blockquote>"Evolutionary computation (EC) has as its objective to mimic processes from natural evolution, where the main concept is survival of the fittest: the weak must die."<span class="trans">进化计算的目标是模拟自然演化，其核心概念是适者生存：弱者必须死去。</span><span class="src">—— Chapter 1 · EC</span></blockquote>
+  <blockquote>"swarm intelligence is the property of a system whereby the collective behaviors of unsophisticated agents interacting locally with their environment cause coherent functional global patterns to emerge."<span class="trans">群智能是这样一个系统的属性：不聪明的个体仅做局部交互，其集体行为却涌现出协调有序的全局图景。</span><span class="src">—— Chapter 16 · PSO</span></blockquote>
+  <blockquote>"Where fuzzy logic is frequently described as computing with words rather than numbers, fuzzy control is described as control with sentences rather than equations."<span class="trans">模糊逻辑常被描述为「用词而非数字做计算」，模糊控制则被描述为「用句子而非方程做控制」。</span><span class="src">—— Chapter 22 · Fuzzy Controllers</span></blockquote>
+  <blockquote>"More formally defined, emergence is the process of deriving some new and coherent structures, patterns and properties (or behaviors) in a complex system."<span class="trans">更正式地说，涌现是在复杂系统中产生新的、协调一致的结构、模式与性质（或行为）的过程。</span><span class="src">—— Chapter 16 · Emergence</span></blockquote>
+</section>
+<!-- ================= 拓展阅读 -->
+<section id="tuozhan">
+  <h2>十一 · 拓展阅读<span class="rhyme">—— 原文 · 词条 · 译文 ——</span></h2>
+  <div class="card">
+    <h5>原文关键词</h5>
+    <ul class="ext">
+      <li><a href="https://en.wikipedia.org/wiki/Andries_Engelbrecht" target="_blank">Andries Engelbrecht</a> —— </li>
+      <li><a href="https://en.wikipedia.org/wiki/Particle_swarm_optimization" target="_blank">Particle swarm optimization</a> —— </li>
+      <li><a href="https://en.wikipedia.org/wiki/Fuzzy_logic" target="_blank">Fuzzy logic</a> —— </li>
+    </ul>
+    <h5>同域书架</h5>
+    <ul class="ext">
+      <li><a href="../books/37-dipingxian.html" target="_blank">地平线2025（第37部）</a> —— </li>
+      <li><a href="../books/54-shuxue.html" target="_blank">数学的故事（第54部）</a> —— </li>
+      <li><a href="../books/71-ai-tech.html" target="_blank">人工智能技术与方法（第71部）</a> —— </li>
+    </ul>
+  </div>
+</section>
+<!-- ================= 个人感悟 -->
+<section id="ganyu">
+  <h2>十二 · 个人感悟与心得<span class="rhyme">—— 三点心得 ——</span></h2>
+  <div class="card">
+    <h3>三点感悟</h3>
+    <h5>① 自然是被试错筛过的老师</h5>
+    <p><strong>五范式全是仿生：大脑·演化·鸟群·免疫·语言——亿万年试错筛出来的解法，比人工设计的规则更抗噪：向自然借算法，是效率上的外包，不是比喻上的修辞</strong>。</p>
+    <h5>② 简单规则跑出复杂行为</h5>
+    <p><strong>「unsophisticated agents interacting locally ... cause coherent global patterns to emerge」——笨个体＋局部交互＋全局涌现：群智能把「没有指挥官怎么协作」这个问题，回答成了「两行规则」——分布式思维的最佳教材</strong>。</p>
+    <h5>③ 粗糙是复杂系统的诚实</h5>
+    <p><strong>模糊逻辑「用词计算、用句控制」：当微分方程写不动「很热」「大概」的时候，隶属函数接住了——承认模糊，反而是对复杂世界的精确建模</strong>。</p>
+    <p style="margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);color:var(--dim);">
+      六百页读毕，这本英文教材留下的不是算法清单，是一种工程世界观——<strong>大脑是一台并行计算机（NN）→ 弱者必须死去（EC）→ 笨个体涌现巧全局（SI）→ 用句子做控制（FS）——四句话的公共语法是：把自然界的笨办法搬进计算机，因为笨办法是被亿万次试错验证过的聪明——所谓计算智能，就是向自然抄作业的科学</strong>。
+    </p>
+  </div>
+</section>
+<!-- ================= 速查 -->
+<section id="recap">
+  <h2>十三 · 一页速查（复习用）</h2>
+  <table>
+    <tr><th style="width:120px">五范式</th><td>NN·EC·SI·AIS·FS：向自然借算法的地图</td></tr>
+    <tr><th style="width:120px">并行计算机</th><td>大脑三形容词：复杂·非线性·并行</td></tr>
+    <tr><th style="width:120px">弱者必须死</th><td>EC第一原理：选择压力即优化动力</td></tr>
+    <tr><th style="width:120px">涌现</th><td>笨个体＋局部交互＝巧全局</td></tr>
+    <tr><th style="width:120px">用词计算</th><td>模糊逻辑宣言：用句子做控制</td></tr>
+  </table>
+</section>
+<!-- ================= 思维导图 -->
+<section class="sec" id="mindmap">
+  <h2>十四 · 全书思维导图<span class="rhyme">—— 一图纵览 ——</span></h2>
+  <div class="card mindmap-card">
+    <img src="../assets/mindmaps/70-computational-intelligence.svg" alt="《计算智能导论》思维导图">
+    <p class="mindmap-tip">一图纵览全书骨架 · 中英双语对照 · 手机端可左右滑动查看全图</p>
+  </div>
+</section>
+
+<footer>
+  <div class="crumbs"><a href="../index.html">◄ 返回书库</a></div>
+  仙书阁 ｜ 用心读 · 用行证<br>
+  <span class="brand">用数据讲书 · 用真心做生活</span>
+</footer>
+
+<button class="totop" title="御风而上" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</main>
+</div>
+
+<!-- ================= 注释数据 ================= -->
+<script>
+window.ZHUSHI = {
+  z1: {
+    t: "五范式",
+    b: "Figure 1.1「Computational Intelligence Paradigms」——NN 模型神经系统、EC 模型自然演化、SI 模型群体行为、AIS 模型免疫系统、FS 源于生物体与环境交互——全书 34 章按这五支展开。",
+    links: [
+      { n: "info · 总纲", u: "#info" }
+    ]
+  },
+  z2: {
+    t: "英文原文＋中文解析",
+    b: "本页为英文原版教材，摘录格式按书库英文批规范：先给英文原文（黑体），后给中文解析与译文——术语对照见各节 vocab。",
+    links: [
+      { n: "各节 · 原文精读", u: "#parts" }
+    ]
+  },
+  z3: {
+    t: "10–500亿神经元",
+    b: "原文「It is estimated that there is in the order of 10-500 billion neurons in the human cortex, with 60 trillion synapses」——皮层神经元量级估计跨度大（学界从 160 亿到 860 亿不等），书取保守区间——突触数 60 万亿是 NN 规模类比的原点。",
+    links: [
+      { n: "Part II · 神经网络", u: "#parts" }
+    ]
+  }
+};
+</script>
+
+<script src="../assets/bgm.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

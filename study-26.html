@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 项链及其他 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/26-xianglian.html">本书书页</a></p>
+<h1>深度研读 · 项链及其他</h1>
+<p class="sub">居伊•德•莫泊桑 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·外研社编译组译）对照精读</p>
+<p class="lead">研读说明：莫泊桑短篇集九篇（《我的舅舅索斯登》《那次代价昂贵的骑马》《可恶的面包》《嫁妆》《荣誉勋章》《项链》《西奥迪勒•萨博的忏悔》《保护人》《伞》），以《项链》为镇卷之篇。九篇全是算术题：一条项链三万六千法郎、一把伞十八法郎、一笔嫁妆三十万法郎——人生的大账，都从小数目开始记。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析＋三个英语学习模块（词汇积累／句式分析／写作借鉴）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>索斯登开场：出于愚笨的自由思想者 · A Freethinker from Pure Stupidity</a></li>
+<li><a href="#s2"><b>贰</b>爱国的蛋卵 · The Egg from Which Wars Are Hatched</a></li>
+<li><a href="#s3"><b>叁</b>反抗宗教的宗教 · A Religion against a Religion</a></li>
+<li><a href="#s4"><b>肆</b>项链开场：命运的差错 · As If by a Slip of Fate</a></li>
+<li><a href="#s5"><b>伍</b>舞会之夜：美貌的胜利 · She Forgot Everything</a></li>
+<li><a href="#s6"><b>陆</b>丢失与借贷：他搭上了余生 · He Compromised All the Rest of His Life</a></li>
+<li><a href="#s7"><b>柒</b>十年还债：一苏一苏地算计 · Sou by Sou</a></li>
+<li><a href="#s8"><b>捌</b>人生感慨：小小一件物品能成就也能毁掉 · How Small a Thing Is Needed</a></li>
+<li><a href="#s9"><b>玖</b>假项链：顶多就值五百法郎 · My Necklace Was Paste</a></li>
+<li><a href="#s10"><b>拾</b>骑马：十八法郎与扶手椅 · I Shall Never Be Able to Move Again</a></li>
+<li><a href="#s11"><b>拾壹</b>萨博的忏悔：无赖进了教堂 · What a Rogue He Was, This Sabot!</a></li>
+<li><a href="#s12"><b>拾贰</b>嫁妆与伞：两桩算术 · A Totally Different Matter</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>索斯登开场：出于愚笨的自由思想者 · A Freethinker from Pure Stupidity</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">My Uncle Sosthenes was a Freethinker, like so many others are, from pure stupidity; people are very often religious in the same way.</p>
+<p class="cn">我的舅舅索斯登是一个自由思想者，跟其他很多人一样，纯粹出于愚笨无知，人们信仰宗教往往就是这样。</p>
+<p class="en">A place of worship represents the homage paid by man to THE UNKNOWN.</p>
+<p class="cn">拜神场所象征着人们对未知者的崇敬。</p>
+<p class="src">——《我的舅舅索斯登》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全卷第一句就完成一次对称解剖：舅舅是「出于愚笨的自由思想者」，而许多人信仰宗教「往往也是出于愚笨」。莫泊桑把两个阵营用同一把尺子量了——没有立场的信仰与没有立场的反对，是同一种懒惰。</p>
+<p><b>逻辑脉络</b>：这句判词为全篇的讽刺定调：索斯登见神父就挥拳、转身摸铁器防邪眼——他自己都不知道，摸铁器恰恰是信仰（邪眼信仰）的行为。反宗教的宗教比宗教更像宗教：它继承了全部狂热，只换了对象。叙述者的清醒在于他反教条却不反教堂——「对于拜神场所我没有一丝气愤」。</p>
+<p><b>现实意义</b>：自查你的「反对」有多少是立场、多少是习惯：无脑的信与无脑的反，成本一样低。真正值钱的是那句「要么接受一切，要么拒绝一切」背后的完整性——想清楚再站队，或者干脆不站。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>freethinker</b>　n. 自由思想者（大写 Freethinker——反教权运动的专名）</p>
+<p><b>stupidity</b>　n. 愚笨（from pure stupidity——pure 加强语气：纯粹的愚笨）</p>
+<p><b>rage</b>　n. 盛怒（a violent rage——throw sb into a rage 的固定搭配）</p>
+<p><b>grimace</b>　v. 做鬼脸（grimaced at him——法语借词的英文日常化）</p>
+<p><b>homage</b>　n. 崇敬、敬意（the homage paid by man——paid 过去分词作后置定语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>My Uncle Sosthenes was a Freethinker, like so many others are, from pure stupidity ——like 引导的比较从句 + from 短语后置：判词的主干只有一个系表结构，讽刺全靠修饰语——from pure stupidity 挂在句尾，像账单最后一行。</p>
+<p>people are very often religious in the same way ——in the same way 的对称修辞：前半句拆舅舅，后半句拆所有人——英文 satirical symmetry：一句话量两个阵营。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给讽刺人物写开场判词，用对称结构（was a Freethinker... from pure stupidity; people are very often religious in the same way）——英文 opening satire：先给人物定罪，再让情节出示证据。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>爱国的蛋卵 · The Egg from Which Wars Are Hatched</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">He was a patriot, while I was not, for after all patriotism is a kind of religion; it is the egg from which wars are hatched.</p>
+<p class="cn">他是一个爱国主义者，而我不是，因为归根结底爱国主义就是一种宗教，它是一枚能够孵化出战争的蛋卵。</p>
+<p class="en">if we must have any religion at all the old one is good enough for me.</p>
+<p class="cn">如果我们一定要有什么宗教的话，老的就足够了。</p>
+<p class="src">——《我的舅舅索斯登》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：莫泊桑全书最锋利的一句：爱国主义就是一种宗教，它是一枚能够孵化出战争的蛋卵。宗教孵化战争，蛋卵孵化禽鸟——比喻的残忍在于「孵化」是自动的：只要蛋在，战争只是时间问题。</p>
+<p><b>逻辑脉络</b>：这句判词放在叙述者与舅舅的对照里读：舅舅是共济会员、爱国者，靠「互挠手心」的互惠网络运营信仰；叙述者只接受一种宗教——老的。因为老宗教至少壳是旧的，孵化过太多次战争，人们已经看清它的成色；新造的蛋（爱国主义、共济会）壳太新，人们还在当它是金蛋。</p>
+<p><b>现实意义</b>：识别一切「新造的蛋卵」：凡是能把人群分成「我们和他们」、又能让「我们」为「他们」流血的主义，都自带孵化功能。接受一种信仰之前，先问它孵过什么。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>patriot</b>　n. 爱国主义者（He was a patriot——patriotism 的持有人身份）</p>
+<p><b>hatch</b>　v. 孵化（wars are hatched——被动语态：战争不是宣战的，是孵出的）</p>
+<p><b>egg</b>　n. 蛋卵（the egg from which——比喻的本体：主义即蛋）</p>
+<p><b>freemason</b>　n. 共济会员（舅舅的第二个身份——互惠网络的组织形式）</p>
+<p><b>devotee</b>　n. 信徒（old women devotees——叙述者的刻薄比较级）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>it is the egg from which wars are hatched ——介词 + which 定语从句（from which）：蛋在前、战争在后，孵化方向被语法锁死——英文 metaphor syntax：从句的方向就是因果的方向。</p>
+<p>while I was not ——while 对比从句的省略版（= while I was not a patriot）：三个词完成对照——英文 ellipsis：省略的不是词，是懒得重复的讽刺。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把主义写成生物学（patriotism is... the egg from which wars are hatched）——英文 metaphor craft：能孵化的是蛋，不能孵化的是口号——选名词比选形容词重要。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>反抗宗教的宗教 · A Religion against a Religion</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">We are raising up a religion against a religion; Freethought will kill clericalism. Freemasonry is the headquarters of those who are demolishing all deities.</p>
+<p class="cn">我们正建立一个反抗宗教的宗教，自由思想将会消灭教权主义。共济会就是推翻一切神权的指挥部。</p>
+<p class="en">Instead of destroying, you are organizing competition; it is only a case of lowering the prices.</p>
+<p class="cn">不是消灭，你们是在组织竞争，只是一个降低市价的问题。</p>
+<p class="src">——《我的舅舅索斯登》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：舅舅的宣言：建立反抗宗教的宗教，自由思想消灭教权主义，共济会是推翻神权的指挥部。叙述者心里嘀咕的那句才是原文的点睛之笔——「你这老傻瓜」。用组织消灭组织，用教权消灭教权，莫泊桑一眼看穿了这条路径的自我复制。</p>
+<p><b>逻辑脉络</b>：宣言与后文的情节对账：这位反宗教的斗士临终时床帏上别着一张宗教小图片，还恳求神父为他临终祈祷——他反了一辈子的东西，在死亡面前原样回收。莫泊桑不作道德审判，只让事实说话：人可以宣传一辈子无神论，但没有人能用宣传改变死亡恐惧的出厂设置。</p>
+<p><b>现实意义</b>：警惕一切「为了消灭它而变成它」的行动纲领：反对口号喊得最响的组织，往往长着它所反对的那张脸。检验标准很简单——看它处理异见者的方式，像不像它声称要推翻的那个东西。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>raise up</b>　phr. 建立、扶起（are raising up——现在进行时：宣言的时态永远在进行中）</p>
+<p><b>clericalism</b>　n. 教权主义（clerical 的抽象名词——反教权运动的核心靶词）</p>
+<p><b>headquarters</b>　n. 指挥部、总部（is the headquarters——军事隐喻的组织学用法）</p>
+<p><b>demolish</b>　v. 拆毁（demolishing all deities——拆迁动词撞上神学宾语）</p>
+<p><b>deity</b>　n. 神祇（all deities——deity 的复数：一神教语境里的复数本身就是冒犯）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>a religion against a religion ——名词 + against + 同根名词：自我复制的修辞结构——英文 oxymoron craft：反对者的语法里藏着被反对者的模板。</p>
+<p>Instead of destroying, you are organizing competition ——instead of + 动名词 的对照：摧毁与组织竞争放在同一个介词框架里——英文 antithesis：句式的对称就是论点的对称。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「以组织反组织」，让宣言自己暴露结构（a religion against a religion; Freethought will kill clericalism）——英文 self-indicting speech：人物说得越响亮，作者加的引号越冷。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>项链开场：命运的差错 · As If by a Slip of Fate</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The girl was one of those pretty and charming young creatures who sometimes are born, as if by a slip of fate, into a family of clerks.</p>
+<p class="cn">世上有些美丽动人的年轻女子，就像是被命运捉弄了一样，出生在小职员的家庭；她便是其中一个。</p>
+<p class="en">She had no dowry, no expectations, no way of being known, understood, loved, married by any rich and distinguished man; so she let herself be married to a little clerk of the Ministry of Public Instruction.</p>
+<p class="cn">她没有嫁妆，没有希望，没有办法使一个有钱有地位的男人结识她，了解她，爱她，娶她；所以，她只好把自己嫁给一个在国民教育部供职的小职员了。</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《项链》的第一句是一份出身判决书：世上有些美丽动人的年轻女子，「就像是被命运捉弄了一样，出生在小职员的家庭」。没有嫁妆、没有希望、没有办法结识有钱有地位的男人——于是她只好嫁给教育部小职员卢瓦泽尔。</p>
+<p><b>逻辑脉络</b>：「只好」二字是全篇的账目起点：婚姻市场给她的报价就这两个字。此后的每一个转折——借项链、赴舞会、丢项链、借高利贷、十年苦役——都从这份报价单上滚出来。莫泊桑不动声色地把「社会流动性」写成命运：她不是做错了什么，她只是没有别的选项。</p>
+<p><b>现实意义</b>：读任何「爱慕虚荣毁了一个人」的故事前，先看出厂配置：一个人的选项集合由出身决定，而道德评判往往只挑结果。先问一句——她的账本上，哪些是她自己写的，哪些是出生时印刷好的。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>slip of fate</b>　phr. 命运的差错（slip 小疏忽——命运失误的轻描淡写）</p>
+<p><b>dowry</b>　n. 嫁妆（had no dowry——婚姻市场的启动资金为零）</p>
+<p><b>expectations</b>　n. 期望的前景、可继承的财产（no expectations——expectation 的法律旧义）</p>
+<p><b>distinguished</b>　adj. 显赫的（any rich and distinguished man——rich 与 distinguished 并列的婚姻市场报价）</p>
+<p><b>let herself be married</b>　phr. 让自己被嫁（let + 宾语 + 被动不定式——被动语态的婚姻叙事）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>one of those pretty and charming young creatures who sometimes are born... ——one of those + 复数名词 + 关系从句：把个人命运写成类型学样本——英文 typological opening：先有类，才有人。</p>
+<p>She had no dowry, no expectations, no way of being known, understood, loved, married ——四个 no 的排比 + 五个并列过去分词（known, understood, loved, married）：否定清单从财产列到动词，逐项清空她的选项——英文 anaphora of negation。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写一个人的「出厂配置」，用否定排比清点她没有的东西（no dowry, no expectations, no way of...）——英文 inventory style：清单越长，「只好」二字越重。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>舞会之夜：美貌的胜利 · She Forgot Everything</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">She danced with rapture, with passion, intoxicated by pleasure, forgetting all in the triumph of her beauty, in the glory of her success, in a sort of cloud of happiness comprised of all this homage, admiration, these awakened desires and of that sense of triumph which is so sweet to woman's heart.</p>
+<p class="cn">她欢快兴奋地跳着舞，陶醉在欢乐中，在美貌的胜利和成功的荣耀中，在一种由尊敬、赞赏和这些被唤醒的欲念组成的幸福云雾里，以及甜入女人心房的胜利感中，她忘记了一切。</p>
+<p class="en">The night of the ball arrived. Madame Loisel was a great success.</p>
+<p class="cn">舞会之夜到了。卢瓦泽尔太太非常成功。</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：舞会是玛蒂尔德一生唯一的巅峰：跳舞、美貌的胜利、被唤醒的欲念、幸福云雾——「她忘记了一切」。这四个字是全书最贵的四个字：她忘记的正是自己的处境，而处境没有忘记她。</p>
+<p><b>逻辑脉络</b>：云雾的成色要拆开看：尊敬、赞赏、欲念——三种目光，只有一种（欲念）与她有关，另外两种全是她借来的（服装是借的，项链是借的）。巅峰之夜的每一件行头都是租的，这个细节决定了舞会既真实又虚幻：她确实美过，只是那美是借来的平台展示出来的。散场后平台收走，账单留下。</p>
+<p><b>现实意义</b>：警惕一切「被唤醒的欲念」：社交平台给的赞赏是租来的行头，账号一关，账单寄到本人。真正的资产是散场后还剩什么——玛蒂尔德散场后剩一条丢了的项链，我们散场后剩什么？</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>rapture</b>　n. 狂喜（with rapture, with passion——with 短语双连）</p>
+<p><b>intoxicated</b>　adj. 陶醉的（intoxicated by pleasure——醉的隐喻：快乐即酒精）</p>
+<p><b>triumph</b>　n. 胜利（the triumph of her beauty——triumph 与 glory 双连）</p>
+<p><b>be comprised of</b>　phr. 由……构成（comprised of all this homage——云雾的成分表）</p>
+<p><b>awakened</b>　adj. 被唤醒的（these awakened desires——与 25 号 awakening 隔书对读）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She danced with rapture, with passion, intoxicated by pleasure, forgetting all... ——现在分词双连（intoxicated / forgetting）：主句只有一个 danced，其余全挂分词——英文 participial cascade：句子越长，清醒越少。</p>
+<p>a sort of cloud of happiness comprised of... ——a sort of + of 串叠（cloud of happiness comprised of all this homage, admiration...）：名词的云雾由名词的成分构成——英文 syntax as imagery：语法结构本身在造雾。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写一个人被虚荣淹没，用一个主句＋一长串分词与 of 短语（danced... intoxicated... forgetting all in the triumph... in the glory...）——英文 syntactic intoxication：句子失控的方式就是人物失控的方式。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>丢失与借贷：他搭上了余生 · He Compromised All the Rest of His Life</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">“I have—I have—I've lost Madame Forestier's necklace,”</p>
+<p class="cn">“我……我……我把福雷斯捷太太的项链给丢了。”</p>
+<p class="en">He compromised all the rest of his life, risked signing a note without even knowing whether he could meet it;</p>
+<p class="cn">他搭上了自己的余生，冒险签下一张字据，甚至不清楚自己能否偿还。</p>
+<p class="en">He gave notes, took up ruinous obligations, dealt with usurers and all the race of lenders.</p>
+<p class="cn">他签了许多借据，定了许多足以使自己破产的契约，跟放高利贷的人以及其他形形色色的放款人打交道。</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：三句话记完整场灾难的启动：她哭道「我把福雷斯捷太太的项链给丢了」，然后是丈夫的决定：不坦白，借款买一条一模一样的。「他搭上了自己的余生，冒险签下一张字据，甚至不清楚自己能否偿还」。</p>
+<p><b>逻辑脉络</b>：灾难的放大器是那个没打出来的电话：他们找遍了裙子衣褶、披风、口袋，独独没有回到借项链的源头去说实话。诚实是一次性的低额保费，谎言是终身的全额保单——卢瓦泽尔夫妇选了后者，于是三万六千法郎、十八家放贷人、十年苦役全部启动。注意结局的反讽：这一切灾难的本金，是五百法郎的人造宝石。</p>
+<p><b>现实意义</b>：犯错后的第一反应决定损失量级：坦白是把损失锁死在当下，隐瞒是把损失挂上复利。打那个最难打的电话，永远是止损的第一步。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>compromise</b>　v. 断送、危害（compromised all the rest of his life——compromise 的金融义：让渡）</p>
+<p><b>note</b>　n. 字据、借据（signing a note——note 的票据义，非笔记）</p>
+<p><b>ruinous</b>　adj. 毁灭性的（ruinous obligations——ruin 的形容词化债务）</p>
+<p><b>usurer</b>　n. 放高利贷者（dealt with usurers——高利贷的行业专名）</p>
+<p><b>meet</b>　v. 偿付（whether he could meet it——meet the obligation 的票据义）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>I have—I have—I've lost ——重复渐进的口吃句：have 重复两次后缩成 've——英文 stammering dialogue：语法的收缩就是勇气的收缩。</p>
+<p>risked signing a note without even knowing whether he could meet it ——risk + 动名词 / without + 动名词 + whether 从句三层嵌套：签与不知在一句里并置——英文 indebted syntax：债务的语法就是越陷越深的嵌套。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写灾难启动，用三个并列动词短语给丈夫记账（gave notes, took up ruinous obligations, dealt with usurers）——英文 ledger prose：动词全过去式，责任全在纸上。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>十年还债：一苏一苏地算计 · Sou by Sou</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Thereafter Madame Loisel knew the horrible existence of the needy. She bore her part, however, with sudden heroism. That dreadful debt must be paid. She would pay it.</p>
+<p class="cn">从那以后，卢瓦泽尔太太遍尝了穷人的可怕生活。然而，她突然勇敢地承担起了责任。这笔高额债务是必须偿还的。她一定能把它还清。</p>
+<p class="en">She washed the dishes, using her dainty fingers and rosy nails on greasy pots and pans.</p>
+<p class="cn">她用那娇美的手指和玫瑰色的指甲在油腻的锅碗瓢盆里洗涮餐具。</p>
+<p class="en">defending her miserable money, sou by sou.</p>
+<p class="cn">一苏一苏地算计着她可怜的那点钱。</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：莫泊桑给玛蒂尔德的十年写了两笔：一笔是「突然勇敢地承担起了责任」——辞退佣人、搬进阁楼、签下自己的十年；另一笔是细节账——「娇美的手指和玫瑰色的指甲在油腻的锅碗瓢盆里洗涮餐具」，一苏一苏地算计。</p>
+<p><b>逻辑脉络</b>：这段是全书最容易被误读的地方：莫泊桑不是在惩罚虚荣，是在记录一个人承担责任的全部重量。十年里她变了样——皮肤粗糙、头发枯乱、双手发红——但文本给她的判词是「勇敢」。真正的讽刺在别处：这份勇气本可以省掉，只需要一句「项链丢了」。十年苦役买的不是项链，是体面。</p>
+<p><b>现实意义</b>：为错误买单的人值得尊敬，哪怕错误本可避免——玛蒂尔德的十年不是虚荣的账，是信用的账。但也要记住：你的「勇敢承担」里有多少是必要的成本，有多少只是不肯说出口的那句实话。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>the needy</b>　n. 穷人（the + 形容词名词化——the needy 与 the poor 的书面雅语）</p>
+<p><b>bear one's part</b>　phr. 承担本分（bore her part——part 是戏份：生活如戏的隐语）</p>
+<p><b>heroism</b>　n. 英勇（with sudden heroism——sudden 修饰英雄气概的突袭式）</p>
+<p><b>dainty</b>　adj. 娇美的（dainty fingers——十年前的手指 adjective，十年后作废）</p>
+<p><b>sou</b>　n. 苏（法国旧辅币单位——sou by sou 的最小计量单位）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>She bore her part, however, with sudden heroism ——however 插入语 + with + 抽象名词：转折词夹在句中，判词压在句尾——英文 concessive praise：先让步再授勋。</p>
+<p>sou by sou ——单位叠用（day by day 同构）：介词 by 连接两个相同的量词——英文 reduplication：最小的货币单位重复两次，就是十年。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写十年苦役，判词给一句（with sudden heroism），细节给一件（dainty fingers and rosy nails on greasy pots and pans）——英文 double-entry description：大账与细账各记一行，反讽自动生成。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>人生感慨：小小一件物品能成就也能毁掉 · How Small a Thing Is Needed</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">What would have happened if she had not lost that necklace? Who knows? who knows?</p>
+<p class="cn">倘若她当时没有丢失项链，那她现在又该是什么样子呢？谁知道？谁知道呢？</p>
+<p class="en">How strange and changeful is life! How small a thing is needed to make or ruin us!</p>
+<p class="cn">人生真是离奇古怪，真是变化无常啊！小小的一件物品能成就一个人，也能毁掉一个人！</p>
+<p class="en">“Good-day, Jeanne.”</p>
+<p class="cn">“你好，让娜。”</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十年后，香榭丽舍大街，她还清了所有债务，认出了依旧年轻美丽的福雷斯捷太太，走上前说：「你好，让娜。」全书最有尊严的一句招呼——用本名相认，坦然开口。</p>
+<p><b>逻辑脉络</b>：莫泊桑在重逢前插入了全篇唯一的直接抒情：「人生真是离奇古怪，真是变化无常啊！小小的一件物品能成就一个人，也能毁掉一个人！谁知道？谁知道呢？」——两声「谁知道」是叙述者对命运的全部发言。但细读重逢对话会发现反讽的分寸：毁掉她的那件「小小物品」，其实连物品都不是，是五百法郎的人造宝石；真正小得毁人的，是一句没说出口的实话。</p>
+<p><b>现实意义</b>：人生的毁与成常常系于毫厘，但「毫厘」的计量单位不是运气，是选择：说与不说、问与不问、承认与不承认。命运负责摇骰子，你负责骰子落地后打不打算看牌。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>changeful</b>　adj. 变化无常的（strange and changeful——双形容词押头韵的感叹）</p>
+<p><b>ruin</b>　v. 毁掉（to make or ruin us——make 与 ruin 的最小对立对）</p>
+<p><b>perceive</b>　v. 察觉、看见（she suddenly perceived a woman——perceive 的叙事用法）</p>
+<p><b>stammer</b>　v. 支吾（stammered——对方认不出她时的动词）</p>
+<p><b>refresh</b>　v. 放松、解乏（to refresh herself——星期天散步的目的状语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>How strange and changeful is life! ——How + 形容词 + 主系倒装：感叹句的倒装版——把 strange 推到句首，像把判词推上法庭。</p>
+<p>How small a thing is needed to make or ruin us! ——How + adj + a + n 的特殊语序（how small a thing，非 how a small thing）：感叹句里藏量词——「小」被语法顶到最前面，毁与成接在不定式里。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：在叙事高潮前插一段作者离场的感叹（How strange and changeful is life!），再立刻回到极短对话（Good-day, Jeanne.）——英文 authorial intrusion：抒情越长，落点越要短。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>假项链：顶多就值五百法郎 · My Necklace Was Paste</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">“Oh, my poor Mathilde! Why, my necklace was paste! It was worth at most only five hundred francs!”</p>
+<p class="cn">“哎哟，我可怜的玛蒂尔德！可是我那条项链是人造宝石的呀！顶多就值五百法郎！”</p>
+<p class="en">Madame Forestier, deeply moved, took her hands.</p>
+<p class="cn">福雷斯捷太太非常激动，抓住了她的双手。</p>
+<p class="src">——《项链》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全篇最后一句、世界文学最著名的结尾：福雷斯捷太太抓住她的双手说「哎哟，我可怜的玛蒂尔德！可是我那条项链是人造宝石的呀！顶多就值五百法郎！」——三万六千法郎的十年，本金五百法郎。莫泊桑在句号处收笔，不给任何人喘息。</p>
+<p><b>逻辑脉络</b>：这句台词的杀伤力在于三个账目的同时坍塌：玛蒂尔德的十年（按真项链计价）、卢瓦泽尔夫妇的信用（按假货投保）、以及「体面」本身（用真价钱买假东西，恰恰是这场悲剧的隐喻）。更狠的是对话里的礼貌——福雷斯捷太太「非常激动，抓住了她的双手」，灾难在友好气氛中宣判。莫泊桑从不描写痛苦，他只公布账目。</p>
+<p><b>现实意义</b>：终身牢记：用真价钱买假东西，是人生最常见的亏本生意——假头衔、假人设、假行情、假承诺。支付能力不够时，诚实是唯一不收利息的贷款。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>paste</b>　n. 人造宝石（paste jewellery 行业词——假钻石的专名，非糨糊）</p>
+<p><b>at most</b>　phr. 至多（worth at most only——三重限定词叠加的杀价句）</p>
+<p><b>worth</b>　adj. 值（was worth five hundred francs——worth + 价钱的表语用法）</p>
+<p><b>deeply moved</b>　phr. 深受感动（deeply moved——灾难宣判时的礼貌修辞）</p>
+<p><b>ingenuous</b>　adj. 天真的（proud and ingenuous——上一行原文：又自豪又天真的笑）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Why, my necklace was paste! ——why 作感叹词（非疑问词）：一个词的叹词起手——英文 interjection craft：why 在句首是「哎呀」，不是「为什么」。</p>
+<p>It was worth at most only five hundred francs! ——worth 表语 + at most + only 三重限定：价格从高到低被三个词层层砍落——英文 discounting syntax：限定词越多，十年越荒诞。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把全篇最大反转交给一句价格台词（my necklace was paste! It was worth at most only...），再用一句温柔动作收尾（deeply moved, took her hands）——英文 final-line craft：公布账目，不描写痛苦。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>骑马：十八法郎与扶手椅 · I Shall Never Be Able to Move Again</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The household lived frugally on the meager income derived from the husband's insignificant appointments.</p>
+<p class="cn">这个家庭靠着丈夫微不足道的职位挣的菲薄的收入节俭地过着日子。</p>
+<p class="en">Madame Simon did not leave her armchair. She ate from morning to night, grew fat, chatted gaily with the other patients and seemed to enjoy her immobility</p>
+<p class="cn">西蒙太太仍旧没有离开她的扶手椅。她从早吃到晚，身体发胖，和其他病人欢快地交谈，似乎很享受这种闲着不动的日子。</p>
+<p class="en">“I can't move, sir; I shall never be able to move again.”</p>
+<p class="cn">“我不能动，先生，我再也不能动了。”</p>
+<p class="src">——《那次代价昂贵的骑马》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：埃克托尔为在妻子面前显阔气，请全家骑马出游，撞伤了洗衣妇西蒙太太；他答应每周付二十法郎「赔偿金」，老太太遂终身「卧床」——「我不能动，先生，我再也不能动了」。一次虚荣的骑马，变成一张终身年金。</p>
+<p><b>逻辑脉络</b>：莫泊桑的算术残酷而精确：撞伤时的道歉是免费的，后来每周二十法郎的「赔偿」是滚动的——为了省一笔一次性赔偿，埃克托尔签了终身分期。而西蒙太太「从早吃到晚，身体发胖，似乎很享受这种闲着不动的日子」：意外之财改变的不是她的伤情，是她的伤情申报意愿。结尾他束手无策——因为关闭这条金流的成本，比维持它更高。</p>
+<p><b>现实意义</b>：一切「按周付息」的麻烦都会自动滚成终身年金：模糊的责任、没写清的赔偿条款、不好意思拒绝的施舍。出事当天的处理决定此后三十年的现金流——把责任一次算清，别让它按周结息。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>frugally</b>　adv. 节俭地（lived frugally on...——live on + 收入来源）</p>
+<p><b>meager</b>　adj. 微薄的（the meager income——美式拼法，英式作 meagre）</p>
+<p><b>derived from</b>　phr. 来源于（income derived from...——过去分词后置定语）</p>
+<p><b>immobility</b>　n. 不能动（enjoy her immobility——mobile 的抽象否定名词：症状变资产）</p>
+<p><b>fortnight</b>　n. 两星期（a week passed, then a fortnight, then a month——英式时间递进）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>lived frugally on the meager income derived from the husband's insignificant appointments ——主干三个词（lived frugally on...），修饰语两级后置（derived from... insignificant...）：英文 hierarchic poverty syntax——穷得只剩形容词。</p>
+<p>I can't move, sir; I shall never be able to move again. ——分号连接的现在与将来：can't move 是现在时，shall never be able to move again 是将来时——一张终身年金的语法合同，两条时态条款。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「年金式人物」，用生活方式清单（ate from morning to night, grew fat, chatted gaily）＋一句终身台词（I shall never be able to move again.）——英文 character as contract：台词一旦说出口，就是按周结息的条款。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>萨博的忏悔：无赖进了教堂 · What a Rogue He Was, This Sabot!</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">When Sabot entered the inn at Martinville it was a signal for laughter. What a rogue he was, this Sabot!</p>
+<p class="cn">萨博走进马丁维尔的那家酒馆，就会引发大笑。他真是个无赖啊，这个萨博！</p>
+<p class="en">“Children, I warn you all to eat not of that bread.”</p>
+<p class="cn">“孩子们，我警告你们不要吃那样的面包。”</p>
+<p class="src">——《西奥迪勒•萨博的忏悔》《可恶的面包》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：木匠萨博是马丁维尔著名的反教权无赖——他一进酒馆就有人哄笑，他与神父竞争市长十年。可为了当选，他去神父家做了一次「忏悔」，领了圣餐；神父则用一次「修缮祭坛」的交易换他投票。两篇连读：《可恶的面包》里被愚弄的农夫学会了播种前「警告孩子们不要吃那样的面包」。</p>
+<p><b>逻辑脉络</b>：萨博的忏悔是全卷最工整的讽刺闭环：反教权是他的人设，教权是他的选票渠道——他和神父互相利用对方的「信仰」做生意，交易完成后各自退场。莫泊桑笔下的乡村政治没有信徒，只有股东；《可恶的面包》则是配套的民生注脚：饿肚子的长工吃了主人家的馊面包，最后以一句农庄式的诅咒收场——被侮辱的人学会的唯一反击，是警告下一代。</p>
+<p><b>现实意义</b>：别把口号当人格：一个人公开反对什么，与他会为什么出卖什么，是两张不同的报表。看报表别看海报——投票、忏悔、抗议，都可能是产品，身后的利益才是公司。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>rogue</b>　n. 无赖（What a rogue he was——rogue 的乡村政治语境）</p>
+<p><b>signal</b>　n. 信号（it was a signal for laughter——人变成信号的隐喻）</p>
+<p><b>priest</b>　n. 神父（did not like priests——反教权人设的靶子）</p>
+<p><b>scamp</b>　n. 淘气鬼、无赖（He did not spare them, the scamp——同位语的轻蔑补刀）</p>
+<p><b>warn</b>　v. 警告（warn you all to eat not of——warn sb to do 的古体否定语序）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>When Sabot entered the inn at Martinville it was a signal for laughter. ——when 从句作主语化的触发器：进入动作 → laughter 信号——英文 reflex comedy：人物一出场，笑就是自动的。</p>
+<p>What a rogue he was, this Sabot! ——What 感叹句 + 同位语后置（this Sabot）：判词先落，名字后补——英文 appositive flourish：骂完再指名道姓，节奏像追授头衔。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「人设与报表」的分裂，开场就给两张账（it was a signal for laughter / What a rogue he was）——英文 double ledger satire：笑声是海报，忏悔才是报表。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>嫁妆与伞：两桩算术 · A Totally Different Matter</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The marriage of Maitre Simon Lebrument with Mademoiselle Jeanne Cordier was a surprise to no one.</p>
+<p class="cn">没有人对西蒙·勒布吕蒙先生和让娜·科尔迪耶小姐的婚姻感到惊讶。</p>
+<p class="en">the five hundred francs affected M. Oreille's pocket, whereas this damage, amounting to eighteen francs, concerns Mme. Oreille's pocket only, which is a totally different matter.</p>
+<p class="cn">五百法郎的损失是奥雷依先生自己掏腰包，而十八法郎的损失却要动到我奥雷依太太的口袋，这可是两码事。</p>
+<p class="src">——《嫁妆》《伞》 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：两桩小算术收束全卷：《嫁妆》里，公证员买事务所需要钱，而让娜小姐恰好有三十万法郎现金——婚姻不惊讶，因为账目配平。《伞》里，奥雷依太太坚持让保险公司赔那把被烧出洞的伞，理由理直气壮：「五百法郎的损失是他自己掏腰包，而十八法郎的损失却要动到我太太的口袋，这可是两码事。」</p>
+<p><b>逻辑脉络</b>：莫泊桑的婚姻经济学与主妇经济学互为镜像：嫁妆这桩婚事没有恶人，只有报价；而奥雷依太太那句「两码事」是全卷最诚实的心理供词——人对「自己口袋」与「别人口袋」的痛苦，天生两套计量单位。她磨了保险公司整整两天，索赔成功，回家却被丈夫发现伞面被人用烧过的布补过——她赢回了十八法郎，输掉了绸伞。</p>
+<p><b>现实意义</b>：两个可随身携带的算术：看婚恋先看账目是否「配平」，配平不等于恶意，但要对报价诚实；看自己先看「两码事」心态——同一笔钱，掏别人口袋时大方、掏自己口袋时计较，人的公正感往往止步于自己的钱包。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>Maitre</b>　n. 先生（法语公证人尊称——原文保留的法语头衔）</p>
+<p><b>surprise to no one</b>　phr. 无人惊讶（was a surprise to no one——双否定写必然）</p>
+<p><b>whereas</b>　conj. 而、然而（whereas this damage...——法律对比连词进入家庭算术）</p>
+<p><b>affect</b>　v. 涉及、影响（affected M. Oreille's pocket——affect 与 concern 的对照动词）</p>
+<p><b>damage</b>　n. 损失（this damage, amounting to eighteen francs——amount to 的金额搭配）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>was a surprise to no one ——系表 + 双重否定（surprise to no one）：不惊讶即必然——英文 litotes：用否定之否定写一笔配平的账。</p>
+<p>the five hundred francs affected M. Oreille's pocket, whereas this damage... concerns Mme. Oreille's pocket only, which is a totally different matter. ——whereas 对比从句 + which 非限定从句收判词：两个口袋两套动词（affect / concern），一个 which 收束出「两码事」——英文 legalese as comedy：她用律师的语法报自己的账。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让人物用法律连词（whereas）为自己算账，再让 which is a totally different matter 收尾——英文 syntactic self-counsel：句式的正式程度越高，心里的偏私越清楚。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：对称判词、孵化隐喻、否定排比、分词云雾、票据动词、whereas 法庭腔，都在里面。研读这卷「全是算术题的短篇集」的最终目的，是学会在自己的生活里区分真价钱与假货色、一次性赔偿与终身年金，并且在犯错之后，先去打那个最难打的电话。</p>
+<p><b>My Uncle Sosthenes was a Freethinker... from pure stupidity; people are very often religious in the same way. ——纯粹出于愚笨的自由思想者；人们信仰宗教往往就是这样。</b>应用口诀：无脑的信与无脑的反成本一样低——想清楚再站队。</p>
+<p><b>it is the egg from which wars are hatched. ——它是一枚能够孵化出战争的蛋卵。</b>应用口诀：接受一种信仰前，先问它孵过什么。</p>
+<p><b>We are raising up a religion against a religion ——我们正建立一个反抗宗教的宗教。</b>应用口诀：看它处理异见者的方式，像不像它要推翻的东西。</p>
+<p><b>She had no dowry, no expectations, no way of being known... ——她没有嫁妆，没有希望，没有办法……</b>应用口诀：先看出厂配置，再评判选项——账本分清谁写的。</p>
+<p><b>She danced with rapture, with passion... forgetting all ——她欢快兴奋地跳着舞……她忘记了一切。</b>应用口诀：散场后还剩什么，才是真资产。</p>
+<p><b>He compromised all the rest of his life, risked signing a note without even knowing whether he could meet it ——他搭上了自己的余生，冒险签下一张字据。</b>应用口诀：坦白锁死损失，隐瞒挂上复利——先打那个最难打的电话。</p>
+<p><b>How small a thing is needed to make or ruin us! ——小小的一件物品能成就一个人，也能毁掉一个人！</b>应用口诀：毫厘的单位不是运气，是选择。</p>
+<p><b>my necklace was paste! It was worth at most only five hundred francs! ——我那条项链是人造宝石的呀！顶多就值五百法郎！</b>应用口诀：用真价钱买假东西是最大的亏本生意。</p>
+<p><b>I shall never be able to move again. ——我再也不能动了。</b>应用口诀：按周付息的麻烦会滚成终身年金——当天算清责任。</p>
+<p><b>whereas this damage... concerns Mme. Oreille's pocket only, which is a totally different matter. ——十八法郎却要动到我太太的口袋，这可是两码事。</b>应用口诀：你的公正感往往止步于自己的钱包。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Necklace" target="_blank" rel="noopener">The Necklace · Wikipedia</a><span>佐证：《项链》1884 年发表与「假项链」结尾的文学史地位。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Guy_de_Maupassant" target="_blank" rel="noopener">Guy de Maupassant · Wikipedia</a><span>延伸：莫泊桑生平与三百余篇短篇小说的产量。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Short_story" target="_blank" rel="noopener">Short story · Wikipedia</a><span>延伸：莫泊桑与契诃夫并称现代短篇小说奠基人。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Naturalism_(literature)" target="_blank" rel="noopener">Naturalism (literature) · Wikipedia</a><span>延伸：莫泊桑师承福楼拜的写实主义与自然主义方法。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Bel-Ami" target="_blank" rel="noopener">Bel-Ami · Wikipedia</a><span>延伸：同作者长篇《漂亮朋友》，可对照其新闻界讽刺。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《项链及其他》 ｜ 英文与中文均逐字录自外研社双语读库（外研社编译组译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

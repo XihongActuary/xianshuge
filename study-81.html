@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 乡村医生 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/81-kafuka.html">本书书页</a></p>
+<h1>深度研读 · 乡村医生</h1>
+<p class="sub">卡夫卡 短篇小说集 · 叶廷芳 等译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为卡夫卡短篇小说集《乡村医生》（据菲舍尔出版社校勘本，人文社 2017 年版），收《判决》《变形记》《在流放地》《乡村医生》《在法的门前》《饥饿艺术家》《女歌手约瑟芬或耗子民族》《布鲁姆费尔德》《中国长城建造时》《一只杂交动物》《一条狗的研究》《地洞》十二篇，译者叶廷芳、王炳钧、韩瑞祥、杨劲、谢莹莹、任卫东、薛思亮。本研读共十二节，按篇目拣选最锋利的段落（据人民文学出版社版校录，引文经忠实度校验），先录原文，后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>判决：父亲的权力</a></li>
+<li><a href="#s2"><b>贰</b>判决：一句温柔的告别</a></li>
+<li><a href="#s3"><b>叁</b>变形记：醒来的第一天</a></li>
+<li><a href="#s4"><b>肆</b>变形记：家人的判决</a></li>
+<li><a href="#s5"><b>伍</b>在流放地：判决文</a></li>
+<li><a href="#s6"><b>陆</b>在流放地：祭司上机</a></li>
+<li><a href="#s7"><b>柒</b>乡村医生：美丽的伤口</a></li>
+<li><a href="#s8"><b>捌</b>乡村医生：上当了</a></li>
+<li><a href="#s9"><b>玖</b>在法的门前：只为你开</a></li>
+<li><a href="#s10"><b>拾</b>饥饿艺术家：真相</a></li>
+<li><a href="#s11"><b>拾壹</b>饥饿艺术家：豹的自由</a></li>
+<li><a href="#s12"><b>拾贰</b>谕旨与地洞</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>判决：父亲的权力</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我现在就判你溺死！</p>
+<p class="src">——《判决》 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：格奥尔格向年迈父亲坦白了自己的婚讯与生意，父亲突然翻身而起，仿佛拖着牢狱的全部重量，最后吼出：「我现在就判你溺死！」——这一句判词发出了，而儿子真的奔向河水，落了下去。</p>
+<p><b>逻辑脉络</b>：《判决》是卡夫卡 1912 年一夜写成的成名作，也是他全部主题的浓缩版：审判不需要法庭，父亲的身份就是法律；更惊人的是被告的服从——判词一出，身体自动执行，权力早已内化。</p>
+<p><b>现实意义</b>：「判你溺死」的可怕之处，不在判，在执行：有多少人一生都在自动执行某句早年判决（「你不行」「你不配」）？识别那句判词的来源，是解开封印的第一步。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>判决：一句温柔的告别</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>亲爱的双亲，我一直都是爱你们的。</p>
+<p class="src">——《判决》 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：被父亲判了溺死的格奥尔格冲下楼、奔向河桥，「透过栏杆间的空隙，看准了一辆公共汽车」，轻声说：「亲爱的双亲，我一直都是爱你们的。」松开手落了下去。</p>
+<p><b>逻辑脉络</b>：判词与告白同页出现：被处决者的最后一句不是控诉而是爱——卡夫卡把服从写到了极限：连死都要做得让父母满意。对照《变形记》结尾格里高尔怀着「温情与爱意」看妹妹，可见「以爱服从」是卡夫卡笔下最深的枷锁。</p>
+<p><b>现实意义</b>：用爱完成的服从最难挣脱：因为挣脱它像背叛。区分「爱一个人」与「执行他的判决」是成年礼的核心课程——真正的爱不需要被告自动落水。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>变形记：醒来的第一天</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一天清晨，格雷戈尔·萨姆沙从一串不安的梦中醒来时，发现自己在床上变成一只硕大的虫子。</p>
+<p class="src">——《变形记》第 1 段 ｜ 据《乡村医生》（谢莹莹 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：二十世纪小说最著名的开头：「一天清晨，格雷戈尔·萨姆沙从一串不安的梦中醒来时，发现自己在床上变成一只硕大的虫子。」而格里高尔的第一反应不是惊呼，是担心误了五点的火车——异变与生计同框。</p>
+<p><b>逻辑脉络</b>：卡夫卡从不解释「为什么变成虫」：变形只是把一个已经存在的处境（养家的推销员被当作物件使用）翻出来让人看见。虫壳之下，是一个早已不被当作人的劳动者。</p>
+<p><b>现实意义</b>：问「我什么时候开始变成虫的」比问「我怎么变成虫的」有用：当一个人只剩功能价值（挣钱、跑腿、接单），异形只是时间问题——保住人的身份，先保住功能之外的那部分自己。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>变形记：家人的判决</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>它必须离开，</p>
+<p class="src">——《变形记》第 29 段 ｜ 据《乡村医生》（谢莹莹 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：苹果嵌进格里高尔背部溃烂三月之后，妹妹葛蕾特——他曾倾力供养、最疼爱的人——说出最终判决：「它必须离开。」父亲应道：「它必须走。」全家人共同完成了这场驱逐；当晚格里高尔怀着温情与爱意回忆家人，凌晨悄然死去。</p>
+<p><b>逻辑脉络</b>：从「哥哥／儿子」降格为「它」，只需要一场失业：供养关系断裂之日，就是称呼改写之时。卡夫卡不控诉冷酷，只记录一次语法上的全家合谋——判决执行人（谁去清房间）都不用安排，爱意反而成了临终的背景音。</p>
+<p><b>现实意义</b>：「它必须离开」在家务事里有很多变体：老人一旦失去劳动力、家人一旦失去收入，称呼与耐心都会悄悄降格。把「被需要」当作家人之爱的唯一货币，是最危险的家庭预算。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>在流放地：判决文</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>要公正！</p>
+<p class="src">——《在流放地》 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：流放地的杀人机器由一张「床」、一台「绘制仪」、一组「耙」组成，用钢针在犯人背上刺刻判决文，服刑十二小时后处决；军官向旅行者展示哈特大法官手书的判决文，逐字拼读：「上面写着‘要公正！’」——而机器刻下的不是字，是伤口。</p>
+<p><b>逻辑脉络</b>：「要公正」被刻在皮肤上，是卡夫卡对一切「以正义之名行暴」的终极反讽：判决文越庄严，行刑仪越精密，正义离现场越远。旧机器故障后军官亲自上机，让机器带着他执行「处决」——仪式吃掉了自己的祭司。</p>
+<p><b>现实意义</b>：凡有人向你展示一台「精密的正义机器」（流程、系统、算法裁决），先问刻在肉上的那两行字是什么：正义的成色不看机器多新，看它对待具体的人的方式。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>在流放地：祭司上机</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一根大铁钉穿透了他的额头。</p>
+<p class="src">——《在流放地》 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：机器年久失修、审判官被裁撤后，军官撕毁封条把自己绑上机器，要让「妻子与船工」见证旧日的庄严——机器却异常： needles 不再刺绣而是乱刺，「所有其他人从机器中获得的解脱，军官没有得到；他双唇紧闭，眼睛睁着，恍若生者，目光安详，充满信念，一根大铁钉穿透了他的额头。」</p>
+<p><b>逻辑脉络</b>：「目光安详，充满信念」与「铁钉穿透额头」并置，是卡夫卡最冷的一笔：殉道者到死都在享受仪式——信念可以让一个人把毁灭体验成升华。随后众人一哄而散，没有一个人留下来陪机器。</p>
+<p><b>现实意义</b>：识别「殉道式自毁」：把「为信念牺牲」演得越庄严的人，越可能是在替一台废机器陪葬——信念的检验标准不是牺牲时的表情，是这台机器实际救过谁。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>乡村医生：美丽的伤口</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我带着一个美丽的伤口来到世上；这就是我的全部装备。</p>
+<p class="src">——《乡村医生》 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：深夜出诊的医生被两匹凭空出现的马拖到病床前，少年病人在耳边恳求：「大夫，让我死吧。」医生起初诊断他健康，随后在右侧臀部发现掌心大的伤口，里面蠕着一堆虫子；少年平静地说：「我带着一个美丽的伤口来到世上；这就是我的全部装备。」</p>
+<p><b>逻辑脉络</b>：这是卡夫卡最凝练的寓言：医生（一切职业性的救助）赤手空拳、连衣服都被剥光，面对伤口只能宣告「你没救了」——而伤口的主人早已与伤口达成和解。「全部装备」四个字，宣告了人从出生起就背着的东西。</p>
+<p><b>现实意义</b>：「美丽的伤口」是心理学式的自白：每个人的出厂配置里都有那道伤；承认它、带着它行走，比假装健康更接近真话——「你错就错在只盯着自己的伤口」是医生的安慰，也是幻觉。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>乡村医生：上当了</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>驾着尘世的车，非尘世的马，我赤身裸体</p>
+<p>一次听信了深夜骗人的铃声——就永远无法挽回。</p>
+<p class="src">——《乡村医生》结尾 ｜ 据《乡村医生》（王炳钧 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：医生被孩子们裸体抬上病床又挣脱，飞身逃回马车——却回不了家：「驾着尘世的车，非尘世的马，我赤身裸体，遭受着这最不幸时代的冰雪肆虐，我这老头子四处飘荡。」结尾双叹：「上当了！上当了！一次听信了深夜骗人的铃声——就永远无法挽回。」</p>
+<p><b>逻辑脉络</b>：「尘世的车、非尘世的马」给职业伦理下了判词：出诊是尘世的责任，马与铃却是另一套秩序的召唤——医生被夹在两界之间永远在路上。卡夫卡把「响应职责」写成一出无法退场的循环剧：铃声一响，人生就交给路了。</p>
+<p><b>现实意义</b>：「深夜骗人的铃声」是我们时代的信息过载：每一次响应紧急铃声（手机、消息、报表），都有一匹「非尘世的马」把你载离自己的家。永远无法挽回的不是响应本身，是不设防的那一次。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>在法的门前：只为你开</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这道门只是为你开的。我现在要去关上它了。</p>
+<p class="src">——《在法的门前》 ｜ 据《乡村医生》（韩瑞祥 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：乡下人跪守法之门前一生，临死问守门人：「除我之外，怎么就不见一个人来要求踏进法的大门呢？」守门人在他耳边吼出答案：「这儿除了你，谁都不许进去，因为这道门只是为你开的。我现在要去关上它了。」</p>
+<p><b>逻辑脉络</b>：这则寓言嵌在长篇《审判》第七章，其可怕在于：门为他而设，他却一生不敢进；禁忌者只是形式——真正的守门人长在他心里。临终的「关闭」宣告了最绝望的结论：通道一生有效，等来的却是报废。</p>
+<p><b>现实意义</b>：识别你自己的「法的门前」：那个你确信「得先获准才能开始」的东西——学位、资历、许可、时机——也许门只为你开，而你在门外跪了一生。先推一下试试，守门人的吼声都比后悔好听。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>饥饿艺术家：真相</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>因为我找不到适合自己口味的食物。</p>
+<p class="src">——《饥饿艺术家》 ｜ 据《乡村医生》（叶廷芳 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：以绝食表演为业的艺术家被时代抛弃，委屈进了马戏团草料堆旁的笼子；临终被管事问起，他留下全书最平静的答案：「因为我找不到适合自己口味的食物。假如我找到这样的食物，请相信，我不会这样惊动视听，并像你和大家一样，吃得饱饱的。」</p>
+<p><b>逻辑脉络</b>：真相拆穿了一生的光环：世人赞叹的毅力与献身，只是「找不到匹配之物」的副产品——艺术家不是在绝食，是在全世界找不到能吃下去的东西。卡夫卡（病中还在校订此篇）于此完成了自画像：为不愿妥协的胃口付出死亡。</p>
+<p><b>现实意义</b>：「找不到适合口味的食物」可以是一种志向诊断：你绝食（不就业、不结婚、不妥协）到底是因为高洁，还是因为没找到对的？前者需要坚守，后者需要继续找——两种人生，别互相冒充。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>饥饿艺术家：豹的自由</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>它的自由好像就藏在牙齿中某个地方。</p>
+<p class="src">——《饥饿艺术家》结尾 ｜ 据《乡村医生》（叶廷芳 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：艺术家死后，笼子换上一只年轻黑豹：「它似乎都没有因失去自由而惆怅」「好像连自由也随身带着。它的自由好像就藏在牙齿中某个地方。」观众挤在笼子周围，「舍不得离去」。</p>
+<p><b>逻辑脉络</b>：结尾是全书最锋利的对照：饥艺术家把自由理解为「不进食的尊严」，豹把自由长在身体里——同一只笼子，两种自由观。观众立刻涌向豹子：时代不需要殉道者的仪式，需要的是活生生的力量。</p>
+<p><b>现实意义</b>：自由不是一个位置（不在笼外），是一种装备（长在牙齿里）：与其筹划脱离笼子的计划，不如长出那种「在哪儿都吃得下」的能力——把自由随身带着的人，笼子只是食堂。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>谕旨与地洞</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>可是，每当傍晚降临的时候，你却坐在你的窗前，梦想着这个谕旨。</p>
+<p>我造好了一个地洞，似乎还蛮不错。</p>
+<p class="src">——《中国长城建造时》《地洞》 ｜ 据《乡村医生》（薛思亮 译；叶廷芳 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《中国长城建造时》讲皇帝临终降下一道谕旨，使者力竭数千年也挤不出层层宫阙，寓言收在普通人身上：「可是，每当傍晚降临的时候，你却坐在你的窗前，梦想着这个谕旨。」《地洞》则以第一句自白开场：「我造好了一个地洞，似乎还蛮不错。」——挖洞者夜夜听见洞外若有若无的「曲曲声」，为不存在的入侵者加固工事。</p>
+<p><b>逻辑脉络</b>：两篇合看是卡夫卡给普通人画的像：一种人把一生献给一道永远到不了的谕旨（期待被拯救、被通知、被批准），另一种人把一生挖进一个防不完敌的地洞（焦虑的自我加固）——窗前的梦与洞里的耳朵，是同一个不安的两副表情。</p>
+<p><b>现实意义</b>：傍晚的窗前与深夜的地洞都是此刻的日常：等一纸批文（谕旨式等待）与加固一切焦虑（地洞式防御）——不如各退半步：谕旨不来也照常吃饭，地洞已够就不再加高。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷「弱者的哲学」短篇集的最终目的，是学会识别自己心里那句判词、那道门前、那个笼子，以及那匹「非尘世的马」。</p>
+<p><b>我现在就判你溺死！</b>应用口诀：判决不可怕，自动执行才可怕。</p>
+<p><b>亲爱的双亲，我一直都是爱你们的。</b>应用口诀：爱不是判决的执行人。</p>
+<p><b>一天清晨，格雷戈尔·萨姆沙从一串不安的梦中醒来时，发现自己在床上变成一只硕大的虫子。</b>应用口诀：只剩功能价值之日，就是变虫之时。</p>
+<p><b>它必须离开，</b>应用口诀：失业之后，听一听家人怎么称呼你。</p>
+<p><b>要公正！</b>应用口诀：正义的成色，看它如何对待具体的人。</p>
+<p><b>我带着一个美丽的伤口来到世上；这就是我的全部装备。</b>应用口诀：承认出厂的伤口，带着它行走。</p>
+<p><b>一次听信了深夜骗人的铃声——就永远无法挽回。</b>应用口诀：不是所有铃声都值得响应。</p>
+<p><b>这道门只是为你开的。我现在要去关上它了。</b>应用口诀：先推一下那扇门，别跪着问许可。</p>
+<p><b>因为我找不到适合自己口味的食物。</b>应用口诀：分清是高洁还是没找到——别互相冒充。</p>
+<p><b>它的自由好像就藏在牙齿中某个地方。</b>应用口诀：自由不长在位置上，长在能力里。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Franz_Kafka" target="_blank" rel="noopener">Franz Kafka · Wikipedia</a><span>佐证：卡夫卡生平——布拉格保险局职员、夜半写作与 1924 年基尔林的结局。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/A_Country_Doctor_(short_story_collection)" target="_blank" rel="noopener">A Country Doctor (collection) · Wikipedia</a><span>建议：1919 年原版目录与本册十二篇的对应关系。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Metamorphosis" target="_blank" rel="noopener">The Metamorphosis · Wikipedia</a><span>背景：《变形记》1915 年发表始末与各种阐释路径。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Before_the_Law" target="_blank" rel="noopener">Before the Law · Wikipedia</a><span>背景：「法的门前」寓言出自长篇《审判》第七章的完整语境。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《乡村医生》 ～ 中文据《乡村医生》（叶廷芳 等译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

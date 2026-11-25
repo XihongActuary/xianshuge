@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1194" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="技巧思维导图">
+  <path d="M 200 597 C 250 597, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 320, 316 320" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 320 C 556 320, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 398, 596 398" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 532, 316 532" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 532 C 556 532, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 532 C 556 532, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 532 C 556 532, 566 584, 596 584" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 718, 316 718" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 718 C 556 718, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 718 C 556 718, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 718 C 556 718, 566 770, 596 770" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 904, 316 904" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 904 C 556 904, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 956, 596 956" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 597 C 250 597, 258 1090, 316 1090" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1090 C 556 1090, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1090 C 556 1090, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1090 C 556 1090, 566 1142, 596 1142" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="549" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="575" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">技巧</text>
+  <text x="115" y="595" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Skills</text>
+  <text x="115" y="617" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">一年获得十年经验</text>
+  <text x="115" y="633" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Ten Years of Experience in One</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">希望与故事</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Hope &amp; Stories</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">恐惧希望不恐惧死亡</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Fear hope</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">肄业者的逆袭</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Dropout rising</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">成功不止一个标准</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">Many standards</text>
+  <rect x="316" y="296" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="318" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">学习曲线</text>
+  <text x="422" y="336" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Learning Curve</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">开头要平</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Flat start</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">正反馈为燃料</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Feedback fuel</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">别摘生果子式突击</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">No cramming</text>
+  <circle cx="602" cy="398" r="4" fill="#7fa8c9"/>
+  <text x="618" y="397" font-size="15" fill="#cfc6b2">终身学习者占1%</text>
+  <text x="618" y="414" font-size="11" font-style="italic" fill="#8fa3b8">1% learners</text>
+  <rect x="316" y="508" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="530" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">知识观</text>
+  <text x="422" y="548" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Knowledge</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">二手知识有毒</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Second-hand poison</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">模型与数据</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Model &amp; data</text>
+  <circle cx="602" cy="584" r="4" fill="#a3c98a"/>
+  <text x="618" y="583" font-size="15" fill="#cfc6b2">树读法主题阅读</text>
+  <text x="618" y="600" font-size="11" font-style="italic" fill="#8fa3b8">Topic reading</text>
+  <rect x="316" y="694" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="716" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">工作方法</text>
+  <text x="422" y="734" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Work Method</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">任务分解</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Task breakdown</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">分而治之</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Divide &amp; conquer</text>
+  <circle cx="602" cy="770" r="4" fill="#c98a8a"/>
+  <text x="618" y="769" font-size="15" fill="#cfc6b2">副项目练级</text>
+  <text x="618" y="786" font-size="11" font-style="italic" fill="#8fa3b8">Side projects</text>
+  <rect x="316" y="880" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="902" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">节奏心态</text>
+  <text x="422" y="920" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Pace</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">快是状态急是心态</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Fast ≠ rushed</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">字一个个写</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">One stroke at a time</text>
+  <circle cx="602" cy="956" r="4" fill="#b39ac9"/>
+  <text x="618" y="955" font-size="15" fill="#cfc6b2">天竺三步</text>
+  <text x="618" y="972" font-size="11" font-style="italic" fill="#8fa3b8">Three steps to India</text>
+  <rect x="316" y="1066" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1088" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">认识自己</text>
+  <text x="422" y="1106" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">Know Thyself</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">镜子与录音实验</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Mirror &amp; recorder</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">杂糅样本纠偏</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">Mixed samples</text>
+  <circle cx="602" cy="1142" r="4" fill="#d9c98a"/>
+  <text x="618" y="1141" font-size="15" fill="#cfc6b2">改造自己是一生事业</text>
+  <text x="618" y="1158" font-size="11" font-style="italic" fill="#8fa3b8">Lifetime project</text>
+</svg>

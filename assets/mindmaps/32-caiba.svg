@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1246" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="一本书读懂财报思维导图">
+  <path d="M 200 623 C 250 623, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 623 C 250 623, 258 320, 316 320" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 320 C 556 320, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 320 C 556 320, 566 398, 596 398" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 623 C 250 623, 258 532, 316 532" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 532 C 556 532, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 532 C 556 532, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 532 C 556 532, 566 584, 596 584" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 623 C 250 623, 258 718, 316 718" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 718 C 556 718, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 718 C 556 718, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 718 C 556 718, 566 770, 596 770" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 623 C 250 623, 258 904, 316 904" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 904 C 556 904, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 904 C 556 904, 566 956, 596 956" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 623 C 250 623, 258 1116, 316 1116" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1116 C 556 1116, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1116 C 556 1116, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1116 C 556 1116, 566 1142, 596 1142" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1116 C 556 1116, 566 1194, 596 1194" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="575" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="601" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">一本书读懂财报</text>
+  <text x="115" y="621" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Financial Statements</text>
+  <text x="115" y="643" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">三张表 · 一条及格线</text>
+  <text x="115" y="659" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">Three Statements · One Threshold</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">会计本质</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Nature</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">科学→艺术→魔法</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Science? Art? Magic</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">1亿的抵债戏法</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The 100M trick</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">判断空间</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">Judgment space</text>
+  <rect x="316" y="296" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="318" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">三张报表</text>
+  <text x="422" y="336" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Statements</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">资产负债表=单反</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Balance sheet</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">利润表=摄像机</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Income statement</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">现金流量表=监测仪</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">Cash flow</text>
+  <circle cx="602" cy="398" r="4" fill="#7fa8c9"/>
+  <text x="618" y="397" font-size="15" fill="#cfc6b2">勾稽关系</text>
+  <text x="618" y="414" font-size="11" font-style="italic" fill="#8fa3b8">Articulation</text>
+  <rect x="316" y="508" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="530" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">成本真相</text>
+  <text x="422" y="548" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Costs</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">固定成本摊薄</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">Fixed cost dilution</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">赔本的买卖</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Loss-making sales</text>
+  <circle cx="602" cy="584" r="4" fill="#a3c98a"/>
+  <text x="618" y="583" font-size="15" fill="#cfc6b2">研发费用化</text>
+  <text x="618" y="600" font-size="11" font-style="italic" fill="#8fa3b8">R&amp;D expensed</text>
+  <rect x="316" y="694" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="716" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">比率工具</text>
+  <text x="422" y="734" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Ratios</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">同型分析</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">Common-size</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">盈利/营运/偿债</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Profit-ops-solvency</text>
+  <circle cx="602" cy="770" r="4" fill="#c98a8a"/>
+  <text x="618" y="769" font-size="15" fill="#cfc6b2">银行家vs投资专家</text>
+  <text x="618" y="786" font-size="11" font-style="italic" fill="#8fa3b8">Banker vs investor</text>
+  <rect x="316" y="880" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="902" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">行业归因</text>
+  <text x="422" y="920" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Industry</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">造纸vs彩电</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Paper vs TV</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">战略定位</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">Strategy</text>
+  <circle cx="602" cy="956" r="4" fill="#b39ac9"/>
+  <text x="618" y="955" font-size="15" fill="#cfc6b2">执行能力</text>
+  <text x="618" y="972" font-size="11" font-style="italic" fill="#8fa3b8">Execution</text>
+  <rect x="316" y="1092" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1114" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">真赚钱标准</text>
+  <text x="422" y="1132" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">True Profit</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">ROIC小一圈</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Invested capital</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">及格线=资本成本</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">Cost of capital</text>
+  <circle cx="602" cy="1142" r="4" fill="#d9c98a"/>
+  <text x="618" y="1141" font-size="15" fill="#cfc6b2">经济利润EVA</text>
+  <text x="618" y="1158" font-size="11" font-style="italic" fill="#8fa3b8">EVA</text>
+  <circle cx="602" cy="1194" r="4" fill="#d9c98a"/>
+  <text x="618" y="1193" font-size="15" fill="#cfc6b2">表面上的功夫</text>
+  <text x="618" y="1210" font-size="11" font-style="italic" fill="#8fa3b8">Surface performance</text>
+</svg>

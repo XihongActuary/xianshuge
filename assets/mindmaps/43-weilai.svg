@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1142" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="未来简史思维导图">
+  <path d="M 200 571 C 250 571, 258 108, 316 108" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 108 C 556 108, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 108 C 556 108, 566 160, 596 160" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 294, 316 294" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 294 C 556 294, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 294 C 556 294, 566 346, 596 346" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 480, 316 480" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 480 C 556 480, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 480 C 556 480, 566 532, 596 532" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 666, 316 666" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 666 C 556 666, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 666, 596 666" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 666 C 556 666, 566 718, 596 718" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 852, 316 852" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 852 C 556 852, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 852, 596 852" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 852 C 556 852, 566 904, 596 904" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 571 C 250 571, 258 1038, 316 1038" fill="none" stroke="#d9c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 1038 C 556 1038, 566 986, 596 986" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1038, 596 1038" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 1038 C 556 1038, 566 1090, 596 1090" fill="none" stroke="#d9c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="523" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="549" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">未来简史</text>
+  <text x="115" y="569" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Homo Deus</text>
+  <text x="115" y="591" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">从智人到神人 · 权威的交棒</text>
+  <text x="115" y="607" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">A Brief History of Tomorrow</text>
+  <rect x="316" y="84" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="106" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">新议题</text>
+  <text x="422" y="124" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">New Agenda</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">饥荒瘟疫战争退场</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">Famine, plague, war tamed</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">不死快乐神性</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">Immortality, bliss, divinity</text>
+  <circle cx="602" cy="160" r="4" fill="#d9b26a"/>
+  <text x="618" y="159" font-size="15" fill="#cfc6b2">第一幕的枪</text>
+  <text x="618" y="176" font-size="11" font-style="italic" fill="#8fa3b8">The gun in act one</text>
+  <rect x="316" y="270" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="292" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">生物算法</text>
+  <text x="422" y="310" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Organisms as Algorithms</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">生物也是算法</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Life is algorithm</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">蛋糕一分为二</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">No slice for free will</text>
+  <circle cx="602" cy="346" r="4" fill="#7fa8c9"/>
+  <text x="618" y="345" font-size="15" fill="#cfc6b2">大鼠想要左转</text>
+  <text x="618" y="362" font-size="11" font-style="italic" fill="#8fa3b8">The rat wants to turn</text>
+  <rect x="316" y="456" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="478" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">人文主义</text>
+  <text x="422" y="496" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Humanism</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">聆听自己的声音</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Listen to yourself</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">我觉得好就是好</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">If I feel good, it is good</text>
+  <circle cx="602" cy="532" r="4" fill="#a3c98a"/>
+  <text x="618" y="531" font-size="15" fill="#cfc6b2">三大分支内战</text>
+  <text x="618" y="548" font-size="11" font-style="italic" fill="#8fa3b8">Three branches at war</text>
+  <rect x="316" y="642" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="664" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">大分离</text>
+  <text x="422" y="682" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">The Great Decoupling</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">智能与意识脱钩</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Intelligence without consciousness</text>
+  <circle cx="602" cy="666" r="4" fill="#c98a8a"/>
+  <text x="618" y="665" font-size="15" fill="#cfc6b2">无用阶级</text>
+  <text x="618" y="682" font-size="11" font-style="italic" fill="#8fa3b8">The useless class</text>
+  <circle cx="602" cy="718" r="4" fill="#c98a8a"/>
+  <text x="618" y="717" font-size="15" fill="#cfc6b2">升级或出局</text>
+  <text x="618" y="734" font-size="11" font-style="italic" fill="#8fa3b8">Upgrade or step aside</text>
+  <rect x="316" y="828" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="850" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">数据主义</text>
+  <text x="422" y="868" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Dataism</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">崇拜数据的新宗教</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">Data as the new deity</text>
+  <circle cx="602" cy="852" r="4" fill="#b39ac9"/>
+  <text x="618" y="851" font-size="15" fill="#cfc6b2">信息自由是最高善</text>
+  <text x="618" y="868" font-size="11" font-style="italic" fill="#8fa3b8">Information wants to flow</text>
+  <circle cx="602" cy="904" r="4" fill="#b39ac9"/>
+  <text x="618" y="903" font-size="15" fill="#cfc6b2">万物互联网</text>
+  <text x="618" y="920" font-size="11" font-style="italic" fill="#8fa3b8">Internet-of-All-Things</text>
+  <rect x="316" y="1014" width="212" height="48" rx="9" fill="#d9c98a1f" stroke="#d9c98a" stroke-width="1.4"/>
+  <text x="422" y="1036" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9c98a">智人退休</text>
+  <text x="422" y="1054" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9c98a" opacity="0.8">Homo Sapiens Retires</text>
+  <circle cx="602" cy="986" r="4" fill="#d9c98a"/>
+  <text x="618" y="985" font-size="15" fill="#cfc6b2">让马退休</text>
+  <text x="618" y="1002" font-size="11" font-style="italic" fill="#8fa3b8">Retire the horse</text>
+  <circle cx="602" cy="1038" r="4" fill="#d9c98a"/>
+  <text x="618" y="1037" font-size="15" fill="#cfc6b2">功成身退</text>
+  <text x="618" y="1054" font-size="11" font-style="italic" fill="#8fa3b8">Mission accomplished</text>
+  <circle cx="602" cy="1090" r="4" fill="#d9c98a"/>
+  <text x="618" y="1089" font-size="15" fill="#cfc6b2">交棒仪式</text>
+  <text x="618" y="1106" font-size="11" font-style="italic" fill="#8fa3b8">The handover</text>
+</svg>

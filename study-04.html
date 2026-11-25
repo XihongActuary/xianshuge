@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 机器70年 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/04-jiqi70.html">本书书页</a></p>
+<h1>深度研读 · 机器70年</h1>
+<p class="sub">徐曦 著 · 人民邮电出版社 · 开篇章＋8章</p>
+<p class="lead">研读说明：本书把计算机七十年的演进当作一部文明变革史来读——效率是内驱力，互联网被论证为「有机智慧体」，注意力经济与大数据重排稀缺性排序，而想象力是机器永远缺的那块拼图。本研读按十八个主题推进，先忠实摘录原文，再作要义解析（核心要义／逻辑脉络／现实意义）。全书成书于2017年前后，部分案例（摩尔定律、AlphaGo、VR）已有后续进展，解析中已作时代注记。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>效率：一切技术革新的出发点</a></li>
+<li><a href="#s2"><b>贰</b>数字殖民：被互联网呵护的一代</a></li>
+<li><a href="#s3"><b>叁</b>效率优先还是存在优先：机器奴役问题的两难</a></li>
+<li><a href="#s4"><b>肆</b>摩尔定律：一个猜想的两面</a></li>
+<li><a href="#s5"><b>伍</b>计算机只有两种能力：计算与存储</a></li>
+<li><a href="#s6"><b>陆</b>互联网是个有机智慧体</a></li>
+<li><a href="#s7"><b>柒</b>最了不起的生意：信息与注意力</a></li>
+<li><a href="#s8"><b>捌</b>免费与分享：高尚的原因是高尚本身</a></li>
+<li><a href="#s9"><b>玖</b>沉默的大多数与群体极化</a></li>
+<li><a href="#s10"><b>拾</b>小小世界与1+1＜2：复杂系统方法论</a></li>
+<li><a href="#s11"><b>拾壹</b>线上的前现代社会</a></li>
+<li><a href="#s12"><b>拾贰</b>数据成为世界语言</a></li>
+<li><a href="#s13"><b>拾叁</b>数据值多少钱与谁最稀缺</a></li>
+<li><a href="#s14"><b>拾肆</b>互联网治理：从蛮荒到制度化</a></li>
+<li><a href="#s15"><b>拾伍</b>人类改造的路线之争：强化自己还是强化工具</a></li>
+<li><a href="#s16"><b>拾陆</b>AI的理想与机会：从香农的老鼠到AlphaGo</a></li>
+<li><a href="#s17"><b>拾柒</b>想象力：机器永远缺的那块拼图</a></li>
+<li><a href="#s18"><b>拾捌</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>效率：一切技术革新的出发点</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人之所以为人，是因为人可以制造和使用工具。……每一个人类历史的重大转折点都有新技术的出现，而这一切的出发点就是人类对效率的追求。</p>
+<p>如果不是偶然学会了使用火，人类大脑的进化效率将低得多（火可以加热食物，加热后的食物便于消化，这样人就可以以更高的效率消化食物，而充足的能量摄取是人类大脑进化的前提），地球上能不能出现智慧人类就是个问题了。</p>
+<p>从16——18世纪的产业革命开始，人类在科学和技术上的发展驶入了快车道。</p>
+<p class="src">——《机器70年》开篇章「文明重建和效率对决」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的第一原理在这三段里：人类史是一部效率追求史。火驯化了消化，让大脑获得能量盈余——作者用这个例证把「效率」从工业概念上推到生物学尺度，为后面「机器接管计算与预测」的叙事立好坐标系。</p>
+<p><b>逻辑脉络</b>：开篇先分清科学与技术（源流不同、规律不同、路线不同），再以产业革命为分水岭进入快车道。效率不是价值判断，而是事实描述——这个中立立场让后文对机器与劳动力的博弈不做简单的怀旧式批判。</p>
+<p><b>现实意义</b>：评估任何新技术，第一个问题不是「好不好」，而是「把什么环节的效率提高了多少倍」；效率增量在哪里，社会变革就在哪里。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>数字殖民：被互联网呵护的一代</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>90后，确切地说95后是中国互联网第一代原住民。他们在刚刚可以进行社会交流的时候，中国的互联网就已经有了初步的基础铺设。……在互联网环境下生长起来的一代人，被互联网的贴心和便捷小心地呵护</p>
+<p>长期以来，人们会准时回家，观看几十年如一日的《新闻联播》……而互联网出现之后，及时可靠的资讯消息在计算机和手机屏幕上随时闪现，家中的长辈尽管还保持着看《新闻联播》的习惯，但是他们再也不会相信主持人所说的「今天的新闻内容就这些」。</p>
+<p class="src">——《机器70年》开篇章「数字殖民」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「数字殖民」是个双关：互联网像殖民地一样全面接管原住民的生活版图——资讯、天气、社交、消费全部有对应服务，而原住民心甘情愿，甚至不再能想象别的生活方式。</p>
+<p><b>逻辑脉络</b>：作者用《新闻联播》与天气预报的衰落作对照实验：信息权威从「定时定点的人工播报」迁移到「实时更新的个性化数据」，信任对象随之迁移。原住民不是被强制迁入，而是被便利诱入——这正是「殖民」一词的锋利之处。</p>
+<p><b>现实意义</b>：判断自己是否已被数字殖民：看你离开某项服务时的心理成本。凡是「离不开」而非「不需要」的服务，都在行使某种程度的殖民。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>效率优先还是存在优先：机器奴役问题的两难</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人们总是担心机器获得智能之后，会不会反过来奴役人类。……我们不妨先将这个问题细化为两个假设：（1）机器可以完全取代人类；（2）机器不能完全取代人类。</p>
+<p>如果假设（1）成立，那机器完全没有必要奴役人类，而是会直接灭绝人类。……这就好比我们在古代会通过驯服牛马来提高农业生产效率，而如今有了农业机械的我们对驯服牛马就完全不感兴趣了</p>
+<p>如果假设（2）成立，那人类最差的状态就是被机器圈禁起来，用以生产某种东西……在《黑客帝国》中，机器把人看作是电力的来源，而人也变成了机器精心培育的一个生物。</p>
+<p class="src">——《机器70年》开篇章「人类是设置：效率优先还是存在优先」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者用穷举二分法拆解「机器奴役人类」的担忧：完全取代→直接灭绝（无需奴役低效物种）；不能完全取代→圈禁利用（《黑客帝国》剧本）。两支都不是科幻片里的「奴役」——真正的答案比想象更冷峻也更平淡。</p>
+<p><b>逻辑脉络</b>：这是标准的分析式写作示范：把情绪化的大问题（AI威胁论）拆成可穷举的命题，再逐支推演。牛马类比是全文最狠的一刀——机器不恨人类，正如联合收割机不恨牛马，利害计算里根本没有复仇的位置。</p>
+<p><b>现实意义</b>：面对宏大焦虑（AI替代、行业消失），学这套拆解法：把「会不会」拆成有限情形，逐一看证据。焦虑大多产生于问题没有被拆开。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>摩尔定律：一个猜想的两面</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>摩尔在文中预言，半导体芯片上集成的晶体管和电阻数量会每年增加一倍，这就是摩尔定律的由来。……从这一点出发，可以推导出很多定理。似乎人们真的把摩尔定律当作一个不需证明、不言自明的真理，可事实上摩尔定律却只是个预言或者叫猜想</p>
+<p>芯片巨头英特尔曾表示，他们可以每年升级处理器的制程，可是被自己创始人的定律猛追了40多年之后，他们不得不面对现实——摩尔定律只是个猜想，并非定律。</p>
+<p class="src">——《机器70年》第一章「失速的『摩尔定律』」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：摩尔定律是「自我实现预言」的教科书案例：一个猜想因为整个行业把它当规划基准，反而被猛追了四十多年；而当物理极限临近，它又退回为猜想。时代注记：本书写作时摩尔定律已放缓，2018年后全球先进制程进入3纳米争夺，单晶体管成本的下降曲线确已失速。</p>
+<p><b>逻辑脉络</b>：作者把「机器的生命体征」（生命改造环境、向外扩张的类比）放在摩尔定律之前，暗示：芯片行业同样受「生命式扩张本能」驱动——定律失速不等于扩张停止，只是换了方式（多核、GPU、专用芯片）。</p>
+<p><b>现实意义</b>：对精算与数据工作者：凡以指数增长为前提的规划（算力预算、数据存储、模型迭代），都要问一句「这条指数曲线的物理与经济极限在哪里」。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>计算机只有两种能力：计算与存储</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>猛然之间我们似乎觉得计算机已经懂得了世界各地的语言，会逻辑思考并有相当的智力水平。其实不然，计算机的核心能力只有两个：一个是计算能力；另一个是存储能力。基于以上能力，傻傻的计算机开始有了灵性。</p>
+<p>图灵在论文中提出了一个验证机器是否具有智能的标准：图灵测试……简言之，如果人在和机器交流的过程中，人无法分辨对方是人还是机器，那么就可以说</p>
+<p class="src">——《机器70年》第二章「想象力比知识更重要」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的去魅核心：Siri会对话、翻译会翻语、图片会识人，但底层只有计算与存储两件事。「傻傻的计算机开始有了灵性」——灵性来自规模，不来自理解。</p>
+<p><b>逻辑脉络</b>：作者把图灵测试引入作对照：智能的定义被操作化为「不可分辨」，而非「会思考」。这一步是AI哲学的关键转折——智能不再由内省定义，而由外部行为定义。时代注记：成书时Siri还显机械，2022年后大语言模型已让图灵测试岌岌可危，但「计算+存储→规模生灵性」的论断反而更显预见。</p>
+<p><b>现实意义</b>：用机器时的清醒剂：它的一切「聪明」都是对历史数据的计算与存储的重新组合。凡无数据、无先例、需真正新想象的工作，机器帮不上——这正是护城河所在。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>互联网是个有机智慧体</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>以上维基百科对于互联网的定义是不完全的，互联网之所以能快速发展，其动力在于无数人的参与。互联网其实是「网络基础设施+简单任务+智能个体」的结构……这种结构像极了人的生物构造。</p>
+<p>有人会质疑，人是以大脑为意识中心的生命体，而互联网的突出特点就是去中心化，这两者怎么可能相似？出现这种判断在所难免，就像古代人们看着天象会想象地球是宇宙的中心……人的结构更是去中心化的，大脑不是意识和控制</p>
+<p class="src">——《机器70年》第二章「互联网是个有机智慧体」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最大胆的论断：互联网不只是工具，而是一个有机智慧体——「基础设施+简单任务+智能个体」的构造与生物体同构，每个网民都是它的神经元。</p>
+<p><b>逻辑脉络</b>：作者先立靶（去中心化vs以脑为中心），再击破：大脑本身就是去中心化的，意识是分布式涌现。于是「网=生物体」的类比在结构上成立。这是从凯文·凯利《失控》一脉延续下来的系统论思路，但本书用大量网络史案例把它落到中文语境。</p>
+<p><b>现实意义</b>：这个类比给普通人两个提醒：一是你在网上每次点击、转发都在为这个「有机体」供能，你的注意力是它的食物；二是不要指望「关掉它」——没有哪个中枢可以被一击致命，治理只能像生态管理，不像开关。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>最了不起的生意：信息与注意力</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我的一个学弟，今年从卡内基梅隆大学CS专业（计算机科学）毕业，前些日子跟我聊天时说他要选择一个方向：是到华尔街某投行去所谓的「挣大钱」还是到Facebook「卖广告」？……为什么这个时代最好的脑袋都在想参与卖广告呢？</p>
+<p>时至今日，大部分互联网公司都变成了所谓的「广告公司」，像Google和Facebook这样的网络公司每年广告收入达到数百亿美元。而事实上，在今天的互联网环境下，广告和资讯被混淆在了一起。</p>
+<p class="src">——《机器70年》第二章「最了不起的生意」＋第四章「快速发展的注意力经济」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：信息自古是生意（指路收费的乡人即最早形态），但互联网把它放大成最了不起的生意——而你甚至意识不到自己在「付费」：广告和资讯被混淆，你交出的不是钱，是注意力。</p>
+<p><b>逻辑脉络</b>：第四章给出稀缺性迁移的完整链条：信息不足时代找信息→信息富足时代找有用信息→有用信息也不稀缺时，稀缺的是人的注意力。经济学原理一以贯之：一切经济行为都在解决短缺，空气免费是因为不稀缺。</p>
+<p><b>现实意义</b>：给自己的注意力记账：免费产品里，你就是商品。凡是「免费+无限量」的服务，先问它把你的注意力卖给谁。这也是本书对知识工作者最重要的警醒——保护注意力就是保护生产资料。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>免费与分享：高尚的原因是高尚本身</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>「Information wants free（信息趋于免费）」这句话在今天看来似乎带有一种不可侵犯的权威性。……信息的免费向上回溯就是分享的兴盛，分享能成立来自于信息复制和生产的便捷，但这一切都会归结到一点：个人的参与。</p>
+<p>博主花心思写一篇文章发表在自己的博客上，每日增加的阅读量和点评数量就是对他最好的鼓励……求得关注和被人认可，这种心理上的安慰也可以称作是回报，但我们这里愿意沿用长期以来的社会共识：高尚的原因是高尚本身</p>
+<p class="src">——《机器70年》第四章「从分享到免费」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：信息免费的机制不在技术，而在心理：表达欲+被认可欲，让亿万普通人自愿为互联网供料。「高尚的原因是高尚本身」是全书少见的抒情句——作者尊重这种非功利参与，却也知道它正是被平台收割的原料。</p>
+<p><b>逻辑脉络</b>：从独享→分享→免费的演进，本质是边际成本趋零的过程：复制成本为零时，价格趋向零，价值转移到流量与关系链。博主博客案例选得准：写作动机是表达，反馈机制是阅读量——行为经济学与传播学在此合流。</p>
+<p><b>现实意义</b>：创作与分享者的清醒认知：你的表达欲是真心的，平台的变现也是真心的，两件事并行不悖。想靠内容立足，就要主动掌握「把自己的注意力资产变现」的主动权，而不是永远替平台打白工。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>沉默的大多数与群体极化</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>网络民意与真实的民意之间有巨大距离，所以在面对网络民意时，应保持理性的态度，因为如果过于重视网络民意，沉默者的利益就会受到侵犯。</p>
+<p>在获得群体认同方面，极端言论是有巨大能量的。……所有刚刚提到的传播过程都需要精心的准备和专业的编辑，而这些专业能力是一般网民所不具备的。如今，可以说是人类历史上煽动性言论生产最多、传播范围最广的时代。</p>
+<p class="src">——《机器70年》第一章「沉默的大多数」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：两个互相咬合的判断：网络民意≠真实民意（沉默的大多数不发言），而愿意发言的部分天然向极端收敛（群体极化）。作者借王小波《沉默的大多数》立意，把统计学直觉写成社会判断。</p>
+<p><b>逻辑脉络</b>：成书于2017年初，恰逢美国大选后——党内初选靠极端观点赢得提名、社交媒体圈层化传播、专业编辑操盘——三层机制叠出「煽动性言论最多最广的时代」。这一章是全书对互联网最冷的审视：有机智慧体有益，也有病。</p>
+<p><b>现实意义</b>：两条自保纪律：一是别把声量当民意（工作调研里同理，抱怨者是少数，沉默用户才是多数，要主动抽样）；二是警惕自己的信息圈层——极端观点在圈层内的确证感是算法喂出来的。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>小小世界与1+1＜2：复杂系统方法论</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在研究复杂系统方面，哲学为我们提供了两套方法论：①整体论；②还原论。……整体论认为是1+1＜2，其中缺少的部分意味着从质变到量变的事实。还原论则认为，系统是一个个单元互相作用而组成的，对于整体和部分的关系，还原论认为，1+1=2</p>
+<p>在研究互联网的时候，我们应该清楚地认识到这是一个复杂程度逼近生命体的复杂机器，我们也无法通过模拟实验再次还原一个网络。</p>
+<p class="src">——《机器70年》第五章「网络世界1+1＜2的原理」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：方法论声明：互联网是复杂系统，还原论（拆成八大系统式研究）在此失效，必须用整体论——涌现出的网络效应正是那「缺少的部分」。</p>
+<p><b>逻辑脉络</b>：作者先承认还原论是自然科学最基本的方法（人体八系统案例），再划定它的失效边界：无法用模拟实验还原一个网络。这与第二章「有机智慧体」一脉相承——既然结构像生物，方法就得像生态学，不像机械学。</p>
+<p><b>现实意义</b>：做数据与模型的人最该吸收这节：任何把复杂系统（市场、组织、舆情）拆成零件独立归因的模型都会漏掉涌现项。1+1＜2提醒我们，聚合指标里的相关不等于成分之和。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>线上的前现代社会</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>在一个村里有个16岁的小女孩父母先后去世，给她留下了一笔不大不小的遗产……全村人因为这小女孩手里的这笔钱都躁动了，全村茶余饭后谈的基本就是这个事，好像都觉得跟自己有关系一样，后来，就连当年给她爸妈做媒的媒婆都觉得自己该分一点钱。</p>
+<p>（注：本节以这个故事为样本，论证网络舆论场虽披着现代技术外壳，运行逻辑却常是前现代的人情与围观。）</p>
+<p class="src">——《机器70年》第五章「一个线上的前现代社会」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本节的诊断：互联网舆论场的底层逻辑常是前现代的——熟人社会的围观、分利冲动、道德审判，只是搬到了线上，规模放大亿万倍。技术是新的，群氓心理是旧的。</p>
+<p><b>逻辑脉络</b>：遗产故事是显微镜：一笔50万支票让全村发动，连媒婆都主张分钱——这是费孝通「差序格局」里的资源再分配逻辑。作者把它的线上版本（人肉搜索、舆论审判、流量狂欢）并列，暗示治理互联网要先治理的是人，不是机器。</p>
+<p><b>现实意义</b>：判断网络热点先用这个透镜：把技术外壳剥掉，看它是不是一场前现代式的围观与分利。多数「全网热议」的内核，几百年前的村镇集市上都发生过。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>数据成为世界语言</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>大数据以一种前所未有的巨大规模和范围进行问题研究，通过信息化的捕捉、综合、操作将现象从巨大的样本中抽离出来并进行细致的分析研究。</p>
+<p>我们发现，2015年在百度引擎的使用习惯中，娱乐内容和电商信息的搜索量达到了1/3。……如果这被认为是「中国国情」，那我们来看一下Google在英国的例子。</p>
+<p class="src">——《机器70年》第六章「大数据改变我们的研究方式」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：大数据是新的研究范式：不再抽样，而以全样本捕捉现象。搜索引擎数据是最大的社会行为观测站——百度与Google的搜索结构对比，给出了跨文化的真实偏好图谱（娱乐与消费占主导，中英皆然）。</p>
+<p><b>逻辑脉络</b>：作者选搜索引擎作切入口，因为它兼有全样本（百度占国内85%份额）与关键词锚点（天然可分类）两个研究条件。「先以为是国情，再看英国也一样」的写法，示范了如何用数据排除特殊论。</p>
+<p><b>现实意义</b>：对精算师是熟悉的道理：全样本数据也须警惕「数据≠真相」——搜索量反映欲望结构，不反映事实结构。用大数据下结论前，先问它测的是什么。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>数据值多少钱与谁最稀缺</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>数据一直以来都被局限在知识产权和个人信息的范围中，这也就决定了数据在发挥其价值时受到的限制。今天我们重视数据，思考大数据给我们带来的巨大改变时，也是在为数据解开枷锁，真正让它发挥本该有的能力。</p>
+<p>全球著名咨询公司麦肯锡给出的答案是「数据科学家」，Google首席经济学家哈尔·范瑞安给出的答案是「统计学家」。……真正缺少的是从数据中提取价值的能力。这也就是为什么统计学家、数据库管理者和掌握机器理论的人能成为了不起的人。</p>
+<p>数据本身就是资产……在未来数据的功能会进一步拓展，数据拥有者对数据资产的意识也会进一步加强。</p>
+<p class="src">——《机器70年》第六章「数据到底应该『值多少钱』」「最不可替代的人和最稀缺的资源」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：两段合成一个价值判断链：数据的枷锁（被局限在知识产权与个人隐私框架内）正在解开→数据本身成为资产→而最稀缺的不是数据，是从数据提取价值的能力（统计学家、数据科学家）。</p>
+<p><b>逻辑脉络</b>：作者的动态视角值得注意：当前价值在「大数据化的思维与技术」，但随着进程推进，「大部分价值将回归数据本身」——掌握数据的一方最终胜出。这是2017年的判断，时代注记：十年过去，平台数据垄断与数据要素市场化的博弈，正沿着这条线展开。</p>
+<p><b>现实意义</b>：对精算师的直接背书：哈尔·范瑞安点名的稀缺人才名单里，「统计学家」居首。数据时代最保值的组合是——懂业务的数据+会建模的人+对数据资产归属的敏感。</p>
+</div>
+</section>
+<section id="s14">
+<h2><span class="no">拾肆</span>互联网治理：从蛮荒到制度化</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>人们会倾向于高估大众传播对他人态度与行为的影响。更明确地说，暴露在说服信息下的阅听人会期望该说服信息对其他人的影响比对自己的影响大。</p>
+<p>从历史来看，人们每一次接触新技术时，都无可避免地被兴奋和恐惧的情绪所包裹。……电灯和电话发明之时，人们也曾面临同样的恐惧。大众认为，新技术会给社会带来非常巨大的变化，但回头来看很多变化根本没有发生得那么剧烈，人们平滑地度</p>
+<p class="src">——《机器70年》第七章「互联网是否有罪」「从蛮荒到制度化」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：治理争论的认知基础是「第三人效应」：人人都以为媒介影响别人多、影响自己少——所以每个人都支持管别人，反对管自己。而新技术恐惧的历史规律是：兴奋与恐惧成对出现，回头看多数恐慌平滑落地。</p>
+<p><b>逻辑脉络</b>：第七章铺开治理全景：从「互联网是否有罪」的道德恐慌，到IP（互联网协议与知识产权的双重含义）、安全、关键资源（CIR）国际争端。作者立场是中间偏制度派：恐惧高估了短期剧变，但治理的确在从蛮荒走向制度化。</p>
+<p><b>现实意义</b>：读网络治理新闻先想到第三人效应：支持监管的声音里，多少是「以为只会影响别人」？以及用历史曲线校准恐慌——电灯、电话、电视、互联网，每一代都被预言将摧毁社会，每一代都被社会消化。</p>
+</div>
+</section>
+<section id="s15">
+<h2><span class="no">拾伍</span>人类改造的路线之争：强化自己还是强化工具</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这项超级物种的改造计划最终促进了两个方向的研究实践。（1）直接对人体本身进行生理强化；（2）通过外部硬件设备加强其能力。</p>
+<p>在莱特兄弟发明飞机以前，人类无数次地想要获得飞翔的能力，多数人的尝试是给自己安上像鸟一样的翅膀……直到莱特兄弟以汽油机引擎驱动的飞机的发明，人们才恍然明白：飞上天不一定要长得像鸟。</p>
+<p class="src">——《机器70年》第八章「人类改造计划的路线之争」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：人类能力延伸的两条路线：生理强化（改自己）与外部设备（改工具）。莱特兄弟的寓言给出判据：成功的延伸往往不模仿自然形态——飞上天不必长得像鸟。</p>
+<p><b>逻辑脉络</b>：这一章把VR/AR、脑机接口、AI统一收进「改造计划」框架：虚拟世界是对外部路线的极致（保留精神、摆脱肉体的倾向），AI是对外部路线的自动化升级。路线之争的实质是「改人还是改机器」的成本对比。</p>
+<p><b>现实意义</b>：个人升级也面临同样选择：是死磕补短板（生理强化路线），还是用工具放大长板（外部设备路线）？工业史的答案倾向后者——把工具链搭好的人跑得更快。</p>
+</div>
+</section>
+<section id="s16">
+<h2><span class="no">拾陆</span>AI的理想与机会：从香农的老鼠到AlphaGo</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>图灵的观点非常激进，他认为凡是人类可以做的事情，会下棋的计算机都可以完成；相比于图灵，香农的观点较为保守，他说如果计算机可以下棋，那它就可以做逻辑推演、语言翻译，甚至艺术创作和作曲。</p>
+<p>香农拿出了自己发明的机器老鼠，他称这只被科学界瞩目的老鼠为「手指」。「手指」被放置在迷宫里，它能通过试误法找出一条走出迷宫的路，并记住这条路。也就是说，它能从试错中学习经验。</p>
+<p>1956年，新罕布尔州达特茅斯学院召开了提出人工智能概念的研讨会。……Alpha Go和李世乭的五盘棋下得十分精彩……Alpha Go被认为是一个非常可怕的棋手，单纯从棋局现象上主要体现在它的深不可测和「围棋智慧」。</p>
+<p class="src">——《机器70年》第八章「人类的小伙伴——人工智能（AI）」「围绕AlphaGo我们还能想到些什么」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：AI叙事的两端：1950年图灵与香农的预言（下棋机器可完成人类之事／可逻辑推演、翻译、作曲），2016年AlphaGo兑现了其中棋类一项。香农的机器老鼠「手指」是全书最生动的隐喻——试误法+记住经验，就是学习的一切。</p>
+<p><b>逻辑脉络</b>：作者按史线走：达特茅斯1956（AI命名）→符号主义兴衰→AlphaGo 2016胜李世乭、排名超柯洁。全书收束于一个未完成的追问：机器接管了计算与预测之后，人拿什么与它协作。时代注记：成书后十年，大语言模型把「作曲、作文」也从预言变成日常，图灵的激进观点占了大半上风。</p>
+<p><b>现实意义</b>：用历史长度看AI：每一轮突破都是「预言中的一项」被兑现，而非全面智能降临。对职业规划的含义是盯住可验证清单——哪些事机器已经能做（尽快协作），哪些还做不了（尽快扎根）。</p>
+</div>
+</section>
+<section id="s17">
+<h2><span class="no">拾柒</span>想象力：机器永远缺的那块拼图</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>想象力比知识更重要。</p>
+<p class="src">——《机器70年》第二章（章题引爱因斯坦语）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的题眼只有一句：想象力比知识更重要。知识可以存储、可以计算，因此可以被机器接管；而想象力是对尚不存在之物的构造——它没有历史数据可依，是人的护城河。</p>
+<p><b>逻辑脉络</b>：回看全书结构：开篇立效率第一原理→第一章机器生命体征与摩尔定律→第二章给出「计算+存储」的去魅→第三章到第七章铺开注意力、群体、数据、治理四大场域→第八章AI与虚拟世界——所有线索最终汇到这一句：机器越强，人的想象力越值钱。</p>
+<p><b>现实意义</b>：给知识工作者的行动清单：把可数据化、可复算的部分放手给机器（计算、预测、检索、初稿），把人力投到无先例处——定义新问题、设计新框架、把两个不相干的领域接起来。这三件事，机器暂时都做不了。</p>
+</div>
+</section>
+<section id="s18">
+<h2><span class="no">拾捌</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读的最终目的，是在机器接管计算与预测之后，认清人自己的位置。</p>
+<p><b>计算机的核心能力只有两个：一个是计算能力；另一个是存储能力。</b>应用口诀：机器的灵性来自规模，不来自理解。</p>
+<p><b>每一次技术革新的背后，都是人类对更高效率的追逐。</b>应用口诀：看技术先看它把什么环节的效率提高了多少倍。</p>
+<p><b>摩尔定律只是个猜想，并非定律。</b>应用口诀：凡以指数增长为前提的规划，先找它的物理与经济极限。</p>
+<p><b>互联网其实是「网络基础设施+简单任务+智能个体」的结构。</b>应用口诀：你的每次点击都在为有机智慧体供能——注意力就是它的食物。</p>
+<p><b>网络民意与真实的民意之间有巨大距离。</b>应用口诀：别把声量当民意，沉默者才是多数。</p>
+<p><b>一切经济行为都是在解决短缺问题。</b>应用口诀：信息不稀缺了，稀缺的是注意力——免费产品里你是商品。</p>
+<p><b>高尚的原因是高尚本身。</b>应用口诀：分享欲是真心的，平台收割也是真心的，两件事并行不悖。</p>
+<p><b>整体论认为是1+1＜2，缺少的部分意味着从质变到量变的事实。</b>应用口诀：把复杂系统拆成零件归因的模型，都会漏掉涌现项。</p>
+<p><b>飞上天不一定要长得像鸟。</b>应用口诀：能力延伸优先强化工具，不必死磕模仿式补短板。</p>
+<p><b>想象力比知识更重要。</b>应用口诀：可复算的事交给机器，无先例的事自己扎根。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/摩尔定律" target="_blank" rel="noopener">摩尔定律 · 维基百科</a><span>佐证：摩尔1965年原文与制程演进近年放缓的公开数据。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/图灵测试" target="_blank" rel="noopener">图灵测试 · 维基百科</a><span>延伸：1950年《计算的机器和智能》与操作化智能定义的争论。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/AlphaGo" target="_blank" rel="noopener">AlphaGo · 维基百科</a><span>佐证：2016年胜李世乭五局与职业排名登顶的全过程。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/注意力经济" target="_blank" rel="noopener">注意力经济 · 维基百科</a><span>延伸：从西蒙「注意力稀缺」到平台广告模式的理论脉络。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/群体极化" target="_blank" rel="noopener">群体极化 · 维基百科</a><span>佐证：社群讨论使观点更极端的实验证据与机制。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/第三人效果" target="_blank" rel="noopener">第三人效应 · 维基百科</a><span>佐证：戴维森1983年提出的媒介认知偏差及其研究综述。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《机器70年》 ｜ 摘录据原书文本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

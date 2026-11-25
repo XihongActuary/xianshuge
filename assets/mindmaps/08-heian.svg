@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 852" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="黑暗的心思维导图">
+  <path d="M 200 426 C 250 426, 258 82, 316 82" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 82 C 556 82, 566 56, 596 56" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 82 C 556 82, 566 108, 596 108" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 426 C 250 426, 258 242, 316 242" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 242 C 556 242, 566 190, 596 190" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 242 C 556 242, 566 242, 596 242" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 242 C 556 242, 566 294, 596 294" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 426 C 250 426, 258 428, 316 428" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 428 C 556 428, 566 376, 596 376" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 428 C 556 428, 566 428, 596 428" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 428 C 556 428, 566 480, 596 480" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 426 C 250 426, 258 588, 316 588" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 588 C 556 588, 566 562, 596 562" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 588 C 556 588, 566 614, 596 614" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 426 C 250 426, 258 748, 316 748" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 748 C 556 748, 566 696, 596 696" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 748 C 556 748, 566 748, 596 748" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 748 C 556 748, 566 800, 596 800" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="30" y="378" width="170" height="96" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="115" y="404" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">黑暗的心</text>
+  <text x="115" y="424" text-anchor="middle" font-size="13" font-style="italic" fill="#d9b26a" opacity="0.9">Heart of Darkness</text>
+  <text x="115" y="446" text-anchor="middle" font-size="11.5" fill="#d9b26a" opacity="0.85">三段航程与深渊</text>
+  <text x="115" y="462" text-anchor="middle" font-size="10" font-style="italic" fill="#d9b26a" opacity="0.7">A Voyage into the Abyss</text>
+  <rect x="316" y="58" width="212" height="48" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="80" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#d9b26a">启程 · 夜谈</text>
+  <text x="422" y="98" text-anchor="middle" font-size="10.5" font-style="italic" fill="#d9b26a" opacity="0.8">Frame &amp; Departure</text>
+  <circle cx="602" cy="56" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">尼罗号夜谈</text>
+  <text x="618" y="72" font-size="11" font-style="italic" fill="#8fa3b8">The Nellie at Anchor</text>
+  <circle cx="602" cy="108" r="4" fill="#d9b26a"/>
+  <text x="618" y="107" font-size="15" fill="#cfc6b2">公司地图与体检</text>
+  <text x="618" y="124" font-size="11" font-style="italic" fill="#8fa3b8">The Map &amp; the Doctor</text>
+  <rect x="316" y="218" width="212" height="48" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="240" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#7fa8c9">内河 · 溯流</text>
+  <text x="422" y="258" text-anchor="middle" font-size="10.5" font-style="italic" fill="#7fa8c9" opacity="0.8">Upstream</text>
+  <circle cx="602" cy="190" r="4" fill="#7fa8c9"/>
+  <text x="618" y="189" font-size="15" fill="#cfc6b2">死亡树林</text>
+  <text x="618" y="206" font-size="11" font-style="italic" fill="#8fa3b8">The Grove of Death</text>
+  <circle cx="602" cy="242" r="4" fill="#7fa8c9"/>
+  <text x="618" y="241" font-size="15" fill="#cfc6b2">铆钉与修船</text>
+  <text x="618" y="258" font-size="11" font-style="italic" fill="#8fa3b8">Rivets &amp; Repair</text>
+  <circle cx="602" cy="294" r="4" fill="#7fa8c9"/>
+  <text x="618" y="293" font-size="15" fill="#cfc6b2">传闻与迷雾</text>
+  <text x="618" y="310" font-size="11" font-style="italic" fill="#8fa3b8">Rumours &amp; Fog</text>
+  <rect x="316" y="404" width="212" height="48" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="426" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#a3c98a">深渊 · 库尔茨</text>
+  <text x="422" y="444" text-anchor="middle" font-size="10.5" font-style="italic" fill="#a3c98a" opacity="0.8">Kurtz</text>
+  <circle cx="602" cy="376" r="4" fill="#a3c98a"/>
+  <text x="618" y="375" font-size="15" fill="#cfc6b2">报告与涂改</text>
+  <text x="618" y="392" font-size="11" font-style="italic" fill="#8fa3b8">The Report</text>
+  <circle cx="602" cy="428" r="4" fill="#a3c98a"/>
+  <text x="618" y="427" font-size="15" fill="#cfc6b2">雄辩与暴力</text>
+  <text x="618" y="444" font-size="11" font-style="italic" fill="#8fa3b8">Eloquence &amp; Violence</text>
+  <circle cx="602" cy="480" r="4" fill="#a3c98a"/>
+  <text x="618" y="479" font-size="15" fill="#cfc6b2">遗言</text>
+  <text x="618" y="496" font-size="11" font-style="italic" fill="#8fa3b8">The Horror</text>
+  <rect x="316" y="564" width="212" height="48" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="586" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#c98a8a">归途 · 谎言</text>
+  <text x="422" y="604" text-anchor="middle" font-size="10.5" font-style="italic" fill="#c98a8a" opacity="0.8">Return</text>
+  <circle cx="602" cy="562" r="4" fill="#c98a8a"/>
+  <text x="618" y="561" font-size="15" fill="#cfc6b2">对未婚妻的谎</text>
+  <text x="618" y="578" font-size="11" font-style="italic" fill="#8fa3b8">The Lie</text>
+  <circle cx="602" cy="614" r="4" fill="#c98a8a"/>
+  <text x="618" y="613" font-size="15" fill="#cfc6b2">黑纱闭合</text>
+  <text x="618" y="630" font-size="11" font-style="italic" fill="#8fa3b8">Darkness Closing</text>
+  <rect x="316" y="724" width="212" height="48" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="746" text-anchor="middle" font-size="15.5" font-weight="bold" fill="#b39ac9">主题</text>
+  <text x="422" y="764" text-anchor="middle" font-size="10.5" font-style="italic" fill="#b39ac9" opacity="0.8">Themes</text>
+  <circle cx="602" cy="696" r="4" fill="#b39ac9"/>
+  <text x="618" y="695" font-size="15" fill="#cfc6b2">约束力</text>
+  <text x="618" y="712" font-size="11" font-style="italic" fill="#8fa3b8">Restraint</text>
+  <circle cx="602" cy="748" r="4" fill="#b39ac9"/>
+  <text x="618" y="747" font-size="15" fill="#cfc6b2">语言与黑暗</text>
+  <text x="618" y="764" font-size="11" font-style="italic" fill="#8fa3b8">Eloquence &amp; Darkness</text>
+  <circle cx="602" cy="800" r="4" fill="#b39ac9"/>
+  <text x="618" y="799" font-size="15" fill="#cfc6b2">不可传达</text>
+  <text x="618" y="816" font-size="11" font-style="italic" fill="#8fa3b8">The Untellable</text>
+</svg>

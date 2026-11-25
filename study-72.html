@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 竹林中 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/72-zhulin.html">本书书页</a></p>
+<h1>深度研读 · 竹林中</h1>
+<p class="sub">芥川龙之介 著 · 蜂鸟文丛·秦刚 等译 · 深度研读</p>
+<p class="lead">研读说明：本册为芥川龙之介短篇集，共二十篇，从《罗生门》《鼻子》到《竹林中》《地狱图》《蜘蛛之丝》，横跨其创作的怀疑、幽默与救赎三个阶段。同名名篇《竹林中》以七份互相矛盾的口供构成一桩无解的命案——每个人都撒谎，每个人都往自己的形象上加码；而《罗生门》写的是在饿死与做强盗之间，人性如何给自己发通行证。本研读共十二节，先录原文（据译文版校录），再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>罗生门开场：雨夜与城门</a></li>
+<li><a href="#s2"><b>贰</b>仆人的困境：不做就得饿死</a></li>
+<li><a href="#s3"><b>叁</b>剥衣的对账：去向不明的人</a></li>
+<li><a href="#s4"><b>肆</b>多襄丸自白：我杀了男人，没杀女人</a></li>
+<li><a href="#s5"><b>伍</b>多襄丸的诛心之论：权力与花言巧语</a></li>
+<li><a href="#s6"><b>陆</b>真砂的目光：鄙视的、冰冷的</a></li>
+<li><a href="#s7"><b>柒</b>真砂的殉死与求生：没能死掉</a></li>
+<li><a href="#s8"><b>捌</b>地狱图：五常不辨，只能下地狱</a></li>
+<li><a href="#s9"><b>玖</b>地狱图的代价：屏风与女儿</a></li>
+<li><a href="#s10"><b>拾</b>蜘蛛之丝：一条性命的慈悲</a></li>
+<li><a href="#s11"><b>拾壹</b>丝断之后：极乐的正午</a></li>
+<li><a href="#s12"><b>拾贰</b>鼻子与戏作三昧：笑、澡堂与自我</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>罗生门开场：雨夜与城门</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>雨包围着罗生门，从远处，唰唰地发着声响扑过来。</p>
+<p class="src">——《罗生门》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书由一场雨开场：雨包围着罗生门，从远处唰唰地扑过来。这不是风景描写，是氛围的传票——傍晚的罗生门上蹲着乌鸦，门下躲着一个刚刚被主人辞退的仆人。整个故事被雨关在门里，门外的世界不肯收留他，门内的世界正在教他。</p>
+<p><b>逻辑脉络</b>：芥川把故事的两极都装进这个门洞：楼上躺着被剥光衣服的死尸（人把人当物），楼下坐着想活下去的仆人（人把自己也快当成物）。雨声越紧，他越饿；他越饿，伦理的堤坝越低。小说的全部推进，就是雨水泡软道德地基的过程。</p>
+<p><b>现实意义</b>：判断一个人的底线，别看他晴天的宣言，看他在被雨困住那晚的选择。饿，是检验人性的第一道仪器。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>仆人的困境：不做就得饿死</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>要是不这么干，就得饿死，这也是没有出路才干的啊！</p>
+<p class="src">——《罗生门》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：仆人听见老太婆拔死人头发时，一度义愤填膺；可老太婆一句话就拆了他的道德脚手架：要是不这么干，就得饿死，这也是没有出路才干的。她拔死人头发做假发，是为了活命；她给自己的恶行开具的发票上，写的也是迫不得已。</p>
+<p><b>逻辑脉络</b>：这句话的可怕不在理直气壮，而在它的传染性：仆人原本握着道德的刀，听完立刻换了目标——既然人人都可以「没有出路」，那我也可以。他剥下老太婆的衣服，用的正是同一套说辞。恶的语法不需要重新发明，抄一遍就行。</p>
+<p><b>现实意义</b>：警惕一切以「没办法」开头的自我豁免：它可以被任何人引用，包括下一个受害者。当一套逻辑人人都能拿来当通行证，它就不再是理由，只是台阶。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>剥衣的对账：去向不明的人</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>那末，我剥了你衣服，你也用不着恨我了吧！我要是不这么干，我也就饿死了！</p>
+<p>仆人的去向谁也不知道。</p>
+<p class="src">——《罗生门》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：仆人剥衣前的宣言是一份完整的免责声明：那末，我剥了你衣服，你也用不着恨我了吧！我要是不这么干，我也就饿死了！——他甚至替受害者预支了原谅。而小说的结尾只有一句：仆人的去向谁也不知道。</p>
+<p><b>逻辑脉络</b>：芥川用「去向不明」完成了一次精妙的账务处理：恶行已发生（衣服被剥），凶手已销账（去向不明），因果链在读者眼前断开。老太婆拔死人头发尚且有「用途」，仆人剥活人衣服只剩「本能」——每一次复制，恶都比原版更空洞。</p>
+<p><b>现实意义</b>：「你也用不着恨我了」是作恶者的第一句心理台词。生活中有人提前替你原谅自己时，账要自己记——他的去向不明，你的损失确凿。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>多襄丸自白：我杀了男人，没杀女人</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>是我把那个男人杀死的！但女人我没杀。</p>
+<p class="src">——《竹林中》多襄丸的供述 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：强盗多襄丸的供述以这句挑战开场：是我把那个男人杀死的！但女人我没杀。他抢人妻、杀其夫，却坚决不认那最不体面的一项。七份口供各有版本，共同点是：人人都抢着认下对自己有利的罪，把有损名誉的部分推给想象中的他人。</p>
+<p><b>逻辑脉络</b>：多襄丸的形象工程做得很足：他吹嘘自己不用下流手段夺得女人、决斗二十三回合才取胜。他承认杀人，因为「敢作敢当的强盗」是体面人设；他不认凌辱后的杀害，因为那会把他降格为卑鄙小人。口供不是证词，是自传——每个人都只写自己愿意署名的那一页。</p>
+<p><b>现实意义</b>：看一个人认什么、不认什么，比看他做了什么更能看清他：主动揽下的罪常是勋章，矢口否认的部分才是要害。审别人的口供如此，审自己也如此。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>多襄丸的诛心之论：权力与花言巧语</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>而你们不用长刀，只会用权力、用金钱来杀死他，用花言巧语来杀死他。</p>
+<p class="src">——《竹林中》多襄丸的供述 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：面对拷问，多襄丸反手掷出全书最锋利的一句：你们不用长刀，只会用权力、用金钱来杀死他，用花言巧语来杀死他。强盗承认自己是强盗，却指控审他的人是无刀的强盗——他不求减刑，只求对账。</p>
+<p><b>逻辑脉络</b>：这句辩护的逻辑是「比烂」：我的恶看得见（刀），你们的恶看不见（权力、金钱、言辞）。它无法脱罪，却成功地转移了罪感的坐标系——既然社会本身就是一场更大的掠夺，个体掠物的道德重量便似乎轻了。芥川让一个强盗说出对本阶级的审判，正是他怀疑主义的最痛一笔。</p>
+<p><b>现实意义</b>：「你们也没好到哪里去」改变不了任何事实，却能改变听者的心境——它从不用于行善，只用于卸责。听到这种对账，先认下自己一栏，再谈对方一栏。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>真砂的目光：鄙视的、冰冷的</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>既不是愤怒，也不是悲伤——只是投向我的那种鄙视的、冰冷的目光。</p>
+<p class="src">——《竹林中》清水寺忏悔 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：妻子真砂在清水寺的忏悔里，把丈夫武弘受辱后的神色记成这样：既不是愤怒，也不是悲伤——只是投向我的那种鄙视的、冰冷的目光。身体之辱她都还撑得住，这束目光把她杀死了。</p>
+<p><b>逻辑脉络</b>：三个版本的口供里，丈夫的死各有凶手（强盗杀的、她杀的、自尽的），唯有这束目光三个版本都在场。它才是竹林中真正的凶器：一个男人用一个眼神完成对妻子的审判，妻子用一个念头完成对丈夫的处决，强盗用一套说辞完成对自己的加冕。鄙视是唯一不需要刀的暴力。</p>
+<p><b>现实意义</b>：亲密关系里最危险的从来不是争吵，而是轻蔑——戈特曼的研究把「蔑视」列为婚姻的头号毒药。目光可以杀人，这篇小说在七百年前的人证里写出了现代心理学的结论。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>真砂的殉死与求生：没能死掉</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>那就把你的命给我吧，我也马上去陪你。</p>
+<p>我把短刀插进了喉咙，也跳过山脚的深塘，用尽了各种各样的办法，都没能死掉。</p>
+<p class="src">——《竹林中》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：真砂的版本里有两场死亡未遂：先求丈夫同死（那就把你的命给我吧），遭他冷眼后自己动手——把短刀插进了喉咙，也跳过山脚的深塘，用尽了各种各样的办法，都没能死掉。她的忏悔以失败告终，连死都失败了。</p>
+<p><b>逻辑脉络</b>：对照丈夫亡灵的版本（真砂煽动强盗杀夫后逃走）与真砂自己的版本（她杀夫后自杀未遂），唯一不变的是那个未完成的动作。芥川不给真相，只给七面镜子；每一面镜子照出的凶手不同，照出的耻感相同。她反复尝试死亡，恰是求生欲最诚实的表演——叙述里的死，是为了在听者那里活。</p>
+<p><b>现实意义</b>：当一个人的自述里全是悲壮的失败，要留意：把「没能死掉」讲成勋章的人，往往在为自己无法承受的活寻找台阶。同情要有，账本也要有。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>地狱图：五常不辨，只能下地狱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>不管艺术造诣多么高，一个人连五常都不辨，只能下地狱！</p>
+<p class="src">——《地狱图》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：画师良秀为画出地狱图的真实，眼睁睁看女儿在牛车中被烧死。《地狱图》里横川僧都的判词冷得像铁：不管艺术造诣多么高，一个人连五常都不辨，只能下地狱！这是全书最直白的伦理质询——艺术的至高瞬间，能不能豁免一个人做人的义务？</p>
+<p><b>逻辑脉络</b>：芥川把问题设计成一个残酷的对价：良秀要的地狱变相图，必须以女儿的火刑为写生现场；他得到旷世之作，付出的是人伦与性命。僧都的判词代表社会共识，小说却让这共识在画成之后动摇——连僧都面对完成品也沉默了。芥川不给判决，只把天平递给读者。</p>
+<p><b>现实意义</b>：「为了作品」「为了事业」是成年世界里最常用的豁免词。判断它成不成立，看代价由谁承担：拿自己的命换，是殉道；拿别人的命换，是地狱。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>地狱图的代价：屏风与女儿</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>女儿在他面前活活被烧死，他却仍然专心画屏风</p>
+<p class="src">——《地狱图》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：良秀那一夜的姿势成了日本文学里最刺目的剪影：女儿在他面前活活被烧死，他却仍然专心画屏风。痛苦与杰作在同一张画布上完成结算——他画的正是他失去的，他失去的正是他画出来的。</p>
+<p><b>逻辑脉络</b>：叙事的残忍在于时序：良秀请求烧车时并不知道车上是女儿（他以为是猴），大公的安排使惩罚伪装成写生。所以这一幕同时是三重罪：大公的暴虐（以权杀人）、良秀的狂热（以艺误判）、旁观者的沉默。画成之后，良秀自缢——作品赢了，作者退场，这几乎是艺术史上一切「代价论」的缩微模型。</p>
+<p><b>现实意义</b>：识别你人生里的「屏风时刻」：当你在某件事上格外专注，而身边有人正在被烧——先看清楚车上是谁。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>蜘蛛之丝：一条性命的慈悲</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>不可，不可，蜘蛛虽小，到底也是一条性命。</p>
+<p class="src">——《蜘蛛之丝》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：极乐世界清晨，佛祖见强盗犍陀多在血池中挣扎，想起他生前唯一一次善举——不忍踩死一只蜘蛛。于是垂下一根蛛丝渡他。那句判词轻得像叹息：不可，不可，蜘蛛虽小，到底也是一条性命。恶人的一念之善，被宇宙郑重记账。</p>
+<p><b>逻辑脉络</b>：芥川在此调转了《罗生门》的方向盘：《罗生门》写小恶如何滚成大恶，《蜘蛛之丝》写微善如何兑成机会。但救赎的额度只有一根丝——犍陀多顺着蛛丝攀向极乐，回头看见下面众生的攀爬，喊着「这是我的丝」，一脚踢开他人，丝应声而断。善念救得了人，自私救不了；账可以开，兑现要看后半程。</p>
+<p><b>现实意义</b>：人生的机会常以「蛛丝」的形态出现：细、脆、一次。抓着它的时候别踹别人——那根丝撑不住独占的重量。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>丝断之后：极乐的正午</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>犍陀多只顾一己脱离苦海，毫无慈悲心肠，受到应得的报应，又落进原先的地狱。</p>
+<p>极乐世界，大约已近正午时分。</p>
+<p class="src">——《蜘蛛之丝》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：犍陀多坠回血池，判词如账簿：只顾一己脱离苦海，毫无慈悲心肠，受到应得的报应。而全篇的结尾是一句不动声色的白描——极乐世界，大约已近正午时分。莲池的花照开，午后的光照常。</p>
+<p><b>逻辑脉络</b>：结尾的残忍在于「无事发生」：一个人的沉沦，在极乐的历法里连一刻钟都占不满。这与《竹林中》的结构互为镜像——《竹林中》里人人都在抢真相的解释权，《蜘蛛之丝》里真相清清楚楚（自私导致坠落），却同样无人再提。芥川的怀疑主义至此完整：世界不给答案，也不给回音。</p>
+<p><b>现实意义</b>：别指望世界为你的沉沦按下暂停键——莲池正午不会等人。但反过来读：正午也在等人，丝还垂着，下一次攀爬从承认「这不是我的丝」开始。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>鼻子与戏作三昧：笑、澡堂与自我</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>——这样一来，看他们谁还敢笑话我！内供心里这么喃喃自语，长鼻子径自颤悠在黎明的秋风中。</p>
+<p>那浮世澡堂，简直便是神、释、色与无常的大杂烩</p>
+<p class="src">——《鼻子》《戏作三昧》 ｜ 据《竹林中》译文版（秦刚 等译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：内供的鼻子缩短之后，第一反应是：这样一来，看他们谁还敢笑话我！——治好了自卑，立刻长出新的恐惧。而《戏作三昧》里，作家马琴在澡堂听到旁人议论自己的书，那浮世澡堂，简直是神、释、色与无常的大杂烩——名声的现场，就是众生的澡堂。</p>
+<p><b>逻辑脉络</b>：这两篇合起来是芥川的「形象焦虑学」：内供的鼻子不取决于长度，取决于旁观者的目光——他在乎的从来不是鼻子，是「被笑话」这件事本身；马琴的痛苦不取决于书写得好坏，取决于他在澡堂里听见的是嘲笑还是赞叹。芥川把自我的重心完全外包给了观众席，然后精确地展示这种外包的利息有多高。</p>
+<p><b>现实意义</b>：「别人会怎么看我」是成本最高的内心活动：它收的是想象税，付的是真实人生。内供的鼻子最终没有变好也没有变坏——变的只是他心里观众席的掌声。把观众席撤了，鼻子就只是一个器官。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷「七份口供互相拆台的短篇集」的最终目的，是学会在自己的生活里识别免责的修辞、鄙视的目光与独占的丝，并且在被雨困住的那一晚，还记得道德的最低版本。</p>
+<p><b>要是不这么干，就得饿死，这也是没有出路才干的啊！</b>应用口诀：一切以「没办法」开头的豁免，都能被任何人引用。</p>
+<p><b>那末，我剥了你衣服，你也用不着恨我了吧！</b>应用口诀：替你预支原谅的人，账要自己记。</p>
+<p><b>是我把那个男人杀死的！但女人我没杀。</b>应用口诀：认什么、不认什么，比做了什么更暴露人。</p>
+<p><b>而你们不用长刀，只会用权力、用金钱来杀死他，用花言巧语来杀死他。</b>应用口诀：「你们也一样」从不用于行善，只用于卸责。</p>
+<p><b>既不是愤怒，也不是悲伤——只是投向我的那种鄙视的、冰冷的目光。</b>应用口诀：轻蔑是唯一不需要刀的暴力。</p>
+<p><b>我把短刀插进了喉咙，也跳过山脚的深塘，用尽了各种各样的办法，都没能死掉。</b>应用口诀：满口悲壮失败的人，常在为无法承受的活找台阶。</p>
+<p><b>不管艺术造诣多么高，一个人连五常都不辨，只能下地狱！</b>应用口诀：拿自己的命换是殉道，拿别人的命换是地狱。</p>
+<p><b>不可，不可，蜘蛛虽小，到底也是一条性命。</b>应用口诀：微善被宇宙记账，兑现要看后半程。</p>
+<p><b>犍陀多只顾一己脱离苦海，毫无慈悲心肠，受到应得的报应，又落进原先的地狱。</b>应用口诀：那根丝撑不住独占的重量。</p>
+<p><b>——这样一来，看他们谁还敢笑话我！</b>应用口诀：撤掉心里的观众席，鼻子就只是一个器官。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/竹林中" target="_blank" rel="noopener">竹林中 · 维基百科</a><span>佐证：《竹林中》1922 年发表，七份口供的叙事结构对推理文学的革命性影响。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/芥川龙之介" target="_blank" rel="noopener">芥川龙之介 · 维基百科</a><span>建议：作者 1892—1927 的生平与「人性怀疑」创作脉络。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/罗生门 (小说)" target="_blank" rel="noopener">罗生门 · 维基百科</a><span>建议：《罗生门》与《竹林中》的电影改编史——黑泽明 1950 年以「罗生门」之名重述竹林命案。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/蜘蛛之丝" target="_blank" rel="noopener">蜘蛛之丝 · 维基百科</a><span>建议：1918 年发表的佛经改写，对照《法句经》中的善行记账观。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《竹林中》 ～ 中文据《外文大家小藏本·芥川龙之介集》（秦刚 等译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

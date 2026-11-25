@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 如何高效读懂一本书 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/31-gaoxiao.html">本书书页</a></p>
+<h1>深度研读 · 如何高效读懂一本书</h1>
+<p class="sub">秋叶（张翔） 著 · 北京联合出版公司 2015 · 序篇四问＋十种读法＋拆书示范</p>
+<p class="lead">研读说明：本书是阅读方法论的实操样本——序篇回答「没空读、怎样读、读了忘、不会分享」四问，主体是十种对症下药的读书法与拆书示范。作者的核心主张：读书的产出不是划线和感动，而是拆解与分享。本研读按十二个主题推进，先忠实摘录原文，再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>没空读书？一年读一百多本书的真相</a></li>
+<li><a href="#s2"><b>贰</b>读了就忘：缺的是输出，不是记性</a></li>
+<li><a href="#s3"><b>叁</b>通读法：读书是为了建立思考框架</a></li>
+<li><a href="#s4"><b>肆</b>树读法：主题阅读是深入一个领域的捷径</a></li>
+<li><a href="#s5"><b>伍</b>逆读法：对「传道书」故意反着读</a></li>
+<li><a href="#s6"><b>陆</b>十种读法：文本类型决定读法</a></li>
+<li><a href="#s7"><b>柒</b>读书笔记与分享：把书变成作品</a></li>
+<li><a href="#s8"><b>捌</b>尽信书不如无书：批判性阅读的养成</a></li>
+<li><a href="#s9"><b>玖</b>建立思考模型：把书读成框架库</a></li>
+<li><a href="#s10"><b>拾</b>马上用：学以致用的闭环</a></li>
+<li><a href="#s11"><b>拾壹</b>拆书示范：一本书如何被读成一门课</a></li>
+<li><a href="#s12"><b>拾贰</b>阅读的速度与深度：不是对立面</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>没空读书？一年读一百多本书的真相</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>问1：你说自己一年读100多本书，怎样做到的？</p>
+<p>这就是普通人不能理解时间管理高手的第二个误区，你们只看见工作量，只会用自己的工作效率计算，结论就是这个人没有生活。</p>
+<p class="src">——《如何高效读懂一本书》序篇「一、没空读书？再忙也可以一年读上百本书」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「一年读100多本」不是天赋，是时间结构问题：读书的阻力不是忙，是把阅读默认为「要整块时间的大事」。作者把读书拆成可以嵌入日常碎片的常规动作，再用十年积累的阅读速度放大单位时间产出。</p>
+<p><b>逻辑脉络</b>：先用问句立靶（怎样做到的），再用「时间管理高手的第二个误区」反证：旁观者拿自己的效率算别人的账，自然算出「不可能」——差距在时间结构与阅读能力的复利，不在总时长。</p>
+<p><b>现实意义</b>：评估自己的阅读时间结构：每天真正的碎片时间总量远超想象，关键是给阅读安排「固定坑位」——像开会一样给它排期，而不是等有空再读。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>读了就忘：缺的是输出，不是记性</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>三、读了就忘？我的10种读书方法</p>
+<p>这个方法可以让一个人在很短时间内深入研究一个领域，所以后来我要做大的研究，都是用的这种读书方法。</p>
+<p class="src">——《如何高效读懂一本书》序篇「三、读了就忘？我的10种读书方法」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「读了就忘」的病根不是记性差，是只输入不加工：没有笔记、没有拆解、没有分享的记忆通道，遗忘是大脑的默认设置。十种读书法的共同底座，是给每种书配一个「输出动作」。</p>
+<p><b>逻辑脉络</b>：章节名本身是诊断（读了就忘？），答案不是一个方法而是十个——因为书不同，忘法相同，出路是「对症」：文本类型决定读法，读法决定输出形态。</p>
+<p><b>现实意义</b>：读完一本书记不住时的自检清单：写笔记了吗？讲给别人听了吗？做了拆解示范吗？三项全无，忘掉是正常的——不是你笨，是流程缺失。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>通读法：读书是为了建立思考框架</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>年轻人读书应该考虑是否能为自己建立一个完整的思考框架，这个是无法通过网络阅读系统建立的——当然一些特别优质的网络课程例外。</p>
+<p>不要以为看了很多网络文章，貌似也做了很多思考就是读到书了。</p>
+<p>等你培养出框架思维能力了，再看碎片文章，就可以把看到的信息点整合到自己的框架里面，让自己的框架更加丰富饱满。</p>
+<p class="src">——《如何高效读懂一本书》序篇「通读法：我是如何培养思考框架的」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：通读法的目标不是「读完」，是借整本书的完整结构训练思考框架：框架无法由碎片阅读拼出来——碎片只能填进已有框架，填不进新框架。</p>
+<p><b>逻辑脉络</b>：论证分两步：先断言（框架必须靠整本书锤炼），再给顺序（先框架后碎片）——碎片信息的价值取决于框架的存在：没有框架，信息只是流过；有框架，信息才沉淀为结构。</p>
+<p><b>现实意义</b>：给「只刷公众号文章」的阅读模式划红线：用整本书搭框架，用碎片文养框架——顺序反了，读得越多越焦虑。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>树读法：主题阅读是深入一个领域的捷径</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如果觉得某个方面有必要了解学习，我至少会看十本同类书籍，然后仔细想想那些专家的看法是否一致，慢慢得出我在这个领域的思考框架。这种阅读方式叫主题阅读。</p>
+<p class="src">——《如何高效读懂一本书》序篇「树读法：我是如何去做主题阅读的」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十本同类书对照读：不是收集观点，是观察专家之间的分歧与共识——共识是领域的骨架，分歧是领域的裂缝，两张图合起来就是思考框架。</p>
+<p><b>逻辑脉络</b>：作者先破除一个流行误解：「某个领域一定有一本最好的书」——单本最佳书是幻觉，领域知识分布在争论里；十本书的互相印证与互相拆台，才是理解一个领域的正确姿势。</p>
+<p><b>现实意义</b>：进入任何新领域的作业模板：定主题→找十本书→列分歧清单→写成框架笔记——比精读一本「经典」快得多，也稳得多。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>逆读法：对「传道书」故意反着读</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>「传道书」就是作者貌似「大牛」，或者观点很有名但其实有偏颇的书。这样的书有很多观点我不同意，或者认为在某种条件下是不成立的，我就故意反着读。</p>
+<p class="src">——《如何高效读懂一本书》序篇「逆读法：我是如何读『传道书』的」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：对名气大、观点偏的书，读法是主动找茬：站在作者对面检验每个论点的适用条件——逆读不是抬杠，是把「被动接受」升级成「条件化吸收」。</p>
+<p><b>逻辑脉络</b>：作者举《金字塔原理》为例：故意逆着读，是想讽刺有些人神话金字塔原理——任何方法论都有边界，逆读的作用就是把边界画出来。书的「上篇：尽信书不如无书」整章都是逆读的示范成果。</p>
+<p><b>现实意义</b>：读畅销方法论书的纪律：每接受一条原则，追问一句「它在什么条件下不成立」——答不上来，说明还没读懂，只是被说服了。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>十种读法：文本类型决定读法</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>图读法：我是如何去啃硬书的</p>
+<p>框读法：我是如何读经管书的</p>
+<p>炼读法：我是如何读畅销书的</p>
+<p>仿读法：我是如何读工具书的</p>
+<p>诵读法：我是如何读文艺书的</p>
+<p>闲读法：我是如何读快餐书的</p>
+<p class="src">——《如何高效读懂一本书》序篇「三、读了就忘？我的10种读书方法」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十种读法一一对应文本类型：通读法练框架、树读法做主题、图读法啃硬书（画思维导图消化结构）、框读法读经管（套框架）、炼读法读畅销书（炼金句）、逆读法对付传道书、抄读法抄大牛书、仿读法跟工具书动手、诵读法品文艺书、闲读法翻快餐书。</p>
+<p><b>逻辑脉络</b>：方法论的完整性来自「分类覆盖」：任何一本书都能在这张对照表里找到自己的读法与输出形态——读法的本质不是「更努力」，是「读对文体」。</p>
+<p><b>现实意义</b>：把自己书架上的书按文本类型重新归档，每类标注对应读法——下一本读不下去的书，多半是拿错了读法，不是书有问题。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>读书笔记与分享：把书变成作品</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>做过读书笔记PPT的书，读者很难遗忘其中的内容，而且把一个好的读书笔记PPT分享出去，不仅仅帮助别人快速了解一本书，还能提升你的个人品牌影响力。</p>
+<p class="src">——《如何高效读懂一本书》序篇「四、不会分享？怎样做读书笔记和拆书」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：读书的终局动作是分享：做成笔记PPT或拆解文章后，遗忘率骤降——因为分享逼着你重组书的结构，重组即记忆；同时分享物成为个人品牌的资产。</p>
+<p><b>逻辑脉络</b>：论证是复利式的：一次投入（做笔记）→ 三重回报（自己记住＋别人受益＋个人影响力）——分享不是利他损耗，是学习效率与个人品牌的复利引擎。</p>
+<p><b>现实意义</b>：给阅读加一个强制出口：每读完一本有价值的书，产出一份可分享的拆解物——笔记PPT、文章、讲稿皆可，不做输出不算读完。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>尽信书不如无书：批判性阅读的养成</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>这样做很辛苦，但是我的确发现自己的逻辑思维能力提高了，也能看出别人文章里面的一些问题和错误了。</p>
+<p class="src">——《如何高效读懂一本书》上篇「一、尽信书不如无书」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：批判性阅读不是天赋，是训练结果：逐一对流行理论（长尾理论、免费经济、六度空间、引爆点）做检验与拆解，几年下来就能看出别人文章里的错误——上篇的拆书示范就是训练过程的留档。</p>
+<p><b>逻辑脉络</b>：书的结构本身证明了路径：上篇「尽信书不如无书」陈列对六个流行理论的批判性检验，「建立思考模型」一节给出替代框架——先破后立，破立之间形成批判性阅读的肌肉。</p>
+<p><b>现实意义</b>：批判能力的养成计划：挑一个你相信的理论，写一篇「它在什么条件下失效」的分析——每季度一篇，一年后回看，你会看到自己的阅读水位变化。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>建立思考模型：把书读成框架库</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>1.时间紧急重要度模型2.SWOT分析法3.波士顿矩阵分析法</p>
+<p>组合矩阵分析法</p>
+<p class="src">——《如何高效读懂一本书》上篇「二、建立思考模型」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：读书的上层目标是为自己的框架库添模型：时间紧急重要度、SWOT、波士顿矩阵、组合矩阵、回馈模型……每读完一本经管书，问一句「这本书贡献了哪个可复用的模型」。</p>
+<p><b>逻辑脉络</b>：与通读法呼应：框架从整本书里来，模型从框架里拆——书是模型的运输工具，读书笔记是模型的仓库，拆解示范是模型的实操演示。</p>
+<p><b>现实意义</b>：给笔记系统设一个「模型区」：每读完一本书，只往模型区放一件东西——可复用的框架或清单；放不出来的书，多半只是消遣。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>马上用：学以致用的闭环</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>丰田管理法，不能只看书，要学以致用，还要马上用，所以我马上用这个方法整理了一下我的电脑桌面。</p>
+<p class="src">——《如何高效读懂一本书》上篇（学以致用示范）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：读到方法类内容的最短闭环是「马上用」：作者读完丰田管理法立刻拿它整理电脑桌面——应用的规模不重要，应用的间隔时间才重要，越短记忆越牢。</p>
+<p><b>逻辑脉络</b>：这个示范的幽默感正是重点：整理桌面是小事，但「读完→立刻→用」的三段动作是范式——学习闭环的长度决定留存率，与项目大小无关。</p>
+<p><b>现实意义</b>：给自己立规矩：任何方法类内容，48小时内必须用一次，哪怕用在一个极小的事情上——「马上用」是防止「收藏即学会」的唯一解药。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>拆书示范：一本书如何被读成一门课</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>1.你真的读懂了《黑天鹅效应》吗</p>
+<p>2.读《一以贯之》学经济思考</p>
+<p class="src">——《如何高效读懂一本书》上篇（拆书示范章节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：书的后半部分是拆书示范：对《黑天鹅效应》《一以贯之》等书做逐章拆解——示范的讯息是「拆解可以直接照抄」：从找结构、列反例到写成讲稿，全程可复制。</p>
+<p><b>逻辑脉络</b>：方法论书的说服力不在口号在示范：前面十种读法是说明书，后面的拆书示范是出厂实拍——读者拿着示范当模板，读完就能开工。</p>
+<p><b>现实意义</b>：新手起步的最短路径：不要先发明自己的笔记系统，先照抄作者的拆书模板做一本——跑通一次再按自己的习惯改造。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>阅读的速度与深度：不是对立面</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>问4：读书是速读好还是精读好？</p>
+<p>问5：读书是不是开卷有益？</p>
+<p class="src">——《如何高效读懂一本书》序篇（问答节选）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：速读与精读不是立场之争，是场景选择：文本类型与目的决定速度——快餐书速读、硬书精读、主题书对照速读加精读。开卷有益的对立面是「不开卷」，不是「有选择地读」。</p>
+<p><b>逻辑脉络</b>：序篇用问答体处理争议问题：作者不站队「快派」或「慢派」，而是把速度变量还给场景——十种读法里既有最慢的通读，也有最快的闲读，速度是读法的属性不是读者的属性。</p>
+<p><b>现实意义</b>：放弃「我应该读得更快/更慢」的自我批判，换成两个具体问题：这本书是什么文体？我读它要产出什么？答案一出，速度自动确定。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读的最终目的，是把一本阅读方法书写成自己的日常动作。</p>
+<p><b>你们只看见工作量，只会用自己的工作效率计算，结论就是这个人没有生活。</b>应用口诀：别用别人的总时长衡量别人，用时间结构看自己。</p>
+<p><b>不要以为看了很多网络文章，貌似也做了很多思考就是读到书了。</b>应用口诀：整本书搭框架，碎片文填框架——顺序不能反。</p>
+<p><b>年轻人读书应该考虑是否能为自己建立一个完整的思考框架。</b>应用口诀：每年至少通读四本硬书，专供框架升级。</p>
+<p><b>我至少会看十本同类书籍。</b>应用口诀：进新领域先找十本书，列分歧清单再下判断。</p>
+<p><b>这样的书有很多观点我不同意，或者认为在某种条件下是不成立的，我就故意反着读。</b>应用口诀：读畅销方法论先问一句——它在什么条件下失效？</p>
+<p><b>做过读书笔记PPT的书，读者很难遗忘其中的内容。</b>应用口诀：每本好书必须产出一份可分享的拆解物。</p>
+<p><b>我的确发现自己的逻辑思维能力提高了，也能看出别人文章里面的一些问题和错误了。</b>应用口诀：每季度拆一个自己相信的理论，练找茬肌肉。</p>
+<p><b>要学以致用，还要马上用，所以我马上用这个方法整理了一下我的电脑桌面。</b>应用口诀：方法类内容48小时内必须用一次，小事也算。</p>
+<p><b>读书是速读好还是精读好？</b>应用口诀：速度跟着文体走，不跟着焦虑走。</p>
+<p><b>这个方法可以让一个人在很短时间内深入研究一个领域。</b>应用口诀：主题阅读是深入领域的捷径——十本书起步。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E9%A2%98%E9%98%85%E8%AF%BB" target="_blank" rel="noopener">主题阅读 · 维基百科</a><span>佐证：树读法对应《如何阅读一本书》的检视阅读与分析阅读层级。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/SWOT%E5%88%86%E6%9E%90" target="_blank" rel="noopener">SWOT 分析 · 维基百科</a><span>延伸：书中「建立思考模型」的样板模型。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E5%A4%A9%E9%B9%85%E6%95%88%E5%BA%94" target="_blank" rel="noopener">黑天鹅效应 · 维基百科</a><span>佐证：拆书示范章节的原书背景。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA" target="_blank" rel="noopener">长尾理论 · 维基百科</a><span>佐证：「尽信书不如无书」中被检验的流行理论。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E8%80%83" target="_blank" rel="noopener">批判性思考 · 维基百科</a><span>延伸：批判性阅读的心理学基础。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86" target="_blank" rel="noopener">知识管理 · 维基百科</a><span>延伸：读书笔记与个人知识体系的关系。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《如何高效读懂一本书》 ｜ 摘录据原书文本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

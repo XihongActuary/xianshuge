@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 红字 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/20-hongzi.html">本书书页</a></p>
+<h1>深度研读 · 红字</h1>
+<p class="sub">The Scarlet Letter · 纳撒尼尔·霍桑 著 · 外研社双语读库·外研社编译组译 · 中英对照深度研读</p>
+<p class="lead">研读说明：美国浪漫主义文学的奠基之作——清教殖民地的波士顿，赫斯特·普林因通奸被判终身佩戴红字 A。本双语研读版共十二节：标题中英对照、摘录中英并置，每节配词汇积累、句式分析与写作借鉴——读霍桑，同时学他的象征系统、长句建筑与古体修辞。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>罪恶之花与野玫瑰 · A Prison and a Wild Rose</a></li>
+<li><a href="#s2"><b>贰</b>金丝绣的 A · The Scarlet Letter</a></li>
+<li><a href="#s3"><b>叁</b>光环：耻辱被织成王冠 · A Halo of Misfortune</a></li>
+<li><a href="#s4"><b>肆</b>罗杰·奇林沃斯归来 · Let Him Live</a></li>
+<li><a href="#s5"><b>伍</b>妻子的坦白：他曾是我的丈夫 · He Was My Husband</a></li>
+<li><a href="#s6"><b>陆</b>红字是通行证 · Her Passport</a></li>
+<li><a href="#s7"><b>柒</b>午夜刑台 · The Scaffold at Midnight</a></li>
+<li><a href="#s8"><b>捌</b>流星：天穹如巨灯 · The Dome of an Immense Lamp</a></li>
+<li><a href="#s9"><b>玖</b>耻辱的雕像 · A Statue of Ignominy</a></li>
+<li><a href="#s10"><b>拾</b>黑树林中的真实一刻 · True for One Moment</a></li>
+<li><a href="#s11"><b>拾壹</b>要真实！要真实！要真实！ · Be True! Be True! Be True!</a></li>
+<li><a href="#s12"><b>拾贰</b>一片墨黑的土地，一个血红的 A 字 · On a Field, Sable, the Letter A, Gules</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>罪恶之花与野玫瑰 · A Prison and a Wild Rose</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">the soil that had so early borne the black flower of civilised society, a prison. But, on one side of the portal, and rooted almost at the threshold, was a wild rose-bush, covered, in this month of June, with its delicate gems.</p>
+<p class="cn">它们显然与这片土地意气相投，因为这里很早便滋生了文明社会的罪恶之花——监狱。然而，在大门的一侧，几乎是在门坎处，长了一簇野玫瑰。在这个六月，玫瑰枝上开满了如宝石般精致的花朵。</p>
+<p class="en">in token that the deep heart of Nature could pity and be kind to him.</p>
+<p class="cn">它们以此表示，大自然在内心深处仍对那些罪人怀有一丝同情与怜爱。</p>
+<p class="src">——第一章《监狱的门》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的第一组意象在监狱门口并置：文明社会滋生出「罪恶之花」监狱，而门坎处偏偏长着一簇野玫瑰。霍桑开篇就宣布了他的立场——在律法面前，自然保留了一票：对罪人，「大自然在内心深处仍怀有一丝同情与怜爱」。</p>
+<p><b>逻辑脉络</b>：第一章立起全书的象征体系：监狱（律法的果实）与玫瑰（自然的赦免）同框。之后二十四章所有的张力——刑台与森林、白日与午夜、牧师的胸口与赫斯特的针线——都是这对意象的变奏。野玫瑰后来还派给小珠儿：自然的孩子摘自然的花园，律法管不着。</p>
+<p><b>现实意义</b>：评价任何制度时看两样东西：它滋生了什么（监狱）、它门坎上长了什么（玫瑰）。只有律法没有怜爱的系统走不远。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>borne</b>　v. 结出（过去分词：the soil that had borne the black flower——bear 的果实义）</p>
+<p><b>portal</b>　n. 大门（正门语域词，拉丁词源——清教文学的用词层）</p>
+<p><b>threshold</b>　n. 门坎（rooted almost at the threshold：玫瑰的位置学——律法与自然的交界）</p>
+<p><b>gems</b>　n. 花蕾如宝石（delicate gems：隐喻连用，玫瑰=宝石）</p>
+<p><b>in token that</b>　phr. 以表示（正式书面短语：in token that...，公文与文学共用）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>the soil that had so early borne the black flower of civilised society, a prison. ——定语从句+同位语（a prison）：黑花=监狱的同位补足，隐喻先解释后落地。学这种「隐喻+同位补足」：先给意象（black flower），再给本体（prison），一逗号完成解码。</p>
+<p>was a wild rose-bush, covered, in this month of June, with its delicate gems ——表语前置倒装（was a wild rose-bush 开头）：地点状语省略后主语倒装，玫瑰被推到句尾焦点位；covered 与 in this month of June 双逗号插入——节奏像花开。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：开篇的意象并置法——把对立的两个东西放进同一帧（监狱门坎上的玫瑰）。你的英文议论文开头也可以并置：a detention room and a dandelion——让读者自己在张力里定题。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>金丝绣的 A · The Scarlet Letter</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">On the breast of her gown, in fine red cloth surrounded with an elaborate embroidery and fantastic flourishes of gold thread, appeared the letter A.</p>
+<p class="cn">在她裙袍的前胸露出了一个字母A，是用红色细布为底，周围加之金丝线刺绣制成的，做工精致，手艺奇巧。</p>
+<p class="en">It was so artistically done, and with so much fertility and gorgeous luxuriance of fancy, that it had all the effect of a last and fitting decoration to the apparel which she wore.</p>
+<p class="cn">这个字母做得如此别致，充满了丰富而华美的想象，佩在衣服上简直如同画龙点睛一般；</p>
+<p class="src">——第二章《市场》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：赫斯特抱着婴儿走出监狱，胸前的红字 A 不是粗布烙印，是红底金线的精工刺绣——「做工精致，手艺奇巧」。社会发给她刑具，她把刑具做成了勋章：第一针就宣告了这场战争的语法——你判我耻辱，我绣我的尊严。</p>
+<p><b>逻辑脉络</b>：这个字母 A 全书三次换义：Adultery（通奸）→ Able（能干）→ 天使碑文上的红星。语义的改写不是舆论施舍，是劳动的利息——赫斯特的针线活后来养活自己与珠儿、接济穷人，A 于是慢慢被重新定价。</p>
+<p><b>现实意义</b>：被贴标签的人能学到的一课：语义可以被劳动改写——但请注意改写的方式不是辩解，是手艺。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>embroidery</b>　n. 刺绣（an elaborate embroidery：elaborate 精工的）</p>
+<p><b>flourish</b>　n. 花体装饰（fantastic flourishes of gold thread：flourish 在书法里是花饰笔划）</p>
+<p><b>fertility</b>　n. 丰富（fertility and gorgeous luxuriance of fancy：fancy 的两大属性）</p>
+<p><b>luxuriance</b>　n. 繁茂（gorgeous luxuriance：luxury 家族词，繁盛华丽）</p>
+<p><b>sumptuary</b>　adj. 规制奢华的（sumptuary regulations：禁奢令——历史词汇）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>in fine red cloth surrounded with an elaborate embroidery and fantastic flourishes of gold thread, appeared the letter A. ——地点状语巨型前置+倒装（appeared the letter A）：三个介词短语（on the breast / in fine red cloth / surrounded with...）全部排在主语前，主谓倒装把 A 亮在句尾——语序本身完成「揭幕」动作。</p>
+<p>It was so artistically done... that it had all the effect of... ——so...that... 结果从句：so 后连挂两个介词短语（so artistically done, and with so much fertility...），that 从句给结论。学 so 的「双料」用法：so + 副词 + 分词, and with so much + 名词。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让「工艺描写」承担人物宣言——霍桑不写赫斯特「内心骄傲」，写针脚（artistically done）。你的英文人物写作：给人物的反抗找一件手工物（一封信的字体、一道菜的摆盘），工艺即态度。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>光环：耻辱被织成王冠 · A Halo of Misfortune</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">to perceive how her beauty shone out, and made a halo of the misfortune and ignominy in which she was enveloped.</p>
+<p class="cn">结果却令他们万分惊讶，因为他们看到，她美得光芒四射，竟然把笼罩着她的不幸和耻辱凝聚成了一轮光环。</p>
+<p class="en">It had the effect of a spell, taking her out of the ordinary relations with humanity, and enclosing her in a sphere by herself.</p>
+<p class="cn">这红字具有一种魔力，使她从普通的人际关系中超脱出来，封闭在自己的天地里。</p>
+<p class="src">——第二章《市场》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：走出监狱的赫斯特没有低头——她美得光芒四射，把不幸和耻辱「凝聚成了一轮光环」。围观者期待的是被压垮的罪人，看到的是加冕的犯人。羞耻的物理形态取决于佩戴者的姿态：同一枚 A，垂头是烙铁，抬头是光环。</p>
+<p><b>逻辑脉络</b>：霍桑在此埋下全书最重要的对照：赫斯特把耻辱放在白天（示众、市场、人人可见），反而最自由；丁梅斯代尔把耻辱缝进心脏（隐瞒七年），反而被掏空。光环不是神迹，是心理工程。</p>
+<p><b>现实意义</b>：处理公开挫折时的姿态学：遮掩的能量守恒定律——藏起来的羞耻会转成内耗，认领的羞耻可以转成光环。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>ignominy</b>　n. 耻辱（拉丁词源的正式语域——比 shame 高两档）</p>
+<p><b>envelop</b>　v. 笼罩（in which she was enveloped：被动定语从句）</p>
+<p><b>spell</b>　n. 魔咒（the effect of a spell：spelt/spell 的魔法定冠词用法）</p>
+<p><b>enclose</b>　v. 包围（enclosing her in a sphere：enclose...in... 的几何动词）</p>
+<p><b>haughty</b>　adj. 傲然的（a haughty smile：桀骜的笑容——姿态形容词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>made a halo of the misfortune and ignominy in which she was enveloped ——make A of B 的转换句：把 B（耻辱）制成 A（光环）——craft-verb 的语法。in which 定语从句回收 she was enveloped（被笼罩）：耻辱是背景，光环是前景——同一材料的两种显影。</p>
+<p>taking her out of..., and enclosing her in... ——两个现在分词短语平行：out of...in... 的方向对仗，spell 的效果被写成空间位移。学「分词对」写单一对象的两面效果。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：耻辱→光环的动词选 make——霍桑用 make（制成）而不是 become（变成）：光环是她动手做的，不是时间给的。你的英文自述里也用及物动词写自己的转变：I built..., I stitched..., I made...——主动工艺动词是叙事的骨头。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>罗杰·奇林沃斯归来 · Let Him Live</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Let him live! Let him hide himself in outward honour, if he may! Not the less he shall be mine!</p>
+<p class="cn">让他活着吧！如果他愿意，就让他把真实的自我藏在外在的荣耀下！反正他逃不出我的手掌心！</p>
+<p class="en">'Thy acts are like mercy,' said Hester, bewildered and appalled. 'But thy words interpret thee as a terror!'</p>
+<p class="cn">「你的行为像在发慈悲呢，」赫斯特既困惑又惊恐地说。「可你的言辞却让人感到害怕！」</p>
+<p class="src">——第四章《会面》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：监狱里，失踪多年的老丈夫现身，化名医生罗杰·奇林沃斯。他不揭发牧师，不追杀情敌，只提一个条件：让那个人活着——活着把真实的自我藏在外在的荣耀下。赫斯特一语道破：你的行为像在发慈悲，可你的言辞却让人害怕。</p>
+<p><b>逻辑脉络</b>：这是全书最冷的复仇方案：不杀，是杀得更慢——让罪在隐瞒里自己发酵七年。奇林沃斯的「慈悲」是精致的恶：他给受害者做医生，做的是「解剖信任」的活。霍桑的判决在后文：复仇者比通奸者堕落得更深。</p>
+<p><b>现实意义</b>：识别「以慈悲为名」的控制：不放你走的关怀、替你保密的恩情、慢慢来的报复——标记是「逃不出我的手掌心」。真正的放手有两个特征：不设期限，不收利息。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>outward</b>　adj. 外表的（outward honour：outward vs inward 的二元词汇）</p>
+<p><b>not the less</b>　phr. 尽管如此（Not the less he shall be mine：古体让步，= nevertheless）</p>
+<p><b>bewildered</b>　adj. 困惑的（bewildered and appalled：双形容词并列的心理状态）</p>
+<p><b>interpret</b>　v. 解读出（thy words interpret thee as a terror：interpret A as B——言辞定义人）</p>
+<p><b>terror</b>　n. 恐怖之源（a terror：不定冠词+抽象名词=令人恐惧的人或物）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Let him live! Let him hide himself...! Not the less he shall be mine! ——三句祈使/断言的组合拳：两个 Let 开头的祈使（假意放行）+ Not the less 的冷转折（仍旧归我）。英文反派的语法：grant permission, then reclaim ownership——句子节奏比内容先暴露意图。</p>
+<p>thy acts... But thy words... ——acts/words 的对仗+like mercy/as a terror 的介词对仗：行为像慈悲，言辞解作恐怖——赫斯特用一对介词完成人格鉴定。thy 是 thou 的所有格（古体第二人称），引用时保留古体是「进入旧时代语境」的钥匙。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给反派一句「礼貌的威胁」——霍桑的奇林沃斯全程无脏字，恐怖全在语义层（he shall be mine）。你的英文故事写作也学这种 cold menace：不用暴力词，用所有权词（mine / belong to me / not the less）。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>妻子的坦白：他曾是我的丈夫 · He Was My Husband</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'In all things else, I have striven to be true! Truth was the one virtue which I might have held fast, and did hold fast, through all extremity; save when thy good — thy life — thy fame — were put in question!'</p>
+<p class="cn">在其他的事情上，我都努力地寻求真实！诚实是我可以坚守的美德，不论艰难，我也确实坚守住了它——除非你的利益、生命和名誉受到威胁！</p>
+<p class="en">That old man! — the physician! — he whom they call Roger Chillingworth! — he was my husband!</p>
+<p class="cn">那个老人！那个医生！那个叫作罗杰•奇林沃斯的人！——他曾是我的丈夫！</p>
+<p class="src">——第十七章《牧师和他的教民》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：森林重逢，赫斯特向丁梅斯代尔揭穿奇林沃斯的身份。她先交出自己的账本：在其他的事情上我都寻求真实，诚实是我坚守的美德——除非你的利益、生命和名誉受到威胁，那时我才会同意欺骗。然后交出底牌：那个医生，他曾是我的丈夫！</p>
+<p><b>逻辑脉络</b>：这段坦白精确演示了「诚实的例外结构」：她的欺骗不是出于恐惧，是出于保护。霍桑借此区分两种隐瞒：赫斯特的隐瞒有明确的边界与理由（可核算的负债），牧师的隐瞒无限期无边界（滚动的利息）。</p>
+<p><b>现实意义</b>：坦白要交底牌，不只交感觉：说「我隐瞒了什么、为什么、代价由谁承担」。有边界的欺骗尚可被原谅核算，无边界的隐瞒连核算的起点都没有。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>strive</b>　v. 努力 strive-striven 变位（I have striven to be true：完成时+ strive to do）</p>
+<p><b>hold fast</b>　phr. 紧守（held fast, through all extremity：hold fast 的完成时强调 did hold fast）</p>
+<p><b>extremity</b>　n. 极端困境（through all extremity：正式语域，= hardship）</p>
+<p><b>save</b>　prep. 除……之外（save when thy good...：古体介词 except 的文语版）</p>
+<p><b>physician</b>　n. 医生（physician vs doctor：语域差——正式叙事用 physician）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>save when thy good — thy life — thy fame — were put in question ——三名词破折号排比（good/life/fame）：破折号链让「例外」一层层收紧。save 作介词是英语「准例外」的文语标记——阅读名著时见到 save (= except) 即知是正式语境。</p>
+<p>That old man! — the physician! — he whom they call Roger Chillingworth! — he was my husband! ——四段递进的重命名链：名词（老人）→职业（医生）→人名（奇林沃斯）→关系（我的丈夫）：信息量每段升一级，最后一段是核弹。英文揭底台词的黄金模板。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：揭底牌的「四段命名法」——从泛称到真名到关系，破折号分段，最后一段最短最重（he was my husband）。你的英文信件、谈判、自白文都可迁移：save the heaviest for the shortest sentence.（最重的留给最短的句子。）</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>红字是通行证 · Her Passport</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The scarlet letter was her passport into regions where other women dared not tread.</p>
+<p class="cn">红字是她进入其他妇女不敢涉足之地的通行证。</p>
+<p class="en">Shame, Despair, Solitude! These had been her teachers — stern and wild ones — and they had made her strong, but taught her much amiss.</p>
+<p class="cn">耻辱，绝望，孤独！这些是她严厉粗暴的老师，成就了她的坚强，却也教会了她不按常理出牌。</p>
+<p class="src">——第十三章《另一个人》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：七年之后，红字 A 变成了通行证：它把赫斯特送进其他妇女不敢涉足的思想地带。而她的老师是耻辱、绝望与孤独：严厉粗暴的老师，成就了坚强，也教了不少错的东西。</p>
+<p><b>逻辑脉络</b>：霍桑写下全书最现代的一段思想实验：赫斯特站在社会之外（红字是除籍证书），得以看清社会内部——她甚至预想「整个社会制度都要被打倒、彻底重构」。但霍桑同样诚实地记下代价：局外人的学问一半是本事，一半是伤疤。</p>
+<p><b>现实意义</b>：评估你的「局外经历」：被主流放逐的岁月既是通行证也是伤痕——进去之前先想清楚两件事，哪些思考是自由带来的，哪些创伤是被当成学问的。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>passport</b>　n. 通行证（比喻用法：A was her passport into...——进入某领域的资格）</p>
+<p><b>tread</b>　v. 踩踏（dared not tread：tread-trodden，比 walk 高雅一档）</p>
+<p><b>stern</b>　adj. 严厉的（stern and wild ones：老师的双形容词）</p>
+<p><b>amiss</b>　adv. 错误地（taught her much amiss：amiss 作状语的古雅用法，= wrongly）</p>
+<p><b>despair</b>　n. 绝望（Shame, Despair, Solitude：三名词排比 capitalized——人格化的三位老师）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Shame, Despair, Solitude! These had been her teachers ——名词句+指示代词回收：三个大写名词独立成句（感叹），These 复指再给谓语。英文「先抛清单后解释」的修辞结构：名词句制造重锤，代词衔接从容。</p>
+<p>they had made her strong, but taught her much amiss ——made her strong（使其强）与 taught her much amiss（教其错）的平行转折：make+宾语+形容词 vs teach+宾语+副词短语——对称句式里的不对称评价，but 的落点在 amiss。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给苦难写「教师鉴定书」——三名词清单+总评（made me strong, but taught me much amiss）。你的英文自述文写逆境时直接套用：X, Y, Z! These had been my teachers—stern ones—and they made me..., but taught me...——既承认收获又承认扭曲，才是可信的成长叙事。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>午夜刑台 · The Scaffold at Midnight</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">It was an obscure night of early May. An unvaried pall of cloud muffled the whole expanse of sky from zenith to horizon. If the same multitude which had stood as eyewitnesses while Hester Prynne sustained her punishment could now have been summoned forth, they would have discerned no face above the platform, nor hardly the outline of a human shape, in the dark grey of the midnight.</p>
+<p class="cn">那是五月初一个朦胧的夜晚。一望无际的云幕蒙住了从天顶延伸到地平线的整个夜空。如果当年目睹赫斯特受刑的人群能再次聚集在这里，那么在这午夜昏黑的夜幕中，他们也无法辨别刑台上的面孔，甚至人的轮廓。</p>
+<p class="src">——第十二章《牧师的夜游》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：七年隐瞒的牧师在午夜爬上刑台——白天的羞耻舞台，夜里成了他的忏悔剧场。但午夜刑台是一场无人旁听的坦白：整个镇子沉睡，没有人看见，甚至连他自己都无法在这黑暗里辨认自己的轮廓。隐瞒者的公开，只能是影子。</p>
+<p><b>逻辑脉络</b>：刑台在全书出现三次：示众（赫斯特，白天，众目睽睽）、夜站（牧师，午夜，无人）、选举日坦白（牧师，白昼，全场）。三次站位构成完整的耗损曲线——赫斯特站第一次就结束了惩罚，牧师站满三次才走到终点。霍桑的结论藏在这条曲线里：坦白越早，利息越低。</p>
+<p><b>现实意义</b>：别用「无人看见」衡量隐瞒的成本：午夜刑台式的自我折磨按小时计费，且利率高于任何坦白。该公开的事，挑白天、挑观众、挑一次做完。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>pall</b>　n. 幕布，棺罩（An unvaried pall of cloud：pall 双义——遮布与棺罩，死亡暗示）</p>
+<p><b>muffle</b>　v. 蒙住（muffled the whole expanse of sky：muffle 使消音/包裹）</p>
+<p><b>zenith</b>　n. 天顶（from zenith to horizon：天文学对偶，也作「顶点」义）</p>
+<p><b>multitude</b>　n. 人群（the same multitude：正式语域的 crowd）</p>
+<p><b>discern</b>　v. 辨认（discerned no face：否定宾语——视而不见）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>If the same multitude... could now have been summoned forth, they would have discerned no face... ——三从句虚拟：If + 主语从句嵌套（which had stood... while Hester sustained...）+could have been summoned（虚拟被动）+would have discerned（虚拟结果）。霍桑的长句是「多层条件+否定结论」——学这种 plumbing（管道）式长句：每一层都用法语门闩扣住。</p>
+<p>no face above the platform, nor hardly the outline of a human shape ——no... nor hardly... 的递进否定：先否定面孔，再否定轮廓——连形状都不剩。nor 引出的第二否定要加强语气时加 hardly——英文双重否定的轻重大师课。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「无人观看的场景」写内心——霍桑把忏悔放在午夜、空场、灰色里：环境替人说出「没有观众」的孤独。你的英文写作：重要自白选最小观众数（0 或 1）的场景，让场景本身承担修辞。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>流星：天穹如巨灯 · The Dome of an Immense Lamp</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">But, before Mr. Dimmesdale had done speaking, a light gleamed far and wide over all the muffled sky.</p>
+<p class="cn">丁梅斯代尔先生的话还没讲完，乌云遮蔽的夜空上便远远地闪过一道宽阔的亮光。</p>
+<p class="en">The great vault brightened, like the dome of an immense lamp.</p>
+<p class="cn">那广漠的天穹变得雪亮，犹如一盏巨灯的圆顶。</p>
+<p class="src">——第十二章《牧师的夜游》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：牧师夜站刑台时，一颗流星把云层照得通明——「那广漠的天穹变得雪亮，犹如一盏巨灯的圆顶」。全镇人把流星读成 A 字（Angel，天使）；牧师却觉得是天地在撕他的伪装。同一道光，一万种读法——象征的权力属于解释者。</p>
+<p><b>逻辑脉络</b>：霍桑在此完成对「解读权」的讽刺：守夜人看见天使，牧师看见审判，孩子看见别的。红字 A 的三次换义与流星的解读一样——文本不变，读者决定意义。霍桑从不给出最终解释，他只供应证词。</p>
+<p><b>现实意义</b>：警惕符号的解释权战争：同一件事（流星、标签、截图）在群体里会分裂成一万种读法。重要的不是哪个读法「正确」，是谁掌握发布解释的平台。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>gleam</b>　v. 闪亮（a light gleamed far and wide：gleam 比 shine 冷、比 flash 稳）</p>
+<p><b>muffled</b>　adj. 被蒙住的（over all the muffled sky：与 pall of cloud 呼应的音画词）</p>
+<p><b>vault</b>　n. 天穹（the great vault：vault 本义拱顶/地窖——天空的拱顶义）</p>
+<p><b>immense</b>　adj. 巨大的（the dome of an immense lamp：immense 比 large 高两档）</p>
+<p><b>radiance</b>　n. 光辉（So powerful was its radiance：抽象名词主语的强调倒装）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>So powerful was its radiance, that it thoroughly illuminated... ——So + 形容词前置的强调倒装（So powerful was its radiance）：正常语序 Its radiance was so powerful that... 的倒装版——把 powerful 推到句首，光先到，源后到。仿写：So loud was the applause that...</p>
+<p>The great vault brightened, like the dome of an immense lamp. ——主语+不及物动词+明喻：brightened 单动词完成整幕，simile 收尾。学「单动词+明喻」的省力画法：一个动词出动作，一个 like 出画面。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：同一现象多视角并置——霍桑不写流星「是什么」，并列三种解读（天使/审判/别的）。你的英文议论文处理争议事件时也用这个结构：X was read as A by...; as B by...; as C by...——解读清单本身就是论据。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>耻辱的雕像 · A Statue of Ignominy</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">the very first object to meet my eyes would be thyself, Hester Prynne, standing up, a statue of ignominy, before the people.</p>
+<p class="cn">首先映入我眼帘的就是你本人，赫斯特•普林，作为耻辱的雕像，高高站在众人面前。</p>
+<p class="src">——第十七章《牧师和他的教民》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：奇林沃斯对赫斯特自陈当年：走出广袤的森林、步入这基督徒的地方，首先映入眼帘的就是你——作为耻辱的雕像，高高站在众人面前。他承认自己布局的那一刻，复仇的火焰已在道路尽头点燃。</p>
+<p><b>逻辑脉络</b>：「耻辱的雕像」是全书最狠的自我暴露：奇林沃斯的第一眼不是看见妻子，看见的是一件展品——从这一刻起他不再是丈夫，是策展人。霍桑用雕像意象完成对照：赫斯特把耻辱站成了活的碑，奇林沃斯把仇恨守成了死的碑。</p>
+<p><b>现实意义</b>：留意「第一眼定罪」的思维惯性：把人看成雕像（固定展品）还是看成人（可变生命），决定你接下来七年的质量。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>statue</b>　n. 雕像（a statue of ignominy：of+抽象名词的「称号式」同位语）</p>
+<p><b>object</b>　n. 物（the very first object：object 把人写作物——动词性名词的残酷）</p>
+<p><b>behold</b>　v. 看见（古体：I might have beheld——beheld 过去式）</p>
+<p><b>bale-fire</b>　n. 烽火（the bale-fire of that scarlet letter：bale 古义灾难——霍桑的造语感）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>the very first object to meet my eyes would be thyself ——very 强调+不定式后置（to meet my eyes）+would be 虚拟推断：三件套把「必然预判」写出来——他早就知道第一眼会是谁。very first（正是第一个）是英语强调的廉价而高效的工具。</p>
+<p>standing up, a statue of ignominy, before the people ——分词+同位语+介词短语三连后置：一个人被三层修饰钉在原地。学这种「三连后置」给人物定帧：动作（standing）+身份（statue）+位置（before the people）。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「称号式同位语」定罪或加冕——a statue of ignominy（耻辱的雕像）、a monument of patience（耐心的纪念碑）。你的英文写作里，of+抽象名词作同位语是给人物盖章的最快方式，一个短语完成判决。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>黑树林中的真实一刻 · True for One Moment</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">No golden light had ever been so precious as the gloom of this dark forest. Here, seen only by his eyes, the scarlet letter need not burn into the bosom of the fallen woman! Here, seen only by her eyes, Arthur Dimmesdale, false to God and man, might be, for one moment, true!</p>
+<p class="cn">金色之光也不如这黑树林中的幽暗来得可贵。这里，只在他的眼前，红字才不会烧进这堕落女人的胸膛。这里，只在她的眼前，在上帝和人类面前虚伪的阿瑟•丁梅斯代尔，才可以有真实的一刻！</p>
+<p class="src">——第十八章《倾泻的阳光》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：森林中，两个戴着面具的人终于卸下伪装：在黑树林的幽暗里，红字不再烧进她的胸膛；在上帝和人类面前虚伪了一生的牧师，才可以有真实的一刻。白天的社会全是刑台，黑树林反而是唯一不带标签的房间。</p>
+<p><b>逻辑脉络</b>：霍桑的空间政治学在十八章到达顶点：刑台＝律法（白天、公开、羞耻），森林＝自然（幽暗、无观众、真实）。野玫瑰在监狱门坎开花，赫斯特在黑树林里摘下红字——自然的领地赦免律法的判决。但代价同样霍桑式：走出森林的那一刻，社会又会把它缝回去。</p>
+<p><b>现实意义</b>：为自己保留一片「黑树林」：一个没有观众、不记账、可以摘下所有符号的空间。注意它是续航站不是避难所——真正的解法仍然是在刑台上把话说完。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>gloom</b>　n. 幽暗（the gloom of this dark forest：gloom 比 dark 多一层情绪）</p>
+<p><b>precious</b>　adj. 可贵的（No golden light had ever been so precious as the gloom：否定比较=最高级）</p>
+<p><b>bosom</b>　n. 胸膛（burn into the bosom：文学语域的 chest）</p>
+<p><b>false to</b>　phr. 对……虚伪（false to God and man：false to+双宾——背叛的双对象）</p>
+<p><b>fallen</b>　adj. 堕落的（the fallen woman：19世纪的「失足女性」固定语）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>No golden light had ever been so precious as the gloom ——否定+比较级=最高级（Nothing is so precious as...）：用否定比较句给幽暗颁发金质奖章——悖论修辞的语法载体。仿写：No medal had ever been so heavy as his silence.</p>
+<p>seen only by his eyes / seen only by her eyes ——交叉镜像的过去分词短语：两句只有 his/her 一个词之差，谓语路径完全对称（need not burn / might be true）——语法对称承担主题对称：互相看不见的世界里，彼此是对方唯一的真实观众。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：交叉镜像句——用两个只有一词之差的平行句写出「互为镜子」的关系。你的英文写作写两个人物/两种选择时，做一对 twin sentences（孪生句）：Here, seen only by A, ... ! Here, seen only by B, ... !——对称即诗意。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>要真实！要真实！要真实！ · Be True! Be True! Be True!</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Be true! Be true! Be true! Show freely to the world, if not your worst, yet some trait whereby the worst may be inferred!'</p>
+<p class="cn">「要真实！要真实！要真实！即使不能无所顾忌地展现给世人你的最坏之处，也要流露些迹象，让人们能由此推断。」</p>
+<p class="src">——第二十四章《尾声》 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：牧师的死留下了整本书的道德落款——从其书稿中只归结出一句话：要真实！要真实！要真实！即使不能无所顾忌地向世人展现你最坏之处，也要流露些迹象，让人们能由此推断。三连祈使是全书的灵魂：比体面更高的东西，是真实。</p>
+<p><b>逻辑脉络</b>：这句训诫是对七年间谍战的最终判决：奇林沃斯挖了七年别人的心，牧师缝了七年自己的心，赫斯特戴了七年公开的红字——三个实验组里活得最好的是唯一「真实佩戴」的那一组。Be true 不是道德口号，是全书耗损率的最终解释变量。</p>
+<p><b>现实意义</b>：把「要真实」做成三层自查：对己真实（知道自己在藏什么）、对关键的人真实（底牌该交就交）、对世界真实（至少留得起推断的迹象）。做到第三层的人，就不需要第四层——伪装。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>trait</b>　n. 特征（some trait whereby...：trait+whereby 关系副词—— whereby=by which）</p>
+<p><b>whereby</b>　adv. 由此（formal 关系副词：a trait whereby the worst may be inferred）</p>
+<p><b>infer</b>　v. 推断（the worst may be inferred：被动 infer——读者推断作者暗示）</p>
+<p><b>show freely</b>　phr. 坦然展示（Show freely to the world：freely 副词后置的祈使）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>if not your worst, yet some trait whereby the worst may be inferred ——if not A, yet B 的让步微调：不让全show，让 partial show——「部分坦白」的语法实现。whereby 从句把「痕迹→推断」的逻辑链压进六词。这是英文「最低披露标准」的立法句式。</p>
+<p>Be true! ——三连祈使的重复修辞（epizeuxis）：连喊三遍不给宾语——true 本身无需对象。学这种「裸祈使」收尾：短到不能再短，重到不能再重。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：格言的三连写法——Be true! Be true! Be true! 是英文修辞里的 epizeuxis（连续重复）：第三次重复产生钟声效应。你的英文演讲或自述文结尾也可用三连短句：Say it. Mean it. Keep it.（说了，当真，守住。）</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>一片墨黑的土地，一个血红的 A 字 · On a Field, Sable, the Letter A, Gules</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'ON A FIELD, SABLE, THE LETTER A, GULES.'</p>
+<p class="cn">「一片墨黑的土地，一个血红的A字。」</p>
+<p class="src">——第二十四章《尾声》碑文 ｜ 英文据外研社双语读库原文，中文据外研社编译组译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：多年以后，两座坟隔着一小段空地并排——骨灰无权相混，墓碑却共用一块。碑上刻着盾形纹章式的铭文：On a field, sable, the letter A, gules（黑底之上，一个红 A）。全书最后一句把耻辱刻成了纹章：这块碑没有姓名，只有那个字母。</p>
+<p><b>逻辑脉络</b>：尾声的两个设计完成了最终裁决：骨灰无权相混（社会的判决延续到死后），墓碑共用一块（历史的书写只承认共同承担的那个 A）。耻辱在人死后仍未赦免，但它已被重新铸形——从刑具变成纹章。</p>
+<p><b>现实意义</b>：写给所有共同承担过污名的人：判决可以隔离你们的位置，但拦不住共同的碑文。把你的「红字」刻进自己的纹章——语义的最后解释权，交给时间和你自己的手艺。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>field</b>　n. 纹章底面（heraldry 术语：on a field=在纹章底色上——本义田野的双关）</p>
+<p><b>sable</b>　n./adj. 黑色（纹章七色之一：sable=黑色，本义黑貂）</p>
+<p><b>gules</b>　adj. 红色（纹章术语：gules=红色——拉丁语源，全书最后一个词）</p>
+<p><b>heraldry</b>　n. 纹章学（上下文词：理解碑文必须先懂纹章——阅读的背景知识课）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>ON A FIELD, SABLE, THE LETTER A, GULES. ——纹章铭文的倒装语序：底色（field, sable）在前、图形（letter A, gules）在后——纹章学的「先地后图」固定语序。大写+名词句+无动词：碑文语法，只描摹不断言。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「一枚符号」收束全书——霍桑不总结、不评判，只刻一枚字母。你的英文写作收尾也可以做 emblem（徽记）式结尾：一个图像+两个颜色词（on a field of grey, a small green S.）——图像比论证活得更久。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：倒装、虚拟、交叉镜像、纹章式收尾，都在里面。</p>
+<p><b>a wild rose-bush, rooted almost at the threshold ——门坎处的野玫瑰。</b>应用口诀：对立意象并置开篇——张力自己定题。</p>
+<p><b>in fine red cloth surrounded with..., appeared the letter A. ——金色刺绣的红 A。</b>应用口诀：巨型前置+倒装揭幕——把主角亮在句尾。</p>
+<p><b>made a halo of the misfortune and ignominy ——把耻辱凝成光环。</b>应用口诀：工艺动词写转变——make 比 become 有骨头。</p>
+<p><b>Let him live! ... Not the less he shall be mine! ——让他活着吧！反正他逃不出我的手掌心！</b>应用口诀：假意放行+冷转折——反派的语法在节奏里。</p>
+<p><b>save when thy good — thy life — thy fame — were put in question! ——除非你的利益、生命、名誉受到威胁！</b>应用口诀：三名词破折号链收紧例外——save 是文语 except。</p>
+<p><b>The scarlet letter was her passport into regions where other women dared not tread. ——红字是她的通行证。</b>应用口诀：A was her passport into B——资格句式可迁移。</p>
+<p><b>Shame, Despair, Solitude! These had been her teachers ——耻辱，绝望，孤独！这些是她的老师。</b>应用口诀：名词句抛清单，代词收解释。</p>
+<p><b>No golden light had ever been so precious as the gloom. ——金色之光也不如幽暗可贵。</b>应用口诀：否定比较=最高级——悖论的语法载体。</p>
+<p><b>Be true! Be true! Be true! ——要真实！要真实！要真实！</b>应用口诀：三连裸祈使——第三遍出钟声。</p>
+<p><b>ON A FIELD, SABLE, THE LETTER A, GULES. ——一片墨黑的土地，一个血红的 A 字。</b>应用口诀：徽记式结尾——一枚符号比论证活得久。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BA%A2%E5%AD%97_(%E5%B0%8F%E8%AF%B4)" target="_blank" rel="noopener">红字 · 维基百科</a><span>佐证：出版与批评史（Able 之变、女性主义解读）。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BA%B3%E6%92%92%E5%B0%BC%E8%81%94%C2%B7%E9%9C%8D%E6%A1%91" target="_blank" rel="noopener">纳撒尼尔·霍桑 · 维基百科</a><span>佐证：塞勒姆家世与「海关」序言的自传底片。</span></li>
+<li><a href="https://www.gutenberg.org/ebooks/33" target="_blank" rel="noopener">The Scarlet Letter · Project Gutenberg</a><span>延伸：英文公版全文，可作对照精读底本。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%A1%9E%E5%8B%92%E5%A7%86%E5%AE%A1%E5%B7%AB%E6%A1%88%E4%BB%B6" target="_blank" rel="noopener">塞勒姆审巫案 · 维基百科</a><span>延伸：霍桑家族的历史债与本书的道德动机。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《红字》双语研读版 ｜ 英文据外研社双语读库原文，中文据外研社编译组译本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

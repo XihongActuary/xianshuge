@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 一本书读懂财报 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/32-caiba.html">本书书页</a></p>
+<h1>深度研读 · 一本书读懂财报</h1>
+<p class="sub">肖星 著 · 浙江大学出版社 2014 · 零基础三表讲透一门生意</p>
+<p class="lead">研读说明：本书是清华会计系教授写给零基础读者的财报入门——用一家新公司从设立到经营的完整故事，把资产负债表、利润表、现金流量表三张表的关系讲活。作者的功力在于比喻：单反相机、摄像机、及格线。本研读按十二个主题推进，先忠实摘录原文，再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>会计是什么：赚钱是企业的根本目的</a></li>
+<li><a href="#s2"><b>贰</b>资产负债表：企业的单反相机</a></li>
+<li><a href="#s3"><b>叁</b>资产如何计价：历史成本与选择性失明</a></li>
+<li><a href="#s4"><b>肆</b>固定资产与折旧：土地不折旧</a></li>
+<li><a href="#s5"><b>伍</b>应收账款：看起来是钱，其实是风险</a></li>
+<li><a href="#s6"><b>陆</b>利润表：企业的摄像机</a></li>
+<li><a href="#s7"><b>柒</b>现金流量表：企业还能喘多久</a></li>
+<li><a href="#s8"><b>捌</b>利润与现金流：究竟哪个更重要</a></li>
+<li><a href="#s9"><b>玖</b>营运能力：周转率是效率的语言</a></li>
+<li><a href="#s10"><b>拾</b>偿债能力：流动比率的理想与陷阱</a></li>
+<li><a href="#s11"><b>拾壹</b>及格线：投资资本回报率与资本成本</a></li>
+<li><a href="#s12"><b>拾贰</b>行业环境：报表背后的放大镜</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>会计是什么：赚钱是企业的根本目的</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>日子就这样一天天地过，企业就这样一天天地经营、投资、融资。可大家仿佛忘记了，赚钱才是一家企业的根本目的，只有在上述过程中不断赚钱，企业才能够发展壮大。</p>
+<p>由于股东是公司里最后一个拿走自己利益的人，所以经营一家公司的最终目的就是为股东赚钱。</p>
+<p class="src">——《一本书读懂财报》引言「会计是什么？」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的起点是目的论：企业的日常是经营、投资、融资三件事的循环，但循环本身不是目的——赚钱才是；而赚钱的受益人排序里股东垫底（最后拿钱），所以会计的最终答卷是「为股东赚到了多少」。</p>
+<p><b>逻辑脉络</b>：论证从「大家仿佛忘记了」的提醒切入，把读者从报表细节拉回商业本质；「股东最后一个拿走利益」一句把利润表和资产负债表的产权逻辑打通：剩余索取权的视角决定报表的视角。</p>
+<p><b>现实意义</b>：读财报前的第一问永远是：这门生意为股东赚钱了吗？——所有指标（ROE、周转率、现金流）都是这个总问题的分项检查。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>资产负债表：企业的单反相机</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>资产负债表——企业的单反相机</p>
+<p>上边是一张完整的资产负债表。这张表被分为左右两个部分：左边说了一件事——资产，右边说了两件事——负债和股东权益。</p>
+<p class="src">——《一本书读懂财报》第一章「资产负债表——企业的单反相机」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：资产负债表是快照：某个时点按下快门，拍下企业的家底——左边资产是「钱变成了什么」，右边负债与股东权益是「钱从哪里来」；左右必然相等，这就是会计恒等式的直觉来源。</p>
+<p><b>逻辑脉络</b>：「单反相机」的比喻精准在两个点：一是时点性（快照只记录按下快门那一刻），二是结构性（一张照片同时记录了全部家底）——这两点恰好是资产负债表区别于另外两张表的本质特征。</p>
+<p><b>现实意义</b>：看任何资产负债表先做两件事：确认快照日期（时点数据会变脸），再对左半边问「这些资产是什么」，对右半边问「这些钱是谁的」——家底与杠杆一眼分层。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>资产如何计价：历史成本与选择性失明</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>会计们把当时为购买这个资产所支付的金额叫作「历史成本」。</p>
+<p>如果这个资产升值，就当作没看见；如果资产的价值减小了，就把这个减值记下来。</p>
+<p>很明显，资产的当前市场价格是更能表现资产的真实价值的，但是因为很难为这个资产的当前市场价格找到一个客观的标准和依据，会计们不得不退而求其次地选择了历史成本。</p>
+<p class="src">——《一本书读懂财报》第一章「资产如何计价？历史成本有哪些含义？」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：历史成本是会计的保守主义：按买价记账，不随市价起舞——升值装看不见，减值必须记，这是「宁低估不高估」的单向谨慎；选择历史成本的理由不是准确，是客观可验证。</p>
+<p><b>逻辑脉络</b>：论证的诚实结构：先承认当前市价「更能表现资产的真实价值」，再解释为什么不用它——客观标准难找，会为操纵利润打开大门；两害相权，会计选择了可验证的钝。</p>
+<p><b>现实意义</b>：读报表时的减值敏感度：历史成本体系下，账面价值与真实价值的缺口主要藏在「该减值没减值」的资产里——资产越旧、市场波动越大的行业，越要查减值计提。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>固定资产与折旧：土地不折旧</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>固定资产的折旧（Depreciation）：指一定时期内为弥补固定资产损耗按照规定的固定资产折旧率提取的固定资产折旧。</p>
+<p>事实上，土地不会随着时间的不断流逝而变得破旧不堪，相反，它可能还会随着时间而不断增值，因此，对于土地而言，是不会有折旧这一说的。</p>
+<p class="src">——《一本书读懂财报》第一章（固定资产小节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：折旧的本质是把固定资产的磨损分摊为经营成本；而折旧的适用前提是「会损耗」——土地不减值反而增值，所以被排除在折旧之外：折旧是规则，损耗是前提。</p>
+<p><b>逻辑脉络</b>：先给定义（折旧=磨损的成本化），再用土地作反例划边界——反例教学法让读者记住的不是定义本身，而是定义的适用条件；这也是全书反复出现的教学模式。</p>
+<p><b>现实意义</b>：看企业资产结构时区分两类资产：会损耗的（设备、厂房）与不会损耗甚至增值的（土地、稀缺资源）——重折旧行业的利润表对折旧政策高度敏感。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>应收账款：看起来是钱，其实是风险</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>应收账款（AccountsReceivable）：核算企业因销售商品、提供劳务等经营活动应收取的款项。</p>
+<p>但是在现实中，确实有一些公司的其他应收款高达几十个亿。这又是怎么回事呢？</p>
+<p class="src">——《一本书读懂财报》第一章（应收账款小节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：应收账款是「尚未变成钱的收入」：报表上记为资产，实际是客户对自己的负债——它同时抬高收入（利润表）与资产（资产负债表），却可能是收不回来的坏账；其他应收款异常放大，往往是资金被挪用的信号。</p>
+<p><b>逻辑脉络</b>：作者用「几十亿的其他应收款」设置悬念：正常公司的备用金不可能几十亿——反常数字是报表阅读的雷达，追查下去常能发现大股东占款等公司治理问题。</p>
+<p><b>现实意义</b>：两查一对比：查应收账款周转率（钱多久收回来）、查其他应收款规模（反常即警报）、对比净利润与经营现金流（利润是否只是账面数字）。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>利润表：企业的摄像机</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>利润表——企业的摄像机</p>
+<p>营业收入减去营业成本就得到了企业做这笔生意所获得的毛利。</p>
+<p class="src">——《一本书读懂财报》第二章「利润表——企业的摄像机」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：利润表与资产负债表的快照相对，是期间的录像：记录一段时间里收入如何一步步减去成本费用、最终落成利润；毛利是第一层筛选（收入−营业成本），营业利润、净利润是后续层层过滤的结果。</p>
+<p><b>逻辑脉络</b>：「摄像机」对「单反相机」的比喻把两张表的时间维度讲透：一张表告诉你现在有多少家底，另一张表告诉你这段时间怎么经营——资产的存量与利润的流量由此分开。</p>
+<p><b>现实意义</b>：读利润表抓三步：毛利（生意的赚钱属性）、营业利润（经营的执行力）、净利润（最终成绩）——三步各自的下滑对应三种不同的病。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>现金流量表：企业还能喘多久</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>因为现金流入会让企业的现金增加，而现金流出则会让其现金减少，所以现金净流量也就是企业现金的增减变化。因此，现金流量表可以帮助企业得知自己目前的资金情况。</p>
+<p class="src">——《一本书读懂财报》第三章「现金流量表的真相是什么？」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：现金流量表记录真实的现金进出，与利润的权责发生制口径互补：利润可以「纸上富贵」，现金不会撒谎——企业不盈利还能撑，没现金立刻死。</p>
+<p><b>逻辑脉络</b>：书把三张表的功能分工讲成体检：资产负债表是家底、利润表是业绩、现金流量表是血常规——前两张再好看，血常规崩了就是急症。</p>
+<p><b>现实意义</b>：现金流三段看活法：经营活动现金流为正（自身造血）、投资活动为负（还在成长）、筹资活动看靠谁输血——组合模式直接对应企业生命周期阶段。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>利润与现金流：究竟哪个更重要</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>利润和现金流究竟哪个更重要？</p>
+<p>为什么利润表通常比现金流量表更重要？</p>
+<p>什么情况下现金流量表比利润表重要？</p>
+<p class="src">——《一本书读懂财报》第三章（利润与现金流小节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者的答案是分情况的：长期看利润重要（它代表赚钱能力与可持续性），短期和危机时刻现金流重要（它决定生死）——问题不是二选一，是先判断企业处在什么阶段。</p>
+<p><b>逻辑脉络</b>：书用两个反向小标题给出决策树：正常经营的企业看利润（现金可以周转），风险企业看现金流（血容量优先）——同一个问题在两个时间尺度上答案相反。</p>
+<p><b>现实意义</b>：分析任何企业先定时间尺度：谈未来估值看利润趋势，谈下季度活命看现金余额——把两个尺度混在一起谈，是大多数财报争论的来源。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>营运能力：周转率是效率的语言</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>虽然用收入除以存货的方法计算存货周转率并非不可行，但现实中存在着一种更为常见的方法——用成本除以存货。</p>
+<p>应收账款周转率</p>
+<p class="src">——《一本书读懂财报》第四章（营运能力小节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：营运能力指标回答「资产转多快」：存货周转率用成本除以存货（因为存货售出后即转为营业成本，口径一致），应收账款周转率看收钱速度——周转率是资产质量的时间维度。</p>
+<p><b>逻辑脉络</b>：作者特意解释了一个口径细节：为什么周转率的分子有的用收入有的用成本——分子必须与分母在同一口径上（成本变存货、收入对应应收款），口径思维是财务分析的通用修养。</p>
+<p><b>现实意义</b>：横向比较周转率必须在同行业内做：不同行业的周转率天然不同——高周转低毛利（零售）与低周转高毛利（奢侈品）可以是同样好的生意。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>偿债能力：流动比率的理想与陷阱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>用流动资产除以流动负债便获得了流动比率，这个比值越高，说明企业的短期偿债能力越强。</p>
+<p>显然，这种做法过于理想，因为流动资产很可能不能马上全部变成现金，存货一时卖不掉、应收账款一时收不回来都是极有可能发生的。</p>
+<p class="src">——《一本书读懂财报》第四章（偿债能力小节）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：流动比率的教科书定义简单，作者立刻补上现实修正：流动资产里藏着卖不掉的存货与收不回的应收款——比率漂亮不等于还得上钱，质量比数量重要。</p>
+<p><b>逻辑脉络</b>：论证呈现「定义→立即拆台」的结构，教会读者的不是公式，是对公式的怀疑方式：任何比率都建立在「科目=它的名义含义」的假设上，假设一破，比率失真。</p>
+<p><b>现实意义</b>：看流动比率配两张辅助表：流动资产的构成（现金占比多少）与存货应收的周转速度——偿债能力的真相在流动资产的「含现量」里。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>及格线：投资资本回报率与资本成本</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>到底投资资本回报率有没有一个确定的及格线呢？其实是有的。投资人给企业投资，当然会要求自己的收益大于成本。</p>
+<p>投资资本回报率（ReturnonInvestedCapital）：投出和/或使用资金与相关回报（回报通常表现为获取的利息和/或分得利润）之比例，用于衡量投出资金的使用效果。</p>
+<p class="src">——《一本书读懂财报》第五章「衡量企业投资资本回报率的及格线是什么？」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：企业「赚没赚钱」的最终判据不是利润为正，而是投资资本回报率超过资本成本——及格线存在且客观：收益必须大于资金的机会成本，低于它就是「账面盈利、经济亏损」。</p>
+<p><b>逻辑脉络</b>：书先陈列三种流行答案（贷款利率、投资者预期、行业水平）再逐一排除，最后落到资本成本——这一节是全书的理论顶点：把「赚钱」从利润概念升级为超额收益概念。</p>
+<p><b>现实意义</b>：给任何企业算「真利润」：投资资本回报率−资本成本，正数才是创造价值——这也是 EVA 思想的入门形态，对投资者与经营者同样适用。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>行业环境：报表背后的放大镜</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>造纸行业和家电行业有多大差异？</p>
+<p>行业差异如何影响造纸企业和彩电生产企业的财务数据？</p>
+<p class="src">——《一本书读懂财报》第六章「行业大环境对企业做了些什么？」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：同样的财务指标在不同行业里含义完全不同：造纸行业重资产高固定成本、家电行业竞争激烈薄利多销——报表必须放在行业坐标系里读，孤立数字没有意义。</p>
+<p><b>逻辑脉络</b>：书用造纸与彩电两个行业做对照实验：同一指标（周转率、毛利率）在不同行业呈现完全不同的「正常区间」——行业知识是财报阅读的前置课程。</p>
+<p><b>现实意义</b>：读财报的完整流程：先定行业（它的商业模式决定正常指标区间），再定企业（与行业均值比较找异常），最后下判断——跳过行业直接看数字，是新手最常见的误读。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读的最终目的，是把三张报表读成看一门生意的本能。</p>
+<p><b>赚钱才是一家企业的根本目的，只有在上述过程中不断赚钱，企业才能够发展壮大。</b>应用口诀：看任何企业先问一句——它为股东赚到钱了吗？</p>
+<p><b>左边说了一件事——资产，右边说了两件事——负债和股东权益。</b>应用口诀：读资产负债表先分家底与杠杆，左右各问一个问题。</p>
+<p><b>如果这个资产升值，就当作没看见；如果资产的价值减小了，就把这个减值记下来。</b>应用口诀：账面与真实价值的缺口，藏在没计提的减值里。</p>
+<p><b>对于土地而言，是不会有折旧这一说的。</b>应用口诀：折旧看损耗，损耗看前提——规则都有边界。</p>
+<p><b>利润表——企业的摄像机。</b>应用口诀：快照看家底，录像看经营——存量流量分开看。</p>
+<p><b>现金流量表可以帮助企业得知自己目前的资金情况。</b>应用口诀：利润可以撒谎，现金不会——血常规优先级最高。</p>
+<p><b>什么情况下现金流量表比利润表重要？</b>应用口诀：谈估值看利润，谈活命看现金——先定时间尺度。</p>
+<p><b>现实中存在着一种更为常见的方法——用成本除以存货。</b>应用口诀：任何比率先查口径——分子分母必须同源。</p>
+<p><b>流动资产很可能不能马上全部变成现金。</b>应用口诀：偿债能力看含现量，不看比率表面。</p>
+<p><b>投资人给企业投资，当然会要求自己的收益大于成本。</b>应用口诀：回报率超不过资本成本，盈利也是假象。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%B5%84%E4%BA%A7%E8%B4%9F%E5%80%BA%E8%A1%A8" target="_blank" rel="noopener">资产负债表 · 维基百科</a><span>佐证：单反相机比喻背后的时点表结构。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%90%8D%E7%9B%8A%E8%A1%A8" target="_blank" rel="noopener">利润表 · 维基百科</a><span>延伸：摄像机比喻对应的期间表结构。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8" target="_blank" rel="noopener">现金流量表 · 维基百科</a><span>佐证：三段式现金流的生命周期解读。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8E%86%E5%8F%B2%E6%88%90%E6%9C%AC" target="_blank" rel="noopener">历史成本 · 维基百科</a><span>延伸：会计计价的保守主义传统。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8A%A0%E6%9D%83%E5%B9%B3%E5%9D%87%E8%B5%84%E6%9C%AC%E6%88%90%E6%9C%AC" target="_blank" rel="noopener">加权平均资本成本 · 维基百科</a><span>延伸：及格线（资本成本）的量化方法。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%BB%8F%E6%B5%8E%E9%99%84%E5%8A%A0%E4%BB%B7%E5%80%BC" target="_blank" rel="noopener">经济增加值 EVA · 维基百科</a><span>延伸：本书及格线思想的正式形态。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《一本书读懂财报》 ｜ 摘录据原书文本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 简·爱 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/18-jianai.html">本书书页</a></p>
+<h1>深度研读 · 简·爱</h1>
+<p class="sub">Jane Eyre · 夏洛蒂·勃朗特 著 · 外研社双语读库·罗敏译 · 中英对照深度研读</p>
+<p class="lead">研读说明：夏洛蒂·勃朗特1847年的成名作（署名 Currer Bell），第一人称成长小说的教科书。五个地点五段成长，三次求婚一次比一次平等。本双语研读版共十二节：标题中英对照，摘录中英并置，每节配词汇积累、句式分析与写作借鉴——读简·爱，同时学她的第一人称叙事、长句控制与对话锋利度。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>红房子：不公平！ · Unjust! Unjust!</a></li>
+<li><a href="#s2"><b>贰</b>讲台上的伪君子 · The Hypocrite in the Pulpit</a></li>
+<li><a href="#s3"><b>叁</b>海伦：生命太短 · Life Is Too Short</a></li>
+<li><a href="#s4"><b>肆</b>Resurgam：十五年后立起的墓碑 · Resurgam</a></li>
+<li><a href="#s5"><b>伍</b>深夜的火：帐幔已经着火了 · Fire in the Night</a></li>
+<li><a href="#s6"><b>陆</b>花园宣言：灵魂平等 · Equal at God's Feet</a></li>
+<li><a href="#s7"><b>柒</b>婚礼中断：一份婚姻登记 · The Interrupted Wedding</a></li>
+<li><a href="#s8"><b>捌</b>出走：我不是鸟儿 · I Am No Bird</a></li>
+<li><a href="#s9"><b>玖</b>自尊：我在乎自己 · I Care for Myself</a></li>
+<li><a href="#s10"><b>拾</b>拒绝圣约翰：你会要了我的命 · Part of You</a></li>
+<li><a href="#s11"><b>拾壹</b>读者们，我嫁给了他 · Reader, I Married Him</a></li>
+<li><a href="#s12"><b>拾贰</b>结尾：阿门，主耶稣啊 · Amen; Even So Come, Lord Jesus</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>红房子：不公平！ · Unjust! Unjust!</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Unjust!—unjust!' said my reason, forced by the agonising stimulus into precocious though transitory power.</p>
+<p class="cn">「不公平！不公平！」我那在痛苦的刺激下变得早熟的理智抱怨着，进而化作一股短暂的力量。</p>
+<p class="en">and Resolve, equally wrought up, instigated some strange expedient to achieve escape from insupportable oppression—as running away, or, if that could not be effected, never eating or drinking more, and letting myself die.</p>
+<p class="cn">同样，我的决心受到鼓舞，驱使我通过某种奇怪的方式来摆脱无法忍受的压迫——比如逃跑，如果不奏效，我就不吃不喝，让自己死去。</p>
+<p class="src">——第一章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：十岁的简被表哥打了、被舅妈关进红房子，喊出全书的第一声：「不公平！不公平！」——这声喊叫是一个孩子的法律宣言：她第一次意识到，自己受的对待在道理上站不住，哪怕全世界都站在对面。</p>
+<p><b>逻辑脉络</b>：红房子是简·爱的第一间学校：里德舅妈教她的不是规矩，是「道理可以对抗人数」——舅妈赢得了裁决，简赢得了对裁决的申诉权。此后全书每一次重大抉择都是这声「不公平」的续写。</p>
+<p><b>现实意义</b>：保护孩子（和自己）的「不公平感」：被冤枉时的第一反应不该是吞下，而是把委屈转成论据——谁、做了什么、为什么站不住。道理上赢不了的人才会靠人数赢。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>agonising</b>　adj. 痛苦的（the agonising stimulus：英式拼法，美式作 agonizing）</p>
+<p><b>precocious</b>　adj. 早熟的（precocious though transitory power：though 让步插入）</p>
+<p><b>transitory</b>　adj. 短暂的（与 precocious 并列：早熟却短暂——十岁的力量）</p>
+<p><b>wrought up</b>　adj. 激动的（wrought 是 work 的古旧过去分词，equally wrought up=同样被激发）</p>
+<p><b>insupportable</b>　adj. 无法忍受的（insupportable oppression：比 unbearable 更书面）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>said my reason, forced by the agonising stimulus into precocious though transitory power ——主谓倒装（said my reason）+过去分词短语（forced by...）+though 让步插入：三个技巧压进一行。reason 被拟人化成「说话者」，是第一人称小说分离「理智/意志」的标准手法。</p>
+<p>as running away, or, if that could not be effected, never eating or drinking more, and letting myself die ——举例的平行结构：三个动名词短语（running away / never eating / letting myself die）由 as 引出，中间插 if 条件从句。长句分层：先主干后举例，逗号是路标。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：勃朗特给「理智」「决心」都安了嘴（my reason said / Resolve instigated）——把心理成分拟人化，第一人称叙事就不孤独。你的英文日记或自述文可以学：I 与 my better judgment 对话，一句话就有戏剧感。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>讲台上的伪君子 · The Hypocrite in the Pulpit</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Another minute, and she will despise me for a hypocrite,' thought I; and an impulse of fury against Reed, Brocklehurst, and Co. bounded in my pulses at the conviction.</p>
+<p class="cn">「下一分钟，她就会鄙视我这个伪君子。」我想着。一想到这些，对里德，对布罗克赫斯特及其同伙的愤怒便在我的脉搏间凶猛跳动。</p>
+<p class="en">I was no Helen Burns.</p>
+<p class="cn">我不是海伦·伯恩斯。</p>
+<p class="src">——第四章至第七章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：洛伍德学校的布罗克赫斯特先生训诫女生要节俭刻苦，随后他妻子和女儿穿着丝绒与假发走进来——简心想：下一分钟，她就会鄙视我这个伪君子。而面对被罚示众的海伦·伯恩斯，简说得干脆：我不是海伦·伯恩斯。</p>
+<p><b>逻辑脉络</b>：这一对人物是简的道德坐标：布罗克赫斯特教她认出「用宗教包装的权力」，海伦教她另一种选择——宽恕与忍耐。简对两者都接受了、又都没接受：她学会了认伪君子，但拒绝成为海伦式的圣徒。</p>
+<p><b>现实意义</b>：识别「讲台与生活」的落差：要求别人刻苦的人自己穿丝绒，这种落差是最快的人格检测器。同时记住简的话——可以敬佩海伦的宽恕，但不必复制它。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>hypocrite</b>　n. 伪君子（despise me for a hypocrite：despise sb. for + 身份）</p>
+<p><b>fury</b>　n. 狂怒（an impulse of fury：fury 比 anger 烈度高两档）</p>
+<p><b>bound</b>　v. 跳动，跃动（bounded in my pulses：bound 此处是「跳」不是「边界」——熟词僻义）</p>
+<p><b>conviction</b>　n. 坚信（at the conviction：在确信这一点的那一瞬间）</p>
+<p><b>and Co.</b>　phr. 及其同伙（Reed, Brocklehurst, and Co.：公司后缀的讽刺用法）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Another minute, and she will despise me ——「再过一分钟，就……」的连词省略句（= If another minute passes, she will...）：another minute, and... 是英语假想条件句的紧凑变体，时间即条件。仿写：Another word, and I'll leave.（再多说一个字我就走。）</p>
+<p>I was no Helen Burns. ——no + 专有名词：不是「不是某个海伦」，是「根本不是海伦那一类人」。no 的全否定与 not a 的单点否定之差，是英文否定精度的必修课。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：四个词立一个人物立场（I was no Helen Burns.）——短句在长段之后出现，会像钉子一样敲进去。写英文观点文时，把最重要的立场压缩成 5 词以内的短句，放在段落末尾。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>海伦：生命太短 · Life Is Too Short</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Life appears to me too short to be spent in nursing animosity or registering wrongs.</p>
+<p class="cn">生命对我来说如此短暂，不能浪费在怀恨和记仇上。</p>
+<p class="en">I live in calm, looking to the end.</p>
+<p class="cn">我不会因不公而受挫，我平静地生活，期待末日的到来。</p>
+<p class="src">——第六章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：洛伍德的海伦·彭斯被罚站、被打手心，却对简说出全书最温柔的一句话：生命太短，不能浪费在怀恨和记仇上。这不是软弱——这是一个人确信有比「这口气」更大的账本之后的从容。</p>
+<p><b>逻辑脉络</b>：海伦的逻辑是另一套时间观：在她那里，生命是从更亮的地方借来的一小段（她随后死于肺痨，坟上十五年后才立起刻着「复活」的墓碑）。简一生都没能完全学会这套时间观，但她学会了取用其中最有用的部分——不把力气浪费在记仇的复利上。</p>
+<p><b>现实意义</b>：把「生命太短」当带宽公式：怀恨是最耗带宽的后台程序——它不产出任何东西，还常驻内存。海伦式的做法不是原谅对方，是给自己的日程表做减法。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>nurse</b>　v. 怀抱，滋养（nursing animosity：nurse 抽象名词=慢慢喂养负面情绪——关键熟词僻义）</p>
+<p><b>animosity</b>　n. 敌意，怨恨（formal 语域，比 hatred 更书面）</p>
+<p><b>register wrongs</b>　phr. 记账式记仇（register=登记：把伤害当账目记）</p>
+<p><b>look to</b>　phr. 望向，指望（looking to the end：现在分词短语作伴随状语）</p>
+<p><b>creed</b>　n. 信条（I hold another creed：宗教语境的高频词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Life appears to me too short to be spent in nursing animosity or registering wrongs. ——appear to sb. + too...to... 结构：too short to be spent（短到不值得花）是被动的 too...to；两个动名词短语由 or 并列。整句 12 词，完成一套人生哲学陈述——英语精炼的范本。</p>
+<p>I live in calm, looking to the end. ——主句+现在分词伴随状语（looking...）：两个介词（in / to）分别锁定「状态」与「方向」。仿写模板：I work in silence, looking to the deadline.</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：学「格言化」句式——Life appears to me too short to be spent in... 直接可迁移：Mornings are too precious to be spent in scrolling.（清晨太宝贵，不该浪费在刷手机上。）too...to be spent in + 动名词，是英文自勉体的黄金句型。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>Resurgam：十五年后立起的墓碑 · Resurgam</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Her grave is in Brocklebridge churchyard: for fifteen years after her death it was only covered by a grassy mound;</p>
+<p class="cn">她被安葬在布罗克布里奇墓地。她死后的十五年里，那墓只是一座上长满草的土堆。</p>
+<p class="en">but now a grey marble tablet marks the spot, inscribed with her name, and the word "Resurgam."</p>
+<p class="cn">但是现在，这里竖起一块灰色大理石墓碑，上面刻着她的名字和「复活」两个字。</p>
+<p class="src">——第九章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：海伦的墓在荒草里躺了十五年无人认领，直到简攒钱为它立起大理石碑，刻上名字与 Resurgam——我将复活。一句话给一段被遗忘的友谊重新落了户：她赢了课本上的所有道理，但差点输给遗忘本身。</p>
+<p><b>逻辑脉络</b>：这一段是全书时间跳跃最大的一笔：海伦死于第十章前，墓碑的落成却在成年后的叙述里完成。勃朗特用它说明叙事者的立场——简写这部自传时不是在复仇，是在还愿。</p>
+<p><b>现实意义</b>：给自己的「海伦」立碑：那些改变过你、却已被世界遗忘的人，值一次主动的纪念——写下来、说出去、回去看看。纪念不是怀旧，是把他们教的东西从记忆里调出来接着用。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>sepulchre</b>　n. 坟墓（英式拼法，美式 sepulcher——文学高语域词）</p>
+<p><b>grassy</b>　adj. 长满草的（a grassy heap：形容词+heap 的朴素组合）</p>
+<p><b>inscribe</b>　v. 刻写（inscribed with her name：过去分词后置定语）</p>
+<p><b>Resurgam</b>　拉丁语「我将复活」（I shall rise again：墓志铭常用拉丁语的典例）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>but a grassy heap marks the spot, inscribed with her name, and the word "Resurgam." ——marks the spot（标志着那个位置）+inscribed with（刻着）的过去分词链：一个墓碑的信息被三个动词完成（marks/inscribed/written）。分词后置修饰是英文「静物描写」的主力语法。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：纪念性文字的写法——勃朗特不写「我很想念她」，只写墓碑的物理状态（土堆→石碑→刻字）。用「物的变迁」计量时间的感情，是英文 memorial writing 的核心技法。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>深夜的火：帐幔已经着火了 · Fire in the Night</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Not a moment could be lost: the very sheets were kindling, I rushed to his basin and ewer; fortunately, one was wide and the other deep, and both were filled with water.</p>
+<p class="cn">一分钟也不能耽误了。床单也着火了，我冲过去拿他的盆和水罐；幸亏那个盆很大，水罐很深，两个都装满了水。</p>
+<p class="en">I heaved them up, deluged the bed and its occupant, flew back to my own room, brought my own water jug, baptized the couch afresh, and, by God's aid, succeeded in extinguishing the flames which were devouring it.</p>
+<p class="cn">我端起盆和水罐，把水浇到床上和睡在其上的罗切斯特先生的身上，又飞快地跑到自己的房间，端来我自己的水罐，再次浇向床铺。感谢上帝，我终于扑灭了正吞噬整个床铺的大火。</p>
+<p class="src">——第十五章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：简第一次「救了」罗切斯特：深夜走廊传来狞笑，她循味找到罗切斯特的房间——帐幔着火，主人沉睡。她用两罐水浇灭大火。这场火是全书第一声警报：桑菲尔德的阁楼上，有什么东西在夜里走动。</p>
+<p><b>逻辑脉络</b>：火的叙事功能是「提前判案」：读者第一次听到伯莎的笑声、看到格雷丝·普尔的酒气与钥匙，勃朗特已经把全部线索摆在桌面上——只是简（和读者）此刻选择不去追问。爱情故事从这里开始倒计时。</p>
+<p><b>现实意义</b>：对「深夜的笑声」别学简的第一次：发现异常时，追问到答案为止。桑菲尔德式的悲剧从不缺线索，缺的是敢把线索问到底的人。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>kindle</b>　v. 点燃（the very sheets were kindling：进行时表「正在烧起来」）</p>
+<p><b>ewer</b>　n. 大水罐（与 basin 配对的旧式名词——19世纪家居词库）</p>
+<p><b>deluge</b>　v. 淹，浇灌（deluged the bed：deluge 名动两用）</p>
+<p><b>baptize</b>　v. 施洗礼（baptized the couch afresh：宗教动词的幽默挪用——再浇一遍=再洗一次礼）</p>
+<p><b>devour</b>　v. 吞噬（the flames which were devouring it：火作主语的标准搭配）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Not a moment could be lost: ——否定宾语提前的倒装（Not a moment + could be lost）：not a + 名词置于句首强制倒装，制造紧迫感。仿写：Not a word could be spared. / Not a second was to be wasted. 分号后接解释是勃朗特Love it 的节奏：动作链用冒号开启。</p>
+<p>I heaved them up, deluged..., flew back..., brought..., baptized..., and succeeded in... ——六个动词的连续动作链（救援叙事的标准语法）：并列过去时+一个结果动词收尾。写英文的动作场面，就用「动词链+结果」结构，每个动词不超过 3 个修饰词。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：动作场面写法——勃朗特的救援段落里没有形容词堆砌，只有六个精确的动词。学这个配比：一段 60 词的动作描写，动词应占 10 个以上，形容词不超过 3 个。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>花园宣言：灵魂平等 · Equal at God's Feet</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? You think wrong!—I have as much soul as you,—and full as much heart!</p>
+<p class="cn">你以为我因为贫穷、卑微、朴实、矮小，就没有灵魂，没有感情吗？你错了！——我有与你一样的灵魂——与你一样的满腔激情！</p>
+<p class="en">it is my spirit that addresses your spirit; just as if both had passed through the grave, and we stood at God's feet, equal,—as we are!</p>
+<p class="cn">是我的灵魂在跟你的灵魂对话，就像它们都穿过了坟墓，平等地站在上帝脚下——正如现在一样！</p>
+<p class="src">——第二十三章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：文学史上最著名的求爱反驳：你以为我贫穷、卑微、朴实、矮小，就没有灵魂没有感情吗？我有与你一样的灵魂——它们穿过坟墓，平等地站在上帝脚下。随后她补上更狠的一句：我不是天使，至死也不会是：我只是我自己。</p>
+<p><b>逻辑脉络</b>：这段话的精确在于分寸：简不要求罗切斯特放低，只要求把他那条「女天使」的赛道关掉——天使是供品，不是伴侣。勃朗特让简先声明平等（灵魂），再拒绝神化（不是天使），最后只保留「我自己」。</p>
+<p><b>现实意义</b>：谈判自己的「花园时刻」：进入任何不对等关系前，先说清两件事——我的灵魂和你的一样（对等），我不做你的天使（不神化）。这两句立住了，之后的账目才可能平。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>obscure</b>　adj. 无名的（poor, obscure, plain, and little：四形容词排比，从社会到外貌层层收窄）</p>
+<p><b>soulless</b>　adj. 没有灵魂的（-less 否定后缀双连：soulless and heartless）</p>
+<p><b>address</b>　v. 向……说话（my spirit addresses your spirit：address 的正式用法）</p>
+<p><b>grave</b>　n. 坟墓（passed through the grave：穿越死亡的虚拟意象）</p>
+<p><b>automaton</b>　n. 机器人（Do you think I am an automaton?：19世纪的「机器」一词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? ——because 原因从句插在 think 与宾语从句中间：问句的骨架 Do you think (that) I am...被从句劈开——劈开的位置就是火药的位置。仿写：Do you think, because I am young, I cannot lead?</p>
+<p>it is my spirit that addresses your spirit ——强调句 it is...that...：强调主语 spirit，并把 address 的宾语换成平行词 your spirit——「我的X对着你的X」句式，是宣言类文本的力量语法。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：英文宣言的三个零件——① 四形容词排比立处境（poor, obscure, plain, and little）；② 反问句掀桌（Do you think...? You think wrong!）；③ 强调句立对等（it is my spirit that addresses your spirit）。背下这三件套，你的英文陈情书就有了骨骼。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>婚礼中断：一份婚姻登记 · The Interrupted Wedding</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'That—if a genuine document—may prove I have been married, but it does not prove that the woman mentioned therein as my wife is still living.'</p>
+<p class="cn">「那——如果是真的文件——也只能证明我结过婚，不能证明上面提及的作为我妻子的女人还活着。」</p>
+<p class="en">say is true: I have been married, and the woman to whom I was married lives!</p>
+<p class="cn">这位律师和他当事人所说不假：我的确结过婚，并且嫁给我的女人还活着！</p>
+<p class="src">——第二十六章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：婚礼被律师与伯莎的哥哥叫停，罗切斯特的最后挣扎只有一句：这份文件只能证明我结过婚，不能证明那个女人还活着——伯莎在阁楼上，人在法律上「死了」。一个疯妻子被一纸登记簿证实存在，也被同一纸簿宣判出局。</p>
+<p><b>逻辑脉络</b>：勃朗特在此完成了全书最惊悚的一笔：桑菲尔德的一切怪事在这一刻收拢成一个句号——代价不是鬼，是人，是被买卖婚姻关进阁楼的克里奥尔女人。伯莎没有出现在小说里说一个字，但她推翻了整场婚礼。</p>
+<p><b>现实意义</b>：记住「法律活着、人死了」的危险结构：任何制度都可能让一个人在文件上继续存在、在生活里彻底消失。审查关系时问一句——这份纸承认她/他的什么？又取消了什么？</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>genuine</b>　adj. 真实的（if a genuine document：if 插入语的两端各一个破折号）</p>
+<p><b>prove</b>　v. 证明（may prove...but it does not prove：prove 的肯定否定对仗）</p>
+<p><b>therein</b>　adv. 在其中（the woman mentioned therein：正式书面副词，公文语体）</p>
+<p><b>still living</b>　phr. 仍然在世（is still living：进行时表「尚且活着」的状态）</p>
+<p><b>register</b>　n. 登记簿（the marriage register：名词用法，与动词「登记」同形）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>That—if a genuine document—may prove I have been married, but it does not prove that... ——插入语（if a genuine document）+may prove/does not prove 的对称：让步被压缩进两个破折号之间，主干的肯定与否定完全镜像（may prove...but does not prove...）。法律英语式的精确来自这种对称。</p>
+<p>the woman mentioned therein as my wife ——过去分词 mentioned 后置修饰+therein 公文副词+as 身份补语：三个零件压成五词短语。学这种压缩，你的英文引用与转述会立刻显得专业。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：文件的杀伤力写法——勃朗特让一张登记簿成为情节转折点。英文叙事里「document as villain」（文件作反派）是经典套路：合同、信件、账单一页纸改变命运。你的写作也可以让一件「纸」承担戏剧功能。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>出走：我不是鸟儿 · I Am No Bird</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'Jane, be still; don't struggle so, like a wild frantic bird that is rending its own plumage in its desperation.'</p>
+<p class="cn">「简，静下来。不要这么挣扎，像只野蛮疯狂的鸟儿，拼命劈裂自己的翅膀。」</p>
+<p class="en">'I am no bird; and no net ensnares me; I am a free human being with an independent will, which I now exert to leave you.'</p>
+<p class="cn">「我不是鸟儿，也没有罗网来诱捕我。我是一个有着独立意志的自由人，此时这独立意志正要求我离开你。」</p>
+<p class="src">——第二十七章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：罗切斯特求她留下做情妇：「静下来，别像只野蛮疯狂的鸟儿。」简的回答是全书的另一句题眼：我不是鸟儿，也没有罗网来诱捕我——我是一个有独立意志的自由人，此刻这意志正要求我离开你。</p>
+<p><b>逻辑脉络</b>：注意这句宣言的时机：它出现在简最软弱的时刻——没有钱、没有落脚处、还爱着他。勃朗特偏偏把宣言放在这里，让它成为纯意志的展示：离开不是因为不爱，是因为留下来的条件是「做情妇」。</p>
+<p><b>现实意义</b>：把「我不是鸟儿」用在所有「为你好式挽留」的现场：挽留的话术总是把你的离开描述成自残。回答它不需要愤怒，只需要条款——留下可以，但「情妇」这一条不在合同里。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>frantic</b>　adj. 疯狂的（a wild frantic bird：wild+frantic 双形容词递进）</p>
+<p><b>rend</b>　v. 撕裂（rending its own plumage：rend-torn 变位，文学高语域）</p>
+<p><b>plumage</b>　n. 羽毛（鸟类的正式词，比 feathers 书面）</p>
+<p><b>ensnare</b>　en-+snare 罗网（no net ensnares me：en- 动词化的构词范本）</p>
+<p><b>exert</b>　v. 施展，行使（which I now exert to leave you：exert one's will 的搭配）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>I am no bird; and no net ensnares me; I am a free human being with an independent will ——三分号结构：否定（no bird）→否定（no net）→肯定（a free human being）：「二否一肯」的排比骨架。每个分句独立成立，砍掉任何一个都还是金句——句子的「模块化」设计。</p>
+<p>no net ensnares me ——no+名词+动词：把「没有罗网能困住我」压成四个词（Not any net can ensnare me 的紧凑版）。no 作限定词直接否定名词，比 not any 更斩钉截铁。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：宣言句的「二否一肯」模板——I am no X; and no Y [verb] me; I am a free [noun] with an [adj] [noun]. 直接迁移：I am no quitter; and no setback defines me; I am a builder with a long horizon.（背结构，换词。）</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>自尊：我在乎自己 · I Care for Myself</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'I care for myself. The more solitary, the more friendless, the more unsustained I am, the more I will respect myself.'</p>
+<p class="cn">我在乎自己。越是孤单、没有朋友、越是没有依靠，我就越要尊重自己。</p>
+<p class="en">Laws and principles are not for the times when there is no temptation: they are for such moments as this, when body and soul rise in mutiny against their rigour.</p>
+<p class="cn">法律和原则不是用在没有诱惑之时，而是用在现在这种时刻——当肉体和灵魂都奋起反抗它们的严厉苛刻的时候。</p>
+<p class="src">——第二十七章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：荒原上饿到讨饭的简，对自己说的还是同一句话：我在乎自己。越孤单、越无友、越无依，就越要尊重自己。她解释为什么拒绝情妇条款：法律和原则恰恰是用在「有诱惑的时刻」。</p>
+<p><b>逻辑脉络</b>：这是全书原则论的完成：简不是道德机器，她写明了代价——血管里流着火，她承认自己「疯了」。但正因为原则只在有诱惑时才有意义，此刻的遵守才构成人格本身：先有条款，再有条款在最高诱惑下的执行记录。</p>
+<p><b>现实意义</b>：给自己留一份「我在乎自己」的执行记录：原则谁都会背，人格看的是它在最贵那天的成交价——破产时、失业时、深夜被挽留时。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>solitary</b>　adj. 孤单的（the more solitary：the more..., the more... 比较级框架）</p>
+<p><b>unsustained</b>　adj. 无依靠的（un-+sustained：三重 un-/dis- 否定形容词排比）</p>
+<p><b>mutiny</b>　n. 哗变（rise in mutiny against：军事名词写心理反抗）</p>
+<p><b>rigour</b>　n. 严厉（their rigour：英式拼法，美式 rigor）</p>
+<p><b>temptation</b>　n. 诱惑（there is no temptation：原则论的核心词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>The more solitary, the more friendless, the more unsustained I am, the more I will respect myself. ——the + 比较级..., the + 比较级... 的三连加长版：标准句型是两个 the more，勃朗特给条件侧加了三层（越孤单、越无友、越无依），结果侧只留一层——重力全部压到结论上。</p>
+<p>Laws and principles are not for the times when...: they are for such moments as this, when... ——not for...: they are for... 的冒号对仗+such...as this 指示结构：先破后立，冒号是转折的铰链。仿写：Rules are not for the days when it is easy: they are for days like today.</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：把「自律」写成可执行条款——简的原则句全是「时刻+条件」结构（not for the times when there is no temptation, but for such moments as this）。你的英文 self-discipline 陈述也照此写：原则适用于哪一刻，而不是适用于所有人。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>拒绝圣约翰：你会要了我的命 · Part of You</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'I repeat I freely consent to go with you as your fellow-missionary, but not as your wife; I cannot marry you and become part of you.'</p>
+<p class="cn">「我再说一遍，我愿意作为你的传教士伙伴跟你走，但不是作为你的妻子。我不能嫁给你，成为你的一部分。」</p>
+<p class="en">If I were to marry you, you would kill me. You are killing me now.</p>
+<p class="cn">如果我还要嫁给你，你会要了我的命。你现在就在要我的命。</p>
+<p class="src">——第三十四章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：圣约翰的求婚是另一种罗网：不是激情，是事业——嫁给我，去印度传教。简的两次拒绝精确到条款：可以做伙伴，不做妻子，「我不能嫁给你，成为你的一部分」；至于婚姻本身——你会要了我的命。你现在就在要我的命。</p>
+<p><b>逻辑脉络</b>：这是全书第三次求婚，也是平等的终审：罗切斯特以恩宠压她（我是主人），圣约翰以神圣压她（我是使命）——两次都是要她「成为对方的一部分」。而简给出的答复结构相同：合作可以，吞并不行。</p>
+<p><b>现实意义</b>：识别「神圣包装的吞并」：以使命、信仰、大局为名的求婚（或挖角、合伙），比以激情为名的更难拒绝——它给你的屈服戴上了勋章。简的模板是分条款应答：共享目标可以签，「合并人格」这一条永远划掉。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>consent to</b>　phr. 同意做（freely consent to go：consent to + 动词原形）</p>
+<p><b>fellow-missionary</b>　n. 传教士伙伴（fellow- 复合构词：同侪身份的命名法）</p>
+<p><b>kill</b>　v. 杀死（you would kill me：虚拟语气 would kill 对比现实进行时 are killing）</p>
+<p><b>part of you</b>　phr. 你的一部分（become part of you：吞并式婚姻的定罪句）</p>
+<p><b>icily</b>　adv. 冷冷地（he answered icily：说话动词+情绪副词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>If I were to marry you, you would kill me. You are killing me now. ——虚拟（were to...would）与真实（are killing）两连句：一句话里完成「假设的未来」与「正在发生的现在」的对位——虚拟句给出死刑判决，现在进行时宣读已开始执行。这是英文时态叙事力的顶级示范。</p>
+<p>I freely consent to go with you as your fellow-missionary, but not as your wife ——consent to...as X, but not as Y：身份并列的让步结构（作为A可以，作为B不行）。谈判英语的标准句式。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：拒绝的艺术——简的拒绝公式：先给可答应的部分（fellow-missionary），再划掉不可答应的身份（not as your wife）。英文 negotiation writing 直接可抄：I am happy to A, but not as B. 学会把「不」放进平行结构的后半句。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>读者们，我嫁给了他 · Reader, I Married Him</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Reader, I married him. A quiet wedding we had: he and I, the parson and clerk, were alone present.</p>
+<p class="cn">读者们，我嫁给了他。我们举行了一场安静的婚礼，在场的只有他和我，牧师和教会文书。</p>
+<p class="en">'I am not an angel,' I asserted; 'and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me—for you will not get it.'</p>
+<p class="cn">「我不是天使，」我称，「而且至死也不会成为天使：我只是我自己。」罗切斯特先生，你不能指望或强求我有什么神仙般的东西——你不可能得到，正如我从你身上也得不到一样：</p>
+<p class="src">——第二十三章与第三十八章 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最著名的四个词：Reader, I married him. 不是「他娶了我」，是我嫁给了他——主动语态。一个曾被全家嫌弃、被学校羞辱、被爱人试探的女人，在故事的最后一段亲手接管了叙事的语态。</p>
+<p><b>逻辑脉络</b>：这句子的语法就是全书的总结：勃朗特为「平等婚姻」清点的条件至此全部到位——简继承叔父遗产（经济平权），罗切斯特失明致残（体力与地位平衡），疯妻子已死（法律障碍清除）。只有当所有筹码摆平，「我嫁给」这个主动语态才不显得狂妄。</p>
+<p><b>现实意义</b>：检查自己人生大事的「语态」：你是在「被选择」还是在「选择」？语态不是修辞——它反映的是谈判桌上的位置。位置不够时，先去攒筹码，别急着改措辞。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>assert</b>　v. 断言（I asserted：比 said 更有立场的说话动词）</p>
+<p><b>exact</b>　v. 强求（neither expect nor exact：exact 作动词=强行索取——熟词僻义）</p>
+<p><b>celestial</b>　adj. 天上的（anything celestial of me：celestial 与 earthly 对立）</p>
+<p><b>parson</b>　n. 牧师（the parson and clerk：婚礼在场的最小配置）</p>
+<p><b>phlegmatic</b>　adj. 淡定的（that decent phlegmatic order of people：勃朗特写仆人的幽默）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Reader, I married him. ——呼语（Reader）+主动语态+三个词的谓语：呼语把读者拉进法庭作证人，主动语态接管命运。对比 He married me（被动语态的暗淡）。四个词的句子承载全书的语态革命——英语写作里，主动/被动的选择从来不只是语法。</p>
+<p>A quiet wedding we had: ——宾语前置倒装（A quiet wedding + we had）：把宾语提到句首，重点落在「安静」上——巨著结尾的婚礼只有一句，倒装让它像印章一样盖上。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用「语态」讲故事——写简历、写个人陈述时，把每一句 was chosen / was admitted 改成 I chose / I built / I led。英文写作课最值钱的一课：主动语态是主体性的语法形式。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>结尾：阿门，主耶稣啊 · Amen; Even So Come, Lord Jesus</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">'My Master,' he says, 'has forewarned me. Daily He announces more distinctly,—Surely I come quickly!' and hourly I more eagerly respond, 'Amen; even so come, Lord Jesus!'</p>
+<p class="cn">「我的主，」他说，「已经预先警告过我。他日复一日更加明确地宣布：『是了，我必快来！』我每时每刻都更加迫切地回答：『阿门，主耶稣啊，我愿跟你来！』」</p>
+<p class="src">——第三十八章结尾 ｜ 英文据外研社双语读库原文，中文据罗敏译</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的最后一句话给了圣约翰——那个简拒绝嫁给、却始终尊敬的人。引的是他的话：主日复一日宣布「是了，我必快来」，他每时每刻更迫切地回答：阿门，主耶稣啊，我愿跟你来！简用这句话结束自传，把最后的敬礼给了「另一种活法」。</p>
+<p><b>逻辑脉络</b>：结尾的对仗极妙：简自己选择尘世的平等婚姻（Reader, I married him），却把压轴的位置让给圣约翰的殉道之路——她不认同他的条款，但承认这种人格的分量。勃朗特由此拒绝把任何一种活法定为一尊。</p>
+<p><b>现实意义</b>：给「另一种活法」留一个压轴位：你拒绝了的生活方式不必被贬低才算立住了自己的选择。真正的立场是——我选了这条，我敬重那条。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>forewarn</b>　v. 预先警告（fore- 前缀：forewarned is forearmed 的谚语来源）</p>
+<p><b>distinctly</b>　adv. 清晰地（more distinctly：announces more distinctly）</p>
+<p><b>hourly</b>　adv. 每小时地（Daily...hourly...：时间副词的对仗排比）</p>
+<p><b>eagerly</b>　adv. 急切地（more eagerly respond：eager 的副词形式）</p>
+<p><b>even so</b>　phr. 正是如此（even so come：启示录体祈祷语——经文引用的庄重感）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Daily He announces more distinctly... and hourly I more eagerly respond... ——Daily/Hourly 句首对仗+more distinctly/more eagerly 比较级对仗+He/I 人称对仗：三组平行完成「神与人的一问一答」。经文体的修辞密度——引经据典时学这种对仗，而不是只抄句子。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：结尾敬礼法——把最后一段留给「你拒绝过但尊敬的人」。英文 personal essay 的结尾技巧：show respect to the road not taken（向未选择的路致敬），让你的选择显得是选择，而不是逃亡。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：从倒装、独立主格到语态革命，都在里面。</p>
+<p><b>'Unjust!—unjust!' said my reason. ——不公平！不公平！</b>应用口诀：拟人化心理成分+倒装（said my reason）是第一人称叙事的戏剧感来源。</p>
+<p><b>Another minute, and she will despise me for a hypocrite. ——再过一分钟她就会鄙视我这个伪君子。</b>应用口诀：Another minute, and... 时间即条件的紧凑句。</p>
+<p><b>Life appears to me too short to be spent in nursing animosity or registering wrongs. ——生命太短，不能浪费在怀恨和记仇上。</b>应用口诀：too...to be spent in + 动名词，英文自勉体黄金句型。</p>
+<p><b>a grassy heap marks the spot, inscribed with her name ——一座上长满草的土堆标志着那个位置。</b>应用口诀：分词后置修饰（inscribed with...）是静物描写的主力语法。</p>
+<p><b>Not a moment could be lost. ——一分钟也不能耽误了。</b>应用口诀：Not a + 名词句首强制倒装，制造紧迫感。</p>
+<p><b>Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? ——你以为我贫穷卑微朴实矮小，就没有灵魂没有感情吗？</b>应用口诀：原因从句插在 think 与宾语从句之间——火药装在从句位置。</p>
+<p><b>I am no bird; and no net ensnares me; I am a free human being with an independent will. ——我不是鸟儿，也没有罗网来诱捕我。</b>应用口诀：二否一肯的三分句宣言模板，直接换词迁移。</p>
+<p><b>Laws and principles are not for the times when there is no temptation. ——原则恰恰是用在有诱惑的时刻。</b>应用口诀：not for...but for such moments as this——先破后立的冒号对仗。</p>
+<p><b>I freely consent to go with you as your fellow-missionary, but not as your wife. ——愿意作为伙伴跟你走，但不做你的妻子。</b>应用口诀：happy to A, but not as B——把「不」放进平行结构后半句。</p>
+<p><b>Reader, I married him. ——读者们，我嫁给了他。</b>应用口诀：主动语态是主体性的语法形式——简历与陈述文都适用。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%A4%8F%E6%B4%9B%E8%92%82%C2%B7%E5%8B%83%E6%9C%97%E7%89%B9" target="_blank" rel="noopener">夏洛蒂·勃朗特 · 维基百科</a><span>佐证：作者生平、Currer Bell 笔名与约克郡荒原写作史。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E7%AE%80%C2%B7%E7%88%B1" target="_blank" rel="noopener">简·爱 · 维基百科</a><span>佐证：出版史与「疯妻子」批评史。</span></li>
+<li><a href="https://www.gutenberg.org/ebooks/1260" target="_blank" rel="noopener">Jane Eyre · Project Gutenberg</a><span>延伸：英文公版全文，可作对照精读底本。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%97%BB%E6%B5%B7%E6%97%A0%E8%BE%B9" target="_blank" rel="noopener">藻海无边 · 维基百科</a><span>延伸：里斯1966年为伯莎写的「前传」，疯妻子拿到了自己的小说。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《简·爱》双语研读版 ｜ 英文据外研社双语读库原文，中文据罗敏译本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

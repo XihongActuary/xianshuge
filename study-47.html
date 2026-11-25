@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 好好赚钱 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/47-haohao.html">本书书页</a></p>
+<h1>深度研读 · 好好赚钱</h1>
+<p class="sub">简七 著 · 中信出版集团（2018年3月）</p>
+<p class="lead">研读说明：本册是「简七读财」团队写给理财小白的第一本入门书——序言立意「用第一原理思维讲理财，不炫成功、不博眼球」，正文十一章，从认知（投资的本质是认知、关注财富的反面），到规划（第一桶金、财务体检、安全保障），再到实操（低风险理财、银行券商保险产品、指数基金、定投与极简组合），最后以五份理财说明书收束。全书的底色是一句话：理财就是理生活，投资自己是最好的投资。本研读共十二节（据中信出版集团版校录，引文经忠实度校验），后附解析与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>投资的本质是认知：从年薪35万存不下钱说起</a></li>
+<li><a href="#s2"><b>贰</b>财务自由的真定义：被动收入覆盖支出</a></li>
+<li><a href="#s3"><b>叁</b>关注财富的反面：四个致贫因素</a></li>
+<li><a href="#s4"><b>肆</b>富人思维：钱是一种流动的资源</a></li>
+<li><a href="#s5"><b>伍</b>理财先规划：SMART 目标与复利三要素</a></li>
+<li><a href="#s6"><b>陆</b>会赚先会花：明智购物四招</a></li>
+<li><a href="#s7"><b>柒</b>告别月光五步：水池、拿铁因子与先支付自己</a></li>
+<li><a href="#s8"><b>捌</b>财务体检与借钱三问：救急不救穷</a></li>
+<li><a href="#s9"><b>玖</b>五险一金是底仓：社保与公积金的正确用法</a></li>
+<li><a href="#s10"><b>拾</b>商业保险三原则：买对人、买对险、买足额</a></li>
+<li><a href="#s11"><b>拾壹</b>投资前必修课：收益率公式与投资四原色</a></li>
+<li><a href="#s12"><b>拾贰</b>从指数基金到极简组合：普通人省心投资法</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>投资的本质是认知：从年薪35万存不下钱说起</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>本质上，投资其实是我们整体认知的财务变现</p>
+<p>轻松的事情，才能做得长久</p>
+<p class="src">——《好好赚钱》第1章 投资的本质是认知 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一章先破题：年入百万的职场「白骨精」依然可能被房东临时退租——好的收入不等于好的财务。「本质上，投资其实是我们整体认知的财务变现」——你赚的每一分钱，都是你对宏观、行业、商业与人性认知的兑现。而方法论上，作者从村上春树的跑步获得启发：「轻松的事情，才能做得长久」，理财不应该是一场与自己的苦战。</p>
+<p><b>逻辑脉络</b>：本章的推进是「破三问」：好好工作等于好好赚钱吗（工资不等于被动收入）？理财等于节约省钱吗（通货膨胀是吞噬资产的沉默凶手，泰国望远镜广告里 2500 泰铢会变成 3500）？理财的最后一步是什么（跳出金钱的限制思考人生）？三问之后给出正解——建立属于自己的理财逻辑系统。</p>
+<p><b>现实意义</b>：毕业前缺的两门课（爱情课与财富课），迟早要补。补法不是学一堆术语，而是先建立一套自己的思维系统：把金钱、智慧、经验、人脉综合起来活用。判断自己是否入门，就看你在决策时用的是「比较思维」还是「第一原理思维」。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>财务自由的真定义：被动收入覆盖支出</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>自由，取决于一个人能多大程度地安于不确定性</p>
+<p>实现财务自由的一个最基本的标准，就是我们的被动收入刚好可以覆盖日常生活的支出费用</p>
+<p>财务自由度=投资净收益/总支出</p>
+<p class="src">——《好好赚钱》第1章 投资的本质是认知 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者拒绝胡润式「一线城市 2.9 亿元」的刻舟求剑式自由，给出可执行的定义：「实现财务自由的一个最基本的标准，就是我们的被动收入刚好可以覆盖日常生活的支出费用」。配套公式「财务自由度=投资净收益/总支出」，建议值 15% 起，达到 100% 即真自由。更深一层：「自由，取决于一个人能多大程度地安于不确定性」。</p>
+<p><b>逻辑脉络</b>：本章把财务自由拆成三个阶段：觉醒（先买意外险与重疾险，确保风险有财务支持）→ 积累第一桶金（80% 的人的第一桶金主要来自储蓄）→ 建立自己的投资系统（用选伴侣的态度选产品，用经营婚姻的方式对待投资）。</p>
+<p><b>现实意义</b>：两个立即可用的动作：算出自己的财务自由度（投资净收益 ÷ 总支出），看清自己站在哪个阶段；把「结果型自由」换成「过程＋结果型自由」——始终有想做的事，钱够就做，钱不够调整后再做。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>关注财富的反面：四个致贫因素</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如果我知道自己会在哪里死去，一定不会去那个地方</p>
+<p>不管你通过投资赚了多少钱，只要有一次规模相当的失误，很有可能前面的积累就会功亏一篑</p>
+<p>第一，意外</p>
+<p class="src">——《好好赚钱》第2章 关注财富的反面 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本章是全书的逆向思维总纲。芒格说「如果我知道自己会在哪里死去，一定不会去那个地方」——想变富，先想清楚什么会让人变穷。算术上一次涨停接一次跌停就是净亏；丹尼尔 23 到 30 岁的真实案例（意外、疾病、无规划支出、脆弱的投资系统）演示了「四个致贫因素」如何把 30 万创业基金消耗到只剩 5 万。</p>
+<p><b>逻辑脉络</b>：四个因素按「发生率 × 损失度」排序：意外（一个意外带来收入中断、医疗支出、浮亏变现三种损失）→ 疾病（因病致贫）→ 无规划的支出（「喜欢就买」是任性的生活方式）→ 脆弱的投资系统（风险是相对的，走钢丝对杂技演员而言风险可控）。全书的后续章节，正是逐一拆除这四个因素。</p>
+<p><b>现实意义</b>：给自己的财务做一次「反面清单」自查：意外与疾病有没有保险托底？有没有年度预算？投资系统是否经过验证？记住那条算术——避免一次重大失误，比多赚十次小钱更能保护财富。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>富人思维：钱是一种流动的资源</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>吸引力法则可以简单定义为“关注什么，就吸引什么”。</p>
+<p>一个人的富有程度跟他能够忽略的东西的数量成正比</p>
+<p class="src">——《好好赚钱》第2章 关注财富的反面 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：富人思维的定义是「能提高财富亲密度的思维方式」。梭罗说「一个人的富有程度跟他能够忽略的东西的数量成正比」——越缺钱越容易被钱本身绑住。三个要点：一是跨越稀缺陷阱，把钱当作手段而不是目的（范蠡大儿子要回千两黄金反而害了弟弟的故事）；二是注重长期回报（冷却法等待 10 分钟、隔离法制造物理距离、未来法则具象化未来收益）；三是先考虑目标，再寻找资源。</p>
+<p><b>逻辑脉络</b>：本章用「吸引力法则」引入——「关注什么，就吸引什么」，我们嘴上说渴望财富，潜意识却常在机会来临时把门关上（帮朋友不好意思谈钱、觉得艺术家就该穷、有钱人都是骗子）。随后三要点层层递进：从对钱的态度，到对时间的选择，再到对目标的反转思维。</p>
+<p><b>现实意义</b>：三步自检：发现自己把「省钱」当目标时，改问「这笔钱能换来什么长期价值」；面临诱惑先冷却 10 分钟；写下目标后反推资源，而不是被现有资源困住想象。作者提醒：不需要变成富人才能拥有富人思维，它完全可以通过训练掌握。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>理财先规划：SMART 目标与复利三要素</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>理财的第一步不是存多少钱、投什么产品，而是先明确自己理想的生活，再思考财务如何支持我们实现这些目标。</p>
+<p>复利=本金×（1+利率）</p>
+<p>我们往往夸大了一年时间能发生的改变，而低估了五年时间的力量</p>
+<p class="src">——《好好赚钱》第3章 第一桶金从哪里来 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：高薪月光族大米的故事说明：理财的起点不是省钱记账，而是规划。「理财的第一步不是存多少钱、投什么产品，而是先明确自己理想的生活」——用 SMART 原则把五个愿望变成带金额与期限的目标，再倒算差距。财富增长的本质是复利公式「复利=本金×（1+利率）」的 n 次方，三要素即本金（储蓄习惯）、利率（投资自己与配置）、计息期（尽早开始、耐心坚持）。</p>
+<p><b>逻辑脉络</b>：本章给出可复制的三步问卷：写 5 个愿望并标注金额 → 列出已有的财务准备 → 用净储蓄与工资增速粗算差距。大米三年存 50 万的目标实测差距 15 万，于是引出对策。作者还给出了复利的震撼样本：每年 7 万元、7% 收益率、70 年 = 1.13 亿元。</p>
+<p><b>现实意义</b>：「我们往往夸大了一年时间能发生的改变，而低估了五年时间的力量」。落地动作：今晚就写下自己的 SMART 五愿望；把复利三要素变成三张清单——本金的储蓄率、利率的认知升级计划、计息期的启动日期。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>会赚先会花：明智购物四招</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>资产，就是能为我们带来正收益的东西，而负债则是从我们的口袋中拿钱的东西。</p>
+<p>我需要、我喜欢、我适合</p>
+<p class="src">——《好好赚钱》第3章 第一桶金从哪里来 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：营销分析显示：朋友的推荐会让大脑的理性区域关闭、社交情感区域剧烈激活——所以我们败给的不是广告而是好友。对抗之道是四招：搬家炸裂法（好东西法则：喜爱度 × 使用频率低于 10 分即处理）、10%「品质生活」基金（按计划买点舍不得买的东西，不带负罪感）、多买资产不买负债（「资产，就是能为我们带来正收益的东西，而负债则是从我们的口袋中拿钱的东西」）、多为自己买单（看不见的地方保持品位：床垫胜过名牌包）。</p>
+<p><b>逻辑脉络</b>：四招共用一个筛选器——「我需要、我喜欢、我适合」三我法则，把自己真正的需求放在消费决策的核心。乔布斯客厅只放一盏落地灯的例子点题：拥有的东西不在于多，而在于每一件都恰到好处。</p>
+<p><b>现实意义</b>：本周末就做一次「搬家演习」：假装三个月后搬家，评分处理存货；把年度常购品项提前规划，攒自己的好物清单（正版书、优质护肤品、生产力工具、保险——花钱买时间与能力，而不是买虚荣）。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>告别月光五步：水池、拿铁因子与先支付自己</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>拿铁因子是人们每天生活中如买杯咖啡般可有可无的习惯性支出</p>
+<p>合理的储蓄有另外一个名字：支付给“未来的自己”</p>
+<p class="src">——《好好赚钱》第3章 第一桶金从哪里来 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：告别月光的五步：理解财富水池（日常现金池、中短期目标池、长期金鹅池）→ 优化收支结构（必要支出 50%、偶发必要 20%、非必要 10%、长期储蓄 20%）→ 消灭拿铁因子（「拿铁因子是人们每天生活中如买杯咖啡般可有可无的习惯性支出」，30 年可累积 70 万）→ 培养储蓄习惯（先支付自己＋10/50 法则）→ 管理三个账户。叶公好龙式理财者的通病：嚷嚷理财，却从没花时间弄清自己的真实财务状况。</p>
+<p><b>逻辑脉络</b>：五步是递进的诊断链：先画水池（知道自己有多少水）→ 调结构（收入分配比例）→ 堵漏洞（拿铁因子）→ 立纪律（先支付自己：发工资先存 10%，再消费；意外收入的 50% 存下）→ 落账户（三个池子分别用货币基金、定期理财、长期投资打理）。</p>
+<p><b>现实意义</b>：「合理的储蓄有另外一个名字：支付给『未来的自己』」。本月发工资当天，立即执行第一笔 10% 的强制储蓄——思维从「剩下多少存多少」切换为「先存后花」，是普通人成本最低的财务转折点。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>财务体检与借钱三问：救急不救穷</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一切借钱的本质，都是向未来的自己借钱。</p>
+<p>信用卡只是一个工具，用得好其乐无穷，用得不好反噬其身。</p>
+<p class="src">——《好好赚钱》第4章 检查自己的财务状况 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：财务体检四指标：应急能力（活期资产 ÷ 每月支出，3~6 为合格）、偿债能力（月还款 ÷ 月收入 &lt; 1/3）、保障能力（家庭经济支柱必须配置保险）、生息能力（可生息资产 ≥ 30% 总资产、年化收益 ≥ 5%）。借钱三问：是为好东西借钱吗（借鸡下蛋）？借完会不会太累（总负债 ≤ 40% 总财富）？成本够低吗？「一切借钱的本质，都是向未来的自己借钱。」</p>
+<p><b>逻辑脉络</b>：本章先给体检指标，再借「救急不救穷」的逆向提问切入借贷：五个渠道（亲友、银行、信用卡取现、现金贷、互联网平台）按额度、速度、利率三维比较——信用卡取现实际年化利率可达 30%，现金贷 40%—100% 本质是高利贷。信用卡部分用六个问题拆解：免息期、账单日还款日、分期陷阱（费率 0.66% × 12 期实际年利率 14.31%）。</p>
+<p><b>现实意义</b>：「信用卡只是一个工具，用得好其乐无穷，用得不好反噬其身」。三条纪律：账单日后第一天刷大额（免息期最长）、尽量不提现不分期不循环授信、还款日统一定期提醒。借款决策前先算 IRR，别被名义费率骗过。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>五险一金是底仓：社保与公积金的正确用法</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>保险的本质是爱和责任。</p>
+<p>正常情况下，你的保费应该控制在年收入的5%—10%</p>
+<p class="src">——《好好赚钱》第5章 建立安全保障 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：社保是「国家给予我们的福利，也是对我们未来生活的一个基本保障」：养老保险需累计缴满 15 年才能参与统筹账户分配；医保断缴 3 个月即停止报销待遇，再次缴纳需连续 6 个月才能恢复；换城市务必转移社保，否则缴费年限清零重来。公积金是企业与个人同比例缴纳（5%—12%）的含金量福利，用途不止买房——租房满 3 个月即可提取。</p>
+<p><b>逻辑脉络</b>：本章从五险（养老、医疗、工伤、失业、生育）逐项拆解缴纳比例与使用门槛，再到公积金三种用法（购房优先公积金贷款，同样贷 50 万 30 年可省近 20 万利息；租房提取；自建房翻修），最后讲社保断缴的三种补救。一切的前提是：财务自由之路的第一层保护，是国家给的这些「看不见的工资」。</p>
+<p><b>现实意义</b>：两个自查动作：查自己的社保缴纳基数与连续年限（当地区号＋12333 或支付宝）；若自由职业或断缴，优先自缴三险或购商业医疗险补位。社保不是可选项，是底仓。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>商业保险三原则：买对人、买对险、买足额</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>重疾险保额=诊治费用+康复期费用+收入补偿。</p>
+<p>保障和投资，一定要分开考虑。</p>
+<p class="src">——《好好赚钱》第5章 建立安全保障 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：保险是用小保费转移无法承受的经济损失——「保险的本质是爱和责任」，保费控制在年收入 5%—10%。三原则：买对人（首先保家庭收入主要贡献者，而非孩子与老人）；买对险（意外险＋寿险＋重疾险＋医疗险的组合，重疾险确诊即赔「雪中送炭」，医疗险治疗后报销「锦上添花」）；买足额（重疾险保额=诊治费用＋康复期费用＋收入补偿，理想 50 万以上；寿险意外险按 1∶1 配置，最少 50 万）。</p>
+<p><b>逻辑脉络</b>：本章先立「保险是杠杆」的第一性原理，再用风险三分类（大事、小事、无事）划清保障边界：低概率高损失的极端风险最该转移，储蓄投资型保险不是保障的主角。双十原则（年收入 10% 预算、10 倍保额）与生命价值法给出量化锚点。全书反复强调：「保障和投资，一定要分开考虑。」</p>
+<p><b>现实意义</b>：配置顺序建议：年轻人优先重疾险＋意外险；有房贷后补寿险（保额覆盖剩余贷款）；父母年龄大买重疾险杠杆太小，选医疗险＋防癌险。买之前先给全家保单做一张总汇表，查漏补缺。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>投资前必修课：收益率公式与投资四原色</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>预期收益率=无风险收益率+风险溢价</p>
+<p>没有价值创造支持的收益来源，就是无源之水。</p>
+<p>聪明的飞行员永远不会忘记在起飞前核对他的检查清单，无论他拥有多么突出的天赋或多么丰富的经历。</p>
+<p class="src">——《好好赚钱》第6章 投资前必须知道的事 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：资产定价模型「预期收益率=无风险收益率+风险溢价」给出收益的上下限：无风险收益率（短期国债利率）是地板，风险承受能力是天花板。常识判骗局：普通公司年利润率超 10% 已属优秀，承诺 30% 月收益的项目谁接最后一棒谁输得最惨——「没有价值创造支持的收益来源，就是无源之水」。投资品分四大类（现金、债权、权益、商品实物），像色彩学三原色一样混合出所有理财产品。</p>
+<p><b>逻辑脉络</b>：本章五问递进：追求多高收益率（公式定区间）→ 如何实现（回报来自价值创造）→ 哪些产品适合你（芒格式检查清单：发行方牌照、资金托管、赚钱逻辑能否讲清）→ 还有哪些靠谱机构（一看牌照二看资金）→ 投资前 4 个账户（银行双卡、货币基金、互联网基金账户、股票账户）。「聪明的飞行员永远不会忘记在起飞前核对他的检查清单，无论他拥有多么突出的天赋或多么丰富的经历。」——投资前花 5 分钟自查，是普通人最容易抄作业的习惯。</p>
+<p><b>现实意义</b>：把「赚钱是最深刻的修行」设为投资观的默认值：不是看谁走得快，而是看谁活得久。每次买入前回答三个问题——背后的基础资产是什么？投资策略是什么？发行方的投资能力如何？答不清就先不投。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>从指数基金到极简组合：普通人省心投资法</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如果你没有把握能够持有10年，那就连10分钟都不必考虑持有</p>
+<p>定投，就是在固定的时间以固定的金额购买一只基金。</p>
+<p>资产配置被称为金融投资的一块“免费蛋糕”。</p>
+<p class="src">——《好好赚钱》第9—10章 巴菲特推荐的指数基金／省心省力的极简投资法 ｜ 据《好好赚钱》（简七 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：基金是把钱委托给专业基金经理；2005—2015 年中国公募基金平均年化收益约 16%，但一半以上基民亏损——败在追涨杀跌的持有心态。解药是巴菲特十年赌局验证的指数基金（5 只对冲基金组合输给标普 500）与格雷厄姆的估值法（盈利收益率 &gt; 2 倍国债收益即低估买入）。定投的本质：「定投，就是在固定的时间以固定的金额购买一只基金」，用微笑曲线摊平成本。</p>
+<p><b>逻辑脉络</b>：第 10 章把工具收拢成极简投资组合：1 只债券基金＋4 只指数基金各占 20%（覆盖国内大盘、国内小盘、海外大盘、海外小盘），每年一次动态平衡「多退少补」——卖掉涨得快的、补进涨得慢的，机械地实现「便宜时买、贵时卖」。资产配置之所以是「免费蛋糕」，靠的是资产间低相关性「东边不亮西边亮」。回测显示年化可长期保持约 12%。</p>
+<p><b>现实意义</b>：「如果你没有把握能够持有 10 年，那就连 10 分钟都不必考虑持有」。给普通人的极简路径：工资日定投指数基金 → 每年生日做一次动态平衡 → 需要卖出时记住那条纪律——「我卖出产品的唯一理由，就是买入的理由消失了」。五份理财说明书（风险、投资、资产、保险、安全）作为年度仪式保留下来。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《好好赚钱》的目的，是带走一套普通人可执行的理财操作系统：先守住反面（四个致贫因素），再做好正面（规划、储蓄、保障、配置），最后交给时间和复利。</p>
+<p><b>本质上，投资其实是我们整体认知的财务变现</b>应用口诀：赚不到认知以外的钱，先升级认知再升级仓位。</p>
+<p><b>轻松的事情，才能做得长久</b>应用口诀：把理财设计成不费力的小动作，而不是意志力考试。</p>
+<p><b>如果我知道自己会在哪里死去，一定不会去那个地方</b>应用口诀：先列致贫清单，逐项排雷。</p>
+<p><b>一个人的富有程度跟他能够忽略的东西的数量成正比</b>应用口诀：会忽略，才富有。</p>
+<p><b>理财就是理生活，投资自己是最好的投资</b>应用口诀：账单即生活方式，技能即复利本金。</p>
+<p><b>一切借钱的本质，都是向未来的自己借钱。</b>应用口诀：借之前，先问未来的自己愿不愿意还。</p>
+<p><b>保障和投资，一定要分开考虑。</b>应用口诀：先系安全带，再踩油门。</p>
+<p><b>没有价值创造支持的收益来源，就是无源之水。</b>应用口诀：讲不清钱从哪来，就当它是骗局。</p>
+<p><b>如果你没有把握能够持有10年，那就连10分钟都不必考虑持有</b>应用口诀：买入先想持有期，持有期决定选品。</p>
+<p><b>让理财更简单，让人生更自由。</b>应用口诀：简化动作，交给时间。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/%E5%A5%BD%E5%A5%BD%E8%B5%9A%E9%92%B1" target="_blank" rel="noopener">好好赚钱 · 百度百科</a><span>背景：本书版本信息与简七读财的理财教育实践。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC" target="_blank" rel="noopener">查理·芒格 · 维基百科</a><span>背景：芒格的逆向思维与多元思维模型——本书多处理念的源头。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%B2%83%E4%BC%A6%C2%B7%E5%B7%B4%E8%8F%B2%E7%89%B9" target="_blank" rel="noopener">沃伦·巴菲特 · 维基百科</a><span>佐证：巴菲特十年赌局与「持有 10 年」名言的出处。</span></li>
+<li><a href="https://baike.baidu.com/item/%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91" target="_blank" rel="noopener">指数基金 · 百度百科</a><span>佐证：指数基金的估值方法与定投搭配——第 9、10 章实操主线。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《好好赚钱》 ～ 原文据中信出版集团版校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

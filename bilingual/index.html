@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>双语书廊 · 仙书阁双语书廊</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bilingual-card{border-top-color:var(--cyan)!important;}
+.badge{display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;border:1px solid var(--line-soft);color:var(--dim);margin-right:8px;}
+.badge.gold{color:var(--gold);border-color:var(--gold-b);}
+.badge.cyan{color:var(--cyan);border-color:var(--cyan);}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}
+.vcard{padding:16px 18px;}
+.vcard h5{margin-bottom:6px;}
+.vcard .vmeta{font-size:12.5px;color:var(--dim);margin-bottom:8px;}
+.vcard a{color:var(--cyan);text-decoration:none;font-size:13px;}
+.notice{background:rgba(217,178,106,.07);border:1px dashed var(--gold-b);border-radius:10px;padding:14px 18px;color:var(--dim);font-size:13.5px;line-height:1.9;}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.pair .en{color:var(--cyan);}
+.pair .zh{color:var(--text);border-left:1px solid var(--line-soft);padding-left:12px;}
+.pair div{font-size:13.5px;line-height:1.8;padding:3px 0;}
+@media(max-width:640px){.pair{grid-template-columns:1fr;}.pair .zh{border-left:none;padding-left:0;border-top:1px dashed var(--line-soft);}}
+</style>
+</head>
+<body data-book="bilingual">
+<div class="shell">
+<main>
+  <header class="hero">
+    <span class="kicker">仙书阁 · 双语书廊</span>
+    <h1>双语书廊</h1>
+    <p class="sub-title">107 册外文书 · 导读式中英双语学习站</p>
+    <div class="meta"><span>导读式双语站</span><span>短引 · 梗概 · 语言档案</span><span>全文请读正版</span></div>
+  </header>
+  <p class="crumbs" style="text-align:center;margin-bottom:26px;"><a href="../index.html">⟵ 返回仙书阁书架</a></p>
+  
+  <div class="card bilingual-card"><h5>这个栏目是什么</h5>
+    <p class="lead">三套外文书的<strong>导读式双语站</strong>：不复制任何全书文本，只提供版本档案、目录导航、本站撰写的梗概与语言学习档案，以及限量的开篇短引定位。正文阅读回到你手中的正版文件；本站负责告诉你「先读哪本、怎么读、读什么」。</p>
+  </div>
+  <section class="sec"><h2>三大书系<span class="rhyme">—— 一系一档 · 107 册 ——</span></h2><div class="vgrid">
+    <div class="card zhu bilingual-card vcard"><h5>① 外文大家小藏本 · 17 册</h5>
+      <p class="vmeta">芥川 · 海明威 · 加缪 · 卡夫卡 · 伍尔夫 ｜ 蜂鸟文丛译文版</p>
+      <p style="font-size:13px;color:var(--dim);">逐册导读：梗概 + 难度评级 + 语言看点 + 开篇定位。原文语言含英/日/德/法/西，按难度爬坡选读。</p>
+      <a href="xiaocang.html">进入书系 ⟶</a></div>
+    <div class="card hu bilingual-card vcard"><h5>② 博雅双语名家名作 · 24 本</h5>
+      <p class="vmeta">梁思成 · 费孝通 · 厉以宁 · 李济 · 胡适 ｜ 原生中英双语</p>
+      <p style="font-size:13px;color:var(--dim);">每本附章节 EN/中文对照目录与「三遍法」阅读策略——最适合学术英语训练的一套。</p>
+      <a href="boya.html">进入书系 ⟶</a></div>
+    <div class="card bilingual-card vcard"><h5>③ 双语读库·情感故事书系 · 66 本</h5>
+      <p class="vmeta">茶花女 · 简·爱 · 了不起的盖茨比 · 红字 ｜ PDF 对照版</p>
+      <p style="font-size:13px;color:var(--dim);">66 本篇目索引 + 套装内页码直达 + 「两指法」对照读法，文学英语日常训练场。</p>
+      <a href="qinggan.html">进入书系 ⟶</a></div>
+  </div></section>
+  <div class="sec"><h2>版权口径<span class="rhyme">—— 学习导读 · 支持正版 ——</span></h2>
+  <div class="notice">本栏目不含任何整章/整段的全量复制：仅含书目元数据、原创梗概与解析、每册限量的开篇短引定位。三套书版权归外研社及相应译者、权利方所有；如权利方提出异议，相应短引将即时移除。</div></div>
+  <footer>
+    <p class="crumbs"><a href="../index.html">⟵ 返回仙书阁书架</a></p>
+    <p>仙书阁 · 双语书廊 ｜ 用心读 · 用行证</p>
+    <p style="font-size:12px;color:var(--dim);">本栏目为学习导读：仅含限量短引与原创解析，不承载全书文本；版权归原出版社与译者所有，请支持正版。</p>
+  </footer>
+  <button class="totop" title="御风而上" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</main>
+</div>
+<script src="../assets/bgm.js"></script>
+</body>
+</html>

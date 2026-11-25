@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 654" font-family="&quot;Noto Serif SC&quot;,&quot;STSong&quot;,&quot;STZhongsong&quot;,&quot;SimSun&quot;,serif" role="img" aria-label="债务危机思维导图">
+  <path d="M 200 327 C 250 327, 258 87, 316 87" fill="none" stroke="#d9b26a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 87 C 556 87, 566 49, 596 49" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 87 C 556 87, 566 87, 596 87" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 87 C 556 87, 566 125, 596 125" fill="none" stroke="#d9b26a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 327 C 250 327, 258 227, 316 227" fill="none" stroke="#7fa8c9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 227 C 556 227, 566 189, 596 189" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 227 C 556 227, 566 227, 596 227" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 227 C 556 227, 566 265, 596 265" fill="none" stroke="#7fa8c9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 327 C 250 327, 258 348, 316 348" fill="none" stroke="#a3c98a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 348 C 556 348, 566 329, 596 329" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 348 C 556 348, 566 367, 596 367" fill="none" stroke="#a3c98a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 327 C 250 327, 258 469, 316 469" fill="none" stroke="#c98a8a" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 469 C 556 469, 566 431, 596 431" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 469 C 556 469, 566 469, 596 469" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 469 C 556 469, 566 507, 596 507" fill="none" stroke="#c98a8a" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 200 327 C 250 327, 258 590, 316 590" fill="none" stroke="#b39ac9" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M 528 590 C 556 590, 566 571, 596 571" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <path d="M 528 590 C 556 590, 566 609, 596 609" fill="none" stroke="#b39ac9" stroke-width="1.4" stroke-opacity="0.6"/>
+  <rect x="36" y="293" width="164" height="68" rx="12" fill="#1d2640" stroke="#d9b26a" stroke-width="2"/>
+  <text x="118" y="321" text-anchor="middle" font-size="22" font-weight="bold" fill="#e8d9b0">债务危机</text>
+  <text x="118" y="347" text-anchor="middle" font-size="12.5" fill="#d9b26a" opacity="0.9">周期模板与案例</text>
+  <rect x="316" y="68" width="212" height="38" rx="9" fill="#d9b26a1f" stroke="#d9b26a" stroke-width="1.4"/>
+  <text x="422" y="93" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#d9b26a">信贷本质</text>
+  <circle cx="602" cy="49" r="4" fill="#d9b26a"/>
+  <text x="618" y="55" font-size="15" fill="#cfc6b2">向未来的自己借钱</text>
+  <circle cx="602" cy="87" r="4" fill="#d9b26a"/>
+  <text x="618" y="93" font-size="15" fill="#cfc6b2">信贷 = 资产 + 负债</text>
+  <circle cx="602" cy="125" r="4" fill="#d9b26a"/>
+  <text x="618" y="131" font-size="15" fill="#cfc6b2">债务 / GDP 比率</text>
+  <rect x="316" y="208" width="212" height="38" rx="9" fill="#7fa8c91f" stroke="#7fa8c9" stroke-width="1.4"/>
+  <text x="422" y="233" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#7fa8c9">通缩萧条</text>
+  <circle cx="602" cy="189" r="4" fill="#7fa8c9"/>
+  <text x="618" y="195" font-size="15" fill="#cfc6b2">七阶段剧本</text>
+  <circle cx="602" cy="227" r="4" fill="#7fa8c9"/>
+  <text x="618" y="233" font-size="15" fill="#cfc6b2">和谐去杠杆化</text>
+  <circle cx="602" cy="265" r="4" fill="#7fa8c9"/>
+  <text x="618" y="271" font-size="15" fill="#cfc6b2">政策工具箱</text>
+  <rect x="316" y="329" width="212" height="38" rx="9" fill="#a3c98a1f" stroke="#a3c98a" stroke-width="1.4"/>
+  <text x="422" y="354" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#a3c98a">通胀萧条</text>
+  <circle cx="602" cy="329" r="4" fill="#a3c98a"/>
+  <text x="618" y="335" font-size="15" fill="#cfc6b2">外币债务的诅咒</text>
+  <circle cx="602" cy="367" r="4" fill="#a3c98a"/>
+  <text x="618" y="373" font-size="15" fill="#cfc6b2">恶性通胀螺旋</text>
+  <rect x="316" y="450" width="212" height="38" rx="9" fill="#c98a8a1f" stroke="#c98a8a" stroke-width="1.4"/>
+  <text x="422" y="475" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#c98a8a">危机案例</text>
+  <circle cx="602" cy="431" r="4" fill="#c98a8a"/>
+  <text x="618" y="437" font-size="15" fill="#cfc6b2">魏玛德国 1918</text>
+  <circle cx="602" cy="469" r="4" fill="#c98a8a"/>
+  <text x="618" y="475" font-size="15" fill="#cfc6b2">美国 1928</text>
+  <circle cx="602" cy="507" r="4" fill="#c98a8a"/>
+  <text x="618" y="513" font-size="15" fill="#cfc6b2">美国 2007</text>
+  <rect x="316" y="571" width="212" height="38" rx="9" fill="#b39ac91f" stroke="#b39ac9" stroke-width="1.4"/>
+  <text x="422" y="596" text-anchor="middle" font-size="16.5" font-weight="bold" fill="#b39ac9">图谱附录</text>
+  <circle cx="602" cy="571" r="4" fill="#b39ac9"/>
+  <text x="618" y="577" font-size="15" fill="#cfc6b2">48 场危机分组</text>
+  <circle cx="602" cy="609" r="4" fill="#b39ac9"/>
+  <text x="618" y="615" font-size="15" fill="#cfc6b2">宏观审慎工具书</text>
+</svg>

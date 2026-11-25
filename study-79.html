@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 动物农场 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/79-dongwu.html">本书书页</a></p>
+<h1>深度研读 · 动物农场</h1>
+<p class="sub">奥威尔 寓言小说 · 辛红娟 译 · 人民文学出版社（蜂鸟文丛）</p>
+<p class="lead">研读说明：本册为奥威尔《动物农场》（1945，十章＋三章附录：未刊自序「英国的出版自由」、乌克兰文版序、注解），一部从「曼纳庄园」到「动物农场」再回到「庄园农场」的政治寓言——革命从「全体动物都是同志」出发，抵达「一些动物比其他动物更平等」。本研读共十二节，先录原文（据人民文学出版社版，辛红娟 译，引文经忠实度校验），后附解析与应用。附录一《英国的出版自由》是理解全书的钥匙，单列一节。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>老麦哲的梦</a></li>
+<li><a href="#s2"><b>贰</b>人兽之辨</a></li>
+<li><a href="#s3"><b>叁</b>七戒：革命的第一部宪法</a></li>
+<li><a href="#s4"><b>肆</b>格言与羊群</a></li>
+<li><a href="#s5"><b>伍</b>风车之争</a></li>
+<li><a href="#s6"><b>陆</b>拳击手的座右铭</a></li>
+<li><a href="#s7"><b>柒</b>被取消的讨论</a></li>
+<li><a href="#s8"><b>捌</b>更平等：七戒的终局</a></li>
+<li><a href="#s9"><b>玖</b>波克赛倒了</a></li>
+<li><a href="#s10"><b>拾</b>遗言生意</a></li>
+<li><a href="#s11"><b>拾壹</b>人猪莫辨</a></li>
+<li><a href="#s12"><b>拾贰</b>未刊之序：知识懦弱</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>老麦哲的梦</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>咱们的生活悲惨、劳碌而又短暂。</p>
+<p>在英格兰，动物没有自由。</p>
+<p class="src">——《动物农场》第 1 章谷仓演说 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：三岁的大种猪老麦哲在谷仓灯下召集全体动物，讲自己做了一个梦：人类消失之后的动物乐园。诊断先行：「咱们的生活悲惨、劳碌而又短暂」「在英格兰，动物没有自由」——两句话把革命的总账摆上了台面。</p>
+<p><b>逻辑脉络</b>：开篇即是全书的立论：一切苦难的根源是「人类的暴政」，唯一的出路是造反。奥威尔故意让先知是一头即将寿终的猪——理论由死者交付，实践由生者扭曲，这个落差是整部寓言的引擎。</p>
+<p><b>现实意义</b>：任何动员的第一步都是命名苦难：苦难说得准，人心就聚得拢。但也别忘了听第二句——谁来解释苦难，谁就拿到了分配希望的权力。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>人兽之辨</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>全体人类都是敌人。全体动物都是同志！</p>
+<p class="src">——《动物农场》第 1 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：老麦哲的结论斩钉截铁：「全体人类都是敌人。全体动物都是同志！」他还立下三条戒律式警告：不学人的恶习（床、酒、钱），动物之间不许残害，所有动物一律平等。</p>
+<p><b>逻辑脉络</b>：把世界切成「敌／友」两半，是最有力也最危险的政治语法：它让团结成为可能，也让定义「谁不是同志」的人掌握了生杀大权。后来斯奎勒改写七戒、拿破仑养狗清党，用的全是这套语法。</p>
+<p><b>现实意义</b>：警惕任何「全员二元对立」的叙事：当你被要求把一群人整体划为敌人时，先问一句——谁从中获利？界限画得越粗，掌权者的自由越大。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>七戒：革命的第一部宪法</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>凡两条腿走路者均为敌人。</p>
+<p>所有动物一律平等。</p>
+<p class="src">——《动物农场》第 2 章仓棚山墙 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：暴动当夜，猪们用捡来的拼写本自学三个月，把动物主义浓缩成七条戒律刷上仓棚山墙：凡两条腿走路者均为敌人／凡四条腿走路或长翅膀者均为朋友／不得穿衣服／不得睡床铺／不得饮酒／不得杀害其他动物／「所有动物一律平等」——三十码外都看得一清二楚。</p>
+<p><b>逻辑脉络</b>：七戒是一部宪法：白颜料、大号字、众目共睹——成文法的意义在于不可篡改。而全书的故事恰恰是七戒一条条被涂改的过程：床铺加了被单，杀戮加了借口，最后只剩一条被改过的戒律。</p>
+<p><b>现实意义</b>：宪法的价值不在写得多漂亮，而在被触碰时有没有人喊疼：当条文可以被「重新解释」而无人抗议，成文法就退化成山墙上的装饰画。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>格言与羊群</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>四条腿好，两条腿坏。</p>
+<p class="src">——《动物农场》第 3 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：斯诺鲍尔把七戒简化为一句能让笨动物记住的格言：「四条腿好，两条腿坏。」绵羊「记住这条格言后，简直走火入魔，一躺到田里，就咩咩哼唱……一唱几个小时，简直不知疲倦」。</p>
+<p><b>逻辑脉络</b>：从「七戒」到「一句口号」是政治传播的经典退化链：复杂原则→简单口号→条件反射。后来每逢有动物想抗议，绵羊就咩咩乱嚷几分钟，「原本想抗议的动物只好作罢」——口号成了噪音武器。</p>
+<p><b>现实意义</b>：能被喊出来的口号，注定比能被想明白的原则传播得快：训练自己听见口号先停一秒——问「这句话省略了什么」，是免疫力训练的第一课。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>风车之争</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>风车万岁！动物农场万岁！</p>
+<p class="src">——《动物农场》第 5 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：斯诺鲍尔力主建风车发电解放动物，拿破仑暗中纵狗将其驱逐；三个星期天之后，拿破仑突然宣布修建风车，且不置一词解释改主意，只告诫「这项额外的任务可能非常艰巨，甚至可能需要减少他们的口粮」，末了高呼「风车万岁！动物农场万岁！」。</p>
+<p><b>逻辑脉络</b>：窃取政见是比窃取政权更低成本的动作：把流亡者的方案据为己有，再消灭方案的原主——从此历史上只剩拿破仑「深谋远虑」。奥威尔以此预演了斯大林对托洛茨基「工业化—五年计划」路线的收编与抹除。</p>
+<p><b>现实意义</b>：记住「谁最早提出」比记住「谁最后宣布」重要：在组织里，方案的所有权经常被权力重新分配——为提想法的人留名，是在保护下一次有人敢想。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>拳击手的座右铭</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我要更加努力！</p>
+<p>拿破仑同志永远正确！</p>
+<p class="src">——《动物农场》第 5–6 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：拉车的马波克赛是农场最勤恳的劳动力，他的两句座右铭——「我要更加努力！」「拿破仑同志永远正确！」——被动物们视为模范。凡他想不明白的事，最后都归于「如果拿破仑同志这么说，那就一定没错」。</p>
+<p><b>逻辑脉络</b>：奥威尔最残忍的一笔安排在结局：这个把「努力＋忠诚」活成信仰的劳动者，累垮之后被卖给屠马商，换回了酿酒机的定金——他信奉的两个答案，一个救不了他，一个正是卖他的理由。</p>
+<p><b>现实意义</b>：「多干活」和「别多想」是两条互补的驯化公式：能用汗水逃避的问题，权力乐见你用汗水逃避。努力值得尊敬，但把努力嫁给一个不许质疑的对象，等于替别人加班。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>被取消的讨论</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如果拿破仑同志这么说，那就一定没错。</p>
+<p class="src">——《动物农场》第 6 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：斯奎勒宣布：今后不再开星期天上午的集体讨论会，「拿破仑同志已经做出全部决策」；动物们「当然不想让琼斯回来」，于是波克赛替大家说出了心声：「如果拿破仑同志这么说，那就一定没错。」——讨论就此取消。</p>
+<p><b>逻辑脉络</b>：这是全书最冷静的一段权力技术：以「别让旧暴政回来」为要挟取消议事，以「领路人」的荣光替代辩论——恐惧与崇拜双管齐下，公共空间安静地关闭，连一次冲突都不需要。</p>
+<p><b>现实意义</b>：公共讨论的死法通常不是被禁止，而是被「理解」：当大家学会用「他这么说肯定有道理」替决策者完成论证，会址就永久地空了。要守住的不是会场，是「有人敢问为什么」的习惯。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>更平等：七戒的终局</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>所有动物一律平等，但一些动物比其他动物更平等。</p>
+<p class="src">——《动物农场》第 10 章仓棚山墙 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：猪睡进床铺、饮酒、用两条腿走路、与人类做买卖之后，山墙上的七戒早已被反复涂改；某个夏夜，本杰明驮着病重的克拉弗去看——山墙上只剩一条戒律：「所有动物一律平等，但一些动物比其他动物更平等。」</p>
+<p><b>逻辑脉络</b>：从「一律平等」到「更平等」，一个转折词完成了宪政的覆灭：平等从原则降格为等级制的修辞外衣。奥威尔用语言学的最小手术，示范了意识形态如何自我翻转——用的还是原来那面山墙。</p>
+<p><b>现实意义</b>：「更平等」从来不写成法律条文，它写成惯例：谁可以破例、谁的错误不算错误、谁的建议先被讨论——每天多观察一点惯例，比每十年读一次宪法更能看清现状。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>波克赛倒了</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>波克赛倒了！侧倒在地，起不来了！</p>
+<p class="src">——《动物农场》第 9 章 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：深夏一夜，鸽子飞回农场报信：「波克赛倒了！侧倒在地，起不来了！」他求大家别难过，只盼退休与风车完工；数日后一辆屠马商的马车来接他「去治病」，本杰明追赶不及——三天后斯奎勒宣布：波克赛在兽医院安详去世，临终还在颂扬拿破仑。</p>
+<p><b>逻辑脉络</b>：劳动者的一生在账本上只有一个去向：可持续榨取→报废→变卖换酒。奥威尔让谣言与颂词同台，让「葬礼与酒钱」同源——献身者的终点不是墓碑，是一箱威士忌的发票。</p>
+<p><b>现实意义</b>：关心那些「永远在努力」的人：他们通常最早倒下、最晚被注意到。一个组织的健康程度，不看表彰名单，看它如何对待失去产能的老成员。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>遗言生意</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>动物农场万岁！拿破仑同志万岁！拿破仑永远正确。</p>
+<p class="src">——《动物农场》第 9 章斯奎勒悼词 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：斯奎勒含泪宣布波克赛「此生唯一的遗憾是没能亲眼看到风车落成」，替他杜撰临终遗言：「前进，同志们！……动物农场万岁！拿破仑同志万岁！拿破仑永远正确。」并称之为「我见过的最感人至深的一幕」。</p>
+<p><b>逻辑脉络</b>：死人是最安全的宣传品：无法对质、无法纠错、只能被引用。把一名被卖进屠马场的劳动者追认为忠诚的圣徒，是双重收割——榨取他生前的力气，再征用他死后的名义。</p>
+<p><b>现实意义</b>：对逝者的追认要多留一分怀疑：凡是被引用来为当下政策服务的「遗言」，都值得问一句出处。纪念最诚实的形态是照顾他挂念的人，而不是给他镀一层金。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>人猪莫辨</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>窗外的动物从猪看到人，从人看到猪，再从猪看到人，分不清哪个是人，哪个是猪。</p>
+<p class="src">——《动物农场》第 10 章结尾 ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：猪搬进房舍、双足直立、改名「庄园农场」、与人类农场主宴饮打牌；十二种嗓音同时高喊「太像了！」爆发争吵——窗外张望的动物们只见「十二种愤怒的声音，听起来完全一个样」：「从猪看到人，从人看到猪，再从猪看到人，分不清哪个是人，哪个是猪。」</p>
+<p><b>逻辑脉络</b>：结尾是全书最有力的闭环：革命以「消灭剥削者」开始，以「剥削者长得一模一样」结束——奥威尔不写正义的回归，只写面目的混淆：压迫换了主体，压迫本身未动。</p>
+<p><b>现实意义</b>：检验一场变革成败的终极问题只有一个：底层的处境变了没有？换了名字、换了旗帜、换了面孔而处境未变，就还没走出那间灯光通明的餐厅。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>未刊之序：知识懦弱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>最大的敌人是留声机似的头脑，不管自己认不认同，只要有人播放就会听从。</p>
+<p class="src">——附录一《英国的出版自由》（1945 年未刊自序） ｜ 据《动物农场》（辛红娟 译）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：本册附录一收录了奥威尔被出版社搁置的自序《英国的出版自由》：四家出版商拒稿，信息部暗示「不合时宜」；他诊断自由的最大威胁不是官方审查，而是出版界的「主动阻遏」与「知识懦弱」——并留下那句判词：「最大的敌人是留声机似的头脑。」</p>
+<p><b>逻辑脉络</b>：这篇序言让寓言落地：连一部讽刺苏联的小说在英国都难以出版，足证审查不需要枪——只需要人人心照不宣的「不妥」。附录二乌克兰文版序则亲手把书托付给被宣传欺骗又背叛的乌克兰读者。</p>
+<p><b>现实意义</b>：读这本书，先读这篇序：它教你识别身边的「留声机头脑」——引用之前先核验、转发之前先追问、表态之前先确认自己是否只是在播放别人灌进来的唱片。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读这卷政治寓言的最终目的，是学会在自己的生活里识别口号与涂改、忠诚与卖身、革命与轮回，并且拒绝做那个「留声机似的头脑」。</p>
+<p><b>咱们的生活悲惨、劳碌而又短暂。</b>应用口诀：命苦难先说准，说准的人掌分权。</p>
+<p><b>全体人类都是敌人。全体动物都是同志！</b>应用口诀：二元对立的叙事，先问谁在获利。</p>
+<p><b>所有动物一律平等。</b>应用口诀：宪法写在山墙上，更写在抗议里。</p>
+<p><b>四条腿好，两条腿坏。</b>应用口诀：听见口号停一秒，问它省略了什么。</p>
+<p><b>我要更加努力！</b>应用口诀：努力别嫁给不许质疑的对象。</p>
+<p><b>拿破仑同志永远正确！</b>应用口诀：永远正确的人，最先不正确。</p>
+<p><b>如果拿破仑同志这么说，那就一定没错。</b>应用口诀：替领导完成论证之日，就是会场关闭之时。</p>
+<p><b>所有动物一律平等，但一些动物比其他动物更平等。</b>应用口诀：更平等不写条文，写在破例里。</p>
+<p><b>波克赛倒了！侧倒在地，起不来了！</b>应用口诀：看组织健康，看它如何待老人。</p>
+<p><b>窗外的动物从猪看到人，从人看到猪，再从猪看到人，分不清哪个是人，哪个是猪。</b>应用口诀：换了面孔没换处境，革命就还没完成。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Animal_Farm" target="_blank" rel="noopener">Animal Farm · Wikipedia</a><span>佐证：1945 年出版背景、创作时间线与苏联隐喻的对照表。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/George_Orwell" target="_blank" rel="noopener">George Orwell · Wikipedia</a><span>建议：奥威尔生平——缅甸警察、西班牙内战、《一九八四》的完整脉络。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Freedom_of_the_press" target="_blank" rel="noopener">Freedom of the press · Wikipedia</a><span>背景：附录一《英国的出版自由》的主题延伸——新闻自由的传统与变体。</span></li>
+<li><a href="https://www.bl.uk/works/animal-farm" target="_blank" rel="noopener">Animal Farm · The British Library</a><span>背景：大英图书馆馆藏页，含手稿与初版史料。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《动物农场》 ～ 中文据《动物农场》（辛红娟 译）校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

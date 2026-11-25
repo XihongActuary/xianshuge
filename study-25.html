@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 苹果树 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/25-pingguo.html">本书书页</a></p>
+<h1>深度研读 · 苹果树</h1>
+<p class="sub">约翰•高尔斯华绥 著 · 双语研读版 ｜ 英文原文＋中文译文（外研社双语读库·外研社编译组译）对照精读</p>
+<p class="lead">研读说明：高尔斯华绥 1916 年中篇，题词取默里译欧里庇得斯「苹果树、歌声和金子」。故事从银婚日讲起：阿什赫斯特带妻子斯特拉重回托基，回忆二十多年前他与农家姑娘梅甘的一场春日初恋——他留下的不是誓言，是一张没有兑现的船票。本研读共十二节：每节设「原文摘录 · 中英对照」（英文与中文均逐字录自双语读库原文）＋三项解析＋三个英语学习模块（词汇积累／句式分析／写作借鉴）——从读懂一句到写出一句。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>题词：苹果树、歌声和金子 · The Apple-tree, the Singing and the Gold</a></li>
+<li><a href="#s2"><b>贰</b>银婚日开场：锦上添花的纪念日 · The Silver-Wedding Day</a></li>
+<li><a href="#s3"><b>叁</b>值得研究的姑娘：她需要被唤醒 · She Wants Awakening</a></li>
+<li><a href="#s4"><b>肆</b>梅甘的教科书：伤害别人是不对的 · It Is Wrong to Hurt People</a></li>
+<li><a href="#s5"><b>伍</b>苹果树下：我答应你 · Megan—Promise!</a></li>
+<li><a href="#s6"><b>陆</b>初吻：爱神是不容蔑视的 · Love Could Not Be Flouted</a></li>
+<li><a href="#s7"><b>柒</b>圣西普里安的复仇 · The Cyprian Took Her Revenge</a></li>
+<li><a href="#s8"><b>捌</b>春天的诗：爱神的心如痴如狂 · For Mad Is the Heart of Love</a></li>
+<li><a href="#s9"><b>玖</b>瘸子口供：姑娘为了爱情竟会做出这种事来 · What Maids'll Du for Love</a></li>
+<li><a href="#s10"><b>拾</b>山顶之问：我到底做错了什么 · What Did I Do That Was Wrong?</a></li>
+<li><a href="#s11"><b>拾壹</b>老苹果树下：她在等候，眺望着 · Megan Under the Old Apple Tree</a></li>
+<li><a href="#s12"><b>拾贰</b>一九一六：前景与缺憾 · Something Wanting, Isn't There?</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册 · Golden Lines</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>题词：苹果树、歌声和金子 · The Apple-tree, the Singing and the Gold</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">The Apple-tree, the singing and the gold.</p>
+<p class="cn">苹果树、歌声和金子</p>
+<p class="src">——题词（默里译欧里庇得斯《希波吕托斯》） ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：题词只有一行，却是全书的总账科目：苹果树（初恋的现场）、歌声（春天与青春）、金子（爱神双翼的金光，也是永不兑现的承诺）。欧里庇得斯的原句写的是爱神的力量——凡他落脚之处，万物臣服；高尔斯华绥把它借来当书名，等于提前宣判：这三样东西最后都只存在于回忆里。</p>
+<p><b>逻辑脉络</b>：题词与结尾严格对账。全书最后一句是「缺少的是那苹果树、那歌声和那金子！」——开头是清单，结尾是缺货通知。同一句诗，放在卷首是预言，放在卷尾是结论：银婚日的弗兰克什么都齐了，体面的妻子、体面的生活，唯独清单上那三样，一样都没留住。</p>
+<p><b>现实意义</b>：给所有正在选择的人：先想清楚你的清单上写的是哪三样。人到中年盘点时，缺的往往不是后来拼命去挣的东西，而是当年随手放弃的那三样——树、歌、金子。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>epigraph</b>　n. 题词、卷首引语（epi- 在上＋graph 写——写在书名之下的一行诗）</p>
+<p><b>the singing</b>　n. 歌声（定冠词＋动名词：把动作冻结成名词——singing 不是唱歌的人，是歌声本身）</p>
+<p><b>gold</b>　n. 金子（名词作清单条目：the gold 与结尾 the gold 严格对账）</p>
+<p><b>Murray</b>　n. 默里（源文标 MURRAY'S HIPPOLYTUS—— Gilbert Murray 的希腊戏剧英译本，高尔斯华绥引用的版本）</p>
+<p><b>of EURIPIDES</b>　phr. 欧里庇得斯的（of 表所属——题词出处的小型文献注释写法）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>The Apple-tree, the singing and the gold. ——三个名词短语的清单句：无动词、无谓语，一本书的全部主题被压缩成一张三行清单。冠词 the 逐一锁定，像给三样东西各贴一张资产标签。</p>
+<p>same line, two duties ——同一行诗在卷首是 prophecy（预言）、在卷尾是 verdict（判词）：英文 epigraph 的高级用法——首尾引用同一句而语义翻转。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给中篇写题词——选一句古典诗（The Apple-tree, the singing and the gold），让它在结尾以否定形式回来（something wanting）。英文 frame device 的闭环：开头挂账，结尾销账。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>银婚日开场：锦上添花的纪念日 · The Silver-Wedding Day</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">In their silver-wedding day Ashurst and his wife were motoring along the outskirts of the moor, intending to crown the festival by stopping the night at Torquay, where they had first met.</p>
+<p class="cn">银婚日这天，阿什赫斯特和妻子在荒野边上驱车前行。他们想使这个节日锦上添花，晚上停在他们第一次相遇的地方——托基过夜。这是斯特拉·阿什赫斯特的主意。</p>
+<p class="src">——正文开篇 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书第一个词是「银婚日」，第一个动作是「锦上添花」：斯特拉天性浪漫，把重逢的地点选在夫妻第一次相遇的托基。她不知道的是，对丈夫来说这片荒野边上还埋着另一场相遇——一场被他从人生里删掉、却从没删干净的相遇。</p>
+<p><b>逻辑脉络</b>：高尔斯华绥把叙事引擎藏在地点里：银婚日的甜蜜路线图，恰好穿过梅甘的坟场与老农场。妻子挑选纪念日的浪漫，成了丈夫重访旧案的机关——他借口散步，独自走向荒野，走向那个「第一次见到梅甘」的山坡。纪念日的仪式感越足，回忆的闸门开得越大。</p>
+<p><b>现实意义</b>：每段关系都有自己的地理：同一片风景，装着不同人的不同纪年。陪爱人重游纪念地之前，先问问自己——这片地图上还有没有没标注的旧坐标。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>silver-wedding day</b>　n. 银婚日（结婚二十五周年：silver→golden 的周年纪念系列词）</p>
+<p><b>motor</b>　v. 驾车出行（were motoring 过去进行时——二十世纪初汽车的时新动词）</p>
+<p><b>outskirts</b>　n. 郊外、边缘（the outskirts of the moor——城市与荒野的接缝处）</p>
+<p><b>crown</b>　v. 为……加冕、锦上添花（crown the festival——把庆典推上顶点的动词）</p>
+<p><b>streak of sentiment</b>　phr. 一点浪漫天性（streak 一丝、条纹——性格里的窄条）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>intending to crown the festival by stopping the night at Torquay ——intend to do by doing：目的与手段在一个分词短语里并置——「锦上添花」的英文语法版本：by 后面才是真动作（停一夜）。</p>
+<p>where they had first met ——where 定语从句收尾：地点从句轻轻落下，却是全书叙事引擎的点火钥匙——此处 first 何时成立，取决于你数哪一场相遇。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：英文开篇的三层堆叠——时间（in their silver-wedding day）＋动作（were motoring along）＋意图（intending to crown...）。把 plot device（旧地重游）藏进地理描写，不宣布，只标注坐标。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>值得研究的姑娘：她需要被唤醒 · She Wants Awakening</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Emotionally she would be wonderful. She wants awakening.</p>
+<p class="cn">感情上，她会相当美妙。她需要被唤醒。</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：大学生加顿用艺术家的眼光打量梅甘，得出这两句诊断：感情上她会相当美妙，她需要被唤醒。这是全书中最危险的一句话——「被唤醒」意味着她此刻还睡着，而唤醒她的人不必对她负责。梅甘的一生，就死在这半句诗意的轻佻上。</p>
+<p><b>逻辑脉络</b>：加顿是阿什赫斯特的镜子：两个人都把梅甘当「值得研究的自然之花」，一个当作画画的素材，一个当作诗的素材。区别只在阿什赫斯特多了一层负罪感。这段诊断书式的话语先于爱情出现——梅甘还没被爱，就先被分类了；而分类的人从来不用为分类的后果签字。</p>
+<p><b>现实意义</b>：警惕一切把人当「素材」的目光：当你用「有趣」「特别」「值得研究」来形容一个人时，问自己一句——研究完了怎么办？唤醒一个人之前，先想好谁负责叫醒之后的全世界。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>emotionally</b>　adv. 感情上（副词作科目名：把人按维度打分的第一栏）</p>
+<p><b>wonderful</b>　adj. 极好的（would be wonderful——would 表推测性判断，非事实陈述）</p>
+<p><b>awakening</b>　n. 唤醒、觉醒（want + 名词化动名词——把动词变成待办事项）</p>
+<p><b>wild flower</b>　n. 自然之花（阿什赫斯特心里的评语：a wild flower——野花之喻的另一面是可采撷）</p>
+<p><b>subtle</b>　adj. 微妙的（Subtle study!——加顿的口头禅，讽刺的靶心）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Emotionally she would be wonderful. ——副词打头＋would 虚拟判断：两个词完成一次「分科诊断」——emotionally 意味着还有 physically、socially 各栏待填。</p>
+<p>She wants awakening. ——want + 动名词名词化：不说 she should be awakened（该被唤醒），而说 wants awakening（需要唤醒）——需求被安在「她」名下，责任被安在空气里。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写「危险的轻佻」，用最短的两个判断句——Emotionally she would be wonderful. She wants awakening. 英文 diagnosis style：句子越短，越像真理，越不需负责。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>梅甘的教科书：伤害别人是不对的 · It Is Wrong to Hurt People</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">He said that all the other boys were regular gipsies. He should not have said that. My aunt laughed, but she didn't like it, of course, and my cousins were angry. Uncle was a farmer—farmers are not gipsies. It is wrong to hurt people.</p>
+<p class="cn">他还说其他的男孩像地道的吉卜赛人。他不该这么说。虽然姑妈笑了，但是她并不喜欢这个笑话。我的表弟们也很生气。姑父是个农民，农民可不是吉卜赛人。伤害别人是不对的。</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：梅甘向阿什赫斯特复述家里遭遇的一次羞辱，最后落在一句朴素的伦理课上：伤害别人是不对的。她没有读过欧里庇得斯，说不出「爱神」与「复仇」，但她这句话比全书任何引文都接近道德的本义——就是别伤害人。</p>
+<p><b>逻辑脉络</b>：这句「伤害别人是不对的」与全书的剧情构成一个残忍的括号：说这句话的姑娘，最后正是被「研究她」「唤醒她」的人伤害至死。她一生的伦理只此一句，却在结尾以「心脏破碎」的形式被违反。高尔斯华绥不动声色地让最没有文化的角色说出全书唯一完整的道德命题。</p>
+<p><b>现实意义</b>：道德的最低版本往往是最可靠版本：不伤害别人。高谈爱与自由的人未必守得住这条底线——判断一个人的品格，别听他谈什么主义，看他会不会为了自己方便去伤害一个不会还手的人。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>regular</b>　adj. 地道的、十足的（regular gipsies——regular 加强语气的口语用法）</p>
+<p><b>gipsy</b>　n. 吉卜赛人（英式拼法；美式作 gypsy——社会成见词，梅甘原文照录）</p>
+<p><b>should not have said</b>　phr. 不该说（should not have done——对已完成行为的虚拟责备）</p>
+<p><b>cousins</b>　n. 表兄弟姐妹（英式 cousins 涵盖堂表——梅甘口中的「表弟们」）</p>
+<p><b>hurt</b>　v. 伤害（It is wrong to hurt people——hurt 及物用法，宾语是 people）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>He should not have said that. ——should not have + 过去分词：对过去的虚拟责备，是英文道德语法的标准句式——说这话的姑娘不懂虚拟语气，却用对了。</p>
+<p>It is wrong to hurt people. ——It is wrong to do 形式主语句：全书的道德命题被压进六个词——形式主语 it 抬出客观感，仿佛错的不是某个人，是伤害本身。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：让人物用间接引语转述冲突（He said that... My aunt laughed, but...），最后落一句直接判词（It is wrong to hurt people.）。英文 retelling craft：转述的平淡衬出判词的重量。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>苹果树下：我答应你 · Megan—Promise!</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Come to the big apple tree to-night, after they've gone to bed. Megan—promise!</p>
+<p class="cn">今天晚上，等他们都睡了，到那棵苹果树下。梅甘，答应我！</p>
+<p class="en">She whispered back: “I promise.”</p>
+<p class="cn">她低声答道：“我答应你。”</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的枢纽是这三句对话：到苹果树下、答应我、我答应你。梅甘把这三个字当成终身合同，阿什赫斯特只把它当成今晚的节目。同一个承诺，两套履约体系——她的信用以命作保，他的信用以今晚为限。</p>
+<p><b>逻辑脉络</b>：「我答应你」之后紧接的一句是真相：他吓坏了——怕她苍白的脸，怕一切——然后放她回去。这个「害怕」是全书最早出现的悔意：他其实知道自己在签署什么。后来的所有情节（带她私奔的许诺、托基买船票、临阵退缩的顺水推舟）都只是这句话的分期违约。</p>
+<p><b>现实意义</b>：判断承诺的重量，不看对方说得多么动听，看你们各自把它记在哪本账上。把甜言蜜语记进终身合同的人，要么确认对方也在同一本账上签字，要么别签。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>to-night</b>　adv. 今晚（1916 年以前的分写拼法——原文照录，today 的旧时兄弟）</p>
+<p><b>after they've gone to bed</b>　phr. 等他们都睡了之后（after + 现在完成时——时间条款写得像合同）</p>
+<p><b>whisper</b>　v. 低语（whispered back——back 表示回应性低语）</p>
+<p><b>scared</b>　adj. 害怕的（scared at her white face, scared at everything——scared at 的重复修辞）</p>
+<p><b>let her go</b>　phr. 放她走（let + 宾语 + 动词原形——放手的句式也是放手的结局）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Come to the big apple tree to-night, after they've gone to bed. ——祈使句＋时间状语从句：命令与条款并存——地点（苹果树）、时间（今晚）、条件（他们睡了）一应俱全，独缺违约责任。</p>
+<p>Megan—promise! ——呼语＋破折号＋光杆祈使：一个词的祈使句（promise!）是英文最短的合同条款——省略宾语，等于省略履约期限。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写一句注定被违约的承诺，台词要写得像条款（Come to... after they've gone to bed. Megan—promise!），然后立刻跟一句恐惧（scared at everything）——英文 foreshadowing：合同与违约写在同一页。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>初吻：爱神是不容蔑视的 · Love Could Not Be Flouted</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Destiny meant her for his arms, Love could not be flouted!</p>
+<p class="cn">命运之神把她送到了自己的怀里，爱神是不容蔑视的！</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：接吻之后，阿什赫斯特的内心独白是：命运把她送到了怀里，爱神不容蔑视。这是全书最诚实的自我辩护——他把一次主动的选择翻译成一次神意的降临。既然是爱神的意思，责任就不在人；既然不容蔑视，拒绝就是渎神。</p>
+<p><b>逻辑脉络</b>：这句自我开脱与结尾的爱神叙事形成闭环：第V部他同样引用《希波吕托斯》的诗句「因为爱神的心如痴如狂」来解释一切，把希腊悲剧当成免责条款。全书的法律责任书由此写得明明白白——每次越界，他都带着一位神明当担保人。</p>
+<p><b>现实意义</b>：「身不由己」是成年人最常用的免责声明：把选择外包给命运、酒精、时代或者「爱情本身」。识别它的方法很简单——凡是让人受益的，人都记得自己当时的选择权；凡是害人的，人就改叫它命运。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>destiny</b>　n. 命运（Destiny meant her for his arms——大写 D 的拟人化主语）</p>
+<p><b>mean sb for sth</b>　phr. 命定某人归于……（mean her for his arms——mean 的冷门用法：注定配给）</p>
+<p><b>arms</b>　n. 怀抱、双臂（in his arms——arms 复数专指拥抱，不是武器）</p>
+<p><b>flout</b>　v. 蔑视、违抗（Love could not be flouted——及物动词，宾语提前成被动）</p>
+<p><b>rapture</b>　n. 狂喜（simple rapture——上一行原文：狂喜前的定语是 simple）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Destiny meant her for his arms ——mean...for...：把「我爱上了她」改写成「她被注定给我」——英文语法替自我辩护省掉了主语的我。</p>
+<p>Love could not be flouted! ——情态被动否定：can not be + 过去分词——禁令句式（不容蔑视）天然带神学腔：能被蔑视的就不是神了。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写自我开脱，用神拟人的主语＋被动语态（Destiny meant her for his arms, Love could not be flouted!）——英文 exculpation style：主语越大，责任人越小。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>圣西普里安的复仇 · The Cyprian Took Her Revenge</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">So had his virtue been rewarded, and “the Cyprian,” goddess of love, taken her revenge!</p>
+<p class="cn">这就是他德行的回报——爱神“圣西普里安”的复仇！</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：银婚日，阿什赫斯特背靠金雀花丛回望旧地，把当年那场未遂的私奔归纳成一句希腊式判决：这就是他德行的回报——爱神「圣西普里安」的复仇。他没有说「我背叛了她」，而说「爱神向我复仇了」。复仇的语法替他完成了一次身份转换：从加害者变成受害者。</p>
+<p><b>逻辑脉络</b>：「复仇」在文本里有精确的兑现记录：他当年在托基口袋空空、被迫回程，顺手在旧案上盖了新章——与斯特拉订婚。此后二十多年，梅甘的死讯由一个瘸腿流浪汉用三句话送到他面前。爱神的复仇不搞突袭，只安排一次路过；凶手不用偿命，只需要在银婚日「泪眼模糊」。</p>
+<p><b>现实意义</b>：识别「受害者修辞」：当一个人把后果说成「报应」「命运」「她的复仇」时，他正在把因果链的主语从自己换成宇宙。真正的道歉从改回主语开始——是我做的，不是爱神做的。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>virtue</b>　n. 德行（his virtue——反讽用法：他自认的德行恰是背叛）</p>
+<p><b>reward</b>　v./n. 报偿（So had his virtue been rewarded——被动语态，报偿者隐身）</p>
+<p><b>the Cyprian</b>　n. 爱神（基普里斯的阿佛洛狄忒——Cyprian 作名词指维纳斯）</p>
+<p><b>take one's revenge</b>　phr. 复仇（taken her revenge——take revenge on 的名词化固定搭配）</p>
+<p><b>dim</b>　adj. 模糊的（dim with tears——泪眼模糊的生理形容词）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>So had his virtue been rewarded ——So + 助动词 + 主语 + 过去分词：承接倒装（so 指上文结论），把判词钉在段首——倒装句天然带法庭腔。</p>
+<p>“the Cyprian,” goddess of love, taken her revenge! ——同位语 + 完成式分词省略 had：and (had) taken——两个被动态共享一个 had，紧凑如判词的复式记账。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：给一场迟到的报应写判词，用承接倒装（So had his virtue been rewarded）＋神明主语（the Cyprian）——英文 ironic verdict：句式越庄严，反讽越冷。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>春天的诗：爱神的心如痴如狂 · For Mad Is the Heart of Love</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">For mad is the heart of Love,</p>
+<p class="cn">因为爱神的心如痴如狂，</p>
+<p class="en">And gold the gleam of his wing;</p>
+<p class="cn">他的双翼金光闪闪。</p>
+<p class="en">And all to the spell thereof bend when he makes his spring.</p>
+<p class="cn">因此，他创造春天时，众生都在他的魔力面前俯首。</p>
+<p class="src">——《希波吕托斯》诗行（默里译） ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：「因为爱神的心如痴如狂，他的双翼金光闪闪，他创造春天时，众生都在他的魔力面前俯首」——阿什赫斯特用这首希腊诗给整场春天定了性：人人有罪，等于人人无罪。爱神面前众生俯首，他不俯首也得俯首。</p>
+<p><b>逻辑脉络</b>：题词、诗行与剧情三重互文：金色的翅膀落在果园，就是梅甘的黑发与苹果花；「众生俯首」落到具体人身上，就是他俯首、她殉身。这首诗的巧妙在于它把一场不平等的两性事件翻译成一场平等的宗教事件——女神面前人人平等，可现实里俯首的代价只有梅甘一个人在付。</p>
+<p><b>现实意义</b>：小心任何「人人都这样」的叙事：它通常是对的，但用它为自己的特例开脱时，「人人」里只算自己那份便宜。春天属于所有人，账单只寄给最没防备的那一个。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>mad</b>　adj. 狂乱的（mad is the heart of Love——mad 作表语前置倒装）</p>
+<p><b>gleam</b>　n. 微光、闪光（gold the gleam of his wing——gleam 与 gold 头韵）</p>
+<p><b>spell</b>　n. 魔力、咒语（to the spell thereof——thereof 古体所有格）</p>
+<p><b>bend</b>　v. 俯首、屈服（all...bend——不及物用法的 bend：弯下的是脊背）</p>
+<p><b>make his spring</b>　phr. 创造春天（make spring 施动用法——神造春天如人造物）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>For mad is the heart of Love ——表语前置倒装（mad is the heart）：形容词提前制造钟声般的重音——散文里不合法，诗行里是权威。</p>
+<p>And gold the gleam of his wing ——省略系动词的压缩句（gold [is] the gleam）：诗行的减法语法——三个词写完一种神迹。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：引用诗行做叙事判词时，挑倒装与省略的诗句（For mad is the heart of Love）——英文 intertextual craft：诗的语法特权正好给散文里的忏悔加冕。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>瘸子口供：姑娘为了爱情竟会做出这种事来 · What Maids'll Du for Love</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">“'Tes wonderful, et seems,” he added slowly, “what maids 'll du for love. She 'ad a lovin-'eart; I guess 'twas broken. But us never knu nothin'!”</p>
+<p class="cn">“太不可思议了！”他慢慢地补充说，“姑娘为了爱情竟会做出这种事来。她太善良啦，我猜她的心都碎啦。但是，我们一直什么都不知道！”</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译；方言拼写照录）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：梅甘的死讯不是由爱人宣布的，是由一个瘸腿流浪汉用闲聊的口吻宣布的：「姑娘为了爱情竟会做出这种事来。她太善良啦，我猜她的心都碎啦。但是，我们一直什么都不知道！」——她投了水，葬在荒野坡上。爱她的男人三十年后才由第三方送来讣告，还是方言的。</p>
+<p><b>逻辑脉络</b>：这段口供的叙事温度低到残忍：在流浪汉嘴里，梅甘的死是件「不可思议」的奇闻，是「心碎」的猜测，与老主人的吉卜赛血统传说排在同一段闲谈里。而她的心碎之所以成立，是因为「我们一直什么都不知道」——全村人都不知道那个答应私奔的男人去了哪里。全书的罪证由一句八卦完成归档。</p>
+<p><b>现实意义</b>：悲剧的第二层不是发生，而是没人知道：多少「心都碎啦」被归档为奇闻。做那个认真听八卦的人——闲谈里常常埋着没被立案的冤情。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>'Tes</b>　= it is（方言缩略——'t 替代 it，死括号撇号标记吞音）</p>
+<p><b>et seems</b>　= it seems（方言插入语——et 的拼写标记音变）</p>
+<p><b>maids</b>　n. 姑娘们（= girls——方言与古语保留词）</p>
+<p><b>'twas</b>　= it was（方言缩略——lovin-'eart 同款撇号拼法）</p>
+<p><b>knu</b>　= knew（方言不规则拼写——never knu nothin' 双重否定的方言版）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>what maids 'll du for love ——what + 主语 + 情态动词的感叹名词从句：方言版的惊叹句——语法与标准英语同构，拼写负责标注阶层。</p>
+<p>She 'ad a lovin-'eart; I guess 'twas broken. ——分号连接的「资产＋减值」句：a lovin-'eart 是资产科目，'twas broken 是减值分录——流浪汉不懂会计，句子却自动配平。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：用非标准拼写（'Tes、'twas、knu）标记叙述者的社会位置——英文 dialect writing：拼写不改语法，只改温度；方言一出口，讣告就成了闲谈。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>山顶之问：我到底做错了什么 · What Did I Do That Was Wrong?</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">“What did I do that was wrong?” he thought. “What did I do?” But he could not answer.</p>
+<p class="cn">“我到底做错了什么？”他想，“我到底做了什么？”但是，他无法回答。</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：得知死讯前的黄昏，阿什赫斯特趴在山顶草地上，问出全书最著名的两句自问：「我到底做错了什么？我到底做了什么？」——然后文本给出三个字的答案：他无法回答。这不是谦虚，是全书对「无辜感」最彻底的解剖。</p>
+<p><b>逻辑脉络</b>：两个问句的措辞差值得逐字读：「做错了什么」用的是道德语法（wrong），「做了什么」用的是行为语法（did）。他把问题先降级再降级，从「我错了吗」退到「我做了什么」，最后连「做了什么」都答不出——不是不知道，是不敢知道。文本自己回答了：他做的是「唤而不娶」，只是那个词他一辈子都没让自己说出来。</p>
+<p><b>现实意义</b>：自查时的两个问句顺序不能反：先问「我做了什么」（事实），再问「我错了吗」（道德）。只问后者的人，永远能给自己找到不算错的答案——因为道德题可以辩论，事实题不能。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>wrong</b>　adj. 错的（that was wrong——关系从句把 wrong 锁定在 do 的宾语上）</p>
+<p><b>victim</b>　n. 牺牲者（Love seeking a victim——原文同段：爱神要找一个牺牲者）</p>
+<p><b>the Greek</b>　n. 希腊人（The Greek was right——欧里庇得斯的代称）</p>
+<p><b>answer</b>　v. 回答（he could not answer——情态否定的无力式）</p>
+<p><b>rush</b>　n. 涌动（its rush of passion——原文同段：passion 的名词化）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>What did I do that was wrong? ——特殊疑问＋关系从句限定：do 是事实层，that was wrong 是道德层——一个问句里叠了两级审查，回应时他先删掉道德层，只剩 What did I do?</p>
+<p>Was it just Love seeking a victim! ——疑问句式＋感叹标点＋现在分词 seeking：问句与惊叹号的错配写出自我辩护的急切——把罪行问成神迹。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写自我审问，用三级递降问句（What did I do that was wrong? / What did I do? / he could not answer.）——英文 interrogation style：问句的删减轨迹就是良心的回避轨迹。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>老苹果树下：她在等候，眺望着 · Megan Under the Old Apple Tree</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Megan under the old apple tree waiting and looking! Megan dead, with beauty printed on her!</p>
+<p class="cn">她在老苹果树下等候着，眺望着！梅甘死了，脸上依旧带着美丽动人的印记！</p>
+<p class="src">——正文 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：银婚日的回望里，阿什赫斯特看见的不是遗像而是场景：「她在老苹果树下等候着，眺望着！」——等候与眺望，两个动词是全书为梅甘选定的永恒姿势：一个兑现不了的约定，一个落空的望。</p>
+<p><b>逻辑脉络</b>：这句幻象与前文的苹果树下约会严丝合缝：那晚他躲开她的目光、看月光下的园子，而她按约前来、在树下等；他迟到的那段夜里，她等的每一分钟都是这部小说真正的正文。二十多年后他记忆自动回放——等待被证明从未过期，死亡只是把「等」改写成「永远等」。</p>
+<p><b>现实意义</b>：别让任何人在苹果树下无期限地等你：赴不了约，就要去取消约会。不取消的代价，不是对方多等一晚，是对方把那一晚当成一生的纪年。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>waiting and looking</b>　phr. 等候与眺望（两个现在分词并列——永恒姿势的动词档案）</p>
+<p><b>printed</b>　v. 印、铭刻（beauty printed on her——印刷隐喻：美貌像版画印在脸上）</p>
+<p><b>sprig</b>　n. 小枝（a sprig of apple blossom——原文同段：发间一枝苹果花）</p>
+<p><b>wet</b>　adj. 湿的（her dark, wet hair——dark 与 wet 两个形容词并置）</p>
+<p><b>dead</b>　adj. 死的（Megan dead——名词＋形容词的无动词句）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>Megan under the old apple tree waiting and looking! ——无动词幻象句：名词＋介词短语＋现在分词，一句没有谓语的画面——英文 hallucination syntax：心象不需要语法的主谓。</p>
+<p>with beauty printed on her ——with + 名词 + 过去分词独立结构：with 复合结构把死者的脸写成印刷品——beauty 是印上去的，死亡只是印刷完成。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：写记忆的闪回，用无动词句（Megan under the old apple tree waiting and looking!）——英文 image freeze-frame：删掉动词，时间就停在画面上。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>一九一六：前景与缺憾 · Something Wanting, Isn't There?</h2>
+<blockquote class="quote"><span class="tag">原文摘录 · 中英对照</span>
+<p class="en">Is the foreground right, Frank?</p>
+<p class="cn">弗兰克，前景画得对吗？</p>
+<p class="en">But there's something wanting, isn't there?</p>
+<p class="cn">但是，我还是觉得缺少了些什么，你觉得呢？</p>
+<p class="en">Ashurst nodded. Wanting? The apple tree, the singing, and the gold!</p>
+<p class="cn">阿什赫斯特点点头。缺少的？缺少的是那苹果树、那歌声和那金子！</p>
+<p class="en">And solemnly he put his lips to her forehead. It was his silver-wedding day. 1916</p>
+<p class="cn">他庄重地亲吻了一下她的前额。这一天是他的银婚纪念日。一九一六年</p>
+<p class="src">——正文结尾 ｜ 英文与中文均据外研社双语读库（外研社编译组译）</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：结尾是一幅写生与三句对话：斯特拉问「前景画得对吗」，他答「对」；她又问「缺少了些什么」，他点头——然后高尔斯华绥替他交出答案：缺少的是那苹果树、那歌声和那金子！他庄重地吻了她的前额。银婚纪念日，一九一六。</p>
+<p><b>逻辑脉络</b>：「吻前额」是全书最后一个动作，也是最有分寸的动作——不是吻唇，是吻额：像吻女儿，不像吻妻子。他对斯特拉怀着真实的敬重，但这敬重恰好丈量出他与梅甘之间那场没兑现的爱情的高度。写生画的「前景」画对了，人生的「前景」错过了——缺的那三样，正是他一生唯一真心过的东西。</p>
+<p><b>现实意义</b>：盘点人生别只核对「画得对不对」，还要核对「缺了什么」。对的清单越全，缺的那三样越响——它们不会出现在任何待办事项里，只会出现在银婚日的写生画旁。</p>
+</div>
+<div class="vocab"><span class="lbl">词汇积累 · Vocabulary</span>
+<p><b>foreground</b>　n. 前景（绘画术语——人生的 foreground 是同一词的双关）</p>
+<p><b>wanting</b>　adj. 缺少的（something wanting——want 的分词形容词用法）</p>
+<p><b>solemnly</b>　adv. 庄重地（solemnly he put his lips...——副词提前加重仪式感）</p>
+<p><b>forehead</b>　n. 前额（put his lips to her forehead——吻额：有分寸的最后动作）</p>
+<p><b>sketch</b>　n. 写生、速写（took his wife's sketch——原文同段：妻子画的那张图）</p>
+</div>
+<div class="vocab"><span class="lbl">句式分析 · Sentence Study</span>
+<p>But there's something wanting, isn't there? ——there be + 分词形容词 + 反意疑问：wanting 作后置定语（something wanting）是英文的书面雅语——斯特拉的直觉问句，恰好是全书的主题句。</p>
+<p>Wanting? The apple tree, the singing, and the gold! ——独词回声问句（echo question）＋清单句：叙述者接住她的话头，替他作答——答案不进对话，只进叙述。</p>
+</div>
+<div class="vocab"><span class="lbl">写作借鉴 · Writing Craft</span>
+<p>写作借鉴：结尾留白三件套——一个实事求是的短答（Yes.）、一个反意问句（isn't there?）、一句叙述者补刀（Wanting? The apple tree...）——英文 closing craft：把最后的真话交给叙述者，不交给人物。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册 · Golden Lines</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句均中英对照，各附一句「应用口诀」——既是回顾，也是十张英语写作卡片：清单题词、虚拟责备、神明主语、诗行倒装、方言口供、无动词幻象，都在里面。研读这本「用银婚日写给初恋的悼词」的最终目的，是学会在自己的生活里分辨承诺的账本、免责的修辞，并且在唤醒任何人之前，先想好谁负责叫醒之后的全世界。</p>
+<p><b>The Apple-tree, the singing and the gold. ——苹果树、歌声和金子。</b>应用口诀：先想清楚清单上写的是哪三样——别等盘点时才发现是它们。</p>
+<p><b>Emotionally she would be wonderful. She wants awakening. ——感情上，她会相当美妙。她需要被唤醒。</b>应用口诀：把人当素材之前，先回答——研究完了怎么办。</p>
+<p><b>It is wrong to hurt people. ——伤害别人是不对的。</b>应用口诀：判断品格不听主义，看会不会伤害不会还手的人。</p>
+<p><b>Come to the big apple tree to-night, after they've gone to bed. Megan—promise! ——今天晚上，等他们都睡了，到那棵苹果树下。梅甘，答应我！</b>应用口诀：确认对方把承诺记在哪本账上，再决定签不签。</p>
+<p><b>Destiny meant her for his arms, Love could not be flouted! ——命运之神把她送到了自己的怀里，爱神是不容蔑视的！</b>应用口诀：受益时记得选择权，受害时别改叫命运。</p>
+<p><b>So had his virtue been rewarded, and “the Cyprian,” goddess of love, taken her revenge! ——这就是他德行的回报——爱神「圣西普里安」的复仇！</b>应用口诀：真正的道歉从改回主语开始——是我做的。</p>
+<p><b>And all to the spell thereof bend when he makes his spring. ——因此，他创造春天时，众生都在他的魔力面前俯首。</b>应用口诀：「人人都这样」只能当事实，不能当免责条款。</p>
+<p><b>She 'ad a lovin-'eart; I guess 'twas broken. ——她太善良啦，我猜她的心都碎啦。</b>应用口诀：认真听八卦——闲谈里埋着没立案的冤情。</p>
+<p><b>What did I do that was wrong? ——我到底做错了什么？</b>应用口诀：先问「做了什么」，再问「错了吗」——顺序不能反。</p>
+<p><b>But there's something wanting, isn't there? ——但是，我还是觉得缺少了些什么，你觉得呢？</b>应用口诀：盘点人生，别只核对画得对不对，还要核对缺了什么。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Apple_Tree_(novella)" target="_blank" rel="noopener">The Apple Tree · Wikipedia</a><span>佐证：篇目背景与 1916 年出版信息。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/John_Galsworthy" target="_blank" rel="noopener">John Galsworthy · Wikipedia</a><span>延伸：1932 年诺贝尔文学奖得主，《福尔赛世家》作者。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Hippolytus_(play)" target="_blank" rel="noopener">Euripides, Hippolytus · Wikipedia</a><span>延伸：题词出处——菲德拉对希波吕托斯的爱与毁灭。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Gilbert_Murray" target="_blank" rel="noopener">Gilbert Murray · Wikipedia</a><span>延伸：默里的希腊戏剧英译本，高尔斯华绥引用的版本。</span></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Forsyte_Saga" target="_blank" rel="noopener">The Forsyte Saga · Wikipedia</a><span>延伸：同作者的财产与婚姻主题长篇，可对照阅读。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列（双语研读版） ｜ 《苹果树》 ｜ 英文与中文均逐字录自外研社双语读库（外研社编译组译）原文，解析为研读者心得</footer>
+</div>
+</body>
+</html>

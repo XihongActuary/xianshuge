@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仙书阁 · 读书知识库</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* —— 书架分类视图（仅本页生效）—— */
+  .shelf-tabs { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:center; margin:26px auto 6px; max-width:1080px; }
+  .shelf-tabs button { background:transparent; color:inherit; border:1px solid rgba(128,128,128,.35); border-radius:999px;
+    padding:8px 18px; font:inherit; font-size:14px; letter-spacing:1px; cursor:pointer; transition:.2s; }
+  .shelf-tabs button.on { border-color:var(--gold,#bb8a1f); color:var(--gold,#bb8a1f); box-shadow:0 0 12px rgba(187,138,31,.25); }
+  .shelf-search input { background:var(--panel); color:inherit; border:1px solid rgba(128,128,128,.35); border-radius:999px;
+    padding:8px 18px; font:inherit; font-size:14px; letter-spacing:1px; width:210px; outline:none; transition:.2s; }
+  .shelf-search input:focus { border-color:var(--gold,#bb8a1f); box-shadow:0 0 12px rgba(187,138,31,.18); width:260px; }
+  .cat-head { max-width:1200px; margin:34px auto 4px; padding:0 18px; }
+  .cat-head h2 { font-size:20px; letter-spacing:3px; margin:0 0 4px; }
+  .cat-head .cat-sub { font-size:12.5px; opacity:.6; letter-spacing:1px; }
+  .cat-head::after { content:""; display:block; width:64px; height:2px; margin-top:10px;
+    background:linear-gradient(90deg,var(--gold,#bb8a1f),transparent); }
+  .cat-count { float:right; font-size:12px; opacity:.55; letter-spacing:2px; margin-top:6px; }
+  /* —— 收藏角标 —— */
+  .fav-mark { position:absolute; top:8px; left:8px; z-index:4; width:34px; height:34px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; font-size:17px; line-height:1;
+    color:rgba(200,205,214,.75); background:rgba(11,14,19,.55); border:1px solid rgba(255,255,255,.22);
+    cursor:pointer; transition:.18s; }
+  .fav-mark:hover { color:#e9dfc7; border-color:var(--gold,#bb8a1f); transform:scale(1.12); }
+  .fav-mark.on { color:#d8b25a; border-color:rgba(216,178,90,.6); text-shadow:0 0 8px rgba(216,178,90,.55); }
+  /* —— 梦幻星空阅读图入口 —— */
+  .sky-module { max-width:1200px; margin:26px auto 0; padding:0 18px; }
+  .sky-card { position:relative; overflow:hidden; display:flex; align-items:center; gap:22px;
+    background:radial-gradient(600px 240px at 85% -30%, rgba(122,84,220,.35), transparent 65%),
+      radial-gradient(500px 220px at 10% 130%, rgba(64,108,210,.30), transparent 60%),
+      var(--panel);
+    border:1px solid var(--line); border-radius:16px; padding:22px 26px; text-decoration:none; }
+  .sky-card:hover { border-color:var(--gold-b); transform:translateY(-3px);
+    box-shadow:0 10px 34px rgba(122,84,220,.25); }
+  .sky-orb { position:relative; flex:none; width:74px; height:74px; border-radius:50%;
+    background:radial-gradient(circle,#2a1e5e 0%,#141031 70%);
+    border:1px solid rgba(165,139,224,.4);
+    box-shadow:0 0 22px rgba(122,84,220,.45), inset 0 0 18px rgba(227,196,127,.18); }
+  .sky-orb i { position:absolute; border-radius:50%; background:#ffe9b8;
+    box-shadow:0 0 6px rgba(255,233,184,.9); animation:skytw 2.6s ease-in-out infinite alternate; }
+  @keyframes skytw { from { opacity:.25; transform:scale(.7); } to { opacity:1; transform:scale(1.15); } }
+  .sky-orb .ring2 { position:absolute; inset:-9px; border-radius:50%;
+    border:1px dashed rgba(165,139,224,.5); animation:skyspin 18s linear infinite; }
+  @keyframes skyspin { to { transform:rotate(360deg); } }
+  .sky-body h2 { font-size:19px; color:var(--gold); letter-spacing:4px; margin-bottom:5px; }
+  .sky-body p { font-size:13.5px; color:var(--dim); letter-spacing:1px; line-height:1.9; }
+  .sky-body .sky-go { display:inline-block; margin-top:8px; font-size:12.5px; color:var(--cyan); letter-spacing:2px; }
+  .sky-card:hover .sky-go { color:#fff; }
+  @media (max-width:640px){ .sky-card { flex-direction:column; text-align:center; gap:14px; } }
+  .study-tag { position:absolute; top:10px; right:10px; z-index:3; padding:5px 12px; border-radius:999px;
+    background:#b53d2e; color:#fdf6e9; font-size:11.5px; font-weight:700; letter-spacing:1.5px;
+    box-shadow:1px 2px 0 rgba(43,42,38,.35); cursor:pointer; }
+  .study-tag:hover { background:#8f2e22; color:#fff; }
+  .book-card { position:relative; }
+  /* —— 西红精算介绍 —— */
+  .xh-intro { max-width:1200px; margin:30px auto 8px; padding:26px 30px; border:1px solid var(--line);
+    border-radius:16px; background:var(--panel); position:relative; overflow:hidden; }
+  .xh-intro::before { content:"西 红"; position:absolute; right:-6px; top:-24px; font-size:110px;
+    font-family:var(--serif,serif); font-weight:800; color:rgba(181,61,46,.07); letter-spacing:8px; pointer-events:none; }
+  .xh-intro h3 { margin:0 0 10px; font-size:18px; letter-spacing:4px; color:var(--gold,#bb8a1f); }
+  .xh-intro p { font-size:13.5px; line-height:2; color:var(--dim,#8a93a1); letter-spacing:.5px; margin:0 0 8px; }
+  .xh-intro .xh-links a { display:inline-block; margin:6px 14px 0 0; padding:7px 16px; border-radius:999px;
+    border:1px solid rgba(181,61,46,.55); color:#e07a6d; font-size:13px; letter-spacing:2px; text-decoration:none; transition:.2s; }
+  .xh-intro .xh-links a:hover { background:rgba(181,61,46,.12); color:#fff; }
+</style>
+</head>
+<body>
+<div id="toast"></div>
+
+<header class="shelf-hero">
+  <div class="gate">精 算 心 境 · 坐 在 长 凳 上 看 书</div>
+  <h1>长 凳 静 观 书</h1>
+  <div class="slogan">—— 来吧，在长凳坐下，看时间流逝 ——</div>
+  <div class="shelf-stats" id="shelfStats"></div>
+</header>
+
+<a class="sky-module sky-card" href="starfield.html" target="_blank" rel="noopener">
+  <span class="sky-orb">
+    <span class="ring2"></span>
+    <i style="width:5px;height:5px;left:20px;top:22px;animation-delay:.2s;"></i>
+    <i style="width:3px;height:3px;left:44px;top:16px;animation-delay:.9s;background:#aef0e2;"></i>
+    <i style="width:4px;height:4px;left:30px;top:44px;animation-delay:1.5s;background:#a58be0;"></i>
+    <i style="width:2px;height:2px;left:52px;top:38px;animation-delay:.6s;"></i>
+    <i style="width:3px;height:3px;left:14px;top:36px;animation-delay:2s;background:#d9b26a;"></i>
+  </span>
+  <span class="sky-body">
+    <h2>梦 幻 星 空 阅 读 图</h2>
+    <p>每书一星 · <span id="skyCount">—</span>颗星辰绕双旋臂而转——读完一本，在书页右上角标记「已读」，星星便带着书名点亮。拖动旋转银河，滚动缩放星海：点击进入全屏星空。</p>
+    <span class="sky-go">⟶ 御风入星空 · 开启阅读之旅</span>
+  </span>
+</a>
+
+<div class="shelf-tabs" id="shelfTabs">
+  <button data-view="all" class="on">全部 · <span id="cntAll"></span> 册</button>
+  <button data-view="type">按作品类型</button>
+  <button data-view="author">按作者</button>
+  <button data-view="fav">收藏 · <span id="cntFav">0</span> 册</button>
+  <button data-view="bilingual">双语书廊</button>
+  <span class="shelf-search"><input id="q" type="text" placeholder="⌕ 查找 · 书名或作者"></span>
+</div>
+
+<div id="shelfWrap"></div>
+
+<section class="xh-intro">
+  <h3>关于本站 · 西红精算</h3>
+  <p>西红精算，一位保险精算师的书房。白天在准备金、现金流与偿付能力之间算数，晚上回到这条长凳上读书、写字、做科普——「用数据讲保险 · 用真心做科普」。</p>
+  <p>这座书阁收藏的每一本书，都遵循同一条规矩：<strong>一切为了用，不是为了囤</strong>。每册都有金句摘录与深度研读，读完就到星空里点亮一颗星——书是拿来读的，知识是拿来用的。</p>
+  <p class="xh-links">
+    <a href="https://t.zsxq.com/Bs0tQ" target="_blank" rel="noopener">知识星球 · 西红精算 →</a>
+    <a href="bilingual/index.html" style="border-color:rgba(216,178,90,.5);color:#d8b25a;">双语书廊 · 107 册外文书导读 →</a>
+  </p>
+</section>
+
+<footer>
+  仙书阁藏书 ｜ 用心读 · 用行证<br>
+  <span class="brand">用数据讲保险 · 用真心做生活</span>
+</footer>
+
+<script src="books.js"></script>
+<script src="assets/bgm.js"></script>
+<script>
+  /* 书架由 books.js 清单驱动 —— 加书即上架；分类映射按 no 维护 */
+  document.getElementById("shelfStats").innerHTML =
+    '<div class="st"><b>' + BOOKS.length + '</b><span>藏 书</span></div>' +
+    '<div class="st"><b>' + BOOKS.reduce((s, b) => s + (b.quotes || 0), 0) + '</b><span>金 句</span></div>' +
+    '<div class="st"><b>∞</b><span>可 扩 展</span></div>';
+  document.getElementById("cntAll").textContent = BOOKS.length;
+  document.getElementById("skyCount").textContent = BOOKS.length;
+
+  /* ============ 分类映射 ============ */
+  const CATS = {
+    lit : { name:"外文精读 · 文学经典", sub:"三十三位作家 · 从政治寓言到冰山之下 · 英美爱俄法奥德短章", nos:[7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,72,73,74,75,76,77,78,79,80,81,82,83,84] },
+    econ: { name:"经济 · 投资与理财", sub:"复利 · 周期 · 危机 · 认知变现", nos:[2,5,6,27,29,32,34,44,45,46,47] },
+    hist: { name:"历史 · 文明与简史", sub:"通史 · 微观史 · 国别史", nos:[3,42,43,49,61] },
+    tech: { name:"科技 · AI 与未来", sub:"机器 · 算法 · 人机伦理 · 科普", nos:[4,35,36,37,48,54,58,60,69,70,71] },
+    phil: { name:"国学 · 哲学经典", sub:"道德经 · 庄子 · 易经 · 科学哲学", nos:[38,40,41,51,53,65] },
+    mind: { name:"心灵 · 禅与修行", sub:"见地 · 修证 · 行愿", nos:[1,52,55,56,57] },
+    grow: { name:"成长 · 方法与职场", sub:"习惯 · 转型 · 组织 · 商业", nos:[28,30,31,33,39,50,64] },
+    ciyu: { name:"诗词古文 · 华章精读", sub:"诗经 · 杜甫 · 词集 · 古文观止 · 苏轼", nos:[59,62,63,66,67,68] }
+  };
+  const AUTHORS = [
+    { name:"见君", sub:"心灵四部曲 + 庄子解读 · 中国社会出版社", nos:[1,51,52,55,56,57] },
+    { name:"尤瓦尔·赫拉利", sub:"宏观历史与未来学 · 中信出版社", nos:[42,43] },
+    { name:"弗吉尼亚·吴尔夫", sub:"意识流双璧 · 英文精读", nos:[11,19] },
+    { name:"流沙河", sub:"诗经点醒 · 讲座实录十讲", nos:[63] },
+    { name:"冯至 · 萧涤非", sub:"杜甫双册：传＋诗选注 · 人民文学", nos:[62] },
+    { name:"钱乘旦", sub:"英国通史六卷主编 · 江苏人民", nos:[61] },
+    { name:"臧克家 · 周振甫", sub:"毛泽东诗词讲解 · 讲解与注释双轨", nos:[67] },
+    { name:"一人一书 · 单册作家", sub:"七十位作家 · 各领一册", singles:true }
+  ];
+
+  /* ============ 双语书廊（第 7 部～第 26 部 · 原文中英对照） ============ */
+
+  const byNo = {}; BOOKS.forEach(b => byNo[b.no] = b);
+  /* 深度研读工程：有 study 研读页的书，卡片上加醒目入口 */
+  const STUDY = { 2:"study-02.html", 3:"study-03.html", 4:"study-04.html", 5:"study-05.html", 6:"study-06.html", 7:"study-07.html", 8:"study-08.html", 9:"study-09.html", 10:"study-10.html", 11:"study-11.html", 12:"study-12.html", 13:"study-13.html", 14:"study-14.html", 15:"study-15.html", 16:"study-16.html", 17:"study-17.html", 18:"study-18.html", 19:"study-19.html", 20:"study-20.html", 21:"study-21.html", 22:"study-22.html", 23:"study-23.html", 24:"study-24.html", 25:"study-25.html", 26:"study-26.html", 27:"study-27.html", 28:"study-28.html", 29:"study-29.html", 30:"study-30.html", 31:"study-31.html", 32:"study-32.html", 33:"study-33.html", 34:"study-34.html", 35:"study-35.html", 36:"study-36.html", 37:"study-37.html", 39:"study-39.html", 40:"study-40.html", 47:"study-47.html", 49:"study-49.html", 44:"study-44.html", 48:"study-48.html", 45:"study-45.html", 42:"study-42.html", 43:"study-43.html", 46:"study-46.html", 50:"study-50.html", 53:"study-53.html", 54:"study-54.html", 51:"study-51.html", 52:"study-52.html", 55:"study-55.html", 56:"study-56.html", 57:"study-57.html", 72:"study-72.html", 73:"study-73.html", 74:"study-74.html", 75:"study-75.html", 76:"study-76.html", 77:"study-77.html", 78:"study-78.html", 79:"study-79.html", 80:"study-80.html", 81:"study-81.html", 82:"study-82.html", 83:"study-83.html", 84:"study-84.html", 41:"study-41.html", 38:"study-38.html", 62:"study-62.html", 63:"study-63.html", 65:"study-65.html", 66:"study-66.html", 67:"study-67.html", 64:"study-64.html", 69:"study-69.html", 58:"study-58.html", 60:"study-60.html", 61:"study-61.html", 59:"study-59.html", 68:"study-68.html", 70:"study-70.html", 71:"study-71.html" };
+
+  /* ============ 收藏（localStorage 持久化） ============ */
+  const favArr = () => { try { return JSON.parse(localStorage.getItem("xsj-fav") || "[]"); } catch (e) { return []; } };
+  const saveFav = a => { try { localStorage.setItem("xsj-fav", JSON.stringify(a)); } catch (e) {} };
+  const isFav = no => favArr().includes(no);
+  function syncFavCount() { document.getElementById("cntFav").textContent = favArr().length; }
+
+  function toastMsg(msg) {
+    const t = document.getElementById("toast");
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastMsg._t);
+    toastMsg._t = setTimeout(() => t.classList.remove("show"), 1800);
+  }
+
+  function card(b) {
+    const badge = STUDY[b.no] ? `<span class="study-tag" onclick="event.preventDefault();event.stopPropagation();location.href='${STUDY[b.no]}'">📖 深度研读</span>` : "";
+    const fav = isFav(b.no);
+    return `<a class="book-card vis" href="${b.file}">
+      <div class="book-cover"><div class="ring"></div><div class="glyph">${b.glyph}</div>${badge}
+        <span class="fav-mark${fav ? " on" : ""}" data-no="${b.no}" title="${fav ? "移出收藏" : "加入收藏"}">${fav ? "★" : "☆"}</span></div>
+      <div class="bc-body">
+        <h3>${b.title}</h3>
+        ${b.en ? `<div class="bc-en">${b.en}</div>` : ""}
+        <div class="bc-author">${b.author}</div>
+        <div class="bc-desc">${b.desc}</div>
+        <div class="bc-tags">${b.tags.map(t => `<span>${t}</span>`).join("")}</div>
+        <span class="enter-hint">御风入阁 · 开始阅读</span>
+      </div>
+    </a>`;
+  }
+  const GHOST = `<div class="book-card ghost">
+      <div class="book-cover"><div class="glyph" style="opacity:.3">？</div></div>
+      <div class="bc-body">
+        <h3>下一部书 · 待上架</h3>
+        <div class="bc-author">结构已备好，加书即入架</div>
+        <div class="bc-desc">在 books.js 清单中追加一条记录，书架与导航自动更新。</div>
+      </div>
+    </div>`;
+
+  function section(head, bs) {
+    const cards = bs.map(card).join("");
+    return `<div class="cat-head"><span class="cat-count">${bs.length} 册</span>
+      <h2>${head.name}</h2><div class="cat-sub">${head.sub}</div></div>
+      <div class="shelf-grid">${cards}</div>`;
+  }
+
+  function viewAll() {
+    return `<div class="shelf-grid" id="shelfGrid">` +
+      BOOKS.map(card).join("") + GHOST + `</div>`;
+  }
+  function viewType() {
+    return Object.keys(CATS).map(k => section(CATS[k], CATS[k].nos.map(n => byNo[n]).filter(Boolean))).join("");
+  }
+  function viewAuthor() {
+    let html = "";
+    for (const a of AUTHORS) {
+      const bs = a.singles
+        ? BOOKS.filter(b => !AUTHORS.some(x => !x.singles && x.nos.includes(b.no)))
+        : a.nos.map(n => byNo[n]).filter(Boolean);
+      html += section(a, bs);
+    }
+    return html;
+  }
+  /* 收藏视图：已收藏在前（点 ★ 移出），全部藏书在后（点 ☆ 加入） */
+  function viewFav() {
+    const favs = favArr();
+    const favBooks = BOOKS.filter(b => favs.includes(b.no));
+    const rest = BOOKS.filter(b => !favs.includes(b.no));
+    let html = "";
+    if (favBooks.length) {
+      html += section({ name:"我的收藏", sub:"常读常新 · 点 ★ 移出收藏" }, favBooks);
+    } else {
+      html += `<div class="cat-head"><h2>我的收藏</h2>
+        <div class="cat-sub">还没有收藏——在下面任意一本书上点亮 ☆，它就会搬进这里。</div></div>`;
+    }
+    html += section({ name:"全部藏书 · 点 ☆ 加入收藏", sub:"喜爱哪本，点亮哪本" }, rest);
+    return html;
+  }
+  function viewBilingual() {
+    const nos = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
+    const bs = nos.map(n => byNo[n]).filter(Boolean);
+    return section({ name:"双语书廊", sub:"第七部～第二十六部 · 二十部名著原文中英对照 · 深度研读与语言档案" }, bs);
+  }
+  /* 查找：书名／英文书名最优先，作者次之，标签与简介作「相关书籍」 */
+  const normS = s => (s || "").toLowerCase().replace(/\s+/g, "");
+  function viewSearch(q) {
+    const nq = normS(q);
+    if (!nq) return "";
+    const hitTitle = [], hitAuthor = [], hitOther = [];
+    for (const b of BOOKS) {
+      if (normS(b.title).includes(nq) || normS(b.en).includes(nq)) hitTitle.push(b);
+      else if (normS(b.author).includes(nq)) hitAuthor.push(b);
+      else if ((b.tags || []).some(x => normS(x).includes(nq)) || normS(b.desc).includes(nq)) hitOther.push(b);
+    }
+    const all = hitTitle.concat(hitAuthor, hitOther);
+    let html = `<div class="cat-head"><span class="cat-count">${all.length} 册</span>
+      <h2>查找 · ${q}</h2>
+      <div class="cat-sub">书名 ${hitTitle.length} · 作者 ${hitAuthor.length} · 相关书籍 ${hitOther.length}</div></div>`;
+    if (all.length) html += `<div class="shelf-grid">` + all.map(card).join("") + `</div>`;
+    else html += `<div class="cat-head"><div class="cat-sub">没有找到与「${q}」匹配的书——试试作者姓氏、书名关键字或类型词。</div></div>`;
+    return html;
+  }
+
+  const wrap = document.getElementById("shelfWrap");
+  const VIEWS = { all: viewAll, type: viewType, author: viewAuthor, fav: viewFav, bilingual: viewBilingual };
+  let currentView = "all";
+  function show(v, keepScroll) {
+    currentView = v;
+    wrap.innerHTML = VIEWS[v]();
+    document.querySelectorAll("#shelfTabs button").forEach(btn =>
+      btn.classList.toggle("on", btn.dataset.view === v));
+    if (!keepScroll) window.scrollTo({ top: document.getElementById("shelfTabs").offsetTop - 10, behavior: "smooth" });
+  }
+  document.getElementById("shelfTabs").addEventListener("click", e => {
+    const btn = e.target.closest("button[data-view]");
+    if (btn) { document.getElementById("q").value = ""; show(btn.dataset.view); }
+  });
+
+  /* 收藏角标：任意视图点 ☆/★ 即增删，收藏视图即时重排 */
+  wrap.addEventListener("click", e => {
+    const fm = e.target.closest(".fav-mark");
+    if (!fm) return;
+    e.preventDefault(); e.stopPropagation();
+    const no = parseInt(fm.dataset.no, 10);
+    let a = favArr();
+    if (a.includes(no)) { a = a.filter(n => n !== no); toastMsg("已移出收藏"); }
+    else { a.push(no); toastMsg("已加入收藏 ✦"); }
+    saveFav(a);
+    syncFavCount();
+    show(currentView, true);
+  });
+
+  /* 查找框：输入即搜，清空回到当前分类 */
+  let searchTimer = null;
+  document.getElementById("q").addEventListener("input", function () {
+    clearTimeout(searchTimer);
+    const q = this.value.trim();
+    searchTimer = setTimeout(() => {
+      if (q) {
+        wrap.innerHTML = viewSearch(q);
+        document.querySelectorAll("#shelfTabs button").forEach(btn => btn.classList.remove("on"));
+      } else {
+        show(currentView, true);
+      }
+    }, 180);
+  });
+
+  syncFavCount();
+  show("all");
+</script>
+</body>
+</html>

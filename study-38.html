@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 华杉讲透国学经典 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/38-huashan.html">本书书页</a></p>
+<h1>深度研读 · 华杉讲透国学经典</h1>
+<p class="sub">华杉 著 · 三部合一合集——孙子兵法·论语·孟子</p>
+<p class="lead">研读说明：本册是华杉「讲透」三部曲的合集——以《华杉讲透〈孙子兵法〉》《华杉讲透〈论语〉》《华杉讲透〈孟子〉》逐句讲解，把三部分别读成「赢了再打的战略学」「君子求诸己的修身学」「仁义内在的心性学」。华杉的方法一以贯之：不玩玄的，逐句注解加案例，把经典还原为日用常行的操作手册。本研读共十二节——孙子六节（先胜后战、上兵伐谋、治气、奇正、知己知彼、火攻用间），论语三节（忠恕、求诸己、三戒三畏九思），孟子三节（义利之辨、四端放心、修身立命），引文经忠实度校验，后附金句回顾与应用。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>孙子·先胜后战：赢了再打</a></li>
+<li><a href="#s2"><b>贰</b>孙子·不战而屈人之兵：上兵伐谋</a></li>
+<li><a href="#s3"><b>叁</b>孙子·治气：避其锐气，击其惰归</a></li>
+<li><a href="#s4"><b>肆</b>孙子·奇正：以正合，以奇胜</a></li>
+<li><a href="#s5"><b>伍</b>孙子·知己知彼：问题往往出在不知己</a></li>
+<li><a href="#s6"><b>陆</b>孙子·火攻费留与用间：非利不动，先知取于人</a></li>
+<li><a href="#s7"><b>柒</b>论语·一以贯之：夫子之道，忠恕而已矣</a></li>
+<li><a href="#s8"><b>捌</b>论语·君子求诸己：行有不得，反求诸己</a></li>
+<li><a href="#s9"><b>玖</b>论语·修身日课：三戒、三畏、九思</a></li>
+<li><a href="#s10"><b>拾</b>孟子·义利之辨：何必曰利，民为贵</a></li>
+<li><a href="#s11"><b>拾壹</b>孟子·四端与放心：人性向善的开关</a></li>
+<li><a href="#s12"><b>拾贰</b>孟子·修身立命：天将降大任与养心寡欲</a></li>
+<li><a href="#s13"><b>拾叁</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>孙子·先胜后战：赢了再打</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>夫未战而庙算胜者，得算多也；未战而庙算不胜者，得算少也。多算胜，少算不胜，而况于无算乎？吾以此观之，胜负见矣</p>
+<p>是故胜兵先胜而后求战，败兵先战而后求胜</p>
+<p>故善战者，立于不败之地，而不失敌之败也</p>
+<p class="src">——《孙子兵法·计篇》《军形篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：华杉把《孙子兵法》第一篇的「计」讲透为计算的计，不是奇谋巧计——庙算就是开战前的SWOT分析：五事七计打分，分多的胜，分少的败。《计篇》收束在「多算胜，少算不胜」，《军形篇》给出全书心法：是故胜兵先胜而后求战，败兵先战而后求胜——先修炼到不可战胜，再等敌人露出败象。善战者，立于不败之地，而不失敌之败也：自己不出破绽，同时不错过对手的破绽。</p>
+<p><b>逻辑脉络</b>：全书的价值排序由此立定：计（庙算）→作战（成本）→谋攻（不战）→形（先胜）——先算胜负，再算成本，能不打就不打，要打就打有把握的仗。华杉称之为「赢了再打」：胜负在开战之前已经决定，战场只是把结果执行出来。善战者之胜，无智名，无勇功——因为赢的是必赢之仗，看起来平淡无奇。</p>
+<p><b>现实意义</b>：翻译成经营语言：先胜后战就是「先做赢面计算，再投入资源」——项目立项前先回答五个问题：我方的五事七计各几分？成本能承受吗？能不能不打？赢了之后守得住吗？败了退路在哪里？答不全就别兴师动众——没有胜算就等，等本身就是一种战略动作。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>孙子·不战而屈人之兵：上兵伐谋</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>是故百战百胜，非善之善者也。不战而屈人之兵，善之善者也</p>
+<p>故上兵伐谋，其次伐交，其次伐兵，其下攻城</p>
+<p>故小敌之坚，大敌之擒也</p>
+<p class="src">——《孙子兵法·谋攻篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《谋攻篇》把价值观推到顶点：百战百胜不是最好的，因为打了一百仗已经杀敌一千自损八百；不战而屈人之兵才是善之善者。手段的优先级随即排开：故上兵伐谋，其次伐交，其次伐兵，其下攻城——伐谋是让对手的战略胎死腹中，伐交是断他的外援，伐兵是战场上解决，攻城是最下策，为不得已。孙子的精髓是不战，而不是战——把前面的功课都做足了，根本就没有战。</p>
+<p><b>逻辑脉络</b>：与上兵伐谋互为反面的是认输的智慧：小敌之坚，大敌之擒也——弱小的一方若一味坚守硬拼，只会被强大的对手生擒。十则围之，五则攻之，倍则分之，敌则能战之，少则能逃之，不若则能避之——兵力的每个档位都有对应动作，档位不够时，「逃」与「避」就是正确答案。华杉引施振荣的话说：认输才会赢——人性的特点是要赢，但现实是很可能要输，输掉的认了，保住和扩大赢得的。</p>
+<p><b>现实意义</b>：两个动作直接可搬：一，谈判与竞争先问「这件事能不能伐谋伐交解决」——把冲突消灭在方案层面与联盟层面，成本最低；二，给自己列一张「不战清单」——哪些仗兵力档位不够就绝不打，打输了的仗学会及时止损退出，认输不是失败，是不把失败扩大。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>孙子·治气：避其锐气，击其惰归</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>故三军可夺气，将军可以夺心</p>
+<p>是故朝气锐，昼气惰，暮气归。故善用兵者，避其锐气，击其惰归，此治气者也</p>
+<p>以治待乱，以静待哗，此治心者也</p>
+<p class="src">——《孙子兵法·军争篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《军争篇》的「四治」是管理士气与心态的完整技术：治气、治心、治力、治变。核心是故三军可夺气，将军可以夺心——士气可以被打击，心态可以被搅动。是故朝气锐，昼气惰，暮气归：早上的气最锐，中午懈怠，傍晚想回家——善用兵者，避其锐气，击其惰归，此治气者也。治气首先是治自己的气：力不能久，气没法总是满的，要随时有治气的意识，先管好自己的士气，别老琢磨别人。</p>
+<p><b>逻辑脉络</b>：四治是一个从时间到心态到体力的完整坐标系：治气看一天之内气的节奏（朝气锐、昼气惰、暮气归），治心看乱与静（以治待乱，以静待哗），治力看远近劳逸（以近待远，以佚待劳，以饱待饥），治变看阵型（无邀正正之旗，无击堂堂之阵——不拦整装的军旗，不击雄壮的阵列）。别人气盛的时候避一避、熬一熬，等他兴奋劲过了、饿了累了倦了，再打。</p>
+<p><b>现实意义</b>：把治气用到自己身上：一天之内，锐气时段留给最难的事，惰气时段只做例行事务——这是个人版的朝气锐、昼气惰、暮气归。谈判与竞争也一样：不在对方气头上硬碰，等一等；自己的团队则要防止「暮气归」——连续加班冲刺的队伍，第二天上午大概率在打败仗。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>孙子·奇正：以正合，以奇胜</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>凡战者，以正合，以奇胜。故善出奇者，无穷如天地，不竭如江河</p>
+<p>战势不过奇正，奇正之变，不可胜穷也。奇正相生，如循环之无端，孰能穷之</p>
+<p>三军之众，可使必受敌而不败者，奇正是也</p>
+<p class="src">——《孙子兵法·兵势篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：这是《孙子兵法》被误读最多的一句话：以正合，以奇胜——奇不念qí，念jī，数学里奇数偶数的奇，又叫余奇，就是预备队。凡战者，以正合，以奇胜：正兵先打，主帅在指挥所观察，等到关键时候投入预备队，解决战斗。不是出奇制胜的奇招，而是手里永远留着一支没打出去的兵。善出奇者，无穷如天地，不竭如江河——预备队用之不尽的奥秘，在于分战法：兵必分正奇，正兵打完变奇兵，奇兵出去变正兵。</p>
+<p><b>逻辑脉络</b>：战势不过奇正，奇正之变，不可胜穷也。奇正相生，如循环之无端——奇正是相互转化的：正面接敌的是正，侧翼杀出的是奇；一旦投入战斗，昨天的奇就成了今天的正，新的预备队再补上来。声不过五，五声之变不可胜听；色不过五，五色之变不可胜观——要素简单，组合无穷。三军之众，可使必受敌而不败者，奇正是也：全军人人都可能被攻击而不溃败，靠的就是正奇分工的体系。</p>
+<p><b>现实意义</b>：资源管理的黄金律：任何投入都分两笔——前线投放的正兵，和绝不轻易动用的预备队。现金、人力、时间都是：把全部资源押上正面战场的人，一次意外就出局；永远留一手的人，胜负手出现在自己选择的关键时刻。出奇制胜的前提是先有正——没有正兵接敌，预备队再强也没戏唱。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>孙子·知己知彼：问题往往出在不知己</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>故曰：知彼知己，百战不殆；不知彼而知己，一胜一负；不知彼，不知己，每战必殆</p>
+<p>故知胜有五：知可以战与不可以战者胜；识众寡之用者胜；上下同欲者胜；以虞待不虞者胜；将能而君不御者胜</p>
+<p>故曰：知彼知己，胜乃不殆；知天知地，胜乃不穷</p>
+<p class="src">——《孙子兵法·谋攻篇》《地形篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：故曰：知彼知己，百战不殆——注意原序是知彼在前、知己在后。华杉点破关键：我们关注的往往是知彼，因为以为知己是理所当然的；现实恰恰相反，问题往往出在不知己。自己有几个斤两、哪些短板、哪些仗打不了，没人肯认真盘算。知胜有五给出了知己的五个科目：知可以战与不可以战者胜（知道自己什么时候能打）、识众寡之用者胜（知道兵力怎么配）、上下同欲者胜（知道人心齐不齐）、以虞待不虞者胜（知道谁有准备）、将能而君不御者胜（知道组织放不放权）。</p>
+<p><b>逻辑脉络</b>：到了《地形篇》，知己知彼再加一层知天知地：知彼知己，胜乃不殆；知天知地，胜乃不穷——对手与自己之外的第三方变量（天时、地形、环境）才是让胜利穷尽的变量。三层信息的次序递进：知彼是情报工作，知己是自我盘点，知天知地是对局势大势的判断——三层都通，才谈得上「动而不迷，举而不穷」。</p>
+<p><b>现实意义</b>：把「不知己」变成例行公事：每季度做一次自我盘点——我方现金流撑几个月？核心人才的离职风险？哪些业务其实一直在亏损？竞品情报反而好收集，自己的窟窿没人愿意报。知胜五问可以直接做成决策清单：能打吗、资源够吗、团队齐吗、准备足吗、放权了吗——五问有一步答不上，这一仗就先不打。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>孙子·火攻费留与用间：非利不动，先知取于人</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>主不可以怒而兴师，将不可以愠而致战；合于利则动，不合于利则止</p>
+<p>怒可以复喜，愠可以复悦，亡国不可以复存，死者不可以复生</p>
+<p>先知者，不可取于鬼神，不可象于事，不可验于度，必取于人，知敌之情者也</p>
+<p class="src">——《孙子兵法·火攻篇》《用间篇》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《火攻篇》的落点不是放火，是刹车：夫战胜攻取，而不修其功者，凶，命曰费留——打赢了却不巩固战果，等于白打，甚至更糟。所以立了三条铁律：非利不动，非得不用，非危不战。主不可以怒而兴师，将不可以愠而致战；合于利则动，不合于利则止。理由冷峻到极点：怒可以复喜，愠可以复悦——情绪过去就过去了；亡国不可以复存，死者不可以复生——代价却不能重来。故明君慎之，良将警之，此安国全军之道也。</p>
+<p><b>逻辑脉络</b>：《用间篇》把全书最后一篇给了情报：兴师十万，日费千金，为的是争一日之胜——舍不得爵禄百金去买情报，是不仁之至。先知者，不可取于鬼神，不可象于事，不可验于度，必取于人，知敌之情者也——情报不靠占卜、不靠类比、不靠推算，必须靠人到现场。故三军之事，莫亲于间，赏莫厚于间，事莫密于间：情报人员要最亲近、待遇最厚、保密最严。上智为间，必成大功——用间篇收全书，情报是三军所恃而动的基础。</p>
+<p><b>现实意义</b>：两条铁律跨行业通用：一，情绪决策禁令——重要的决定永远不在愤怒、亢奋的当天拍板，因为怒可以复喜，而钱回不来；二，情报预算——进入一个新市场、新领域，先投人做实地调研，「必取于人」：不迷信报告、不迷信推演，派人到现场看过问过，才算知。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>论语·一以贯之：夫子之道，忠恕而已矣</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>参乎！吾道一以贯之</p>
+<p>夫子之道，忠恕而已矣</p>
+<p>己所不欲，勿施于人</p>
+<p class="src">——《论语·里仁》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：孔子对曾子说：参乎！吾道一以贯之。曾子应了一声「唯」，孔子就走了。门人不解，曾子替老师交底：夫子之道，忠恕而已矣。最高深的道，浓缩成两个字——忠，是「己欲立而立人，己欲达而达人」，自己想成就的，也帮别人成就；恕，是己所不欲，勿施于人，自己不愿落到自己头上的事，不要加之于别人。华杉点题：学习难在一以贯之——道理谁都懂一点，难的是贯穿到每件事上。</p>
+<p><b>逻辑脉络</b>：这一段的张力在「唯」：曾子没有追问、没有请示，应了一声就懂了——因为忠恕之道是日用常行，不是玄理。孔子学说从不要求人做圣人事，只要求在「将心比心」这个人人都会的动作上做到一以贯之：忠是积极面的推己及人，恕是消极面的将心比心，两面对读，就是与人打交道的全部算法。后世讲一以贯之，宋儒多有玄化解释，华杉拉回平实：就是忠恕两个字，用一辈子。</p>
+<p><b>现实意义</b>：忠恕是一套零成本的协作算法：布置任务前先问自己「这事换我干，我愿意吗」（恕）；带团队时问「我要的成果，帮过他达成吗」（忠）。写邮件、定规则、做产品同理——自己不想收到的通知，就别发给别人；自己看不懂的说明，就别指望客户看得懂。将心比心四个字，就是全部。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>论语·君子求诸己：行有不得，反求诸己</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>君子求诸己，小人求诸人</p>
+<p>躬自厚而薄责于人，则远怨矣</p>
+<p>君子坦荡荡，小人长戚戚</p>
+<p class="src">——《论语·卫灵公》《论语·述而》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：君子求诸己，小人求诸人——遇到问题，君子在自己身上找原因，小人在别人身上找原因。孔子给出操作版：躬自厚而薄责于人，则远怨矣——厚责自己，薄责别人，就是严以律己、宽以待人；遇到不如意总在自己身上找问题，就没工夫怪别人了，修身进步快，别人也不怨你。心态账随之算清：君子坦荡荡，小人长戚戚——一贯坦然自在与总是忧心忡忡，差别不在境遇，在归因方式。</p>
+<p><b>逻辑脉络</b>：这一节是《论语》的「归因理论」：同一场失败，向外归因的人学会的是抱怨与结怨（远怨的反面——怨越积越多），向内归因的人学会的是改进（过则勿惮改、过而不改是谓过矣）。它与孟子「行有不得，反求诸己」一脉相承，构成儒家修身的第一杠杆：你唯一能完全控制的变量是自己——把力气全部投在可控变量上，是效率最高的活法。</p>
+<p><b>现实意义</b>：可执行的归因清单：项目复盘会上第一条规则——先说自己一方可以改进什么，再谈外部因素；家庭矛盾里先问「我哪句话说得不对」，再问「他怎么能这样」。一个粗略的自检指标：如果你最近一个月抱怨的对象超过三个人，大概率问题在自己——这就是长戚戚的信号，该做一次反求诸己了。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>论语·修身日课：三戒、三畏、九思</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>君子有三戒：少之时，血气未定，戒之在色；及其壮也，血气方刚，戒之在斗；及其老也，血气既衰，戒之在得</p>
+<p>君子有三畏：畏天命，畏大人，畏圣人之言</p>
+<p>君子有九思：视思明，听思聪，色思温，貌思恭，言思忠，事思敬，疑思问，忿思难，见得思义</p>
+<p class="src">——《论语·季氏》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《季氏》篇连出三张清单，是儒家的君子修身操。三戒按人生阶段分配：少年戒色（血气未定），壮年戒斗（血气方刚），老年戒得（血气既衰——最怕的就是患得患失、贪恋不舍）。三畏立敬畏的对象：畏天命（敬畏规律与使命）、畏大人（敬畏职责所系的人）、畏圣人之言（敬畏经过验证的道理）；小人不知天命而不畏，所以狎大人、侮圣人之言。九思是九个即时的自检动作：视思明、听思聪、色思温、貌思恭、言思忠、事思敬、疑思问、忿思难、见得思义。</p>
+<p><b>逻辑脉络</b>：三张清单的层次是：三戒管欲望（按年龄排雷），三畏管敬畏（给头顶立几样不可轻慢的东西），九思管当下（每个情境配一个自查动作——看东西时问看清楚没有，别瞟一眼就下结论；愤怒时想后患；见利时想该不该拿）。三者合起来是完整的行为操作系统：欲望有边界、头顶有敬畏、眼前有自检——孔子不说「成圣」，只给可执行的日常动作。</p>
+<p><b>现实意义</b>：九思可以直接当会议与决策的 checklist 用：下结论前问「我确认看清了吗」（视思明）；发火前问「这事的后患我担得起吗」（忿思难）；签字前问「这好处我该拿吗」（见得思义）。三戒按年龄段自查：年轻时最耗人的是诱惑，中年最耗人的是争胜，老年最耗人的是不肯放手——每个阶段提前知道自己会栽在什么上。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>孟子·义利之辨：何必曰利，民为贵</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>何必曰利？亦有仁义而已矣</p>
+<p>民为贵，社稷次之，君为轻</p>
+<p>春秋无义战</p>
+<p class="src">——《孟子·梁惠王上》《孟子·尽心下》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：孟子见梁惠王，开口第一句就是义利之辨：王何必曰利？亦有仁义而已矣。这不是不要利，而是利的顺序——上下交征利，国家就危险了；仁义才是最稳定的利益结构。落到政治哲学的底座是民本三句：民为贵，社稷次之，君为轻——民心的分量比社稷重，社稷的分量比君主重，君主是可以变置的，民心不可欺。而《尽心下》一句春秋无义战，是对整个争霸时代的判决：那时的战争没有正义可言，只有利益的攻伐。</p>
+<p><b>逻辑脉络</b>：孟子的义利观有一条清晰的推理链：人人都谈利，则人人算计，争利无穷尽，最终谁都拿不到利；人人谈仁义，各安其分，利反而分布在秩序里。这套逻辑与孔子的「君子喻于义，小人喻于利」一脉相承，而孟子把它推到制度层：既然民为贵，则政权的合法性来自民心，战争若不为民而是为夺利，便是无义之战——实用主义永远败给理想主义，因为理想主义定义了什么是赢。</p>
+<p><b>现实意义</b>：义利之辨用到组织里，是价值观排序问题：客户利益、员工利益、股东短期利润，谁先谁后？上下交征利的公司，各部门KPI互相算计，最终集体输给把客户价值放在第一位的对手。民为贵用到管理上，是最一线的员工与用户的声音，比管理层的判断更重——「得民心者」不是口号，是排序。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>孟子·四端与放心：人性向善的开关</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>恻隐之心，仁之端也；羞恶之心，义之端也；辞让之心，礼之端也；是非之心，智之端也</p>
+<p>学问之道无他，求其放心而已矣</p>
+<p>先立乎其大者，则其小者不能夺也</p>
+<p class="src">——《孟子·告子上》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《告子上》是孟子的人性论战场：面对告子「食色，性也」「仁内义外」的连番挑战，孟子立起四端论——恻隐之心，仁之端也；羞恶之心，义之端也；辞让之心，礼之端也；是非之心，智之端也。仁义礼智不是外部灌输的规范，是人心里本来就有的种子，非由外铄，我固有之。而成人要做的是两件事：一是求其放心——学问之道无他，求其放心而已矣，把跑丢了的本心找回来；二是先立乎其大者，则其小者不能夺也——先把心这个大器官立住，耳目口腹这些小器官就夺不走你的方向。</p>
+<p><b>逻辑脉络</b>：四端论的证明法是场景化的：见孺子将入于井，人人皆有怵惕恻隐——这心跳先于任何利害计算，所以善是人的出厂设置。心之官则思：牛山旦旦而伐之的比喻说明善端会被砍光（所以要养夜气、平旦之气），一暴十寒说明善端会被荒废（所以要日日不断）。求放心是总纲——丢了的心不在别处，就在自己身上，去把它找回来，这既是方法论也是安慰：没有人坏到底，只有忘了找。</p>
+<p><b>现实意义</b>：四端是四张自检卡：看到别人遭难心里咯噔一下了吗（恻隐）？做了亏心事脸上发烫吗（羞恶）？该让的位让了吗（辞让）？这事对不对心里有数吗（是非）？四张卡都还有反应，说明本心还在。先立乎其大者用到个人管理上：先把「我是谁、我图什么」这个大问题立住，碎片信息、小利诱惑就夺不走你的注意力——方向感是最好的防干扰系统。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>孟子·修身立命：天将降大任与养心寡欲</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身</p>
+<p>生于忧患，而死于安乐也</p>
+<p>养心莫善于寡欲</p>
+<p class="src">——《孟子·告子下》《孟子·尽心下》 ｜ 据《华杉讲透国学经典》（华杉 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：《告子下》开篇就是那个著名的段落：天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身——磨难不是惩罚，是委任状之前的训练。其机理在后面两句：人恒过，然后能改——人是在犯错中学会改正的；生于忧患，而死于安乐也——忧患让人保持警觉与进化，安乐让人退化，不仅国家如此，个人亦然。《尽心下》给出收束：养心莫善于寡欲——养心的方法没有比减少欲望更好的了，寡欲的关键在养志：志向立住了，欲望自然退后。</p>
+<p><b>逻辑脉络</b>：这一节是孟子哲学的行动层：心性论（四端）讲善从哪来，修养论讲善怎么保住并长成。路径是一条因果链：挫折（苦心志）→反思（动心忍性，曾益其所不能）→能力增长→承担大任。反面同样成立：生于忧患死于安乐——不是苦难必然成就人，而是安逸必然废掉人；所以逆境的正确用法是「人恒过，然后能改」——把每次错误都当成课程消化掉。寡欲则是防守面：进攻靠养志，防守靠寡欲，一进一守，心才能立得住。</p>
+<p><b>现实意义</b>：三层动作直接可用：一，重新定义自己的低谷——把它读成「降大任之前的训练期」，问的是这段苦在教我什么本事，而不是为什么是我；二，给顺境设防——越是舒服的年份越要主动找挑战（学新技能、啃硬骨头），防「死于安乐」；三，做减法清单——每月删掉一项可有可无的欲望型支出或事务（寡欲），省下来的时间精力投给志向所在。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读《华杉讲透国学经典》的目的，是把孙子兵法的先胜、论语的忠恕、孟子的四端，变成今天每个人案头的决策清单与修身日课：先算再打、将心比心、求其放心，全在一念之间。</p>
+<p><b>途有所不由，军有所不击，城有所不攻，地有所不争，君命有所不受</b>应用口诀：机会太多时，先列「不打清单」。</p>
+<p><b>兵之情主速，乘人之不及，由不虞之道，攻其所不戒也</b>应用口诀：时机窗口出现时，速度本身就是护城河。</p>
+<p><b>进不求名，退不避罪，唯人是保，而利合于主，国之宝也</b>应用口诀：做对的事不图名声，认错的事不图面子。</p>
+<p><b>是故始如处女，敌人开户；后如脱兔，敌不及拒</b>应用口诀：布局时安静如处子，出手时快如脱兔。</p>
+<p><b>三人行，必有我师焉。择其善者而从之，其不善者而改之</b>应用口诀：好榜样学，坏样板也是镜子。</p>
+<p><b>知之为知之，不知为不知，是知也</b>应用口诀：承认不知道，是知道的开始。</p>
+<p><b>见贤思齐焉，见不贤而内自省也</b>应用口诀：见牛人别嫉妒，见糟人别嘲笑，都用来照自己。</p>
+<p><b>乡愿，德之贼也</b>应用口诀：人人都说你好，先查查自己跟谁和了稀泥。</p>
+<p><b>舍生而取义者也</b>应用口诀：先想清楚什么比命重要，大事面前才不慌。</p>
+<p><b>三军之事，莫亲于间，赏莫厚于间，事莫密于间</b>应用口诀：情报是花小钱省大钱，别舍不得这个预算。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95" target="_blank" rel="noopener">孙子兵法 · 维基百科</a><span>背景：十三篇体系与「先胜后战」战略思想的通识框架，本书第一部的研究对象。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%AE%BA%E8%AF%AD" target="_blank" rel="noopener">论语 · 维基百科</a><span>背景：二十篇结构与孔门师徒问答的成书脉络，本书第二部的文本源流。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%AD%9F%E5%AD%90_(%E4%B9%A6)" target="_blank" rel="noopener">孟子 · 维基百科</a><span>佐证：七篇结构与性善论、仁政思想在儒学谱系中的位置，本书第三部的思想版图。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8D%8E%E6%9D%89" target="_blank" rel="noopener">华杉 · 维基百科</a><span>延伸：作者的调研咨询经历与「讲透」系列写作方法——逐句注解加案例的实用主义路线。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ～ 《华杉讲透国学经典》 ～ 原文据江苏凤凰文艺出版社·读客版校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>

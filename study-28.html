@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深度研读 · 创始人手记 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/28-chuangshou.html">本书书页</a></p>
+<h1>深度研读 · 创始人手记</h1>
+<p class="sub">季琦 著 · 携程·如家·汉庭·华住 · 生活与生意三册合编</p>
+<p class="lead">研读说明：本书是连续创业家季琦的随笔合集——上册谈生活即艺术（简洁、平衡、心与物），中册复盘十年创业路（携程/如家/汉庭到华住），下册谈华住哲学与远方故乡。本研读按十七个主题推进，先忠实摘录原文，再作要义解析（核心要义／逻辑脉络／现实意义）。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>简洁之美：从数学题到引力公式</a></li>
+<li><a href="#s2"><b>贰</b>乔布斯的启示：把人生的点连起来</a></li>
+<li><a href="#s3"><b>叁</b>万物是心的映射</a></li>
+<li><a href="#s4"><b>肆</b>审美的最高境界是平衡</a></li>
+<li><a href="#s5"><b>伍</b>第一程：携程——四个莽撞年轻人的平常故事</a></li>
+<li><a href="#s6"><b>陆</b>三家企业的共同点：变通与三年成型</a></li>
+<li><a href="#s7"><b>柒</b>至暗时刻：人生无所谓意义的两次危机</a></li>
+<li><a href="#s8"><b>捌</b>中国服务：继承式创新的大道</a></li>
+<li><a href="#s9"><b>玖</b>专业化才是企业成功的法宝</a></li>
+<li><a href="#s10"><b>拾</b>先做大还是先做强：120%的速度，80%的质量</a></li>
+<li><a href="#s11"><b>拾壹</b>企业哲学：决定位置的不是枪炮与金钱</a></li>
+<li><a href="#s12"><b>拾贰</b>创始人要深度沉浸于产品</a></li>
+<li><a href="#s13"><b>拾叁</b>常识管理：用机制替代层级</a></li>
+<li><a href="#s14"><b>拾肆</b>我们如何看待客户：好产品四要素</a></li>
+<li><a href="#s15"><b>拾伍</b>仰望天空和脚踏实地：月亮与六便士的中年和解</a></li>
+<li><a href="#s16"><b>拾陆</b>出离和进入：宇宙视角下的平常心</a></li>
+<li><a href="#s17"><b>拾柒</b>金句回顾 · 随身手册</a></li>
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>简洁之美：从数学题到引力公式</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>如果你辛辛苦苦地推导出一个特别复杂的结果，基本上都是错误的。数学题目做多了，我渐渐有了感觉，知道数学中存在一种「美感」。不仅逻辑上美，形式上也非常美。</p>
+<p>一个是大到天体的引力，另一个是微小粒子的引力，但在形式上却非常接近。再想一想人与人之间的引力，也非常相似……L是吸引力常量，c（charisma）是魅力量，和容貌、知识、性格、财富、地位等个人特质相关，r是距离。</p>
+<p class="src">——《创始人手记》上册「简洁之美」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：作者从学生时代「复杂的结果基本是错的」这一应试直觉，引出贯穿全书的美学信念：真理的形式是简洁的。万有引力、库仑力、人际吸引力三公式同构，把审美判断升级为认知方法论。</p>
+<p><b>逻辑脉络</b>：论证走三步：数学的形式美→自然规律的形式美→人际关系的同构。最后一步带点诗性推导（c=魅力量），但功能是示范「用统一的形式看世界」——这正是他做酒店产品的底层眼光（少即是多、标准可复制）。</p>
+<p><b>现实意义</b>：简洁判据可作为工作自检：凡是把问题做得越来越复杂的方案，多半还没找到本质。产品、流程、报告，都以「能否再砍掉一半」为成熟度标尺。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>乔布斯的启示：把人生的点连起来</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>2005年，乔布斯在斯坦福大学的毕业典礼上发表演讲。……在这篇演讲里，乔布斯讲述了他生活中的三个故事。第一个故事，是关于如何把生命中的各个点连起来的。</p>
+<p>他退学了。在当时，这个决定让他很担忧。</p>
+<p class="src">——《创始人手记》上册「乔布斯的启示」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：季琦借乔布斯演讲立「连点成线」的人生观：当下看似无用的经历（退学后的书法课、被公司开除），回头都成为事业的支点。当时的担忧与日后的价值之间存在时间差。</p>
+<p><b>逻辑脉络</b>：与上册「终点即是原点」「仰望天空和脚踏实地」互为呼应：理想主义的月亮（形而上）最终要在六便士（形而下）的实践中兑现——季琦自陈「大学时代那些理想主义在现实的商业世界里长出了果实」。</p>
+<p><b>现实意义</b>：对职业焦虑的解药：不必为眼前「无用的经历」恐慌，但要保持连接的主动性——定期复盘，把散点串成叙事，串出来的那条线就是你独有的竞争力。</p>
+</div>
+</section>
+<section id="s3">
+<h2><span class="no">叁</span>万物是心的映射</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我们对人、对环境、对别人的看法，实际上是内心的一个映射。……当我们天真烂漫、单纯无邪的时候，我们看别人也是通透的，看世界也是单纯明朗的。当我们变得老成……我们看这个世界的方式，也换成了一种成年人的世故、经济的眼光，自然，看到的世界就变样了。</p>
+<p>用哪种眼光看见的世界才是真实的呢？可能两种都是。</p>
+<p class="src">——《创始人手记》上册「万物是心的映射」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：回乡扫墓的经验触发核心命题：故乡的「物是人非」一半是世界变了，一半是自己的眼睛变了——心是万物的滤镜。「可能两种都是」的悬置判断，避免了简单的乡愁结论。</p>
+<p><b>逻辑脉络</b>：这一节把王阳明式的心学（万物是心的映射）落到生活经验：童年同学的陌生感不是他们的错，是观察者坐标系变了。作者由此走向自觉的修炼——保持通透的眼光，是「生活即艺术」的第一课。</p>
+<p><b>现实意义</b>：给管理者与投资者同样的提醒：你的判断里有多少是事实、多少是你的心镜？重大决策前值得自问一次——我此刻用的哪套眼光，它过滤掉了什么。</p>
+</div>
+</section>
+<section id="s4">
+<h2><span class="no">肆</span>审美的最高境界是平衡</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>后来我看王阳明，发现中庸的东方智慧特别好。所有的事情实际上是个平衡的艺术。如果全是精神，全是灵，那是清教徒。如果全是肉，就变成掉进卡拉OK里面整天找乐子的那群人。做人，做酒店，我都讲求平衡。</p>
+<p>我曾经写过一篇文章，叫「酒店十宗罪」，列举了我心目中欠缺节制的酒店设施和服务。当中，我批判了浴缸，认为它是典型的累赘。</p>
+<p class="src">——《创始人手记》上册「审美的最高境界是平衡」＋中册「华住的审美」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：年轻时信奉尼采式偏执，中年转向王阳明式平衡——季琦的审美进化史就是从极端到节制的转变。落地为产品哲学：批判「酒店十宗罪」（浴缸是典型累赘），一切设施以实际使用频率定取舍。</p>
+<p><b>逻辑脉络</b>：偏执与平衡各司其职：创业突围期需要偏执（乔布斯式的偏执狂成功），产品与服务需要平衡（结构与持久）。平衡不是平庸，而是「灵与肉」的比例管理——清教徒与享乐者都不合格。</p>
+<p><b>现实意义</b>：这给产品设计一个可操作判据：每项功能问「使用频率对得起占用成本吗」。浴缸之问适用于一切资源配置——会议室、会员体系、App功能，砍掉低频累赘就是美。</p>
+</div>
+</section>
+<section id="s5">
+<h2><span class="no">伍</span>第一程：携程——四个莽撞年轻人的平常故事</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>1999年，大学同学万辉介绍我认识梁建章，那时他在甲骨文公司（Oracle）工作。……于是，我们一拍即合，当即决定创业。又拉来了从事金融的沈南鹏（巧得很，南鹏也是万辉介绍认识的）和从事旅游业的范敏。大家志同道合，一起开始了创业：携程旅行网。</p>
+<p>当时，创业的主要动机就是想借助互联网的浪潮，多挣点钱。当然，其中也有理想的成分，想要做点什么来证明自己……这是四个不满现状、有些莽撞的年轻人被趋势所刺激，还带些理想主义，追逐财富梦想的平常的创业故事。</p>
+<p>商业模式也没有什么石破天惊的创新，只是仿照美国亿客行（Expedia）的模式，先从内容开始，然后靠订房、订票获取利润。</p>
+<p class="src">——《创始人手记》中册「我的十年创业路——第一程：携程」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：传奇的祛魅：携程的起点是「多挣点钱+证明自己」的平常动机，商业模式直接仿照 Expedia。伟大企业不必从伟大构想出发——四个人的互补（技术/金融/旅游/管理）与趋势的势能才是起点。</p>
+<p><b>逻辑脉络</b>：季琦刻意用「平常的创业故事」叙事，对抗成功学的神化倾向。四位创始人分工清晰（梁建章技术、沈南鹏资本、范敏行业、季琦运营），这个组合本身解释了携程为何能在模仿中胜出。</p>
+<p><b>现实意义</b>：组队启示：成员间的能力互补与信任历史（同学/朋友介绍链）比「颠覆式创意」更接近创业成功的充分条件。动机不纯不可耻，可持续的动机结构才重要。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>三家企业的共同点：变通与三年成型</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>第一，实际商业模型和最初融资的时候不完全一样。……关键是创业团队的变通能力，不断摸索和创新。如果守在当初不现实的理想模型里，这些初创的企业可能都会夭折在摇篮中。</p>
+<p>第二，基本每个企业都在三年左右成型。……就像生长发育一样，三年之中，这个企业的商业模型、团队、框架、性格、特质、文化等基础都长好了，后面就是进一步的生长。</p>
+<p>另外，投资者的信任非常重要，要能够给你时间和空间来试错和挪腾。因此找投资时要选择了解中国市场的基金和团队。</p>
+<p class="src">——《创始人手记》中册「三家企业的共同点」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：两条经验定律：一是商业模型必然漂移（携程从网上旅行社漂成订房中心，如家从联盟漂成直营，汉庭从中档漂成经济型）——变通能力是创业团队的生存器官；二是三年成型期——三年长不出基础的企业，希望渺茫。</p>
+<p><b>逻辑脉络</b>：季琦用三次亲历归纳出「计划必然被实践修正」的规律，并把投资者的耐心纳入成功要素——在中国快节奏仿效环境下，三年窗口期的不成即败，放大了时间压力。</p>
+<p><b>现实意义</b>：创业与转型项目共用的检查表：模型是否允许漂移（组织有没有纠偏机制）？投资人/上级是否给试错空间？三年里程碑是否清晰？三问皆否，再好的构想也难以落地。</p>
+</div>
+</section>
+<section id="s7">
+<h2><span class="no">柒</span>至暗时刻：人生无所谓意义的两次危机</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>当时的我，跟周边的环境也很难相融，也找不到自我。……大学时期最终思考的结果，是人生无所谓「意义」：本体无法界定自身的意义，人生只有过程，只有经历；对本体而言，无所谓意义。这个思考的结果，让我觉得释然。</p>
+<p>我的第二次危机，是在如家经历的。2004年底，董事会寻找职业经理人进入如家，而作为如家创始人的我，离开了。</p>
+<p class="src">——《创始人手记》中册「我的至暗时刻」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：两次至暗：大学时代的存在危机（苦读却找不到自我）与被自己创办的如家「请走」的职业危机。前者的答案是「人生只有过程，只有经历」——这个哲学结论成了他后贯穿一生的抗风险底层。</p>
+<p><b>逻辑脉络</b>：作者坦白「苦难会让一个人追求灵性上的东西」——两次危机的化解路径相同：向哲学下沉（尼采→王阳明→「过程即意义」），再向上反弹为行动力。被逐出如家之后不久，他创办了汉庭。</p>
+<p><b>现实意义</b>：这是给一切遭遇「被组织抛出」者的样本：身份的丧失不等于价值的丧失。把自我从职位上解绑（我=过程与经历，而非头衔），危机就从终点变成下一段的起点。</p>
+</div>
+</section>
+<section id="s8">
+<h2><span class="no">捌</span>中国服务：继承式创新的大道</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>中国式的创新更多是继承式的创新：借鉴欧美发达国家的商业模式，结合中国的具体情况，进行改造和应用。……欧美的服务业先于我们的发展，已经经过了客户的选择。中国的服务业也大体会遵循他们的发展轨迹。</p>
+<p>过去的成功模式无非以下两种：一是低成本的「中国制造」；二是对传统服务业的改造，将其升级为先进服务业……「中国制造」以低成本为最主要特点，在质量上「good enough（够用就好）」</p>
+<p class="src">——《创始人手记》中册「中国服务」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：季琦的战略命题：中国创造不易，中国服务大有可为——路径是继承式创新（借鉴已被欧美客户筛选过的成熟模型，做本土化改造）。「good enough」不是低质，而是精准的成本-质量匹配。</p>
+<p><b>逻辑脉络</b>：论证链：科技原创难（投入少、人才缺、社会偏短期回报）→但服务业轨迹可借鉴（客户选择已完成）→低成本制造+服务业升级是中国式成功模板。携程/如家/汉庭三次创业全部遵循此道。</p>
+<p><b>现实意义</b>：对任何后发行业（保险科技、养老服务等）的启示：不必执着于原创神话，找到「已被客户验证的成熟轨迹」做本土化再造，是确定性更高的创新路径。</p>
+</div>
+</section>
+<section id="s9">
+<h2><span class="no">玖</span>专业化才是企业成功的法宝</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一直以来我都信奉，唯有专业化才是企业成功的法宝。越来越多的中国企业家朋友多元化成功的故事，在不断地冲击我的这个信念。是我的固执和保守让我看不到真相，还是多元化的成功只是昙花一现呢？如果得出错误的结论，要么是失去许多本该属于你的机会，要么会因自己的动摇，影响了专一。</p>
+<p>专业化的理念来自西方，充分的竞争使得社会分工非常细化。每一家企业为了生存，必须有自己的绝活，将自己这点事做精、做细，才能在市场上占有一席之地。</p>
+<p class="src">——《创始人手记》中册「专业化才是企业成功的法宝」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：在遍地多元化神话的中国商业环境里，季琦坚持专业化——但他诚实呈现了信念被冲击的挣扎（朋友的多元化帝国很成功），并把问题转化为概率判断：多元化的成功是幸存者偏差，专业化是可复制的成功法宝。</p>
+<p><b>逻辑脉络</b>：论证的条件意识值得学习：专业化的成立有前提（充分竞争、社会分工细化）。他同时给多元化留了观察窗口（不是投机、有完整思路的多元化另当别论），避免教条化。</p>
+<p><b>现实意义</b>：对个人职业同样成立：在「斜杠」叙事泛滥的时代，把一件事做精做细的复利更高。判断自己该专该拓，先看所处行业竞争是否充分——分工越细的市场，绝活定价越高。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>先做大还是先做强：120%的速度，80%的质量</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>先做强，还是先做大？如果是一个初创企业，首先要做大，迅速占领地盘。……华住在刚刚成立的时候，我们的第一个策略，就是120%的速度，80%的质量。我做不到120%的速度，95%的质量。首先要抢地盘。</p>
+<p>当这些地盘都抢完之后，我们定的策略是95%的质量，95%的速度。企业到了平台期，首要的任务是做强。当你占领好了地盘，需要赶紧补课。</p>
+<p class="src">——《创始人手记》中册「做大与做强的辩证关系」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：阶段论的战略配方：初创期120%速度+80%质量抢地盘（120%×95%的伪最优不如真80%），平台期95%+95%补课做强。质量与速度的比例随阶段重新定价。</p>
+<p><b>逻辑脉络</b>：作者承认这是「很有效的配方」而非理想主义方案——120%速度下95%质量在物理上做不到，与其追求不可达的组合，不如主动选定可执行的取舍。地盘抢完后，竞争力的重心从扩张切换到补课。</p>
+<p><b>现实意义</b>：任何追赶期项目（新业务、新产品线）都可借用：先明确所处阶段，再定质量-速度配比，并且敢于公开承认配比（80%质量不是失误，是策略）。到平台期主动降速补课，防止以扩张期的标准惯性运营。</p>
+</div>
+</section>
+<section id="s11">
+<h2><span class="no">拾壹</span>企业哲学：决定位置的不是枪炮与金钱</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>一个王国、一个企业，一个政治家、一个企业家、艺术家，他们的成功和他们在历史中的位置，是由他们的哲学决定的，不是枪炮、不是强权、不是金钱，也不是人格魅力。</p>
+<p>马云开始做阿里巴巴的时候，也许没有想到这个企业会做到今天这个地步。但是他的立意很高，是个很有思想的企业家……他说要「做一百零一年企业」，做一个跨世纪的公司。</p>
+<p class="src">——《创始人手记》中册「企业哲学」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书最重的一句判断：成功与历史位置由哲学决定——资源、权力、魅力都只是变量，哲学才是常量。立意（做101年企业）决定了企业的时间视野与行为边界。</p>
+<p><b>逻辑脉络</b>：这一节的引文拼贴（徐中约/毛泽东/邓小平/乔布斯/王阳明）本身即是示范：企业哲学从各种思想传统中萃取，再内化为组织的行为准则。季琦对上海滩「首富、大王」不留思想理念的惋惜，反证了哲学的稀缺。</p>
+<p><b>现实意义</b>：给组织与个人同一个问题：你的「哲学层」是什么？KPI、战略、技巧都成立于哲学之下。回答不了「我们信什么」的团队，走不远也守不住。</p>
+</div>
+</section>
+<section id="s12">
+<h2><span class="no">拾贰</span>创始人要深度沉浸于产品</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>创业过程中，对创始人来说很重要的一点，是要深度沉浸于你的产品。我们酒店过去所有的直营店，我都亲自去现场看过。很多经验和思考，也是从这种反复的观测、思考中得来。</p>
+<p>排房，一般人是在两面承重墙之间划出两间房。……这其实就是几何。切来切去，看怎么切最有效果。</p>
+<p>做汉庭的时候，我意识到，现在的很多产品不能一味追求成本低，而是应该做得漂亮，注重审美潮流。</p>
+<p class="src">——《创始人手记》中册「创始人要深度沉浸于产品」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：连锁帝国与现场主义的结合：华住每一家直营店创始人都看过现场，排房是「几何题」——深度沉浸产生的是别人拿不走的微观知识（拐弯排房法、暗房处理）。</p>
+<p><b>逻辑脉络</b>：这一节与「简洁之美」「平衡审美」在产品层汇合：宏观哲学（专业化/平衡）必须经过微观沉浸（每一面墙怎么切）才能变成产品力。从追求成本到注重审美的转变，是消费升级期的产品观迭代。</p>
+<p><b>现实意义</b>：管理层级越高越容易脱离现场，而判断力恰恰来自现场的微观细节。给自己定「现场配额」——再忙也要保留直接触摸产品的一手时间（巡店、接客诉、读原始数据）。</p>
+</div>
+</section>
+<section id="s13">
+<h2><span class="no">拾叁</span>常识管理：用机制替代层级</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>我们每年大概开六七百家店……过去我担心人才不够，重视人才培养。现在我觉得可以不靠人。机制设计得好的话，可以用常识来管理。</p>
+<p>如果把中间两层拿掉，然后给门店更大的自主权、更大的激励呢？……信息经过每一层传递都会有损耗，会失真，所以有没有可能让组织更扁平？</p>
+<p>比如对客人怎么笑，露两颗牙齿还是四颗牙齿，这是没关系的，你只要笑就行了。……重要的是让客人感觉到受欢迎，这个就是「常识」。</p>
+<p class="src">——《创始人手记》中册「华住未来的管理：常识管理」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：组织设计的终局构想：扁平化+傻瓜系统+常识管理——把「对客人友好」这类常识还给一线，砍掉中间层的失真传递与SOP式伪精确（笑露几颗牙）。</p>
+<p><b>逻辑脉络</b>：推理路径：层级是信息损耗源→系统让门店自主可得数据（买米买菜的价格与渠道）→总部只保留价值观层（友好=常识）。这与「大连锁管理」的传统难题（标准化vs人性化）给出第三种答案：标准化系统+常识化服务。</p>
+<p><b>现实意义</b>：对任何规模化组织的管理启示：凡是能用系统下放的信息就别设审批层，凡是能写成常识的准则就别写成二百页手册。管理密度应投放在真正需要判断力的地方。</p>
+</div>
+</section>
+<section id="s14">
+<h2><span class="no">拾肆</span>我们如何看待客户：好产品四要素</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>对于住宿客户而言，最重要的是要有符合他们需求的产品（含服务）。……我认为大概有四点：创新、培训、主人翁、位置。</p>
+<p>没有主人翁精神，光靠制度和流程，这么大的连锁集团不可能提供发自内心的好服务。我们要给每一个岗位考虑好情景和远景，要让每一个岗位的员工自在、自发。</p>
+<p class="src">——《创始人手记》中册「我们如何看待客户」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：好服务的四要素公式：创新（0秒退房/自助入住）、培训（华住学院+传帮带）、主人翁（发自内心的服务只能来自自在自发的员工）、位置（一二线城市中心布点）。四要素中「主人翁」最不可复制。</p>
+<p><b>逻辑脉络</b>：季琦把服务品质拆成「可系统化」与「必须人性化」两层：创新与培训可标准化，主人翁精神无法靠制度生产——所以要「给每一个岗位考虑好情景和远景」，用员工的自在感换客人的好感。</p>
+<p><b>现实意义</b>：服务行业通用的检查框架：你的服务短板落在哪一层？流程问题（补创新）、技能问题（补培训）、意愿问题（补主人翁机制）、覆盖问题（补位置）——四层病因不同，药方完全不同。</p>
+</div>
+</section>
+<section id="s15">
+<h2><span class="no">拾伍</span>仰望天空和脚踏实地：月亮与六便士的中年和解</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>书里的主人公「和许多年轻人一样，为天上的月亮神魂颠倒，对脚下的六便士视而不见」。月亮象征着一种美妙的精神境界，而六便士这种小面额硬币代表着世俗的蝇头小利。</p>
+<p>后来踏入社会，下海经商，数次创业，跟那些理想主义的东西越来越远……因为理想主义者柔软而细腻的内心，在冷峻的现实中不但毫无优势，反而容易受伤。</p>
+<p>人到中年，内心平和安静下来，那些理想主义的东西又浮现出来。正像月亮，虽然乌云会遮住她，但她依然在那里。</p>
+<p class="src">——《创始人手记》上册「仰望天空和脚踏实地」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：全书的精神主线在此闭合：青年仰望月亮（诗歌/尼采/罗曼·罗兰），中年身陷六便士（创业/经营），最后发现月亮从未离开——理想主义不是事业的敌人，而是穿过现实之后依然在那里的坐标。</p>
+<p><b>逻辑脉络</b>：与「至暗时刻」互为表里：理想主义在冷峻现实中「容易受伤」，但同样的敏感让他在商业里做出审美差异化（华住的审美、平衡哲学）。月亮与六便士的关系被他改写为「形而上滋养形而下」。</p>
+<p><b>现实意义</b>：给所有在功利轨道上的理想主义者：不必在月亮与六便士间二选一——让月亮做坐标系（为什么做），让六便士做行军路线（怎么做），两者的和解才是可持续的人生结构。</p>
+</div>
+</section>
+<section id="s16">
+<h2><span class="no">拾陆</span>出离和进入：宇宙视角下的平常心</h2>
+<blockquote class="quote"><span class="tag">原文摘录</span>
+<p>当你从很高的角度俯瞰人世，会发现我们的语言、文字、行为、信仰，一切都那么渺小，那么没有差别。一切纷争、名利、自恋和自以为是，都犹如过眼烟云。</p>
+<p>我看过一部短片……镜头开始向上拉，从中央公园到纽约，到美国，再到地球，最后拉到宇宙中间……后面镜头从宇宙又（拉回来）。</p>
+<p class="src">——《创始人手记》下册「出离和进入」</p>
+</blockquote>
+<div class="analysis"><span class="tag2">要义解析</span>
+<p><b>核心要义</b>：季琦的心灵技术：出离（拉镜头到宇宙视角，一切差别归零）与进入（回到现场把事做好）的往复练习。宋朝的高形而上文明败给马与刀，他用「道法自然」释然——文明有文明的命运。</p>
+<p><b>逻辑脉络</b>：出离不是逃避而是解压阀：商业竞争的输赢焦虑在宇宙视角下自动降维，人才能不带执念地「日日是好日」。这与「万物是心的映射」同属上册心学的两条腿：向内看是映射，向外看出离。</p>
+<p><b>现实意义</b>：可操作的减压程序：感到被胜负与比较吞噬时，做一次「镜头上拉」（十年后此事还重要吗）再「镜头拉回」（此刻最小的一步是什么）。出离是为了更好地进入。</p>
+</div>
+</section>
+<section id="s17">
+<h2><span class="no">拾柒</span>金句回顾 · 随身手册</h2>
+<div class="analysis"><span class="tag2">回顾与应用</span>
+<p>以下十条金句，各附一句「应用口诀」，便于日常回顾与随身携带——研读的最终目的，是把一个连续创业者的哲学读成自己的工作与生活坐标。</p>
+<p><b>如果你辛辛苦苦地推导出一个特别复杂的结果，基本上都是错误的。</b>应用口诀：复杂方案多半没找到本质，先问能否砍掉一半。</p>
+<p><b>我们对人、对环境、对别人的看法，实际上是内心的一个映射。</b>应用口诀：重大判断前自问——我此刻用的哪套眼光，它过滤掉了什么。</p>
+<p><b>如果全是精神，全是灵，那是清教徒。如果全是肉，就变成掉进卡拉OK里面整天找乐子的那群人。</b>应用口诀：做人和做产品都是平衡的艺术，砍掉低频累赘就是美。</p>
+<p><b>如果守在当初不现实的理想模型里，这些初创的企业可能都会夭折在摇篮中。</b>应用口诀：模型必然漂移，组织要有纠偏机制，三年定生死。</p>
+<p><b>人生只有过程，只有经历；对本体而言，无所谓意义。</b>应用口诀：把自我从职位上解绑，身份丧失不等于价值丧失。</p>
+<p><b>在质量上「good enough（够用就好）」。</b>应用口诀：后发行业先找已被客户验证的成熟轨迹做本土化再造。</p>
+<p><b>我们的第一个策略，就是120%的速度，80%的质量。</b>应用口诀：先明确阶段再定质量-速度配比，并敢于公开承认配比。</p>
+<p><b>他们的成功和他们在历史中的位置，是由他们的哲学决定的。</b>应用口诀：先回答「我们信什么」，再谈KPI与战略。</p>
+<p><b>没有主人翁精神，光靠制度和流程，这么大的连锁集团不可能提供发自内心的好服务。</b>应用口诀：流程补创新、技能补培训、意愿补机制——四层病因不同药方不同。</p>
+<p><b>正像月亮，虽然乌云会遮住她，但她依然在那里。</b>应用口诀：让月亮做坐标系，让六便士做行军路线。</p>
+</div>
+</section>
+</main>
+
+<section class="tuozhan">
+<h2>拓展阅读 —— 佐证与延伸 · 外部资源</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/季琦" target="_blank" rel="noopener">季琦 · 维基百科</a><span>佐证：携程/如家/汉庭/华住「创业四部曲」的公开履历。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/华住集团" target="_blank" rel="noopener">华住集团 · 维基百科</a><span>延伸：汉庭、全季品牌矩阵与连锁规模数据。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/史蒂夫·乔布斯" target="_blank" rel="noopener">史蒂夫·乔布斯 · 维基百科</a><span>佐证：2005年斯坦福毕业演讲三个故事的全文背景。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/王阳明" target="_blank" rel="noopener">王阳明 · 维基百科</a><span>延伸：「知行合一」「致良知」与其对季琦中庸转向的影响。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/月亮和六便士" target="_blank" rel="noopener">《月亮和六便士》· 维基百科</a><span>佐证：毛姆原著与「月亮/六便士」意象的出处。</span></li>
+<li><a href="https://zh.wikipedia.org/wiki/经济型酒店" target="_blank" rel="noopener">经济型酒店 · 维基百科</a><span>延伸：中国经济型连锁酒店的行业演进史。</span></li>
+</ul>
+</section>
+
+<footer>仙书阁 · 深度研读系列 ｜ 《创始人手记》 ｜ 摘录据原书文本校录，解析为研读者心得</footer>
+</div>
+</body>
+</html>
