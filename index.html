@@ -159,6 +159,9 @@
   /* 深度研读工程：有 study 研读页的书，卡片上加醒目入口 */
   const STUDY = { 2:"study-02.html", 3:"study-03.html", 4:"study-04.html", 5:"study-05.html", 6:"study-06.html", 7:"study-07.html", 8:"study-08.html", 9:"study-09.html", 10:"study-10.html", 11:"study-11.html", 12:"study-12.html", 13:"study-13.html", 14:"study-14.html", 15:"study-15.html", 16:"study-16.html", 17:"study-17.html", 18:"study-18.html", 19:"study-19.html", 20:"study-20.html", 21:"study-21.html", 22:"study-22.html", 23:"study-23.html", 24:"study-24.html", 25:"study-25.html", 26:"study-26.html", 27:"study-27.html", 28:"study-28.html", 29:"study-29.html", 30:"study-30.html", 31:"study-31.html", 32:"study-32.html", 33:"study-33.html", 34:"study-34.html", 35:"study-35.html", 36:"study-36.html", 37:"study-37.html", 39:"study-39.html", 40:"study-40.html", 47:"study-47.html", 49:"study-49.html", 44:"study-44.html", 48:"study-48.html", 45:"study-45.html", 42:"study-42.html", 43:"study-43.html", 46:"study-46.html", 50:"study-50.html", 53:"study-53.html", 54:"study-54.html", 51:"study-51.html", 52:"study-52.html", 55:"study-55.html", 56:"study-56.html", 57:"study-57.html", 72:"study-72.html", 73:"study-73.html", 74:"study-74.html", 75:"study-75.html", 76:"study-76.html", 77:"study-77.html", 78:"study-78.html", 79:"study-79.html", 80:"study-80.html", 81:"study-81.html", 82:"study-82.html", 83:"study-83.html", 84:"study-84.html", 41:"study-41.html", 38:"study-38.html", 62:"study-62.html", 63:"study-63.html", 65:"study-65.html", 66:"study-66.html", 67:"study-67.html", 64:"study-64.html", 69:"study-69.html", 58:"study-58.html", 60:"study-60.html", 61:"study-61.html", 59:"study-59.html", 68:"study-68.html", 70:"study-70.html", 71:"study-71.html" };
 
+  /* 学习子模块（learn_render.py 渲染）：双语 17-26 对照学习 · 诗词古文 59/62/63/66/67/68 诗词学习 */
+  const LEARN = { 17:"bilingual-17.html", 18:"bilingual-18.html", 19:"bilingual-19.html", 20:"bilingual-20.html", 21:"bilingual-21.html", 22:"bilingual-22.html", 23:"bilingual-23.html", 24:"bilingual-24.html", 25:"bilingual-25.html", 26:"bilingual-26.html", 59:"poem-59.html", 62:"poem-62.html", 63:"poem-63.html", 66:"poem-66.html", 67:"poem-67.html", 68:"poem-68.html" };
+
   /* ============ 收藏（localStorage 持久化） ============ */
   const favArr = () => { try { return JSON.parse(localStorage.getItem("xsj-fav") || "[]"); } catch (e) { return []; } };
   const saveFav = a => { try { localStorage.setItem("xsj-fav", JSON.stringify(a)); } catch (e) {} };
@@ -176,9 +179,11 @@
 
   function card(b) {
     const badge = STUDY[b.no] ? `<span class="study-tag" onclick="event.preventDefault();event.stopPropagation();location.href='${STUDY[b.no]}'">📖 深度研读</span>` : "";
+    const isBi = b.no >= 17 && b.no <= 26;
+    const learn = LEARN[b.no] ? `<span class="study-tag" style="top:44px;background:#2f6b5a;" onclick="event.preventDefault();event.stopPropagation();location.href='${LEARN[b.no]}'">${isBi ? "🌍 中英对照学习" : "📜 诗词学习"}</span>` : "";
     const fav = isFav(b.no);
     return `<a class="book-card vis" href="${b.file}">
-      <div class="book-cover"><div class="ring"></div><div class="glyph">${b.glyph}</div>${badge}
+      <div class="book-cover"><div class="ring"></div><div class="glyph">${b.glyph}</div>${badge}${learn}
         <span class="fav-mark${fav ? " on" : ""}" data-no="${b.no}" title="${fav ? "移出收藏" : "加入收藏"}">${fav ? "★" : "☆"}</span></div>
       <div class="bc-body">
         <h3>${b.title}</h3>

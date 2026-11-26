@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>诗词学习 · 诗经点醒 — 仙书阁</title>
+<style>
+:root{--bg:#10141d;--panel:#171d2a;--ink:#d8d2c4;--dim:#9aa4b1;--gold:#d8b25a;--red:#b53d2e;--teal:#2f6b5a;--line:#2a3040;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Source Han Serif SC",Georgia,serif;line-height:1.9;font-size:16.5px;}
+a{color:var(--gold);text-decoration:none;}a:hover{text-decoration:underline;}
+html{scroll-behavior:smooth;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 80px;}
+.hd{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px;}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:18px;letter-spacing:1px;}
+.hd h1{font-size:34px;color:#e9dfc7;letter-spacing:6px;font-weight:700;}
+.hd .sub{color:var(--gold);font-size:14.5px;letter-spacing:2px;margin-top:8px;}
+.hd .lead{margin-top:18px;font-size:14.5px;color:var(--dim);border-left:3px solid var(--gold);padding-left:14px;}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:44px;}
+.toc h3{font-size:13px;color:var(--gold);letter-spacing:3px;margin-bottom:10px;}
+.toc ol{list-style:none;columns:2;column-gap:36px;}
+.toc a{color:var(--dim);text-decoration:none;border-bottom:1px dashed var(--line);}
+.toc a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.toc li{font-size:13.5px;padding:3px 0;color:var(--dim);}
+.toc li b{color:var(--ink);font-weight:600;margin-right:6px;}
+section{margin-bottom:52px;}
+section h2{font-size:22px;color:#e9dfc7;letter-spacing:2px;margin-bottom:18px;padding-bottom:10px;border-bottom:1px dashed var(--line);}
+section h2 .no{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:linear-gradient(135deg,#2a3346,#1b2231);color:var(--gold);font-size:15px;margin-right:12px;vertical-align:2px;}
+.quote{background:var(--panel);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:14px 0 18px;}
+.tag{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--bg);background:var(--gold);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.quote p{font-size:15.5px;color:#cfc9bb;text-indent:2em;margin:8px 0;}
+.quote p.en{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#e6dcc3;font-size:15px;}
+.quote p.cn{color:#b9b3a5;font-size:14.2px;border-top:1px dashed var(--line);padding-top:6px;margin-top:4px;}
+.quote .src{font-size:12.5px;color:var(--dim);text-indent:0;text-align:right;margin-top:10px;}
+.vocab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 22px;margin:16px 0;}
+.vocab p{font-size:14px;margin:5px 0;text-indent:0;color:var(--ink);}
+.vocab p b{color:var(--gold);font-family:Georgia,serif;}
+.vocab .lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;margin-bottom:8px;}
+.lbl{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--teal);border-radius:3px;padding:1px 10px;}
+.tag2{display:inline-block;font-size:12px;letter-spacing:3px;color:#fff;background:var(--red);border-radius:3px;padding:1px 10px;margin-bottom:10px;}
+.analysis{color:var(--ink);}
+.analysis p{margin:10px 0;text-indent:2em;}
+.analysis p b{color:var(--gold);}
+.tuozhan{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin-top:56px;}
+.tuozhan h2{font-size:18px;color:var(--gold);letter-spacing:3px;margin-bottom:14px;}
+.tuozhan ul{list-style:none;}
+.tuozhan li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.tuozhan li:last-child{border-bottom:none;}
+.tuozhan li span{color:var(--dim);display:block;font-size:13px;margin-top:2px;}
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);text-align:center;letter-spacing:1px;}
+@media(max-width:640px){.toc ol{columns:1;}.hd h1{font-size:27px;letter-spacing:3px;}body{font-size:15.5px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+<p class="crumb"><a href="index.html">⟵ 仙书阁书架</a> ｜ <a href="books/63-shijing.html">本书书页</a> ｜ <a href="study-63.html">深度研读</a></p>
+<h1>诗词学习 · 诗经点醒</h1>
+<p class="sub">诗词古文 · 全文精读 ｜ 名句精读 · 赏析 · 原文选读 ≥30% · 篇目全览</p>
+<p class="lead">本册研读共 12 节 37 条名句；诗词学习子模块分三层：①重点精学 4 篇（公认最优秀，含赏析与活用）；②原文选读 15 篇全文，可整卷通读；③篇目全览 15 篇一览。精学一篇的步骤：朗读 → 抄写 → 背诵 → 用「活用」对照自己的生活。</p>
+</header>
+<nav class="toc">
+<h3>目 录</h3>
+<ol>
+<li><a href="#s1"><b>壹</b>关雎：君子好逑的择偶宣言</a></li>
+<li><a href="#s2"><b>贰</b>汉广与蒹葭：可望而不可即</a></li>
+<li><a href="#s6"><b>陆</b>击鼓：战场上的生死之约</a></li>
+<li><a href="#s10"><b>拾</b>氓（上）：抱布贸丝的始乱</a></li>
+<li><a href="#ex-begin"><b>附录</b>原文选读与篇目全览</a></li>
+
+</ol>
+</nav>
+<main>
+<section id="s1">
+<h2><span class="no">壹</span>关雎：君子好逑的择偶宣言</h2>
+<blockquote class="quote"><span class="tag">名句精读</span>
+<p>关关雎鸠，在河之洲</p>
+<p>窈窕淑女，君子好逑</p>
+<p>求之不得，寤寐思服</p>
+<p class="src">——《诗经点醒》第一讲〈关雎〉 ｜ 据《诗经点醒》（流沙河 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">赏析与活用</span>
+<p><b>赏析</b>：流沙河开讲第一篇就推翻成见：《关雎》不是什么后妃之德，而是一首极其坦率的求偶诗。关关雎鸠，在河之洲——鱼鹰在沙洲上一叫一应，触动了河边的单身男子；窈窕淑女，君子好逑——好女子的标准先立起来：窈是体态幽美，窕是心思幽深，外面好看里面还有内涵，这才配得上君子的好逑。往下写到求之不得，寤寐思服——追不上就在床上翻来覆去，把相思写到了失眠的生理层面，三千年前的文字与现代人的心事毫无时差。</p>
+<p><b>活用</b>：《关雎》给今天的两点提醒：一，择偶标准要有层次——窈窕二字提醒我们外表与内里都要看，只看其一迟早要付学费；二，求之不得的处理方式——诗里的人辗转反侧之后去学琴学钟鼓（琴瑟友之、钟鼓乐之），也就是提升自己再靠近，而不是死缠烂打或怨天尤人：被拒绝之后的正确动作，是把自己变得值得被选择。</p>
+</div>
+</section>
+<section id="s2">
+<h2><span class="no">贰</span>汉广与蒹葭：可望而不可即</h2>
+<blockquote class="quote"><span class="tag">名句精读</span>
+<p>汉有游女，不可求思</p>
+<p>翘翘错薪，言刈其楚</p>
+<p>所谓伊人，在水一方</p>
+<p>蒹葭苍苍，白露为霜</p>
+<p class="src">——《诗经点醒》第二讲〈汉广〉〈蒹葭〉 ｜ 据《诗经点醒》（流沙河 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">赏析与活用</span>
+<p><b>赏析</b>：第二讲把两首「追不上」的诗放在一起读。《汉广》：汉有游女，不可求思——汉水边的游女，想追追不上；诗中男子自我宽解的办法是翘翘错薪，言刈其楚——错杂的草丛里先割好柴料，也就是先做好眼前的准备，等机会。流沙河说这是「失恋者的第一课：认输但不认命」。《蒹葭》则把追不上写成了美学：蒹葭苍苍，白露为霜——芦苇苍苍一片，白露凝成了霜；所谓伊人，在水一方——那个人永远隔着一条水，你逆流而上她升高，顺流而下她又变远，可望而永远不可即。</p>
+<p><b>活用</b>：两首诗合起来是一套「求而不得」的心理学：对现实的目标（汉广式），动作是备柴——把能做的准备先做足，机会来了接得住；对象征的理想（蒹葭式），心态是继续追——够不着不是放弃的理由，因为追寻本身已经改变了追寻者。落到今天：把「得不到」分成两种，一种想办法缩短距离，一种珍惜距离带来的动力，别把两类混为一谈，也别让任何一类把你拖进自我否定。</p>
+</div>
+</section>
+<section id="s6">
+<h2><span class="no">陆</span>击鼓：战场上的生死之约</h2>
+<blockquote class="quote"><span class="tag">名句精读</span>
+<p>死生契阔，与子成说</p>
+<p>执子之手，与子偕老</p>
+<p>于嗟洵兮，不我信兮</p>
+<p class="src">——《诗经点醒》第五讲〈击鼓〉 ｜ 据《诗经点醒》（流沙河 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">赏析与活用</span>
+<p><b>赏析</b>：《击鼓》写卫国州吁用兵，一个士兵在战争机器里想念家中的人。中间四句是中国诗歌里最重的誓言：死生契阔，与子成说——生死聚散，我早已和你立过誓约；执子之手，与子偕老——握着你的手，和你一起变老。可现实是南征不归，士兵最后的哀鸣是于嗟洵兮，不我信兮——久役不归，誓言恐怕无法兑现了。流沙河用古音与史实层层拆解：契阔是聚散，成说是立约，而「信」读作申——不是对方失信于我，是这场战争让我无法履行誓言。</p>
+<p><b>活用</b>：执子之手，与子偕老今天已成婚礼标配，但回到原诗它是一句「在乱世里明知难以兑现也要说」的话，两点启示：一，承诺的价值不取决于能否兑现，而取决于说出口时的郑重——明知可能失约仍然立约，这才是「成说」的本义；二，于嗟洵兮，不我信兮教我们诚实地面对失约——做不到时说出「我做不到了」，比沉默失踪更配得上当初的誓言；对承诺的尊重，恰恰体现在失约时的坦白里。</p>
+</div>
+</section>
+<section id="s10">
+<h2><span class="no">拾</span>氓（上）：抱布贸丝的始乱</h2>
+<blockquote class="quote"><span class="tag">名句精读</span>
+<p>氓之蚩蚩，抱布贸丝</p>
+<p>于嗟鸠兮，无食桑葚</p>
+<p>于嗟女兮，无与士耽</p>
+<p class="src">——《诗经点醒》第九讲〈氓〉 ｜ 据《诗经点醒》（流沙河 著）校录</p>
+</blockquote>
+<div class="analysis"><span class="tag2">赏析与活用</span>
+<p><b>赏析</b>：《氓》是《诗经》中最长的弃妇诗，流沙河用两讲读它。上半场写婚事的来路与隐忧：氓之蚩蚩，抱布贸丝——那个笑嘻嘻的汉子，抱着布来换丝；匪来贸丝，来即我谋——哪里是来换丝，分明是来打我的主意；送子涉淇，至于顿丘——我送他送过淇水，一直送到顿丘，百里相送，情意可见。随后是两个比兴的警告：于嗟鸠兮，无食桑葚——斑鸠啊别贪吃桑葚（吃多了会醉）；于嗟女兮，无与士耽——姑娘啊别沉溺于与男人的恋爱。流沙河用古音点破：耽即枕，士之耽兮犹可说（脱）也，女之耽兮不可说也——男人沉进去还能枕着翻身，女人沉进去就翻不了身：一个「枕」字，道尽两性在爱情中退出成本的不对称。</p>
+<p><b>活用</b>：于嗟女兮，无与士耽虽是对女子说，道理却通用于所有「沉溺」：一，识别「蚩蚩」——热情过度的开场常是套路的开场，笑得越满越要看他做什么而非说什么；二，评估「退出成本」——任何关系（恋爱、合作、投资）进入前先想：如果明天要退出，我损失什么？退出成本不对称的关系，谨慎进入；三，于嗟鸠兮，无食桑葚的比兴提醒我们：劝告往往以「为别人好」的包装说着自己的事——听到严厉警告时，先看看警告者自己是否正深陷其中。</p>
+</div>
+</section>
+</main>
+<section class="tuozhan" id="ex-begin"><h2>原文选读 —— 15 篇全文</h2><p>篇目按原书卷次编排，点开各卷即可通读原文；先读重点精学，再来通读选目，最后用篇目全览查缺。</p>
+<style>details.exgroup{margin:26px 0;border:1px solid #d8d2c2;border-radius:10px;background:#fbf8f0;overflow:hidden}details.exgroup summary{cursor:pointer;padding:14px 18px;font-weight:700;color:#2b2a26;font-family:'Songti SC','STSong','SimSun',serif;font-size:1.05em;list-style:none}details.exgroup summary::before{content:'▸ ';color:#b53d2e}details.exgroup[open] summary::before{content:'▾ '}details.exgroup .exbody{padding:6px 20px 20px}details.exgroup summary small{font-weight:400;color:#8a7f66;margin-left:8px}.poemcard{border-top:1px dashed #ddd5c2;padding:16px 4px}.poemcard:first-of-type{border-top:none}.poemcard h4{margin:0 0 4px;color:#b53d2e;font-size:1.02em}.poemcard .psub{color:#8a7f66;font-size:.9em;margin:0 0 8px}.verse{margin:0;line-height:1.9;color:#2b2a26}.plist{line-height:2.1}.plist a{color:#2f6b5a;text-decoration:none}.plist a:hover{text-decoration:underline}</style>
+<details class="exgroup"><summary>流沙河讲解篇目<small>15 篇</small></summary><div class="exbody"><article class="poemcard">
+<h4>周南·关雎</h4>
+<p class="verse">关关雎鸠，在河之洲。</p>
+<p class="verse">窈窕淑女，君子好逑。</p>
+<p class="verse">参差荇菜，左右流之。</p>
+<p class="verse">窈窕淑女，寤寐求之。</p>
+<p class="verse">求之不得，寤寐思服。</p>
+<p class="verse">悠哉悠哉，辗转反侧。</p>
+<p class="verse">参差荇菜，左右采之。</p>
+<p class="verse">窈窕淑女，琴瑟友之。</p>
+<p class="verse">参差荇菜，左右芼之。</p>
+<p class="verse">窈窕淑女，钟鼓乐之。</p>
+</article>
+<article class="poemcard">
+<h4>周南·汉广</h4>
+<p class="verse">南有乔木，不可休思；</p>
+<p class="verse">汉有游女，不可求思。</p>
+<p class="verse">汉之广矣，不可泳思；</p>
+<p class="verse">江之永矣，不可方思。</p>
+<p class="verse">翘翘错薪，言刈其楚；</p>
+<p class="verse">之子于归，言秣其马。</p>
+<p class="verse">汉之广矣，不可泳思；</p>
+<p class="verse">江之永矣，不可方思。</p>
+<p class="verse">翘翘错薪，言刈其蒌；</p>
+<p class="verse">之子于归，言秣其驹。</p>
+<p class="verse">汉之广矣，不可泳思；</p>
+<p class="verse">江之永矣，不可方思。</p>
+</article>
+<article class="poemcard">
+<h4>秦风·蒹葭</h4>
+<p class="verse">蒹葭苍苍，白露为霜。</p>
+<p class="verse">所谓伊人，在水一方。</p>
+<p class="verse">溯洄从之，道阻且长。</p>
+<p class="verse">溯游从之，宛在水中央。</p>
+<p class="verse">蒹葭萋萋，白露未晞。</p>
+<p class="verse">所谓伊人，在水之湄。</p>
+<p class="verse">溯洄从之，道阻且跻。</p>
+<p class="verse">溯游从之，宛在水中坻。</p>
+<p class="verse">蒹葭采采，白露未已。</p>
+<p class="verse">所谓伊人，在水之涘。</p>
+<p class="verse">溯洄从之，道阻且右。</p>
+<p class="verse">溯游从之，宛在水中沚。</p>
+<p class="verse">谢谢大家来配合完成传播古典文学的任务。</p>
+</article>
+<article class="poemcard">
+<h4>周南·芣苡</h4>
+<p class="verse">采采芣苡，薄言采之。</p>
+<p class="verse">采采芣苡，薄言有之。</p>
+<p class="verse">采采芣苡，薄言掇之。</p>
+<p class="verse">采采芣苡，薄言捋之。</p>
+<p class="verse">采采芣苡，薄言袺之。</p>
+<p class="verse">采采芣苡，薄言襭之。</p>
+</article>
+<article class="poemcard">
+<h4>邶风·绿衣</h4>
+<p class="verse">绿兮衣兮，绿衣黄里。</p>
+<p class="verse">心之忧矣，曷维其已！</p>
+<p class="verse">绿兮衣兮，绿衣黄裳。</p>
+<p class="verse">心之忧矣，曷维其亡！</p>
+<p class="verse">绿兮丝兮，女所治兮。</p>
+<p class="verse">我思古人，俾无訧兮。</p>
+<p class="verse">兮兮，凄其以风。</p>
+<p class="verse">我思古人，实获我心！</p>
+</article>
+<article class="poemcard">
+<h4>卫风·硕人</h4>
+<p class="verse">硕人其颀，衣锦褧衣。</p>
+<p class="verse">齐侯之子，卫侯之妻，东宫之妹，邢侯之姨，谭公维私。</p>
+<p class="verse">手如柔荑，肤如凝脂，领如蝤蛴，齿如瓠犀，螓首蛾眉，巧笑倩兮，美目盼兮。</p>
+<p class="verse">硕人敖敖，说于农郊。</p>
+<p class="verse">四牡有骄，朱幩镳镳，翟茀以朝。</p>
+<p class="verse">大夫夙退，无使君劳。</p>
+<p class="verse">河水洋洋，北流活活。</p>
+<p class="verse">施罛濊濊，鳣鲔发发，葭菼揭揭。</p>
+<p class="verse">庶姜孽孽，庶士有朅。</p>
+</article>
+<article class="poemcard">
+<h4>邶风·燕燕</h4>
+<p class="verse">燕燕于飞，差池其羽。</p>
+<p class="verse">之子于归，远送于野。</p>
+<p class="verse">瞻望弗及，泣涕如雨。</p>
+<p class="verse">燕燕于飞，颉之颃之。</p>
+<p class="verse">之子于归，远于将之。</p>
+<p class="verse">瞻望弗及，伫立以泣。</p>
+<p class="verse">燕燕于飞，下上其音。</p>
+<p class="verse">之子于归，远送于南。</p>
+<p class="verse">瞻望弗及，实劳我心。</p>
+<p class="verse">仲氏任只，其心塞渊。</p>
+<p class="verse">终温且惠，淑慎其身。</p>
+<p class="verse">先君之思，以勖寡人。</p>
+</article>
+<article class="poemcard">
+<h4>邶风·击鼓</h4>
+<p class="verse">击鼓其镗，踊跃用兵。</p>
+<p class="verse">土国城漕，我独南行。</p>
+<p class="verse">从孙子仲，平陈与宋。</p>
+<p class="verse">不我以归，忧心有忡。</p>
+<p class="verse">爰居爰处？</p>
+<p class="verse">爰丧其马？</p>
+<p class="verse">于以求之？</p>
+<p class="verse">于林之下。</p>
+<p class="verse">死生契阔，与子成说。</p>
+<p class="verse">执子之手，与子偕老。</p>
+<p class="verse">于嗟阔兮，不我活兮。</p>
+<p class="verse">于嗟洵兮，不我信兮。</p>
+</article>
+<article class="poemcard">
+<h4>陈风·泽陂</h4>
+<p class="verse">彼泽之陂，有蒲与荷。</p>
+<p class="verse">有美一人，伤如之何？</p>
+<p class="verse">寤寐无为，涕泗滂沱。</p>
+<p class="verse">彼泽之陂，有蒲与蕳。</p>
+<p class="verse">有美一人，硕大且卷。</p>
+<p class="verse">寤寐无为，中心悁悁。</p>
+<p class="verse">彼泽之陂，有蒲菡萏。</p>
+<p class="verse">有美一人，硕大且俨。</p>
+<p class="verse">寤寐无为，辗转伏枕。</p>
+</article>
+<article class="poemcard">
+<h4>邶风·柏舟</h4>
+<p class="verse">泛彼柏舟，亦泛其流。</p>
+<p class="verse">耿耿不寐，如有隐忧。</p>
+<p class="verse">微我无酒，以敖以游。</p>
+<p class="verse">我心匪鉴，不可以茹。</p>
+<p class="verse">亦有兄弟，不可以据。</p>
+<p class="verse">薄言往愬，逢彼之怒。</p>
+<p class="verse">我心匪石，不可转也。</p>
+<p class="verse">我心匪席，不可卷也。</p>
+<p class="verse">威仪棣棣，不可选也。</p>
+<p class="verse">忧心悄悄，愠于群小。</p>
+<p class="verse">觏闵既多，受侮不少。</p>
+<p class="verse">静言思之，寤辟有摽。</p>
+<p class="verse">日居月诸，胡迭而微？</p>
+<p class="verse">心之忧矣，如匪澣衣。</p>
+<p class="verse">静言思之，不能奋飞。</p>
+</article>
+<article class="poemcard">
+<h4>周南·汝坟</h4>
+<p class="verse">遵彼汝坟，伐其条枚；</p>
+<p class="verse">未见君子，惄如调饥。</p>
+<p class="verse">遵彼汝坟，伐其条肄；</p>
+<p class="verse">既见君子，不我遐弃。</p>
+<p class="verse">鲂鱼赪尾，王室如燬；</p>
+<p class="verse">虽则如燬，父母孔迩！</p>
+</article>
+<article class="poemcard">
+<h4>王风·丘中有麻</h4>
+<p class="verse">丘中有麻，彼留子嗟。</p>
+<p class="verse">彼留子嗟，将其来施。</p>
+<p class="verse">丘中有麦，彼留子国。</p>
+<p class="verse">彼留子国，将其来食。</p>
+<p class="verse">丘中有李，彼留之子。</p>
+<p class="verse">彼留之子，贻我佩玖。</p>
+</article>
+<article class="poemcard">
+<h4>郑风·野有蔓草</h4>
+<p class="verse">野有蔓草，零露漙兮。</p>
+<p class="verse">有美一人，清扬婉兮。</p>
+<p class="verse">邂逅相遇，适我愿兮。</p>
+<p class="verse">野有蔓草，零露瀼瀼。</p>
+<p class="verse">有美一人，婉如清扬。</p>
+<p class="verse">邂逅相遇，与子偕臧。</p>
+</article>
+<article class="poemcard">
+<h4>卫风·氓</h4>
+<p class="verse">氓之蚩蚩，抱布贸丝。</p>
+<p class="verse">匪来贸丝，来即我谋。</p>
+<p class="verse">送子涉淇，至于顿丘。</p>
+<p class="verse">匪我愆期，子无良媒。</p>
+<p class="verse">将子无怒，秋以为期。</p>
+<p class="verse">乘彼垝垣，以望复关。</p>
+<p class="verse">不见复关，泣涕涟涟。</p>
+<p class="verse">既见复关，载笑载言。</p>
+<p class="verse">尔卜尔筮，体无咎言。</p>
+<p class="verse">以尔车来，以我贿迁。</p>
+<p class="verse">桑之未落，其叶沃若。</p>
+<p class="verse">于嗟鸠兮，无食桑葚！</p>
+<p class="verse">于嗟女兮，无与士耽！</p>
+<p class="verse">士之耽兮，犹可说也。</p>
+<p class="verse">女之耽兮，不可说也。</p>
+<p class="verse">桑之落矣，其黄而陨。</p>
+<p class="verse">自我徂尔，三岁食贫。</p>
+<p class="verse">淇水汤汤，渐车帷裳。</p>
+<p class="verse">女也不爽，士贰其行。</p>
+<p class="verse">士也罔极，二三其德。</p>
+<p class="verse">三岁为妇，靡室劳矣；</p>
+<p class="verse">夙兴夜寐，靡有朝矣。</p>
+<p class="verse">言既遂矣，至于暴矣。</p>
+<p class="verse">兄弟不知，咥其笑矣。</p>
+<p class="verse">静言思之，躬自悼矣。</p>
+<p class="verse">及尔偕老，老使我怨。</p>
+<p class="verse">淇则有岸，隰则有泮。</p>
+<p class="verse">总角之宴，言笑晏晏。</p>
+<p class="verse">信誓旦旦，不思其反。</p>
+<p class="verse">反是不思，亦已焉哉！</p>
+</article>
+<article class="poemcard">
+<h4>召南·小星</h4>
+<p class="verse">嘒彼小星，三五在东。</p>
+<p class="verse">肃肃宵征，夙夜在公。</p>
+<p class="verse">寔命不同。</p>
+<p class="verse">嘒彼小星，维参与昴。</p>
+<p class="verse">肃肃宵征，抱衾与裯。</p>
+<p class="verse">寔命不犹。</p>
+</article></div></details>
+</section>
+<section class="tuozhan"><h2>篇目全览 —— 全书 15 篇一览</h2>
+<details class="exgroup"><summary>流沙河讲解篇目<small>15 篇</small></summary><div class="exbody plist">周南·关雎 ｜ 周南·汉广 ｜ 秦风·蒹葭 ｜ 周南·芣苡 ｜ 邶风·绿衣 ｜ 卫风·硕人 ｜ 邶风·燕燕 ｜ 邶风·击鼓 ｜ 陈风·泽陂 ｜ 邶风·柏舟 ｜ 周南·汝坟 ｜ 王风·丘中有麻 ｜ 郑风·野有蔓草 ｜ 卫风·氓 ｜ 召南·小星</div></details>
+</section>
+<section class="vocab"><span class="lbl">学习法 · 本册专属</span><p>《诗经》的学习在声音：每篇先朗读三遍，体会重章叠句的节奏，再记名句，最后用流沙河「点醒」的视角，把诗义用大白话复述一遍。</p></section>
+<footer>仙书阁 · 诗词学习系列 ｜ 重点精学 4 篇 ＋ 原文选读 15/15 篇</footer>
+</div>
+</body>
+</html>
